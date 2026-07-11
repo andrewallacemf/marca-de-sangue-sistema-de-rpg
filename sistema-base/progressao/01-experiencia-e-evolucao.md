@@ -78,7 +78,7 @@ Comprar Traços, diferente de Aptidões e Habilidades, não garante apenas um us
 
 ### Requisitos das características
 
-Em Marca de Sangue, as habilidades têm pré-requisitos para serem usadas. Você não conseguirá motivar seus companheiros com um Brado de Guerra se eles não puderem te ouvir. As exigências das características estão descritas no livro do jogador e também nas cartas de habilidade.
+Em Marca de Sangue, as habilidades têm pré-requisitos para serem usadas. Você não conseguirá motivar seus companheiros com um Brado de Guerra se eles não puderem te ouvir. As exigências das características estão descritas no livro do jogador, na descrição de cada habilidade.
 
 ### Fundindo características
 
@@ -86,7 +86,7 @@ Para adquirir as características mais básicas do jogo, basta gastar pontos de 
 
 Uma característica pode ser melhorada para que seus efeitos sejam intensificados. Se você tem dois usos da habilidade “Corte profundo”, que transforma até 2 pontos de dano superficial de uma arma cortante em dano profundo, você pode optar por melhorar essa habilidade fundindo os usos da habilidade básica para obter “corte profundo aprimorado”, que transforma até 4 pontos de dano superficial de uma arma cortante em dano profundo.
 
-Fundir características não consome experiência, mas é necessário cuidado nessa escolha, uma vez fundidas, será necessário gastar **`1 Exp.`** para separar cartas fundidas.
+Fundir características não consome experiência, mas é necessário cuidado nessa escolha, uma vez fundidas, será necessário gastar **`1 Exp.`** para separar características fundidas.
 
 ### Flexibilidade vs Poder
 

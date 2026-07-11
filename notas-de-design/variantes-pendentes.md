@@ -42,13 +42,15 @@ Ver [decisões](decisoes/2026-07-11-reunioes-de-mecanica.md), item 3. Registro o
 - São efeitos bem diferentes em pilha de vantagens/desvantagens; decidir também como
   interage com anulação de dados.
 
-## 3. Aptidões — frequência de uso — 🔍 EM INVESTIGAÇÃO (11/07/2026)
+## 3. Aptidões — frequência de uso — ✅ DECIDIDO em 11/07/2026
+
+**Decisão: a versão real é "quantas quiser (se disponíveis), recuperação em descanso
+longo"** — a menção a "uma vez por dia" na página de traços era resquício incorreto de
+versão antiga e foi corrigida. Ver
+[decisões 14h58](decisoes/2026-07-11-aptidoes-e-cartas.md), item 3. Registro original:
 
 - **Página Aptidões (vigente):** usa quantas quiser; recuperação em **descanso longo**.
-- **Página Traços (variante):** aptidões aplicáveis **uma vez por dia**.
-- O grupo suspeita de resquício de versão antiga ou problema de interpretação. Antes de
-  decidir, a IA deve apresentar **onde cada versão foi encontrada e o contexto exato**
-  (fonte no Notion, frase completa, página vizinha).
+- **Página Traços (variante, descartada):** aptidões aplicáveis **uma vez por dia**.
 
 ## 4. Custo da magia (camada fantasia)
 

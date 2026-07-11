@@ -9,7 +9,7 @@ atualizado-em: 2026-07-11
 
 # Aptidões
 
-Aptidões são recursos consumíveis ligados a um [Atributo](02-atributos.md) (**`Físico`**, **`Ágil`**, **`Mental`** e **`Social`**), que podem ser utilizados em qualquer ação relacionada ao atributo da aptidão. Ao gastar uma aptidão, o jogador escolhe **re-rolar o dado do teste ou o dado do contrateste**, **depois de saber o resultado** — uma nova chance de obter um resultado mais favorável. Aptidões não concedem vantagem nem desvantagem: não alteram a quantidade de dados rolados.
+Aptidões são recursos consumíveis ligados a um [Atributo](02-atributos.md) (**`Físico`**, **`Ágil`**, **`Mental`** e **`Social`**), que podem ser utilizados em qualquer ação relacionada ao atributo da aptidão. Ao gastar uma aptidão, o jogador escolhe **re-rolar o dado do teste ou o dado do contrateste**, **depois de saber o resultado** — uma nova chance de obter um resultado mais favorável. Aptidões não concedem vantagem nem desvantagem: não alteram a quantidade de dados rolados. Como regra geral, usar uma aptidão **não gasta** [pontos de ação](07-pontos-de-acao.md) (**`PA`**) — não existe situação em que uma aptidão gaste **`PA`**: o único custo é o consumo da própria aptidão.
 
 > ✅ Decidido em 11/07/2026: a mecânica oficial da aptidão é a re-rolagem (ver [notas-de-design/decisoes/2026-07-11-ajustes-pos-lote-1.md](../../notas-de-design/decisoes/2026-07-11-ajustes-pos-lote-1.md)).
 
@@ -50,7 +50,7 @@ O uso de aptidões altera a regra de [desempate](01-testes-e-contratestes.md#des
 
 ## Aptidões dentro e fora de conflito
 
-A regra é a **mesma dentro e fora de conflito**: sempre que houver rolagem de dados, é possível gastar quantas aptidões o jogador quiser — contanto que estejam disponíveis — em um teste de uma ação ou habilidade relacionados ao atributo daquela aptidão. Não há gasto de [pontos de ação](07-pontos-de-acao.md) (**`PA`**) para usar aptidões.
+A regra é a **mesma dentro e fora de conflito**: sempre que houver rolagem de dados, é possível gastar quantas aptidões o jogador quiser — contanto que estejam disponíveis — em um teste de uma ação ou habilidade relacionados ao atributo daquela aptidão.
 
 > ✅ Decidido em 11/07/2026: deixou de existir o **sucesso automático** fora de batalha e o limite de uma aptidão por teste. Fora de batalha também se rolam os dados, e a aptidão funciona igual: re-rolagem após o resultado (ver [notas-de-design/decisoes/2026-07-11-ajustes-pos-lote-1.md](../../notas-de-design/decisoes/2026-07-11-ajustes-pos-lote-1.md)).
 
@@ -68,4 +68,4 @@ Por padrão, um descanso longo recupera todas as aptidões consumidas.
 
 Existem habilidades para recuperar características suas e de outros personagens, assim como existem habilidades para descartá-las. O narrador também pode decretar outras formas de recuperar características durante um combate.
 
-> ⚠️ A DEFINIR: há uma variante pendente de decisão sobre esta regra — ver [notas-de-design/variantes-pendentes.md](../../notas-de-design/variantes-pendentes.md) (item 3, frequência de uso das aptidões — em investigação).
+> ✅ Decidido em 11/07/2026: pode-se usar quantas aptidões quiser (se disponíveis) e a recuperação é em descanso longo; a menção antiga a "uma vez por dia" era resquício incorreto (ver [notas-de-design/decisoes/2026-07-11-aptidoes-e-cartas.md](../../notas-de-design/decisoes/2026-07-11-aptidoes-e-cartas.md)).

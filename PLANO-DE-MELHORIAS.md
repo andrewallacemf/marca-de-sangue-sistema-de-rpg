@@ -64,6 +64,10 @@ Fontes: transcrições em notas-de-design/transcricoes/.*
   13 de grafia) — aguardando decisões do grupo.
 - [x] 🧪 Mecânica alternativa **habilidades por nível × fadiga** documentada em avaliação
   (conceitos/09) — testar em mesa antes de promover/descartar.
+- [x] Características e Aptidões revisadas (14h58): **cartas removidas do sistema**
+  (~32 menções), aptidões/traços "não gastam PA" na definição, typo do uso ilimitado
+  corrigido, módulos citados em características, variante nº 3 encerrada (quantas
+  quiser + descanso longo).
 - [ ] Próximas seções do livro base a revisar pelo grupo (continuar a leitura).
 - [ ] Decidir os achados da auditoria de terminologia (padronizações semânticas).
 

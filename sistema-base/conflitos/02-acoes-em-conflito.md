@@ -135,13 +135,9 @@ Uma vez utilizada, a habilidade fica indisponível até que uma situação permi
 
 **Atenção:** Usar uma habilidade não significa sucesso automático, a não ser que isso esteja escrito na descrição da habilidade. Na maioria das situações, ainda é preciso fazer **teste** e **contrateste**.
 
-> 💡 **Usando habilidades com cartas**
+> 💡 **Registrando os usos na ficha**
 >
-> Se você estiver jogando com um deck de cartas que reúne as suas habilidades, ao utilizá-las, você cria uma **pilha temporária de descarte** para onde elas serão direcionadas. Ao recuperar suas habilidades, devolva suas cartas para o seu **deck de habilidades disponíveis.**
-
-> 💡 **Usando habilidades na ficha**
->
-> Se ao invés de cartas você estiver jogando com as habilidades descritas na ficha, você deverá **riscar os espaços correspondentes aos seus usos**. Ao recuperar suas habilidades, apague as marcações. **Os espaços sem marcação passam a estar disponíveis.**
+> Ao utilizar uma habilidade descrita na ficha, você deverá **riscar os espaços correspondentes aos seus usos**. Ao recuperar suas habilidades, apague as marcações. **Os espaços sem marcação passam a estar disponíveis.**
 
 ## Movimentação
 

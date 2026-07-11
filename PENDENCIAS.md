@@ -36,10 +36,8 @@ parada para saber "no que dá pra ajudar?".
 | Definir custo em Exp. da nova "Especialização em ataque desarmado" | [listas/tracos-base.md](sistema-base/listas/tracos-base.md) | grupo | 2026-07-11 |
 | "Saltar" (lista de ações) descreve especialização com efeito além de anular desvantagem — alinhar com a nova categoria Conhecimentos | [listas/acoes-em-combate.md](sistema-base/listas/acoes-em-combate.md) | grupo | 2026-07-11 |
 | Revisar a propriedade **perfurante** das armas (cortante e contundente já decididos) | [listas/equipamentos-base.md](sistema-base/listas/equipamentos-base.md) | grupo | 2026-07-11 |
-| Aptidões: IA apresentar a origem/contexto das versões "1×/dia" vs "livre" antes de o grupo decidir | [notas-de-design/variantes-pendentes.md](notas-de-design/variantes-pendentes.md) (item 3) | IA → grupo | 2026-07-11 |
 | Criação de personagem: como cenários encaixam espécies/classes (variante nº 7) — **adiado para a fase Gaéria** | [criacao-de-personagem/01-passo-a-passo.md](sistema-base/criacao-de-personagem/01-passo-a-passo.md) | grupo | 2026-07-11 |
 | Rebalanceamento PA/movimento/XP/fadiga-5 e armas com dado: propostas prontas no plano, **aguardando playtest** | [PLANO-DE-MELHORIAS.md](PLANO-DE-MELHORIAS.md) (Lote 3) | grupo | 2026-07-11 |
-| Características: texto diz que traços "não são de uso ilimitado" mas descreve efeitos sempre ativos (provável typo) | [conceitos/03-caracteristicas.md](sistema-base/conceitos/03-caracteristicas.md) | grupo | 2026-07-11 |
 | Conflito social: texto anuncia "duas ações principais" mas lista três | [conflitos/04-conflito-social.md](sistema-base/conflitos/04-conflito-social.md) | grupo | 2026-07-11 |
 | "Arremessos concentrados": havia duas versões quase idênticas no manual (2 vs 3 Exp.) | [listas/habilidades-base-ageis.md](sistema-base/listas/habilidades-base-ageis.md) | grupo | 2026-07-11 |
 | Divergências tabela-resumo × descrição: Esmagar (PA), Investida e Recompor (Exp.) | [listas/](sistema-base/listas/) | grupo | 2026-07-11 |

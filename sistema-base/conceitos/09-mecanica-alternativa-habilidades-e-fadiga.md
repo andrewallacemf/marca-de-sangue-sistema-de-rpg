@@ -34,10 +34,21 @@ Distinguir dois tipos de fadiga, espelhando a lógica superficial × profundo da
 
 Parte do grupo considerou a distinção complexa; ela fica em avaliação junto com o restante da proposta.
 
+## Implicações e limites
+
+Implicações da proposta documentadas em 11/07/2026 (decisões nº 4 e 7 — ver [notas-de-design/decisoes/2026-07-11-aptidoes-e-cartas.md](../../notas-de-design/decisoes/2026-07-11-aptidoes-e-cartas.md)). A proposta segue em avaliação e nada disto altera a regra vigente:
+
+- **[Aptidões](04-aptidoes.md) ficam fora da mecânica:** mantêm o custo próprio (o consumo da própria aptidão) e **nunca** gastam fadiga — a fadiga como combustível vale **apenas para habilidades**.
+- **Deixa de existir a compra de usos** de habilidade.
+- **Deixa de existir a fusão** de habilidades iguais — substituída pela **evolução de nível**: compra-se a habilidade com **`Exp.`** e paga-se **`Exp.`** para subir de nível; o nível determina a força da habilidade.
+- **A recuperação continua sendo por descanso:** recupera-se a **fadiga**, não "usos".
+- **Registro concentrado na ficha:** o acompanhamento de uso fica todo na barra de fadiga da ficha — um lugar só, mesmo com muitas habilidades.
+- **Sinergia com a direção da magia** (direção de design já conversada pelo grupo): magias **simples** gastam **fadiga**; magias **complexas** gastam **vida/dano**.
+
 ## Registro físico
 
 Há a preocupação de apagar e preencher a fadiga no papel a todo momento; a sugestão é marcar a fadiga com **um dado sobre a ficha**. Não é um bloqueador da proposta.
 
 ## Origem
 
-Decisão nº 7 de 11/07/2026 — ver [notas-de-design/decisoes/2026-07-11-revisao-testes-aptidoes-fadiga.md](../../notas-de-design/decisoes/2026-07-11-revisao-testes-aptidoes-fadiga.md).
+Decisão nº 7 de 11/07/2026 — ver [notas-de-design/decisoes/2026-07-11-revisao-testes-aptidoes-fadiga.md](../../notas-de-design/decisoes/2026-07-11-revisao-testes-aptidoes-fadiga.md). Implicações e limites detalhados na revisão das 14h58 do mesmo dia — ver [notas-de-design/decisoes/2026-07-11-aptidoes-e-cartas.md](../../notas-de-design/decisoes/2026-07-11-aptidoes-e-cartas.md).

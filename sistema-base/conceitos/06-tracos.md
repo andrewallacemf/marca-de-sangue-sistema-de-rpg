@@ -9,11 +9,11 @@ atualizado-em: 2026-07-11
 
 # Traços
 
-Traços são características passivas e não consumíveis que podem ter efeito em determinadas situações. Uma vez comprado, o traço permanece ativo enquanto seus requisitos estiverem em vigor.
+Traços são características passivas e não consumíveis que podem ter efeito em determinadas situações. Uma vez comprado, o traço permanece ativo enquanto seus requisitos estiverem em vigor. Traços **não gastam** [pontos de ação](07-pontos-de-acao.md) (**`PA`**): são passivos, seus efeitos estão sempre ativos e não há gasto de nenhum tipo para mantê-los.
 
 Tanto dentro quanto fora de batalha, basta observar os efeitos do traço e aplicá-los durante as situações propícias. **Os efeitos dos traços não são consumíveis e, portanto, não necessitam de recuperação.**
 
-Note que os traços também diferem das [aptidões](04-aptidoes.md). Traços se aplicam sempre que for cabível (de forma passiva) e as aptidões podem ser aplicadas uma vez por dia (de forma ativa).
+Note que os traços também diferem das [aptidões](04-aptidoes.md). Traços se aplicam sempre que for cabível (de forma passiva), enquanto as aptidões são consumidas a cada uso (de forma ativa): pode-se usar quantas estiverem disponíveis e a recuperação acontece em um descanso longo.
 
 **Traços não possuem níveis** — níveis são característica das [habilidades](05-habilidades.md). A progressão entre traços acontece por **requisitos**, que funcionam como bloqueio: um traço pode exigir outro traço (como uma técnica) para ser comprado.
 
@@ -49,4 +49,4 @@ Aspectos são traços que afetam a forma como o personagem responde a determinad
 
 Para ver os aspectos disponíveis, consulte a lista de aspectos base na “Lista de traços base” na seção “Recursos básicos do sistema” e a lista de aspectos específicos do cenário escolhido.
 
-> ⚠️ A DEFINIR: há uma variante pendente de decisão sobre esta regra — ver [notas-de-design/variantes-pendentes.md](../../notas-de-design/variantes-pendentes.md) (item 3, frequência de uso das aptidões — em investigação).
+> ✅ Decidido em 11/07/2026: pode-se usar quantas aptidões quiser (se disponíveis) e a recuperação é em descanso longo; a menção antiga a "uma vez por dia" era resquício incorreto (ver [notas-de-design/decisoes/2026-07-11-aptidoes-e-cartas.md](../../notas-de-design/decisoes/2026-07-11-aptidoes-e-cartas.md)).
