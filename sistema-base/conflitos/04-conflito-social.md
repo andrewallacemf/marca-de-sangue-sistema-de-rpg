@@ -15,7 +15,7 @@ O sistema de embate social utiliza uma malha emocional — uma ferramenta visual
 
 O objetivo do conflito social é acumular pontos. Os participantes podem somar pontos para alcançar um objetivo comum ou competir por objetivos opostos. A primeira forma de se finalizar uma partida é pelo número de turnos, explicada na próxima seção. O embate termina quando um dos lados acumula 5 pontos multiplicados pelo número de personagens envolvidos. Por exemplo: em um conflito com três personagens, o embate termina quando um lado alcança 15 pontos. O embate também se encerra quando a **diferença** de pontuação entre os dois lados atinge o valor necessário para determinar a vitória ou derrota.
 
-> 💡 PROPOSTA (IA) — exemplo sugerido, revisar:
+> ✅ Exemplo aprovado pelo grupo em 11/07/2026.
 >
 > *Exemplo: Heitor e Alexander tentam convencer a estalajadeira Mirena a esconder o grupo por uma noite. São **3 personagens envolvidos**, então o embate termina quando um dos lados acumula **15 pontos (5 × 3)**. O narrador classifica o conflito como moderado (até 5 turnos). Na quarta rodada, a dupla alcança os 15 pontos com uma sequência de argumentações bem-sucedidas e vence o conflito imediatamente, antes do limite de turnos.*
 

@@ -3,7 +3,7 @@ titulo: Traços
 tipo: regra
 cenario: base
 status: revisao
-tags: [tracos, tecnicas, especializacoes, maestrias, aspectos]
+tags: [tracos, tecnicas, maestrias, aspectos]
 atualizado-em: 2026-07-11
 ---
 
@@ -27,26 +27,18 @@ Algumas ações exigem conhecimento para serem realizadas: andar, todo mundo sab
 
 Técnicas são traços que representam esse saber: possuir a técnica em uma atividade (ex.: **"Técnica em natação"**) **apenas anula a desvantagem natural** dos testes daquela atividade. **Técnicas não concedem vantagem.**
 
-As técnicas também servem de requisito para outros traços: tanto as especializações (abaixo) quanto os traços de poderes especiais (ex.: "nadar na lava", que desbloqueia o que normalmente seria impossível) exigem a técnica correspondente para serem comprados.
-
-## Especializações
-
-Especializações **são traços** relacionados ao domínio de determinadas atividades, como agarrar, saltar, empurrar, intimidar, investigar, etc. Comprar especialização em uma atividade concede **vantagem** nos testes relacionados à atividade. Toda especialização tem como **requisito** possuir a técnica correspondente àquela atividade.
-
-A maioria das especializações possui um atributo atrelado a ela, indicando que aptidões podem ser utilizadas para dar suporte àquela ação especializada.
-
-Para ver as especializações disponíveis, consulte a lista de especializações base na “Lista de traços base” na seção “Recursos básicos do sistema” e a lista de especializações específicas do cenário escolhido.
+As técnicas também servem de requisito para outros traços: maestrias e traços de poderes especiais (ex.: "nadar na lava", que desbloqueia o que normalmente seria impossível) podem exigir a técnica correspondente para serem comprados.
 
 ## Maestrias
 
-Maestrias são traços relacionados ao domínio de propriedades específicas de armas, armaduras e itens (equipamentos). Comprar maestrias permite que o personagem use os efeitos específicos daquela propriedade do equipamento.
+Maestrias são traços relacionados ao domínio de propriedades específicas de armas, armaduras, itens (equipamentos) e formas de combate — inclusive o **ataque desarmado**. Comprar maestrias permite que o personagem use os efeitos específicos daquela propriedade ou forma de combate.
 
 Para ver as maestrias disponíveis, consulte a lista de maestrias base na “Lista de traços base” na seção “Recursos básicos do sistema” e a lista de maestrias específicas do cenário escolhido.
+
+> ✅ Decidido em 11/07/2026: a categoria **especializações deixou de existir** — as antigas especializações que anulavam desvantagem natural viraram **técnicas**, e a "especialização em ataque desarmado" virou **maestria** (mesmo custo das demais). Ver [notas-de-design/decisoes/2026-07-11-fadiga-aspectos-organizacao.md](../../notas-de-design/decisoes/2026-07-11-fadiga-aspectos-organizacao.md).
 
 ## Aspectos
 
 Aspectos são traços que afetam a forma como o personagem responde a determinadas situações. Comprar aspectos permite que o personagem realize ações ou ignore regras em determinadas situações.
 
 Para ver os aspectos disponíveis, consulte a lista de aspectos base na “Lista de traços base” na seção “Recursos básicos do sistema” e a lista de aspectos específicos do cenário escolhido.
-
-> ✅ Decidido em 11/07/2026: pode-se usar quantas aptidões quiser (se disponíveis) e a recuperação é em descanso longo; a menção antiga a "uma vez por dia" era resquício incorreto (ver [notas-de-design/decisoes/2026-07-11-aptidoes-e-cartas.md](../../notas-de-design/decisoes/2026-07-11-aptidoes-e-cartas.md)).

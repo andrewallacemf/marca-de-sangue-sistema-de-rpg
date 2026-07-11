@@ -36,15 +36,19 @@ No próprio turno, o personagem pode se esforçar além do limite e comprar pont
 
 ## Penalidades por acúmulo
 
-A fadiga acumulada pesa no corpo: **a cada 10 pontos acumulados, o personagem sofre −1 `PA`**.
+A fadiga acumulada pesa no corpo: **a cada 10 pontos acumulados, o personagem sofre −1 `PA`**. Ao alcançar **40 pontos de fadiga, o personagem fica inconsciente**.
 
-| Fadiga acumulada | Penalidade em `PA` |
+| Fadiga acumulada | Efeito |
 |:---:|:---:|
 | 0 a 9 | — |
 | 10 a 19 | −1 `PA` |
 | 20 a 29 | −2 `PA` |
 | 30 a 39 | −3 `PA` |
-| ...e assim por diante | −1 `PA` adicional a cada 10 pontos |
+| **40 ou mais** | **Inconsciente** |
+
+**Piso de `PA`:** nenhuma combinação de penalidades (fadiga, redutores de armadura etc.) reduz um personagem a menos de **4 `PA` por turno** — a não ser que ele esteja **inconsciente**.
+
+> ✅ Revisado pelo grupo em 11/07/2026 (inconsciência aos 40 pontos e piso de 4 `PA`) — ver [notas-de-design/decisoes/2026-07-11-fadiga-aspectos-organizacao.md](../../notas-de-design/decisoes/2026-07-11-fadiga-aspectos-organizacao.md).
 
 > 💡 O rebalanceamento experimental do [PLANO-DE-MELHORIAS.md](../../PLANO-DE-MELHORIAS.md) (Lote 3) pode mudar essa razão para **a cada 5 pontos**, acompanhando a proposta de dobrar os `PA` dos personagens. Até o playtest validar os números, vale a tabela acima.
 

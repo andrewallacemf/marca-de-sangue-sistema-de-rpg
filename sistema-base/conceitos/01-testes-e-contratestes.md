@@ -76,43 +76,7 @@ A desvantagem natural é removida por um **traço de técnica** na ação corres
 
 ## Condições de ambiente e terreno
 
-As condições de **ambiente e terreno** não são específicas de batalha: valem para qualquer cena e são **contextuais** — quem avalia se a condição afeta a ação é o **narrador**, olhando o contexto. A mesma condição pode atrapalhar uma ação e ser irrelevante para outra: a escuridão atrapalha achar o caminho ou interagir com o que está ao redor, mas não atrapalha ponderar.
-
-Uma condição pode gerar **dois tipos de efeito, que podem coexistir** na mesma situação:
-
-1. **`Vantagem`** ou **`desvantagem`** no teste ou no contrateste;
-2. **Efeitos mecânicos próprios** — ex.: **terreno difícil** (ladeira, lama, água funda) **dobra o custo de `PA` do deslocamento**.
-
-> *Exemplos de coexistência: avançar com água na cintura contra a correnteza = custo de deslocamento dobrado **+** teste físico para não ser arrastado; uma escalada íngreme = custo dobrado **+** teste com desvantagem para quem não tem a [técnica](06-tracos.md) de escalada.*
-
-> ✅ Decidido em 11/07/2026 (ver [notas-de-design/decisoes/2026-07-11-revisao-testes-aptidoes-fadiga.md](../../notas-de-design/decisoes/2026-07-11-revisao-testes-aptidoes-fadiga.md)).
-
-Situações comuns que costumam gerar esses modificadores:
-
-> 💡 PROPOSTA (IA) — lista inicial de exemplos, revisar:
-
-- Terreno difícil ou instável;
-- Escuridão ou visibilidade reduzida;
-- Lutar dentro d'água;
-- Chuva forte ou vento;
-- Alvo em cobertura;
-- Calor ou frio extremos;
-- Superfície escorregadia.
-
-O detalhamento completo dessas condições virá no **livro do narrador** (ver [PLANO-DE-MELHORIAS.md](../../PLANO-DE-MELHORIAS.md), Lote 5).
-
-### Elevação
-
-Diferença de altura entre atacante e alvo só conta como **elevação** a partir de **1 metro** — abaixo disso, é como se os dois estivessem no mesmo nível. Havendo elevação:
-
-- **Ataques à distância de cima para baixo** são feitos com **`vantagem`**;
-- **Ataques corpo a corpo de cima para baixo** são **normais** (sem vantagem);
-- **Quem está abaixo ataca quem está acima com `desvantagem`** (qualquer ataque);
-- **O alcance continua valendo:** uma arma corpo a corpo com 1 metro de alcance não atinge um alvo 1 metro acima — o narrador arbitra pela cena se o ataque é possível.
-
-O racional: superioridade visual e gravidade favorecem quem está no alto; quem está embaixo já paga `PA` para subir e ainda luta contra a posição.
-
-> ✅ Decidido em 11/07/2026 (ver [notas-de-design/decisoes/2026-07-11-revisao-testes-aptidoes-fadiga.md](../../notas-de-design/decisoes/2026-07-11-revisao-testes-aptidoes-fadiga.md)).
+O ambiente e o terreno podem conceder **vantagens, desvantagens e efeitos mecânicos próprios** aos testes e contratestes, a critério do narrador. As regras completas (incluindo **terreno difícil** e **elevação**) estão em [Conflito físico — Condições de ambiente e terreno](../conflitos/01-conflito-fisico.md#condições-de-ambiente-e-terreno), pois é em conflito que elas mais aparecem — mas valem para qualquer cena.
 
 ## Modificadores inversos
 

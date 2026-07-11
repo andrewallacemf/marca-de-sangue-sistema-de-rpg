@@ -68,6 +68,13 @@ Fontes: transcrições em notas-de-design/transcricoes/.*
   (~32 menções), aptidões/traços "não gastam PA" na definição, typo do uso ilimitado
   corrigido, módulos citados em características, variante nº 3 encerrada (quantas
   quiser + descanso longo).
+- [x] Fadiga revisada e aprovada (15h24) com correções: **inconsciência aos 40 pontos**
+  e **piso de 4 PA por turno**.
+- [x] Terreno/elevação **movidos** para Conflito físico (correção de posicionamento).
+- [x] **Especializações extintas** — ataque desarmado virou maestria (1 exp.); exemplo do
+  conflito social e lista de técnicas aprovados; **aspectos saneados** item a item
+  (Lépido 3, custos 4, +4 na tabela, Versatilidade fundida no Firme — tensão de níveis
+  registrada).
 - [ ] Próximas seções do livro base a revisar pelo grupo (continuar a leitura).
 - [ ] Decidir os achados da auditoria de terminologia (padronizações semânticas).
 

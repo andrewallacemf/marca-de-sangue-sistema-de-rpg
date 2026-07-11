@@ -3,7 +3,7 @@ titulo: Lista de Traços base
 tipo: regra
 cenario: base
 status: revisao
-tags: [tracos, tecnicas, especializacoes, maestrias, aspectos]
+tags: [tracos, tecnicas, maestrias, aspectos]
 atualizado-em: 2026-07-11
 ---
 
@@ -15,7 +15,7 @@ atualizado-em: 2026-07-11
 
 Técnicas são traços que **apenas anulam a desvantagem natural** dos testes da atividade correspondente — não concedem vantagem (ver [Traços](../conceitos/06-tracos.md)).
 
-> 💡 PROPOSTA (IA) — migração sugerida a partir das antigas especializações, revisar:
+> ✅ Lista aprovada pelo grupo em 11/07/2026 (migrada das antigas especializações).
 
 | Atividade | Atributo | **Custo de compra** |
 | --- | --- | --- |
@@ -34,42 +34,34 @@ Técnicas são traços que **apenas anulam a desvantagem natural** dos testes da
 | Técnica em **Tratar/Curar** | `Social` ou `Mental` | **`3 exp.`** |
 | Técnica em **Negociar** | `Social` ou `Mental` | **`3 exp.`** |
 
-## Especializações base
-
-Especializações são traços que concedem **vantagem** nos testes da atividade correspondente. Toda especialização tem como **requisito** possuir a técnica correspondente àquela atividade (ver [Traços](../conceitos/06-tracos.md)).
-
-As entradas de especialização anteriores à decisão de 11/07/2026 descreviam apenas a anulação da desvantagem natural e foram migradas (como proposta) para a seção de Técnicas, acima. A única especialização definida pelo grupo até o momento é a listada abaixo.
-
-### Especialização em ataque desarmado
-
-**Custo de compra:** —
-
-#### Descrição
-
-Permite realizar **ataque mirado sem desvantagem**, valendo **apenas para ataques desarmados** (ex.: soco). *(Decisão de 11/07/2026: viabiliza builds de lutador.)*
-
-#### Requisitos de uso
-
-> 💡 PROPOSTA (IA) — revisar: requisito = possuir a técnica correspondente (ex.: "Técnica em ataque desarmado"). O custo de compra também ainda não foi definido pelo grupo.
-
 ## Maestrias base
 
-| **Equipamento** | **Custo de compra** |
-| --- | --- |
-| Maestria em **armas cortantes `CORT.`** | **`1 exp.`** |
-| Maestria em **armas contundentes `CONT.`** | **`1 exp.`** |
-| Maestria em **armas perfurantes `PERF.`** | **`1 exp.`** |
-| Maestria em **armas de agarrar `AGAR.`** | **`1 exp.`** |
-| Maestria em **armas versáteis `VERS.`** | **`1 exp.`** |
-| Maestria em **armas de deflexão `DEFL.`** | **`1 exp.`** |
-| Maestria em **projéteis `PROJ.`** | **`1 exp.`** |
-| Maestria em **armaduras leves** | **`1 exp.`** |
-| Maestria em **armaduras médias** | **`1 exp.`** |
-| Maestria em **armaduras pesadas** | **`1 exp.`** |
+> ✅ Decidido em 11/07/2026: a categoria "especializações" deixou de existir — a antiga
+> "especialização em ataque desarmado" agora é a maestria abaixo, com o mesmo custo das demais.
+
+| **Equipamento / forma de combate**         | **Custo de compra** |
+| ------------------------------------------ | ------------------- |
+| Maestria em **armas cortantes `CORT.`**    | **`1 exp.`**        |
+| Maestria em **armas contundentes `CONT.`** | **`1 exp.`**        |
+| Maestria em **armas perfurantes `PERF.`**  | **`1 exp.`**        |
+| Maestria em **armas de agarrar `AGAR.`**   | **`1 exp.`**        |
+| Maestria em **armas versáteis `VERS.`**    | **`1 exp.`**        |
+| Maestria em **armas de deflexão `DEFL.`**  | **`1 exp.`**        |
+| Maestria em **projéteis `PROJ.`**          | **`1 exp.`**        |
+| Maestria em **armaduras leves**            | **`1 exp.`**        |
+| Maestria em **armaduras médias**           | **`1 exp.`**        |
+| Maestria em **armaduras pesadas**          | **`1 exp.`**        |
+| Maestria em **ataque desarmado `DESA.`**   | **`1 exp.`**        |
+
+**Maestria em ataque desarmado:** permite realizar **ataque mirado sem desvantagem**,
+valendo **apenas para ataques desarmados** (ex.: soco). Viabiliza builds de lutador.
 
 ## Aspectos base
 
-> ⚠️ A DEFINIR: nesta tabela do manual, "Lépido" aparece duas vezes (com `3 exp.` e `4 exp.`), "Versatilidade" não possui entrada detalhada, e vários custos divergem das entradas detalhadas abaixo (Alerta, Vigilante, Escorregadio, Reativo e Apoiador constam com `3 exp.` na tabela e `4 Exp.` na entrada). Os aspectos Maratonista, Dorminhoco, Firme e Burro de carga têm entrada detalhada mas não constam na tabela. Conferir os valores corretos.
+> ✅ Tabela saneada e aprovada pelo grupo em 11/07/2026: duplicata de "Lépido" removida
+> (vale `3 exp.`), custos alinhados às entradas detalhadas (Alerta, Vigilante,
+> Escorregadio, Reativo e Apoiador = `4 exp.`), aspectos com entrada incluídos na tabela,
+> e "Versatilidade" **fundida no aspecto Firme** (na v0.4.1 ela tinha o mesmo efeito).
 
 | **Aspecto** | **Custo de compra** |
 | --- | --- |
@@ -79,14 +71,16 @@ Permite realizar **ataque mirado sem desvantagem**, valendo **apenas para ataque
 | Resistente | **`3 exp.`** |
 | Protetor | **`4 exp.`** |
 | Blindado | **`4 exp.`** |
-| Vigilante | **`3 exp.`** |
-| Escorregadio | **`3 exp.`** |
-| Reativo | **`3 exp.`** |
-| Alerta | **`3 exp.`** |
-| Lépido | **`4 exp.`** |
-| Versatilidade | **`3 exp.`** |
-| Apoiador | **`3 exp.`** |
+| Vigilante | **`4 exp.`** |
+| Escorregadio | **`4 exp.`** |
+| Reativo | **`4 exp.`** |
+| Alerta | **`4 exp.`** |
+| Apoiador | **`4 exp.`** |
 | Corredor | **`8 exp.`** |
+| Maratonista | **`4 exp.`** |
+| Dorminhoco | **`7 exp.`** |
+| Firme | **`4 exp.`** |
+| Burro de carga | **`6 exp.`** |
 
 Aspectos são traços que afetam a forma como o personagem responde a determinadas situações. Comprar aspectos permite que o personagem realize ações ou ignore regras em determinadas situações.
 
@@ -243,6 +237,21 @@ Recebe **`+1d10 de vantagem`** para esquivar de ataques de oportunidade.
 #### Descrição
 
 Pode usar armas pesadas com apenas uma mão.
+
+> ✅ Decidido em 11/07/2026: o antigo traço "Versatilidade" (v0.4.1) foi **fundido no
+> Firme**, trazendo sua progressão:
+
+#### Progressão (herdada da antiga Versatilidade)
+
+1. ...desde que sejam armas longas e perfurantes, com −3 de dano;
+2. ...desde que sejam armas longas, com −3 de dano;
+3. Qualquer arma pesada, com −3 de dano;
+4. Qualquer arma pesada, sem redução de dano.
+
+> ⚠️ A DEFINIR: a progressão herdada conflita com a regra "**traços não possuem níveis**"
+> (decisão de 11/07/2026, ver [conceitos/06-tracos.md](../conceitos/06-tracos.md)). O grupo
+> precisa decidir: (a) transformar os 4 passos em traços encadeados por requisito;
+> (b) abrir exceção para aspectos evolutivos; ou (c) achatar o Firme num efeito único.
 
 #### Condição de uso (gatilho)
 

@@ -19,6 +19,8 @@ Para ver a lista de ações básicas disponíveis e a lista de habilidades bási
 
 Todo personagem só pode utilizar até 10 PA para se locomover. Para elevar esse limite é necessário adquirir habilidade específica para isso. Se o deslocamento é maior por conta de habilidade, ele não é contabilizado no limite porque o custo foi gasto em habilidade e não diretamente em deslocamento.
 
+**Piso de `PA`:** penalidades (acúmulo de [fadiga](08-fadiga.md), redutores de armadura etc.) nunca reduzem um personagem a menos de **4 `PA` por turno** — a não ser que ele esteja inconsciente.
+
 ## Adquirindo mais pontos de ação
 
 O número de pontos de ação dos personagens pode aumentar com a progressão do jogo, de acordo com a tabela de compras de **`PA`** na seção “Compra de pontos de ação” na seção “Recursos básicos do sistema”.
