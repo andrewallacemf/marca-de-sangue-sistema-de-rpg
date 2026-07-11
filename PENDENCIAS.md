@@ -30,11 +30,12 @@ parada para saber "no que dá pra ajudar?".
 
 | Pendência | Onde | Quem | Desde |
 |-----------|------|------|-------|
-| Conflito social: 5 vs 10 pontos por personagem para vitória (variante nº 1) + exemplos incompletos ("???") no manual | [conflitos/04-conflito-social.md](sistema-base/conflitos/04-conflito-social.md) | grupo | 2026-07-11 |
-| Especialização: "remove desvantagem natural" vs "concede vantagem" (variante nº 2) | [conceitos/06-tracos.md](sistema-base/conceitos/06-tracos.md) | grupo | 2026-07-11 |
-| Aptidões: uso livre com descanso longo vs "uma vez por dia" (variante nº 3) | [conceitos/04-aptidoes.md](sistema-base/conceitos/04-aptidoes.md) | grupo | 2026-07-11 |
-| Fadiga: mecânica base não definida — capacidade, recuperação, limite (variante nº 5) | [conceitos/08-fadiga.md](sistema-base/conceitos/08-fadiga.md) | grupo | 2026-07-11 |
-| Criação de personagem: como cenários encaixam espécies/classes (variante nº 7) | [criacao-de-personagem/01-passo-a-passo.md](sistema-base/criacao-de-personagem/01-passo-a-passo.md) | grupo | 2026-07-11 |
+| **Executar Lote 1 do [PLANO-DE-MELHORIAS.md](PLANO-DE-MELHORIAS.md)** — aplicar as decisões de 11/07 (fadiga, conflito social, desvantagem natural, reação, posicionamento, propriedades de armas, armadura...) | [PLANO-DE-MELHORIAS.md](PLANO-DE-MELHORIAS.md) | IA + grupo | 2026-07-11 |
+| Escolher o **nome do traço de conhecimento** (que anula desvantagem natural) — "especialização" engana, "aptidão" colide | [notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md](notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md) | grupo | 2026-07-11 |
+| Revisar a propriedade **perfurante** das armas (cortante e contundente já decididos) | [listas/equipamentos-base.md](sistema-base/listas/equipamentos-base.md) | grupo | 2026-07-11 |
+| Aptidões: IA apresentar a origem/contexto das versões "1×/dia" vs "livre" antes de o grupo decidir | [notas-de-design/variantes-pendentes.md](notas-de-design/variantes-pendentes.md) (item 3) | IA → grupo | 2026-07-11 |
+| Criação de personagem: como cenários encaixam espécies/classes (variante nº 7) — **adiado para a fase Gaéria** | [criacao-de-personagem/01-passo-a-passo.md](sistema-base/criacao-de-personagem/01-passo-a-passo.md) | grupo | 2026-07-11 |
+| Rebalanceamento PA/movimento/XP/fadiga-5 e armas com dado: propostas prontas no plano, **aguardando playtest** | [PLANO-DE-MELHORIAS.md](PLANO-DE-MELHORIAS.md) (Lote 3) | grupo | 2026-07-11 |
 | Características: texto diz que traços "não são de uso ilimitado" mas descreve efeitos sempre ativos (provável typo) | [conceitos/03-caracteristicas.md](sistema-base/conceitos/03-caracteristicas.md) | grupo | 2026-07-11 |
 | Conflito social: texto anuncia "duas ações principais" mas lista três | [conflitos/04-conflito-social.md](sistema-base/conflitos/04-conflito-social.md) | grupo | 2026-07-11 |
 | "Arremessos concentrados": havia duas versões quase idênticas no manual (2 vs 3 Exp.) | [listas/habilidades-base-ageis.md](sistema-base/listas/habilidades-base-ageis.md) | grupo | 2026-07-11 |
@@ -47,6 +48,6 @@ parada para saber "no que dá pra ajudar?".
 
 | Pendência | Onde | Quem | Desde |
 |-----------|------|------|-------|
-| Custo da magia: saúde vs sangue vs fadiga — três direções de design (variante nº 4) | [notas-de-design/variantes-pendentes.md](notas-de-design/variantes-pendentes.md) | grupo | 2026-07-11 |
-| "Experiência de Veículos" citada mas nunca definida (variante nº 6) — resolver na Fase 2 | [cenarios/colapso/](cenarios/colapso/) | grupo | 2026-07-11 |
+| Custo da magia: saúde vs sangue vs fadiga (variante nº 4) — **adiado para a fase de cenários** | [notas-de-design/variantes-pendentes.md](notas-de-design/variantes-pendentes.md) | grupo | 2026-07-11 |
+| "Experiência de Veículos" citada mas nunca definida (variante nº 6) — resolver na Fase 2 do Colapso; **pedir contexto ao Gabriel** | [cenarios/colapso/](cenarios/colapso/) | grupo | 2026-07-11 |
 | Converter (ou remover) o catálogo de magias derivado de D&D 5e — entra como rascunho na Fase 3, não coberto pela licença CC | [cenarios/gaeria/](cenarios/gaeria/) | grupo | 2026-07-11 |

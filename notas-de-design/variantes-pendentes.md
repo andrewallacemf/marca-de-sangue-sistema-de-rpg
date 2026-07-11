@@ -17,7 +17,10 @@ grupo decidir caso a caso. Cada item tem linha correspondente no
 
 ---
 
-## 1. Conflito social — pontos para vitória
+## 1. Conflito social — pontos para vitória — ✅ DECIDIDO em 11/07/2026
+
+**Decisão: 5 pontos × personagens** (10 demorava demais nos testes). Falta completar os
+exemplos. Ver [decisões](decisoes/2026-07-11-reunioes-de-mecanica.md). Registro original:
 
 - **Vigente (manual):** vitória ao atingir **5 pontos × número de personagens** no lado
   oposto da malha emocional (ex.: 3 personagens = 15 pontos). Obs.: os exemplos do manual
@@ -27,18 +30,25 @@ grupo decidir caso a caso. Cada item tem linha correspondente no
 - Na variante, "Ponderar" não inicia teste; na vigente, "Ponderar" **inicia um teste e
   contrateste**.
 
-## 2. Especialização (traço) — efeito
+## 2. Especialização (traço) — efeito — ✅ DECIDIDO em 11/07/2026 (nome pendente)
+
+**Decisão: as duas variantes viraram traços diferentes** — um traço de conhecimento
+anula a desvantagem natural (nome a definir); "especialização" com requisito dá
+vantagem. Sem níveis. Ver [decisões](decisoes/2026-07-11-reunioes-de-mecanica.md), item 3.
+Registro original:
 
 - **Vigente (manual):** testes da especialização são feitos **sem a desvantagem natural**.
 - **Variante preservada:** testes da especialização ganham **uma vantagem**.
 - São efeitos bem diferentes em pilha de vantagens/desvantagens; decidir também como
   interage com anulação de dados.
 
-## 3. Aptidões — frequência de uso
+## 3. Aptidões — frequência de uso — 🔍 EM INVESTIGAÇÃO (11/07/2026)
 
 - **Página Aptidões (vigente):** usa quantas quiser; recuperação em **descanso longo**.
 - **Página Traços (variante):** aptidões aplicáveis **uma vez por dia**.
-- Decidir a redação única e corrigir a página perdedora.
+- O grupo suspeita de resquício de versão antiga ou problema de interpretação. Antes de
+  decidir, a IA deve apresentar **onde cada versão foi encontrada e o contexto exato**
+  (fonte no Notion, frase completa, página vizinha).
 
 ## 4. Custo da magia (camada fantasia)
 
@@ -50,11 +60,12 @@ Três direções coexistem no material:
 
 Decidir a direção antes de converter o catálogo de magias (hoje rascunho derivado de D&D 5e).
 
-## 5. Fadiga — mecânica base indefinida
+## 5. Fadiga — mecânica base indefinida — ✅ DECIDIDO em 11/07/2026
 
-A fadiga é **consumida** por várias regras (ataque de oportunidade, condições do Colapso,
-possivelmente magia), mas **não existe definição base**: quanto um personagem aguenta,
-como recupera, o que acontece no limite. Criar a seção em `sistema-base/conceitos/`.
+**Decisão:** fadiga vem de danos/efeitos e pode ser gasta voluntariamente — **2 fadiga
+= 1 PA extra**, teto por turno = PA total do personagem; reseta no descanso; penalidades
+por acúmulo. Falta escrever a seção em `conceitos/08-fadiga.md` (Lote 1 do
+[plano](../PLANO-DE-MELHORIAS.md)). Ver [decisões](decisoes/2026-07-11-reunioes-de-mecanica.md), item 2.
 
 ## 6. "Experiência de Veículos" (Colapso) — moeda não definida
 

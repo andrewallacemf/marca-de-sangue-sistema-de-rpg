@@ -33,6 +33,7 @@ texto simples (Markdown), de forma que:
 | **[COMECE-AQUI.md](COMECE-AQUI.md)** | O primeiro lugar que toda pessoa nova deve ler. |
 | **[CHECKLIST.md](CHECKLIST.md)** | O ciclo de trabalho em 1 página, para imprimir/deixar aberto. |
 | **[PENDENCIAS.md](PENDENCIAS.md)** | Tudo que falta definir ou escrever no sistema. |
+| **[PLANO-DE-MELHORIAS.md](PLANO-DE-MELHORIAS.md)** | O roteiro de execução das melhorias, em lotes ordenados. |
 | **[historico-de-versoes.md](historico-de-versoes.md)** | Changelog do **sistema** (Alpha 1.0.0a → 1.1.0b → …). |
 | **[LICENCA.md](LICENCA.md)** | CC BY-NC-SA 4.0 + créditos dos criadores. |
 | **[CONVENCOES.md](CONVENCOES.md)** | As regras de organização: como nomear arquivos, como estruturar cada página. |
