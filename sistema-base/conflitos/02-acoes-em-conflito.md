@@ -193,6 +193,6 @@ Além das ações pagas com `PA` no próprio turno, todo personagem tem, **fora 
 - O personagem **pode escolher não reagir**, para não gastar fadiga;
 - O **[ataque de oportunidade](#ataque-de-oportunidade)** é o caso clássico dessa regra: consome a reação da rodada e paga em fadiga o custo em `PA` da ação realizada;
 - **Traços** poderão conceder **reações extras**;
-- A reação **não** é necessária para contratestes (como esquiva e defesa), que continuam funcionando como descrito em [Testes e Contratestes](../conceitos/01-testes-e-contratestes.md) — contratestes não gastam fadiga.
+- A reação **não** é necessária para contratestes (como esquiva e defesa), que continuam funcionando como descrito em [Testes e Contratestes](../conceitos/01-testes-e-contratestes.md).
 
 > ✅ Reação como recurso por rodada decidida em 11/07/2026 (ver [notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md](../../notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md)); custo pago em fadiga e posição da seção após as ações decididos em 11/07/2026 (ver [notas-de-design/decisoes/2026-07-11-reacao-posicionamento-propriedades.md](../../notas-de-design/decisoes/2026-07-11-reacao-posicionamento-propriedades.md)).
