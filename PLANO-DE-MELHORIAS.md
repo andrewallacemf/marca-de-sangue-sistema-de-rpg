@@ -11,29 +11,24 @@ Este arquivo é o **roteiro de execução**: o que fazer, em que ordem, e o esta
 
 ## Lote 1 — Aplicar decisões fechadas na documentação
 
-*Mudanças de regra já decididas pelo grupo. IA pode executar; grupo revisa o diff.*
+*Mudanças de regra já decididas pelo grupo. **Aplicado pela IA em 11/07/2026 — aguardando
+revisão do grupo (diff no GitHub).***
 
-- [ ] 1.1 **Fadiga**: substituir o stub de `conceitos/08-fadiga.md` pela regra decidida
-  (fadiga por dano; gasto voluntário 2 fadiga = 1 PA; teto = PA total; reset no descanso;
-  penalidades por acúmulo), puxando o que já está espalhado em outras páginas.
-- [ ] 1.2 **Conflito social**: manter 5 pts × personagens; IA propõe os exemplos que
-  faltavam ("???"), grupo revisa.
-- [ ] 1.3 **Desvantagem natural**: documentar a mecânica em
-  `conceitos/01-testes-e-contratestes.md` (ou página própria).
-- [ ] 1.4 **Traços de conhecimento**: reestruturar `conceitos/06-tracos.md` e
-  `listas/tracos-base.md` — traço que anula desvantagem natural (nome ⏸ A DEFINIR),
-  especializações com requisito, poderes com requisito; sem níveis.
-- [ ] 1.5 **Reação**: adicionar a mecânica (1/rodada; ataque de oportunidade consome;
-  traços podem dar +1) em `conflitos/` e ajustar as menções a ataque de oportunidade.
-- [ ] 1.6 **Posicionamento**: remover "aberto" como escolha; esquecimento = desvantagem;
-  definição automática pela última ação; costas mantêm vantagem do atacante.
-- [ ] 1.7 **Propriedades de armas**: cortante → ataque de oportunidade ao sair do alcance
-  (remove mirar-cabeça); contundente → confirmar texto "reduz PA sem teste";
-  perfurante → ⏸ revisão pendente.
-- [ ] 1.8 **Novo traço**: Especialização em ataque desarmado (mirar sem desvantagem, só desarmado).
-- [ ] 1.9 **Armadura**: consolidar regra de registro (anota 1×, distribuição por locais,
-  durabilidade por local, 3 espaços, não empilha) em `listas/protecoes-base.md` /
-  `conflitos/03-saude-e-protecao.md`.
+- [x] 1.1 **Fadiga**: `conceitos/08-fadiga.md` reescrito com a regra decidida.
+- [x] 1.2 **Conflito social**: 5 pts confirmado; exemplo proposto pela IA marcado
+  `💡 PROPOSTA` para revisão.
+- [x] 1.3 **Desvantagem natural**: documentada em `conceitos/01-testes-e-contratestes.md`.
+- [x] 1.4 **Traços de conhecimento**: reestruturado em `conceitos/06-tracos.md` e
+  `listas/tracos-base.md` (14 especializações migradas para "Conhecimentos") —
+  ⏸ nome oficial da categoria a definir.
+- [x] 1.5 **Reação**: mecânica adicionada em `conflitos/`; ataque de oportunidade consome reação.
+- [x] 1.6 **Posicionamento**: só existe definido; esquecimento = desvantagem; definição
+  automática pela última ação; costas mantidas.
+- [x] 1.7 **Propriedades de armas**: cortante e contundente aplicados em
+  `listas/equipamentos-base.md` — ⏸ perfurante pendente de revisão.
+- [x] 1.8 **Novo traço**: Especialização em ataque desarmado adicionada — ⏸ custo em Exp. a definir.
+- [x] 1.9 **Armadura**: regra de uso/registro consolidada em `listas/protecoes-base.md` —
+  ⏸ tensão "reduz 1 de dano" × coluna "Redutor Dano 1–12" da tabela, a resolver.
 
 ## Lote 2 — Reestruturação em camadas (módulos e coleções)
 

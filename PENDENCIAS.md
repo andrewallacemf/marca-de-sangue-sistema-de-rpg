@@ -30,7 +30,11 @@ parada para saber "no que dá pra ajudar?".
 
 | Pendência | Onde | Quem | Desde |
 |-----------|------|------|-------|
-| **Executar Lote 1 do [PLANO-DE-MELHORIAS.md](PLANO-DE-MELHORIAS.md)** — aplicar as decisões de 11/07 (fadiga, conflito social, desvantagem natural, reação, posicionamento, propriedades de armas, armadura...) | [PLANO-DE-MELHORIAS.md](PLANO-DE-MELHORIAS.md) | IA + grupo | 2026-07-11 |
+| **Revisar o diff do Lote 1** (aplicado pela IA em 11/07): fadiga, desvantagem natural, reação, posicionamento, migração de 14 especializações → "Conhecimentos", exemplo proposto no conflito social | [PLANO-DE-MELHORIAS.md](PLANO-DE-MELHORIAS.md) (Lote 1) | grupo | 2026-07-11 |
+| Armadura: decisão diz "reduz 1 de dano", mas a tabela de proteções tem coluna "Redutor Dano" de 1–12 — alinhar regra × tabela | [listas/protecoes-base.md](sistema-base/listas/protecoes-base.md) | grupo | 2026-07-11 |
+| Contundente: definir **quantos** PA o acerto reduz (texto ficou genérico) | [listas/equipamentos-base.md](sistema-base/listas/equipamentos-base.md) | grupo | 2026-07-11 |
+| Definir custo em Exp. da nova "Especialização em ataque desarmado" | [listas/tracos-base.md](sistema-base/listas/tracos-base.md) | grupo | 2026-07-11 |
+| "Saltar" (lista de ações) descreve especialização com efeito além de anular desvantagem — alinhar com a nova categoria Conhecimentos | [listas/acoes-em-combate.md](sistema-base/listas/acoes-em-combate.md) | grupo | 2026-07-11 |
 | Escolher o **nome do traço de conhecimento** (que anula desvantagem natural) — "especialização" engana, "aptidão" colide | [notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md](notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md) | grupo | 2026-07-11 |
 | Revisar a propriedade **perfurante** das armas (cortante e contundente já decididos) | [listas/equipamentos-base.md](sistema-base/listas/equipamentos-base.md) | grupo | 2026-07-11 |
 | Aptidões: IA apresentar a origem/contexto das versões "1×/dia" vs "livre" antes de o grupo decidir | [notas-de-design/variantes-pendentes.md](notas-de-design/variantes-pendentes.md) (item 3) | IA → grupo | 2026-07-11 |
