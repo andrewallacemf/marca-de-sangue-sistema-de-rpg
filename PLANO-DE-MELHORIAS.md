@@ -46,7 +46,26 @@ revisão do grupo (diff no GitHub).***
   exclusivos) + módulos `veiculos/`, `armas-de-fogo/`, `mutacoes/`.
 - [x] 2.5 Candidatos mapeados (em `modulos/README.md` e `colecoes.md`): veículos, armas
   de fogo, mutações, armas exóticas (resgate v0.4.1), magia (futuro); coleção *armas*.
-- [ ] 2.6 ⏸ Extração real dos módulos — acontece na **Fase 2 da importação** (próximo passo).
+- [ ] 2.6 ⏸ Extração real dos módulos — acontece na **Fase 2 da importação**.
+  **Adiado em 11/07**: o grupo decidiu **revisar as mecânicas do livro base antes** de
+  qualquer trabalho em módulos e cenários.
+
+## Revisão do livro base — EM ANDAMENTO (prioridade atual)
+
+*Leitura seção a seção do sistema-base pelo grupo, com decisões aplicadas pela IA.
+Fontes: transcrições em notas-de-design/transcricoes/.*
+
+- [x] Testes e contratestes: ambiente/terreno contextual (2 tipos de efeito), regra de
+  **Elevação**, foreshadowing das aptidões, adendo "re-rolagem nunca em dano" (11/07).
+- [x] Aptidões: regra do **resultado mantido** (vale o valor que beneficia quem usou),
+  fila de re-rolagens, dever do narrador (11/07).
+- [x] Terminologia: **narrador** padronizado (22 substituições), dados com `d` minúsculo;
+  **auditoria de terminologia** entregue em notas-de-design/ (18 achados de termos +
+  13 de grafia) — aguardando decisões do grupo.
+- [x] 🧪 Mecânica alternativa **habilidades por nível × fadiga** documentada em avaliação
+  (conceitos/09) — testar em mesa antes de promover/descartar.
+- [ ] Próximas seções do livro base a revisar pelo grupo (continuar a leitura).
+- [ ] Decidir os achados da auditoria de terminologia (padronizações semânticas).
 
 ## Lote 2b — Processo e busca ✅ *(11/07)*
 

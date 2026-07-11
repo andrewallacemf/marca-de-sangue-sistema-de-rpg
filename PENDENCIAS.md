@@ -46,6 +46,10 @@ parada para saber "no que dá pra ajudar?".
 | Tabela de Aspectos: "Lépido" duplicado, "Versatilidade" sem descrição, 5 custos divergentes, 4 aspectos fora da tabela | [listas/tracos-base.md](sistema-base/listas/tracos-base.md) | grupo | 2026-07-11 |
 | Ações complexas: 15 de 16 sem descrição (só "Saltar" está completa); "Derrubar" na tabela sem entrada | [listas/acoes-em-combate.md](sistema-base/listas/acoes-em-combate.md) | grupo | 2026-07-11 |
 | Equipamentos: coluna Durabilidade vazia; itens sem preço e moeda inconsistente ("ouros" × "moedas") | [listas/equipamentos-base.md](sistema-base/listas/equipamentos-base.md), [listas/itens-base.md](sistema-base/listas/itens-base.md) | grupo | 2026-07-11 |
+| **Auditoria de terminologia**: decidir as padronizações propostas (18 achados de termos + 13 de grafia — ex.: "conflito × combate × batalha", 5 grafias de Exp., malha emocional × social) | [notas-de-design/auditoria-de-terminologia.md](notas-de-design/auditoria-de-terminologia.md) | grupo | 2026-07-11 |
+| **Regra duplicada com números divergentes**: custo do PA extra = 7 Exp. (progressão) × 5 Exp. (lista de ações) — achado da auditoria | [progressao/01-experiencia-e-evolucao.md](sistema-base/progressao/01-experiencia-e-evolucao.md), [listas/acoes-em-combate.md](sistema-base/listas/acoes-em-combate.md) | grupo | 2026-07-11 |
+| Estados sem definição: "desabilitado"/"impedido" usados em requisitos de listas, mas a saúde só define "incapacitado" e "invalidado" | [conflitos/03-saude-e-protecao.md](sistema-base/conflitos/03-saude-e-protecao.md) | grupo | 2026-07-11 |
+| 🧪 Testar em mesa a mecânica alternativa "habilidades por nível × fadiga" e decidir: promover ou descartar | [conceitos/09-mecanica-alternativa-habilidades-e-fadiga.md](sistema-base/conceitos/09-mecanica-alternativa-habilidades-e-fadiga.md) | grupo | 2026-07-11 |
 
 ## Cenários
 
