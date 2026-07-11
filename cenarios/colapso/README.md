@@ -18,6 +18,12 @@ velocidade. Personagens têm prazo de validade; veículos também.
 veículos completo, mutações (Radiação Cromática e Púrpura), condições ambientais, abrigo,
 arquétipos e listas próprias de habilidades, traços e equipamentos.
 
+## Módulos utilizados
+
+| Módulo | Estado |
+|--------|--------|
+| `veiculos`, `armas-de-fogo`, `mutacoes` | Serão extraídos deste cenário como [módulos](../../modulos/README.md) na Fase 2 da importação. A radiação fica aqui (mecânica exclusiva). |
+
 ## Estado da importação
 
 > ⚠️ A DEFINIR: conteúdo aguardando importação (Fase 2 da migração do Notion) — mecânica

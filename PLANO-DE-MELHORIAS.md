@@ -35,22 +35,27 @@ revisão do grupo (diff no GitHub).***
 - [x] 1.9 **Armadura**: regra de uso/registro consolidada em `listas/protecoes-base.md` —
   ⏸ tensão "reduz 1 de dano" × coluna "Redutor Dano 1–12" da tabela, a resolver.
 
-## Lote 2 — Reestruturação em camadas (módulos e coleções)
+## Lote 2 — Reestruturação em camadas (módulos e coleções) ✅ *(estrutura pronta em 11/07)*
 
-*Muda a arquitetura do repositório. Fazer antes da Fase 2 da importação, porque o
-Colapso será o primeiro beneficiado.*
+- [x] 2.1 `modulos/` criado com README, `colecoes.md` e `_template-modulo/`.
+- [x] 2.2 Manifesto definido: seção "Módulos utilizados" no README do cenário
+  (template atualizado; Colapso já declara os módulos previstos).
+- [x] 2.3 `CONVENCOES.md` (seção 10 + frontmatter `cenario: modulo` + `modulo:`),
+  `AGENTS.md` (seção Camadas) e README raiz atualizados.
+- [x] 2.4 Fase 2 da importação replanejada: Colapso = cenário enxuto (lore + radiação +
+  exclusivos) + módulos `veiculos/`, `armas-de-fogo/`, `mutacoes/`.
+- [x] 2.5 Candidatos mapeados (em `modulos/README.md` e `colecoes.md`): veículos, armas
+  de fogo, mutações, armas exóticas (resgate v0.4.1), magia (futuro); coleção *armas*.
+- [ ] 2.6 ⏸ Extração real dos módulos — acontece na **Fase 2 da importação** (próximo passo).
 
-- [ ] 2.1 Criar `modulos/` com README explicando o conceito (módulo = 1 mecânica + seus
-  recursos; coleção = conjunto de módulos).
-- [ ] 2.2 Definir o formato do **manifesto de módulos** no cenário (seção "Módulos
-  utilizados" no README de cada cenário, com links).
-- [ ] 2.3 Atualizar `CONVENCOES.md` (novo valor de organização + frontmatter: campo
-  `modulo:` quando aplicável), `AGENTS.md`, README raiz e `_template-cenario/`.
-- [ ] 2.4 Replanejar a **Fase 2 da importação**: Colapso passa a ser importado como
-  cenário enxuto (lore + radiação + listas exclusivas) + módulos extraídos:
-  `modulos/veiculos/`, `modulos/armas-de-fogo/`, `modulos/mutacoes/`.
-- [ ] 2.5 Mapear candidatos: veículos, armas de fogo, mutações, armas exóticas (resgate
-  da v0.4.1), magia (futuro); coleção *armas*.
+## Lote 2b — Processo e busca ✅ *(11/07)*
+
+- [x] **Índice remissivo** (`INDICE.md`): 82 termos + 12 remissões, cobrindo o
+  sistema-base; atualização obrigatória a cada edição (AGENTS.md regra 10, CONVENCOES §9,
+  CHECKLIST passo 7).
+- [x] **Protocolo de análise de impacto** (AGENTS.md): mudança de mecânica → mapear pelo
+  índice → analisar interações → reportar efeitos colaterais com propostas ANTES de
+  implementar.
 
 ## Lote 3 — Rebalanceamento experimental ⏸ (playtest antes de virar regra)
 
