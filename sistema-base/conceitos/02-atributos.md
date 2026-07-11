@@ -15,19 +15,19 @@ No sistema Marca de Sangue, os atributos se dividem em 4 categorias: Físico, Á
 
 ## Atributo Físico
 
-O atributo **Físico** compreende o uso dos músculos e da força bruta para realizar tarefas ou lidar com situações. Engloba atividades como levantar ou arrastar peso, saltar, carregar maior quantidade de itens, esmagar objetos, ataques desarmados mais potentes que o normal, resistir a golpes e danos e tudo mais que o mestre considerar justo de acordo com o contexto.
+O atributo **Físico** compreende o uso dos músculos e da força bruta para realizar tarefas ou lidar com situações. Engloba atividades como levantar ou arrastar peso, saltar, carregar maior quantidade de itens, esmagar objetos, ataques desarmados mais potentes que o normal, resistir a golpes e danos e tudo mais que o narrador considerar justo de acordo com o contexto.
 
 ## Atributo Ágil
 
-O atributo **Ágil** envolve atividades em que são necessários velocidade, precisão, destreza e atletismo para realizar as tarefas ou lidar com as situações. Engloba atividades como corrida, escalada, segurar o fôlego, precisão, sustentar e equilibrar o próprio peso por maior quantidade de tempo, prestidigitação, esquiva e tudo mais que o mestre considerar justo de acordo com o contexto.
+O atributo **Ágil** envolve atividades em que são necessários velocidade, precisão, destreza e atletismo para realizar as tarefas ou lidar com as situações. Engloba atividades como corrida, escalada, segurar o fôlego, precisão, sustentar e equilibrar o próprio peso por maior quantidade de tempo, prestidigitação, esquiva e tudo mais que o narrador considerar justo de acordo com o contexto.
 
 ## Atributo Mental
 
-O atributo **Mental** compreende o uso da inteligência, sabedoria e percepção para realizar as tarefas ou lidar com as situações. Engloba atividades como memorização, alguns tipos de medicina, compreender idiomas, lidar com animais, identificar mentiras, resolver enigmas, ganhar mais pontos de ação e tudo mais que o mestre considerar justo de acordo com o contexto.
+O atributo **Mental** compreende o uso da inteligência, sabedoria e percepção para realizar as tarefas ou lidar com as situações. Engloba atividades como memorização, alguns tipos de medicina, compreender idiomas, lidar com animais, identificar mentiras, resolver enigmas, ganhar mais pontos de ação e tudo mais que o narrador considerar justo de acordo com o contexto.
 
 ## Atributo Social
 
-O atributo **Social** compreende o uso da conversa, da linguagem corporal, da compreensão da psique humana e o controle de suas próprias intenções para realizar as tarefas ou lidar com as situações. Engloba atividades como blefe, intimidação, sedução, mentira, comoção, interpretação, autoridade, persuasão, oratória, transações financeiras mais lucrativas que o normal e tudo mais que o mestre considerar justo de acordo com o contexto.
+O atributo **Social** compreende o uso da conversa, da linguagem corporal, da compreensão da psique humana e o controle de suas próprias intenções para realizar as tarefas ou lidar com as situações. Engloba atividades como blefe, intimidação, sedução, mentira, comoção, interpretação, autoridade, persuasão, oratória, transações financeiras mais lucrativas que o normal e tudo mais que o narrador considerar justo de acordo com o contexto.
 
 ## Atributos específicos
 

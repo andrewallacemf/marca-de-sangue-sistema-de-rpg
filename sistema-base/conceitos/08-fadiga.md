@@ -15,6 +15,8 @@ A **fadiga** representa o desgaste físico e mental que o personagem acumula ao 
 
 > ✅ Mecânica base decidida pelo grupo em 11/07/2026 — ver [notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md](../../notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md).
 
+> 🧪 Existe uma mecânica alternativa em avaliação que altera esta regra — ver [09-mecanica-alternativa-habilidades-e-fadiga.md](09-mecanica-alternativa-habilidades-e-fadiga.md).
+
 ## Como se ganha fadiga
 
 O personagem acumula pontos de fadiga quando:

@@ -2,7 +2,7 @@
 titulo: Habilidades
 tipo: regra
 cenario: base
-status: estavel
+status: revisao
 tags: [habilidades, pa, usos, recuperacao]
 atualizado-em: 2026-07-11
 ---
@@ -10,6 +10,8 @@ atualizado-em: 2026-07-11
 # Habilidades
 
 Habilidades são ações consumíveis que garantem grandes vantagens em situações específicas ou permitem que você realize ações especiais sem penalidade.
+
+> 🧪 Existe uma mecânica alternativa em avaliação que altera esta regra — ver [09-mecanica-alternativa-habilidades-e-fadiga.md](09-mecanica-alternativa-habilidades-e-fadiga.md).
 
 Você pode utilizar quantas habilidades quiser em seu turno, desde que tenha usos da habilidade e [pontos de ação](07-pontos-de-acao.md) (**`PA`**) suficientes.
 
@@ -43,7 +45,7 @@ Fora de uma batalha, o jogador pode indicar a utilização de uma habilidade por
 
 ### Ordem de realização das habilidades fora de combate
 
-Quando uma ou mais habilidades são utilizadas por personagens fora de batalha, cria-se uma fila de realização das habilidades. A ordem na qual as habilidades acontecem é determinada pelo número de pontos de ação necessários para utilização de cada habilidade. Primeiro, é realizada a habilidade que gasta menos pontos de ação. A lógica é que ações mais rápidas e fáceis de fazer se desenrolam primeiro do que aquelas que são mais trabalhosas e demoradas. Uma ação surpresa ou uma emboscada é uma exceção em que as ações que custam mais `PA` podem, se o mestre permitir, ser realizadas antes das que custam menos.
+Quando uma ou mais habilidades são utilizadas por personagens fora de batalha, cria-se uma fila de realização das habilidades. A ordem na qual as habilidades acontecem é determinada pelo número de pontos de ação necessários para utilização de cada habilidade. Primeiro, é realizada a habilidade que gasta menos pontos de ação. A lógica é que ações mais rápidas e fáceis de fazer se desenrolam primeiro do que aquelas que são mais trabalhosas e demoradas. Uma ação surpresa ou uma emboscada é uma exceção em que as ações que custam mais `PA` podem, se o narrador permitir, ser realizadas antes das que custam menos.
 
 Para habilidades que custam a mesma quantidade de pontos de ação, o jogador que possui maior valor total de aptidão do **Atributo Ágil** tem preferência.
 

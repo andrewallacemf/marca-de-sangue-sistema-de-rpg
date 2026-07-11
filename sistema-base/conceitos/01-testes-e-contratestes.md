@@ -3,7 +3,7 @@ titulo: Testes e Contratestes
 tipo: regra
 cenario: base
 status: revisao
-tags: [testes, contratestes, vantagens, desvantagens, dados, desempate, ambiente]
+tags: [testes, contratestes, vantagens, desvantagens, dados, desempate, ambiente, terreno, elevacao]
 atualizado-em: 2026-07-11
 ---
 
@@ -41,7 +41,7 @@ Um **contrateste de esquiva** é a resposta direta mais natural a um **teste de 
 
 Ainda assim, não é obrigatório que o contrateste oposto ao teste de acerto seja uma tentativa de esquiva. Alternativamente, o jogador pode escolher abdicar de sua chance de esquiva para realizar outro contrateste como um "**contrateste de desempenho de defesa**" ou "**contrateste de desempenho para agarrar a arma do oponente**", por exemplo.
 
-> *Exemplo: O oponente ataca o jogador, que decide abdicar de sua esquiva para realizar um contrateste de desempenho para agarrar a arma do oponente como resposta ao ataque, o mestre decide que a ação pretendida faz sentido para o contexto e após o resultado, indica os benefícios da ação bem sucedida ou os malefícios da falha (Neste caso o jogador recebe o dano da arma mesmo que seja bem sucedido no teste de desempenho).*
+> *Exemplo: O oponente ataca o jogador, que decide abdicar de sua esquiva para realizar um contrateste de desempenho para agarrar a arma do oponente como resposta ao ataque, o narrador decide que a ação pretendida faz sentido para o contexto e após o resultado, indica os benefícios da ação bem sucedida ou os malefícios da falha (Neste caso o jogador recebe o dano da arma mesmo que seja bem sucedido no teste de desempenho).*
 
 ### Contrateste de desempenho
 
@@ -49,7 +49,7 @@ Um contrateste de desempenho determina a eficiência da execução de uma ativid
 
 ### Contrateste de dificuldade natural
 
-Um contrateste de dificuldade natural é geralmente utilizado pelo narrador para determinar a dificuldade que um jogador precisa ultrapassar para ser bem-sucedido em um teste de desempenho. Um contrateste pode ser utilizado para determinar a dificuldade natural de uma tarefa. Quando um atleta está tentando cruzar um rio a nado, a correnteza não está conscientemente tentando fazer o personagem falhar, então o mestre jogará um dado de contrateste simplesmente para definir a dificuldade da travessia e simular as intempéries que podem ou não surgir no meio do caminho.
+Um contrateste de dificuldade natural é geralmente utilizado pelo narrador para determinar a dificuldade que um jogador precisa ultrapassar para ser bem-sucedido em um teste de desempenho. Um contrateste pode ser utilizado para determinar a dificuldade natural de uma tarefa. Quando um atleta está tentando cruzar um rio a nado, a correnteza não está conscientemente tentando fazer o personagem falhar, então o narrador jogará um dado de contrateste simplesmente para definir a dificuldade da travessia e simular as intempéries que podem ou não surgir no meio do caminho.
 
 Em caso de acontecimentos imprevistos em que a própria natureza tem a iniciativa, o narrador pode pedir a um jogador para rolar o **contrateste de dificuldade natural.** Isso poderia ser usado para determinar os resultados da queda de um raio, de uma avalanche, ou de uma explosão.
 
@@ -76,7 +76,18 @@ A desvantagem natural é removida por um **traço de técnica** na ação corres
 
 ## Condições de ambiente e terreno
 
-O **ambiente e o terreno** em que a ação acontece também podem conceder **`vantagens`** ou **`desvantagens`** ao teste ou ao contrateste, **a critério do narrador**, que avalia o contexto da cena. Situações comuns que costumam gerar esses modificadores:
+As condições de **ambiente e terreno** não são específicas de batalha: valem para qualquer cena e são **contextuais** — quem avalia se a condição afeta a ação é o **narrador**, olhando o contexto. A mesma condição pode atrapalhar uma ação e ser irrelevante para outra: a escuridão atrapalha achar o caminho ou interagir com o que está ao redor, mas não atrapalha ponderar.
+
+Uma condição pode gerar **dois tipos de efeito, que podem coexistir** na mesma situação:
+
+1. **`Vantagem`** ou **`desvantagem`** no teste ou no contrateste;
+2. **Efeitos mecânicos próprios** — ex.: **terreno difícil** (ladeira, lama, água funda) **dobra o custo de `PA` do deslocamento**.
+
+> *Exemplos de coexistência: avançar com água na cintura contra a correnteza = custo de deslocamento dobrado **+** teste físico para não ser arrastado; uma escalada íngreme = custo dobrado **+** teste com desvantagem para quem não tem a [técnica](06-tracos.md) de escalada.*
+
+> ✅ Decidido em 11/07/2026 (ver [notas-de-design/decisoes/2026-07-11-revisao-testes-aptidoes-fadiga.md](../../notas-de-design/decisoes/2026-07-11-revisao-testes-aptidoes-fadiga.md)).
+
+Situações comuns que costumam gerar esses modificadores:
 
 > 💡 PROPOSTA (IA) — lista inicial de exemplos, revisar:
 
@@ -84,12 +95,24 @@ O **ambiente e o terreno** em que a ação acontece também podem conceder **`va
 - Escuridão ou visibilidade reduzida;
 - Lutar dentro d'água;
 - Chuva forte ou vento;
-- Altura ou posição elevada;
 - Alvo em cobertura;
 - Calor ou frio extremos;
 - Superfície escorregadia.
 
 O detalhamento completo dessas condições virá no **livro do narrador** (ver [PLANO-DE-MELHORIAS.md](../../PLANO-DE-MELHORIAS.md), Lote 5).
+
+### Elevação
+
+Diferença de altura entre atacante e alvo só conta como **elevação** a partir de **1 metro** — abaixo disso, é como se os dois estivessem no mesmo nível. Havendo elevação:
+
+- **Ataques à distância de cima para baixo** são feitos com **`vantagem`**;
+- **Ataques corpo a corpo de cima para baixo** são **normais** (sem vantagem);
+- **Quem está abaixo ataca quem está acima com `desvantagem`** (qualquer ataque);
+- **O alcance continua valendo:** uma arma corpo a corpo com 1 metro de alcance não atinge um alvo 1 metro acima — o narrador arbitra pela cena se o ataque é possível.
+
+O racional: superioridade visual e gravidade favorecem quem está no alto; quem está embaixo já paga `PA` para subir e ainda luta contra a posição.
+
+> ✅ Decidido em 11/07/2026 (ver [notas-de-design/decisoes/2026-07-11-revisao-testes-aptidoes-fadiga.md](../../notas-de-design/decisoes/2026-07-11-revisao-testes-aptidoes-fadiga.md)).
 
 ## Modificadores inversos
 
@@ -99,7 +122,7 @@ Dados adicionais de **`vantagem`** e **`desvantagem`** na mesma ação do person
 
 Caso o personagem responsável pelo teste e o personagem responsável pelo contrateste tenham, ambos, uma ou mais vantagens, elas se anulam até que um dos jogadores não tenha mais modificadores para anular. O mesmo vale para um conflito no qual os dois lados jogam com desvantagens.
 
-> **Exemplo:** O lanceiro Heitor ataca o inimigo com **`+2d10 de vantagem`** por estar em terreno superior e por atacar um oponente caído, mas o espadachim Alexander se defende com **`+1D10 de vantagem`** por estar com guarda levantada. Nesse caso, as vantagens se anulam e Heitor joga com apenas uma vantagem (portanto, dois dados). Alexander joga apenas um dado. Após isso, comparam o resultado final.
+> **Exemplo:** O lanceiro Heitor **arremessa sua lança** (ataque à distância) com **`+2d10 de vantagem`** — uma por atacar de uma [elevação](#elevação) e outra por mirar um oponente caído —, mas o espadachim Alexander se defende com **`+1d10 de vantagem`** por estar com guarda levantada. Nesse caso, as vantagens se anulam e Heitor joga com apenas uma vantagem (portanto, dois dados). Alexander joga apenas um dado. Após isso, comparam o resultado final.
 
 Para organizar o jogo, se deve seguir a seguinte ordem de ações quando em um conflito um jogador anunciar que fará um teste:
 
@@ -107,6 +130,8 @@ Para organizar o jogo, se deve seguir a seguinte ordem de ações quando em um c
 2. Cada um dos jogadores anulam seus próprios modificadores inversos;
 3. Os modificadores iguais dos dois participantes do conflito se anulam; e
 4. Os dados são jogados.
+
+> 💡 Atenção: rolados os dados, o resultado ainda não é definitivo — depois da rolagem existe a janela de re-rolagem por [aptidões](04-aptidoes.md), descrita no passo a passo abaixo.
 
 ## Realizando um teste
 
@@ -124,6 +149,8 @@ Para realizar um teste:
     1. Para ter sucesso, o valor final do teste precisa ser **superior** ao valor do contrateste.
     2. **Empates** são considerados falha no teste (ver [Desempate](#desempate)).
 5. Sabendo o resultado, os envolvidos podem gastar [aptidões](04-aptidoes.md) do atributo relacionado para **re-rolar o dado do teste ou o dado do contrateste**. Só depois dessa janela o narrador narra os efeitos.
+
+> ✅ **Adendo (11/07/2026):** a re-rolagem por aptidão vale **apenas** para os dados de **teste e contrateste** — **nunca** para dados de dano (ver [notas-de-design/decisoes/2026-07-11-revisao-testes-aptidoes-fadiga.md](../../notas-de-design/decisoes/2026-07-11-revisao-testes-aptidoes-fadiga.md)).
 
 ## Realizando um contrateste
 

@@ -53,7 +53,7 @@ Os valores do dado correspondem a:
 
 > 💡 **Ataque indefinido**
 >
-> Caso o jogador se esqueça de indicar o membro alvo do ataque, o mestre pode considerar o ataque como descuidado e pedir ao jogador que role o dado para definir o local de acerto.
+> Caso o jogador se esqueça de indicar o membro alvo do ataque, o narrador pode considerar o ataque como descuidado e pedir ao jogador que role o dado para definir o local de acerto.
 
 É importante lembrar que não existe “É óbvio que eu queria/iria mirar ali” ou “Eu só tenho mirado nesse membro até agora, claro que eu iria continuar mirando”.
 

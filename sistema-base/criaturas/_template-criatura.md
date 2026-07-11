@@ -20,7 +20,7 @@ atualizado-em: 2026-07-11
 ## Ações e capacidades
 <!-- Ataques, habilidades, reações. -->
 
-## Táticas / notas de mestre
+## Táticas / notas de narrador
 <!-- Como usar em cena. -->
 
 ## Referências

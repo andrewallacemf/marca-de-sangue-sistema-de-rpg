@@ -23,6 +23,22 @@ Aptidões são acumulativas, você pode comprar quantas aptidões quiser consult
 
 Ao resolver um teste, o narrador **anuncia primeiro se houve sucesso ou falha, antes de narrar os efeitos**. Essa é a janela para o jogador decidir se gasta uma aptidão para re-rolar o dado do teste ou o dado do contrateste. Encerradas as re-rolagens, o narrador narra o desfecho.
 
+## Qual valor fica valendo (resultado mantido)
+
+Ao gastar uma aptidão para re-rolar — o próprio dado **ou** o do oponente — **fica valendo o valor que beneficia quem usou a aptidão**, entre o valor anterior e o novo:
+
+- *Meu teste marcou **5**; gasto uma aptidão e re-rolo meu dado: sai **3** → continuo com o **5**.*
+- *Meu teste marcou **5**; re-rolo meu dado: sai **8** → fico com o **8**.*
+- *O oponente tem **6**; gasto uma aptidão para re-rolar o dado **dele**: sai **8** → mantém o **6** (o valor que me beneficia); sai **3** → fica valendo o **3**.*
+
+O outro lado pode responder gastando as próprias aptidões, o que pode formar uma **fila de re-rolagens alternadas** entre os dois lados — é aceito e intencional: cada resposta consome recursos e faz parte da estratégia.
+
+**Dever do narrador:** na janela de re-rolagem, avisar o jogador de qual opção é mais vantajosa (ex.: "melhor re-rolar o seu dado do que o do oponente") — o jogo não exige que os jogadores dominem esta regra de cor.
+
+> **Nunca para dano:** a re-rolagem vale **apenas** para dados de **teste e contrateste** — **nunca** para dados de dano.
+
+> ✅ Decidido em 11/07/2026 (ver [notas-de-design/decisoes/2026-07-11-revisao-testes-aptidoes-fadiga.md](../../notas-de-design/decisoes/2026-07-11-revisao-testes-aptidoes-fadiga.md)). A cadeia de [desempate](#aptidões-e-desempate) já registrada permanece válida.
+
 ## Aptidões e desempate
 
 O uso de aptidões altera a regra de [desempate](01-testes-e-contratestes.md#desempate) entre teste e contrateste:
@@ -50,6 +66,6 @@ Por padrão, um descanso longo recupera todas as aptidões consumidas.
 
 ### Recuperando aptidões em combate
 
-Existem habilidades para recuperar características suas e de outros personagens, assim como existem habilidades para descartá-las. O mestre também pode decretar outras formas de recuperar características durante um combate.
+Existem habilidades para recuperar características suas e de outros personagens, assim como existem habilidades para descartá-las. O narrador também pode decretar outras formas de recuperar características durante um combate.
 
 > ⚠️ A DEFINIR: há uma variante pendente de decisão sobre esta regra — ver [notas-de-design/variantes-pendentes.md](../../notas-de-design/variantes-pendentes.md) (item 3, frequência de uso das aptidões — em investigação).

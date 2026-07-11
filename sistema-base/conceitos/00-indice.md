@@ -19,3 +19,4 @@ Regras universais do sistema Marca de Sangue, extraídas do Manual básico v1.1.
 6. [Traços](06-tracos.md) — características passivas e não consumíveis: técnicas, especializações, maestrias e aspectos.
 7. [Pontos de ação](07-pontos-de-acao.md) — a moeda de ações por turno (`PA`): valores iniciais, limite de locomoção e progressão.
 8. [Fadiga](08-fadiga.md) — o desgaste do personagem: como se acumula, o gasto voluntário por PA extras (2 fadiga = 1 PA), penalidades e recuperação.
+9. [Mecânica alternativa: habilidades por nível e fadiga](09-mecanica-alternativa-habilidades-e-fadiga.md) — 🧪 **em avaliação**: proposta que troca a compra de usos de habilidade por evolução por nível com custo em fadiga; não substitui as regras vigentes de Habilidades e Fadiga.

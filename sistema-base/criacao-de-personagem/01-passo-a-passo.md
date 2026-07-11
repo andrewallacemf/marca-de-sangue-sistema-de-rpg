@@ -89,7 +89,7 @@ Na maioria dos cenários, os personagens iniciam uma campanha com algum equipame
 > - Roupas simples;
 > - Mais 3 itens à escolha do jogador.
 
-Opcionalmente, o mestre pode indicar um valor inicial de dinheiro que os jogadores podem gastar para comprar seus equipamentos iniciais, para este caso, recomendamos iniciar com `100 moedas`.
+Opcionalmente, o narrador pode indicar um valor inicial de dinheiro que os jogadores podem gastar para comprar seus equipamentos iniciais, para este caso, recomendamos iniciar com `100 moedas`.
 
 Diferentes cenários podem necessitar de diferentes métodos de compra de equipamento inicial, consulte as recomendações específicas do cenário do jogo para mais informações.
 

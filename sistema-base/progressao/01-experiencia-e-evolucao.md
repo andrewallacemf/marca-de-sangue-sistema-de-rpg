@@ -11,19 +11,19 @@ atualizado-em: 2026-07-11
 
 Personagens no sistema Marca de Sangue não possuem necessariamente um nível. Em vez disso, a progressão é medida pelo seu montante de experiência ganho ao longo das sessões, usada para adquirir Características, que englobam as habilidades, os traços, as aptidões e outras melhorias.
 
-As características podem ser adquiridas usando pontos de experiência distribuídos pelo mestre. Esses pontos podem ser recompensas por tarefas bem sucedidas, por soluções inventivas ou por avanços na trajetória pessoal dos personagens.
+As características podem ser adquiridas usando pontos de experiência distribuídos pelo narrador. Esses pontos podem ser recompensas por tarefas bem sucedidas, por soluções inventivas ou por avanços na trajetória pessoal dos personagens.
 
-De forma geral, recomenda-se que um personagem monte sua ficha inicial utilizando **`8 Exp`**. Contudo, cada cenário pode ter sua própria recomendação de experiência inicial e o mestre pode adaptar a regra para melhor atender o estilo de jogo dos demais participantes.
+De forma geral, recomenda-se que um personagem monte sua ficha inicial utilizando **`8 Exp`**. Contudo, cada cenário pode ter sua própria recomendação de experiência inicial e o narrador pode adaptar a regra para melhor atender o estilo de jogo dos demais participantes.
 
 ## Ganhando Experiência
 
-Neste manual, sugerimos um modelo de pontuação que consideramos o mais funcional, mas a distribuição de pontos pode e deve ser modificada pelo mestre de forma a adaptar a velocidade do jogo ao estilo de campanha preferido de seus companheiros jogadores.
+Neste manual, sugerimos um modelo de pontuação que consideramos o mais funcional, mas a distribuição de pontos pode e deve ser modificada pelo narrador de forma a adaptar a velocidade do jogo ao estilo de campanha preferido de seus companheiros jogadores.
 
 ### Interpretação coerente
 
-O mestre pode recompensar um jogador com Experiência sempre que ele tomar grandes decisões ou tiver reações muito coerentes com a história de seu personagem durante as sessões.
+O narrador pode recompensar um jogador com Experiência sempre que ele tomar grandes decisões ou tiver reações muito coerentes com a história de seu personagem durante as sessões.
 
-O julgamento para saber se o personagem deve ou não receber pontos de experiência por interpretação cabe única e exclusivamente ao mestre, seja qual for seu método de avaliação.
+O julgamento para saber se o personagem deve ou não receber pontos de experiência por interpretação cabe única e exclusivamente ao narrador, seja qual for seu método de avaliação.
 
 Recomenda-se distribuir no máximo **`3 Exp.`** de interpretação por personagem a cada sessão.
 
@@ -31,7 +31,7 @@ Recomenda-se distribuir no máximo **`3 Exp.`** de interpretação por personage
 
 Sendo um jogo essencialmente colaborativo, recomenda-se recompensar os jogadores por manter o grupo unido e trabalhando em conjunto rumo a um objetivo em comum, mesmo que seus personagens não sejam amigos e tenham motivos para ir contra seus companheiros.
 
-Cabe ao mestre julgar as situações da mesa que revelam se os jogadores devem receber a experiência de trabalho em equipe.
+Cabe ao narrador julgar as situações da mesa que revelam se os jogadores devem receber a experiência de trabalho em equipe.
 
 Recomenda-se atribuir à equipe no máximo **`3 Exp.`** por trabalho em equipe ao final da sessão.
 
@@ -45,7 +45,7 @@ Caso metade ou mais dos testes realizados pelos jogadores envolvidos sejam bem s
 
 ### Vencer um conflito
 
-Vencer um combate também garante pontos de experiência, mas vencer não significa matar os oponentes. Alcançar qualquer definição de vitória, seja matando, incapacitando, convencendo ou até fugindo dos oponentes pode garantir experiência, contanto que o mestre considere o resultado do combate uma vitória.
+Vencer um combate também garante pontos de experiência, mas vencer não significa matar os oponentes. Alcançar qualquer definição de vitória, seja matando, incapacitando, convencendo ou até fugindo dos oponentes pode garantir experiência, contanto que o narrador considere o resultado do combate uma vitória.
 
 Recomenda-se recompensar uma vitória em combate da seguinte forma:
 
@@ -67,9 +67,9 @@ Ao completar **arcos pessoais** do personagem, recomenda-se recompensar o jogado
 
 ## Comprando Características
 
-Para adquirir uma característica é necessário comprá-la com pontos de experiência em momentos de compra (Início ou final da sessão, descansos longos ou outras situações determinadas pelo mestre).
+Para adquirir uma característica é necessário comprá-la com pontos de experiência em momentos de compra (Início ou final da sessão, descansos longos ou outras situações determinadas pelo narrador).
 
-Ao comprar Aptidões ou Habilidades, gastam-se pontos de experiência para adquirir apenas um uso dela, uma vez utilizada, é necessário um descanso (ou outra situação do mestre) para recuperar o uso.
+Ao comprar Aptidões ou Habilidades, gastam-se pontos de experiência para adquirir apenas um uso dela, uma vez utilizada, é necessário um descanso (ou outra situação do narrador) para recuperar o uso.
 
 > 💡 **Comprando a mesma Habilidade ou Aptidão mais de uma vez**
 > Uma mesma característica pode ser adquirida mais de uma vez, representando assim, quantas vezes você consegue usá-la antes de precisar descansar.

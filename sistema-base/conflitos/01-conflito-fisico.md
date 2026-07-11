@@ -146,7 +146,7 @@ Para que um combate ocorra da melhor forma sem que faltem informações aos joga
 
 1. Ao iniciar uma jogada de ataque o jogador anuncia se realizará um ataque descuidado ou mirado.
     1. No ataque mirado: anuncia qual parte do corpo pretende acertar;
-2. O mestre e os jogadores indicam quais modificadores serão aplicados à ação;
+2. O narrador e os jogadores indicam quais modificadores serão aplicados à ação;
 3. O atacante joga o **`d10`** de teste de acerto, aplicando-se os modificadores;
 4. O alvo pode realizar um contrateste de esquiva ou contrateste de desempenho de defesa (ou alguma outra reação simples e diretamente relacionada ao teste), aplicam-se os modificadores.
     1. Se o valor final do teste do atacante for maior do que o valor final do contrateste do oponente, é considerado um acerto.
