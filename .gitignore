@@ -1,0 +1,14 @@
+# Lixo de sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Cache e configuração local do Obsidian (não precisa ir pra nuvem)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+
+# Arquivos temporários de editores
+*.tmp
+*.bak
+*~

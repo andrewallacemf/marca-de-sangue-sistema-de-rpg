@@ -1,0 +1,11 @@
+# Normaliza quebras de linha entre Windows/Mac/Linux (evita conflitos falsos)
+* text=auto
+
+# Arquivos binários: nunca tentar mesclar como texto
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.pdf binary
+*.zip binary
