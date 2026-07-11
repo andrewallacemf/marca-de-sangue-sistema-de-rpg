@@ -66,6 +66,16 @@ As **`vantagens`** e **`desvantagens`** alteram a quantidade de dados (**`d10`**
 - **`Vantagem`:** Para cada dado de vantagem rola-se um dado a mais no teste ou contrateste e o resultado final será o dado de **MAIOR** valor.
 - **`Desvantagem`:** Para cada dado de desvantagem rola-se um dado a mais no teste ou contrateste e o resultado final será o dado de **MENOR** valor.
 
+## Desvantagem natural
+
+Algumas ações **exigem conhecimento** para serem executadas — nadar, trabalhar numa forja e outras atividades do tipo. Quem **não tem o conhecimento** correspondente testa essas ações com **`desvantagem`**: é a chamada **desvantagem natural**. Ações comuns, que qualquer um sabe fazer (como andar), não têm desvantagem natural.
+
+A desvantagem natural é removida por um **traço de conhecimento** na ação correspondente. Esse traço apenas **anula a desvantagem natural** — ele não concede vantagem (vantagem vem de traços de especialização, que têm o conhecimento como requisito).
+
+> ✅ Decidido em 11/07/2026 (ver [notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md](../../notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md)).
+
+> ⚠️ A DEFINIR: nome oficial do traço (ver [PENDENCIAS.md](../../PENDENCIAS.md)).
+
 ## Modificadores inversos
 
 Dados adicionais de **`vantagem`** e **`desvantagem`** na mesma ação do personagem se anulam.

@@ -3,7 +3,7 @@ titulo: Traços
 tipo: regra
 cenario: base
 status: revisao
-tags: [tracos, especializacoes, maestrias, aspectos]
+tags: [tracos, conhecimentos, especializacoes, maestrias, aspectos]
 atualizado-em: 2026-07-11
 ---
 
@@ -15,11 +15,23 @@ Tanto dentro quanto fora de batalha, basta observar os efeitos do traço e aplic
 
 Note que os traços também diferem das [aptidões](04-aptidoes.md). Traços se aplicam sempre que for cabível (de forma passiva) e as aptidões podem ser aplicadas uma vez por dia (de forma ativa).
 
+**Traços não possuem níveis** — níveis são característica das [habilidades](05-habilidades.md). A progressão entre traços acontece por **requisitos**, que funcionam como bloqueio: um traço pode exigir outro traço (como um conhecimento) para ser comprado.
+
 Existem diferentes categorias de traços, sendo:
+
+## Conhecimentos
+
+> ⚠️ A DEFINIR: nome oficial da categoria/traço (ver [PENDENCIAS.md](../../PENDENCIAS.md)).
+
+Algumas ações exigem conhecimento para serem realizadas: andar, todo mundo sabe; nadar ou trabalhar em uma forja, não. Quem não possui o conhecimento correspondente realiza os testes dessas ações com a **desvantagem natural** da atividade.
+
+Conhecimentos são traços que representam esse saber: possuir o conhecimento em uma atividade **apenas anula a desvantagem natural** dos testes daquela atividade. **Conhecimentos não concedem vantagem.**
+
+Os conhecimentos também servem de requisito para outros traços: tanto as especializações (abaixo) quanto os traços de poderes especiais (ex.: "nadar na lava", que desbloqueia o que normalmente seria impossível) exigem o conhecimento correspondente para serem comprados.
 
 ## Especializações
 
-Especializações **são traços** relacionados ao domínio de determinadas atividades, como agarrar, saltar, empurrar, intimidar, investigar, etc. Comprar especialização em uma atividade permite que o personagem sempre realize testes relacionados a atividade sem a desvantagem natural.
+Especializações **são traços** relacionados ao domínio de determinadas atividades, como agarrar, saltar, empurrar, intimidar, investigar, etc. Comprar especialização em uma atividade concede **vantagem** nos testes relacionados à atividade. Toda especialização tem como **requisito** possuir o conhecimento correspondente àquela atividade.
 
 A maioria das especializações possui um atributo atrelado a ela, indicando que aptidões podem ser utilizadas para dar suporte àquela ação especializada.
 
@@ -37,4 +49,4 @@ Aspectos são traços que afetam a forma como o personagem responde a determinad
 
 Para ver os aspectos disponíveis, consulte a lista de aspectos base na “Lista de traços base” na seção “Recursos básicos do sistema” e a lista de aspectos específicos do cenário escolhido.
 
-> ⚠️ A DEFINIR: há variantes pendentes de decisão sobre esta regra — ver [notas-de-design/variantes-pendentes.md](../../notas-de-design/variantes-pendentes.md) (itens 2 e 3).
+> ⚠️ A DEFINIR: há uma variante pendente de decisão sobre esta regra — ver [notas-de-design/variantes-pendentes.md](../../notas-de-design/variantes-pendentes.md) (item 3, frequência de uso das aptidões — em investigação).

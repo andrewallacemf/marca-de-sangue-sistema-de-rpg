@@ -3,30 +3,54 @@ titulo: Lista de Traços base
 tipo: regra
 cenario: base
 status: revisao
-tags: [tracos, especializacoes, maestrias, aspectos]
+tags: [tracos, conhecimentos, especializacoes, maestrias, aspectos]
 atualizado-em: 2026-07-11
 ---
 
 # Lista de Traços base
 
-## Especializações base
+## Conhecimentos (nome a definir)
+
+> ⚠️ A DEFINIR: nome oficial da categoria/traço (ver [PENDENCIAS.md](../../PENDENCIAS.md)).
+
+Conhecimentos são traços que **apenas anulam a desvantagem natural** dos testes da atividade correspondente — não concedem vantagem (ver [Traços](../conceitos/06-tracos.md)).
+
+> 💡 PROPOSTA (IA) — migração sugerida a partir das antigas especializações, revisar:
 
 | Atividade | Atributo | **Custo de compra** |
 | --- | --- | --- |
-| Especialização em **Agarrar** | `Físico` | **`1 exp.`** |
-| Especialização em **Empurrar** | `Físico` | **`1 exp.`** |
-| Especialização em **Arremessar** | `Físico` | **`1 exp.`** |
-| Especialização em **Saltar** | `Ágil` | **`1 exp.`** |
-| Especialização em **Nadar** | `Ágil` | **`1 exp.`** |
-| Especialização em **Realizar truques** | `Ágil` ou `Social` | **`1 exp.`** |
-| Especialização em **Esconder-se** | `Ágil` | **`1 exp.`** |
-| Especialização em **Investigar/Observar** | `Mental` | **`1 exp.`** |
-| Especialização em **Ponderar** | `Mental` | **`1 exp.`** |
-| Especialização em **Intimidar** | `Social` | **`1 exp.`** |
-| Especialização em **Persuadir/Seduzir** | `Social` | **`1 exp.`** |
-| Especialização em **Performar** | `Social` | **`1 exp.`** |
-| Especialização em **Tratar/Curar** | `Social` ou `Mental` | **`3 exp.`** |
-| Especialização em **Negociar** | `Social` ou `Mental` | **`3 exp.`** |
+| Conhecimento em **Agarrar** | `Físico` | **`1 exp.`** |
+| Conhecimento em **Empurrar** | `Físico` | **`1 exp.`** |
+| Conhecimento em **Arremessar** | `Físico` | **`1 exp.`** |
+| Conhecimento em **Saltar** | `Ágil` | **`1 exp.`** |
+| Conhecimento em **Nadar** | `Ágil` | **`1 exp.`** |
+| Conhecimento em **Realizar truques** | `Ágil` ou `Social` | **`1 exp.`** |
+| Conhecimento em **Esconder-se** | `Ágil` | **`1 exp.`** |
+| Conhecimento em **Investigar/Observar** | `Mental` | **`1 exp.`** |
+| Conhecimento em **Ponderar** | `Mental` | **`1 exp.`** |
+| Conhecimento em **Intimidar** | `Social` | **`1 exp.`** |
+| Conhecimento em **Persuadir/Seduzir** | `Social` | **`1 exp.`** |
+| Conhecimento em **Performar** | `Social` | **`1 exp.`** |
+| Conhecimento em **Tratar/Curar** | `Social` ou `Mental` | **`3 exp.`** |
+| Conhecimento em **Negociar** | `Social` ou `Mental` | **`3 exp.`** |
+
+## Especializações base
+
+Especializações são traços que concedem **vantagem** nos testes da atividade correspondente. Toda especialização tem como **requisito** possuir o conhecimento correspondente àquela atividade (ver [Traços](../conceitos/06-tracos.md)).
+
+As entradas de especialização anteriores à decisão de 11/07/2026 descreviam apenas a anulação da desvantagem natural e foram migradas (como proposta) para a seção de Conhecimentos, acima. A única especialização definida pelo grupo até o momento é a listada abaixo.
+
+### Especialização em ataque desarmado
+
+**Custo de compra:** —
+
+#### Descrição
+
+Permite realizar **ataque mirado sem desvantagem**, valendo **apenas para ataques desarmados** (ex.: soco). *(Decisão de 11/07/2026: viabiliza builds de lutador.)*
+
+#### Requisitos de uso
+
+> 💡 PROPOSTA (IA) — revisar: requisito = possuir o conhecimento correspondente (ex.: "Conhecimento em ataque desarmado"). O custo de compra também ainda não foi definido pelo grupo.
 
 ## Maestrias base
 

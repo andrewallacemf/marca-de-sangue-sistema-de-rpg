@@ -13,6 +13,16 @@ atualizado-em: 2026-07-11
 
 Notação de dano por empunhadura: ✋ = uma mão / 🤲 = duas mãos (armas versáteis **`VERS.`** têm os dois valores, separados por `/`).
 
+## Propriedades das armas
+
+Efeitos definidos na reunião de 11/07/2026 (ver [decisões](../../notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md), itens 4 e 7):
+
+- **Cortante (`CORT.`)** — permite realizar um **ataque de oportunidade quando o alvo sai do seu alcance**. Esse ataque **consome a reação** do personagem (cada personagem tem **1 reação por rodada**). O efeito antigo da propriedade (mirar na cabeça sem desvantagem) **deixa de existir**.
+- **Contundente (`CONT.`)** — ao acertar, **reduz pontos de ação (`PA`) do alvo sem necessidade de teste**; a redução vale **até a próxima rodada do alvo**.
+- **Perfurante (`PERF.`)** — efeito em revisão pelo grupo.
+
+> ⚠️ A DEFINIR: revisão da propriedade perfurante pendente (decisão de 11/07/2026 ficou em aberto).
+
 ## Lista base de armas corpo a corpo
 
 | **Item** | **Peso / Ações** | **Categoria / Propriedades** | **Alc. ideal** | **Dano ✋/🤲** | **Preço suger.** | **Durabilidade** |

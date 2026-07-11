@@ -39,4 +39,4 @@ Por padrão, um descanso longo recupera todas as aptidões consumidas.
 
 Existem habilidades para recuperar características suas e de outros personagens, assim como existem habilidades para descartá-las. O mestre também pode decretar outras formas de recuperar características durante um combate.
 
-> ⚠️ A DEFINIR: há variantes pendentes de decisão sobre esta regra — ver [notas-de-design/variantes-pendentes.md](../../notas-de-design/variantes-pendentes.md) (itens 2 e 3).
+> ⚠️ A DEFINIR: há uma variante pendente de decisão sobre esta regra — ver [notas-de-design/variantes-pendentes.md](../../notas-de-design/variantes-pendentes.md) (item 3, frequência de uso das aptidões — em investigação).

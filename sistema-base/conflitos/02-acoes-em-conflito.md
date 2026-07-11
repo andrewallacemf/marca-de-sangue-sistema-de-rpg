@@ -11,6 +11,16 @@ atualizado-em: 2026-07-11
 
 Durante um conflito, os personagens podem gastar pontos de ação para realizar as seguintes ações:
 
+## Reação
+
+Além das ações pagas com `PA` no próprio turno, todo personagem tem, **fora do seu turno**, direito a **1 reação por rodada**. A reação é um recurso à parte: não custa `PA`, é recuperada no início de cada rodada e é controlada por um **marcador de reação na ficha**.
+
+- A ação que consome a reação é o **[ataque de oportunidade](#ataque-de-oportunidade)**;
+- **Traços** poderão conceder **reações extras**;
+- A reação **não** é necessária para contratestes (como esquiva e defesa), que continuam funcionando como descrito em [Testes e Contratestes](../conceitos/01-testes-e-contratestes.md).
+
+> ✅ Decidido em 11/07/2026 (ver [notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md](../../notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md)).
+
 ## Ataque
 
 Em seu turno, o jogador pode realizar quantos ataques quiser, gastando o número de pontos referente à arma, podendo usar habilidades e aptidões (consumindo seus respectivos usos) e aplicando traços cabíveis no ato:
@@ -59,7 +69,7 @@ Um jogador pode realizar um ataque com a mão inábil, porém, recebe uma **`des
 
 ### Ataque de oportunidade
 
-Caso um inimigo **já esteja dentro da sua área de acerto e se mova para outro painel que também esteja dentro da área de acerto**, você pode reivindicar um ataque de oportunidade gastando pontos de fadiga equivalentes à ação realizada.
+Caso um inimigo **já esteja dentro da sua área de acerto e se mova para outro painel que também esteja dentro da área de acerto**, você pode reivindicar um ataque de oportunidade **consumindo a sua [reação](#reação) da rodada** e gastando pontos de [fadiga](../conceitos/08-fadiga.md) equivalentes à ação realizada.
 
 O ataque de oportunidade deve consistir em um ataque corporal simples, com o que o personagem estiver segurando naquele momento, ou um ataque desarmado.
 
@@ -67,7 +77,7 @@ Este ataque conta como um ataque descuidado e não possui vantagens ou desvantag
 
 Efeitos gerados por aptidões também se aplicam a ataques de oportunidade.
 
-> 💡 Cada personagem por padrão **só pode realizar um ataque de oportunidade por rodada de combate,** a menos que ele possua alguma habilidade ou o narrador indique o contrário.
+> 💡 O ataque de oportunidade **consome a [reação](#reação)** do personagem. Como cada personagem tem, por padrão, **1 reação por rodada**, só é possível realizar **um ataque de oportunidade por rodada de combate** — a menos que um traço conceda reações extras ou o narrador indique o contrário.
 
 > 💡 Armas à distância ou de arremesso não ativam ataque de oportunidade.
 

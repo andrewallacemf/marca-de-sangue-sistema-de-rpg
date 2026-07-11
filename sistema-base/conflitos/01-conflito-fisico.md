@@ -49,11 +49,13 @@ Em uma malha quadrada, para mensurar a distância de uma forma simples, mesmo qu
 
 ## Posicionamento em campo
 
-Quando estiverem em um conflito, a direção a que o personagem está voltado pode fazer muita diferença. O posicionamento representa a direção a que o personagem direciona a parte frontal de seu corpo e sua atenção de modo a atacar ou se defender. Ao se posicionar, ele pode escolher ficar com o **Posicionamento Aberto** ou com o **Posicionamento Definido**. Isso determinará que modificadores relacionados a posicionamento podem ser aplicados.
+Quando estiverem em um conflito, a direção a que o personagem está voltado pode fazer muita diferença. O posicionamento representa a direção a que o personagem direciona a parte frontal de seu corpo e sua atenção de modo a atacar ou se defender. O jogo trabalha **somente com o posicionamento definido**: espera-se que todo personagem termine o próprio turno com frente e costas definidas. Isso determinará que modificadores relacionados a posicionamento podem ser aplicados.
 
-### Posicionamento Aberto
+> ✅ Decidido em 11/07/2026: o posicionamento aberto deixa de ser uma escolha do jogador (ver [notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md](../../notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md)).
 
-**Por padrão, personagens possuem posicionamento em aberto,** isso significa que nenhum de seus lados é considerado frente ou costas e por isso, não haverá modificadores relacionados a posicionamento até que seu posicionamento mude para **definido**, seja por uma ação do jogador ou indicação do narrador.
+### Posicionamento aberto (penalidade de esquecimento)
+
+O posicionamento aberto **deixa de ser uma escolha do jogador**. Um personagem só fica em aberto quando **termina o próprio turno sem que nada tenha definido seu posicionamento** — e isso é tratado como **penalidade de esquecimento**: nenhum de seus lados é considerado frente ou costas e ele recebe **`desvantagem`** contra ataques vindos de **qualquer direção**, até que seu posicionamento seja definido.
 
 *Posicionamento aberto (em malha hexagonal)*
 
@@ -63,9 +65,13 @@ Quando estiverem em um conflito, a direção a que o personagem está voltado po
 
 ![Posicionamento aberto em malha quadriculada](../../assets/imagens/malha/frame-09.png)
 
+> 💡 **Definição automática (regra de bom senso)**
+>
+> Antes de deixar um personagem em aberto, o narrador aplica o bom senso: **a última ação do turno define a direção do posicionamento automaticamente** — se o personagem atacou alguém, está posicionado na direção desse alvo. A penalidade vale para o esquecimento genuíno, não para prejudicar o jogador cuja direção era óbvia.
+
 ### Posicionamento Definido
 
-Ao transitar para um posicionamento **Definido**, o personagem decreta momentaneamente a posição de sua frente e de suas costas, passando assim a receber modificadores de posicionamento até que volte a ter posicionamento **Aberto**.
+Ao transitar para um posicionamento **Definido**, o personagem decreta momentaneamente a posição de sua frente e de suas costas, passando assim a receber modificadores de posicionamento até que seu posicionamento seja redefinido.
 
 *Posicionamento definido (em malha hexagonal)*
 
@@ -86,7 +92,7 @@ Um personagem entra em posicionamento **definido** involuntariamente quando:
 
 - Recebe um golpe, tendo sua frente posicionada na direção do oponente.
     - Se o alvo optar por não defender o ataque, pode manter o posicionamento atual, mas recebe o dano sem chance de se esquivar.
-    - Permanece com posicionamento **definido** até que desengaje do oponente ou se force a estar com posicionamento **aberto**.
+    - Permanece com posicionamento **definido** até que desengaje do oponente ou seu posicionamento seja redefinido.
 - É alvo de uma habilidade que força seu posicionamento definido.
 
 *Posicionamento definido por interação (em malha hexagonal)*
@@ -100,7 +106,7 @@ Um personagem entra em posicionamento **definido** involuntariamente quando:
 > 💡 **Forçar Posicionamento**
 > É possível forçar um posicionamento ao custo de **`2 PA`**, mas cuidado, ações de outros personagens podem modificar o seu posicionamento involuntariamente.
 
-Receber um ataque corporal pelas costas confere **`desvantagem`** ao personagem atacado para os contratestes de esquiva, defesa ou outras reações cabíveis (não confere **`vantagem`** ao atacante).
+Receber um ataque corporal pelas costas confere **`desvantagem`** ao personagem atacado para os contratestes de esquiva, defesa ou outras reações cabíveis (não confere **`vantagem`** ao atacante). Na prática, atacar pelas costas continua favorecendo quem ataca: **flanquear é um objetivo do sistema**.
 
 *Posicionamento definido por engajamento (em malha hexagonal)*
 
@@ -128,7 +134,7 @@ Ao entrar na área de acerto corpo-a-corpo de um jogador, o personagem é consid
 
 ### Ataque de Oportunidade
 
-O ataque de oportunidade é uma ação sem custo de `PA` que pode ser realizada caso um oponente se movimente dentro da sua área de engajamento. No entanto, para realizar um ataque de oportunidade, o jogador precisa gastar pontos de fadiga equivalentes à ação desejada.
+O ataque de oportunidade é uma ação sem custo de `PA` que pode ser realizada caso um oponente se movimente dentro da sua área de engajamento. Para realizá-lo, o jogador **consome a sua [reação](02-acoes-em-conflito.md#reação) da rodada** e precisa gastar pontos de [fadiga](../conceitos/08-fadiga.md) equivalentes à ação desejada.
 
 ### Flanqueamento
 

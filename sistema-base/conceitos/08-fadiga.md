@@ -2,19 +2,57 @@
 titulo: Fadiga
 tipo: regra
 cenario: base
-status: rascunho
-tags: [fadiga, recurso, pendencia]
+status: revisao
+tags: [fadiga, recurso, pontos-de-acao, descanso]
 atualizado-em: 2026-07-11
 ---
 
 # Fadiga
 
-A fadiga é um recurso consumido por algumas regras do sistema, mas o Manual básico v1.1.0b **não traz uma definição base dessa mecânica**. Esta página reúne o que já está estabelecido no material existente e marca o que ainda precisa ser decidido.
+## Resumo
 
-## O que já se sabe
+A **fadiga** representa o desgaste físico e mental que o personagem acumula ao se esforçar além do razoável. Ela funciona como um contador que só cresce durante o jogo: o personagem **recebe** pontos de fadiga de certos danos e efeitos, **paga** fadiga para realizar ataques de oportunidade e **pode assumir fadiga voluntariamente** para ganhar [pontos de ação](07-pontos-de-acao.md) extras no turno. O acúmulo traz penalidades e **só desaparece com descanso**.
 
-- **Ataque de oportunidade:** é uma ação sem custo de `PA`, mas, para realizá-la, o personagem precisa **gastar pontos de fadiga equivalentes à ação desejada** (ou seja, iguais ao custo em [`PA`](07-pontos-de-acao.md) que a ação teria). Ver a regra de Ataque de Oportunidade, na parte de Conflitos do manual.
-- **Condições de cenário:** condições específicas de cenário podem infligir ou consumir fadiga (por exemplo, condições do cenário Colapso).
-- **Magia (hipótese de design):** uma das direções em estudo para o custo das magias é que elas custem fadiga — ver [notas-de-design/variantes-pendentes.md](../../notas-de-design/variantes-pendentes.md) (item 4).
+> ✅ Mecânica base decidida pelo grupo em 11/07/2026 — ver [notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md](../../notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md).
 
-> ⚠️ A DEFINIR: a mecânica base da fadiga não existe no manual — quanto de fadiga um personagem possui (capacidade), como ela é recuperada e o que acontece ao atingir o limite. Ver [notas-de-design/variantes-pendentes.md](../../notas-de-design/variantes-pendentes.md) (item 5).
+## Como se ganha fadiga
+
+O personagem acumula pontos de fadiga quando:
+
+- **Sofre danos ou efeitos que indicam fadiga** — armas, habilidades e regras específicas dizem quando infligem fadiga. Condições específicas de cenário também podem infligir ou custar fadiga (por exemplo, condições do cenário Colapso);
+- **Realiza um ataque de oportunidade** — a ação não custa `PA`, mas custa **pontos de fadiga iguais ao custo em [`PA`](07-pontos-de-acao.md) que a ação teria** (ver [Ações possíveis em um conflito](../conflitos/02-acoes-em-conflito.md));
+- **Gasta fadiga voluntariamente** para ganhar `PA` extras — os pontos gastos somam-se à sua fadiga acumulada (ver a seção seguinte).
+
+## Uso voluntário: fadiga vira `PA` extra
+
+No próprio turno, o personagem pode se esforçar além do limite e comprar pontos de ação com fadiga:
+
+- **2 pontos de fadiga = 1 `PA` extra.**
+- **Teto por turno:** os `PA` extras comprados não podem ultrapassar o **total de `PA` do personagem**.
+
+> *Exemplo: um personagem com **7 `PA` totais** pode comprar até **+7 `PA`** em um turno, acumulando **14 pontos de fadiga** para isso.*
+
+## Penalidades por acúmulo
+
+A fadiga acumulada pesa no corpo: **a cada 10 pontos acumulados, o personagem sofre −1 `PA`**.
+
+| Fadiga acumulada | Penalidade em `PA` |
+|:---:|:---:|
+| 0 a 9 | — |
+| 10 a 19 | −1 `PA` |
+| 20 a 29 | −2 `PA` |
+| 30 a 39 | −3 `PA` |
+| ...e assim por diante | −1 `PA` adicional a cada 10 pontos |
+
+> 💡 O rebalanceamento experimental do [PLANO-DE-MELHORIAS.md](../../PLANO-DE-MELHORIAS.md) (Lote 3) pode mudar essa razão para **a cada 5 pontos**, acompanhando a proposta de dobrar os `PA` dos personagens. Até o playtest validar os números, vale a tabela acima.
+
+## Recuperação
+
+A fadiga **não diminui sozinha** com o passar das rodadas ou entre cenas: ela **só zera com descanso**. Ao realizar um descanso, o personagem elimina toda a fadiga acumulada e se livra das penalidades de acúmulo.
+
+## Referências
+
+- [Pontos de ação](07-pontos-de-acao.md)
+- [Ações possíveis em um conflito](../conflitos/02-acoes-em-conflito.md) — ataque de oportunidade e reação
+- [Decisões de 11/07/2026](../../notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md)
+- **Magia:** a hipótese de magias custarem fadiga foi **adiada** para a fase de cenários — ver [notas-de-design/variantes-pendentes.md](../../notas-de-design/variantes-pendentes.md) (item 4).
