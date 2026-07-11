@@ -80,6 +80,7 @@ valendo **apenas para ataques desarmados** (ex.: soco). Viabiliza builds de luta
 | Maratonista | **`4 exp.`** |
 | Dorminhoco | **`7 exp.`** |
 | Firme | **`4 exp.`** |
+| Firme aprimorado | **`4 exp.`** (💡 proposta) |
 | Burro de carga | **`6 exp.`** |
 
 Aspectos são traços que afetam a forma como o personagem responde a determinadas situações. Comprar aspectos permite que o personagem realize ações ou ignore regras em determinadas situações.
@@ -236,22 +237,16 @@ Recebe **`+1d10 de vantagem`** para esquivar de ataques de oportunidade.
 
 #### Descrição
 
-Pode usar armas pesadas com apenas uma mão.
+Pode usar armas pesadas com apenas uma mão, com **−3 de dano**.
 
 > ✅ Decidido em 11/07/2026: o antigo traço "Versatilidade" (v0.4.1) foi **fundido no
-> Firme**, trazendo sua progressão:
+> Firme**, e a progressão herdada não vira níveis — requisitos determinam se o traço está
+> **ativo**, sem impedir a compra (ver [Traços — Requisitos](../conceitos/06-tracos.md) e
+> [notas-de-design/decisoes/2026-07-11-reacao-posicionamento-propriedades.md](../../notas-de-design/decisoes/2026-07-11-reacao-posicionamento-propriedades.md)).
 
-#### Progressão (herdada da antiga Versatilidade)
-
-1. ...desde que sejam armas longas e perfurantes, com −3 de dano;
-2. ...desde que sejam armas longas, com −3 de dano;
-3. Qualquer arma pesada, com −3 de dano;
-4. Qualquer arma pesada, sem redução de dano.
-
-> ⚠️ A DEFINIR: a progressão herdada conflita com a regra "**traços não possuem níveis**"
-> (decisão de 11/07/2026, ver [conceitos/06-tracos.md](../conceitos/06-tracos.md)). O grupo
-> precisa decidir: (a) transformar os 4 passos em traços encadeados por requisito;
-> (b) abrir exceção para aspectos evolutivos; ou (c) achatar o Firme num efeito único.
+> 💡 PROPOSTA (IA) — revisar: desenho por requisitos em dois traços — **Firme** (com
+> −3 de dano) e **[Firme aprimorado](#firme-aprimorado)** (remove a redução) — que
+> condensa a progressão de 4 passos da antiga Versatilidade nesses 2 traços.
 
 #### Condição de uso (gatilho)
 
@@ -260,6 +255,26 @@ Pode usar armas pesadas com apenas uma mão.
 #### Requisitos de uso
 
 - Não ter nenhuma mão desabilitada.
+
+### Firme aprimorado
+
+**Custo de compra:** `4 Exp.` (💡 custo proposto pela IA — a validar pelo grupo)
+
+#### Descrição
+
+Remove a redução de dano do [Firme](#firme): pode usar armas pesadas com apenas uma mão
+**sem redução de dano**.
+
+> 💡 PROPOSTA (IA) — revisar: traço proposto junto com o novo desenho por requisitos do
+> [Firme](#firme).
+
+#### Condição de uso (gatilho)
+
+- Usar uma arma pesada
+
+#### Requisitos de uso
+
+- Possuir o traço [Firme](#firme).
 
 ### Lépido
 

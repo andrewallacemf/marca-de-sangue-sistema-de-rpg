@@ -3,7 +3,7 @@ titulo: Fadiga
 tipo: regra
 cenario: base
 status: revisao
-tags: [fadiga, recurso, pontos-de-acao, descanso]
+tags: [fadiga, recurso, pontos-de-acao, descanso, reacao]
 atualizado-em: 2026-07-11
 ---
 
@@ -11,7 +11,7 @@ atualizado-em: 2026-07-11
 
 ## Resumo
 
-A **fadiga** representa o desgaste físico e mental que o personagem acumula ao se esforçar além do razoável. Ela funciona como um contador que só cresce durante o jogo: o personagem **recebe** pontos de fadiga de certos danos e efeitos, **paga** fadiga para realizar ataques de oportunidade e **pode assumir fadiga voluntariamente** para ganhar [pontos de ação](07-pontos-de-acao.md) extras no turno. O acúmulo traz penalidades e **só desaparece com descanso**.
+A **fadiga** representa o desgaste físico e mental que o personagem acumula ao se esforçar além do razoável. Ela funciona como um contador que só cresce durante o jogo: o personagem **recebe** pontos de fadiga de certos danos e efeitos, **paga** fadiga para realizar reações (como o ataque de oportunidade) e **pode assumir fadiga voluntariamente** para ganhar [pontos de ação](07-pontos-de-acao.md) extras no turno. O acúmulo traz penalidades e **só desaparece com descanso**.
 
 > ✅ Mecânica base decidida pelo grupo em 11/07/2026 — ver [notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md](../../notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md).
 
@@ -22,7 +22,7 @@ A **fadiga** representa o desgaste físico e mental que o personagem acumula ao 
 O personagem acumula pontos de fadiga quando:
 
 - **Sofre danos ou efeitos que indicam fadiga** — armas, habilidades e regras específicas dizem quando infligem fadiga. Condições específicas de cenário também podem infligir ou custar fadiga (por exemplo, condições do cenário Colapso);
-- **Realiza um ataque de oportunidade** — a ação não custa `PA`, mas custa **pontos de fadiga iguais ao custo em [`PA`](07-pontos-de-acao.md) que a ação teria** (ver [Ações possíveis em um conflito](../conflitos/02-acoes-em-conflito.md));
+- **Realiza uma reação** (incluindo o ataque de oportunidade) — a reação não custa `PA`, mas custa **pontos de fadiga iguais ao custo em [`PA`](07-pontos-de-acao.md) que a ação realizada teria** (1 fadiga por 1 `PA`; ver [Reação](../conflitos/02-acoes-em-conflito.md#reação));
 - **Gasta fadiga voluntariamente** para ganhar `PA` extras — os pontos gastos somam-se à sua fadiga acumulada (ver a seção seguinte).
 
 ## Uso voluntário: fadiga vira `PA` extra
@@ -59,6 +59,6 @@ A fadiga **não diminui sozinha** com o passar das rodadas ou entre cenas: ela *
 ## Referências
 
 - [Pontos de ação](07-pontos-de-acao.md)
-- [Ações possíveis em um conflito](../conflitos/02-acoes-em-conflito.md) — ataque de oportunidade e reação
+- [Ações possíveis em um conflito](../conflitos/02-acoes-em-conflito.md#reação) — reação (custo em fadiga) e ataque de oportunidade
 - [Decisões de 11/07/2026](../../notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md)
 - **Magia:** a hipótese de magias custarem fadiga foi **adiada** para a fase de cenários — ver [notas-de-design/variantes-pendentes.md](../../notas-de-design/variantes-pendentes.md) (item 4).

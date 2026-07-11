@@ -17,11 +17,24 @@ Notação de dano por empunhadura: ✋ = uma mão / 🤲 = duas mãos (armas ver
 
 Efeitos definidos na reunião de 11/07/2026 (ver [decisões](../../notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md), itens 4 e 7):
 
-- **Cortante (`CORT.`)** — permite realizar um **ataque de oportunidade quando o alvo sai do seu alcance**. Esse ataque **consome a reação** do personagem (cada personagem tem **1 reação por rodada**). O efeito antigo da propriedade (mirar na cabeça sem desvantagem) **deixa de existir**.
+- **Cortante (`CORT.`)** — permite realizar um **ataque de oportunidade quando o alvo SAI do seu alcance**. Esse ataque **consome a reação** do personagem (cada personagem tem **1 reação por rodada**). O efeito antigo da propriedade (mirar na cabeça sem desvantagem) **deixa de existir**.
 - **Contundente (`CONT.`)** — ao acertar, **reduz pontos de ação (`PA`) do alvo sem necessidade de teste**; a redução vale **até a próxima rodada do alvo**.
-- **Perfurante (`PERF.`)** — efeito em revisão pelo grupo.
+- **Perfurante (`PERF.`)** — permite realizar um **ataque de oportunidade quando o alvo ENTRA no seu alcance**. Esse ataque **consome a reação** do personagem (cada personagem tem **1 reação por rodada**). É o espelho do cortante: cortante cobre a **saída** do alcance; perfurante, a **entrada**.
 
-> ⚠️ A DEFINIR: revisão da propriedade perfurante pendente (decisão de 11/07/2026 ficou em aberto).
+> ✅ Decidido em 11/07/2026 (ver [decisões — reação, posicionamento e propriedades](../../notas-de-design/decisoes/2026-07-11-reacao-posicionamento-propriedades.md), item 4). O efeito do perfurante já existia na documentação antiga e havia ficado de fora.
+
+### Propriedades resgatadas do material antigo
+
+No manual do Notion, as propriedades só produzem efeito se o personagem tiver a **maestria** correspondente (traços de maestria as referenciam pela sigla).
+
+> 💡 RESGATE (IA) — encontrado em "Marca de Sangue Manual básico" (seção Equipamentos → Armas → "Propriedades (com maestria)"; mesmo texto em "Construção Marca de sangue → Equipamentos" e no "MdS Livro básico de regras (obsoleto)"), revisar:
+
+- **Projéteis (`PROJ.`)** — consegue **ignorar barreiras no caminho do alvo**, desde que a barreira não esteja acima do alvo. Se acertar o oponente, **recarregar o equipamento não custa `PA`**.
+- **Agarrar (`AGAR.`)** — armas agarradoras conferem **vantagem para o uso da ação "Agarrar"**.
+- **Arremesso (`ARRE.`)** — armas de arremesso **ignoram um dado de desvantagem para realizar arremessos**. Regra geral do manual: arremessar um objeto ou arma **sem** essa propriedade é uma ação de ataque **com desvantagem**; fora do alcance ideal, a desvantagem total é **`+2d10`** (+1d10 pelo alcance difícil, +1d10 por ser objeto impróprio para arremesso).
+- **Deflexão (`DEFL.`)** — itens com deflexão **ignoram um dado de desvantagem em contratestes de defesa**. Na v0.4.1 esta propriedade usava a sigla `PROT` — a sigla `PROT.` do escudo de arremesso na tabela abaixo provavelmente vem daí.
+
+> ⚠️ A DEFINIR: **versátil (`VERS.`)** segue **sem descrição de efeito em fonte alguma** do export do Notion (manual, Construção e material antigo). As tabelas indicam o comportamento (custo **`3/4 PA`** e dano **✋/🤲**) e a descrição do tamanho "média" no manual cobre o uso com uma ou duas mãos, mas não há efeito próprio da propriedade — e a maestria em armas versáteis a referencia. A sigla **`PROT.`** (escudo de arremesso) também está sem descrição própria no material atual.
 
 ## Lista base de armas corpo a corpo
 

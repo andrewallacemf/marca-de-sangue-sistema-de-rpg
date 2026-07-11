@@ -45,6 +45,29 @@ Implicações da proposta documentadas em 11/07/2026 (decisões nº 4 e 7 — ve
 - **Registro concentrado na ficha:** o acompanhamento de uso fica todo na barra de fadiga da ficha — um lugar só, mesmo com muitas habilidades.
 - **Sinergia com a direção da magia** (direção de design já conversada pelo grupo): magias **simples** gastam **fadiga**; magias **complexas** gastam **vida/dano**.
 
+## Extensão em avaliação: fadiga em contratestes (15h44)
+
+Proposta do André, a discutir **com o Gabriel** antes de testar (Daniel classificou como
+mudança ampla):
+
+- **Toda reação a algo — inclusive contratestes (esquiva, defesa) — consumiria fadiga**:
+  "desviar não é grátis". Cercado por vários inimigos, o personagem se desgasta só de se
+  defender enquanto o próprio turno não chega — o que torna o posicionamento ainda mais
+  decisivo.
+- Complementos da mesma proposta: uma **ação de descansar em batalha** para recuperar
+  fadiga; e **aumentar o limiar** de fadiga livre antes de começar a perder `PA` (para a
+  regra não ficar imediatamente agressiva).
+- Interação notada: quem apanha de muitos minions fracos gasta muita fadiga — o grupo
+  avaliou que isso é característica do encontro (acontece o análogo em outros sistemas),
+  não defeito da regra.
+
+### Ideia descartada (registro)
+
+**Eliminar os `PA` e usar só fadiga** foi considerada e **descartada** em 11/07/2026:
+a ficha em papel exigiria apagar/reescrever o valor a cada turno, e a "recuperação
+natural por turno" necessária equivaleria, na prática, aos próprios `PA`. Os `PA`
+permanecem como o recurso gratuito do turno; a fadiga cobre o que acontece fora dele.
+
 ## Registro físico
 
 Há a preocupação de apagar e preencher a fadiga no papel a todo momento; a sugestão é marcar a fadiga com **um dado sobre a ficha**. Não é um bloqueador da proposta.

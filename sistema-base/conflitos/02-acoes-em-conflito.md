@@ -3,23 +3,13 @@ titulo: Ações possíveis em um conflito
 tipo: regra
 cenario: base
 status: estavel
-tags: [conflito, combate, acoes, ataque, pontos-de-acao]
+tags: [conflito, combate, acoes, ataque, pontos-de-acao, reacao, fadiga]
 atualizado-em: 2026-07-11
 ---
 
 # Ações possíveis em um conflito
 
-Durante um conflito, os personagens podem gastar pontos de ação para realizar as seguintes ações:
-
-## Reação
-
-Além das ações pagas com `PA` no próprio turno, todo personagem tem, **fora do seu turno**, direito a **1 reação por rodada**. A reação é um recurso à parte: não custa `PA`, é recuperada no início de cada rodada e é controlada por um **marcador de reação na ficha**.
-
-- A ação que consome a reação é o **[ataque de oportunidade](#ataque-de-oportunidade)**;
-- **Traços** poderão conceder **reações extras**;
-- A reação **não** é necessária para contratestes (como esquiva e defesa), que continuam funcionando como descrito em [Testes e Contratestes](../conceitos/01-testes-e-contratestes.md).
-
-> ✅ Decidido em 11/07/2026 (ver [notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md](../../notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md)).
+Durante um conflito, os personagens podem gastar pontos de ação para realizar as seguintes ações. Além das ações do turno, todo personagem tem direito a **1 [Reação](#reação) por rodada**, fora do seu turno — descrita ao final, depois de todas as ações.
 
 ## Ataque
 
@@ -69,7 +59,7 @@ Um jogador pode realizar um ataque com a mão inábil, porém, recebe uma **`des
 
 ### Ataque de oportunidade
 
-Caso um inimigo **já esteja dentro da sua área de acerto e se mova para outro painel que também esteja dentro da área de acerto**, você pode reivindicar um ataque de oportunidade **consumindo a sua [reação](#reação) da rodada** e gastando pontos de [fadiga](../conceitos/08-fadiga.md) equivalentes à ação realizada.
+Caso um inimigo **já esteja dentro da sua área de acerto e se mova para outro painel que também esteja dentro da área de acerto**, você pode reivindicar um ataque de oportunidade. O ataque de oportunidade é um caso da regra geral de **[Reação](#reação)**: consome a sua reação da rodada e, em vez de custar `PA`, custa **pontos de [fadiga](../conceitos/08-fadiga.md) iguais ao custo em `PA` da ação realizada**. Como toda reação, é opcional — você pode escolher não reagir para não gastar fadiga.
 
 O ataque de oportunidade deve consistir em um ataque corporal simples, com o que o personagem estiver segurando naquele momento, ou um ataque desarmado.
 
@@ -190,3 +180,19 @@ O jogador pode gastar pontos de ação em seu turno para atrasar sua posição n
 ## Ações complexas
 
 Algumas ações são mais difíceis de realizar do que aparentam, apesar de serem comuns. Todas essas ações podem ser realizadas por qualquer jogador, seja dentro ou fora de combate, porém joga-se um teste de desempenho para determinar se houve sucesso ou falha. Consulte a tabela de ações completas na lista “Ações disponíveis” na seção “Recursos básicos do sistema”.
+
+## Reação
+
+Além das ações pagas com `PA` no próprio turno, todo personagem tem, **fora do seu turno**, direito a **1 reação por rodada**. A reação é um recurso à parte: é recuperada no início de cada rodada e é controlada por um **marcador de reação na ficha**.
+
+**A reação não custa `PA` — mas não é gratuita:** o custo em `PA` que a ação teria é pago em **pontos de [fadiga](../conceitos/08-fadiga.md)**, na razão de **1 ponto de fadiga por 1 `PA`** da ação realizada como reação.
+
+> *Exemplo: uma reação de ataque com arma leve custa fadiga igual ao custo em `PA` do ataque com arma leve — `2 PA`, portanto **2 pontos de fadiga**.*
+
+- Essa conversão (1 fadiga por 1 `PA`) é **mais barata** que comprar `PA` extras com fadiga no próprio turno (2 fadiga = 1 `PA`), mas **tem custo** — reagir desgasta o personagem;
+- O personagem **pode escolher não reagir**, para não gastar fadiga;
+- O **[ataque de oportunidade](#ataque-de-oportunidade)** é o caso clássico dessa regra: consome a reação da rodada e paga em fadiga o custo em `PA` da ação realizada;
+- **Traços** poderão conceder **reações extras**;
+- A reação **não** é necessária para contratestes (como esquiva e defesa), que continuam funcionando como descrito em [Testes e Contratestes](../conceitos/01-testes-e-contratestes.md) — contratestes não gastam fadiga.
+
+> ✅ Reação como recurso por rodada decidida em 11/07/2026 (ver [notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md](../../notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md)); custo pago em fadiga e posição da seção após as ações decididos em 11/07/2026 (ver [notas-de-design/decisoes/2026-07-11-reacao-posicionamento-propriedades.md](../../notas-de-design/decisoes/2026-07-11-reacao-posicionamento-propriedades.md)).

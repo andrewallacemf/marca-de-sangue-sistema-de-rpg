@@ -49,13 +49,17 @@ Em uma malha quadrada, para mensurar a distância de uma forma simples, mesmo qu
 
 ## Posicionamento em campo
 
-Quando estiverem em um conflito, a direção a que o personagem está voltado pode fazer muita diferença. O posicionamento representa a direção a que o personagem direciona a parte frontal de seu corpo e sua atenção de modo a atacar ou se defender. O jogo trabalha **somente com o posicionamento definido**: espera-se que todo personagem termine o próprio turno com frente e costas definidas. Isso determinará que modificadores relacionados a posicionamento podem ser aplicados.
+Quando estiverem em um conflito, a direção a que o personagem está voltado pode fazer muita diferença. O posicionamento representa a direção a que o personagem direciona a parte frontal de seu corpo e sua atenção de modo a atacar ou se defender. O jogo trabalha **somente com o posicionamento definido**: espera-se que todo personagem termine o próprio turno com frente e costas definidas. **Definir o posicionamento não gasta ação** (nem `PA`): é apenas uma indicação, feita normalmente ao fim do turno. Isso determinará que modificadores relacionados a posicionamento podem ser aplicados.
 
-> ✅ Decidido em 11/07/2026: o posicionamento aberto deixa de ser uma escolha do jogador (ver [notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md](../../notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md)).
+> 💡 **Na mesa:** com miniaturas ou tokens, use o próprio formato da peça ou uma marcação (por exemplo, uma seta ou um ponto na base) para indicar a frente do personagem.
+
+> ✅ Decidido em 11/07/2026: o posicionamento aberto deixa de ser uma escolha do jogador (ver [notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md](../../notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md)); clarificações de custo, definição por contexto e modificadores exatos em [notas-de-design/decisoes/2026-07-11-reacao-posicionamento-propriedades.md](../../notas-de-design/decisoes/2026-07-11-reacao-posicionamento-propriedades.md).
 
 ### Posicionamento aberto (penalidade de esquecimento)
 
-O posicionamento aberto **deixa de ser uma escolha do jogador**. Um personagem só fica em aberto quando **termina o próprio turno sem que nada tenha definido seu posicionamento** — e isso é tratado como **penalidade de esquecimento**: nenhum de seus lados é considerado frente ou costas e ele recebe **`desvantagem`** contra ataques vindos de **qualquer direção**, até que seu posicionamento seja definido.
+O posicionamento aberto **deixa de ser uma escolha do jogador**. Um personagem só fica em aberto quando **nada óbvio definiu seu posicionamento** até o fim do próprio turno — e isso é tratado como **penalidade de esquecimento, nunca como escolha**: nenhum de seus lados é considerado frente ou costas e ele recebe **`desvantagem`** para se defender de ataques vindos de **qualquer direção**, até que seu posicionamento seja definido.
+
+O mesmo vale para **NPCs**: o narrador define o posicionamento deles; se esquecer e não houver indicação plausível no contexto, o NPC fica **aberto**, com a mesma desvantagem.
 
 *Posicionamento aberto (em malha hexagonal)*
 
@@ -65,9 +69,14 @@ O posicionamento aberto **deixa de ser uma escolha do jogador**. Um personagem s
 
 ![Posicionamento aberto em malha quadriculada](../../assets/imagens/malha/frame-09.png)
 
-> 💡 **Definição automática (regra de bom senso)**
+> 💡 **Definição por contexto (sem custo)**
 >
-> Antes de deixar um personagem em aberto, o narrador aplica o bom senso: **a última ação do turno define a direção do posicionamento automaticamente** — se o personagem atacou alguém, está posicionado na direção desse alvo. A penalidade vale para o esquecimento genuíno, não para prejudicar o jogador cuja direção era óbvia.
+> Antes de deixar um personagem em aberto, o narrador aplica o bom senso — o contexto define o posicionamento automaticamente, sem custo algum:
+>
+> - quem **atacou** fica voltado para a **última pessoa que atacou**;
+> - quem **foi atacado pode escolher** virar-se para **quem o atacou**, ao receber um ataque vindo daquela direção — desviando ou não.
+>
+> A penalidade vale para o esquecimento genuíno, não para prejudicar o jogador cuja direção era óbvia.
 
 ### Posicionamento Definido
 
@@ -106,7 +115,11 @@ Um personagem entra em posicionamento **definido** involuntariamente quando:
 > 💡 **Forçar Posicionamento**
 > É possível forçar um posicionamento ao custo de **`2 PA`**, mas cuidado, ações de outros personagens podem modificar o seu posicionamento involuntariamente.
 
-Receber um ataque corporal pelas costas confere **`desvantagem`** ao personagem atacado para os contratestes de esquiva, defesa ou outras reações cabíveis (não confere **`vantagem`** ao atacante). Na prática, atacar pelas costas continua favorecendo quem ataca: **flanquear é um objetivo do sistema**.
+**Modificadores exatos de posicionamento:**
+
+- **Atacado pelas costas:** o personagem atacado recebe **`desvantagem`** nos contratestes de esquiva, defesa ou outras reações cabíveis. **Não** confere **`vantagem`** ao atacante — na prática, atacar pelas costas continua favorecendo quem ataca: **flanquear é um objetivo do sistema**;
+- **Atacado pela frente:** não concede vantagem de defesa por padrão. A vantagem para se defender pela frente vem de **levantar a guarda** (que também define o posicionamento — ver [Levantar guarda](02-acoes-em-conflito.md#levantar-guarda-entrar-em-postura-defensiva));
+- **Aberto:** **`desvantagem`** para se defender de ataques vindos de **qualquer** direção (ver [Posicionamento aberto](#posicionamento-aberto-penalidade-de-esquecimento)).
 
 *Posicionamento definido por engajamento (em malha hexagonal)*
 
@@ -134,7 +147,7 @@ Ao entrar na área de acerto corpo-a-corpo de um jogador, o personagem é consid
 
 ### Ataque de Oportunidade
 
-O ataque de oportunidade é uma ação sem custo de `PA` que pode ser realizada caso um oponente se movimente dentro da sua área de engajamento. Para realizá-lo, o jogador **consome a sua [reação](02-acoes-em-conflito.md#reação) da rodada** e precisa gastar pontos de [fadiga](../conceitos/08-fadiga.md) equivalentes à ação desejada.
+O ataque de oportunidade pode ser realizado caso um oponente se movimente dentro da sua área de engajamento. Ele é um caso da regra geral de **[Reação](02-acoes-em-conflito.md#reação)**: não custa `PA` — o jogador **consome a sua reação da rodada** e paga **pontos de [fadiga](../conceitos/08-fadiga.md) iguais ao custo em `PA` da ação realizada**. Reagir é opcional: pode-se escolher não reagir para não gastar fadiga. Descrição completa em [Ações possíveis em um conflito](02-acoes-em-conflito.md#ataque-de-oportunidade).
 
 ### Flanqueamento
 

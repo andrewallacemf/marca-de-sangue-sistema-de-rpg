@@ -75,6 +75,16 @@ Fontes: transcrições em notas-de-design/transcricoes/.*
   conflito social e lista de técnicas aprovados; **aspectos saneados** item a item
   (Lépido 3, custos 4, +4 na tabela, Versatilidade fundida no Firme — tensão de níveis
   registrada).
+- [x] Reação revisada (15h44): **tem custo em fadiga** (1 fadiga por PA da ação; pode-se
+  não reagir); seção movida para depois das ações; posicionamento clarificado
+  (definir não gasta ação; contexto define; costas = desvantagem nos contratestes;
+  guarda dá a vantagem frontal); **requisitos de traços** documentados (ativam, não
+  bloqueiam compra — resolve a tensão do Firme).
+- [x] Propriedades de armas: **perfurante decidido** (AdO quando o alvo entra no alcance)
+  + 4 propriedades **resgatadas** do material antigo (Projéteis, Agarrar, Arremesso,
+  Deflexão) aguardando aprovação; `VERS.` segue sem fonte.
+- [x] Extensão da variante registrada (fadiga em contratestes — discutir com Gabriel);
+  ideia de eliminar PA **descartada** e documentada.
 - [ ] Próximas seções do livro base a revisar pelo grupo (continuar a leitura).
 - [ ] Decidir os achados da auditoria de terminologia (padronizações semânticas).
 
