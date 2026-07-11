@@ -92,7 +92,7 @@ Fundir características não consome experiência, mas é necessário cuidado ne
 
 Cabe ao jogador, sempre durante seu descanso, decidir se vai fundir ou não suas habilidades. Manter um grande número de ações possíveis ou poucas ações poderosas são ambas estratégias válidas.
 
-No entanto, é necessário ter atenção, cada ação só pode ser complementada com apenas uma carta de aptidão, independente de sua força. Portanto, se você tem muitas cartas de aptidão, talvez seja útil também preferir ter várias cartas de habilidade, ainda que mais fracas.
+No entanto, atenção: esse dilema vale para as habilidades. Aptidões não são limitadas a uma por ação — você pode gastar quantas aptidões do atributo correspondente quiser para re-rolar o dado de um mesmo teste ou contrateste (ver [Aptidões](../conceitos/04-aptidoes.md)).
 
 ## Comprando pontos de ação
 

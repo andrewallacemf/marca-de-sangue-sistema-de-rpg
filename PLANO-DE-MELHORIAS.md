@@ -18,9 +18,14 @@ revisão do grupo (diff no GitHub).***
 - [x] 1.2 **Conflito social**: 5 pts confirmado; exemplo proposto pela IA marcado
   `💡 PROPOSTA` para revisão.
 - [x] 1.3 **Desvantagem natural**: documentada em `conceitos/01-testes-e-contratestes.md`.
-- [x] 1.4 **Traços de conhecimento**: reestruturado em `conceitos/06-tracos.md` e
-  `listas/tracos-base.md` (14 especializações migradas para "Conhecimentos") —
-  ⏸ nome oficial da categoria a definir.
+- [x] 1.4 **Traços de técnica**: reestruturado em `conceitos/06-tracos.md` e
+  `listas/tracos-base.md` (14 especializações migradas) — nome oficializado como
+  **Técnicas** em 11/07.
+- [x] 1.10 **Aptidão = re-rolagem** (ajuste pós-Lote 1): varredura completa — 8 menções
+  da versão antiga (vantagem) corrigidas; desempate atualizado com a cadeia de aptidões.
+- [x] 1.11 **Ambiente e terreno**: noção breve publicada no livro do jogador
+  (`conceitos/01-testes-e-contratestes.md`, lista `💡 PROPOSTA`); detalhamento completo
+  segue no Lote 5.2 (livro do narrador).
 - [x] 1.5 **Reação**: mecânica adicionada em `conflitos/`; ataque de oportunidade consome reação.
 - [x] 1.6 **Posicionamento**: só existe definido; esquecimento = desvantagem; definição
   automática pela última ação; costas mantidas.

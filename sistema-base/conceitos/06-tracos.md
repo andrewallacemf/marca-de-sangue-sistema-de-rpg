@@ -3,7 +3,7 @@ titulo: Traços
 tipo: regra
 cenario: base
 status: revisao
-tags: [tracos, conhecimentos, especializacoes, maestrias, aspectos]
+tags: [tracos, tecnicas, especializacoes, maestrias, aspectos]
 atualizado-em: 2026-07-11
 ---
 
@@ -15,23 +15,23 @@ Tanto dentro quanto fora de batalha, basta observar os efeitos do traço e aplic
 
 Note que os traços também diferem das [aptidões](04-aptidoes.md). Traços se aplicam sempre que for cabível (de forma passiva) e as aptidões podem ser aplicadas uma vez por dia (de forma ativa).
 
-**Traços não possuem níveis** — níveis são característica das [habilidades](05-habilidades.md). A progressão entre traços acontece por **requisitos**, que funcionam como bloqueio: um traço pode exigir outro traço (como um conhecimento) para ser comprado.
+**Traços não possuem níveis** — níveis são característica das [habilidades](05-habilidades.md). A progressão entre traços acontece por **requisitos**, que funcionam como bloqueio: um traço pode exigir outro traço (como uma técnica) para ser comprado.
 
 Existem diferentes categorias de traços, sendo:
 
-## Conhecimentos
+## Técnicas
 
-> ⚠️ A DEFINIR: nome oficial da categoria/traço (ver [PENDENCIAS.md](../../PENDENCIAS.md)).
+> ✅ Decidido em 11/07/2026: o nome oficial da categoria é **técnica** (ver [notas-de-design/decisoes/2026-07-11-ajustes-pos-lote-1.md](../../notas-de-design/decisoes/2026-07-11-ajustes-pos-lote-1.md)).
 
-Algumas ações exigem conhecimento para serem realizadas: andar, todo mundo sabe; nadar ou trabalhar em uma forja, não. Quem não possui o conhecimento correspondente realiza os testes dessas ações com a **desvantagem natural** da atividade.
+Algumas ações exigem conhecimento para serem realizadas: andar, todo mundo sabe; nadar ou trabalhar em uma forja, não. Quem não possui a técnica correspondente realiza os testes dessas ações com a **desvantagem natural** da atividade.
 
-Conhecimentos são traços que representam esse saber: possuir o conhecimento em uma atividade **apenas anula a desvantagem natural** dos testes daquela atividade. **Conhecimentos não concedem vantagem.**
+Técnicas são traços que representam esse saber: possuir a técnica em uma atividade (ex.: **"Técnica em natação"**) **apenas anula a desvantagem natural** dos testes daquela atividade. **Técnicas não concedem vantagem.**
 
-Os conhecimentos também servem de requisito para outros traços: tanto as especializações (abaixo) quanto os traços de poderes especiais (ex.: "nadar na lava", que desbloqueia o que normalmente seria impossível) exigem o conhecimento correspondente para serem comprados.
+As técnicas também servem de requisito para outros traços: tanto as especializações (abaixo) quanto os traços de poderes especiais (ex.: "nadar na lava", que desbloqueia o que normalmente seria impossível) exigem a técnica correspondente para serem comprados.
 
 ## Especializações
 
-Especializações **são traços** relacionados ao domínio de determinadas atividades, como agarrar, saltar, empurrar, intimidar, investigar, etc. Comprar especialização em uma atividade concede **vantagem** nos testes relacionados à atividade. Toda especialização tem como **requisito** possuir o conhecimento correspondente àquela atividade.
+Especializações **são traços** relacionados ao domínio de determinadas atividades, como agarrar, saltar, empurrar, intimidar, investigar, etc. Comprar especialização em uma atividade concede **vantagem** nos testes relacionados à atividade. Toda especialização tem como **requisito** possuir a técnica correspondente àquela atividade.
 
 A maioria das especializações possui um atributo atrelado a ela, indicando que aptidões podem ser utilizadas para dar suporte àquela ação especializada.
 

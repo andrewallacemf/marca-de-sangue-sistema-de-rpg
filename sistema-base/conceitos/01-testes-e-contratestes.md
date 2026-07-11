@@ -2,8 +2,8 @@
 titulo: Testes e Contratestes
 tipo: regra
 cenario: base
-status: estavel
-tags: [testes, contratestes, vantagens, desvantagens, dados]
+status: revisao
+tags: [testes, contratestes, vantagens, desvantagens, dados, desempate, ambiente]
 atualizado-em: 2026-07-11
 ---
 
@@ -17,7 +17,7 @@ O **teste é sempre uma ação**, nunca uma reação, englobando **testes de ace
 
 ### Teste de acerto
 
-Um teste de acerto é um teste específico para determinar o desempenho de combate direto (seja em curta ou longa distância) em um conflito. Ele é geralmente (mas não exclusivamente) respondido com um contrateste de esquiva ou contrateste de desempenho de defesa.
+Um teste de acerto é um teste específico para determinar o desempenho de combate direto (independentemente do tipo do ataque) em um conflito. Ele é geralmente (mas não exclusivamente) respondido com um contrateste de esquiva ou contrateste de desempenho de defesa.
 
 ### Teste de desempenho
 
@@ -68,13 +68,28 @@ As **`vantagens`** e **`desvantagens`** alteram a quantidade de dados (**`d10`**
 
 ## Desvantagem natural
 
-Algumas ações **exigem conhecimento** para serem executadas — nadar, trabalhar numa forja e outras atividades do tipo. Quem **não tem o conhecimento** correspondente testa essas ações com **`desvantagem`**: é a chamada **desvantagem natural**. Ações comuns, que qualquer um sabe fazer (como andar), não têm desvantagem natural.
+Algumas ações **exigem conhecimento** para serem executadas; nadar, trabalhar numa forja e outras atividades do tipo. Quem **não tem a técnica** correspondente testa essas ações com **`desvantagem`**: é a chamada **desvantagem natural**. Ações comuns, que qualquer um sabe fazer (como andar), não têm desvantagem natural.
 
-A desvantagem natural é removida por um **traço de conhecimento** na ação correspondente. Esse traço apenas **anula a desvantagem natural** — ele não concede vantagem (vantagem vem de traços de especialização, que têm o conhecimento como requisito).
+A desvantagem natural é removida por um **traço de técnica** na ação correspondente. Esse traço apenas **anula a desvantagem natural**, ele não concede vantagem (vantagem vem de traços de especialização, que têm a técnica como requisito).
 
-> ✅ Decidido em 11/07/2026 (ver [notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md](../../notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md)).
+> ✅ Decidido em 11/07/2026 (ver [notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md](../../notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md)). O nome oficial do traço — **técnica** — foi decidido em [notas-de-design/decisoes/2026-07-11-ajustes-pos-lote-1.md](../../notas-de-design/decisoes/2026-07-11-ajustes-pos-lote-1.md).
 
-> ⚠️ A DEFINIR: nome oficial do traço (ver [PENDENCIAS.md](../../PENDENCIAS.md)).
+## Condições de ambiente e terreno
+
+O **ambiente e o terreno** em que a ação acontece também podem conceder **`vantagens`** ou **`desvantagens`** ao teste ou ao contrateste, **a critério do narrador**, que avalia o contexto da cena. Situações comuns que costumam gerar esses modificadores:
+
+> 💡 PROPOSTA (IA) — lista inicial de exemplos, revisar:
+
+- Terreno difícil ou instável;
+- Escuridão ou visibilidade reduzida;
+- Lutar dentro d'água;
+- Chuva forte ou vento;
+- Altura ou posição elevada;
+- Alvo em cobertura;
+- Calor ou frio extremos;
+- Superfície escorregadia.
+
+O detalhamento completo dessas condições virá no **livro do narrador** (ver [PLANO-DE-MELHORIAS.md](../../PLANO-DE-MELHORIAS.md), Lote 5).
 
 ## Modificadores inversos
 
@@ -84,7 +99,7 @@ Dados adicionais de **`vantagem`** e **`desvantagem`** na mesma ação do person
 
 Caso o personagem responsável pelo teste e o personagem responsável pelo contrateste tenham, ambos, uma ou mais vantagens, elas se anulam até que um dos jogadores não tenha mais modificadores para anular. O mesmo vale para um conflito no qual os dois lados jogam com desvantagens.
 
-> **Exemplo:** O lanceiro Heitor ataca o inimigo com **`+2d10 de vantagem`** por ter utilizado uma aptidão e por estar em terreno superior, mas o espadachim Alexander se defende com **`+1D10 de vantagem`** por estar com guarda levantada. Nesse caso, as vantagens se anulam e Heitor joga com apenas uma vantagem (portanto, dois dados). Alexander joga apenas um dado. Após isso, comparam o resultado final.
+> **Exemplo:** O lanceiro Heitor ataca o inimigo com **`+2d10 de vantagem`** por estar em terreno superior e por atacar um oponente caído, mas o espadachim Alexander se defende com **`+1D10 de vantagem`** por estar com guarda levantada. Nesse caso, as vantagens se anulam e Heitor joga com apenas uma vantagem (portanto, dois dados). Alexander joga apenas um dado. Após isso, comparam o resultado final.
 
 Para organizar o jogo, se deve seguir a seguinte ordem de ações quando em um conflito um jogador anunciar que fará um teste:
 
@@ -102,13 +117,13 @@ Para realizar um teste:
 1. O jogador **indica a ação que deseja realizar**.
 2. Se o narrador identifica alguma possibilidade de falha, **solicita a realização de um teste.**
     1. O narrador indica o [atributo](02-atributos.md) relacionado a ação e os modificadores aplicáveis de contexto da cena e características do personagem.
-    2. O jogador decide quantos pontos de aptidão do atributo ele quer gastar nessa tentativa.
 3. O jogador **rola `1d10`** + modificadores aplicáveis.
     1. Se tiver **`vantagem`** na ação, considera o **maior valor** rolado entre os dados como valor final.
     2. Se tiver **`desvantagem`** na ação, considera o **menor valor** rolado entre os dados como valor final.
-4. **O valor final do teste é comparado com o valor final do contrateste** (realizado pelo narrador ou por outro jogador) para definir se o personagem obteve sucesso na ação realizada.
+4. **O valor final do teste é comparado com o valor final do contrateste** (realizado pelo narrador ou por outro jogador) para definir se o personagem obteve sucesso na ação realizada. O narrador **anuncia se houve sucesso ou falha antes de narrar os efeitos**.
     1. Para ter sucesso, o valor final do teste precisa ser **superior** ao valor do contrateste.
-    2. **Empates** são considerados falha no teste.
+    2. **Empates** são considerados falha no teste (ver [Desempate](#desempate)).
+5. Sabendo o resultado, os envolvidos podem gastar [aptidões](04-aptidoes.md) do atributo relacionado para **re-rolar o dado do teste ou o dado do contrateste**. Só depois dessa janela o narrador narra os efeitos.
 
 ## Realizando um contrateste
 
@@ -119,14 +134,21 @@ O contrateste é o direito de resposta a uma ação realizada, assim:
 1. O narrador indica que uma ação foi realizada contra o alvo que tem direito a reação;
 2. O alvo indica qual ação quer realizar como resposta, determinando a natureza de seu contrateste (desempenho ou esquiva);
     1. O narrador indica o atributo relacionado a reação e os modificadores aplicáveis de contexto da cena e características do personagem.
-    2. O alvo decide quantos pontos de aptidão do atributo ele quer gastar nessa reação.
 3. O narrador ou jogador realiza o teste, rolando **`1d10`** + modificadores aplicáveis.
     1. Se tiver **`vantagem`** na ação, considera o **maior valor** rolado entre os dados como valor final.
     2. Se tiver **`desvantagem`** na ação, considera o **menor valor** rolado entre os dados como valor final.
-4. **O valor final do contrateste é comparado com o valor final do teste** (realizado pelo jogador que iniciou o teste) para definir se o personagem obteve sucesso na ação realizada.
+4. **O valor final do contrateste é comparado com o valor final do teste** (realizado pelo jogador que iniciou o teste) para definir se o personagem obteve sucesso na ação realizada. O narrador **anuncia se houve sucesso ou falha antes de narrar os efeitos**.
     1. Para ter sucesso, o valor final do contrateste precisa ser **igual ou superior** ao valor do teste.
-    2. **Empates** são considerados sucesso no contrateste.
+    2. **Empates** são considerados sucesso no contrateste (ver [Desempate](#desempate)).
+5. Sabendo o resultado, os envolvidos podem gastar [aptidões](04-aptidoes.md) do atributo relacionado para **re-rolar o dado do teste ou o dado do contrateste**, antes de o narrador narrar os efeitos.
 
 ## Desempate
 
-Como os sucessos ou falhas são definidos por números que se opõem, é preciso de um critério de desempate. Portanto, fique atento: neste sistema, **o contrateste sempre possui a preferência de sucesso no caso de empate contra o teste.**
+Como os sucessos ou falhas são definidos por números que se opõem, é preciso de um critério de desempate. A cadeia completa é:
+
+1. **Padrão:** o **contrateste** possui a preferência de sucesso no caso de empate contra o teste.
+2. Se um dos lados **usou [aptidão](04-aptidoes.md) para re-rolar** e o resultado ficou empatado, o desempate favorece **quem usou a aptidão**.
+3. Se **os dois lados** usaram aptidões, o desempate favorece **quem usou mais**.
+4. Se as quantidades forem **iguais**, volta ao padrão: **o contrateste vence**.
+
+> ✅ Decidido em 11/07/2026 (ver [notas-de-design/decisoes/2026-07-11-ajustes-pos-lote-1.md](../../notas-de-design/decisoes/2026-07-11-ajustes-pos-lote-1.md)).

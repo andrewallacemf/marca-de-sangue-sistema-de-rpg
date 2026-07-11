@@ -36,7 +36,7 @@ Contudo, consideramos que o uso das cartas proporciona uma experiência completa
 
 As habilidades e aptidões que um jogador pode usar estão limitadas pela quantidade de usos que ele adquiriu durante os momentos de “compra e fusão”. Isso pode acontecer no início ou final da sessão, momentos de descanso ou outras situações indicadas pelo mestre que permitam que os personagens dos jogadores ajustem e atualizem suas características.
 
-Para utilizar essas características de uso limitado, o jogador deve indicar que habilidade e aptidão usará e realizar o teste (ou contrateste) aplicando as modificações impostas pela característica.
+Para utilizar essas características de uso limitado, o jogador deve indicar a habilidade que usará e realizar o teste (ou contrateste) aplicando as modificações impostas pela característica. Aptidões seguem um fluxo próprio: são gastas depois que o narrador anuncia o resultado, para re-rolar o dado do teste ou do contrateste (ver [Aptidões](04-aptidoes.md)).
 
 Após utilizar a característica, ela não poderá ser utilizada novamente até que se recupere a carta ou espaço em um descanso ou outra situação indicada pelo mestre.
 

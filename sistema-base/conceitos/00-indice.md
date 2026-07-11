@@ -14,8 +14,8 @@ Regras universais do sistema Marca de Sangue, extraídas do Manual básico v1.1.
 1. [Testes e Contratestes](01-testes-e-contratestes.md) — como o duplo arremesso de dados resolve ações: tipos de teste e contrateste, vantagens, desvantagens, modificadores inversos e desempate.
 2. [Atributos](02-atributos.md) — as quatro categorias (Físico, Ágil, Mental e Social) e o quinto atributo específico de cenário (ex.: KI, em Mukashi).
 3. [Características](03-caracteristicas.md) — o conceito guarda-chuva que reúne habilidades, aptidões e traços, e como jogar com ou sem cartas.
-4. [Aptidões](04-aptidoes.md) — vantagens consumíveis ligadas a um atributo: rerolagem dentro de conflito e sucesso automático fora dele.
+4. [Aptidões](04-aptidoes.md) — recursos consumíveis ligados a um atributo: re-rolagem do dado do teste ou do contrateste dentro de conflito e sucesso automático fora dele.
 5. [Habilidades](05-habilidades.md) — ações consumíveis: requisitos de uso, ordem de resolução fora de combate e recuperação.
-6. [Traços](06-tracos.md) — características passivas e não consumíveis: conhecimentos, especializações, maestrias e aspectos.
+6. [Traços](06-tracos.md) — características passivas e não consumíveis: técnicas, especializações, maestrias e aspectos.
 7. [Pontos de ação](07-pontos-de-acao.md) — a moeda de ações por turno (`PA`): valores iniciais, limite de locomoção e progressão.
 8. [Fadiga](08-fadiga.md) — o desgaste do personagem: como se acumula, o gasto voluntário por PA extras (2 fadiga = 1 PA), penalidades e recuperação.

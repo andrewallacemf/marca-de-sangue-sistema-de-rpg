@@ -47,7 +47,7 @@ Quando uma ou mais habilidades são utilizadas por personagens fora de batalha, 
 
 Para habilidades que custam a mesma quantidade de pontos de ação, o jogador que possui maior valor total de aptidão do **Atributo Ágil** tem preferência.
 
-Todas as aptidões usadas na fila de habilidades devem ser anunciadas antes dos dados da primeira habilidade da fila serem rolados.
+> ⚠️ A DEFINIR: a regra anterior pedia que todas as aptidões usadas na fila de habilidades fossem anunciadas antes de os dados da primeira habilidade serem rolados — o que pressupunha a versão antiga da aptidão (vantagem no teste). Com a mecânica vigente de re-rolagem após o resultado (ver [Aptidões](04-aptidoes.md)), falta definir como as aptidões interagem com a fila de habilidades fora de combate.
 
 ## Recuperando Habilidades
 

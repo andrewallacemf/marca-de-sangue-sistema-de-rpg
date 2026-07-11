@@ -30,12 +30,12 @@ exemplos. Ver [decisões](decisoes/2026-07-11-reunioes-de-mecanica.md). Registro
 - Na variante, "Ponderar" não inicia teste; na vigente, "Ponderar" **inicia um teste e
   contrateste**.
 
-## 2. Especialização (traço) — efeito — ✅ DECIDIDO em 11/07/2026 (nome pendente)
+## 2. Especialização (traço) — efeito — ✅ DECIDIDO em 11/07/2026
 
-**Decisão: as duas variantes viraram traços diferentes** — um traço de conhecimento
-anula a desvantagem natural (nome a definir); "especialização" com requisito dá
-vantagem. Sem níveis. Ver [decisões](decisoes/2026-07-11-reunioes-de-mecanica.md), item 3.
-Registro original:
+**Decisão: as duas variantes viraram traços diferentes** — o traço **Técnica** anula a
+desvantagem natural (nome oficializado em [ajustes pós-Lote 1](decisoes/2026-07-11-ajustes-pos-lote-1.md));
+"especialização" com requisito dá vantagem. Sem níveis.
+Ver [decisões](decisoes/2026-07-11-reunioes-de-mecanica.md), item 3. Registro original:
 
 - **Vigente (manual):** testes da especialização são feitos **sem a desvantagem natural**.
 - **Variante preservada:** testes da especialização ganham **uma vantagem**.
