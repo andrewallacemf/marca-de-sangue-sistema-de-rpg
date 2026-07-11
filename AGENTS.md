@@ -9,10 +9,14 @@ agente de IA, **leia este arquivo inteiro antes de qualquer edição.**
 Documentação do **Marca de Sangue**, um sistema de RPG de mesa, dividida em:
 
 - `sistema-base/` — regras universais, válidas para todos os cenários.
-- `cenarios/<nome>/` — livros de cenário; cada um adiciona mecânicas, itens, criaturas,
-  locais e lore específicos por cima do sistema-base.
+- `modulos/<nome>/` — mecânicas opcionais reutilizáveis (1 módulo = 1 mecânica + seus
+  recursos); **coleções** são conjuntos nomeados de módulos (ver seção Camadas abaixo).
+- `cenarios/<nome>/` — livros de cenário: narrativa + mecânicas **exclusivas** daquele
+  mundo + a declaração de quais módulos usa.
 - `manuais/` — guias operacionais para colaboradores humanos. **Não altere** sem pedido explícito.
 - `registro-ia/` — diário de bordo das sessões com IA (ver protocolo abaixo).
+- `INDICE.md` — índice remissivo: cada conceito e onde aparece. **Consulte antes de
+  procurar por grep às cegas; atualize a cada edição.**
 - `PENDENCIAS.md` — lista viva do que falta definir no sistema.
 
 **Importante: as pessoas deste projeto são leigas em Git/GitHub.** Seu papel inclui
@@ -41,6 +45,12 @@ arquivos.
    registro em `registro-ia/` está incompleta.
 9. **Mantenha o `PENDENCIAS.md` em dia.** Criou uma marcação `⚠️ A DEFINIR`? Adicione a
    linha correspondente no `PENDENCIAS.md`. Resolveu uma? Remova dos dois lugares.
+10. **Mantenha o `INDICE.md` em dia — obrigatório.** Toda modificação de conteúdo deve
+    atualizar o índice remissivo: termo novo → entrada nova; menção nova a um conceito →
+    acrescente o arquivo na linha do termo; menção removida → retire. Use o índice também
+    para **localizar** conceitos rapidamente em vez de varrer o texto.
+11. **Mudança de mecânica exige análise de impacto ANTES de editar** (protocolo abaixo).
+    Nunca implemente direto uma alteração de regra que interage com outras.
 
 ## Comandos Git proibidos
 
@@ -61,6 +71,41 @@ Ao final de **toda sessão em que você alterou conteúdo**, antes do commit fin
    no frontmatter.
 3. Inclua esse arquivo no mesmo commit das mudanças.
 4. Nunca edite ou apague registros de sessões anteriores.
+
+## Protocolo de análise de impacto (mudanças de mecânica — obrigatório)
+
+Quando a pessoa propuser **modificar uma mecânica** do livro:
+
+1. **Mapeie o alcance:** use o `INDICE.md` para localizar onde o conceito é definido e
+   todos os lugares que o citam (direta ou indiretamente).
+2. **Analise as interações:** verifique como a mudança conversa com as demais mecânicas
+   (custos, desempates, ações, listas, cenários/módulos que dependem dela) e com a
+   jogabilidade — procure conflitos, efeitos colaterais e situações não previstas.
+3. **Se identificar efeito colateral, inconsistência ou ponto que exige atenção:**
+   **PARE antes de editar** e retorne à pessoa uma análise com (a) o contexto do
+   problema, (b) o que exatamente conflita e onde, e (c) **propostas de como superar o
+   problema** para viabilizar a alteração. A pessoa refina a proposta; só então implemente.
+4. **Se não identificar nenhum impacto:** diga explicitamente que verificou e não
+   encontrou interações problemáticas, e siga com a implementação.
+5. Após implementar: atualize **todas** as ocorrências mapeadas no passo 1, o `INDICE.md`
+   e, se restar algo aberto, o `PENDENCIAS.md`.
+
+## Camadas do sistema (módulos e coleções)
+
+O conteúdo do jogo se organiza em camadas — respeite-as ao criar ou mover conteúdo:
+
+1. **`sistema-base/`** — mecânicas básicas, presentes em qualquer jogo.
+2. **`modulos/<nome>/`** — 1 módulo = 1 mecânica opcional + todos os seus recursos
+   (ex.: veículos, armas-de-fogo, mutações). Reutilizável por vários cenários.
+   Módulos referenciam o sistema-base; nunca o copiam.
+3. **Coleções** — conjuntos nomeados de módulos (ex.: coleção *armas*), definidas em
+   `modulos/colecoes.md`.
+4. **`cenarios/<nome>/`** — narrativa + mecânicas exclusivas do mundo + a seção
+   **"Módulos utilizados"** no README (o manifesto). Uma mecânica só vira módulo quando
+   mais de um cenário a usa (ou há perspectiva concreta disso); senão, fica no cenário.
+
+Regra de ouro anti-duplicação: **cenário referencia módulo, módulo referencia base** —
+cada um descreve apenas a sua diferença.
 
 ## Fluxo guiado para a pessoa (leigos)
 

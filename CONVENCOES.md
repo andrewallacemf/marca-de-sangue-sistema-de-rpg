@@ -90,3 +90,28 @@ criado a partir do `_template-sessao.md`:
 Toda marcação `> ⚠️ A DEFINIR:` deixada em um texto deve ter uma linha correspondente
 no **[PENDENCIAS.md](PENDENCIAS.md)** (e ser removida de lá quando resolvida, no mesmo
 commit). Assim ninguém precisa caçar buracos pelo repositório.
+
+## 9. Índice remissivo (`INDICE.md`) — atualização obrigatória
+
+O **[INDICE.md](INDICE.md)** lista cada conceito/mecânica do jogo e **onde aparece**
+(como o índice remissivo de um livro). Ele existe para ninguém — pessoa ou IA — precisar
+varrer o texto inteiro atrás de um termo.
+
+- **Toda modificação de conteúdo atualiza o índice, no mesmo commit**: termo novo →
+  entrada nova; menção nova → acrescente o arquivo à linha do termo; menção removida →
+  retire; conceito renomeado → crie a remissão ("Nome antigo → ver Nome novo").
+- Antes de editar uma regra, **consulte o índice** para saber todos os lugares afetados.
+
+## 10. Camadas: sistema-base, módulos, coleções e cenários
+
+- **`sistema-base/`** — mecânicas básicas de qualquer jogo.
+- **`modulos/<nome>/`** — 1 módulo = 1 mecânica opcional + seus recursos (ex.:
+  veículos, armas-de-fogo, mutações), reutilizável por vários cenários. Nomes seguem a
+  regra da seção 2. Frontmatter de arquivo de módulo: use `cenario: modulo` **e** o campo
+  extra `modulo: <nome-do-modulo>`.
+- **Coleções** — conjuntos de módulos, definidos em [`modulos/colecoes.md`](modulos/colecoes.md).
+- **`cenarios/<nome>/`** — narrativa + mecânicas exclusivas + a seção **"Módulos
+  utilizados"** no README do cenário (com link para cada módulo).
+- Anti-duplicação: **cenário referencia módulo, módulo referencia base** — cada camada
+  escreve só a própria diferença. Mecânica só vira módulo quando mais de um cenário a
+  usa (ou vai usar).

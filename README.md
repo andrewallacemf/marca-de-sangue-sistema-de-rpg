@@ -21,7 +21,8 @@ texto simples (Markdown), de forma que:
 |-------|------------------|
 | **[`manuais/`](manuais/)** | Todos os guias de "como fazer": instalar, editar, sincronizar, resolver problemas. **Leia isto primeiro.** |
 | **[`sistema-base/`](sistema-base/)** | As **regras universais** — valem para qualquer cenário. |
-| **[`cenarios/`](cenarios/)** | Os **livros de cenário**. Cada cenário é uma pasta que *acrescenta* mecânicas, itens e recursos próprios por cima do sistema-base. |
+| **[`modulos/`](modulos/)** | **Mecânicas opcionais reutilizáveis** (veículos, armas de fogo...) que os cenários declaram usar. |
+| **[`cenarios/`](cenarios/)** | Os **livros de cenário**: narrativa + mecânicas exclusivas + os módulos que cada mundo usa. |
 | **[`notas-de-design/`](notas-de-design/)** | Hipóteses e variantes de regras ainda **não** decididas — o bastidor do design. |
 | **[`registro-ia/`](registro-ia/)** | O **diário de bordo das sessões com IA**: cada prompt dado e o que a IA fez, sessão por sessão. |
 | **[`assets/`](assets/)** | Fichas oficiais (PDF), ilustrações de malha e regras sobre arquivos grandes. |
@@ -32,6 +33,7 @@ texto simples (Markdown), de forma que:
 |---------|----------------|
 | **[COMECE-AQUI.md](COMECE-AQUI.md)** | O primeiro lugar que toda pessoa nova deve ler. |
 | **[CHECKLIST.md](CHECKLIST.md)** | O ciclo de trabalho em 1 página, para imprimir/deixar aberto. |
+| **[INDICE.md](INDICE.md)** | Índice remissivo: cada conceito do jogo e onde ele aparece. |
 | **[PENDENCIAS.md](PENDENCIAS.md)** | Tudo que falta definir ou escrever no sistema. |
 | **[PLANO-DE-MELHORIAS.md](PLANO-DE-MELHORIAS.md)** | O roteiro de execução das melhorias, em lotes ordenados. |
 | **[historico-de-versoes.md](historico-de-versoes.md)** | Changelog do **sistema** (Alpha 1.0.0a → 1.1.0b → …). |
