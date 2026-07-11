@@ -47,7 +47,7 @@ Quando uma ou mais habilidades são utilizadas por personagens fora de batalha, 
 
 Para habilidades que custam a mesma quantidade de pontos de ação, o jogador que possui maior valor total de aptidão do **Atributo Ágil** tem preferência.
 
-> ⚠️ A DEFINIR: a regra anterior pedia que todas as aptidões usadas na fila de habilidades fossem anunciadas antes de os dados da primeira habilidade serem rolados — o que pressupunha a versão antiga da aptidão (vantagem no teste). Com a mecânica vigente de re-rolagem após o resultado (ver [Aptidões](04-aptidoes.md)), falta definir como as aptidões interagem com a fila de habilidades fora de combate.
+Após a execução de cada habilidade da fila, se houver necessidade de jogar os dados, os envolvidos podem escolher utilizar [aptidões](04-aptidoes.md) para re-rolar os dados, seguindo a regra geral (o narrador anuncia o resultado antes de narrar os efeitos). Se mais de um personagem usar aptidões na mesma disputa e houver empate, vale a cadeia de [desempate](04-aptidoes.md#aptidões-e-desempate): vence quem usou mais aptidões; quantidades iguais, vale o padrão (o contrateste vence).
 
 ## Recuperando Habilidades
 

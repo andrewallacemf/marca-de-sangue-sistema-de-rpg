@@ -43,3 +43,16 @@ vantagem** em teste ligado ao atributo). A mecânica vigente é outra:
   tratada dessa forma em **todo lugar** que a cita direta ou indiretamente.
 - Segue **em aberto** (investigação separada): a frequência de uso ("1×/dia" vs "livre
   com recuperação em descanso longo") — ver variantes-pendentes, item 3.
+
+## 4. Aptidão fora de batalha: fim do sucesso automático ✅
+
+Ao revisar a fila de habilidades fora de combate, o grupo redefiniu a regra:
+
+- **Deixa de existir o "sucesso automático"** por gastar aptidão fora de batalha.
+- Fora de batalha **também se rolam os dados** para definir o resultado, e a regra de
+  batalha (re-rolagem após o anúncio do resultado) **vale igualmente fora dela**.
+- **Removido o limite de "uma aptidão por teste"**: o jogador pode utilizar quantas
+  aptidões desejar, contanto que as tenha disponíveis.
+- Na fila de habilidades fora de combate: após a execução de cada habilidade, se houver
+  rolagem, os envolvidos podem gastar aptidões para re-rolar; empates seguem a cadeia
+  de desempate (quem usou mais vence; quantidades iguais → contrateste vence).

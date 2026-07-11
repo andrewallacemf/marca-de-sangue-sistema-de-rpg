@@ -31,7 +31,6 @@ parada para saber "no que dá pra ajudar?".
 | Pendência | Onde | Quem | Desde |
 |-----------|------|------|-------|
 | **Revisar o diff do Lote 1 + ajustes pós-Lote 1** (aplicados pela IA em 11/07): fadiga, desvantagem natural, reação, posicionamento, migração de 14 especializações → "Técnicas", aptidão corrigida para re-rolagem em 8 lugares, exemplo do conflito social e lista de ambiente/terreno propostos | [PLANO-DE-MELHORIAS.md](PLANO-DE-MELHORIAS.md) (Lote 1) | grupo | 2026-07-11 |
-| Fila de habilidades fora de combate dizia "aptidões anunciadas antes da rolagem" — incompatível com a re-rolagem pós-resultado; definir como fica | [conceitos/05-habilidades.md](sistema-base/conceitos/05-habilidades.md) | grupo | 2026-07-11 |
 | Armadura: decisão diz "reduz 1 de dano", mas a tabela de proteções tem coluna "Redutor Dano" de 1–12 — alinhar regra × tabela | [listas/protecoes-base.md](sistema-base/listas/protecoes-base.md) | grupo | 2026-07-11 |
 | Contundente: definir **quantos** PA o acerto reduz (texto ficou genérico) | [listas/equipamentos-base.md](sistema-base/listas/equipamentos-base.md) | grupo | 2026-07-11 |
 | Definir custo em Exp. da nova "Especialização em ataque desarmado" | [listas/tracos-base.md](sistema-base/listas/tracos-base.md) | grupo | 2026-07-11 |

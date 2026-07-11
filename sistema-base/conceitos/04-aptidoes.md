@@ -32,17 +32,15 @@ O uso de aptidões altera a regra de [desempate](01-testes-e-contratestes.md#des
 3. Se os dois lados usaram aptidões, favorece **quem usou mais**.
 4. Se as quantidades forem iguais, volta ao padrão: **o contrateste vence**.
 
-## Aptidões dentro de conflito
+## Aptidões dentro e fora de conflito
 
-Dentro de um conflito é possível gastar quantas aptidões o jogador quiser em um teste de uma ação ou habilidade relacionados ao atributo daquela aptidão. Não há gasto de [pontos de ação](07-pontos-de-acao.md) (**`PA`**) para usar aptidões.
+A regra é a **mesma dentro e fora de conflito**: sempre que houver rolagem de dados, é possível gastar quantas aptidões o jogador quiser — contanto que estejam disponíveis — em um teste de uma ação ou habilidade relacionados ao atributo daquela aptidão. Não há gasto de [pontos de ação](07-pontos-de-acao.md) (**`PA`**) para usar aptidões.
 
-Exemplo: Em uma batalha, o personagem usou a habilidade “Atordoar”, que retira Pontos de Ação do oponente. Após o teste e contrateste, o narrador anuncia que o resultado seria uma falha. Assim, o jogador decide gastar uma aptidão do tipo **`Físico`** para re-rolar um dos dados envolvidos no teste ou no contrateste.
+> ✅ Decidido em 11/07/2026: deixou de existir o **sucesso automático** fora de batalha e o limite de uma aptidão por teste. Fora de batalha também se rolam os dados, e a aptidão funciona igual: re-rolagem após o resultado (ver [notas-de-design/decisoes/2026-07-11-ajustes-pos-lote-1.md](../../notas-de-design/decisoes/2026-07-11-ajustes-pos-lote-1.md)).
 
-## Aptidões fora de conflito
+Exemplo (em batalha): o personagem usou a habilidade “Atordoar”, que retira Pontos de Ação do oponente. Após o teste e contrateste, o narrador anuncia que o resultado seria uma falha. Assim, o jogador decide gastar uma aptidão do tipo **`Físico`** para re-rolar um dos dados envolvidos no teste ou no contrateste.
 
-Fora de conflito, é possível gastar uma aptidão por teste relacionado ao atributo da aptidão para transformar o teste em um **sucesso automático**.
-
-Exemplo: Para passar por um lugar proibido, o personagem tentará convencer o guarda na porta que há algum perigo em outro lugar que demanda sua presença. O jogador poderia fazer um teste, mas avalia que, caso falhe, as consequências podem ser muito grandes. Por isso, usa uma aptidão **`Social`** para ter um sucesso automático, não precisando sequer jogar o dado.
+Exemplo (fora de batalha): para passar por um lugar proibido, o personagem tenta convencer o guarda de que há um perigo em outro lugar que demanda sua presença. O narrador anuncia que o teste **`Social`** falhou; como as consequências seriam graves, o jogador gasta uma aptidão **`Social`** e re-rola o dado do seu teste em busca de um resultado melhor.
 
 ## Recuperando aptidões
 
