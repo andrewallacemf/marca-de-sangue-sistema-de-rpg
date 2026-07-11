@@ -19,7 +19,7 @@ parada para saber "no que dá pra ajudar?".
 | Pendência | Onde | Quem | Desde |
 |-----------|------|------|-------|
 | Importar o material v1 do Marca de Sangue para a estrutura | [CONFIGURACAO-INICIAL.md](CONFIGURACAO-INICIAL.md) (passo 3) | André | 2026-07-11 |
-| Convidar os colaboradores no GitHub (usernames pendentes) | [CONFIGURACAO-INICIAL.md](CONFIGURACAO-INICIAL.md) (passo 2) | André | 2026-07-11 |
+| Convidar os demais colaboradores no GitHub (Daniel/danielm-jor já convidado em 2026-07-11, aguardando aceite; faltam os outros usernames) | [CONFIGURACAO-INICIAL.md](CONFIGURACAO-INICIAL.md) (passo 2) | André | 2026-07-11 |
 | Definir canal de avisos do grupo e o "guardião do Git" | [CONFIGURACAO-INICIAL.md](CONFIGURACAO-INICIAL.md) (passo 4) | grupo | 2026-07-11 |
 
 ## Sistema-base
