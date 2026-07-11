@@ -70,7 +70,7 @@ As **`vantagens`** e **`desvantagens`** alteram a quantidade de dados (**`d10`**
 
 Algumas ações **exigem conhecimento** para serem executadas; nadar, trabalhar numa forja e outras atividades do tipo. Quem **não tem a técnica** correspondente testa essas ações com **`desvantagem`**: é a chamada **desvantagem natural**. Ações comuns, que qualquer um sabe fazer (como andar), não têm desvantagem natural.
 
-A desvantagem natural é removida por um **traço de técnica** na ação correspondente. Esse traço apenas **anula a desvantagem natural**, ele não concede vantagem (vantagem vem de traços de especialização, que têm a técnica como requisito).
+A desvantagem natural é removida por um **traço de técnica** na ação correspondente. Esse traço apenas **anula a desvantagem natural**, ele não concede vantagem.
 
 > ✅ Decidido em 11/07/2026 (ver [notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md](../../notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md)). O nome oficial do traço — **técnica** — foi decidido em [notas-de-design/decisoes/2026-07-11-ajustes-pos-lote-1.md](../../notas-de-design/decisoes/2026-07-11-ajustes-pos-lote-1.md).
 

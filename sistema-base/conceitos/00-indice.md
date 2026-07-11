@@ -16,7 +16,7 @@ Regras universais do sistema Marca de Sangue, extraídas do Manual básico v1.1.
 3. [Características](03-caracteristicas.md) — o conceito guarda-chuva que reúne habilidades, aptidões e traços: compra com experiência, uso, recuperação e registro na ficha.
 4. [Aptidões](04-aptidoes.md) — recursos consumíveis ligados a um atributo: re-rolagem do dado do teste ou do contrateste, dentro e fora de conflito.
 5. [Habilidades](05-habilidades.md) — ações consumíveis: requisitos de uso, ordem de resolução fora de combate e recuperação.
-6. [Traços](06-tracos.md) — características passivas e não consumíveis: técnicas, especializações, maestrias e aspectos.
+6. [Traços](06-tracos.md) — características passivas e não consumíveis: técnicas, maestrias e aspectos.
 7. [Pontos de ação](07-pontos-de-acao.md) — a moeda de ações por turno (`PA`): valores iniciais, limite de locomoção e progressão.
 8. [Fadiga](08-fadiga.md) — o desgaste do personagem: como se acumula, o gasto voluntário por PA extras (2 fadiga = 1 PA), penalidades e recuperação.
 9. [Mecânica alternativa: habilidades por nível e fadiga](09-mecanica-alternativa-habilidades-e-fadiga.md) — 🧪 **em avaliação**: proposta que troca a compra de usos de habilidade por evolução por nível com custo em fadiga; não substitui as regras vigentes de Habilidades e Fadiga.
