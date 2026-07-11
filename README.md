@@ -22,8 +22,9 @@ texto simples (Markdown), de forma que:
 | **[`manuais/`](manuais/)** | Todos os guias de "como fazer": instalar, editar, sincronizar, resolver problemas. **Leia isto primeiro.** |
 | **[`sistema-base/`](sistema-base/)** | As **regras universais** — valem para qualquer cenário. |
 | **[`cenarios/`](cenarios/)** | Os **livros de cenário**. Cada cenário é uma pasta que *acrescenta* mecânicas, itens e recursos próprios por cima do sistema-base. |
+| **[`notas-de-design/`](notas-de-design/)** | Hipóteses e variantes de regras ainda **não** decididas — o bastidor do design. |
 | **[`registro-ia/`](registro-ia/)** | O **diário de bordo das sessões com IA**: cada prompt dado e o que a IA fez, sessão por sessão. |
-| **[`assets/`](assets/)** | Regras sobre imagens, mapas e arquivos grandes. |
+| **[`assets/`](assets/)** | Fichas oficiais (PDF), ilustrações de malha e regras sobre arquivos grandes. |
 
 ## Arquivos importantes na raiz
 
@@ -32,6 +33,8 @@ texto simples (Markdown), de forma que:
 | **[COMECE-AQUI.md](COMECE-AQUI.md)** | O primeiro lugar que toda pessoa nova deve ler. |
 | **[CHECKLIST.md](CHECKLIST.md)** | O ciclo de trabalho em 1 página, para imprimir/deixar aberto. |
 | **[PENDENCIAS.md](PENDENCIAS.md)** | Tudo que falta definir ou escrever no sistema. |
+| **[historico-de-versoes.md](historico-de-versoes.md)** | Changelog do **sistema** (Alpha 1.0.0a → 1.1.0b → …). |
+| **[LICENCA.md](LICENCA.md)** | CC BY-NC-SA 4.0 + créditos dos criadores. |
 | **[CONVENCOES.md](CONVENCOES.md)** | As regras de organização: como nomear arquivos, como estruturar cada página. |
 | **[AGENTS.md](AGENTS.md)** | Instruções para **qualquer IA** que for editar o projeto. |
 | **[CLAUDE.md](CLAUDE.md)** | Atalho que aponta a IA da Anthropic para o `AGENTS.md`. |

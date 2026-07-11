@@ -31,7 +31,7 @@ leitura, mas serve para busca e organização (e no futuro permite listas autom�
 ---
 titulo: Magia de Cura
 tipo: item          # regra | item | criatura | mecanica | local | lore | cenario
-cenario: base       # base | shogunato-fantastico | junkpunk-pos-apocaliptico | ratos-inteligentes
+cenario: base       # base | colapso | mukashi | gaeria | peabiru | o-sindicato | rodentia
 status: rascunho    # rascunho | revisao | estavel
 tags: [magia, cura, suporte]
 atualizado-em: 2026-07-11

@@ -11,11 +11,14 @@ seção 4.
 
 ## Cenários existentes
 
-| Pasta | Mundo |
-|-------|-------|
-| [`shogunato-fantastico/`](shogunato-fantastico/) | Shogunato japonês fantástico. |
-| [`junkpunk-pos-apocaliptico/`](junkpunk-pos-apocaliptico/) | Pós-apocalíptico junkpunk. |
-| [`ratos-inteligentes/`](ratos-inteligentes/) | Ratos inteligentes e levemente antropomorfizados. |
+| Pasta | Mundo | Estado |
+|-------|-------|--------|
+| [`colapso/`](colapso/) | Junkpunk pós-apocalíptico no Brasil de 2128+30 — veículos, radiação, mutações. | Alpha (o mais desenvolvido) |
+| [`mukashi/`](mukashi/) | Japão feudal mitológico no arquipélago de Yamato — Kami, yokai, atributo KI. | Lore parcial |
+| [`gaeria/`](gaeria/) | Fantasia medieval com magia rúnica; carrega a camada fantasia do sistema. | Rascunho antigo a migrar |
+| [`peabiru/`](peabiru/) | Folclore sul-americano pré-colonial — ~148 criaturas de lore. | Bestiário a migrar |
+| [`o-sindicato/`](o-sindicato/) | Steampunk. | Só a ideia |
+| [`rodentia/`](rodentia/) | Ratos medievais num mundo pós-humanos. | Só a ideia |
 
 ## Criar um cenário novo
 
