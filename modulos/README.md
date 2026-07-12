@@ -4,6 +4,14 @@ Um **módulo** é uma mecânica **opcional e reutilizável** com todos os seus r
 regras, listas, itens, traços e habilidades daquela mecânica. A relação é **1 módulo =
 1 mecânica**. Exemplos previstos: *veículos*, *armas-de-fogo*, *mutações*.
 
+Oficialmente, os módulos são **módulos de recursos** (não "de regras"): **acessórios do
+manual base** (Manual base do jogador; futuro Manual base do narrador), contendo
+mecânicas, tabelas de itens etc., com as **informações de jogador e de narrador
+separadas** dentro de cada módulo. Conjuntos de módulos formam **coleções**
+(ver [colecoes.md](colecoes.md)).
+
+> ✅ Decidido em 11/07/2026 (ver [notas-de-design/decisoes/2026-07-11-terminologia-alcance-descanso.md](../notas-de-design/decisoes/2026-07-11-terminologia-alcance-descanso.md), item B12).
+
 ## Como as camadas se encaixam
 
 ```

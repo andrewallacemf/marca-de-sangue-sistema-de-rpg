@@ -15,19 +15,19 @@ Habilidades base do atributo **`Mental`**. Parte da "Lista de habilidades base" 
 
 | **Habilidade** | **Custo de `PA`** | **Custo de compra** |
 | --- | --- | --- |
-| Analisar fraquezas | **`1 PA`** | **`1 Exp.`** |
-| Auto cura | **`3 PA`** | **`3 Exp.`** |
-| Auto tratamento | **`4 PA`** | **`3 Exp.`** |
-| Criar armadilha | **`1 PA`** | **`2 Exp.`** |
-| Confundir inimigo | **`3 PA`** | **`3 Exp.`** |
-| Intimidação generalizada | **`3 PA`** | **`3 Exp.`** |
-| Urro de Intimidação | **`3 PA`** | **`3 Exp.`** |
-| Recompor | **`3 PA`** | **`2 Exp.`** |
-| Consumir | **`3 PA`** | **`3 Exp.`** |
+| Analisar fraquezas | **`1 PA`** | **`1 exp.`** |
+| Auto cura | **`3 PA`** | **`3 exp.`** |
+| Auto tratamento | **`4 PA`** | **`3 exp.`** |
+| Criar armadilha | **`1 PA`** | **`2 exp.`** |
+| Confundir inimigo | **`3 PA`** | **`3 exp.`** |
+| Intimidação generalizada | **`3 PA`** | **`3 exp.`** |
+| Urro de Intimidação | **`3 PA`** | **`3 exp.`** |
+| Recompor | **`3 PA`** | **`2 exp.`** |
+| Consumir | **`3 PA`** | **`3 exp.`** |
 
 ## Analisar fraquezas
 
-**Atributo:** `Mental` · **Custo de PA:** `1 PA` · **Custo de compra:** `1 Exp.`
+**Atributo:** `Mental` · **Custo de PA:** `1 PA` · **Custo de compra:** `1 exp.`
 
 ### Descrição
 
@@ -48,7 +48,7 @@ Vê quanto dano o oponente recebeu em partes do corpo a escolha do jogador.
 
 ## Auto cura
 
-**Atributo:** `Mental` · **Custo de PA:** `3 PA` · **Custo de compra:** `3 Exp.`
+**Atributo:** `Mental` · **Custo de PA:** `3 PA` · **Custo de compra:** `3 exp.`
 
 ### Descrição
 
@@ -58,7 +58,7 @@ Se falhar neste teste de cura, não recebe dano adicional.
 
 ### Requisitos de uso
 
-- Não estar impedido/desabilitado.
+- Não estar [desabilitado](../conflitos/03-saude-e-protecao.md#membro-desabilitado-incapacitado-ou-invalidado).
 
 ### Progressão
 
@@ -75,7 +75,7 @@ Se falhar neste teste de cura, não recebe dano adicional.
 
 ## Auto tratamento
 
-**Atributo:** `Mental` · **Custo de PA:** `4 PA` · **Custo de compra:** `3 Exp.`
+**Atributo:** `Mental` · **Custo de PA:** `4 PA` · **Custo de compra:** `3 exp.`
 
 ### Descrição
 
@@ -85,7 +85,7 @@ Se falhar neste teste de tratamento, não recebe dano adicional.
 
 ### Requisitos de uso
 
-- Não estar impedido/desabilitado.
+- Não estar [desabilitado](../conflitos/03-saude-e-protecao.md#membro-desabilitado-incapacitado-ou-invalidado).
 
 ### Progressão
 
@@ -103,7 +103,7 @@ Se falhar neste teste de tratamento, não recebe dano adicional.
 
 ## Confundir inimigo
 
-**Atributo:** `Mental` · **Custo de PA:** `3 PA` · **Custo de compra:** `3 Exp.`
+**Atributo:** `Mental` · **Custo de PA:** `3 PA` · **Custo de compra:** `3 exp.`
 
 ### Descrição
 
@@ -126,7 +126,7 @@ Realiza um teste mental contra oponentes dentro de 6 metros de distância para c
 
 ## Consumir
 
-**Atributo:** `Mental` · **Custo de PA:** `3 PA` · **Custo de compra:** `3 Exp.`
+**Atributo:** `Mental` · **Custo de PA:** `3 PA` · **Custo de compra:** `3 exp.`
 
 ### Descrição
 
@@ -147,11 +147,11 @@ Realiza um teste mental para:
 
 ## Criar armadilha
 
-**Atributo:** `Mental` · **Custo de PA:** `1 PA` · **Custo de compra:** `2 Exp.`
+**Atributo:** `Mental` · **Custo de PA:** `1 PA` · **Custo de compra:** `2 exp.`
 
 ### Descrição
 
-Deposita/constrói uma armadilha em uma casa do terreno adjacente a você. Quando acionada, prende o oponente e causa dano.
+Deposita/constrói uma armadilha em um espaço do terreno adjacente a você. Quando acionada, prende o oponente e causa dano.
 
 Para se soltar, o oponente deve realizar um teste físico, se falhar, sofre o dano novamente.
 
@@ -170,7 +170,7 @@ Para se soltar, o oponente deve realizar um teste físico, se falhar, sofre o da
 
 ## Intimidação generalizada
 
-**Atributo:** `Mental` · **Custo de PA:** `3 PA` · **Custo de compra:** `3 Exp.`
+**Atributo:** `Mental` · **Custo de PA:** `3 PA` · **Custo de compra:** `3 exp.`
 
 ### Descrição
 
@@ -193,9 +193,9 @@ Realiza um teste mental contra oponentes dentro de 6 metros de distância para a
 
 ## Recompor
 
-> ⚠️ A DEFINIR: a tabela de resumo do manual indica custo de compra de `2 Exp.`, mas a entrada detalhada indica `4 Exp.`; conferir o valor correto.
+> ⚠️ A DEFINIR: a tabela de resumo do manual indica custo de compra de `2 exp.`, mas a entrada detalhada indica `4 exp.`; conferir o valor correto.
 
-**Atributo:** `Mental` · **Custo de PA:** `3 PA` · **Custo de compra:** `4 Exp.`
+**Atributo:** `Mental` · **Custo de PA:** `3 PA` · **Custo de compra:** `4 exp.`
 
 ### Descrição
 
@@ -213,7 +213,7 @@ Recupera as próprias aptidões consumidas.
 
 ## Urro de Intimidação
 
-**Atributo:** `Mental` · **Custo de PA:** `3 PA` · **Custo de compra:** `3 Exp.`
+**Atributo:** `Mental` · **Custo de PA:** `3 PA` · **Custo de compra:** `3 exp.`
 
 ### Descrição
 

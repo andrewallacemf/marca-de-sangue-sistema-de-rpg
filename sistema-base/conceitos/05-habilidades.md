@@ -17,7 +17,7 @@ Você pode utilizar quantas habilidades quiser em seu turno, desde que tenha uso
 
 Mas pense bem antes de usar uma habilidade: não ter sucesso no uso de uma habilidade não evita que ela seja gasta! Uma habilidade que resultou em uma falha ainda assim gasta seus pontos de ação e o uso da habilidade. Essa habilidade gasta pode fazer falta mais para frente! Mas se o personagem for interrompido ou impedido, não conseguindo sequer tentar realizar a ação da habilidade, o uso da habilidade não é gasto.
 
-Você pode comprar usos (acumulativos) ou aumentar o nível de um uso de habilidade pagando o custo de **`Exp.`** indicado, consultando a “Lista de habilidades base” na seção “Recursos básicos do sistema” e a lista de habilidades específicas do cenário escolhido.
+Você pode comprar usos (acumulativos) ou aumentar o nível de um uso de habilidade pagando o custo de **`exp.`** indicado, consultando a “Lista de habilidades base” na seção “Recursos básicos do sistema” e a lista de habilidades específicas do cenário escolhido.
 
 ## Utilizando Habilidades
 
@@ -35,7 +35,7 @@ Habilidades podem ser utilizadas de diferentes formas, de acordo com cada situa�
 
 Dentro de uma batalha, o jogador pode utilizar quantas habilidades quiser, gastando o número de ações necessárias para cada habilidade.
 
-> Ex.: *Kenji, o espadachim, possui **`7 PA`** em seu turno. Em sua vez, ele decide utilizar a habilidade “encontrão”, gastando **`2 PA`** e utilizando um de seus 3 usos dessa habilidade para empurrar o inimigo em direção a um penhasco, gasta mais dois pontos de ação para andar duas casas em direção ao inimigo e então utiliza mais **`2 PA`** para mais um uso da habilidade “encontrão” para empurrar o inimigo novamente, o fazendo cair do penhasco, sobrando **`1 PA`** para continuar andando ou fazer outra coisa.*
+> Ex.: *Kenji, o espadachim, possui **`7 PA`** em seu turno. Em sua vez, ele decide utilizar a habilidade “encontrão”, gastando **`2 PA`** e utilizando um de seus 3 usos dessa habilidade para empurrar o inimigo em direção a um penhasco, gasta mais dois pontos de ação para andar dois espaços em direção ao inimigo e então utiliza mais **`2 PA`** para mais um uso da habilidade “encontrão” para empurrar o inimigo novamente, o fazendo cair do penhasco, sobrando **`1 PA`** para continuar andando ou fazer outra coisa.*
 
 > *As ações possíveis de Kenji se esgotaram, o obrigando a passar seu turno. No próximo turno Kenji terá mais **`7 PA`** para jogar, mas os usos da habilidade “encontrão” utilizados permanecem desativados até que Kenji tenha um descanso.*
 

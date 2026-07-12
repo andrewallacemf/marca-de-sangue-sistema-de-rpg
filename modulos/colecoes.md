@@ -1,6 +1,7 @@
 # 🗂️ Coleções de módulos
 
-Uma **coleção** é um conjunto nomeado de módulos que costumam ser usados juntos. Um
+Uma **coleção** é um conjunto nomeado de **módulos de recursos** — os acessórios do
+manual base (ver [README.md](README.md)) — que costumam ser usados juntos. Um
 cenário pode declarar uma coleção inteira ("usa a coleção *armas*") ou módulos avulsos
 ("usa o módulo *armas-de-fogo* da coleção *armas*").
 

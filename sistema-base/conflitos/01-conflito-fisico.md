@@ -29,9 +29,9 @@ Para isso, jogadores e narrador jogam **`1d10`**. Jogadores podem aplicar aptid�
 - Para o caso de dois jogadores com valores iguais, **o jogador que rolou mais dados para iniciativa fica à frente** na lista.
 - Caso o mesmo número de dados tenha sido rolado, **ambos jogam `1d10` novamente** (até que tirem valores diferentes) e **o jogador com o maior número ficará à frente** na lista de iniciativa.
 
-## Malha de conflito físico
+## Malha de combate físico
 
-Para representar os combates que ocorrem na imaginação do narrador e dos jogadores, o Marca de Sangue utiliza uma malha de combate em que os espaços equivalem a 1 metro de distância. Recomenda-se o uso da malha hexagonal, que dará mais possibilidades estratégicas ao jogo, mas também é possível utilizar a malha quadrada, comum também a outros jogos de RPG.
+Para representar os combates que ocorrem na imaginação do narrador e dos jogadores, o Marca de Sangue utiliza uma **malha de combate físico** em que os **espaços** equivalem a 1 metro de distância. Recomenda-se o uso da malha hexagonal, que dará mais possibilidades estratégicas ao jogo, mas também é possível utilizar a malha quadrada, comum também a outros jogos de RPG.
 
 *Malha Hexagonal*
 
@@ -41,11 +41,11 @@ Para representar os combates que ocorrem na imaginação do narrador e dos jogad
 
 ![Malha quadriculada](../../assets/imagens/malha/frame-07.png)
 
-Neste sistema, o alcance das armas também é medido em metros.
+Neste sistema, o alcance das armas também é medido em metros. Toda arma tem um **alcance ideal** (valor ou faixa), em que ataca normalmente, e um **alcance não ideal**, em que ainda pode tentar acertar, mas com **`desvantagem`** — a regra completa está em [Equipamentos — Alcance ideal e alcance não ideal](../listas/equipamentos-base.md#alcance-ideal-e-alcance-não-ideal).
 
 > *Exemplo: Se uma lança longa tem 2 metros de alcance ideal, em uma malha hexagonal, isso significa que o personagem que a está utilizando consegue golpear qualquer oponente a 2 espaços de distância.*
 
-Em uma malha quadrada, para mensurar a distância de uma forma simples, mesmo que para fins de alcance de uma arma, basta contar as “casas” até lá, sempre passando de um quadrado a outro pelos lados e nunca pelas diagonais.
+Em uma malha quadrada, para mensurar a distância de uma forma simples, mesmo que para fins de alcance de uma arma, basta contar os “espaços” até lá, sempre passando de um espaço a outro pelos lados e nunca pelas diagonais.
 
 ## Posicionamento em campo
 
@@ -95,7 +95,7 @@ Um personagem entra em posicionamento **definido** voluntariamente quando:
 - Declara seu posicionamento;
 - Desfere um golpe corporal, tendo sua frente posicionada na direção do oponente;
 - Interage com personagens, objetos ou outras coisas que necessitem concentração, permanecendo com posicionamento **definido** enquanto durar a interação;
-- Levanta uma guarda, precisando indicar qual lado está guardando. Portanto, o **posicionamento defensivo** é um tipo de posicionamento **definido.**
+- Levanta uma guarda, precisando indicar qual lado está guardando. Portanto, a **postura defensiva** é um tipo de posicionamento **definido.**
 
 Um personagem entra em posicionamento **definido** involuntariamente quando:
 
@@ -129,9 +129,9 @@ Um personagem entra em posicionamento **definido** involuntariamente quando:
 
 ![Posicionamento definido por engajamento em malha quadriculada](../../assets/imagens/malha/frame-12.png)
 
-No caso de estar utilizando a malha hexagonal, o personagem possui 3 hexágonos de frente e 3 de costas.
+No caso de estar utilizando a malha hexagonal, o personagem possui 3 espaços de frente e 3 de costas.
 
-No caso de estar utilizando a malha quadrada, o personagem possui 3 quadrados de frente e 5 de costas.
+No caso de estar utilizando a malha quadrada, o personagem possui 3 espaços de frente e 5 de costas.
 
 > 💡 **Cuidado!**
 >
@@ -139,19 +139,26 @@ No caso de estar utilizando a malha quadrada, o personagem possui 3 quadrados de
 
 ### Engajamento
 
-Ao entrar na área de acerto corpo-a-corpo de um jogador, o personagem é considerado engajado. Personagens engajados possuem restrições de movimento, podendo apenas se movimentar livremente para casas fora da área de engajamento do oponente. **Caso o jogador esteja dentro da área de engajamento e se mova para outro espaço ainda na área de engajamento, o oponente pode pedir um ataque de oportunidade.**
+O engajamento é a zona de ataque de oportunidade das armas **corpo a corpo**, expressa em termos de **[alcance ideal](../listas/equipamentos-base.md#alcance-ideal-e-alcance-não-ideal)**. Um personagem está **engajado** quando ocupa um espaço dentro do alcance ideal da arma corpo a corpo de um oponente.
+
+- **Gatilho padrão:** se um oponente **se move de um espaço dentro do alcance ideal da sua arma corpo a corpo para outro espaço ainda dentro do alcance ideal**, você pode usar a sua **[reação](02-acoes-em-conflito.md#reação)** para realizar um **[ataque de oportunidade](#ataque-de-oportunidade)**.
+- **Não vale no alcance não ideal:** movimento que acontece no alcance não ideal da arma **não** ativa o ataque de oportunidade.
+- **Propriedades expandem o engajamento** (os gatilhos se somam, não se substituem): armas **cortantes (`CORT.`)** também ativam o ataque de oportunidade quando o alvo **sai** do alcance ideal; armas **perfurantes (`PERF.`)**, quando o alvo **entra** nele (ver [Propriedades das armas](../listas/equipamentos-base.md#propriedades-das-armas)).
+- **Ataques à distância não fazem ataque de oportunidade** — a não ser por traço específico, como o aspecto **[Vigilante](../listas/tracos-base.md#vigilante)**.
+
+> ✅ Decidido em 11/07/2026: engajamento redefinido em termos de alcance ideal — a antiga "área de engajamento" deixa de ser usada como termo (ver [notas-de-design/decisoes/2026-07-11-terminologia-alcance-descanso.md](../../notas-de-design/decisoes/2026-07-11-terminologia-alcance-descanso.md), item A3).
 
 > 💡 **Engajamento no posicionamento Definido**
 >
-> Enquanto o personagem estiver em posicionamento **Definido**, sua área de engajamento passa a ser apenas os espaços considerados frente.
+> Enquanto o personagem estiver em posicionamento **Definido**, seu engajamento passa a valer apenas nos espaços do alcance ideal considerados frente.
 
 ### Ataque de Oportunidade
 
-O ataque de oportunidade pode ser realizado caso um oponente se movimente dentro da sua área de engajamento. Ele é um caso da regra geral de **[Reação](02-acoes-em-conflito.md#reação)**: não custa `PA` — o jogador **consome a sua reação da rodada** e paga **pontos de [fadiga](../conceitos/08-fadiga.md) iguais ao custo em `PA` da ação realizada**. Reagir é opcional: pode-se escolher não reagir para não gastar fadiga. Descrição completa em [Ações possíveis em um conflito](02-acoes-em-conflito.md#ataque-de-oportunidade).
+O ataque de oportunidade pode ser realizado caso um oponente se movimente de espaço a espaço dentro do alcance ideal da sua arma corpo a corpo (ver [Engajamento](#engajamento)). Ele é um caso da regra geral de **[Reação](02-acoes-em-conflito.md#reação)**: não custa `PA` — o jogador **consome a sua reação da rodada** e paga **pontos de [fadiga](../conceitos/08-fadiga.md) iguais ao custo em `PA` da ação realizada**. Reagir é opcional: pode-se escolher não reagir para não gastar fadiga. Descrição completa em [Ações possíveis em um conflito](02-acoes-em-conflito.md#ataque-de-oportunidade).
 
 ### Flanqueamento
 
-Se um personagem for flanqueado, ou seja, estiver na área de engajamento de dois oponentes, e este personagem não for capaz de sair da área de engajamento em seu turno sem se movimentar dentro da área de engajamento dos oponentes, no ato de movimentar-se poderá receber um ataque de oportunidade de pelo menos um oponente que estiver engajado com ele. A menos que possua alguma habilidade que o permita negar os ataques.
+Se um personagem for flanqueado, ou seja, estiver dentro do alcance ideal das armas corpo a corpo de dois oponentes, e não for capaz de se afastar em seu turno sem se movimentar dentro do alcance ideal deles, no ato de movimentar-se poderá receber um ataque de oportunidade de pelo menos um oponente que estiver engajado com ele. A menos que possua alguma habilidade que o permita negar os ataques.
 
 ## Condições de ambiente e terreno
 
@@ -178,7 +185,7 @@ Situações comuns que costumam gerar esses modificadores:
 - Calor ou frio extremos;
 - Superfície escorregadia.
 
-O detalhamento completo dessas condições virá no **livro do narrador** (ver [PLANO-DE-MELHORIAS.md](../../PLANO-DE-MELHORIAS.md), Lote 5).
+O detalhamento completo dessas condições virá no **Manual base do narrador** (ver [PLANO-DE-MELHORIAS.md](../../PLANO-DE-MELHORIAS.md), Lote 5).
 
 ### Elevação
 
@@ -205,7 +212,7 @@ Para que um combate ocorra da melhor forma sem que faltem informações aos joga
     1. Se o valor final do teste do atacante for maior do que o valor final do contrateste do oponente, é considerado um acerto.
     2. Se o resultado for menor ou igual o valor final de contrateste do oponente, é considerado um erro.
 5. Uma vez atingido o alvo, o atacante joga os dados de dano de acordo com a arma ou habilidade que está utilizando.
-6. Os valores de redutor de dano da armadura ou habilidade do oponente são subtraídos do valor de dano do atacante.
+6. Os valores de redutor de dano da armadura ou habilidade do oponente são subtraídos do valor de dano do atacante — **sem nunca reduzir o dano abaixo de 1**: se o ataque acertou, o alvo sofre no mínimo 1 ponto de dano (ver [Saúde e Proteção](03-saude-e-protecao.md#redutor-de-dano-das-armaduras-dano-mínimo-1)).
 7. O personagem acertado marca na ficha os pontos de dano recebidos pelo atacante.
 
 > 💡 Não existe uma ordem certa para se utilizar ações de movimento em detrimento de outros tipos de ação. O jogador pode, por exemplo, andar, atacar e gastar o restante dos pontos de ação para se afastar do alvo.

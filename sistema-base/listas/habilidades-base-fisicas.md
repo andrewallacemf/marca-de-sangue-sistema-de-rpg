@@ -15,19 +15,19 @@ Habilidades base do atributo **`Físico`**. Parte da "Lista de habilidades base"
 
 | **Habilidade** | **Custo de `PA`** | **Custo de compra** |
 | --- | --- | --- |
-| Atordoar | **`1 PA`** + **`PA da arma`** | **`1 Exp.`** |
-| Quebrar guarda | **`1 PA`** + **`PA da arma`** | **`2 Exp.`** |
-| Desarmar pesado | **`1 PA`** + **`PA da arma`** | **`3 Exp.`** |
-| Desarmar leve | **`1 PA`** + **`PA da arma`** | **`3 Exp.`** |
-| Encontrão | **`1 PA`** + **`PA da arma`** | **`2 Exp.`** |
-| Esmagar | **`1 PA`** + **`PA da arma`** | **`2 Exp.`** |
-| Investida | **`1 PA`** + **`PA da arma`** | **`2 Exp.`** |
-| Ataques múltiplos & médios | **`1 PA`** | **`2 Exp.`** |
-| Ataques múltiplos & pesados | **`1 PA`** | **`3 Exp.`** |
+| Atordoar | **`1 PA`** + **`PA da arma`** | **`1 exp.`** |
+| Quebrar guarda | **`1 PA`** + **`PA da arma`** | **`2 exp.`** |
+| Desarmar pesado | **`1 PA`** + **`PA da arma`** | **`3 exp.`** |
+| Desarmar leve | **`1 PA`** + **`PA da arma`** | **`3 exp.`** |
+| Encontrão | **`1 PA`** + **`PA da arma`** | **`2 exp.`** |
+| Esmagar | **`1 PA`** + **`PA da arma`** | **`2 exp.`** |
+| Investida | **`1 PA`** + **`PA da arma`** | **`2 exp.`** |
+| Ataques múltiplos & médios | **`1 PA`** | **`2 exp.`** |
+| Ataques múltiplos & pesados | **`1 PA`** | **`3 exp.`** |
 
 ## Ataques múltiplos & médios
 
-**Atributo:** `Físico` · **Custo de PA:** `1 PA` · **Custo de compra:** `2 Exp.`
+**Atributo:** `Físico` · **Custo de PA:** `1 PA` · **Custo de compra:** `2 exp.`
 
 ### Descrição
 
@@ -51,7 +51,7 @@ Pode mudar o alvo de ataques corpo a corpo com armas médias ignorando a desvant
 
 ## Ataques múltiplos & pesados
 
-**Atributo:** `Físico` · **Custo de PA:** `1 PA` · **Custo de compra:** `3 Exp.`
+**Atributo:** `Físico` · **Custo de PA:** `1 PA` · **Custo de compra:** `3 exp.`
 
 ### Descrição
 
@@ -74,7 +74,7 @@ Pode mudar o alvo de ataques corpo a corpo com armas pesadas ignorando a desvant
 
 ## Atordoar
 
-**Atributo:** `Físico` · **Custo de PA:** `1 PA` + `PA da arma` · **Custo de compra:** `1 Exp.`
+**Atributo:** `Físico` · **Custo de PA:** `1 PA` + `PA da arma` · **Custo de compra:** `1 exp.`
 
 ### Descrição
 
@@ -95,7 +95,7 @@ Infringe metade do dano da arma e faz o oponente perder pontos de ação (**`PA`
 
 ## Desarmar leve
 
-**Atributo:** `Físico` · **Custo de PA:** `1 PA` + `PA da arma` · **Custo de compra:** `3 Exp.`
+**Atributo:** `Físico` · **Custo de PA:** `1 PA` + `PA da arma` · **Custo de compra:** `3 exp.`
 
 ### Descrição
 
@@ -120,7 +120,7 @@ Infringe o dano do golpe normalmente.
 
 ## Desarmar pesado
 
-**Atributo:** `Físico` · **Custo de PA:** `1 PA` + `PA da arma` · **Custo de compra:** `3 Exp.`
+**Atributo:** `Físico` · **Custo de PA:** `1 PA` + `PA da arma` · **Custo de compra:** `3 exp.`
 
 ### Descrição
 
@@ -144,7 +144,7 @@ Não infringe o dano do golpe.
 
 ## Encontrão
 
-**Atributo:** `Físico` · **Custo de PA:** `1 PA` + `PA da arma` · **Custo de compra:** `2 Exp.`
+**Atributo:** `Físico` · **Custo de PA:** `1 PA` + `PA da arma` · **Custo de compra:** `2 exp.`
 
 ### Descrição
 
@@ -166,13 +166,13 @@ Corre 2 metros na direção do oponente e o empurra na mesma direção, infringe
 ### Observações
 
 - A corrida acontece em linha reta.
-- O personagem para na mesma casa que o oponente estava quando foi empurrado.
+- O personagem para no mesmo espaço em que o oponente estava quando foi empurrado.
 
 ## Esmagar
 
 > ⚠️ A DEFINIR: a tabela de resumo do manual indica custo de `1 PA` + `PA da arma`, mas a entrada detalhada indica `4 PA`; conferir o valor correto.
 
-**Atributo:** `Físico` · **Custo de PA:** `4 PA` · **Custo de compra:** `2 Exp.`
+**Atributo:** `Físico` · **Custo de PA:** `4 PA` · **Custo de compra:** `2 exp.`
 
 ### Descrição
 
@@ -202,9 +202,9 @@ O oponente pode gastar **`2 PA`** para realizar um teste físico para tentar se 
 
 ## Investida
 
-> ⚠️ A DEFINIR: a tabela de resumo do manual indica custo de compra de `2 Exp.`, mas a entrada detalhada indica `3 Exp.`; conferir o valor correto.
+> ⚠️ A DEFINIR: a tabela de resumo do manual indica custo de compra de `2 exp.`, mas a entrada detalhada indica `3 exp.`; conferir o valor correto.
 
-**Atributo:** `Físico` · **Custo de PA:** `1 PA` + `PA da arma` · **Custo de compra:** `3 Exp.`
+**Atributo:** `Físico` · **Custo de PA:** `1 PA` + `PA da arma` · **Custo de compra:** `3 exp.`
 
 ### Descrição
 
@@ -229,7 +229,7 @@ Realiza uma investida na direção do oponente para realizar teste de ataque mir
 
 ## Quebrar guarda
 
-**Atributo:** `Físico` · **Custo de PA:** `1 PA` + `PA da arma` · **Custo de compra:** `2 Exp.`
+**Atributo:** `Físico` · **Custo de PA:** `1 PA` + `PA da arma` · **Custo de compra:** `2 exp.`
 
 ### Descrição
 

@@ -11,20 +11,20 @@ atualizado-em: 2026-07-11
 
 ## Comprar pontos de ação
 
-**No início da jornada, os personagens começam com `7 PA`.** Ao receberem pontos de experiência, podem adquirir pontos de ação adicionais. O primeiro ponto adicional custa **`5 Exp.`** e cada ponto subsequente custa **`5 Exp.`** a mais:
+**No início da jornada, os personagens começam com `7 PA`.** Ao receberem pontos de experiência, podem adquirir pontos de ação adicionais. O primeiro ponto adicional custa **`5 exp.`** e cada ponto subsequente custa **`5 exp.`** a mais:
 
-- + **`1 PA`** = **`5 Exp.`**
-- + **`1 PA`** = **`10 Exp.`**
-- + **`1 PA`** = **`15 Exp.`**
-- + **`1 PA`** = **`20 Exp.`**
-- + **`1 PA`** = **`25 Exp.`**
+- + **`1 PA`** = **`5 exp.`**
+- + **`1 PA`** = **`10 exp.`**
+- + **`1 PA`** = **`15 exp.`**
+- + **`1 PA`** = **`20 exp.`**
+- + **`1 PA`** = **`25 exp.`**
 - Assim em diante…
 
 ## Ações básicas
 
 | **Ações** | **Pontos** | **Unidade** |
 | --- | --- | --- |
-| Movimento | **`1 PA`** | por metro (casa, ou espaço da malha) |
+| Movimento | **`1 PA`** | por metro (espaço da malha) |
 | Ataque desarmado | **`1 PA`** | por ataque |
 | Ataque com arma leve (uma mão) | **`2 PA`** | por ataque |
 | Ataque com arma média (uma mão) | **`3 PA`** | por ataque |
@@ -32,7 +32,7 @@ atualizado-em: 2026-07-11
 | Ataque com arma pesada (duas mãos) | **`4 PA`** | por ataque |
 | Entrar em postura defensiva (levantar guarda) sem estar engajado | **`2 PA`** | por guarda levantada |
 | Entrar em postura defensiva (levantar guarda) quando engajado | **`3 PA`** | por guarda levantada |
-| Forçar Posicionamento (aberto ou definido) | **`2 PA`** | por mudança de postura |
+| Forçar Posicionamento (aberto ou definido) | **`2 PA`** | por mudança de posicionamento |
 | Atrasar turno | **`1 PA`** | por turno atrasado |
 | Guardar ou sacar equipamentos | **`1 PA`** | por arma |
 | Mudar a mão dos equipamentos | **`1 PA`** | por tentativa |
@@ -77,7 +77,7 @@ atualizado-em: 2026-07-11
 
 ### Saltar
 
-**Atributo:** `Ágil` · **Custo da especialização:** `1 Exp.`
+**Atributo:** `Ágil` · **Custo da especialização:** `1 exp.`
 
 #### Uso padrão
 
@@ -94,4 +94,4 @@ Pode saltar:
 
 #### Requisitos de uso
 
-- Não ter nenhuma perna incapacitada ou invalidada.
+- Não ter nenhuma perna [desabilitada](../conflitos/03-saude-e-protecao.md#membro-desabilitado-incapacitado-ou-invalidado).

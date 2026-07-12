@@ -59,7 +59,7 @@ Um jogador pode realizar um ataque com a mão inábil, porém, recebe uma **`des
 
 ### Ataque de oportunidade
 
-Caso um inimigo **já esteja dentro da sua área de acerto e se mova para outro painel que também esteja dentro da área de acerto**, você pode reivindicar um ataque de oportunidade. O ataque de oportunidade é um caso da regra geral de **[Reação](#reação)**: consome a sua reação da rodada e, em vez de custar `PA`, custa **pontos de [fadiga](../conceitos/08-fadiga.md) iguais ao custo em `PA` da ação realizada**. Como toda reação, é opcional — você pode escolher não reagir para não gastar fadiga.
+Caso um inimigo **já esteja dentro do alcance ideal da sua arma corpo a corpo e se mova para outro espaço ainda dentro do alcance ideal**, você pode reivindicar um ataque de oportunidade (ver [Engajamento](01-conflito-fisico.md#engajamento) — o movimento no alcance não ideal não ativa o ataque). O ataque de oportunidade é um caso da regra geral de **[Reação](#reação)**: consome a sua reação da rodada e, em vez de custar `PA`, custa **pontos de [fadiga](../conceitos/08-fadiga.md) iguais ao custo em `PA` da ação realizada**. Como toda reação, é opcional — você pode escolher não reagir para não gastar fadiga.
 
 O ataque de oportunidade deve consistir em um ataque corporal simples, com o que o personagem estiver segurando naquele momento, ou um ataque desarmado.
 
@@ -69,7 +69,7 @@ Efeitos gerados por aptidões também se aplicam a ataques de oportunidade.
 
 > 💡 O ataque de oportunidade **consome a [reação](#reação)** do personagem. Como cada personagem tem, por padrão, **1 reação por rodada**, só é possível realizar **um ataque de oportunidade por rodada de combate** — a menos que um traço conceda reações extras ou o narrador indique o contrário.
 
-> 💡 Armas à distância ou de arremesso não ativam ataque de oportunidade.
+> 💡 Armas à distância ou de arremesso não fazem ataque de oportunidade — a não ser por traço específico, como o aspecto [Vigilante](../listas/tracos-base.md#vigilante).
 
 Habilidades ou ações mais complexas não podem ser feitas como ataque de oportunidade. Para isso é necessário que em seu turno o personagem ative um gatilho, ou seja, que gaste pontos de ação.
 
@@ -135,11 +135,11 @@ Apesar de ser possível utilizar os dois tipos de malha, o terreno dividido em q
 
 Quando diz respeito a movimentação em uma malha hexagonal, todos os espaços adjacentes dividem lados inteiros com o espaço onde o personagem está. Assim, existem 6 opções de direção para seguir e o conceito de “andar na diagonal” não existe. Portanto, a regra geral de movimentação em terrenos hexagonais pode ser resumido como “cada espaço exige `1 PA` para movimentação e equivale a 1 metro”.
 
-Já em uma malha quadriculada, além de dividir lados inteiros com outros 4 quadrados, um determinado posicionamento tem pontos em comum com outros 4 espaços a partir de suas diagonais. Isso pode gerar confusão na cabeça dos jogadores. Para deixar o jogo mais simples e claro, em Marca de Sangue foram definidas as seguintes regras para malhas quadriculadas:
+Já em uma malha quadriculada, além de dividir lados inteiros com outros 4 espaços, um determinado posicionamento tem pontos em comum com outros 4 espaços a partir de suas diagonais. Isso pode gerar confusão na cabeça dos jogadores. Para deixar o jogo mais simples e claro, em Marca de Sangue foram definidas as seguintes regras para malhas quadriculadas:
 
-1. Deslocamento entre dois quadrados que dividem 1 lado inteiro é considerado como 1 metro e custa 1 Ponto de ação;
-2. Deslocamento entre dois quadrados que dividem somente um ponto, ou seja, movimento diagonal, custa 2 pontos de ação porque é considerado 2 metros.
-    1. Pelo menos um dos quadrados que dividem um lado nessa direção precisa estar desobstruído para que essa movimentação seja possível.
+1. Deslocamento entre dois espaços que dividem 1 lado inteiro é considerado como 1 metro e custa 1 Ponto de ação;
+2. Deslocamento entre dois espaços que dividem somente um ponto, ou seja, movimento diagonal, custa 2 pontos de ação porque é considerado 2 metros.
+    1. Pelo menos um dos espaços que dividem um lado nessa direção precisa estar desobstruído para que essa movimentação seja possível.
 
 ## Levantar guarda (Entrar em postura defensiva)
 
@@ -147,7 +147,7 @@ Durante um combate, o personagem pode usar pontos de ação para adotar uma post
 
 > 💡 **Quando não estiver engajado,** levantar a guarda custa **`2 PA`** por guarda levantada.
 
-Um personagem com posicionamento defensivo possui 3 casas de costas com desvantagem e 3 casas de frente com vantagem na malha hexagonal. Na malha quadriculada o personagem com posicionamento defensivo possui 3 casas de costas com desvantagem, 2 casas laterais sem vantagem ou desvantagem e 3 casas de frente com vantagem.
+Um personagem em postura defensiva possui 3 espaços de costas com desvantagem e 3 espaços de frente com vantagem na malha hexagonal. Na malha quadriculada, o personagem em postura defensiva possui 3 espaços de costas com desvantagem, 2 espaços laterais sem vantagem ou desvantagem e 3 espaços de frente com vantagem.
 
 *Postura defensiva (em malha hexagonal)*
 
@@ -159,7 +159,7 @@ Um personagem com posicionamento defensivo possui 3 casas de costas com desvanta
 
 Para isso, siga os passos:
 
-1. Ao final do seu turno, o jogador poderá declarar quantas guardas irá acumular, gastando **`2 PA`** para cada espaço de guarda. O espaço de guarda serve tanto para se defender (com atributo Físico) quanto para se esquivar (com atributo Agilidade).
+1. Ao final do seu turno, o jogador poderá declarar quantas guardas irá acumular, gastando **`2 PA`** para cada espaço de guarda. O espaço de guarda serve tanto para se defender (com atributo Físico) quanto para se esquivar (com atributo Ágil).
     1. Se o jogador levantar uma guarda e depois se movimentar, essa guarda se perde, a menos que ele tenha alguma habilidade ou traço que diga o contrário.
 2. Ao receber um ataque, o jogador pode optar por utilizar ou não um dos seus espaços de guarda adquirida em seu turno para aumentar suas chances de resistir ao ataque (se esquivando ou se defendendo).
 

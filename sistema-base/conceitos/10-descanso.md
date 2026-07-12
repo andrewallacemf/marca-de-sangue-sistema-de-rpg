@@ -1,0 +1,36 @@
+---
+titulo: Descanso
+tipo: regra
+cenario: base
+status: revisao
+tags: [descanso, recuperacao, fadiga]
+atualizado-em: 2026-07-11
+---
+
+# Descanso
+
+**Descanso** é o termo genérico para os momentos em que os personagens param para se recuperar. Os tipos específicos são o **descanso longo** e o **descanso curto**.
+
+> ✅ Decidido em 11/07/2026 (ver [notas-de-design/decisoes/2026-07-11-terminologia-alcance-descanso.md](../../notas-de-design/decisoes/2026-07-11-terminologia-alcance-descanso.md), item A4).
+
+## Descanso longo
+
+Um descanso longo exige **pelo menos 8 horas**, incluindo **sono**. Ao completá-lo, o personagem:
+
+- **Reseta as características gastáveis** — recupera todas as [aptidões](04-aptidoes.md) consumidas e todos os usos de [habilidades](05-habilidades.md) gastos;
+- **Recupera mais vida** que o descanso curto — por padrão, **`1d6`** pontos de dano superficial (ver [Saúde e Proteção — Cura](../conflitos/03-saude-e-protecao.md#cura));
+- **Recupera toda a fadiga** (ver [abaixo](#fadiga-qualquer-descanso-recupera-tudo)).
+
+## Descanso curto
+
+O descanso curto serve para **recuperações pontuais**: nele o personagem pode fazer **rolagens para reduzir o dano sofrido** (ver [Saúde e Proteção — Cura](../conflitos/03-saude-e-protecao.md#cura)) e também **recupera toda a fadiga**. Ele **não** reseta as características gastáveis — aptidões e usos de habilidades só voltam no descanso longo.
+
+> ⚠️ A DEFINIR: a duração mínima do descanso curto e quantas rolagens de cura/tratamento ele permite não foram detalhadas na conversa de 11/07/2026.
+
+## Fadiga: qualquer descanso recupera tudo
+
+**Qualquer descanso — curto ou longo — recupera TODA a [fadiga](08-fadiga.md) acumulada**, eliminando as penalidades de acúmulo.
+
+## Quem decide quando dá para descansar
+
+Permitir ou não um descanso é **decisão narrativa do narrador**, de acordo com a situação da história. A recomendação do grupo criador: não punir os jogadores impedindo o descanso entre conflitos sem motivo narrativo.

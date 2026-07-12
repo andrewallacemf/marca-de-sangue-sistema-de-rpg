@@ -89,15 +89,15 @@ Aspectos são traços que afetam a forma como o personagem responde a determinad
 
 ### Alerta
 
-**Custo de compra:** `4 Exp.`
+**Custo de compra:** `4 exp.`
 
 #### Descrição
 
-Pode realizar um ataque corpo a corpo descuidado quando um oponente entra em sua area de engajamento.
+Pode realizar um ataque corpo a corpo descuidado quando um oponente entra em seu alcance ideal.
 
 #### Condição de uso (gatilho)
 
-- Um oponente entrar em sua área de engajamento.
+- Um oponente entrar em seu alcance ideal.
 
 #### Requisitos de uso
 
@@ -106,7 +106,7 @@ Pode realizar um ataque corpo a corpo descuidado quando um oponente entra em sua
 
 ### Corredor
 
-**Custo de compra:** `8 Exp.`
+**Custo de compra:** `8 exp.`
 
 #### Descrição
 
@@ -118,7 +118,7 @@ Dobra o limite de PA que podem ser utilizados no deslocamento.
 
 ### Apoiador
 
-**Custo de compra:** `4 Exp.`
+**Custo de compra:** `4 exp.`
 
 #### Descrição
 
@@ -134,7 +134,7 @@ Pode usar aptidões nos testes de um aliado adjacente.
 
 ### Blindado
 
-**Custo de compra:** `4 Exp.`
+**Custo de compra:** `4 exp.`
 
 #### Descrição
 
@@ -150,7 +150,7 @@ Defende ataques à distância com **`+1d10 de vantagem`**.
 
 ### Maratonista
 
-**Custo de compra:** `4 Exp.`
+**Custo de compra:** `4 exp.`
 
 #### Descrição
 
@@ -168,7 +168,7 @@ Pode dobrar seu movimento ao correr em linha reta.
 
 ### Dorminhoco
 
-**Custo de compra:** `7 Exp.`
+**Custo de compra:** `7 exp.`
 
 #### Descrição
 
@@ -184,7 +184,7 @@ Ao descansar, utiliza 1d8 para curar dano ao invés de 1d6
 
 ### Emboscador
 
-**Custo de compra:** `4 Exp.`
+**Custo de compra:** `4 exp.`
 
 #### Descrição
 
@@ -201,7 +201,7 @@ Dobra o dano do ataque.
 
 ### Empacado
 
-**Custo de compra:** `2 Exp.`
+**Custo de compra:** `2 exp.`
 
 #### Descrição
 
@@ -217,7 +217,7 @@ Reduz qualquer movimentação forçada pela metade (arredondado para baixo).
 
 ### Escorregadio
 
-**Custo de compra:** `4 Exp.`
+**Custo de compra:** `4 exp.`
 
 #### Descrição
 
@@ -233,7 +233,7 @@ Recebe **`+1d10 de vantagem`** para esquivar de ataques de oportunidade.
 
 ### Firme
 
-**Custo de compra:** `4 Exp.`
+**Custo de compra:** `4 exp.`
 
 #### Descrição
 
@@ -258,7 +258,7 @@ Pode usar armas pesadas com apenas uma mão, com **−3 de dano**.
 
 ### Firme aprimorado
 
-**Custo de compra:** `4 Exp.` (💡 custo proposto pela IA — a validar pelo grupo)
+**Custo de compra:** `4 exp.` (💡 custo proposto pela IA — a validar pelo grupo)
 
 #### Descrição
 
@@ -278,7 +278,7 @@ Remove a redução de dano do [Firme](#firme): pode usar armas pesadas com apena
 
 ### Lépido
 
-**Custo de compra:** `3 Exp.`
+**Custo de compra:** `3 exp.`
 
 #### Descrição
 
@@ -294,7 +294,7 @@ Pode recuar 1 metro imediatamente após atacar.
 
 ### Protetor
 
-**Custo de compra:** `4 Exp.`
+**Custo de compra:** `4 exp.`
 
 #### Descrição
 
@@ -313,15 +313,15 @@ Se obtiver sucesso no teste, é acertado pelo golpe e recebe o dano, seus reduto
 
 ### Reativo
 
-**Custo de compra:** `4 Exp.`
+**Custo de compra:** `4 exp.`
 
 #### Descrição
 
-Pode desferir um ataque de oportunidade quando o oponente sai da sua área de engajamento.
+Pode desferir um ataque de oportunidade quando o oponente sai do seu alcance ideal.
 
 #### Condição de uso (gatilho)
 
-- Um oponente sair da sua área de engajamento.
+- Um oponente sair do seu alcance ideal.
 
 #### Requisitos de uso
 
@@ -330,7 +330,7 @@ Pode desferir um ataque de oportunidade quando o oponente sai da sua área de en
 
 ### Resistente
 
-**Custo de compra:** `3 Exp.`
+**Custo de compra:** `3 exp.`
 
 #### Descrição
 
@@ -347,15 +347,15 @@ Reduz o dano recebido pela metade.
 
 ### Vigilante
 
-**Custo de compra:** `4 Exp.`
+**Custo de compra:** `4 exp.`
 
 #### Descrição
 
-Pode desferir um ataque de oportunidade a distância.
+Pode desferir um ataque de oportunidade a distância (exceção à regra geral de que ataques à distância não fazem ataque de oportunidade — ver [Engajamento](../conflitos/01-conflito-fisico.md#engajamento)).
 
 #### Condição de uso (gatilho)
 
-- Se um oponente sair da sua área de alcance.
+- Se um oponente sair do seu alcance ideal.
 
 #### Requisitos de uso
 
@@ -364,7 +364,7 @@ Pode desferir um ataque de oportunidade a distância.
 
 ### Burro de carga
 
-**Custo de compra:** `6 Exp.`
+**Custo de compra:** `6 exp.`
 
 #### Descrição
 

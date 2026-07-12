@@ -3,17 +3,17 @@ titulo: Conflito social
 tipo: regra
 cenario: base
 status: revisao
-tags: [conflito, social, malha-emocional, argumentar]
+tags: [conflito, embate, social, malha-de-embate-social, trilha-emocional, argumentar]
 atualizado-em: 2026-07-11
 ---
 
 # Conflito social
 
-Conflitos não se limitam apenas a embates físicos entre personagens. Debates, tentativas de convencimento e intimidação também são formas de conflito. Para esses embates sociais, o sistema Marca de Sangue oferece regras que tornam as interações mais imersivas e interessantes. Embora os conflitos sociais não afetem diretamente os atributos físicos, eles ganham ainda mais força quando combinados com traços e habilidades específicas.
+Conflitos não se limitam apenas a combates (conflitos físicos) entre personagens. Debates, tentativas de convencimento e intimidação também são formas de conflito. Para esses **embates sociais**, o sistema Marca de Sangue oferece regras que tornam as interações mais imersivas e interessantes. Embora os conflitos sociais não afetem diretamente os atributos físicos, eles ganham ainda mais força quando combinados com traços e habilidades específicas.
 
-O sistema de embate social utiliza uma malha emocional — uma ferramenta visual circular que representa o estado emocional dos personagens durante um conflito. A malha possui diferentes níveis de intensidade: seu centro representa o descontrole emocional, enquanto as bordas externas indicam o controle emocional pleno. Para se movimentar na malha, os personagens precisam usar estratégias específicas, como manipular as emoções do adversário ou estabilizar as próprias.
+O sistema de embate social utiliza uma **malha de embate social** — uma ferramenta visual circular que representa o estado emocional dos personagens durante um conflito. A malha possui diferentes níveis de intensidade: seu centro representa o descontrole emocional, enquanto as bordas externas indicam o controle emocional pleno. A malha se divide em **trilhas emocionais** (uma por emoção), e cada trilha se divide em **campos da emoção** — o campo é o espaço unitário que o personagem ocupa na malha. Para se movimentar na malha, os personagens precisam usar estratégias específicas, como manipular as emoções do adversário ou estabilizar as próprias.
 
-O objetivo do conflito social é acumular pontos. Os participantes podem somar pontos para alcançar um objetivo comum ou competir por objetivos opostos. A primeira forma de se finalizar uma partida é pelo número de turnos, explicada na próxima seção. O embate termina quando um dos lados acumula 5 pontos multiplicados pelo número de personagens envolvidos. Por exemplo: em um conflito com três personagens, o embate termina quando um lado alcança 15 pontos. O embate também se encerra quando a **diferença** de pontuação entre os dois lados atinge o valor necessário para determinar a vitória ou derrota.
+O objetivo do conflito social é acumular pontos. Os participantes podem somar pontos para alcançar um objetivo comum ou competir por objetivos opostos. A primeira forma de se finalizar um conflito social é pelo número de turnos, explicada na próxima seção. O embate termina quando um dos lados acumula 5 pontos multiplicados pelo número de personagens envolvidos. Por exemplo: em um conflito com três personagens, o embate termina quando um lado alcança 15 pontos. O embate também se encerra quando a **diferença** de pontuação entre os dois lados atinge o valor necessário para determinar a vitória ou derrota.
 
 > ✅ Exemplo aprovado pelo grupo em 11/07/2026.
 >
@@ -31,13 +31,13 @@ Conflitos sociais são resolvidos em uma série de turnos, cujo número varia de
 
 ## Ações disponíveis
 
-Subir ou descer em uma trilha da malha social tem custo base 1 PA + o valor numérico da casa alvo ignorando se o valor indicado na casa é positivo ou negativo.
+Subir ou descer em uma trilha emocional da malha de embate social tem custo base 1 PA + o valor numérico do campo da emoção alvo, ignorando se o valor indicado no campo é positivo ou negativo.
 
 Os personagens têm duas ações principais disponíveis durante o conflito social:
 
 ### 1. Argumentar
 
-**Objetivo:** Movimentar o adversário na malha emocional.
+**Objetivo:** Movimentar o adversário na malha de embate social.
 
 **Custo:** Custo em PA igual à influência necessária para alcançar o objetivo +1 PA.
 
@@ -45,7 +45,7 @@ Os personagens têm duas ações principais disponíveis durante o conflito soci
 
 ### 2. Ponderar
 
-**Objetivo:** Movimentar-se na própria malha emocional.
+**Objetivo:** Movimentar-se na própria malha de embate social.
 
 **Custo:** Custo em PA equivalente aos pontos de influência necessários para a movimentação +1 PA.
 
@@ -53,7 +53,7 @@ Os personagens têm duas ações principais disponíveis durante o conflito soci
 
 ### 3. Incentivar
 
-**Objetivo:** Movimentar o aliado na malha emocional.
+**Objetivo:** Movimentar o aliado na malha de embate social.
 
 **Custo:** Custo em PA igual à influência necessária para alcançar o objetivo +1 PA.
 

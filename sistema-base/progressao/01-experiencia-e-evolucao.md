@@ -13,7 +13,7 @@ Personagens no sistema Marca de Sangue não possuem necessariamente um nível. E
 
 As características podem ser adquiridas usando pontos de experiência distribuídos pelo narrador. Esses pontos podem ser recompensas por tarefas bem sucedidas, por soluções inventivas ou por avanços na trajetória pessoal dos personagens.
 
-De forma geral, recomenda-se que um personagem monte sua ficha inicial utilizando **`8 Exp`**. Contudo, cada cenário pode ter sua própria recomendação de experiência inicial e o narrador pode adaptar a regra para melhor atender o estilo de jogo dos demais participantes.
+De forma geral, recomenda-se que um personagem monte sua ficha inicial utilizando **`8 exp.`**. Contudo, cada cenário pode ter sua própria recomendação de experiência inicial e o narrador pode adaptar a regra para melhor atender o estilo de jogo dos demais participantes.
 
 ## Ganhando Experiência
 
@@ -25,7 +25,7 @@ O narrador pode recompensar um jogador com Experiência sempre que ele tomar gra
 
 O julgamento para saber se o personagem deve ou não receber pontos de experiência por interpretação cabe única e exclusivamente ao narrador, seja qual for seu método de avaliação.
 
-Recomenda-se distribuir no máximo **`3 Exp.`** de interpretação por personagem a cada sessão.
+Recomenda-se distribuir no máximo **`3 exp.`** de interpretação por personagem a cada sessão.
 
 ### Trabalhar em equipe
 
@@ -33,7 +33,7 @@ Sendo um jogo essencialmente colaborativo, recomenda-se recompensar os jogadores
 
 Cabe ao narrador julgar as situações da mesa que revelam se os jogadores devem receber a experiência de trabalho em equipe.
 
-Recomenda-se atribuir à equipe no máximo **`3 Exp.`** por trabalho em equipe ao final da sessão.
+Recomenda-se atribuir à equipe no máximo **`3 exp.`** por trabalho em equipe ao final da sessão.
 
 ### Sucesso em tarefas especiais
 
@@ -41,7 +41,7 @@ Eventualmente haverá tarefas cujos resultados terão grandes impactos no desenr
 
 Recomenda-se que todos os jogadores tenham um papel e pelo menos um teste para realizar, contribuindo com a tarefa especial.
 
-Caso metade ou mais dos testes realizados pelos jogadores envolvidos sejam bem sucedidos, eles terão sucesso na tarefa, afetando grandemente a trama e ganhando **`1 Exp.`**
+Caso metade ou mais dos testes realizados pelos jogadores envolvidos sejam bem sucedidos, eles terão sucesso na tarefa, afetando grandemente a trama e ganhando **`1 exp.`**
 
 ### Vencer um conflito
 
@@ -49,9 +49,9 @@ Vencer um combate também garante pontos de experiência, mas vencer não signif
 
 Recomenda-se recompensar uma vitória em combate da seguinte forma:
 
-- Conflito fácil: **`1 Exp.`**
-- Conflito moderado: **`2 Exp.`**
-- Conflito difícil: **`3 Exp.`**
+- Conflito fácil: **`1 exp.`**
+- Conflito moderado: **`2 exp.`**
+- Conflito difícil: **`3 exp.`**
 
 ### Completar uma Tarefa, Missão ou Arco
 
@@ -59,11 +59,11 @@ Completar um objetivo que o grupo precisa alcançar garante experiência de acor
 
 Recomenda-se recompensar os objetivos alcançados da seguinte forma:
 
-- Tarefa: **`2 Exp.`**
-- Missão: **`4 Exp.`**
-- Arco: **`6 Exp.`**
+- Tarefa: **`2 exp.`**
+- Missão: **`4 exp.`**
+- Arco: **`6 exp.`**
 
-Ao completar **arcos pessoais** do personagem, recomenda-se recompensar o jogador com até **`4 Exp.`**
+Ao completar **arcos pessoais** do personagem, recomenda-se recompensar o jogador com até **`4 exp.`**
 
 ## Comprando Características
 
@@ -78,7 +78,7 @@ Comprar Traços, diferente de Aptidões e Habilidades, não garante apenas um us
 
 ### Requisitos das características
 
-Em Marca de Sangue, as habilidades têm pré-requisitos para serem usadas. Você não conseguirá motivar seus companheiros com um Brado de Guerra se eles não puderem te ouvir. As exigências das características estão descritas no livro do jogador, na descrição de cada habilidade.
+Em Marca de Sangue, as habilidades têm pré-requisitos para serem usadas. Você não conseguirá motivar seus companheiros com um Brado de Guerra se eles não puderem te ouvir. As exigências das características estão descritas no Manual base do jogador, na descrição de cada habilidade.
 
 ### Fundindo características
 
@@ -86,7 +86,7 @@ Para adquirir as características mais básicas do jogo, basta gastar pontos de 
 
 Uma característica pode ser melhorada para que seus efeitos sejam intensificados. Se você tem dois usos da habilidade “Corte profundo”, que transforma até 2 pontos de dano superficial de uma arma cortante em dano profundo, você pode optar por melhorar essa habilidade fundindo os usos da habilidade básica para obter “corte profundo aprimorado”, que transforma até 4 pontos de dano superficial de uma arma cortante em dano profundo.
 
-Fundir características não consome experiência, mas é necessário cuidado nessa escolha, uma vez fundidas, será necessário gastar **`1 Exp.`** para separar características fundidas.
+Fundir características não consome experiência, mas é necessário cuidado nessa escolha, uma vez fundidas, será necessário gastar **`1 exp.`** para separar características fundidas.
 
 ### Flexibilidade vs Poder
 
@@ -96,11 +96,11 @@ No entanto, atenção: esse dilema vale para as habilidades. Aptidões não são
 
 ## Comprando pontos de ação
 
-**No início da jornada, os personagens começam com `7 PA`**. Ao receberem pontos de experiência, podem adquirir pontos de ação adicionais. O primeiro ponto adicional custa **`7 Exp.`** e cada ponto subsequente custa **`7 Exp.`** a mais:
+**No início da jornada, os personagens começam com `7 PA`**. Ao receberem pontos de experiência, podem adquirir pontos de ação adicionais. O primeiro ponto adicional custa **`7 exp.`** e cada ponto subsequente custa **`7 exp.`** a mais:
 
-- + **`1 PA`** = **`7 Exp.`**
-- + **`1 PA`** = **`14 Exp.`**
-- + **`1 PA`** = **`21 Exp.`**
-- + **`1 PA`** = **`28 Exp.`**
-- + **`1 PA`** = **`35 Exp.`**
+- + **`1 PA`** = **`7 exp.`**
+- + **`1 PA`** = **`14 exp.`**
+- + **`1 PA`** = **`21 exp.`**
+- + **`1 PA`** = **`28 exp.`**
+- + **`1 PA`** = **`35 exp.`**
 - Assim em diante…

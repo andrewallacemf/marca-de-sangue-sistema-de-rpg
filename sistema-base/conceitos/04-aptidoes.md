@@ -56,13 +56,13 @@ A regra é a **mesma dentro e fora de conflito**: sempre que houver rolagem de d
 
 Exemplo (em batalha): o personagem usou a habilidade “Atordoar”, que retira Pontos de Ação do oponente. Após o teste e contrateste, o narrador anuncia que o resultado seria uma falha. Assim, o jogador decide gastar uma aptidão do tipo **`Físico`** para re-rolar um dos dados envolvidos no teste ou no contrateste.
 
-Exemplo (fora de batalha): para passar por um lugar proibido, o personagem tenta convencer o guarda de que há um perigo em outro lugar que demanda sua presença. O narrador anuncia que o teste **`Social`** falhou; como as consequências seriam graves, o jogador gasta uma aptidão **`Social`** e re-rola o dado do seu teste em busca de um resultado melhor.
+Exemplo (fora de batalha): para passar por um lugar proibido, o personagem tenta convencer o guarda de que há um perigo em outro lugar que demanda sua presença. O narrador anuncia que o teste social falhou; como as consequências seriam graves, o jogador gasta uma aptidão **`Social`** e re-rola o dado do seu teste em busca de um resultado melhor.
 
 ## Recuperando aptidões
 
-Ao consumir a aptidão, é necessário um descanso ou outra indicação de recuperação de características para poder utilizá-la novamente.
+Ao consumir a aptidão, é necessário um [descanso](10-descanso.md) ou outra indicação de recuperação de características para poder utilizá-la novamente.
 
-Por padrão, um descanso longo recupera todas as aptidões consumidas.
+Por padrão, um **[descanso longo](10-descanso.md#descanso-longo)** recupera todas as aptidões consumidas (o descanso curto não recupera aptidões).
 
 ### Recuperando aptidões em combate
 

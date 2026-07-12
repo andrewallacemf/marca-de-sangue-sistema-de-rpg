@@ -54,10 +54,13 @@ A fadiga acumulada pesa no corpo: **a cada 10 pontos acumulados, o personagem so
 
 ## Recuperação
 
-A fadiga **não diminui sozinha** com o passar das rodadas ou entre cenas: ela **só zera com descanso**. Ao realizar um descanso, o personagem elimina toda a fadiga acumulada e se livra das penalidades de acúmulo.
+A fadiga **não diminui sozinha** com o passar das rodadas ou entre cenas: ela **só zera com [descanso](10-descanso.md)**. **Qualquer descanso — curto ou longo — recupera toda a fadiga acumulada** e livra o personagem das penalidades de acúmulo.
+
+> ✅ Decidido em 11/07/2026 (ver [notas-de-design/decisoes/2026-07-11-terminologia-alcance-descanso.md](../../notas-de-design/decisoes/2026-07-11-terminologia-alcance-descanso.md), item A4).
 
 ## Referências
 
+- [Descanso](10-descanso.md) — descanso curto e longo
 - [Pontos de ação](07-pontos-de-acao.md)
 - [Ações possíveis em um conflito](../conflitos/02-acoes-em-conflito.md#reação) — reação (custo em fadiga) e ataque de oportunidade
 - [Decisões de 11/07/2026](../../notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md)

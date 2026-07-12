@@ -11,7 +11,7 @@ atualizado-em: 2026-07-11
 
 ## Defesa e esquiva
 
-Ao ser atacado, um jogador que não esteja invalidado ou impedido possui a chance de rolar um contrateste de defesa para se proteger ou esquivar do ataque inimigo. A dificuldade do contrateste depende principalmente de onde o inimigo está mirando.
+Ao ser atacado, um jogador que não esteja [desabilitado](#membro-desabilitado-incapacitado-ou-invalidado) possui a chance de rolar um contrateste de defesa para se proteger ou esquivar do ataque inimigo. A dificuldade do contrateste depende principalmente de onde o inimigo está mirando.
 
 **Ser alvejado nas pernas ou braços não garante `vantagem`, porém se o inimigo mirar na sua cabeça ou tronco, ele terá `desvantagem` de acerto.**
 
@@ -43,17 +43,39 @@ Um ponto de dano profundo se torna permanente em duas situações:
 
 Cada arma pode infligir uma certa quantidade de dano (saiba mais na seção Equipamentos). Da mesma forma, as armaduras podem defender o seu personagem de uma determinada quantidade de pontos de dano.
 
+### Redutor de dano das armaduras (dano mínimo 1)
+
+A tabela de [proteções](../listas/protecoes-base.md) indica **quanto cada armadura reduz do dano de cada golpe** recebido na região protegida — por isso os redutores vão de 1 a 12. A cada golpe recebido na região protegida, a armadura também **perde 1 de durabilidade** naquele local.
+
+**O redutor nunca reduz o dano abaixo de 1:** se o ataque acertou, o alvo sofre **no mínimo 1 ponto de dano**, mesmo que a redução da armadura supere o dano rolado.
+
+> ✅ Decidido em 11/07/2026: a tabela define a redução (o antigo "reduz 1 de dano" era exemplo, não regra universal) e existe o dano mínimo 1 (ver [notas-de-design/decisoes/2026-07-11-terminologia-alcance-descanso.md](../../notas-de-design/decisoes/2026-07-11-terminologia-alcance-descanso.md), item A1).
+
+### Membro desabilitado (incapacitado ou invalidado)
+
+Três termos oficiais descrevem um membro fora de uso:
+
+- **Incapacitado** — membro que acumulou **10 pontos de dano profundo**. Deixa de poder ser usado para ações até se recuperar (consequências em [Penalidades por perda de vida](#penalidades-por-perda-de-vida));
+- **Invalidado** — membro que acumulou **10 pontos de dano permanente**. Não se recupera por meios convencionais;
+- **Desabilitado** — **termo guarda-chuva**: um membro está desabilitado quando está **incapacitado OU invalidado**. É o termo usado nos gatilhos e requisitos de características (ex.: "não ter nenhuma perna desabilitada").
+
+"Impedido" e "inválido" não são termos do sistema — use **desabilitado**.
+
+> ✅ Decidido em 11/07/2026 (ver [notas-de-design/decisoes/2026-07-11-terminologia-alcance-descanso.md](../../notas-de-design/decisoes/2026-07-11-terminologia-alcance-descanso.md), item B5).
+
 Na ficha de personagem, há um espaço em cada membro para que sejam preenchidos os danos já recebidos. Pontos de dano superficial, profundo e permanente precisam ser preenchidos de forma diferente, para que seja fácil de se distinguir um do outro.
 
 A sugestão dada na ficha que você encontra no final deste manual é marcar os espaços da esquerda para a direita com um traço diagonal para marcar danos superficiais, e, após completar o membro com danos superficiais, usar um “x” para marcar danos profundos. Já os danos permanentes, devem ser indicados preenchendo todo o espaço de um dano. **Para este último caso, não se preocupe com a possibilidade de estragar a ficha, afinal, esse espaço não vai voltar.**
 
 ## Cura
 
+Quando é possível descansar — e o que cada tipo de descanso recupera — está definido em [Descanso](../conceitos/10-descanso.md).
+
 ### Curando danos superficiais
 
-Durante um descanso longo, o personagem recupera **`1d6`** pontos de dano superficial. Para curar mais do que isso de uma vez, é preciso a ação de um médico, algum item ou habilidade especial.
+Durante um [descanso longo](../conceitos/10-descanso.md#descanso-longo), o personagem recupera **`1d6`** pontos de dano superficial. Para curar mais do que isso de uma vez, é preciso a ação de um médico, algum item ou habilidade especial.
 
-Para tentar curar um dano superficial sem descansar e sem um médico, o personagem pode fazer um teste de cura desajeitada. Se passar o resultado do contrateste, cura **`1d4`** pontos de saúde. **Se falhar no teste de cura, recebe mais um ponto de dano superficial no local ferido.**
+Para tentar curar um dano superficial sem descansar e sem um médico, o personagem pode fazer um teste de cura desajeitada. Se passar o resultado do contrateste, cura **`1d4`** pontos de vida. **Se falhar no teste de cura, recebe mais um ponto de dano superficial no local ferido.**
 
 ### Tratando danos profundos
 

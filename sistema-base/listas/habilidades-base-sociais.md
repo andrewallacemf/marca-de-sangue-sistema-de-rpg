@@ -15,18 +15,18 @@ Habilidades base do atributo **`Social`**. Parte da "Lista de habilidades base" 
 
 | **Habilidade** | **Custo de `PA`** | **Custo de compra** |
 | --- | --- | --- |
-| Comandar | **`1 PA`** | **`2 Exp.`** |
-| Cura especializada | **`3 PA`** | **`3 Exp.`** |
-| Tratamento especializado | **`4 PA`** | **`3 Exp.`** |
-| Grito de alerta | **`3 PA`** | **`2 Exp.`** |
-| Brado de guerra | **`2 PA`** | **`2 Exp.`** |
-| Revigorar | **`2 PA`** | **`2 Exp.`** |
-| Revitalizar | **`5 PA`** | **`4 Exp.`** |
-| Animar | **`2 PA`** | **`2 Exp.`** |
+| Comandar | **`1 PA`** | **`2 exp.`** |
+| Cura especializada | **`3 PA`** | **`3 exp.`** |
+| Tratamento especializado | **`4 PA`** | **`3 exp.`** |
+| Grito de alerta | **`3 PA`** | **`2 exp.`** |
+| Brado de guerra | **`2 PA`** | **`2 exp.`** |
+| Revigorar | **`2 PA`** | **`2 exp.`** |
+| Revitalizar | **`5 PA`** | **`4 exp.`** |
+| Animar | **`2 PA`** | **`2 exp.`** |
 
 ## Animar
 
-**Atributo:** `Social` · **Custo de PA:** `2 PA` · **Custo de compra:** `2 Exp.`
+**Atributo:** `Social` · **Custo de PA:** `2 PA` · **Custo de compra:** `2 exp.`
 
 ### Descrição
 
@@ -34,7 +34,7 @@ Realiza um teste social para recuperar aptidões consumidas de um aliado.
 
 ### Requisitos de uso
 
-- O aliado alvo precisa estar desacordado.
+- O aliado alvo precisa estar inconsciente.
 
 ### Progressão
 
@@ -49,7 +49,7 @@ Realiza um teste social para recuperar aptidões consumidas de um aliado.
 
 ## Brado de guerra
 
-**Atributo:** `Social` · **Custo de PA:** `2 PA` · **Custo de compra:** `2 Exp.`
+**Atributo:** `Social` · **Custo de PA:** `2 PA` · **Custo de compra:** `2 exp.`
 
 ### Descrição
 
@@ -76,7 +76,7 @@ O acerto é automático contanto que o aliado seja receptivo a você.
 
 ## Comandar
 
-**Atributo:** `Social` · **Custo de PA:** `1 PA` · **Custo de compra:** `2 Exp.`
+**Atributo:** `Social` · **Custo de PA:** `1 PA` · **Custo de compra:** `2 exp.`
 
 ### Descrição
 
@@ -106,7 +106,7 @@ Transfere pontos de ação do seu próximo turno para um aliado.
 
 ## Cura especializada
 
-**Atributo:** `Social` · **Custo de PA:** `3 PA` · **Custo de compra:** `3 Exp.`
+**Atributo:** `Social` · **Custo de PA:** `3 PA` · **Custo de compra:** `3 exp.`
 
 ### Descrição
 
@@ -116,7 +116,7 @@ Se falhar neste teste de cura, o aliado não recebe dano adicional.
 
 ### Requisitos de uso
 
-- Não estar impedido/desabilitado.
+- Não estar [desabilitado](../conflitos/03-saude-e-protecao.md#membro-desabilitado-incapacitado-ou-invalidado).
 
 ### Progressão
 
@@ -132,7 +132,7 @@ Se falhar neste teste de cura, o aliado não recebe dano adicional.
 
 ## Grito de alerta
 
-**Atributo:** `Social` · **Custo de PA:** `3 PA` · **Custo de compra:** `2 Exp.`
+**Atributo:** `Social` · **Custo de PA:** `3 PA` · **Custo de compra:** `2 exp.`
 
 ### Descrição
 
@@ -159,7 +159,7 @@ O acerto é automático contanto que o aliado seja receptivo a você.
 
 ## Revigorar
 
-**Atributo:** `Social` · **Custo de PA:** `2 PA` · **Custo de compra:** `2 Exp.`
+**Atributo:** `Social` · **Custo de PA:** `2 PA` · **Custo de compra:** `2 exp.`
 
 ### Descrição
 
@@ -183,15 +183,15 @@ Reativa uma habilidade de um aliado.
 
 ## Revitalizar
 
-**Atributo:** `Social` · **Custo de PA:** `5 PA` · **Custo de compra:** `4 Exp.`
+**Atributo:** `Social` · **Custo de PA:** `5 PA` · **Custo de compra:** `4 exp.`
 
 ### Descrição
 
-Realiza um teste social para retornar um aliado desacordado a consciência e realiza um tratamento automático.
+Realiza um teste social para retornar um aliado inconsciente à consciência e realiza um tratamento automático.
 
 ### Requisitos de uso
 
-- O aliado alvo precisa estar desacordado.
+- O aliado alvo precisa estar inconsciente.
 
 ### Progressão
 
@@ -207,7 +207,7 @@ Realiza um teste social para retornar um aliado desacordado a consciência e rea
 
 ## Tratamento especializado
 
-**Atributo:** `Social` · **Custo de PA:** `4 PA` · **Custo de compra:** `3 Exp.`
+**Atributo:** `Social` · **Custo de PA:** `4 PA` · **Custo de compra:** `3 exp.`
 
 ### Descrição
 
@@ -217,7 +217,7 @@ Se falhar neste teste de tratamento, o aliado não recebe dano adicional.
 
 ### Requisitos de uso
 
-- Não estar impedido/desabilitado.
+- Não estar [desabilitado](../conflitos/03-saude-e-protecao.md#membro-desabilitado-incapacitado-ou-invalidado).
 
 ### Progressão
 

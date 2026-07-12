@@ -13,7 +13,7 @@ Aptidões são acumulativas: você pode comprar quantas aptidões quiser consult
 
 | Atributo da Aptidão | Custo de compra |
 | --- | --- |
-| **Aptidão Física** | **`1 Exp.`** |
-| **Aptidão Ágil** | **`1 Exp.`** |
-| **Aptidão Mental** | **`1 Exp.`** |
-| **Aptidão Social** | **`1 Exp.`** |
+| **Aptidão Física** | **`1 exp.`** |
+| **Aptidão Ágil** | **`1 exp.`** |
+| **Aptidão Mental** | **`1 exp.`** |
+| **Aptidão Social** | **`1 exp.`** |

@@ -82,7 +82,7 @@ O ambiente e o terreno podem conceder **vantagens, desvantagens e efeitos mecân
 
 Dados adicionais de **`vantagem`** e **`desvantagem`** na mesma ação do personagem se anulam.
 
-> *Exemplo: Um jogador tem **`+1d10 de vantagem`** por estar atacando um oponente caído mas tem **`+1d10 de desvantagem`** por estar atacando um inimigo em uma distância de acerto não ideal. Nesse caso, apenas o dado normal da ação é jogado, porque a **`vantagem`** e a **`desvantagem`** se anulam.*
+> *Exemplo: Um jogador tem **`+1d10 de vantagem`** por estar atacando um oponente caído mas tem **`+1d10 de desvantagem`** por estar atacando um inimigo no [alcance não ideal](../listas/equipamentos-base.md#alcance-ideal-e-alcance-não-ideal) da arma. Nesse caso, apenas o dado normal da ação é jogado, porque a **`vantagem`** e a **`desvantagem`** se anulam.*
 
 Caso o personagem responsável pelo teste e o personagem responsável pelo contrateste tenham, ambos, uma ou mais vantagens, elas se anulam até que um dos jogadores não tenha mais modificadores para anular. O mesmo vale para um conflito no qual os dois lados jogam com desvantagens.
 

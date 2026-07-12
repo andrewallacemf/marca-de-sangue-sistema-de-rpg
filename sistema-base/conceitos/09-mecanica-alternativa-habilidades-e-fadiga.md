@@ -40,7 +40,7 @@ Implicações da proposta documentadas em 11/07/2026 (decisões nº 4 e 7 — ve
 
 - **[Aptidões](04-aptidoes.md) ficam fora da mecânica:** mantêm o custo próprio (o consumo da própria aptidão) e **nunca** gastam fadiga — a fadiga como combustível vale **apenas para habilidades**.
 - **Deixa de existir a compra de usos** de habilidade.
-- **Deixa de existir a fusão** de habilidades iguais — substituída pela **evolução de nível**: compra-se a habilidade com **`Exp.`** e paga-se **`Exp.`** para subir de nível; o nível determina a força da habilidade.
+- **Deixa de existir a fusão** de habilidades iguais — substituída pela **evolução de nível**: compra-se a habilidade com **`exp.`** e paga-se **`exp.`** para subir de nível; o nível determina a força da habilidade.
 - **A recuperação continua sendo por descanso:** recupera-se a **fadiga**, não "usos".
 - **Registro concentrado na ficha:** o acompanhamento de uso fica todo na barra de fadiga da ficha — um lugar só, mesmo com muitas habilidades.
 - **Sinergia com a direção da magia** (direção de design já conversada pelo grupo): magias **simples** gastam **fadiga**; magias **complexas** gastam **vida/dano**.

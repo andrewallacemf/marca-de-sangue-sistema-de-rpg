@@ -9,7 +9,7 @@ atualizado-em: 2026-07-11
 
 # Lista de habilidades base
 
-Você pode comprar usos (acumulativos) ou aumentar o nível de um uso de habilidade pagando o custo de **`Exp.`** indicado. A "Lista de habilidades base" do manual básico foi dividida nos arquivos abaixo:
+Você pode comprar usos (acumulativos) ou aumentar o nível de um uso de habilidade pagando o custo de **`exp.`** indicado. A "Lista de habilidades base" do manual básico foi dividida nos arquivos abaixo:
 
 - [Habilidades base — Ágil](habilidades-base-ageis.md) — 8 habilidades
 - [Habilidades base — Físico](habilidades-base-fisicas.md) — 9 habilidades

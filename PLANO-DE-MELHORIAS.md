@@ -85,8 +85,17 @@ Fontes: transcrições em notas-de-design/transcricoes/.*
   Deflexão) aguardando aprovação; `VERS.` segue sem fonte.
 - [x] Extensão da variante registrada (fadiga em contratestes — discutir com Gabriel);
   ideia de eliminar PA **descartada** e documentada.
-- [ ] Próximas seções do livro base a revisar pelo grupo (continuar a leitura).
-- [ ] Decidir os achados da auditoria de terminologia (padronizações semânticas).
+- [x] **Auditoria de terminologia decidida item a item e aplicada** (16h08): conflito/
+  combate/embate, malhas nomeadas, trilha emocional + campo da emoção, espaço,
+  desabilitado (guarda-chuva definido), `exp.`, PV mantido, guarda/postura defensiva,
+  moedas, Ágil, Manual (nunca "livro") + módulos de recursos, inconsciente, testes —
+  222 siglas padronizadas, ~30 arquivos.
+- [x] Regras fechadas (16h08): **armadura** (tabela define a redução; dano mínimo 1),
+  **alcance ideal/não ideal** (corpo a corpo ±1 m; distância mesma amplitude),
+  **engajamento redefinido** (mover-se dentro do alcance ideal gera AdO; propriedades
+  expandem; à distância só com traço), **descansos** (página nova; qualquer descanso
+  zera a fadiga).
+- [ ] Próximas seções do manual base a revisar pelo grupo (continuar a leitura).
 
 ## Lote 2b — Processo e busca ✅ *(11/07)*
 

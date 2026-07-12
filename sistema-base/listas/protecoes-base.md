@@ -36,10 +36,13 @@ atualizado-em: 2026-07-11
 
 ## Uso e registro das proteções
 
-Regra consolidada na reunião de 11/07/2026 (ver [decisões](../../notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md), item 9):
+Regra consolidada nas reuniões de 11/07/2026 (ver [decisões — reuniões de mecânica](../../notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md), item 9, e [decisões — terminologia, alcance e descanso](../../notas-de-design/decisoes/2026-07-11-terminologia-alcance-descanso.md), item A1):
 
-- **Redução de dano:** a proteção reduz **1 de dano por acerto** recebido na região protegida.
-- **Durabilidade por local:** a cada acerto, a proteção perde **1 de durabilidade na região atingida** — cada local controla a própria durabilidade.
+- **Redução de dano:** a coluna **"Redutor Dano"** da tabela indica **quanto cada proteção reduz do dano de cada golpe** recebido na região protegida — por isso os valores vão de **1 a 12**.
+- **Dano mínimo 1:** o redutor **nunca reduz o dano abaixo de 1** — se o ataque acertou, o alvo sofre no mínimo 1 ponto de dano, mesmo que a redução supere o dano rolado.
+- **Durabilidade por local:** a cada golpe recebido, a proteção perde **1 de durabilidade na região atingida** — cada local controla a própria durabilidade.
 - **Registro na ficha:** a proteção é anotada **uma única vez** (nome, redução de dano e redutor de `PA`), junto com a **distribuição por locais** do corpo e a durabilidade individual de cada local.
 - **Espaços de proteção:** a ficha possui **três espaços de proteção** (ex.: superior, inferior e escudo).
 - **Sem empilhamento:** não é possível empilhar armaduras no mesmo local — **vale a de maior proteção**.
+
+> ✅ Revisado em 11/07/2026: o antigo "reduz 1 de dano por acerto" era **exemplo**, não regra universal — a tabela define a redução de cada armadura, e o dano mínimo é 1 (ver [decisão](../../notas-de-design/decisoes/2026-07-11-terminologia-alcance-descanso.md), item A1).

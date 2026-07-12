@@ -15,18 +15,18 @@ Habilidades base do atributo **`Ágil`**. Parte da "Lista de habilidades base" d
 
 | **Habilidade** | **Custo de `PA`** | **Custo de compra** |
 | --- | --- | --- |
-| Alcance corpo a corpo | **`X PA`** + **`PA da arma`** | **`2 Exp.`** |
-| Alcance à distância | **`2 PA`** + **`PA da arma`** | **`2 Exp.`** |
-| Arremesso improvisado | **`1 PA`** | **`2 Exp.`** |
-| Arremessos concentrados | **`1 PA`** | **`2 Exp.`** |
-| Ataques múltiplos & leves | **`1 PA`** | **`1 Exp.`** |
-| Ataques à distância concentrados | **`1 PA`** | **`3 Exp.`** |
-| Disparada | **`4 PA`** | **`2 Exp.`** |
-| Golpe surpresa | **`1 PA`** + **`PA da arma`** | **`2 Exp.`** |
+| Alcance corpo a corpo | **`X PA`** + **`PA da arma`** | **`2 exp.`** |
+| Alcance à distância | **`2 PA`** + **`PA da arma`** | **`2 exp.`** |
+| Arremesso improvisado | **`1 PA`** | **`2 exp.`** |
+| Arremessos concentrados | **`1 PA`** | **`2 exp.`** |
+| Ataques múltiplos & leves | **`1 PA`** | **`1 exp.`** |
+| Ataques à distância concentrados | **`1 PA`** | **`3 exp.`** |
+| Disparada | **`4 PA`** | **`2 exp.`** |
+| Golpe surpresa | **`1 PA`** + **`PA da arma`** | **`2 exp.`** |
 
 ## Alcance à distância
 
-**Atributo:** `Ágil` · **Custo de PA:** `2 PA` + `PA da arma` · **Custo de compra:** `2 Exp.`
+**Atributo:** `Ágil` · **Custo de PA:** `2 PA` + `PA da arma` · **Custo de compra:** `2 exp.`
 
 ### Descrição
 
@@ -47,7 +47,7 @@ Aumenta a área de alcance ideal da arma.
 
 ## Alcance corpo a corpo
 
-**Atributo:** `Ágil` · **Custo de PA:** `X PA` + `PA da arma` · **Custo de compra:** `2 Exp.`
+**Atributo:** `Ágil` · **Custo de PA:** `X PA` + `PA da arma` · **Custo de compra:** `2 exp.`
 
 ### Descrição
 
@@ -67,7 +67,7 @@ Aumenta a área de alcance ideal da arma em 1 metro.
 
 ## Arremesso improvisado
 
-**Atributo:** `Ágil` · **Custo de PA:** `1 PA` · **Custo de compra:** `2 Exp.`
+**Atributo:** `Ágil` · **Custo de PA:** `1 PA` · **Custo de compra:** `2 exp.`
 
 ### Descrição
 
@@ -92,9 +92,9 @@ Pode arremessar armas ou objetos como se fossem armas de arremesso neste turno.
 
 ## Arremessos concentrados
 
-> ⚠️ A DEFINIR: havia duas versões quase idênticas desta habilidade no manual; conferir a redação correta. (Diferenças: requisito "Estar arremessando uma arma de arremesso" vs. "Estar atacando com uma arma de arremesso"; custo de compra `2 Exp.` vs. `3 Exp.`. Foi mantida a versão de `2 Exp.`, que coincide com a tabela de resumo.)
+> ⚠️ A DEFINIR: havia duas versões quase idênticas desta habilidade no manual; conferir a redação correta. (Diferenças: requisito "Estar arremessando uma arma de arremesso" vs. "Estar atacando com uma arma de arremesso"; custo de compra `2 exp.` vs. `3 exp.`. Foi mantida a versão de `2 exp.`, que coincide com a tabela de resumo.)
 
-**Atributo:** `Ágil` · **Custo de PA:** `1 PA` · **Custo de compra:** `2 Exp.`
+**Atributo:** `Ágil` · **Custo de PA:** `1 PA` · **Custo de compra:** `2 exp.`
 
 ### Descrição
 
@@ -117,7 +117,7 @@ Pode manter o alvo dos ataques de arremesso no mesmo oponente ignorando a desvan
 
 ## Ataques à distância concentrados
 
-**Atributo:** `Ágil` · **Custo de PA:** `1 PA` · **Custo de compra:** `3 Exp.`
+**Atributo:** `Ágil` · **Custo de PA:** `1 PA` · **Custo de compra:** `3 exp.`
 
 ### Descrição
 
@@ -140,7 +140,7 @@ Pode manter o alvo dos ataques à distância no mesmo oponente ignorando a desva
 
 ## Ataques múltiplos & leves
 
-**Atributo:** `Ágil` · **Custo de PA:** `1 PA` · **Custo de compra:** `1 Exp.`
+**Atributo:** `Ágil` · **Custo de PA:** `1 PA` · **Custo de compra:** `1 exp.`
 
 ### Descrição
 
@@ -165,7 +165,7 @@ Pode mudar o alvo de ataques corpo a corpo com armas leves ignorando a desvantag
 
 ## Disparada
 
-**Atributo:** `Ágil` · **Custo de PA:** `4 PA` · **Custo de compra:** `2 Exp.`
+**Atributo:** `Ágil` · **Custo de PA:** `4 PA` · **Custo de compra:** `2 exp.`
 
 ### Descrição
 
@@ -190,7 +190,7 @@ Realiza um movimento em linha reta na direção escolhida.
 
 ## Golpe surpresa
 
-**Atributo:** `Ágil` · **Custo de PA:** `1 PA` + `PA da arma` · **Custo de compra:** `2 Exp.`
+**Atributo:** `Ágil` · **Custo de PA:** `1 PA` + `PA da arma` · **Custo de compra:** `2 exp.`
 
 ### Descrição
 

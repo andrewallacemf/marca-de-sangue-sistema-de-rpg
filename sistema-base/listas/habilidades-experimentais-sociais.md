@@ -11,33 +11,33 @@ atualizado-em: 2026-07-11
 
 > 💡 Seção experimental — em teste.
 
-Habilidades e traços voltados ao conflito social (malha de conflito social e trilhas emocionais). Parte da "Lista de habilidades base" do manual básico — ver o [índice de habilidades base](habilidades-base.md).
+Habilidades e traços voltados ao conflito social (malha de embate social, trilhas emocionais e campos da emoção). Parte da "Lista de habilidades base" do manual básico — ver o [índice de habilidades base](habilidades-base.md).
 
 ## Meditação
 
-**Atributo:** Social · **Custo de PA:** `2 PA` · **Custo de compra:** `2 xp`
+**Atributo:** Social · **Custo de PA:** `2 PA` · **Custo de compra:** `2 exp.`
 
 ### Descrição
 
-Se você estiver em uma posição de descontrole da malha de conflito social e for bem sucedido num teste de ponderar, você sobe casas adicionais em direção ao centro da trilha.
+Se você estiver em uma posição de descontrole da malha de embate social e for bem sucedido num teste de ponderar, você sobe campos adicionais em direção ao centro da trilha.
 
 ### Requisitos de uso
 
-- Estar em uma posição de descontrole da malha de combate.
+- Estar em uma posição de descontrole da malha de embate social.
 
 ### Progressão
 
-1. Sobe 1 casa, tendo como ponto máximo a casa neutra da trilha emocional (aquela em que não há bônus ou penalidades);
-2. Sobe 2 casas, tendo como ponto máximo a casa neutra da trilha emocional (aquela em que não há bônus ou penalidades);
-3. Sobe 2 casas, e pode subir mais do que o ponto de neutralidade da trilha emocional;
+1. Sobe 1 campo, tendo como ponto máximo o campo neutro da trilha emocional (aquele em que não há bônus ou penalidades);
+2. Sobe 2 campos, tendo como ponto máximo o campo neutro da trilha emocional (aquele em que não há bônus ou penalidades);
+3. Sobe 2 campos, e pode subir mais do que o ponto de neutralidade da trilha emocional;
 
 ## Ressignificar
 
-**Atributo:** Mental · **Custo de PA:** `4 PA` · **Custo de compra:** `3 xp`
+**Atributo:** Mental · **Custo de PA:** `4 PA` · **Custo de compra:** `3 exp.`
 
 ### Descrição
 
-Se o personagem estiver na casa neutra de uma trilha emocional, ele pode transitar para outra trilha diretamente, sem passar por estágios intermediários (sem passar pela postura).
+Se o personagem estiver no campo neutro de uma trilha emocional, ele pode transitar para outra trilha diretamente, sem passar por estágios intermediários (sem passar pelos campos da emoção intermediários).
 
 ### Requisitos de uso
 
@@ -51,7 +51,7 @@ Se o personagem estiver na casa neutra de uma trilha emocional, ele pode transit
 
 ## Empatia
 
-**Atributo:** Social · **Custo de PA:** `3 PA` · **Custo de compra:** `3 xp`
+**Atributo:** Social · **Custo de PA:** `3 PA` · **Custo de compra:** `3 exp.`
 
 ### Descrição
 
@@ -63,13 +63,13 @@ Ative um gatilho para se movimentar na mesma direção de um aliado quando ele s
 
 ### Progressão
 
-1. Ande uma casa na direção de um aliado;
-2. Ande duas casas na direção de um aliado;
-3. Ande três casas na direção de um aliado.
+1. Ande um campo na direção de um aliado;
+2. Ande dois campos na direção de um aliado;
+3. Ande três campos na direção de um aliado.
 
 ## Otimista
 
-**Atributo:** Social · **Custo de PA:** `4 PA` · **Custo de compra:** `3 xp`
+**Atributo:** Social · **Custo de PA:** `4 PA` · **Custo de compra:** `3 exp.`
 
 ### Descrição
 
@@ -87,11 +87,11 @@ Desloca um aliado na direção do controle emocional se ele estiver na trilha da
 
 ## Liderar pelo exemplo
 
-**Atributo:** Social · **Custo de PA:** `3 PA` · **Custo de compra:** `3 xp`
+**Atributo:** Social · **Custo de PA:** `3 PA` · **Custo de compra:** `3 exp.`
 
 ### Descrição
 
-Movimente um aliado na direção do seu personagem na malha social.
+Movimente um aliado na direção do seu personagem na malha de embate social.
 
 ### Requisitos de uso
 
@@ -105,7 +105,7 @@ Movimente um aliado na direção do seu personagem na malha social.
 
 ## Destacar defeitos
 
-**Atributo:** Social · **Custo de PA:** `3 PA` · **Custo de compra:** `3 xp`
+**Atributo:** Social · **Custo de PA:** `3 PA` · **Custo de compra:** `3 exp.`
 
 ### Descrição
 
@@ -123,7 +123,7 @@ Desloca o adversário lateralmente na direção da ansiedade.
 
 ## Palhaço
 
-**Atributo:** Social · **Custo de PA:** `3 PA` · **Custo de compra:** `3 xp`
+**Atributo:** Social · **Custo de PA:** `3 PA` · **Custo de compra:** `3 exp.`
 
 ### Descrição
 
@@ -141,7 +141,7 @@ Desloca o adversário lateralmente na direção da alegria
 
 ## Sedutor
 
-**Atributo:** Social · **Custo de PA:** `3 PA` · **Custo de compra:** `3 xp`
+**Atributo:** Social · **Custo de PA:** `3 PA` · **Custo de compra:** `3 exp.`
 
 ### Descrição
 
@@ -159,7 +159,7 @@ Desloca o adversário lateralmente na direção da atração
 
 ## Enojar
 
-**Atributo:** Social · **Custo de PA:** `3 PA` · **Custo de compra:** `3 xp`
+**Atributo:** Social · **Custo de PA:** `3 PA` · **Custo de compra:** `3 exp.`
 
 ### Descrição
 
@@ -177,11 +177,11 @@ Desloca o adversário lateralmente na direção da aversão
 
 ## Respirar fundo
 
-**Atributo:** Mental · **Custo de PA:** `3 PA` · **Custo de compra:** `4 xp`
+**Atributo:** Mental · **Custo de PA:** `3 PA` · **Custo de compra:** `4 exp.`
 
 ### Descrição
 
-Impede que você seja deslocado por um oponente nos próximos turnos na malha de conflito.
+Impede que você seja deslocado por um oponente nos próximos turnos na malha de embate social.
 
 ### Requisitos de uso
 
@@ -195,7 +195,7 @@ Impede que você seja deslocado por um oponente nos próximos turnos na malha de
 
 ## Agilizar derrota em [TRILHA]
 
-**Atributo:** Social · **Custo de PA:** `3 PA` · **Custo de compra:** `4 xp`
+**Atributo:** Social · **Custo de PA:** `3 PA` · **Custo de compra:** `4 exp.`
 
 ### Descrição
 
@@ -213,7 +213,7 @@ Adiciona pontuação negativa a um adversário no final do turno, se ele estiver
 
 ## Agilizar vitória em [TRILHA]
 
-**Atributo:** Social · **Custo de PA:** `3 PA` · **Custo de compra:** `4 xp`
+**Atributo:** Social · **Custo de PA:** `3 PA` · **Custo de compra:** `4 exp.`
 
 ### Descrição
 
@@ -231,11 +231,11 @@ Adiciona x pontuação positiva a um aliado (ou você mesmo) no final do turno, 
 
 ## Dilema
 
-**Atributo:** Social · **Custo de PA:** `6 PA` · **Custo de compra:** `6 xp`
+**Atributo:** Social · **Custo de PA:** `6 PA` · **Custo de compra:** `6 exp.`
 
 ### Descrição
 
-Movimenta todos os personagens elegíveis na Malha de Conflito Social até uma das Posturas adjacentes. O personagem movido dessa maneira escolhe qual postura quer adotar.
+Movimenta todos os personagens elegíveis na malha de embate social até um dos campos da emoção adjacentes. O personagem movido dessa maneira escolhe qual campo da emoção quer ocupar.
 
 ### Requisitos de uso
 
@@ -243,17 +243,17 @@ Movimenta todos os personagens elegíveis na Malha de Conflito Social até uma d
 
 ### Progressão
 
-1. Movimenta todos os personagens em casas de pontuação 0
-2. Movimenta todos os personagens em casas de pontuação -1 e +1
-3. Movimenta todos os personagens em casas de pontuação -2 e +2
+1. Movimenta todos os personagens em campos de pontuação 0
+2. Movimenta todos os personagens em campos de pontuação -1 e +1
+3. Movimenta todos os personagens em campos de pontuação -2 e +2
 
 ## Psicólogo
 
-**Atributo:** Social · **Custo de PA:** `1 PA` · **Custo de compra:** `3 xp`
+**Atributo:** Social · **Custo de PA:** `1 PA` · **Custo de compra:** `3 exp.`
 
 ### Descrição
 
-Reduz os PAs necessários para movimentar um aliado na Malha de Conflito Social.
+Reduz os PAs necessários para movimentar um aliado na malha de embate social.
 
 ### Requisitos de uso
 
@@ -267,7 +267,7 @@ Reduz os PAs necessários para movimentar um aliado na Malha de Conflito Social.
 
 ## Sinergia (traço)
 
-**Atributo:** Mental · **Custo de compra:** `3 xp`
+**Atributo:** Mental · **Custo de compra:** `3 exp.`
 
 ### Descrição
 
@@ -279,7 +279,7 @@ Recebe vantagem para mover um adversário na trilha de uma emoção que tenha vo
 
 ## Cabeça dura (traço)
 
-**Atributo:** Mental · **Custo de compra:** `5 xp`
+**Atributo:** Mental · **Custo de compra:** `5 exp.`
 
 ### Descrição
 
@@ -291,7 +291,7 @@ Tem vantagem em testes de resistência para ser tirado de uma trilha por um adve
 
 ## Distanciamento emocional (traço)
 
-**Atributo:** Mental · **Custo de compra:** `3 xp`
+**Atributo:** Mental · **Custo de compra:** `3 exp.`
 
 ### Descrição
 
@@ -303,7 +303,7 @@ Não gasta PA para entrar em uma trilha na qual não haja nenhum outro personage
 
 ## Sanguessuga social (traço)
 
-**Atributo:** Social · **Custo de compra:** `4 xp`
+**Atributo:** Social · **Custo de compra:** `4 exp.`
 
 ### Descrição
 
@@ -315,7 +315,7 @@ Tem vantagem em testes enquanto o oponente estiver em situação de descontrole 
 
 ## Oportunista sedutor (traço)
 
-**Atributo:** Social · **Custo de compra:** `4 xp`
+**Atributo:** Social · **Custo de compra:** `4 exp.`
 
 ### Descrição
 
@@ -327,7 +327,7 @@ Tem vantagem em testes enquanto o oponente estiver em situação de descontrole 
 
 ## Companheiro de festa (traço)
 
-**Atributo:** Social · **Custo de compra:** `4 xp`
+**Atributo:** Social · **Custo de compra:** `4 exp.`
 
 ### Descrição
 
@@ -339,7 +339,7 @@ Tem vantagem em testes enquanto o oponente estiver em situação de descontrole 
 
 ## Fobófago (traço)
 
-**Atributo:** Social · **Custo de compra:** `4 xp`
+**Atributo:** Social · **Custo de compra:** `4 exp.`
 
 ### Descrição
 
@@ -351,7 +351,7 @@ Tem vantagem em testes enquanto o oponente estiver em situação de descontrole 
 
 ## Tomar vantagem da surpresa (traço)
 
-**Atributo:** Social · **Custo de compra:** `4 xp`
+**Atributo:** Social · **Custo de compra:** `4 exp.`
 
 ### Descrição
 
@@ -363,11 +363,11 @@ Tem vantagem em testes enquanto o oponente estiver em situação de descontrole 
 
 ## Turrão (traço)
 
-**Atributo:** Social · **Custo de compra:** `5 xp`
+**Atributo:** Social · **Custo de compra:** `5 exp.`
 
 ### Descrição
 
-Toda vez que um adversário falhar em movimentar um personagem com esse traço, este adversário desce uma casa em direção ao descontrole emocional caso já esteja em alguma trilha de sentimentos.
+Toda vez que um adversário falhar em movimentar um personagem com esse traço, este adversário desce um campo em direção ao descontrole emocional caso já esteja em alguma trilha de sentimentos.
 
 ### Requisitos de uso
 

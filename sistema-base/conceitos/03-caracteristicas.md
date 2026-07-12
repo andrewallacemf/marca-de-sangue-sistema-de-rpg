@@ -11,7 +11,7 @@ atualizado-em: 2026-07-11
 
 Um personagem criado no sistema Marca de Sangue é definido pelo seu conjunto de **[Habilidades](05-habilidades.md), [Aptidões](04-aptidoes.md)** e **[Traços](06-tracos.md)**, que compõem as **características** do seu personagem. Toda Característica é relacionada a um [atributo](02-atributos.md) (**`Físico`**, **`Ágil`**, **`Mental`** e **`Social`**).
 
-No sistema Marca de Sangue, a evolução de um personagem é marcada por quais (e quantas) características o jogador comprou. Para isso, o narrador deve recompensar ações inteligentes ou vitórias em combates com **Pontos de Experiência (EXP)**, que podem ser usados pelos jogadores para “comprar” uma Habilidade, Aptidão ou Traço.
+No sistema Marca de Sangue, a evolução de um personagem é marcada por quais (e quantas) características o jogador comprou. Para isso, o narrador deve recompensar ações inteligentes ou vitórias em combates com **pontos de experiência (`exp.`)**, que podem ser usados pelos jogadores para “comprar” uma Habilidade, Aptidão ou Traço.
 
 Ao ser usada uma habilidade é gasta. Para que esteja disponível para o uso novamente, é preciso que o personagem tenha um momento de descanso, ou outra situação a ser definida pelo narrador.
 
