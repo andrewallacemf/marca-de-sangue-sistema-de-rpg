@@ -1,4 +1,4 @@
----
+﻿---
 titulo: Conflito físico
 tipo: regra
 cenario: base
@@ -19,7 +19,7 @@ Os conflitos funcionam em um sistema de turnos. Chamamos de “**turno**” o pe
 
 Cada vez que um conflito se inicia, tanto personagens de jogadores como NPCs precisam definir sua **INICIATIVA**, ou seja, a sequência em que farão suas ações.
 
-Para isso, jogadores e narrador jogam **`1d10`**. Jogadores podem aplicar aptidões de qualquer atributo para re-rolar esse dado.
+Para isso, jogadores e narrador jogam **`1d10`**. Jogadores podem aplicar aptidões de qualquer atributo para rerrolar esse dado.
 
 **Especificamente para iniciativa, o resultado final será a soma de todos os dados jogados pelo jogador.** Então os personagens são ordenados dos que obtiveram maior resultado até o menor.
 

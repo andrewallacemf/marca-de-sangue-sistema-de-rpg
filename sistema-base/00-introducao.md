@@ -17,7 +17,7 @@ Dentro de cada cenário da lista de cenários estão as regras, mecânicas espec
 
 O sistema é construído para ser jogado em uma malha hexagonal. Contudo, o jogo é facilmente adaptável para que você use qualquer papel quadriculado.
 
-Ao fim do Manual base do jogador há uma seção dedicada ao **passo-a-passo de criação de personagens para jogadores.** É recomendado ler as demais seções antes de criar seu personagem.
+Ao fim do Manual base do jogador há uma seção dedicada ao **passo a passo de criação de personagens para jogadores.** É recomendado ler as demais seções antes de criar seu personagem.
 
 ## O que preciso para jogar
 

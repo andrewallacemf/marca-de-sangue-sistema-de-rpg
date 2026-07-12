@@ -1,4 +1,4 @@
----
+﻿---
 titulo: Experiência e Evolução
 tipo: regra
 cenario: base
@@ -11,7 +11,7 @@ atualizado-em: 2026-07-11
 
 Personagens no sistema Marca de Sangue não possuem necessariamente um nível. Em vez disso, a progressão é medida pelo seu montante de experiência ganho ao longo das sessões, usada para adquirir Características, que englobam as habilidades, os traços, as aptidões e outras melhorias.
 
-As características podem ser adquiridas usando pontos de experiência distribuídos pelo narrador. Esses pontos podem ser recompensas por tarefas bem sucedidas, por soluções inventivas ou por avanços na trajetória pessoal dos personagens.
+As características podem ser adquiridas usando pontos de experiência distribuídos pelo narrador. Esses pontos podem ser recompensas por tarefas bem-sucedidas, por soluções inventivas ou por avanços na trajetória pessoal dos personagens.
 
 De forma geral, recomenda-se que um personagem monte sua ficha inicial utilizando **`8 exp.`**. Contudo, cada cenário pode ter sua própria recomendação de experiência inicial e o narrador pode adaptar a regra para melhor atender o estilo de jogo dos demais participantes.
 
@@ -41,7 +41,7 @@ Eventualmente haverá tarefas cujos resultados terão grandes impactos no desenr
 
 Recomenda-se que todos os jogadores tenham um papel e pelo menos um teste para realizar, contribuindo com a tarefa especial.
 
-Caso metade ou mais dos testes realizados pelos jogadores envolvidos sejam bem sucedidos, eles terão sucesso na tarefa, afetando grandemente a trama e ganhando **`1 exp.`**
+Caso metade ou mais dos testes realizados pelos jogadores envolvidos sejam bem-sucedidos, eles terão sucesso na tarefa, afetando grandemente a trama e ganhando **`1 exp.`**
 
 ### Vencer um conflito
 
@@ -92,7 +92,7 @@ Fundir características não consome experiência, mas é necessário cuidado ne
 
 Cabe ao jogador, sempre durante seu descanso, decidir se vai fundir ou não suas habilidades. Manter um grande número de ações possíveis ou poucas ações poderosas são ambas estratégias válidas.
 
-No entanto, atenção: esse dilema vale para as habilidades. Aptidões não são limitadas a uma por ação — você pode gastar quantas aptidões do atributo correspondente quiser para re-rolar o dado de um mesmo teste ou contrateste (ver [Aptidões](../conceitos/04-aptidoes.md)).
+No entanto, atenção: esse dilema vale para as habilidades. Aptidões não são limitadas a uma por ação — você pode gastar quantas aptidões do atributo correspondente quiser para rerrolar o dado de um mesmo teste ou contrateste (ver [Aptidões](../conceitos/04-aptidoes.md)).
 
 ## Comprando pontos de ação
 

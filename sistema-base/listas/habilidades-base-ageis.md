@@ -211,4 +211,4 @@ Realiza um golpe surpresa que causa dano adicional.
 
 ### Observações
 
-- Ao jogar contra outro jogador, você deve ser bem sucedido em um teste ágil de "esconder-se" contra o personagem do oponente para que a habilidade possa ser utilizada.
+- Ao jogar contra outro jogador, você deve ser bem-sucedido em um teste ágil de "esconder-se" contra o personagem do oponente para que a habilidade possa ser utilizada.

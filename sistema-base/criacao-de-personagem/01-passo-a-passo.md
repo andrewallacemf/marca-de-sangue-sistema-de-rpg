@@ -1,4 +1,4 @@
----
+﻿---
 titulo: Criando um personagem (passo a passo)
 tipo: regra
 cenario: base
@@ -7,7 +7,7 @@ tags: [criacao, personagem, ficha, passo-a-passo]
 atualizado-em: 2026-07-11
 ---
 
-# Criando um personagem (passo-a-passo)
+# Criando um personagem (passo a passo)
 
 ## 1. Reúna seus materiais
 
@@ -72,7 +72,7 @@ Atente-se ao valor de experiência necessário para comprar cada habilidade, par
 
 ### 3.3 Compre Aptidões
 
-Por último, compre aptidões. Aptidões representam re-rolagens que você pode consumir em ações de determinado atributo — ao gastar uma aptidão, você re-rola o dado do teste ou do contrateste depois de saber o resultado —, sendo a forma mais versátil de aumentar suas chances de obter sucesso em praticamente qualquer tarefa.
+Por último, compre aptidões. Aptidões representam rerrolagens que você pode consumir em ações de determinado atributo — ao gastar uma aptidão, você rerrola o dado do teste ou do contrateste depois de saber o resultado —, sendo a forma mais versátil de aumentar suas chances de obter sucesso em praticamente qualquer tarefa.
 
 Atente-se ao atributo de cada habilidade e traço que comprou e adquira aptidões destes atributos, pois podem ser consumidas em conjunto com habilidades ou traços para potencializá-los. Aptidões recuperam seus usos a cada descanso longo.
 

@@ -1,4 +1,4 @@
----
+﻿---
 titulo: Características
 tipo: regra
 cenario: base
@@ -29,7 +29,7 @@ O registro oficial das características do personagem é feito na [ficha de pers
 
 As habilidades e aptidões que um jogador pode usar estão limitadas pela quantidade de usos que ele adquiriu durante os momentos de “compra e fusão”. Isso pode acontecer no início ou final da sessão, momentos de descanso ou outras situações indicadas pelo narrador que permitam que os personagens dos jogadores ajustem e atualizem suas características.
 
-Para utilizar essas características de uso limitado, o jogador deve indicar a habilidade que usará e realizar o teste (ou contrateste) aplicando as modificações impostas pela característica. Aptidões seguem um fluxo próprio: são gastas depois que o narrador anuncia o resultado, para re-rolar o dado do teste ou do contrateste (ver [Aptidões](04-aptidoes.md)).
+Para utilizar essas características de uso limitado, o jogador deve indicar a habilidade que usará e realizar o teste (ou contrateste) aplicando as modificações impostas pela característica. Aptidões seguem um fluxo próprio: são gastas depois que o narrador anuncia o resultado, para rerrolar o dado do teste ou do contrateste (ver [Aptidões](04-aptidoes.md)).
 
 Após utilizar a característica, ela não poderá ser utilizada novamente até que se recupere o uso em um descanso ou outra situação indicada pelo narrador.
 

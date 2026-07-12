@@ -1,4 +1,4 @@
----
+﻿---
 titulo: Saúde e Proteção
 tipo: regra
 cenario: base
@@ -15,7 +15,7 @@ Ao ser atacado, um jogador que não esteja [desabilitado](#membro-desabilitado-i
 
 **Ser alvejado nas pernas ou braços não garante `vantagem`, porém se o inimigo mirar na sua cabeça ou tronco, ele terá `desvantagem` de acerto.**
 
-Armaduras, habilidades e a ação “entrar em defensiva” podem garantir vantagens adicionais de defesa ou redutores de dano caso acertado. Já as [aptidões](../conceitos/04-aptidoes.md) não concedem vantagem: elas permitem re-rolar o dado do teste ou do contrateste depois de conhecido o resultado. Vantagens de esquiva ou redutores de dano provenientes de armaduras são aplicadas em todos os membros do corpo.
+Armaduras, habilidades e a ação “entrar em defensiva” podem garantir vantagens adicionais de defesa ou redutores de dano caso acertado. Já as [aptidões](../conceitos/04-aptidoes.md) não concedem vantagem: elas permitem rerrolar o dado do teste ou do contrateste depois de conhecido o resultado. Vantagens de esquiva ou redutores de dano provenientes de armaduras são aplicadas em todos os membros do corpo.
 
 ## Corpo e vida
 

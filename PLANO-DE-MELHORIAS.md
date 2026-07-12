@@ -1,4 +1,4 @@
-# 🗺️ Plano de melhorias
+﻿# 🗺️ Plano de melhorias
 
 *Consolidado a partir das reuniões de 11/07/2026 (mesa completa + conversas André & Daniel).
 As decisões e seus porquês estão em
@@ -21,7 +21,7 @@ revisão do grupo (diff no GitHub).***
 - [x] 1.4 **Traços de técnica**: reestruturado em `conceitos/06-tracos.md` e
   `listas/tracos-base.md` (14 especializações migradas) — nome oficializado como
   **Técnicas** em 11/07.
-- [x] 1.10 **Aptidão = re-rolagem** (ajuste pós-Lote 1): varredura completa — 8 menções
+- [x] 1.10 **Aptidão = rerrolagem** (ajuste pós-Lote 1): varredura completa — 8 menções
   da versão antiga (vantagem) corrigidas; desempate atualizado com a cadeia de aptidões.
 - [x] 1.11 **Ambiente e terreno**: noção breve publicada no livro do jogador
   (`conceitos/01-testes-e-contratestes.md`, lista `💡 PROPOSTA`); detalhamento completo
@@ -56,9 +56,9 @@ revisão do grupo (diff no GitHub).***
 Fontes: transcrições em notas-de-design/transcricoes/.*
 
 - [x] Testes e contratestes: ambiente/terreno contextual (2 tipos de efeito), regra de
-  **Elevação**, foreshadowing das aptidões, adendo "re-rolagem nunca em dano" (11/07).
+  **Elevação**, foreshadowing das aptidões, adendo "rerrolagem nunca em dano" (11/07).
 - [x] Aptidões: regra do **resultado mantido** (vale o valor que beneficia quem usou),
-  fila de re-rolagens, dever do narrador (11/07).
+  fila de rerrolagens, dever do narrador (11/07).
 - [x] Terminologia: **narrador** padronizado (22 substituições), dados com `d` minúsculo;
   **auditoria de terminologia** entregue em notas-de-design/ (18 achados de termos +
   13 de grafia) — aguardando decisões do grupo.

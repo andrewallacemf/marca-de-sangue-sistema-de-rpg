@@ -1,4 +1,4 @@
----
+﻿---
 titulo: Habilidades
 tipo: regra
 cenario: base
@@ -49,7 +49,7 @@ Quando uma ou mais habilidades são utilizadas por personagens fora de batalha, 
 
 Para habilidades que custam a mesma quantidade de pontos de ação, o jogador que possui maior valor total de aptidão do **Atributo Ágil** tem preferência.
 
-Após a execução de cada habilidade da fila, se houver necessidade de jogar os dados, os envolvidos podem escolher utilizar [aptidões](04-aptidoes.md) para re-rolar os dados, seguindo a regra geral (o narrador anuncia o resultado antes de narrar os efeitos). Se mais de um personagem usar aptidões na mesma disputa e houver empate, vale a cadeia de [desempate](04-aptidoes.md#aptidões-e-desempate): vence quem usou mais aptidões; quantidades iguais, vale o padrão (o contrateste vence).
+Após a execução de cada habilidade da fila, se houver necessidade de jogar os dados, os envolvidos podem escolher utilizar [aptidões](04-aptidoes.md) para rerrolar os dados, seguindo a regra geral (o narrador anuncia o resultado antes de narrar os efeitos). Se mais de um personagem usar aptidões na mesma disputa e houver empate, vale a cadeia de [desempate](04-aptidoes.md#aptidões-e-desempate): vence quem usou mais aptidões; quantidades iguais, vale o padrão (o contrateste vence).
 
 ## Recuperando Habilidades
 

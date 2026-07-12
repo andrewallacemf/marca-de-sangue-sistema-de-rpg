@@ -74,8 +74,7 @@ regras de armadura, alcance e descanso.*
    **ou** invalidado. *Incapacitado* = 10 de dano profundo; *invalidado* = 10 de dano
    permanente. "Impedido" e "inválido" → usar desabilitado.
 6. **Sigla de experiência:** minúscula e com ponto — **`exp.`** (abreviação de
-   "experiência"). *(Interpretação da IA a partir do áudio "caixa baixa com ponto";
-   confirmar se o desejado era "xp.".)*
+   "experiência"). *(✅ Confirmado pelo André em 11/07/2026.)*
 7. **Pontos de vida:** mantém **pontos de vida** e abreviação **`PV`** (caixa alta) —
    padrão do hobby. ("Pontos de saúde/PS" foi considerado e revertido na mesma conversa.)
 8. **Guarda:** *levantar guarda* (ou *entrar em defensiva*) é a **ação**; **postura
@@ -94,5 +93,9 @@ regras de armadura, alcance e descanso.*
 13. **Sem sentidos:** o status é **inconsciente** ("desacordado" só como cor narrativa).
 14. **Testes:** *teste físico / mental / social / ágil* para o atributo; teste específico
     nomeia a ação: "teste ágil de esconder-se", "teste físico de escalar".
-15. **Hífens/grafia:** seguir a norma padrão da língua portuguesa. *(A gravação corta
-    nesta pergunta — assumido "sim"; confirmar.)*
+15. **Hífens/grafia:** nos casos de "usa ou não hífen", vale a **norma padrão da língua
+    portuguesa**. *(✅ Confirmado pelo André em 11/07/2026.)* Aplicações: **bem-sucedido**
+    (com hífen), **corpo a corpo** e **passo a passo** (sem hífen na prosa; nomes de
+    arquivo e tags mantêm o kebab-case por convenção técnica). Caso "re-rolar/re-rolagem":
+    pela norma estrita seria "rerrolar" (dobra o r, como rerratificar) — grafia levada ao
+    grupo para escolha final.

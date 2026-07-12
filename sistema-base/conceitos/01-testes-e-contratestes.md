@@ -1,4 +1,4 @@
----
+﻿---
 titulo: Testes e Contratestes
 tipo: regra
 cenario: base
@@ -41,7 +41,7 @@ Um **contrateste de esquiva** é a resposta direta mais natural a um **teste de 
 
 Ainda assim, não é obrigatório que o contrateste oposto ao teste de acerto seja uma tentativa de esquiva. Alternativamente, o jogador pode escolher abdicar de sua chance de esquiva para realizar outro contrateste como um "**contrateste de desempenho de defesa**" ou "**contrateste de desempenho para agarrar a arma do oponente**", por exemplo.
 
-> *Exemplo: O oponente ataca o jogador, que decide abdicar de sua esquiva para realizar um contrateste de desempenho para agarrar a arma do oponente como resposta ao ataque, o narrador decide que a ação pretendida faz sentido para o contexto e após o resultado, indica os benefícios da ação bem sucedida ou os malefícios da falha (Neste caso o jogador recebe o dano da arma mesmo que seja bem sucedido no teste de desempenho).*
+> *Exemplo: O oponente ataca o jogador, que decide abdicar de sua esquiva para realizar um contrateste de desempenho para agarrar a arma do oponente como resposta ao ataque, o narrador decide que a ação pretendida faz sentido para o contexto e após o resultado, indica os benefícios da ação bem-sucedida ou os malefícios da falha (Neste caso o jogador recebe o dano da arma mesmo que seja bem-sucedido no teste de desempenho).*
 
 ### Contrateste de desempenho
 
@@ -95,7 +95,7 @@ Para organizar o jogo, se deve seguir a seguinte ordem de ações quando em um c
 3. Os modificadores iguais dos dois participantes do conflito se anulam; e
 4. Os dados são jogados.
 
-> 💡 Atenção: rolados os dados, o resultado ainda não é definitivo — depois da rolagem existe a janela de re-rolagem por [aptidões](04-aptidoes.md), descrita no passo a passo abaixo.
+> 💡 Atenção: rolados os dados, o resultado ainda não é definitivo — depois da rolagem existe a janela de rerrolagem por [aptidões](04-aptidoes.md), descrita no passo a passo abaixo.
 
 ## Realizando um teste
 
@@ -112,9 +112,9 @@ Para realizar um teste:
 4. **O valor final do teste é comparado com o valor final do contrateste** (realizado pelo narrador ou por outro jogador) para definir se o personagem obteve sucesso na ação realizada. O narrador **anuncia se houve sucesso ou falha antes de narrar os efeitos**.
     1. Para ter sucesso, o valor final do teste precisa ser **superior** ao valor do contrateste.
     2. **Empates** são considerados falha no teste (ver [Desempate](#desempate)).
-5. Sabendo o resultado, os envolvidos podem gastar [aptidões](04-aptidoes.md) do atributo relacionado para **re-rolar o dado do teste ou o dado do contrateste**. Só depois dessa janela o narrador narra os efeitos.
+5. Sabendo o resultado, os envolvidos podem gastar [aptidões](04-aptidoes.md) do atributo relacionado para **rerrolar o dado do teste ou o dado do contrateste**. Só depois dessa janela o narrador narra os efeitos.
 
-> ✅ **Adendo (11/07/2026):** a re-rolagem por aptidão vale **apenas** para os dados de **teste e contrateste** — **nunca** para dados de dano (ver [notas-de-design/decisoes/2026-07-11-revisao-testes-aptidoes-fadiga.md](../../notas-de-design/decisoes/2026-07-11-revisao-testes-aptidoes-fadiga.md)).
+> ✅ **Adendo (11/07/2026):** a rerrolagem por aptidão vale **apenas** para os dados de **teste e contrateste** — **nunca** para dados de dano (ver [notas-de-design/decisoes/2026-07-11-revisao-testes-aptidoes-fadiga.md](../../notas-de-design/decisoes/2026-07-11-revisao-testes-aptidoes-fadiga.md)).
 
 ## Realizando um contrateste
 
@@ -131,14 +131,14 @@ O contrateste é o direito de resposta a uma ação realizada, assim:
 4. **O valor final do contrateste é comparado com o valor final do teste** (realizado pelo jogador que iniciou o teste) para definir se o personagem obteve sucesso na ação realizada. O narrador **anuncia se houve sucesso ou falha antes de narrar os efeitos**.
     1. Para ter sucesso, o valor final do contrateste precisa ser **igual ou superior** ao valor do teste.
     2. **Empates** são considerados sucesso no contrateste (ver [Desempate](#desempate)).
-5. Sabendo o resultado, os envolvidos podem gastar [aptidões](04-aptidoes.md) do atributo relacionado para **re-rolar o dado do teste ou o dado do contrateste**, antes de o narrador narrar os efeitos.
+5. Sabendo o resultado, os envolvidos podem gastar [aptidões](04-aptidoes.md) do atributo relacionado para **rerrolar o dado do teste ou o dado do contrateste**, antes de o narrador narrar os efeitos.
 
 ## Desempate
 
 Como os sucessos ou falhas são definidos por números que se opõem, é preciso de um critério de desempate. A cadeia completa é:
 
 1. **Padrão:** o **contrateste** possui a preferência de sucesso no caso de empate contra o teste.
-2. Se um dos lados **usou [aptidão](04-aptidoes.md) para re-rolar** e o resultado ficou empatado, o desempate favorece **quem usou a aptidão**.
+2. Se um dos lados **usou [aptidão](04-aptidoes.md) para rerrolar** e o resultado ficou empatado, o desempate favorece **quem usou a aptidão**.
 3. Se **os dois lados** usaram aptidões, o desempate favorece **quem usou mais**.
 4. Se as quantidades forem **iguais**, volta ao padrão: **o contrateste vence**.
 

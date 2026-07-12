@@ -1,4 +1,4 @@
-# 📌 Pendências e decisões em aberto
+﻿# 📌 Pendências e decisões em aberto
 
 Lista viva de tudo que **falta definir, escrever ou decidir** no projeto. É a primeira
 parada para saber "no que dá pra ajudar?".
@@ -28,7 +28,7 @@ parada para saber "no que dá pra ajudar?".
 
 | Pendência | Onde | Quem | Desde |
 |-----------|------|------|-------|
-| **Revisar o diff do Lote 1 + ajustes pós-Lote 1** (aplicados pela IA em 11/07): fadiga, desvantagem natural, reação, posicionamento, migração de 14 especializações → "Técnicas", aptidão corrigida para re-rolagem em 8 lugares, exemplo do conflito social e lista de ambiente/terreno propostos | [PLANO-DE-MELHORIAS.md](PLANO-DE-MELHORIAS.md) (Lote 1) | grupo | 2026-07-11 |
+| **Revisar o diff do Lote 1 + ajustes pós-Lote 1** (aplicados pela IA em 11/07): fadiga, desvantagem natural, reação, posicionamento, migração de 14 especializações → "Técnicas", aptidão corrigida para rerrolagem em 8 lugares, exemplo do conflito social e lista de ambiente/terreno propostos | [PLANO-DE-MELHORIAS.md](PLANO-DE-MELHORIAS.md) (Lote 1) | grupo | 2026-07-11 |
 | Contundente: definir **quantos** PA o acerto reduz (texto ficou genérico) | [listas/equipamentos-base.md](sistema-base/listas/equipamentos-base.md) | grupo | 2026-07-11 |
 | "Saltar" (lista de ações) ainda cita "especialização" (categoria extinta) com efeito extra — alinhar com técnicas/maestrias | [listas/acoes-em-combate.md](sistema-base/listas/acoes-em-combate.md) | grupo | 2026-07-11 |
 | Revisar as propriedades de armas **resgatadas** do material antigo (Projéteis, Agarrar, Arremesso, Deflexão) e aprovar as redações | [listas/equipamentos-base.md](sistema-base/listas/equipamentos-base.md) | grupo | 2026-07-11 |
@@ -44,7 +44,6 @@ parada para saber "no que dá pra ajudar?".
 | Divergências tabela-resumo × descrição: Esmagar (PA), Investida e Recompor (Exp.) | [listas/](sistema-base/listas/) | grupo | 2026-07-11 |
 | Ações complexas: 15 de 16 sem descrição (só "Saltar" está completa); "Derrubar" na tabela sem entrada | [listas/acoes-em-combate.md](sistema-base/listas/acoes-em-combate.md) | grupo | 2026-07-11 |
 | Equipamentos: coluna Durabilidade vazia; itens sem preço e moeda inconsistente ("ouros" × "moedas") | [listas/equipamentos-base.md](sistema-base/listas/equipamentos-base.md), [listas/itens-base.md](sistema-base/listas/itens-base.md) | grupo | 2026-07-11 |
-| Terminologia aplicada (16h08): **confirmar 2 interpretações da IA** — sigla `exp.` (o áudio diz "caixa baixa com ponto"; seria "xp."?) e hífens pela norma padrão (a gravação corta na pergunta) | [notas-de-design/decisoes/2026-07-11-terminologia-alcance-descanso.md](notas-de-design/decisoes/2026-07-11-terminologia-alcance-descanso.md) | grupo | 2026-07-11 |
 | Conferir 3 trocas de redação da varredura: "postura"→"campo da emoção" em Ressignificar/Dilema; "Animar" exige aliado **inconsciente** para recuperar aptidões (regra herdada soa estranha); frase "invalidado ou impedido"→"desabilitado" na saúde | [listas/habilidades-experimentais-sociais.md](sistema-base/listas/habilidades-experimentais-sociais.md), [conflitos/03-saude-e-protecao.md](sistema-base/conflitos/03-saude-e-protecao.md) | grupo | 2026-07-11 |
 | Descanso curto: definir duração mínima e o número/forma das rolagens de recuperação | [conceitos/10-descanso.md](sistema-base/conceitos/10-descanso.md) | grupo | 2026-07-11 |
 | **Regra duplicada com números divergentes**: custo do PA extra = 7 Exp. (progressão) × 5 Exp. (lista de ações) — achado da auditoria | [progressao/01-experiencia-e-evolucao.md](sistema-base/progressao/01-experiencia-e-evolucao.md), [listas/acoes-em-combate.md](sistema-base/listas/acoes-em-combate.md) | grupo | 2026-07-11 |
