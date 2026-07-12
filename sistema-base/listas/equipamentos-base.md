@@ -105,7 +105,7 @@ No manual do Notion, as propriedades só produzem efeito se o personagem tiver a
 
 | **Item** | **Categoria** | **Dano** | **Preço sugerido** |
 | --- | --- | --- | --- |
-| Pedras | **`PROJ.`** | **`2`** | - |
+| Pedras | **`PROJ.`** | **`2`** | **`grátis`** (improvisado — 💡 proposta) |
 | Dardo | **`PROJ.`** | **`2`** | **`1 moeda`** |
 | Flecha ponta de madeira | **`PROJ.`** | **`3`** | **`1 moeda`** |
 | Flecha ponta de ferro | **`PROJ.`** | **`4`** | **`3 moedas`** |
