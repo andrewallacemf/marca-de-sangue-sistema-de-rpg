@@ -4,7 +4,7 @@ tipo: regra
 cenario: base
 status: revisao
 tags: [testes, contratestes, vantagens, desvantagens, dados, desempate, ambiente, terreno, elevacao]
-atualizado-em: 2026-07-11
+atualizado-em: 2026-07-12
 ---
 
 # Testes e Contratestes
@@ -53,7 +53,7 @@ Um contrateste de dificuldade natural é geralmente utilizado pelo narrador para
 
 Em caso de acontecimentos imprevistos em que a própria natureza tem a iniciativa, o narrador pode pedir a um jogador para rolar o **contrateste de dificuldade natural.** Isso poderia ser usado para determinar os resultados da queda de um raio, de uma avalanche, ou de uma explosão.
 
-> *Exemplo: O narrador pode rolar um teste de acontecimento de fogo se espalhando pela sala e pedir um teste de dificuldade natural a um jogador aleatório para definir se o fogo irá se espalhar ou ficar contido.*
+> *Exemplo: O narrador pode rolar um teste de acontecimento de fogo se espalhando pela sala e pedir um contrateste de dificuldade natural a um jogador aleatório para definir se o fogo irá se espalhar ou ficar contido.*
 
 ## Modificadores de testes e contratestes
 
@@ -86,7 +86,7 @@ Dados adicionais de **`vantagem`** e **`desvantagem`** na mesma ação do person
 
 Caso o personagem responsável pelo teste e o personagem responsável pelo contrateste tenham, ambos, uma ou mais vantagens, elas se anulam até que um dos jogadores não tenha mais modificadores para anular. O mesmo vale para um conflito no qual os dois lados jogam com desvantagens.
 
-> **Exemplo:** O lanceiro Heitor **arremessa sua lança** (ataque à distância) com **`+2d10 de vantagem`** — uma por atacar de uma [elevação](#elevação) e outra por mirar um oponente caído —, mas o espadachim Alexander se defende com **`+1d10 de vantagem`** por estar com guarda levantada. Nesse caso, as vantagens se anulam e Heitor joga com apenas uma vantagem (portanto, dois dados). Alexander joga apenas um dado. Após isso, comparam o resultado final.
+> **Exemplo:** O lanceiro Heitor **arremessa sua lança** (ataque à distância) com **`+2d10 de vantagem`** — uma por atacar de uma [elevação](../conflitos/01-conflito-fisico.md#elevação) e outra por mirar um oponente caído —, mas o espadachim Alexander se defende com **`+1d10 de vantagem`** por estar com guarda levantada. Nesse caso, as vantagens se anulam e Heitor joga com apenas uma vantagem (portanto, dois dados). Alexander joga apenas um dado. Após isso, comparam o resultado final.
 
 Para organizar o jogo, se deve seguir a seguinte ordem de ações quando em um conflito um jogador anunciar que fará um teste:
 

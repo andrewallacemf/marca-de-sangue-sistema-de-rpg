@@ -4,7 +4,7 @@ tipo: regra
 cenario: base
 status: revisao
 tags: [aptidoes, atributos, rerrolagem, desempate, recuperacao]
-atualizado-em: 2026-07-11
+atualizado-em: 2026-07-12
 ---
 
 # Aptidões
@@ -62,7 +62,7 @@ Exemplo (fora de batalha): para passar por um lugar proibido, o personagem tenta
 
 Ao consumir a aptidão, é necessário um [descanso](10-descanso.md) ou outra indicação de recuperação de características para poder utilizá-la novamente.
 
-Por padrão, um **[descanso longo](10-descanso.md#descanso-longo)** recupera todas as aptidões consumidas (o descanso curto não recupera aptidões).
+Por padrão, um **[descanso longo](10-descanso.md#descanso-longo)** recupera **todas** as aptidões consumidas; um **[descanso curto](10-descanso.md#descanso-curto)** recupera **1 aptidão de cada tipo** (uma por atributo).
 
 ### Recuperando aptidões em combate
 

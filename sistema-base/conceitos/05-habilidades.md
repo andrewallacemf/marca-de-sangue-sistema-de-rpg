@@ -4,7 +4,7 @@ tipo: regra
 cenario: base
 status: revisao
 tags: [habilidades, pa, usos, recuperacao]
-atualizado-em: 2026-07-11
+atualizado-em: 2026-07-12
 ---
 
 # Habilidades
@@ -37,7 +37,7 @@ Dentro de uma batalha, o jogador pode utilizar quantas habilidades quiser, gasta
 
 > Ex.: *Kenji, o espadachim, possui **`7 PA`** em seu turno. Em sua vez, ele decide utilizar a habilidade “encontrão”, gastando **`2 PA`** e utilizando um de seus 3 usos dessa habilidade para empurrar o inimigo em direção a um penhasco, gasta mais dois pontos de ação para andar dois espaços em direção ao inimigo e então utiliza mais **`2 PA`** para mais um uso da habilidade “encontrão” para empurrar o inimigo novamente, o fazendo cair do penhasco, sobrando **`1 PA`** para continuar andando ou fazer outra coisa.*
 
-> *As ações possíveis de Kenji se esgotaram, o obrigando a passar seu turno. No próximo turno Kenji terá mais **`7 PA`** para jogar, mas os usos da habilidade “encontrão” utilizados permanecem desativados até que Kenji tenha um descanso.*
+> *As ações possíveis de Kenji se esgotaram, o obrigando a passar seu turno. No próximo turno Kenji terá mais **`7 PA`** para jogar, mas os usos da habilidade “encontrão” utilizados permanecem desativados até que Kenji tenha um descanso longo.*
 
 ### Habilidades fora de combate
 
@@ -53,7 +53,7 @@ Após a execução de cada habilidade da fila, se houver necessidade de jogar os
 
 ## Recuperando Habilidades
 
-Habilidades podem ser recuperadas a partir de descansos ou outras definições indicadas pelo narrador.
+Habilidades podem ser recuperadas em um **[descanso longo](10-descanso.md#descanso-longo)** (o descanso curto não recupera usos de habilidades) ou por outras definições indicadas pelo narrador.
 
 ### Recuperando habilidades em combate
 

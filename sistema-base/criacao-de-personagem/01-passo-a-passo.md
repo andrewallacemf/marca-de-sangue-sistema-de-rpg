@@ -4,7 +4,7 @@ tipo: regra
 cenario: base
 status: revisao
 tags: [criacao, personagem, ficha, passo-a-passo]
-atualizado-em: 2026-07-11
+atualizado-em: 2026-07-12
 ---
 
 # Criando um personagem (passo a passo)
@@ -13,8 +13,8 @@ atualizado-em: 2026-07-11
 
 A primeira coisa a se fazer para montar seu personagem é baixar os recursos para anotar as informações do seu personagem. Podendo ser:
 
-- Ficha base (ou ficha base específica do cenário), baixe em [Fichas base](02-fichas.md).
-- Fichas de características, baixe em [Fichas base](02-fichas.md).
+- Ficha de informações base (ou ficha específica do cenário), baixe em [Fichas base](02-fichas.md).
+- Ficha de habilidades e traços, baixe em [Fichas base](02-fichas.md).
 - Opcional: Fichas complementares do cenário, encontre a seção “recursos do cenário” dentro do manual específico. Exemplos são:
     - “recursos do cenário” do Mukashi (Cenário oriental medieval) `em breve`
     - “recursos do cenário” do Colapso (Cenário pós apocalíptico Junkpunk) `em breve`

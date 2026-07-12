@@ -4,7 +4,7 @@ tipo: regra
 cenario: base
 status: estavel
 tags: [experiencia, evolucao, caracteristicas, pontos-de-acao]
-atualizado-em: 2026-07-11
+atualizado-em: 2026-07-12
 ---
 
 # Experiência e Evolução
@@ -96,11 +96,11 @@ No entanto, atenção: esse dilema vale para as habilidades. Aptidões não são
 
 ## Comprando pontos de ação
 
-**No início da jornada, os personagens começam com `7 PA`**. Ao receberem pontos de experiência, podem adquirir pontos de ação adicionais. O primeiro ponto adicional custa **`7 exp.`** e cada ponto subsequente custa **`7 exp.`** a mais:
+**No início da jornada, os personagens começam com `7 PA`**. Ao receberem pontos de experiência, podem adquirir pontos de ação adicionais. O primeiro ponto adicional custa **`5 exp.`** e cada ponto subsequente custa **`5 exp.`** a mais:
 
-- + **`1 PA`** = **`7 exp.`**
-- + **`1 PA`** = **`14 exp.`**
-- + **`1 PA`** = **`21 exp.`**
-- + **`1 PA`** = **`28 exp.`**
-- + **`1 PA`** = **`35 exp.`**
+- + **`1 PA`** = **`5 exp.`**
+- + **`1 PA`** = **`10 exp.`**
+- + **`1 PA`** = **`15 exp.`**
+- + **`1 PA`** = **`20 exp.`**
+- + **`1 PA`** = **`25 exp.`**
 - Assim em diante…

@@ -4,7 +4,7 @@ tipo: regra
 cenario: base
 status: revisao
 tags: [acoes, combate, pontos-de-acao]
-atualizado-em: 2026-07-11
+atualizado-em: 2026-07-12
 ---
 
 # Lista de ações disponíveis em combate
@@ -37,7 +37,7 @@ atualizado-em: 2026-07-11
 | Guardar ou sacar equipamentos | **`1 PA`** | por arma |
 | Mudar a mão dos equipamentos | **`1 PA`** | por tentativa |
 | Passar uma mensagem | **`1 PA`** | para cada 4 palavras |
-| Agarrar | **`2 PA`** | por tentativa |
+| Agarrar | **`1 PA`** | por tentativa |
 | Se soltar (quando agarrado/preso) | **`2 PA`** | por tentativa |
 | Levantar (quando caído) | **`2 PA`** | por tentativa |
 | Cura/tratamento improvisado | **`4 PA`** | por tentativa |
@@ -77,7 +77,7 @@ atualizado-em: 2026-07-11
 
 ### Saltar
 
-**Atributo:** `Ágil` · **Custo da especialização:** `1 exp.`
+**Atributo:** `Ágil` · **Custo da técnica:** `1 exp.`
 
 #### Uso padrão
 
@@ -87,10 +87,11 @@ Pode saltar:
 - Com impulso de corrida em linha reta: Até 2 metros + 1 metro para cada 2 metros de corrida prévia, limitado a 5 metros de salto.
 - +1d10 de desvantagem para cada metro adicional após 2 metros.
 
-#### Uso com especialização
+#### Uso com a técnica
 
-- Ignora os dados de desvantagem por metro adicional.
-- Aumenta o limite do salto para 10 metros.
+- Ignora os dados de desvantagem por metro adicional (a técnica apenas anula a desvantagem natural do salto; não concede outro bônus).
+
+> ⚠️ A DEFINIR: o antigo efeito da "especialização" que **aumentava o limite do salto para 10 metros** foi removido daqui — como uma técnica só anula a desvantagem natural (não concede vantagem), esse aumento de alcance precisa virar uma **habilidade ou traço próprio**, a definir.
 
 #### Requisitos de uso
 

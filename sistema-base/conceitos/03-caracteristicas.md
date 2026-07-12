@@ -4,7 +4,7 @@ tipo: regra
 cenario: base
 status: estavel
 tags: [caracteristicas, ficha, exp, compra]
-atualizado-em: 2026-07-11
+atualizado-em: 2026-07-12
 ---
 
 # Características
@@ -13,7 +13,7 @@ Um personagem criado no sistema Marca de Sangue é definido pelo seu conjunto de
 
 No sistema Marca de Sangue, a evolução de um personagem é marcada por quais (e quantas) características o jogador comprou. Para isso, o narrador deve recompensar ações inteligentes ou vitórias em combates com **pontos de experiência (`exp.`)**, que podem ser usados pelos jogadores para “comprar” uma Habilidade, Aptidão ou Traço.
 
-Ao ser usada uma habilidade é gasta. Para que esteja disponível para o uso novamente, é preciso que o personagem tenha um momento de descanso, ou outra situação a ser definida pelo narrador.
+Ao ser usada uma habilidade é gasta. Para que esteja disponível para o uso novamente, é preciso que o personagem tenha um **descanso longo**, ou outra situação a ser definida pelo narrador.
 
 Uma mesma habilidade ou aptidão pode ser comprada mais de uma vez para que possa ser utilizada mais vezes durante um dia.
 
@@ -31,7 +31,7 @@ As habilidades e aptidões que um jogador pode usar estão limitadas pela quanti
 
 Para utilizar essas características de uso limitado, o jogador deve indicar a habilidade que usará e realizar o teste (ou contrateste) aplicando as modificações impostas pela característica. Aptidões seguem um fluxo próprio: são gastas depois que o narrador anuncia o resultado, para rerrolar o dado do teste ou do contrateste (ver [Aptidões](04-aptidoes.md)).
 
-Após utilizar a característica, ela não poderá ser utilizada novamente até que se recupere o uso em um descanso ou outra situação indicada pelo narrador.
+Após utilizar a característica, ela não poderá ser utilizada novamente até que se recupere o uso em um **descanso** — ver [Descanso](10-descanso.md) para o que cada tipo recupera — ou outra situação indicada pelo narrador.
 
 > 💡 **Registrando o uso na ficha**
 > Para consumir um uso, basta marcar a habilidade ou aptidão utilizada no campo “utilizado” da ficha, que permanecerá dessa forma até o momento de descanso, onde as marcações podem ser apagadas, recuperando o uso da característica de uso limitado.

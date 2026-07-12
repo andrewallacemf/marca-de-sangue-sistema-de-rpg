@@ -4,7 +4,7 @@ tipo: regra
 cenario: base
 status: estavel
 tags: [conflito, combate, iniciativa, malha, posicionamento]
-atualizado-em: 2026-07-11
+atualizado-em: 2026-07-12
 ---
 
 # Conflito físico
@@ -31,7 +31,7 @@ Para isso, jogadores e narrador jogam **`1d10`**. Jogadores podem aplicar aptid�
 
 ## Malha de combate físico
 
-Para representar os combates que ocorrem na imaginação do narrador e dos jogadores, o Marca de Sangue utiliza uma **malha de combate físico** em que os **espaços** equivalem a 1 metro de distância. Recomenda-se o uso da malha hexagonal, que dará mais possibilidades estratégicas ao jogo, mas também é possível utilizar a malha quadrada, comum também a outros jogos de RPG.
+Para representar os combates que ocorrem na imaginação do narrador e dos jogadores, o Marca de Sangue utiliza uma **malha de combate físico** em que os **espaços** equivalem a 1 metro de distância. Recomenda-se o uso da malha hexagonal, que dará mais possibilidades estratégicas ao jogo, mas também é possível utilizar a malha quadriculada, comum também a outros jogos de RPG.
 
 *Malha Hexagonal*
 
@@ -45,7 +45,7 @@ Neste sistema, o alcance das armas também é medido em metros. Toda arma tem um
 
 > *Exemplo: Se uma lança longa tem 2 metros de alcance ideal, em uma malha hexagonal, isso significa que o personagem que a está utilizando consegue golpear qualquer oponente a 2 espaços de distância.*
 
-Em uma malha quadrada, para mensurar a distância de uma forma simples, mesmo que para fins de alcance de uma arma, basta contar os “espaços” até lá, sempre passando de um espaço a outro pelos lados e nunca pelas diagonais.
+Em uma malha quadriculada, para mensurar a distância de uma forma simples, mesmo que para fins de alcance de uma arma, basta contar os “espaços” até lá, sempre passando de um espaço a outro pelos lados e nunca pelas diagonais.
 
 ## Posicionamento em campo
 
@@ -131,7 +131,7 @@ Um personagem entra em posicionamento **definido** involuntariamente quando:
 
 No caso de estar utilizando a malha hexagonal, o personagem possui 3 espaços de frente e 3 de costas.
 
-No caso de estar utilizando a malha quadrada, o personagem possui 3 espaços de frente e 5 de costas.
+No caso de estar utilizando a malha quadriculada, o personagem possui 3 espaços de frente e 5 de costas (os 2 espaços laterais contam como costas na malha quadriculada).
 
 > 💡 **Cuidado!**
 >

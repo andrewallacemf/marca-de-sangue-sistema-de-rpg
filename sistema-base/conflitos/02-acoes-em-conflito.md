@@ -4,7 +4,7 @@ tipo: regra
 cenario: base
 status: estavel
 tags: [conflito, combate, acoes, ataque, pontos-de-acao, reacao, fadiga]
-atualizado-em: 2026-07-11
+atualizado-em: 2026-07-12
 ---
 
 # Ações possíveis em um conflito
@@ -137,7 +137,7 @@ Quando diz respeito a movimentação em uma malha hexagonal, todos os espaços a
 
 Já em uma malha quadriculada, além de dividir lados inteiros com outros 4 espaços, um determinado posicionamento tem pontos em comum com outros 4 espaços a partir de suas diagonais. Isso pode gerar confusão na cabeça dos jogadores. Para deixar o jogo mais simples e claro, em Marca de Sangue foram definidas as seguintes regras para malhas quadriculadas:
 
-1. Deslocamento entre dois espaços que dividem 1 lado inteiro é considerado como 1 metro e custa 1 Ponto de ação;
+1. Deslocamento entre dois espaços que dividem 1 lado inteiro é considerado como 1 metro e custa 1 ponto de ação;
 2. Deslocamento entre dois espaços que dividem somente um ponto, ou seja, movimento diagonal, custa 2 pontos de ação porque é considerado 2 metros.
     1. Pelo menos um dos espaços que dividem um lado nessa direção precisa estar desobstruído para que essa movimentação seja possível.
 
@@ -147,7 +147,7 @@ Durante um combate, o personagem pode usar pontos de ação para adotar uma post
 
 > 💡 **Quando não estiver engajado,** levantar a guarda custa **`2 PA`** por guarda levantada.
 
-Um personagem em postura defensiva possui 3 espaços de costas com desvantagem e 3 espaços de frente com vantagem na malha hexagonal. Na malha quadriculada, o personagem em postura defensiva possui 3 espaços de costas com desvantagem, 2 espaços laterais sem vantagem ou desvantagem e 3 espaços de frente com vantagem.
+Um personagem em postura defensiva possui 3 espaços de costas com desvantagem e 3 espaços de frente com vantagem na malha hexagonal. Na malha quadriculada, o personagem em postura defensiva possui 3 espaços de frente com vantagem e 5 espaços de costas com desvantagem — os 2 espaços laterais são considerados costas na malha quadriculada.
 
 *Postura defensiva (em malha hexagonal)*
 

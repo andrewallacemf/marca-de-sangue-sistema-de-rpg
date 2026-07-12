@@ -4,7 +4,7 @@ tipo: regra
 cenario: base
 status: revisao
 tags: [habilidades, fisico, combate]
-atualizado-em: 2026-07-11
+atualizado-em: 2026-07-12
 ---
 
 # Habilidades base — Físico
@@ -20,8 +20,8 @@ Habilidades base do atributo **`Físico`**. Parte da "Lista de habilidades base"
 | Desarmar pesado | **`1 PA`** + **`PA da arma`** | **`3 exp.`** |
 | Desarmar leve | **`1 PA`** + **`PA da arma`** | **`3 exp.`** |
 | Encontrão | **`1 PA`** + **`PA da arma`** | **`2 exp.`** |
-| Esmagar | **`1 PA`** + **`PA da arma`** | **`2 exp.`** |
-| Investida | **`1 PA`** + **`PA da arma`** | **`2 exp.`** |
+| Esmagar | **`4 PA`** | **`2 exp.`** |
+| Investida | **`1 PA`** + **`PA da arma`** | **`3 exp.`** |
 | Ataques múltiplos & médios | **`1 PA`** | **`2 exp.`** |
 | Ataques múltiplos & pesados | **`1 PA`** | **`3 exp.`** |
 
@@ -170,8 +170,6 @@ Corre 2 metros na direção do oponente e o empurra na mesma direção, infringe
 
 ## Esmagar
 
-> ⚠️ A DEFINIR: a tabela de resumo do manual indica custo de `1 PA` + `PA da arma`, mas a entrada detalhada indica `4 PA`; conferir o valor correto.
-
 **Atributo:** `Físico` · **Custo de PA:** `4 PA` · **Custo de compra:** `2 exp.`
 
 ### Descrição
@@ -201,8 +199,6 @@ O oponente pode gastar **`2 PA`** para realizar um teste físico para tentar se 
 - Para se movimentar segurando um oponente é necessário realizar um teste físico com desvantagem e o movimento é considerado terreno difícil.
 
 ## Investida
-
-> ⚠️ A DEFINIR: a tabela de resumo do manual indica custo de compra de `2 exp.`, mas a entrada detalhada indica `3 exp.`; conferir o valor correto.
 
 **Atributo:** `Físico` · **Custo de PA:** `1 PA` + `PA da arma` · **Custo de compra:** `3 exp.`
 

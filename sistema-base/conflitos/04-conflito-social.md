@@ -4,7 +4,7 @@ tipo: regra
 cenario: base
 status: revisao
 tags: [conflito, embate, social, malha-de-embate-social, trilha-emocional, argumentar]
-atualizado-em: 2026-07-11
+atualizado-em: 2026-07-12
 ---
 
 # Conflito social
@@ -17,11 +17,11 @@ O objetivo do conflito social é acumular pontos. Os participantes podem somar p
 
 > ✅ Exemplo aprovado pelo grupo em 11/07/2026.
 >
-> *Exemplo: Heitor e Alexander tentam convencer a estalajadeira Mirena a esconder o grupo por uma noite. São **3 personagens envolvidos**, então o embate termina quando um dos lados acumula **15 pontos (5 × 3)**. O narrador classifica o conflito como moderado (até 5 turnos). Na quarta rodada, a dupla alcança os 15 pontos com uma sequência de argumentações bem-sucedidas e vence o conflito imediatamente, antes do limite de turnos.*
+> *Exemplo: Heitor e Alexander tentam convencer a estalajadeira Mirena a esconder o grupo por uma noite. São **3 personagens envolvidos**, então o embate termina quando um dos lados acumula **15 pontos (5 × 3)**. O narrador classifica o conflito como moderado (até 5 turnos). No quarto turno, a dupla alcança os 15 pontos com uma sequência de argumentações bem-sucedidas e vence o conflito imediatamente, antes do limite de turnos.*
 
 ## Turnos e Duração
 
-Conflitos sociais são resolvidos em uma série de turnos, cujo número varia dependendo da complexidade da situação. No turno do personagem, ele terá a mesma quantidade de PAs de sua ficha para utilizar, ignorando os redutores de armadura. O conflito tem durações diferentes de acordo com a complexidade:
+Conflitos sociais são resolvidos em uma série de turnos, cujo número varia dependendo da complexidade da situação. No turno do personagem, ele terá a mesma quantidade de PA de sua ficha para utilizar, ignorando os redutores de armadura. O conflito tem durações diferentes de acordo com a complexidade:
 
 **Conflitos simples:** 3 turnos de duração;
 
@@ -33,7 +33,7 @@ Conflitos sociais são resolvidos em uma série de turnos, cujo número varia de
 
 Subir ou descer em uma trilha emocional da malha de embate social tem custo base 1 PA + o valor numérico do campo da emoção alvo, ignorando se o valor indicado no campo é positivo ou negativo.
 
-Os personagens têm duas ações principais disponíveis durante o conflito social:
+Os personagens têm três ações principais disponíveis durante o conflito social:
 
 ### 1. Argumentar
 
@@ -58,5 +58,7 @@ Os personagens têm duas ações principais disponíveis durante o conflito soci
 **Custo:** Custo em PA igual à influência necessária para alcançar o objetivo +1 PA.
 
 **Efeito:** Não é necessário teste caso o jogador alvo não ofereça resistência. O vencedor movimenta o alvo na direção desejada. Um jogador só pode usar esta ação 1 vez por turno.
+
+> ⚠️ A DEFINIR (marcado para revisão do André): (1) o custo das ações usa "**influência necessária**", termo ainda não definido — provavelmente equivale ao **valor numérico do campo da emoção** alvo (como no custo de movimento acima); confirmar. (2) O "**valor necessário**" da diferença de pontuação que encerra o embate (citado no início da seção) também não tem número definido.
 
 > ✅ Decidido em 11/07/2026: 5 pontos × número de personagens (ver [notas-de-design/decisoes/](../../notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md)).

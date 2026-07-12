@@ -4,7 +4,7 @@ tipo: regra
 cenario: base
 status: revisao
 tags: [tracos, tecnicas, maestrias, aspectos]
-atualizado-em: 2026-07-11
+atualizado-em: 2026-07-12
 ---
 
 # Lista de Traços base
@@ -102,7 +102,7 @@ Pode realizar um ataque corpo a corpo descuidado quando um oponente entra em seu
 #### Requisitos de uso
 
 - Estar com guarda levantada.
-- Não ter usado seu ataque de oportunidade neste turno.
+- Não ter usado seu ataque de oportunidade nesta rodada.
 
 ### Corredor
 
@@ -326,7 +326,7 @@ Pode desferir um ataque de oportunidade quando o oponente sai do seu alcance ide
 #### Requisitos de uso
 
 - Estar com guarda levantada.
-- Não ter usado seu ataque de oportunidade neste turno.
+- Não ter usado seu ataque de oportunidade nesta rodada.
 
 ### Resistente
 
@@ -360,7 +360,7 @@ Pode desferir um ataque de oportunidade a distância (exceção à regra geral d
 #### Requisitos de uso
 
 - Estar usando uma arma de arremesso (já equipada).
-- Não ter gasto seu ataque de oportunidade.
+- Não ter usado seu ataque de oportunidade nesta rodada.
 
 ### Burro de carga
 

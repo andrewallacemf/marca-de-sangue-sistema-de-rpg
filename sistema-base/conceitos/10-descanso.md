@@ -4,7 +4,7 @@ tipo: regra
 cenario: base
 status: revisao
 tags: [descanso, recuperacao, fadiga]
-atualizado-em: 2026-07-11
+atualizado-em: 2026-07-12
 ---
 
 # Descanso
@@ -23,7 +23,7 @@ Um descanso longo exige **pelo menos 8 horas**, incluindo **sono**. Ao completá
 
 ## Descanso curto
 
-O descanso curto serve para **recuperações pontuais**: nele o personagem pode fazer **rolagens para reduzir o dano sofrido** (ver [Saúde e Proteção — Cura](../conflitos/03-saude-e-protecao.md#cura)) e também **recupera toda a fadiga**. Ele **não** reseta as características gastáveis — aptidões e usos de habilidades só voltam no descanso longo.
+O descanso curto serve para **recuperações pontuais**: nele o personagem pode fazer **rolagens para reduzir o dano sofrido** (ver [Saúde e Proteção — Cura](../conflitos/03-saude-e-protecao.md#cura)) e também **recupera toda a fadiga**. Além disso, recupera **1 [aptidão](04-aptidoes.md) de cada tipo** (uma por atributo). Os **usos de [habilidades](05-habilidades.md)**, porém, só voltam no **descanso longo**.
 
 > ⚠️ A DEFINIR: a duração mínima do descanso curto e quantas rolagens de cura/tratamento ele permite não foram detalhadas na conversa de 11/07/2026.
 

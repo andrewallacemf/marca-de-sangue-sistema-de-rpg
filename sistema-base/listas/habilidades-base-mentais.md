@@ -4,7 +4,7 @@ tipo: regra
 cenario: base
 status: revisao
 tags: [habilidades, mental, combate]
-atualizado-em: 2026-07-11
+atualizado-em: 2026-07-12
 ---
 
 # Habilidades base — Mental
@@ -22,7 +22,7 @@ Habilidades base do atributo **`Mental`**. Parte da "Lista de habilidades base" 
 | Confundir inimigo | **`3 PA`** | **`3 exp.`** |
 | Intimidação generalizada | **`3 PA`** | **`3 exp.`** |
 | Urro de Intimidação | **`3 PA`** | **`3 exp.`** |
-| Recompor | **`3 PA`** | **`2 exp.`** |
+| Recompor | **`3 PA`** | **`4 exp.`** |
 | Consumir | **`3 PA`** | **`3 exp.`** |
 
 ## Analisar fraquezas
@@ -192,8 +192,6 @@ Realiza um teste mental contra oponentes dentro de 6 metros de distância para a
 - Você pode escolher os oponentes que serão afetados pela habilidade (e deverão realizar contrateste para resistir).
 
 ## Recompor
-
-> ⚠️ A DEFINIR: a tabela de resumo do manual indica custo de compra de `2 exp.`, mas a entrada detalhada indica `4 exp.`; conferir o valor correto.
 
 **Atributo:** `Mental` · **Custo de PA:** `3 PA` · **Custo de compra:** `4 exp.`
 

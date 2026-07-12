@@ -4,7 +4,7 @@ tipo: regra
 cenario: base
 status: revisao
 tags: [equipamentos, armas, municoes]
-atualizado-em: 2026-07-11
+atualizado-em: 2026-07-12
 ---
 
 # Lista de equipamentos base
@@ -109,4 +109,4 @@ No manual do Notion, as propriedades só produzem efeito se o personagem tiver a
 | Dardo | **`PROJ.`** | **`2`** | **`1 moeda`** |
 | Flecha ponta de madeira | **`PROJ.`** | **`3`** | **`1 moeda`** |
 | Flecha ponta de ferro | **`PROJ.`** | **`4`** | **`3 moedas`** |
-| Bala e pólvora | **`PROJ.`** | **`8`** | **`20 moedas`** |
+| Bala de pólvora | **`PROJ.`** | **`8`** | **`20 moedas`** |
