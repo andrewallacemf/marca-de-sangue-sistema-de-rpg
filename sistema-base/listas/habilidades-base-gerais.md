@@ -26,7 +26,7 @@ No manual básico, todas as habilidades base estão detalhadas na seção "Habil
 | Atordoar | `Físico` | **`1 PA`** + **`PA da arma`** | **`4 exp.`** | [Físico](habilidades-base-fisicas.md) |
 | Auto cura | `Mental` | **`4 PA`** | **`3 exp.`** | [Mental](habilidades-base-mentais.md) |
 | Auto tratamento | `Mental` | **`5 PA`** | **`4 exp.`** | [Mental](habilidades-base-mentais.md) |
-| Brado de guerra | `Social` | **`2 PA`** | **`2 exp.`** | [Social](habilidades-base-sociais.md) |
+| Brado de guerra | `Social` | **`2 PA`** | **`3 exp.`** | [Social](habilidades-base-sociais.md) |
 | Comandar | `Social` | **`1 PA`** | **`2 exp.`** | [Social](habilidades-base-sociais.md) |
 | Desorientar | `Social` | **`4 PA`** | **`4 exp.`** | [Social](habilidades-base-sociais.md) |
 | Confundir inimigo | `Mental` | **`4 PA`** | **`3 exp.`** | [Mental](habilidades-base-mentais.md) |
@@ -39,12 +39,12 @@ No manual básico, todas as habilidades base estão detalhadas na seção "Habil
 | Encontrão | `Físico` | **`1 PA`** + **`PA da arma`** | **`2 exp.`** | [Físico](habilidades-base-fisicas.md) |
 | Esmagar | `Físico` | **`4 PA`** | **`2 exp.`** | [Físico](habilidades-base-fisicas.md) |
 | Golpe surpresa | `Ágil` | **`1 PA`** + **`PA da arma`** | **`2 exp.`** | [Ágil](habilidades-base-ageis.md) |
-| Grito de alerta | `Social` | **`4 PA`** | **`2 exp.`** | [Social](habilidades-base-sociais.md) |
+| Grito de alerta | `Social` | **`4 PA`** | **`3 exp.`** | [Social](habilidades-base-sociais.md) |
 | Intimidação generalizada | `Mental` | **`4 PA`** | **`3 exp.`** | [Mental](habilidades-base-mentais.md) |
 | Investida | `Físico` | **`1 PA`** + **`PA da arma`** | **`3 exp.`** | [Físico](habilidades-base-fisicas.md) |
 | Quebrar guarda | `Físico` | **`1 PA`** + **`PA da arma`** | **`2 exp.`** | [Físico](habilidades-base-fisicas.md) |
 | Recompor | `Mental` | **`4 PA`** | **`4 exp.`** | [Mental](habilidades-base-mentais.md) |
 | Revigorar | `Social` | **`2 PA`** | **`2 exp.`** | [Social](habilidades-base-sociais.md) |
 | Revitalizar | `Social` | **`7 PA`** | **`4 exp.`** | [Social](habilidades-base-sociais.md) |
-| Tratamento especializado | `Social` | **`5 PA`** | **`3 exp.`** | [Social](habilidades-base-sociais.md) |
+| Tratamento especializado | `Social` | **`5 PA`** | **`4 exp.`** | [Social](habilidades-base-sociais.md) |
 | Urro de Intimidação | `Mental` | **`4 PA`** | **`3 exp.`** | [Mental](habilidades-base-mentais.md) |

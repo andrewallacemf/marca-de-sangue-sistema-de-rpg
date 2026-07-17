@@ -18,9 +18,9 @@ Habilidades base do atributo **`Social`**. Parte da "Lista de habilidades base" 
 | Comandar | **`1 PA`** | **`2 exp.`** |
 | Desorientar | **`4 PA`** | **`4 exp.`** |
 | Cura especializada | **`4 PA`** | **`3 exp.`** |
-| Tratamento especializado | **`5 PA`** | **`3 exp.`** |
-| Grito de alerta | **`4 PA`** | **`2 exp.`** |
-| Brado de guerra | **`2 PA`** | **`2 exp.`** |
+| Tratamento especializado | **`5 PA`** | **`4 exp.`** |
+| Grito de alerta | **`4 PA`** | **`3 exp.`** |
+| Brado de guerra | **`2 PA`** | **`3 exp.`** |
 | Revigorar | **`2 PA`** | **`2 exp.`** |
 | Revitalizar | **`7 PA`** | **`4 exp.`** |
 | Animar | **`2 PA`** | **`2 exp.`** |
@@ -61,7 +61,7 @@ Realiza um teste social para recuperar aptidões consumidas de um aliado.
 
 ### Requisitos de uso
 
-- O aliado alvo precisa estar inconsciente.
+- O aliado alvo precisa estar adjacente a você.
 
 ### Progressão
 
@@ -76,7 +76,7 @@ Realiza um teste social para recuperar aptidões consumidas de um aliado.
 
 ## Brado de guerra
 
-**Atributo:** `Social` · **Custo de PA:** `2 PA` · **Custo de compra:** `2 exp.`
+**Atributo:** `Social` · **Custo de PA:** `2 PA` · **Custo de compra:** `3 exp.`
 
 ### Descrição
 
@@ -159,7 +159,7 @@ Se falhar neste teste de cura, o aliado não recebe dano adicional.
 
 ## Grito de alerta
 
-**Atributo:** `Social` · **Custo de PA:** `4 PA` · **Custo de compra:** `2 exp.`
+**Atributo:** `Social` · **Custo de PA:** `4 PA` · **Custo de compra:** `3 exp.`
 
 ### Descrição
 
@@ -234,7 +234,7 @@ Realiza um teste social para retornar um aliado inconsciente à consciência e r
 
 ## Tratamento especializado
 
-**Atributo:** `Social` · **Custo de PA:** `5 PA` · **Custo de compra:** `3 exp.`
+**Atributo:** `Social` · **Custo de PA:** `5 PA` · **Custo de compra:** `4 exp.`
 
 ### Descrição
 

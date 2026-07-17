@@ -77,6 +77,12 @@ Este guia orienta o grupo (e outras mesas) a criar habilidades equilibradas. Tod
 | **3** | Controle do oponente ou cura/suporte relevante | Confundir inimigo, Intimidação, Auto cura |
 | **4** | Manipulação de recursos (dar/tirar características) ou efeito muito forte | Recompor, Consumir, Auto tratamento, Atordoar |
 
+> **Exceção do suporte:** habilidades que **dão ou recuperam recursos de um aliado**
+> (transferir `PA`, recuperar aptidões/habilidades de outro, buffs de área) custam
+> **menos** do que o efeito equivalente feito para si mesmo — é uma escolha consciente
+> para **incentivar o jogo em equipe**, um valor do sistema. Ex.: recuperar as próprias
+> aptidões (Recompor) custa 4 exp.; recuperar as de um aliado (Animar) custa 2.
+
 ### Níveis (progressão)
 
 - O padrão são **5 níveis**; o efeito cresce a cada nível comprado.
