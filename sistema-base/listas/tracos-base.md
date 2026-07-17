@@ -189,7 +189,7 @@ Ao descansar, utiliza 1d8 para curar dano ao invés de 1d6
 
 #### Descrição
 
-Dobra o dano do ataque.
+Dobra o **resultado** do dano do ataque (rola-se o dano normalmente e multiplica-se o total por 2).
 
 #### Condição de uso (gatilho)
 
