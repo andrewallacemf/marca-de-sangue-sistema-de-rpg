@@ -80,7 +80,7 @@ Pode mudar o alvo de ataques corpo a corpo com armas pesadas ignorando a desvant
 
 Infringe metade do dano da arma e **atordoa** o oponente: ele passa a ter menos pontos de ação (**`PA`**) de forma **persistente, até realizar um descanso curto** (respeitando o piso de 3 `PA` por turno).
 
-> 💡 Custo de compra proposto (`4 exp.`, era `1 exp.`) por o efeito ter virado uma redução persistente de `PA` — confirmar.
+> ✅ Aprovado em 12/07/2026: custo de compra `4 exp.` (era `1 exp.`), pelo efeito ter virado uma redução **persistente** de `PA`.
 
 ### Requisitos de uso
 

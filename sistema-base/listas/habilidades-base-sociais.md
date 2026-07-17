@@ -33,7 +33,7 @@ Habilidades base do atributo **`Social`**. Parte da "Lista de habilidades base" 
 
 Realiza um teste social contra um oponente para **confundi-lo**, fazendo-o perder pontos de ação (**`PA`**) **apenas no próximo turno** dele (respeitando o piso de 3 `PA`).
 
-> 💡 PROPOSTA (IA) a confirmar: nome **Desorientar** (para não colidir com "Confundir inimigo", que já existe nas mentais); atributo **Social** (as demais habilidades de controle de turno são Mentais — confirmar se o grupo prefere Social ou Mental); custo de `PA` (`4`) e de compra (`4 exp.`). No nível 5 (−10 `PA`), o efeito pode zerar o turno de um oponente comum (levando-o ao piso de 3) — confirmar se é intencional.
+> ✅ Aprovado em 12/07/2026: nome **Desorientar** (evita colisão com "Confundir inimigo", das mentais); atributo **Social** (o efeito cabe em Social ou Mental — ficou em Social por balanceamento, era a lista com menos habilidades); custos `4 PA` / `4 exp.`; o nível 5 (−10 `PA`, que pode zerar o turno de um oponente comum, levando-o ao piso de 3) é **intencional**.
 
 ### Requisitos de uso
 
