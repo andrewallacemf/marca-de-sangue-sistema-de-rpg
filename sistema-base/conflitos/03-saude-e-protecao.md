@@ -45,7 +45,7 @@ Cada arma pode infligir uma certa quantidade de dano (saiba mais na seção Equi
 
 ### Redutor de dano das armaduras (dano mínimo 1)
 
-A tabela de [proteções](../listas/protecoes-base.md) indica **quanto cada armadura reduz do dano de cada golpe** recebido na região protegida — por isso os redutores vão de 1 a 12. A cada golpe recebido na região protegida, a armadura também **perde 1 de durabilidade** naquele local.
+O **redutor de dano** de uma peça de armadura depende do seu tipo — **Leve −1, Média −2, Pesada −3** — e é subtraído do dano de cada golpe recebido **numa região que ela cobre** (ver [Proteções](../listas/protecoes-base.md)). A cada golpe recebido nessa região, a armadura também **perde 1 de durabilidade** naquele local.
 
 **O redutor nunca reduz o dano abaixo de 1:** se o ataque acertou, o alvo sofre **no mínimo 1 ponto de dano**, mesmo que a redução da armadura supere o dano rolado.
 

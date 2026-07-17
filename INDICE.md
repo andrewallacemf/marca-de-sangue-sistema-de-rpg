@@ -232,7 +232,7 @@
 
 **Postura defensiva** → ver **Guarda (levantar guarda)** — é o **estado** resultante da ação de levantar guarda (aposenta "posicionamento defensivo" e "postura defesa"; decisão de 11/07/2026)
 
-**Proteção** — define: [listas/protecoes-base.md](sistema-base/listas/protecoes-base.md) (armaduras e escudos; tabela define a redução por golpe; dano mínimo 1; **redutor de PA por tipo — Leve −1/Média −2/Pesada −3 — cumulativo por peça**; regiões cobertas 💡; penalidade permanente que sai no próximo turno; uso e registro) · aparece: [03-saude-e-protecao](sistema-base/conflitos/03-saude-e-protecao.md) (redutor só na região coberta), [02-acoes-em-conflito](sistema-base/conflitos/02-acoes-em-conflito.md) (referência), [equipamentos-base](sistema-base/listas/equipamentos-base.md) (propriedade `DEFL.`)
+**Proteção** — define: [listas/protecoes-base.md](sistema-base/listas/protecoes-base.md) (armaduras colapsadas em **3 tipos** — leve/média/pesada; **redutor de dano e de PA por tipo: −1/−2/−3**; montagem por **peças** que cobrem regiões, redutores de PA cumulativos, dano mínimo 1, durabilidade por peça; escudos com redutor ao defender de guarda levantada) · aparece: [03-saude-e-protecao](sistema-base/conflitos/03-saude-e-protecao.md) (redutor só na região coberta), [02-acoes-em-conflito](sistema-base/conflitos/02-acoes-em-conflito.md) (referência), [equipamentos-base](sistema-base/listas/equipamentos-base.md) (propriedade `DEFL.`)
 
 **PS (pontos de saúde)** → ver **PV (pontos de vida)** ("pontos de saúde/PS" foi considerado e revertido em 11/07/2026 — o padrão é PV)
 
