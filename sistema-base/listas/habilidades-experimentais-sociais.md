@@ -11,7 +11,9 @@ atualizado-em: 2026-07-12
 
 > 💡 Seção experimental — em teste.
 
-Habilidades e traços voltados ao conflito social (malha de embate social, trilhas emocionais e campos da emoção). Parte da "Lista de habilidades base" do manual básico — ver o [índice de habilidades base](habilidades-base.md).
+Habilidades e traços voltados ao **conflito social** (malha de embate social, trilhas emocionais e campos da emoção). Como o embate social se resolve por testes de atributo **Social** ou **Mental**, esta lista reúne entradas dos dois atributos. Parte da "Lista de habilidades base" do manual base — ver o [índice de habilidades base](habilidades-base.md).
+
+> 🧪 Lista **experimental (rascunho)**. A **escada de custo em `exp.`** e a terminologia **campo × trilha** dos efeitos abaixo só serão finalizadas quando a mecânica da **[malha de embate social](../conflitos/04-conflito-social.md)** estiver fechada (há pendência de design sobre como o movimento na malha vira pontos). As correções desta revisão foram de **consistência textual**, sem redesenhar efeitos.
 
 ## Meditação
 
@@ -199,7 +201,7 @@ Impede que você seja deslocado por um oponente nos próximos turnos na malha de
 
 ### Descrição
 
-Adiciona pontuação negativa a um adversário no final do turno, se ele estiver em descontrole na trilha [TRILHA]
+Adiciona **x** de pontuação negativa a um adversário no final do turno, se ele estiver em descontrole na trilha [TRILHA]
 
 ### Requisitos de uso
 
@@ -271,7 +273,7 @@ Reduz os PAs necessários para movimentar um aliado na malha de embate social.
 
 ### Descrição
 
-Recebe vantagem para mover um adversário na trilha de uma emoção que tenha você um aliado.
+Recebe vantagem para mover um adversário na trilha de uma emoção em que você tenha um aliado.
 
 ### Requisitos de uso
 
