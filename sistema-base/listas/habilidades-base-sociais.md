@@ -2,7 +2,7 @@
 titulo: Habilidades base — Social
 tipo: regra
 cenario: base
-status: estavel
+status: revisao
 tags: [habilidades, social, suporte]
 atualizado-em: 2026-07-12
 ---
@@ -16,6 +16,7 @@ Habilidades base do atributo **`Social`**. Parte da "Lista de habilidades base" 
 | **Habilidade** | **Custo de `PA`** | **Custo de compra** |
 | --- | --- | --- |
 | Comandar | **`1 PA`** | **`2 exp.`** |
+| Desorientar | **`4 PA`** | **`4 exp.`** |
 | Cura especializada | **`4 PA`** | **`3 exp.`** |
 | Tratamento especializado | **`5 PA`** | **`3 exp.`** |
 | Grito de alerta | **`4 PA`** | **`2 exp.`** |
@@ -23,6 +24,32 @@ Habilidades base do atributo **`Social`**. Parte da "Lista de habilidades base" 
 | Revigorar | **`2 PA`** | **`2 exp.`** |
 | Revitalizar | **`7 PA`** | **`4 exp.`** |
 | Animar | **`2 PA`** | **`2 exp.`** |
+
+## Desorientar
+
+**Atributo:** `Social` · **Custo de PA:** `4 PA` · **Custo de compra:** `4 exp.`
+
+### Descrição
+
+Realiza um teste social contra um oponente para **confundi-lo**, fazendo-o perder pontos de ação (**`PA`**) **apenas no próximo turno** dele (respeitando o piso de 3 `PA`).
+
+> 💡 PROPOSTA (IA) a confirmar: nome **Desorientar** (para não colidir com "Confundir inimigo", que já existe nas mentais); atributo **Social** (as demais habilidades de controle de turno são Mentais — confirmar se o grupo prefere Social ou Mental); custo de `PA` (`4`) e de compra (`4 exp.`). No nível 5 (−10 `PA`), o efeito pode zerar o turno de um oponente comum (levando-o ao piso de 3) — confirmar se é intencional.
+
+### Requisitos de uso
+
+- O oponente precisa conseguir te ouvir.
+
+### Progressão
+
+1. O oponente perde **`2 PA`** em seu próximo turno.
+2. O oponente perde **`4 PA`** em seu próximo turno.
+3. O oponente perde **`6 PA`** em seu próximo turno.
+4. O oponente perde **`8 PA`** em seu próximo turno.
+5. O oponente perde **`10 PA`** em seu próximo turno.
+
+### Observações
+
+- O oponente pode realizar um contrateste para resistir.
 
 ## Animar
 

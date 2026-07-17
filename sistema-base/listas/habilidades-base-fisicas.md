@@ -15,7 +15,7 @@ Habilidades base do atributo **`Físico`**. Parte da "Lista de habilidades base"
 
 | **Habilidade** | **Custo de `PA`** | **Custo de compra** |
 | --- | --- | --- |
-| Atordoar | **`1 PA`** + **`PA da arma`** | **`1 exp.`** |
+| Atordoar | **`1 PA`** + **`PA da arma`** | **`4 exp.`** |
 | Quebrar guarda | **`1 PA`** + **`PA da arma`** | **`2 exp.`** |
 | Desarmar pesado | **`1 PA`** + **`PA da arma`** | **`3 exp.`** |
 | Desarmar leve | **`1 PA`** + **`PA da arma`** | **`3 exp.`** |
@@ -74,11 +74,13 @@ Pode mudar o alvo de ataques corpo a corpo com armas pesadas ignorando a desvant
 
 ## Atordoar
 
-**Atributo:** `Físico` · **Custo de PA:** `1 PA` + `PA da arma` · **Custo de compra:** `1 exp.`
+**Atributo:** `Físico` · **Custo de PA:** `1 PA` + `PA da arma` · **Custo de compra:** `4 exp.`
 
 ### Descrição
 
-Infringe metade do dano da arma e faz o oponente perder pontos de ação (**`PA`**) no próximo turno dele.
+Infringe metade do dano da arma e **atordoa** o oponente: ele passa a ter menos pontos de ação (**`PA`**) de forma **persistente, até realizar um descanso curto** (respeitando o piso de 3 `PA` por turno).
+
+> 💡 Custo de compra proposto (`4 exp.`, era `1 exp.`) por o efeito ter virado uma redução persistente de `PA` — confirmar.
 
 ### Requisitos de uso
 
@@ -86,12 +88,11 @@ Infringe metade do dano da arma e faz o oponente perder pontos de ação (**`PA`
 
 ### Progressão
 
-1. O oponente perde **`1 PA`** em seu próximo turno.
-2. O oponente perde **`2 PA`** em seu próximo turno.
-3. O oponente perde **`3 PA`** em seu próximo turno.
-4. O oponente perde **`4 PA`** em seu próximo turno.
-5. O oponente perde **`5 PA`** em seu próximo turno.
-6. O oponente perde **`6 PA`** em seu próximo turno.
+1. O oponente perde **`1 PA`** até um descanso curto.
+2. O oponente perde **`2 PA`** até um descanso curto.
+3. O oponente perde **`3 PA`** até um descanso curto.
+4. O oponente perde **`4 PA`** até um descanso curto.
+5. O oponente perde **`5 PA`** até um descanso curto.
 
 ## Desarmar leve
 

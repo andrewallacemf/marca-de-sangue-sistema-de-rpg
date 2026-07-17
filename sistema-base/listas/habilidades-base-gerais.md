@@ -23,11 +23,12 @@ No manual básico, todas as habilidades base estão detalhadas na seção "Habil
 | Ataques múltiplos & leves | `Ágil` | **`1 PA`** | **`1 exp.`** | [Ágil](habilidades-base-ageis.md) |
 | Ataques múltiplos & médios | `Físico` | **`1 PA`** | **`2 exp.`** | [Físico](habilidades-base-fisicas.md) |
 | Ataques múltiplos & pesados | `Físico` | **`1 PA`** | **`3 exp.`** | [Físico](habilidades-base-fisicas.md) |
-| Atordoar | `Físico` | **`1 PA`** + **`PA da arma`** | **`1 exp.`** | [Físico](habilidades-base-fisicas.md) |
+| Atordoar | `Físico` | **`1 PA`** + **`PA da arma`** | **`4 exp.`** | [Físico](habilidades-base-fisicas.md) |
 | Auto cura | `Mental` | **`4 PA`** | **`3 exp.`** | [Mental](habilidades-base-mentais.md) |
 | Auto tratamento | `Mental` | **`5 PA`** | **`3 exp.`** | [Mental](habilidades-base-mentais.md) |
 | Brado de guerra | `Social` | **`2 PA`** | **`2 exp.`** | [Social](habilidades-base-sociais.md) |
 | Comandar | `Social` | **`1 PA`** | **`2 exp.`** | [Social](habilidades-base-sociais.md) |
+| Desorientar | `Social` | **`4 PA`** | **`4 exp.`** | [Social](habilidades-base-sociais.md) |
 | Confundir inimigo | `Mental` | **`4 PA`** | **`3 exp.`** | [Mental](habilidades-base-mentais.md) |
 | Consumir | `Mental` | **`4 PA`** | **`3 exp.`** | [Mental](habilidades-base-mentais.md) |
 | Criar armadilha | `Mental` | **`1 PA`** | **`2 exp.`** | [Mental](habilidades-base-mentais.md) |
