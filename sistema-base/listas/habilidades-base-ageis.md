@@ -92,7 +92,7 @@ Pode arremessar armas ou objetos como se fossem armas de arremesso neste turno.
 
 ## Arremessos concentrados
 
-> ⚠️ A DEFINIR: havia duas versões quase idênticas desta habilidade no manual; conferir a redação correta. (Diferenças: requisito "Estar arremessando uma arma de arremesso" vs. "Estar atacando com uma arma de arremesso"; custo de compra `2 exp.` vs. `3 exp.`. Foi mantida a versão de `2 exp.`, que coincide com a tabela de resumo.)
+> ✅ Decidido em 12/07/2026: mantida a versão de **`2 exp.`** (coincide com a tabela-resumo); a duplicata de `3 exp.` foi descartada e o requisito unificado (ver [decisões — lote 2](../../notas-de-design/decisoes/2026-07-12-decisoes-de-regra-lote-2.md), item 2).
 
 **Atributo:** `Ágil` · **Custo de PA:** `1 PA` · **Custo de compra:** `2 exp.`
 

@@ -80,7 +80,8 @@ valendo **apenas para ataques desarmados** (ex.: soco). Viabiliza builds de luta
 | Maratonista | **`4 exp.`** |
 | Dorminhoco | **`7 exp.`** |
 | Firme | **`4 exp.`** |
-| Firme aprimorado | **`4 exp.`** (💡 proposta) |
+| Firme aprimorado | **`4 exp.`** |
+| Saltador | **`3 exp.`** |
 | Burro de carga | **`6 exp.`** |
 
 Aspectos são traços que afetam a forma como o personagem responde a determinadas situações. Comprar aspectos permite que o personagem realize ações ou ignore regras em determinadas situações.
@@ -239,14 +240,9 @@ Recebe **`+1d10 de vantagem`** para esquivar de ataques de oportunidade.
 
 Pode usar armas pesadas com apenas uma mão, com **−3 de dano**.
 
-> ✅ Decidido em 11/07/2026: o antigo traço "Versatilidade" (v0.4.1) foi **fundido no
-> Firme**, e a progressão herdada não vira níveis — requisitos determinam se o traço está
-> **ativo**, sem impedir a compra (ver [Traços — Requisitos](../conceitos/06-tracos.md) e
-> [notas-de-design/decisoes/2026-07-11-reacao-posicionamento-propriedades.md](../../notas-de-design/decisoes/2026-07-11-reacao-posicionamento-propriedades.md)).
-
-> 💡 PROPOSTA (IA) — revisar: desenho por requisitos em dois traços — **Firme** (com
-> −3 de dano) e **[Firme aprimorado](#firme-aprimorado)** (remove a redução) — que
-> condensa a progressão de 4 passos da antiga Versatilidade nesses 2 traços.
+> ✅ Aprovado pelo grupo em 12/07/2026: o antigo traço "Versatilidade" (v0.4.1) foi
+> **fundido no Firme** e condensado em dois traços ligados por requisito (não são níveis)
+> — ver [decisões — lote 2](../../notas-de-design/decisoes/2026-07-12-decisoes-de-regra-lote-2.md), item 5.
 
 #### Condição de uso (gatilho)
 
@@ -258,15 +254,12 @@ Pode usar armas pesadas com apenas uma mão, com **−3 de dano**.
 
 ### Firme aprimorado
 
-**Custo de compra:** `4 exp.` (💡 custo proposto pela IA — a validar pelo grupo)
+**Custo de compra:** `4 exp.`
 
 #### Descrição
 
 Remove a redução de dano do [Firme](#firme): pode usar armas pesadas com apenas uma mão
 **sem redução de dano**.
-
-> 💡 PROPOSTA (IA) — revisar: traço proposto junto com o novo desenho por requisitos do
-> [Firme](#firme).
 
 #### Condição de uso (gatilho)
 
@@ -275,6 +268,7 @@ Remove a redução de dano do [Firme](#firme): pode usar armas pesadas com apena
 #### Requisitos de uso
 
 - Possuir o traço [Firme](#firme).
+- Não ter nenhuma mão desabilitada.
 
 ### Lépido
 
@@ -344,6 +338,23 @@ Reduz o dano recebido pela metade.
 
 - Ter gasto uma guarda levantada para tentar se defender do ataque.
 - Estar utilizando armadura média ou pesada.
+
+### Saltador
+
+**Custo de compra:** `3 exp.`
+
+#### Descrição
+
+Eleva o limite de salto de **5 metros para 10 metros**. *(Substitui o antigo bônus de alcance da especialização de Saltar, que não cabia numa técnica — ver [decisões — lote 2](../../notas-de-design/decisoes/2026-07-12-decisoes-de-regra-lote-2.md), item 6.)*
+
+#### Condição de uso (gatilho)
+
+- Realizar a ação de saltar.
+
+#### Requisitos de uso
+
+- Possuir a **Técnica em Saltar**.
+- Não ter nenhuma perna [desabilitada](../conflitos/03-saude-e-protecao.md#membro-desabilitado-incapacitado-ou-invalidado).
 
 ### Vigilante
 

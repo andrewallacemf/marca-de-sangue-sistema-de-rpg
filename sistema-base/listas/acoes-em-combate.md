@@ -91,7 +91,7 @@ Pode saltar:
 
 - Ignora os dados de desvantagem por metro adicional (a técnica apenas anula a desvantagem natural do salto; não concede outro bônus).
 
-> ⚠️ A DEFINIR: o antigo efeito da "especialização" que **aumentava o limite do salto para 10 metros** foi removido daqui — como uma técnica só anula a desvantagem natural (não concede vantagem), esse aumento de alcance precisa virar uma **habilidade ou traço próprio**, a definir.
+> ✅ Decidido em 12/07/2026: o antigo bônus de "aumentar o limite do salto para 10 metros" virou o aspecto **[Saltador](tracos-base.md#saltador)** (3 exp.; requisito: Técnica em Saltar), já que uma técnica não concede vantagem (ver [decisões — lote 2](../../notas-de-design/decisoes/2026-07-12-decisoes-de-regra-lote-2.md), item 6).
 
 #### Requisitos de uso
 

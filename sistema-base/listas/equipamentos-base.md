@@ -13,6 +13,8 @@ atualizado-em: 2026-07-12
 
 Notação de dano por empunhadura: ✋ = uma mão / 🤲 = duas mãos (armas versáteis **`VERS.`** têm os dois valores, separados por `/`).
 
+**Versátil (`VERS.`):** a arma pode ser usada com **uma mão** (dano ✋) ou **duas mãos** (dano 🤲). A **maestria em armas versáteis** permite **alternar a empunhadura (uma ↔ duas mãos) sem gastar `PA`** durante o uso da arma.
+
 ## Alcance ideal e alcance não ideal
 
 Toda arma tem um **alcance ideal**, indicado nas tabelas em metros — um valor único ou uma faixa (ex.: lança longa = **`2m`**; machado de batalha = **`1m a 2m`**; arco composto = **`7m a 10m`**). **Dentro do alcance ideal, ataca-se normalmente.**
@@ -29,23 +31,21 @@ Toda arma tem um **alcance ideal**, indicado nas tabelas em metros — um valor 
 Efeitos definidos na reunião de 11/07/2026 (ver [decisões](../../notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md), itens 4 e 7):
 
 - **Cortante (`CORT.`)** — **expande o [engajamento](../conflitos/01-conflito-fisico.md#engajamento)**: além do gatilho padrão (movimento dentro do alcance ideal), permite realizar um **ataque de oportunidade quando o alvo SAI do seu alcance ideal**. Esse ataque **consome a reação** do personagem (cada personagem tem **1 reação por rodada**). O efeito antigo da propriedade (mirar na cabeça sem desvantagem) **deixa de existir**.
-- **Contundente (`CONT.`)** — ao acertar, **reduz pontos de ação (`PA`) do alvo sem necessidade de teste**; a redução vale **até a próxima rodada do alvo**.
+- **Contundente (`CONT.`)** — ao acertar, **reduz pontos de ação (`PA`) do alvo sem necessidade de teste**, valendo **até o próximo turno do alvo**. O valor depende do **peso da arma**: **leve −1 `PA`**, **média −2 `PA`**, **pesada −3 `PA`**. Só age se o atacante tiver a **maestria em armas contundentes**.
 - **Perfurante (`PERF.`)** — **expande o [engajamento](../conflitos/01-conflito-fisico.md#engajamento)**: além do gatilho padrão (movimento dentro do alcance ideal), permite realizar um **ataque de oportunidade quando o alvo ENTRA no seu alcance ideal**. Esse ataque **consome a reação** do personagem (cada personagem tem **1 reação por rodada**). É o espelho do cortante: cortante cobre a **saída** do alcance ideal; perfurante, a **entrada**.
 
 > ✅ Decidido em 11/07/2026 (ver [decisões — reação, posicionamento e propriedades](../../notas-de-design/decisoes/2026-07-11-reacao-posicionamento-propriedades.md), item 4). O efeito do perfurante já existia na documentação antiga e havia ficado de fora.
 
 ### Propriedades resgatadas do material antigo
 
-No manual do Notion, as propriedades só produzem efeito se o personagem tiver a **maestria** correspondente (traços de maestria as referenciam pela sigla).
+As propriedades só produzem efeito se o personagem tiver a **maestria** correspondente (traços de maestria as referenciam pela sigla).
 
-> 💡 RESGATE (IA) — encontrado em "Marca de Sangue Manual básico" (seção Equipamentos → Armas → "Propriedades (com maestria)"; mesmo texto em "Construção Marca de sangue → Equipamentos" e no "MdS Livro básico de regras (obsoleto)"), revisar:
+> ✅ Aprovadas pelo grupo em 12/07/2026 (ver [decisões — lote 2](../../notas-de-design/decisoes/2026-07-12-decisoes-de-regra-lote-2.md), item 3).
 
 - **Projéteis (`PROJ.`)** — consegue **ignorar barreiras no caminho do alvo**, desde que a barreira não esteja acima do alvo. Se acertar o oponente, **recarregar o equipamento não custa `PA`**.
 - **Agarrar (`AGAR.`)** — armas agarradoras conferem **vantagem para o uso da ação "Agarrar"**.
 - **Arremesso (`ARRE.`)** — armas de arremesso **ignoram um dado de desvantagem para realizar arremessos**. Regra geral do manual: arremessar um objeto ou arma **sem** essa propriedade é uma ação de ataque **com desvantagem**; fora do alcance ideal, a desvantagem total é **`+2d10`** (+1d10 pelo alcance não ideal, +1d10 por ser objeto impróprio para arremesso).
-- **Deflexão (`DEFL.`)** — itens com deflexão **ignoram um dado de desvantagem em contratestes de defesa**. Na v0.4.1 esta propriedade usava a sigla `PROT` — a sigla `PROT.` do escudo de arremesso na tabela abaixo provavelmente vem daí.
-
-> ⚠️ A DEFINIR: **versátil (`VERS.`)** segue **sem descrição de efeito em fonte alguma** do export do Notion (manual, Construção e material antigo). As tabelas indicam o comportamento (custo **`3/4 PA`** e dano **✋/🤲**) e a descrição do tamanho "média" no manual cobre o uso com uma ou duas mãos, mas não há efeito próprio da propriedade — e a maestria em armas versáteis a referencia. A sigla **`PROT.`** (escudo de arremesso) também está sem descrição própria no material atual.
+- **Deflexão (`DEFL.`)** — itens com deflexão **ignoram um dado de desvantagem em contratestes de defesa**. *(Na v0.4.1 esta propriedade usava a sigla `PROT`; a sigla foi unificada em `DEFL.`.)*
 
 ## Lista base de armas corpo a corpo
 
@@ -58,7 +58,7 @@ No manual do Notion, as propriedades só produzem efeito se o personagem tiver a
 | Bastão curto, Tonfa, Martelo Curto | **`Leve`**<br>**`2 PA`** | **`CURT.`** **`CONT.` `ARRE.`** | **`1m`** / **`2m a 5m`** | **`3`** | **`4 moedas`** |  |
 | Adaga, Kukri, Kunai | **`Leve`**<br>**`2 PA`** | **`CURT.`** **`CORT.` `PERF.` `ARRE.`** | **`1m`** / **`2m a 5m`** | **`3`** | **`6 moedas`** |  |
 | Chakram | **`Leve`**<br>**`2 PA`** | **`CURT.`** **`CORT.` `ARRE.`** | **`1m`** / **`2m a 5m`** | **`4`** | **`20 moedas`** |  |
-| Escudo de arremesso | **`Leve`**<br>**`2 PA`** | **`CURT.`** **`CONT.` `PROT.`** **`ARRE.`** | **`2m a 5m`** | **`2`** | **`12 moedas`** |  |
+| Escudo de arremesso | **`Leve`**<br>**`2 PA`** | **`CURT.`** **`CONT.` `DEFL.`** **`ARRE.`** | **`2m a 5m`** | **`2`** | **`12 moedas`** |  |
 | Facão, Machete, Peixeira | **`Média`**<br>**`3 PA`** | **`CURT.`** **`CORT.`** | **`1m`** | **`5`** | **`4 moedas`** |  |
 | Espada Curta, Foice curta, Cimitarra, Falcione, Khopesh | **`Média`**<br>**`3 PA`** | **`CURT.`** **`CORT.` `PERF.`** | **`1m`** | **`5`** | **`8 moedas`** |  |
 | Lança curta, Seta | **`Média`**<br>**`3 PA`** | **`LONG.`** **`PERF.` `ARRE.`** | **`2m`** | **`5`** | **`8 moedas`** |  |

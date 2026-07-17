@@ -13,7 +13,7 @@ Conflitos não se limitam apenas a combates (conflitos físicos) entre personage
 
 O sistema de embate social utiliza uma **malha de embate social** — uma ferramenta visual circular que representa o estado emocional dos personagens durante um conflito. A malha possui diferentes níveis de intensidade: seu centro representa o descontrole emocional, enquanto as bordas externas indicam o controle emocional pleno. A malha se divide em **trilhas emocionais** (uma por emoção), e cada trilha se divide em **campos da emoção** — o campo é o espaço unitário que o personagem ocupa na malha. Para se movimentar na malha, os personagens precisam usar estratégias específicas, como manipular as emoções do adversário ou estabilizar as próprias.
 
-O objetivo do conflito social é acumular pontos. Os participantes podem somar pontos para alcançar um objetivo comum ou competir por objetivos opostos. A primeira forma de se finalizar um conflito social é pelo número de turnos, explicada na próxima seção. O embate termina quando um dos lados acumula 5 pontos multiplicados pelo número de personagens envolvidos. Por exemplo: em um conflito com três personagens, o embate termina quando um lado alcança 15 pontos. O embate também se encerra quando a **diferença** de pontuação entre os dois lados atinge o valor necessário para determinar a vitória ou derrota.
+O objetivo do conflito social é acumular pontos. Os participantes podem somar pontos para alcançar um objetivo comum ou competir por objetivos opostos. A primeira forma de se finalizar um conflito social é pelo número de turnos, explicada na próxima seção. O embate termina quando um dos lados acumula **5 pontos multiplicados pelo número de personagens envolvidos**. Por exemplo: em um conflito com três personagens, o embate termina quando um lado alcança 15 pontos. O embate também se encerra quando a **diferença** de pontuação entre os dois lados atinge esse **mesmo valor-alvo** (5 × nº de personagens) — ou seja, quando um lado abre essa vantagem sobre o outro.
 
 > ✅ Exemplo aprovado pelo grupo em 11/07/2026.
 >
@@ -32,6 +32,8 @@ Conflitos sociais são resolvidos em uma série de turnos, cujo número varia de
 ## Ações disponíveis
 
 Subir ou descer em uma trilha emocional da malha de embate social tem custo base 1 PA + o valor numérico do campo da emoção alvo, ignorando se o valor indicado no campo é positivo ou negativo.
+
+A **influência necessária** citada no custo das ações abaixo é o **valor numérico do campo da emoção alvo** na malha (ignorando o sinal), a mesma lógica do custo de movimento descrito acima.
 
 Os personagens têm três ações principais disponíveis durante o conflito social:
 
@@ -59,6 +61,4 @@ Os personagens têm três ações principais disponíveis durante o conflito soc
 
 **Efeito:** Não é necessário teste caso o jogador alvo não ofereça resistência. O vencedor movimenta o alvo na direção desejada. Um jogador só pode usar esta ação 1 vez por turno.
 
-> ⚠️ A DEFINIR (marcado para revisão do André): (1) o custo das ações usa "**influência necessária**", termo ainda não definido — provavelmente equivale ao **valor numérico do campo da emoção** alvo (como no custo de movimento acima); confirmar. (2) O "**valor necessário**" da diferença de pontuação que encerra o embate (citado no início da seção) também não tem número definido.
-
-> ✅ Decidido em 11/07/2026: 5 pontos × número de personagens (ver [notas-de-design/decisoes/](../../notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md)).
+> ✅ Decidido em 11/07/2026: vitória a 5 pontos × número de personagens (ver [notas-de-design/decisoes/](../../notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md)). Decidido em 12/07/2026: "influência necessária" = valor do campo da emoção alvo, e a diferença que encerra o embate = o mesmo valor-alvo (ver [decisões — lote 2](../../notas-de-design/decisoes/2026-07-12-decisoes-de-regra-lote-2.md), item 8).
