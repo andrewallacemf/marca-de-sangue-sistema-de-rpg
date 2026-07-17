@@ -1,63 +1,56 @@
 ---
-titulo: Conversão do dano das armas — de valores fixos para dados
+titulo: Dano das armas — matriz generativa (tamanho × tipo)
 tipo: regra
 cenario: base
 status: estavel
-tags: [dano, armas, dados, rebalanceamento]
+tags: [dano, armas, dados, matriz, rebalanceamento]
 atualizado-em: 2026-07-12
 ---
 
-# Conversão do dano das armas — fixo → dados (12/07/2026)
+# Dano das armas — matriz generativa (12/07/2026)
 
-*Executa a decisão de 11/07 (armas voltam a ter dano variável), com as diretrizes
-afinadas com o André. A tabela resultante é uma **proposta 💡** para o grupo revisar
-arma por arma.*
+*Executa a decisão de 11/07 (armas voltam a ter dano variável) com uma **regra
+generativa**: o dano de qualquer arma — tabelada ou não — é aferido cruzando o
+**tamanho** com o **tipo de dano**. Decisão do André.*
 
-## Regra de conversão
+## A matriz
 
-O dano fixo atual vira o **dano máximo** de um dado; arredonda-se **para cima** ao dado
-padrão mais próximo (mais mortal). O **número de dados** depende do tipo de dano:
+| Tamanho | Cortante (`CORT.`) | Perfurante (`PERF.`) | Contundente (`CONT.`) |
+|---------|:---:|:---:|:---:|
+| **Leve** | `1d4` | `1d4` | `1d4` |
+| **Média** | `1d8` | `1d6` | `2d4` |
+| **Pesada** | `1d12` | `1d8` | `3d4` |
 
-- **Cortante / perfurante (e projéteis): 1 dado** — amplitude maior, mais extremos.
-- **Contundente (arma com a propriedade `CONT.`): 2 dados** — tende à média, extremos raros.
+Leitura dos perfis: **cortante** escala no topo (pode decepar — extremos altos);
+**perfurante** é o mais contido em dano bruto (compensa com o ataque de oportunidade na
+*entrada* do alcance); **contundente** tende à média alta e consistente (além de reduzir
+`PA` do alvo com maestria).
 
-### Piso (mantém valor fixo, sem dado)
+## Regras da matriz
 
-- Dano **0** (ex.: Rede) → `0`.
-- Dano **1** (ataque desarmado) e **2** (munições leves, armas improvisadas leves) → fixos.
+- **Versátil (`VERS.`): exclusiva de armas médias.** Nem toda arma média é versátil —
+  é uma propriedade da arma. Toda arma versátil ganha **+1d4** quando usada **com duas mãos**.
+- **Armas com mais de um tipo de dano (mistas):** a arma pode ser empregada em **qualquer
+  um de seus tipos** — o atacante declara o tipo no golpe e usa o **dado + o efeito**
+  daquele tipo (a propriedade correspondente, se tiver a maestria). Ex.: uma clava média
+  `CONT.`+`PERF.` pode dar `2d4` (contundente, reduzindo `PA`) **ou** `1d6` (perfurante).
+- **Piso:** ataque desarmado = `1` fixo; itens improvisados usam dano fixo baixo (a definir
+  por objeto).
+- **Munições/projéteis** seguem a tabela de munições própria (não entram nesta matriz).
 
-### 1 dado (cortante / perfurante / projétil)
+## Como aferir uma arma nova
 
-| Dano fixo | Dado |
-|:--:|:--:|
-| 3 | `1d4` |
-| 4 | `1d4` |
-| 5 | `1d6` |
-| 6 | `1d6` |
-| 7 | `1d8` |
-| 8 | `1d8` |
-| 10 | `1d10` |
+1. Defina o **tamanho** (leve/média/pesada) e o(s) **tipo(s)** de dano.
+2. Cruze na matriz. Se versátil (só médias), some `+1d4` a duas mãos.
+3. Se tem mais de um tipo, lista-se o dado de cada tipo — o jogador escolhe no golpe.
 
-### 2 dados (contundente)
+*Exemplos: machado de batalha (pesada, cortante) → `1d12`; maça pesada (pesada,
+contundente) → `3d4`; espada longa (média, cortante+perfurante, versátil) → `1d8`(cort.)
+ou `1d6`(perf.), **+1d4** a duas mãos.*
 
-| Dano fixo | Dados | Máx · média |
-|:--:|:--:|:--:|
-| ≤ 4 | `1d4` | (baixo demais para 2 dados) |
-| 5–6 | `2d4` | 8 · 5 |
-| 7–8 | `1d4+1d6` | 10 · 6 |
-| 10 | `2d6` | 12 · 7 |
+## Pendências de revisão
 
-### Versátil (dois valores ✋/🤲)
-
-Converte cada empunhadura separadamente, pela mesma regra do tipo da arma.
-Ex.: cortante 4/7 → `1d4 / 1d8`; contundente 4/7 → `1d4 / 1d4+1d6`.
-
-### Regra de desempate — armas com mais de um tipo de dano
-
-Se a arma tem `CONT.` **e** também `CORT.`/`PERF.`, prevalece a regra **contundente**
-(2 dados). Esses casos ficam **marcados para revisão** do grupo (podem preferir 1 dado
-pela lâmina).
-
-> ⚠️ A DEFINIR (revisão do grupo): confirmar arma por arma; em especial as **mistas**
-> (contundente + cortante/perfurante) e se os contundentes ≥7 devem mesmo escalar o teto
-> (1d4+1d6 = máx 10) ou manter o teto do valor antigo.
+> ⚠️ A DEFINIR: (1) a **lança montada** (perfurante pesada) cai de dano 10 para `1d8` —
+> conferir se merece exceção (era arma de carga). (2) "Mangual pesado… Esp. de duas
+> lâminas" tem nome contundente mas só lista `CORT.`/`PERF.` — alinhar propriedades.
+> (3) Dano dos itens **improvisados** por tamanho.
