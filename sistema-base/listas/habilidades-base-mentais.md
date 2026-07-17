@@ -17,13 +17,13 @@ Habilidades base do atributo **`Mental`**. Parte da "Lista de habilidades base" 
 | --- | --- | --- |
 | Analisar fraquezas | **`1 PA`** | **`1 exp.`** |
 | Auto cura | **`4 PA`** | **`3 exp.`** |
-| Auto tratamento | **`5 PA`** | **`3 exp.`** |
+| Auto tratamento | **`5 PA`** | **`4 exp.`** |
 | Criar armadilha | **`1 PA`** | **`2 exp.`** |
 | Confundir inimigo | **`4 PA`** | **`3 exp.`** |
 | Intimidação generalizada | **`4 PA`** | **`3 exp.`** |
 | Urro de Intimidação | **`4 PA`** | **`3 exp.`** |
 | Recompor | **`4 PA`** | **`4 exp.`** |
-| Consumir | **`4 PA`** | **`3 exp.`** |
+| Consumir | **`4 PA`** | **`4 exp.`** |
 
 ## Analisar fraquezas
 
@@ -75,7 +75,7 @@ Se falhar neste teste de cura, não recebe dano adicional.
 
 ## Auto tratamento
 
-**Atributo:** `Mental` · **Custo de PA:** `5 PA` · **Custo de compra:** `3 exp.`
+**Atributo:** `Mental` · **Custo de PA:** `5 PA` · **Custo de compra:** `4 exp.`
 
 ### Descrição
 
@@ -126,7 +126,7 @@ Realiza um teste mental contra oponentes dentro de 6 metros de distância para c
 
 ## Consumir
 
-**Atributo:** `Mental` · **Custo de PA:** `4 PA` · **Custo de compra:** `3 exp.`
+**Atributo:** `Mental` · **Custo de PA:** `4 PA` · **Custo de compra:** `4 exp.`
 
 ### Descrição
 
@@ -228,4 +228,3 @@ Realiza um teste mental contra um oponente dentro de 3 metros de distância para
 3. Atrasa o turno do oponente em 3 posições
 4. Atrasa o turno do oponente em 4 posições
 5. Atrasa o turno do oponente em 5 posições
-6. Atrasa o turno do oponente em 6 posições

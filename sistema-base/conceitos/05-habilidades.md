@@ -58,3 +58,28 @@ Habilidades podem ser recuperadas em um **[descanso longo](10-descanso.md#descan
 ### Recuperando habilidades em combate
 
 Existem habilidades para recuperar características suas e de outros personagens, assim como existem habilidades para descartá-las. O narrador também pode decretar outras formas de recuperar características durante um combate.
+
+## Criando novas habilidades (guia de design)
+
+Este guia orienta o grupo (e outras mesas) a criar habilidades equilibradas. Toda habilidade tem três parâmetros: **custo de `PA`** (o quanto pesa no turno), **custo de compra em `exp.`** (o quanto vale adquiri-la) e **níveis** (a progressão do efeito).
+
+### Custo de `PA` (ativação)
+
+- **Habilidades de ataque** (que dependem de uma arma): **`1 PA` + o `PA` da arma** — assim escalam junto com o custo do ataque.
+- **Habilidades de efeito próprio:** o `PA` reflete o peso da ação — **`1 PA`** para utilidade rápida (informação, preparar algo), **`4`–`5 PA`** para efeitos fortes (cura, controle, dano contínuo).
+
+### Custo de compra (`exp.`) — escada por poder
+
+| `exp.` | Quando usar | Exemplos |
+|:--:|---|---|
+| **1** | Utilidade ou informação; efeito fraco | Analisar fraquezas, Ataques múltiplos & leves |
+| **2** | Efeito moderado ou situacional (depende de condição) | Criar armadilha, Brado de guerra, Encontrão |
+| **3** | Controle do oponente ou cura/suporte relevante | Confundir inimigo, Intimidação, Auto cura |
+| **4** | Manipulação de recursos (dar/tirar características) ou efeito muito forte | Recompor, Consumir, Auto tratamento, Atordoar |
+
+### Níveis (progressão)
+
+- O padrão são **5 níveis**; o efeito cresce a cada nível comprado.
+- Use **menos níveis** quando o topo do efeito já é muito forte, ou quando o próprio limite do jogo (ex.: o **piso de 3 `PA`**, os **6 membros** do corpo) impõe um teto natural.
+
+> ✅ Critério aprovado pelo grupo em 12/07/2026 (ver [notas-de-design/decisoes/2026-07-12-rebalanceamento-habilidades.md](../../notas-de-design/decisoes/2026-07-12-rebalanceamento-habilidades.md)).

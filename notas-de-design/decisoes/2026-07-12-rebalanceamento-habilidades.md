@@ -54,3 +54,20 @@ por lista. Isso envolve decisões de design (não só números) e será feito po
 por lista** para o grupo aprovar — começando pela lista Física. As reescalas de custo (2)
 e o arredondamento (1) já foram aplicados a todas; as propostas de design ficam marcadas
 `💡` para aprovação.
+
+## 6. Critério de criação de habilidades (guia público) ✅
+
+Para orientar a revisão e permitir que outras mesas criem habilidades equilibradas, o
+critério foi **documentado no manual** em
+[conceitos/05-habilidades.md → "Criando novas habilidades"](../../sistema-base/conceitos/05-habilidades.md#criando-novas-habilidades-guia-de-design):
+custo de `PA` (ataque = 1 + PA da arma; efeito próprio 1 a 5), **escada de `exp.` por
+poder** (1 utilidade · 2 situacional · 3 controle/cura · 4 recurso/muito forte) e
+**níveis** (padrão 5, menos quando o topo já é forte ou há teto natural).
+
+## 7. Revisão da lista Mental ✅
+
+- **Auto tratamento** 3 → **4 exp.** (tratar dano profundo é mais valioso que curar
+  superficial e custa mais `PA`).
+- **Consumir** 3 → **4 exp.** (mexe com recursos do oponente, como Recompor).
+- **Urro de Intimidação**: progressão alinhada ao padrão de **5 níveis** (era 6).
+- Demais mantidas. (Lista Física já revisada; Atordoar/Desorientar em nota própria.)
