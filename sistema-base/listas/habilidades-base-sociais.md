@@ -4,7 +4,7 @@ tipo: regra
 cenario: base
 status: estavel
 tags: [habilidades, social, suporte]
-atualizado-em: 2026-07-11
+atualizado-em: 2026-07-12
 ---
 
 # Habilidades base — Social
@@ -16,12 +16,12 @@ Habilidades base do atributo **`Social`**. Parte da "Lista de habilidades base" 
 | **Habilidade** | **Custo de `PA`** | **Custo de compra** |
 | --- | --- | --- |
 | Comandar | **`1 PA`** | **`2 exp.`** |
-| Cura especializada | **`3 PA`** | **`3 exp.`** |
-| Tratamento especializado | **`4 PA`** | **`3 exp.`** |
-| Grito de alerta | **`3 PA`** | **`2 exp.`** |
+| Cura especializada | **`4 PA`** | **`3 exp.`** |
+| Tratamento especializado | **`5 PA`** | **`3 exp.`** |
+| Grito de alerta | **`4 PA`** | **`2 exp.`** |
 | Brado de guerra | **`2 PA`** | **`2 exp.`** |
 | Revigorar | **`2 PA`** | **`2 exp.`** |
-| Revitalizar | **`5 PA`** | **`4 exp.`** |
+| Revitalizar | **`7 PA`** | **`4 exp.`** |
 | Animar | **`2 PA`** | **`2 exp.`** |
 
 ## Animar
@@ -106,7 +106,7 @@ Transfere pontos de ação do seu próximo turno para um aliado.
 
 ## Cura especializada
 
-**Atributo:** `Social` · **Custo de PA:** `3 PA` · **Custo de compra:** `3 exp.`
+**Atributo:** `Social` · **Custo de PA:** `4 PA` · **Custo de compra:** `3 exp.`
 
 ### Descrição
 
@@ -132,7 +132,7 @@ Se falhar neste teste de cura, o aliado não recebe dano adicional.
 
 ## Grito de alerta
 
-**Atributo:** `Social` · **Custo de PA:** `3 PA` · **Custo de compra:** `2 exp.`
+**Atributo:** `Social` · **Custo de PA:** `4 PA` · **Custo de compra:** `2 exp.`
 
 ### Descrição
 
@@ -183,7 +183,7 @@ Reativa uma habilidade de um aliado.
 
 ## Revitalizar
 
-**Atributo:** `Social` · **Custo de PA:** `5 PA` · **Custo de compra:** `4 exp.`
+**Atributo:** `Social` · **Custo de PA:** `7 PA` · **Custo de compra:** `4 exp.`
 
 ### Descrição
 
@@ -207,7 +207,7 @@ Realiza um teste social para retornar um aliado inconsciente à consciência e r
 
 ## Tratamento especializado
 
-**Atributo:** `Social` · **Custo de PA:** `4 PA` · **Custo de compra:** `3 exp.`
+**Atributo:** `Social` · **Custo de PA:** `5 PA` · **Custo de compra:** `3 exp.`
 
 ### Descrição
 

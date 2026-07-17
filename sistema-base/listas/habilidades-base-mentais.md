@@ -16,14 +16,14 @@ Habilidades base do atributo **`Mental`**. Parte da "Lista de habilidades base" 
 | **Habilidade** | **Custo de `PA`** | **Custo de compra** |
 | --- | --- | --- |
 | Analisar fraquezas | **`1 PA`** | **`1 exp.`** |
-| Auto cura | **`3 PA`** | **`3 exp.`** |
-| Auto tratamento | **`4 PA`** | **`3 exp.`** |
+| Auto cura | **`4 PA`** | **`3 exp.`** |
+| Auto tratamento | **`5 PA`** | **`3 exp.`** |
 | Criar armadilha | **`1 PA`** | **`2 exp.`** |
-| Confundir inimigo | **`3 PA`** | **`3 exp.`** |
-| Intimidação generalizada | **`3 PA`** | **`3 exp.`** |
-| Urro de Intimidação | **`3 PA`** | **`3 exp.`** |
-| Recompor | **`3 PA`** | **`4 exp.`** |
-| Consumir | **`3 PA`** | **`3 exp.`** |
+| Confundir inimigo | **`4 PA`** | **`3 exp.`** |
+| Intimidação generalizada | **`4 PA`** | **`3 exp.`** |
+| Urro de Intimidação | **`4 PA`** | **`3 exp.`** |
+| Recompor | **`4 PA`** | **`4 exp.`** |
+| Consumir | **`4 PA`** | **`3 exp.`** |
 
 ## Analisar fraquezas
 
@@ -48,7 +48,7 @@ Vê quanto dano o oponente recebeu em partes do corpo a escolha do jogador.
 
 ## Auto cura
 
-**Atributo:** `Mental` · **Custo de PA:** `3 PA` · **Custo de compra:** `3 exp.`
+**Atributo:** `Mental` · **Custo de PA:** `4 PA` · **Custo de compra:** `3 exp.`
 
 ### Descrição
 
@@ -75,7 +75,7 @@ Se falhar neste teste de cura, não recebe dano adicional.
 
 ## Auto tratamento
 
-**Atributo:** `Mental` · **Custo de PA:** `4 PA` · **Custo de compra:** `3 exp.`
+**Atributo:** `Mental` · **Custo de PA:** `5 PA` · **Custo de compra:** `3 exp.`
 
 ### Descrição
 
@@ -103,7 +103,7 @@ Se falhar neste teste de tratamento, não recebe dano adicional.
 
 ## Confundir inimigo
 
-**Atributo:** `Mental` · **Custo de PA:** `3 PA` · **Custo de compra:** `3 exp.`
+**Atributo:** `Mental` · **Custo de PA:** `4 PA` · **Custo de compra:** `3 exp.`
 
 ### Descrição
 
@@ -126,7 +126,7 @@ Realiza um teste mental contra oponentes dentro de 6 metros de distância para c
 
 ## Consumir
 
-**Atributo:** `Mental` · **Custo de PA:** `3 PA` · **Custo de compra:** `3 exp.`
+**Atributo:** `Mental` · **Custo de PA:** `4 PA` · **Custo de compra:** `3 exp.`
 
 ### Descrição
 
@@ -170,7 +170,7 @@ Para se soltar, o oponente deve realizar um teste físico, se falhar, sofre o da
 
 ## Intimidação generalizada
 
-**Atributo:** `Mental` · **Custo de PA:** `3 PA` · **Custo de compra:** `3 exp.`
+**Atributo:** `Mental` · **Custo de PA:** `4 PA` · **Custo de compra:** `3 exp.`
 
 ### Descrição
 
@@ -193,7 +193,7 @@ Realiza um teste mental contra oponentes dentro de 6 metros de distância para a
 
 ## Recompor
 
-**Atributo:** `Mental` · **Custo de PA:** `3 PA` · **Custo de compra:** `4 exp.`
+**Atributo:** `Mental` · **Custo de PA:** `4 PA` · **Custo de compra:** `4 exp.`
 
 ### Descrição
 
@@ -211,7 +211,7 @@ Recupera as próprias aptidões consumidas.
 
 ## Urro de Intimidação
 
-**Atributo:** `Mental` · **Custo de PA:** `3 PA` · **Custo de compra:** `3 exp.`
+**Atributo:** `Mental` · **Custo de PA:** `4 PA` · **Custo de compra:** `3 exp.`
 
 ### Descrição
 

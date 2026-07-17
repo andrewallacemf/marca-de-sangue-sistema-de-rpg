@@ -4,7 +4,7 @@ tipo: regra
 cenario: base
 status: rascunho
 tags: [habilidades, tracos, social, experimental]
-atualizado-em: 2026-07-11
+atualizado-em: 2026-07-12
 ---
 
 # `Experimental` Habilidades e traços sociais
@@ -33,7 +33,7 @@ Se você estiver em uma posição de descontrole da malha de embate social e for
 
 ## Ressignificar
 
-**Atributo:** Mental · **Custo de PA:** `4 PA` · **Custo de compra:** `3 exp.`
+**Atributo:** Mental · **Custo de PA:** `5 PA` · **Custo de compra:** `3 exp.`
 
 ### Descrição
 
@@ -51,7 +51,7 @@ Se o personagem estiver no campo neutro de uma trilha emocional, ele pode transi
 
 ## Empatia
 
-**Atributo:** Social · **Custo de PA:** `3 PA` · **Custo de compra:** `3 exp.`
+**Atributo:** Social · **Custo de PA:** `4 PA` · **Custo de compra:** `3 exp.`
 
 ### Descrição
 
@@ -69,7 +69,7 @@ Ative um gatilho para se movimentar na mesma direção de um aliado quando ele s
 
 ## Otimista
 
-**Atributo:** Social · **Custo de PA:** `4 PA` · **Custo de compra:** `3 exp.`
+**Atributo:** Social · **Custo de PA:** `5 PA` · **Custo de compra:** `3 exp.`
 
 ### Descrição
 
@@ -87,7 +87,7 @@ Desloca um aliado na direção do controle emocional se ele estiver na trilha da
 
 ## Liderar pelo exemplo
 
-**Atributo:** Social · **Custo de PA:** `3 PA` · **Custo de compra:** `3 exp.`
+**Atributo:** Social · **Custo de PA:** `4 PA` · **Custo de compra:** `3 exp.`
 
 ### Descrição
 
@@ -105,7 +105,7 @@ Movimente um aliado na direção do seu personagem na malha de embate social.
 
 ## Destacar defeitos
 
-**Atributo:** Social · **Custo de PA:** `3 PA` · **Custo de compra:** `3 exp.`
+**Atributo:** Social · **Custo de PA:** `4 PA` · **Custo de compra:** `3 exp.`
 
 ### Descrição
 
@@ -123,7 +123,7 @@ Desloca o adversário lateralmente na direção da ansiedade.
 
 ## Palhaço
 
-**Atributo:** Social · **Custo de PA:** `3 PA` · **Custo de compra:** `3 exp.`
+**Atributo:** Social · **Custo de PA:** `4 PA` · **Custo de compra:** `3 exp.`
 
 ### Descrição
 
@@ -141,7 +141,7 @@ Desloca o adversário lateralmente na direção da alegria
 
 ## Sedutor
 
-**Atributo:** Social · **Custo de PA:** `3 PA` · **Custo de compra:** `3 exp.`
+**Atributo:** Social · **Custo de PA:** `4 PA` · **Custo de compra:** `3 exp.`
 
 ### Descrição
 
@@ -159,7 +159,7 @@ Desloca o adversário lateralmente na direção da atração
 
 ## Enojar
 
-**Atributo:** Social · **Custo de PA:** `3 PA` · **Custo de compra:** `3 exp.`
+**Atributo:** Social · **Custo de PA:** `4 PA` · **Custo de compra:** `3 exp.`
 
 ### Descrição
 
@@ -177,7 +177,7 @@ Desloca o adversário lateralmente na direção da aversão
 
 ## Respirar fundo
 
-**Atributo:** Mental · **Custo de PA:** `3 PA` · **Custo de compra:** `4 exp.`
+**Atributo:** Mental · **Custo de PA:** `4 PA` · **Custo de compra:** `4 exp.`
 
 ### Descrição
 
@@ -195,7 +195,7 @@ Impede que você seja deslocado por um oponente nos próximos turnos na malha de
 
 ## Agilizar derrota em [TRILHA]
 
-**Atributo:** Social · **Custo de PA:** `3 PA` · **Custo de compra:** `4 exp.`
+**Atributo:** Social · **Custo de PA:** `4 PA` · **Custo de compra:** `4 exp.`
 
 ### Descrição
 
@@ -213,7 +213,7 @@ Adiciona pontuação negativa a um adversário no final do turno, se ele estiver
 
 ## Agilizar vitória em [TRILHA]
 
-**Atributo:** Social · **Custo de PA:** `3 PA` · **Custo de compra:** `4 exp.`
+**Atributo:** Social · **Custo de PA:** `4 PA` · **Custo de compra:** `4 exp.`
 
 ### Descrição
 
@@ -231,7 +231,7 @@ Adiciona x pontuação positiva a um aliado (ou você mesmo) no final do turno, 
 
 ## Dilema
 
-**Atributo:** Social · **Custo de PA:** `6 PA` · **Custo de compra:** `6 exp.`
+**Atributo:** Social · **Custo de PA:** `8 PA` · **Custo de compra:** `6 exp.`
 
 ### Descrição
 

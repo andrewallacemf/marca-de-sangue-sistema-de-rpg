@@ -66,6 +66,12 @@ As **`vantagens`** e **`desvantagens`** alteram a quantidade de dados (**`d10`**
 - **`Vantagem`:** Para cada dado de vantagem rola-se um dado a mais no teste ou contrateste e o resultado final será o dado de **MAIOR** valor.
 - **`Desvantagem`:** Para cada dado de desvantagem rola-se um dado a mais no teste ou contrateste e o resultado final será o dado de **MENOR** valor.
 
+## Arredondamento
+
+**Sempre que uma regra gerar um número quebrado — metade de dano, reduções, divisões de qualquer natureza — arredonde para baixo.** É a regra geral do sistema; não é preciso repeti-la em cada efeito.
+
+> ✅ Decidido em 12/07/2026 (ver [notas-de-design/decisoes/2026-07-12-rebalanceamento-habilidades.md](../../notas-de-design/decisoes/2026-07-12-rebalanceamento-habilidades.md)).
+
 ## Desvantagem natural
 
 Algumas ações **exigem conhecimento** para serem executadas; nadar, trabalhar numa forja e outras atividades do tipo. Quem **não tem a técnica** correspondente testa essas ações com **`desvantagem`**: é a chamada **desvantagem natural**. Ações comuns, que qualquer um sabe fazer (como andar), não têm desvantagem natural.

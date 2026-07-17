@@ -24,26 +24,26 @@ No manual básico, todas as habilidades base estão detalhadas na seção "Habil
 | Ataques múltiplos & médios | `Físico` | **`1 PA`** | **`2 exp.`** | [Físico](habilidades-base-fisicas.md) |
 | Ataques múltiplos & pesados | `Físico` | **`1 PA`** | **`3 exp.`** | [Físico](habilidades-base-fisicas.md) |
 | Atordoar | `Físico` | **`1 PA`** + **`PA da arma`** | **`1 exp.`** | [Físico](habilidades-base-fisicas.md) |
-| Auto cura | `Mental` | **`3 PA`** | **`3 exp.`** | [Mental](habilidades-base-mentais.md) |
-| Auto tratamento | `Mental` | **`4 PA`** | **`3 exp.`** | [Mental](habilidades-base-mentais.md) |
+| Auto cura | `Mental` | **`4 PA`** | **`3 exp.`** | [Mental](habilidades-base-mentais.md) |
+| Auto tratamento | `Mental` | **`5 PA`** | **`3 exp.`** | [Mental](habilidades-base-mentais.md) |
 | Brado de guerra | `Social` | **`2 PA`** | **`2 exp.`** | [Social](habilidades-base-sociais.md) |
 | Comandar | `Social` | **`1 PA`** | **`2 exp.`** | [Social](habilidades-base-sociais.md) |
-| Confundir inimigo | `Mental` | **`3 PA`** | **`3 exp.`** | [Mental](habilidades-base-mentais.md) |
-| Consumir | `Mental` | **`3 PA`** | **`3 exp.`** | [Mental](habilidades-base-mentais.md) |
+| Confundir inimigo | `Mental` | **`4 PA`** | **`3 exp.`** | [Mental](habilidades-base-mentais.md) |
+| Consumir | `Mental` | **`4 PA`** | **`3 exp.`** | [Mental](habilidades-base-mentais.md) |
 | Criar armadilha | `Mental` | **`1 PA`** | **`2 exp.`** | [Mental](habilidades-base-mentais.md) |
-| Cura especializada | `Social` | **`3 PA`** | **`3 exp.`** | [Social](habilidades-base-sociais.md) |
+| Cura especializada | `Social` | **`4 PA`** | **`3 exp.`** | [Social](habilidades-base-sociais.md) |
 | Desarmar leve | `Físico` | **`1 PA`** + **`PA da arma`** | **`3 exp.`** | [Físico](habilidades-base-fisicas.md) |
 | Desarmar pesado | `Físico` | **`1 PA`** + **`PA da arma`** | **`3 exp.`** | [Físico](habilidades-base-fisicas.md) |
-| Disparada | `Ágil` | **`4 PA`** | **`2 exp.`** | [Ágil](habilidades-base-ageis.md) |
+| Disparada | `Ágil` | **`5 PA`** | **`2 exp.`** | [Ágil](habilidades-base-ageis.md) |
 | Encontrão | `Físico` | **`1 PA`** + **`PA da arma`** | **`2 exp.`** | [Físico](habilidades-base-fisicas.md) |
 | Esmagar | `Físico` | **`4 PA`** | **`2 exp.`** | [Físico](habilidades-base-fisicas.md) |
 | Golpe surpresa | `Ágil` | **`1 PA`** + **`PA da arma`** | **`2 exp.`** | [Ágil](habilidades-base-ageis.md) |
-| Grito de alerta | `Social` | **`3 PA`** | **`2 exp.`** | [Social](habilidades-base-sociais.md) |
-| Intimidação generalizada | `Mental` | **`3 PA`** | **`3 exp.`** | [Mental](habilidades-base-mentais.md) |
+| Grito de alerta | `Social` | **`4 PA`** | **`2 exp.`** | [Social](habilidades-base-sociais.md) |
+| Intimidação generalizada | `Mental` | **`4 PA`** | **`3 exp.`** | [Mental](habilidades-base-mentais.md) |
 | Investida | `Físico` | **`1 PA`** + **`PA da arma`** | **`3 exp.`** | [Físico](habilidades-base-fisicas.md) |
 | Quebrar guarda | `Físico` | **`1 PA`** + **`PA da arma`** | **`2 exp.`** | [Físico](habilidades-base-fisicas.md) |
-| Recompor | `Mental` | **`3 PA`** | **`4 exp.`** | [Mental](habilidades-base-mentais.md) |
+| Recompor | `Mental` | **`4 PA`** | **`4 exp.`** | [Mental](habilidades-base-mentais.md) |
 | Revigorar | `Social` | **`2 PA`** | **`2 exp.`** | [Social](habilidades-base-sociais.md) |
-| Revitalizar | `Social` | **`5 PA`** | **`4 exp.`** | [Social](habilidades-base-sociais.md) |
-| Tratamento especializado | `Social` | **`4 PA`** | **`3 exp.`** | [Social](habilidades-base-sociais.md) |
-| Urro de Intimidação | `Mental` | **`3 PA`** | **`3 exp.`** | [Mental](habilidades-base-mentais.md) |
+| Revitalizar | `Social` | **`7 PA`** | **`4 exp.`** | [Social](habilidades-base-sociais.md) |
+| Tratamento especializado | `Social` | **`5 PA`** | **`3 exp.`** | [Social](habilidades-base-sociais.md) |
+| Urro de Intimidação | `Mental` | **`4 PA`** | **`3 exp.`** | [Mental](habilidades-base-mentais.md) |

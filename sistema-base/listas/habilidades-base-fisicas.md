@@ -20,7 +20,7 @@ Habilidades base do atributo **`Físico`**. Parte da "Lista de habilidades base"
 | Desarmar pesado | **`1 PA`** + **`PA da arma`** | **`3 exp.`** |
 | Desarmar leve | **`1 PA`** + **`PA da arma`** | **`3 exp.`** |
 | Encontrão | **`1 PA`** + **`PA da arma`** | **`2 exp.`** |
-| Esmagar | **`4 PA`** | **`2 exp.`** |
+| Esmagar | **`5 PA`** | **`2 exp.`** |
 | Investida | **`1 PA`** + **`PA da arma`** | **`3 exp.`** |
 | Ataques múltiplos & médios | **`1 PA`** | **`2 exp.`** |
 | Ataques múltiplos & pesados | **`1 PA`** | **`3 exp.`** |
@@ -170,11 +170,11 @@ Corre 2 metros na direção do oponente e o empurra na mesma direção, infringe
 
 ## Esmagar
 
-**Atributo:** `Físico` · **Custo de PA:** `4 PA` · **Custo de compra:** `2 exp.`
+**Atributo:** `Físico` · **Custo de PA:** `5 PA` · **Custo de compra:** `2 exp.`
 
 ### Descrição
 
-Agarra o oponente e causa dano a ele. Em seu turno, pode gastar **`3 PA`** para causar dano novamente ao oponente enquanto tiver **`PA`** suficiente para realizar a ação.
+Agarra o oponente e causa dano a ele. Em seu turno, pode gastar **`4 PA`** para causar dano novamente ao oponente enquanto tiver **`PA`** suficiente para realizar a ação.
 
 O oponente pode gastar **`2 PA`** para realizar um teste físico para tentar se soltar em seu turno, se falhar, pode tentar novamente enquanto ainda tiver **`PA`** para realizar a ação.
 
@@ -183,16 +183,13 @@ O oponente pode gastar **`2 PA`** para realizar um teste físico para tentar se 
 - Não estar usando armas.
 - Não ter nenhum braço desabilitado.
 
-> ⚠️ A DEFINIR: no manual, os itens numerados abaixo aparecem dentro de "Requisitos de uso", aparentando ser os níveis 1–3 da progressão (que no manual começa em "Causa 4 pontos de dano"); conferir a redação correta.
+### Progressão
 
 1. Causa 1 ponto de dano.
 2. Causa 2 pontos de dano.
 3. Causa 3 pontos de dano.
-
-### Progressão
-
-1. Causa 4 pontos de dano.
-2. Causa 5 pontos de dano.
+4. Causa 4 pontos de dano.
+5. Causa 5 pontos de dano.
 
 ### Observações
 

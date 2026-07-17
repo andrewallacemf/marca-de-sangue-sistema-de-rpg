@@ -4,7 +4,7 @@ tipo: regra
 cenario: base
 status: revisao
 tags: [habilidades, agil, combate]
-atualizado-em: 2026-07-11
+atualizado-em: 2026-07-12
 ---
 
 # Habilidades base — Ágil
@@ -21,7 +21,7 @@ Habilidades base do atributo **`Ágil`**. Parte da "Lista de habilidades base" d
 | Arremessos concentrados | **`1 PA`** | **`2 exp.`** |
 | Ataques múltiplos & leves | **`1 PA`** | **`1 exp.`** |
 | Ataques à distância concentrados | **`1 PA`** | **`3 exp.`** |
-| Disparada | **`4 PA`** | **`2 exp.`** |
+| Disparada | **`5 PA`** | **`2 exp.`** |
 | Golpe surpresa | **`1 PA`** + **`PA da arma`** | **`2 exp.`** |
 
 ## Alcance à distância
@@ -165,7 +165,7 @@ Pode mudar o alvo de ataques corpo a corpo com armas leves ignorando a desvantag
 
 ## Disparada
 
-**Atributo:** `Ágil` · **Custo de PA:** `4 PA` · **Custo de compra:** `2 exp.`
+**Atributo:** `Ágil` · **Custo de PA:** `5 PA` · **Custo de compra:** `2 exp.`
 
 ### Descrição
 
