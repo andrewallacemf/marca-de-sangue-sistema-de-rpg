@@ -25,9 +25,14 @@ Preencha os principais campos da ficha base com as informações do seu personag
 
 ### 2.1 Informações
 
-Utilize os campos indicados para preencher o nome do seu personagem, o cenário do jogo e identificar o dono da ficha com o seu nome.
+Utilize os campos indicados para preencher o nome do seu personagem, o cenário do jogo e identificar o dono da ficha com o seu nome. Anote também sua **mão hábil** (direita ou esquerda) — ataques com a mão inábil sofrem penalidade (ver [Ações em conflito](../conflitos/02-acoes-em-conflito.md)).
 
-### 2.2 Anote seus pontos de experiência iniciais
+### 2.2 Anote seus valores de partida
+
+- **Pontos de ação (`PA`):** todo personagem começa com **`10 PA`** por turno (ver [Pontos de ação](../conceitos/07-pontos-de-acao.md)).
+- **Pontos de vida (`PV`):** todo personagem tem **`60 PV`** no total — **`10` em cada membro** (cabeça, tronco, braço direito, braço esquerdo, perna direita, perna esquerda) (ver [Saúde e Proteção](../conflitos/03-saude-e-protecao.md)).
+
+### 2.3 Anote seus pontos de experiência iniciais
 
 Utilize o campo “Experiência base - Total/usada” para anotar os pontos de experiência total do seu personagem e os pontos já utilizados na compra de características, respectivamente.
 

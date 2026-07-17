@@ -100,9 +100,9 @@ O dano de **qualquer arma** — tabelada ou não — é aferido cruzando o **tam
 | Lança longa | **`Pesada`**<br>**`6 PA`** | **`LONG.`** **`PERF.`** **`ARRE.`** | **`2m`** / **`2m a 3m`** | **`1d8`** | **`10 moedas`** |  |
 | Espada Larga, montante, Flamberge, Foice ceifadora | **`Pesada`**<br>**`6 PA`** | **`LONG.`** **`CORT.`** **`PERF.`** | **`2m`** | **`1d12` `CORT.` · `1d8` `PERF.`** | **`12 moedas`** |  |
 | Corrente de espinhos | **`Pesada`**<br>**`6 PA`** | **`LONG.`** **`CORT.`** **`AGAR.`** | **`3m a 4m`** | **`1d12`** | **`16 moedas`** |  |
-| Arma improvisada leve |  |  |  | **`2`** |  |  |
-| Arma improvisada média |  |  |  | **`1d4`** |  |  |
-| Arma improvisada pesada |  |  |  | **`1d4`** |  |  |
+| Arma improvisada leve | **`Leve`** | **`CONT.`** |  | **`2`** |  |  |
+| Arma improvisada média | **`Média`** | **`CONT.`** |  | **`3`** |  |  |
+| Arma improvisada pesada | **`Pesada`** | **`CONT.`** |  | **`4`** |  |  |
 
 *⚠️ A revisar: a **lança montada** (perfurante pesada) caiu de 10 para `1d8` pela matriz — conferir se merece exceção como arma de carga. O grupo **"Mangual pesado… Esp. de duas lâminas"** tem nome contundente mas só lista `CORT.`/`PERF.` — alinhar as propriedades (se receber `CONT.`, ganha também `3d4`). Itens improvisados usam dano fixo a definir.*
 

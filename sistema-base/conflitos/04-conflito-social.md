@@ -21,7 +21,7 @@ O objetivo do conflito social é acumular pontos. Os participantes podem somar p
 
 ## Turnos e Duração
 
-Conflitos sociais são resolvidos em uma série de turnos, cujo número varia dependendo da complexidade da situação. No turno do personagem, ele terá a mesma quantidade de PA de sua ficha para utilizar, ignorando os redutores de armadura. O conflito tem durações diferentes de acordo com a complexidade:
+Conflitos sociais são resolvidos em uma série de turnos, cujo número varia dependendo da complexidade da situação. No turno do personagem, ele terá a mesma quantidade de PA de sua ficha para utilizar, **sem aplicar o redutor de `PA` das armaduras** (o peso da armadura não atrapalha um embate social). O conflito tem durações diferentes de acordo com a complexidade:
 
 **Conflitos simples:** 3 turnos de duração;
 

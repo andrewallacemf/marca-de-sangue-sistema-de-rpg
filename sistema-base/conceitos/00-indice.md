@@ -4,12 +4,12 @@ tipo: regra
 cenario: base
 status: estavel
 tags: [indice, conceitos]
-atualizado-em: 2026-07-11
+atualizado-em: 2026-07-12
 ---
 
 # Conceitos fundamentais
 
-Regras universais do sistema Marca de Sangue, extraídas do Manual básico v1.1.0b. A leitura em ordem apresenta a mecânica central do jogo. A introdução geral do sistema está em [Introdução](../00-introducao.md).
+Regras universais do sistema Marca de Sangue (Manual base do jogador). A leitura em ordem apresenta a mecânica central do jogo. A introdução geral do sistema está em [Introdução](../00-introducao.md).
 
 1. [Testes e Contratestes](01-testes-e-contratestes.md) — como o duplo arremesso de dados resolve ações: tipos de teste e contrateste, vantagens, desvantagens, modificadores inversos e desempate.
 2. [Atributos](02-atributos.md) — as quatro categorias (Físico, Ágil, Mental e Social) e o quinto atributo específico de cenário (ex.: KI, em Mukashi).

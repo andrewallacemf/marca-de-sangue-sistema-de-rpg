@@ -16,11 +16,11 @@ Durante um conflito, os personagens podem gastar pontos de ação para realizar 
 Em seu turno, o jogador pode realizar quantos ataques quiser, gastando o número de pontos referente à arma, podendo usar habilidades e aptidões (consumindo seus respectivos usos) e aplicando traços cabíveis no ato:
 
 - **Ataque desarmado: `1 PA`** por ataque
-- **Ataque com arma leve:** **`2 PA`** por ataque
-    - **Ataque duplo com armas leves: `3 PA`** por ataque
-- **Ataque com arma média (uma mão): `3 PA`** por ataque
-    - **Ataque com arma média (duas mãos): `4 PA`** por ataque
-- **Ataque com arma pesada:** **`4 PA`** por ataque
+- **Ataque com arma leve: `2 PA`** por ataque
+- **Ataque com arma média: `4 PA`** por ataque
+- **Ataque com arma pesada: `6 PA`** por ataque
+
+O custo é pelo **peso** da arma (igual para corpo a corpo e à distância). Em armas versáteis, a empunhadura muda apenas o dano, não o `PA` (ver [Equipamentos](../listas/equipamentos-base.md)).
 
 ### Ataque mirado
 
