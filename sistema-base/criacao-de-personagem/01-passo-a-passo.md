@@ -4,7 +4,7 @@ tipo: regra
 cenario: base
 status: revisao
 tags: [criacao, personagem, ficha, passo-a-passo]
-atualizado-em: 2026-07-12
+atualizado-em: 2026-07-17
 ---
 
 # Criando um personagem (passo a passo)
@@ -40,7 +40,7 @@ Abaixo dos contadores de experiência, você pode usar os contadores de caracter
 
 **Montando personagens de início de campanha**
 
-Um personagem em início de campanha começa com `8 pontos de experiência` para comprar características. O cenário de jogo pode acrescentar ou retirar pontos de experiência para personagens iniciais, bem como implementar outros tipos de experiência.
+Um personagem em início de campanha começa com `15 pontos de experiência` para comprar características. O cenário de jogo pode acrescentar ou retirar pontos de experiência para personagens iniciais, bem como implementar outros tipos de experiência.
 
 **Evoluindo o personagem**
 

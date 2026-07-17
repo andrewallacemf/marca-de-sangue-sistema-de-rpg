@@ -4,7 +4,7 @@ tipo: regra
 cenario: base
 status: estavel
 tags: [experiencia, evolucao, caracteristicas, pontos-de-acao]
-atualizado-em: 2026-07-12
+atualizado-em: 2026-07-17
 ---
 
 # Experiência e Evolução
@@ -13,7 +13,7 @@ Personagens no sistema Marca de Sangue não possuem necessariamente um nível. E
 
 As características podem ser adquiridas usando pontos de experiência distribuídos pelo narrador. Esses pontos podem ser recompensas por tarefas bem-sucedidas, por soluções inventivas ou por avanços na trajetória pessoal dos personagens.
 
-De forma geral, recomenda-se que um personagem monte sua ficha inicial utilizando **`8 exp.`**. Contudo, cada cenário pode ter sua própria recomendação de experiência inicial e o narrador pode adaptar a regra para melhor atender o estilo de jogo dos demais participantes.
+De forma geral, recomenda-se que um personagem monte sua ficha inicial utilizando **`15 exp.`**. Contudo, cada cenário pode ter sua própria recomendação de experiência inicial e o narrador pode adaptar a regra para melhor atender o estilo de jogo dos demais participantes.
 
 ## Ganhando Experiência
 
