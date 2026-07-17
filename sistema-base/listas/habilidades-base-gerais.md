@@ -14,12 +14,12 @@ No manual básico, todas as habilidades base estão detalhadas na seção "Habil
 | **Habilidade** | **Atributo** | **Custo de `PA`** | **Custo de compra** | Arquivo |
 | --- | --- | --- | --- | --- |
 | Alcance à distância | `Ágil` | **`2 PA`** + **`PA da arma`** | **`2 exp.`** | [Ágil](habilidades-base-ageis.md) |
-| Alcance corpo a corpo | `Ágil` | **`X PA`** + **`PA da arma`** | **`2 exp.`** | [Ágil](habilidades-base-ageis.md) |
+| Alcance corpo a corpo | `Ágil` | **`3 PA`** + **`PA da arma`** (reduz por nível) | **`2 exp.`** | [Ágil](habilidades-base-ageis.md) |
 | Analisar fraquezas | `Mental` | **`1 PA`** | **`1 exp.`** | [Mental](habilidades-base-mentais.md) |
 | Animar | `Social` | **`2 PA`** | **`2 exp.`** | [Social](habilidades-base-sociais.md) |
 | Arremesso improvisado | `Ágil` | **`1 PA`** | **`2 exp.`** | [Ágil](habilidades-base-ageis.md) |
 | Arremessos concentrados | `Ágil` | **`1 PA`** | **`2 exp.`** | [Ágil](habilidades-base-ageis.md) |
-| Ataques à distância concentrados | `Ágil` | **`1 PA`** | **`3 exp.`** | [Ágil](habilidades-base-ageis.md) |
+| Ataques à distância concentrados | `Ágil` | **`1 PA`** | **`2 exp.`** | [Ágil](habilidades-base-ageis.md) |
 | Ataques múltiplos & leves | `Ágil` | **`1 PA`** | **`1 exp.`** | [Ágil](habilidades-base-ageis.md) |
 | Ataques múltiplos & médios | `Físico` | **`1 PA`** | **`2 exp.`** | [Físico](habilidades-base-fisicas.md) |
 | Ataques múltiplos & pesados | `Físico` | **`1 PA`** | **`3 exp.`** | [Físico](habilidades-base-fisicas.md) |

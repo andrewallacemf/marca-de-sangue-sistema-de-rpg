@@ -15,12 +15,12 @@ Habilidades base do atributo **`Ágil`**. Parte da "Lista de habilidades base" d
 
 | **Habilidade** | **Custo de `PA`** | **Custo de compra** |
 | --- | --- | --- |
-| Alcance corpo a corpo | **`X PA`** + **`PA da arma`** | **`2 exp.`** |
+| Alcance corpo a corpo | **`3 PA`** + **`PA da arma`** (reduz por nível) | **`2 exp.`** |
 | Alcance à distância | **`2 PA`** + **`PA da arma`** | **`2 exp.`** |
 | Arremesso improvisado | **`1 PA`** | **`2 exp.`** |
 | Arremessos concentrados | **`1 PA`** | **`2 exp.`** |
 | Ataques múltiplos & leves | **`1 PA`** | **`1 exp.`** |
-| Ataques à distância concentrados | **`1 PA`** | **`3 exp.`** |
+| Ataques à distância concentrados | **`1 PA`** | **`2 exp.`** |
 | Disparada | **`5 PA`** | **`2 exp.`** |
 | Golpe surpresa | **`1 PA`** + **`PA da arma`** | **`2 exp.`** |
 
@@ -47,11 +47,11 @@ Aumenta a área de alcance ideal da arma.
 
 ## Alcance corpo a corpo
 
-**Atributo:** `Ágil` · **Custo de PA:** `X PA` + `PA da arma` · **Custo de compra:** `2 exp.`
+**Atributo:** `Ágil` · **Custo de PA:** `3 PA` + `PA da arma` (reduz por nível) · **Custo de compra:** `2 exp.`
 
 ### Descrição
 
-Aumenta a área de alcance ideal da arma em 1 metro.
+Aumenta a área de alcance ideal da arma em 1 metro. Cada nível **reduz o custo de `PA`** de ativação.
 
 ### Requisitos de uso
 
@@ -117,7 +117,7 @@ Pode manter o alvo dos ataques de arremesso no mesmo oponente ignorando a desvan
 
 ## Ataques à distância concentrados
 
-**Atributo:** `Ágil` · **Custo de PA:** `1 PA` · **Custo de compra:** `3 exp.`
+**Atributo:** `Ágil` · **Custo de PA:** `1 PA` · **Custo de compra:** `2 exp.`
 
 ### Descrição
 
@@ -204,10 +204,10 @@ Realiza um golpe surpresa que causa dano adicional.
 
 ### Progressão
 
-1. Causa 2 pontos de dano extra.
-2. Causa 4 pontos de dano extra.
-3. Causa 6 pontos de dano extra.
-4. Causa 8 pontos de dano extra.
+1. Causa **`1d4`** de dano extra.
+2. Causa **`1d6`** de dano extra.
+3. Causa **`1d8`** de dano extra.
+4. Causa **`1d10`** de dano extra.
 
 ### Observações
 
