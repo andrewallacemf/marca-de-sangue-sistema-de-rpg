@@ -96,7 +96,7 @@ No entanto, atenção: esse dilema vale para as habilidades. Aptidões não são
 
 ## Comprando pontos de ação
 
-**No início da jornada, os personagens começam com `7 PA`**. Ao receberem pontos de experiência, podem adquirir pontos de ação adicionais. O primeiro ponto adicional custa **`5 exp.`** e cada ponto subsequente custa **`5 exp.`** a mais:
+**No início da jornada, os personagens começam com `10 PA`**. Ao receberem pontos de experiência, podem adquirir pontos de ação adicionais. O primeiro ponto adicional custa **`5 exp.`** e cada ponto subsequente custa **`5 exp.`** a mais:
 
 - + **`1 PA`** = **`5 exp.`**
 - + **`1 PA`** = **`10 exp.`**

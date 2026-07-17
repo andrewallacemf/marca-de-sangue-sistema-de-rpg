@@ -35,9 +35,9 @@ Habilidades podem ser utilizadas de diferentes formas, de acordo com cada situa�
 
 Dentro de uma batalha, o jogador pode utilizar quantas habilidades quiser, gastando o número de ações necessárias para cada habilidade.
 
-> Ex.: *Kenji, o espadachim, possui **`7 PA`** em seu turno. Em sua vez, ele decide utilizar a habilidade “encontrão”, gastando **`2 PA`** e utilizando um de seus 3 usos dessa habilidade para empurrar o inimigo em direção a um penhasco, gasta mais dois pontos de ação para andar dois espaços em direção ao inimigo e então utiliza mais **`2 PA`** para mais um uso da habilidade “encontrão” para empurrar o inimigo novamente, o fazendo cair do penhasco, sobrando **`1 PA`** para continuar andando ou fazer outra coisa.*
+> Ex.: *Kenji, o espadachim, possui **`10 PA`** em seu turno. Em sua vez, ele decide utilizar a habilidade “encontrão”, gastando **`2 PA`** e utilizando um de seus 3 usos dessa habilidade para empurrar o inimigo em direção a um penhasco, gasta mais dois pontos de ação para andar dois espaços em direção ao inimigo e então utiliza mais **`2 PA`** para mais um uso da habilidade “encontrão” para empurrar o inimigo novamente, o fazendo cair do penhasco, sobrando **`4 PA`** para continuar andando ou fazer outra coisa.*
 
-> *As ações possíveis de Kenji se esgotaram, o obrigando a passar seu turno. No próximo turno Kenji terá mais **`7 PA`** para jogar, mas os usos da habilidade “encontrão” utilizados permanecem desativados até que Kenji tenha um descanso longo.*
+> *No próximo turno Kenji terá mais **`10 PA`** para jogar, mas os usos da habilidade “encontrão” utilizados permanecem desativados até que Kenji tenha um descanso longo.*
 
 ### Habilidades fora de combate
 

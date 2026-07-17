@@ -1,10 +1,10 @@
----
+﻿---
 titulo: Fadiga
 tipo: regra
 cenario: base
 status: revisao
 tags: [fadiga, recurso, pontos-de-acao, descanso, reacao]
-atualizado-em: 2026-07-11
+atualizado-em: 2026-07-12
 ---
 
 # Fadiga
@@ -32,25 +32,28 @@ No próprio turno, o personagem pode se esforçar além do limite e comprar pont
 - **2 pontos de fadiga = 1 `PA` extra.**
 - **Teto por turno:** os `PA` extras comprados não podem ultrapassar o **total de `PA` do personagem**.
 
-> *Exemplo: um personagem com **7 `PA` totais** pode comprar até **+7 `PA`** em um turno, acumulando **14 pontos de fadiga** para isso.*
+> *Exemplo: um personagem com **10 `PA` totais** pode comprar até **+10 `PA`** em um turno, acumulando **20 pontos de fadiga** para isso.*
 
 ## Penalidades por acúmulo
 
-A fadiga acumulada pesa no corpo: **a cada 10 pontos acumulados, o personagem sofre −1 `PA`**. Ao alcançar **40 pontos de fadiga, o personagem fica inconsciente**.
+A fadiga acumulada pesa no corpo: a partir de **10 pontos**, o personagem sofre **−1 `PA` a cada 5 pontos acumulados**. Ao alcançar **50 pontos de fadiga, o personagem fica inconsciente**.
 
 | Fadiga acumulada | Efeito |
 |:---:|:---:|
 | 0 a 9 | — |
-| 10 a 19 | −1 `PA` |
-| 20 a 29 | −2 `PA` |
-| 30 a 39 | −3 `PA` |
-| **40 ou mais** | **Inconsciente** |
+| 10 a 14 | −1 `PA` |
+| 15 a 19 | −2 `PA` |
+| 20 a 24 | −3 `PA` |
+| 25 a 29 | −4 `PA` |
+| 30 a 34 | −5 `PA` |
+| 35 a 39 | −6 `PA` |
+| 40 a 44 | −7 `PA` |
+| 45 a 49 | −8 `PA` |
+| **50** | **Inconsciente** |
 
-**Piso de `PA`:** nenhuma combinação de penalidades (fadiga, redutores de armadura etc.) reduz um personagem a menos de **4 `PA` por turno** — a não ser que ele esteja **inconsciente**.
+**Piso de `PA`:** nenhuma combinação de penalidades (fadiga, redutores de `PA` de armaduras etc.) reduz um personagem a menos de **3 `PA` por turno** — a não ser que ele esteja **inconsciente**.
 
-> ✅ Revisado pelo grupo em 11/07/2026 (inconsciência aos 40 pontos e piso de 4 `PA`) — ver [notas-de-design/decisoes/2026-07-11-fadiga-aspectos-organizacao.md](../../notas-de-design/decisoes/2026-07-11-fadiga-aspectos-organizacao.md).
-
-> 💡 O rebalanceamento experimental do [PLANO-DE-MELHORIAS.md](../../PLANO-DE-MELHORIAS.md) (Lote 3) pode mudar essa razão para **a cada 5 pontos**, acompanhando a proposta de dobrar os `PA` dos personagens. Até o playtest validar os números, vale a tabela acima.
+> ✅ Rebalanceamento de 12/07/2026: fadiga máxima **50** (inconsciência); **−1 `PA` a cada 5 pontos a partir de 10**; piso unificado em **3 `PA`** (ver [decisões — rebalanceamento de PA](../../notas-de-design/decisoes/2026-07-12-rebalanceamento-pa-analise.md), D7 e D9).
 
 ## Recuperação
 

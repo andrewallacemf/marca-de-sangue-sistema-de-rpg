@@ -1,10 +1,10 @@
----
+﻿---
 titulo: Pontos de ação
 tipo: regra
 cenario: base
 status: estavel
 tags: [pontos-de-acao, pa, turno, movimento]
-atualizado-em: 2026-07-11
+atualizado-em: 2026-07-12
 ---
 
 # Pontos de ação
@@ -15,11 +15,13 @@ Para ver a lista de ações básicas disponíveis e a lista de habilidades bási
 
 ## Pontos de ação iniciais
 
-> 💡 No começo de uma campanha, **recomenda-se que cada personagem comece com `7 PA`.**
+> 💡 No começo de uma campanha, **recomenda-se que cada personagem comece com `10 PA`.**
 
-Todo personagem só pode utilizar até 10 PA para se locomover. Para elevar esse limite é necessário adquirir habilidade específica para isso. Se o deslocamento é maior por conta de habilidade, ele não é contabilizado no limite porque o custo foi gasto em habilidade e não diretamente em deslocamento.
+Todo personagem só pode gastar até **`7 PA` em locomoção por turno** (ou seja, andar no máximo 7 metros). Para elevar esse limite é necessário adquirir habilidade específica para isso. Se o deslocamento é maior por conta de habilidade, ele não é contabilizado no limite porque o custo foi gasto em habilidade e não diretamente em deslocamento.
 
-**Piso de `PA`:** penalidades (acúmulo de [fadiga](08-fadiga.md), redutores de armadura etc.) nunca reduzem um personagem a menos de **4 `PA` por turno** — a não ser que ele esteja inconsciente.
+**Piso de `PA`:** penalidades (acúmulo de [fadiga](08-fadiga.md), redutores de `PA` de armaduras etc.) nunca reduzem um personagem a menos de **3 `PA` por turno** — a não ser que ele esteja inconsciente.
+
+> ✅ Rebalanceamento de 12/07/2026: PA inicial 7 → **10**; teto de locomoção passa a **7 m/turno**; piso unificado em **3 PA** (ver [decisões — rebalanceamento de PA](../../notas-de-design/decisoes/2026-07-12-rebalanceamento-pa-analise.md)).
 
 ## Adquirindo mais pontos de ação
 

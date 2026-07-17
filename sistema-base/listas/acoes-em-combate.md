@@ -11,7 +11,7 @@ atualizado-em: 2026-07-12
 
 ## Comprar pontos de ação
 
-**No início da jornada, os personagens começam com `7 PA`.** Ao receberem pontos de experiência, podem adquirir pontos de ação adicionais. O primeiro ponto adicional custa **`5 exp.`** e cada ponto subsequente custa **`5 exp.`** a mais:
+**No início da jornada, os personagens começam com `10 PA`.** Ao receberem pontos de experiência, podem adquirir pontos de ação adicionais. O primeiro ponto adicional custa **`5 exp.`** e cada ponto subsequente custa **`5 exp.`** a mais:
 
 - + **`1 PA`** = **`5 exp.`**
 - + **`1 PA`** = **`10 exp.`**
@@ -24,12 +24,11 @@ atualizado-em: 2026-07-12
 
 | **Ações** | **Pontos** | **Unidade** |
 | --- | --- | --- |
-| Movimento | **`1 PA`** | por metro (espaço da malha) |
+| Movimento | **`1 PA`** | por metro (espaço da malha) — máx. `7 PA`/turno |
 | Ataque desarmado | **`1 PA`** | por ataque |
-| Ataque com arma leve (uma mão) | **`2 PA`** | por ataque |
-| Ataque com arma média (uma mão) | **`3 PA`** | por ataque |
-| Ataque com arma média (duas mãos) | **`4 PA`** | por ataque |
-| Ataque com arma pesada (duas mãos) | **`4 PA`** | por ataque |
+| Ataque com arma leve | **`2 PA`** | por ataque |
+| Ataque com arma média | **`4 PA`** | por ataque |
+| Ataque com arma pesada | **`6 PA`** | por ataque |
 | Entrar em postura defensiva (levantar guarda) sem estar engajado | **`2 PA`** | por guarda levantada |
 | Entrar em postura defensiva (levantar guarda) quando engajado | **`3 PA`** | por guarda levantada |
 | Forçar Posicionamento (aberto ou definido) | **`2 PA`** | por mudança de posicionamento |
@@ -46,6 +45,8 @@ atualizado-em: 2026-07-12
 | Ativar/usar uma habilidade | **`Varia`** | varia de acordo com a habilidade |
 
 \*Outros tipos de ação não previstos neste manual podem ter seu custo definido pelo narrador com base nas ações já definidas.
+
+> ✅ Rebalanceamento de 12/07/2026: PA inicial 7 → **10**; custo de ataque por peso passa a **leve `2 PA` / média `4 PA` / pesada `6 PA`** (o desarmado segue `1 PA`); o custo é pelo **peso da arma**, valendo igual para corpo a corpo e à distância — em armas versáteis a empunhadura muda só o dano, não o `PA`. As demais ações mantêm o custo. As **habilidades de custo fixo** serão rebalanceadas numa passada seguinte (ver [decisões — rebalanceamento de PA](../../notas-de-design/decisoes/2026-07-12-rebalanceamento-pa-analise.md)).
 
 ## Ações complexas
 

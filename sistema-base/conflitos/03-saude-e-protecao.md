@@ -4,7 +4,7 @@ tipo: regra
 cenario: base
 status: estavel
 tags: [saude, dano, cura, defesa, vida]
-atualizado-em: 2026-07-11
+atualizado-em: 2026-07-12
 ---
 
 # Saúde e Proteção
@@ -15,7 +15,7 @@ Ao ser atacado, um jogador que não esteja [desabilitado](#membro-desabilitado-i
 
 **Ser alvejado nas pernas ou braços não garante `vantagem`, porém se o inimigo mirar na sua cabeça ou tronco, ele terá `desvantagem` de acerto.**
 
-Armaduras, habilidades e a ação “entrar em defensiva” podem garantir vantagens adicionais de defesa ou redutores de dano caso acertado. Já as [aptidões](../conceitos/04-aptidoes.md) não concedem vantagem: elas permitem rerrolar o dado do teste ou do contrateste depois de conhecido o resultado. Vantagens de esquiva ou redutores de dano provenientes de armaduras são aplicadas em todos os membros do corpo.
+Armaduras, habilidades e a ação “entrar em defensiva” podem garantir vantagens adicionais de defesa ou redutores de dano caso acertado. Já as [aptidões](../conceitos/04-aptidoes.md) não concedem vantagem: elas permitem rerrolar o dado do teste ou do contrateste depois de conhecido o resultado. O **redutor de dano de uma armadura só se aplica se o golpe acertar uma das regiões que ela cobre** (ver [Proteções](../listas/protecoes-base.md)); vantagens de esquiva de outras fontes seguem suas próprias descrições.
 
 ## Corpo e vida
 
@@ -87,7 +87,7 @@ Se o jogador ganhar, **`1d4`** pontos de dano profundo são transformados em sup
 
 ## Penalidades por perda de vida
 
-A cada 10 pontos de dano total que um personagem tiver em sua ficha, ele perde o direito de utilizar 1 ponto de ação. **O mínimo que um personagem pode ter de `PA` é `2 PA`.**
+A cada 10 pontos de dano total que um personagem tiver em sua ficha, ele perde o direito de utilizar 1 ponto de ação. **O mínimo que um personagem pode ter de `PA` por turno é `3 PA`** (piso unificado — ver [Pontos de ação](../conceitos/07-pontos-de-acao.md)), a não ser que esteja inconsciente.
 
 Membros se tornam **incapacitados** se receberem 10 pontos de dano profundo. Isso significa que uma ação que dependa daquele membro será mais difícil de realizar. As consequências são:
 
