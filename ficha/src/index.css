@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 30% 98%;
+    --foreground: 20 14% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 20 14% 10%;
+    --primary: 350 75% 21%;          /* vinho "marca de sangue" */
+    --primary-foreground: 40 30% 97%;
+    --secondary: 40 20% 94%;
+    --secondary-foreground: 20 14% 15%;
+    --muted: 40 16% 93%;
+    --muted-foreground: 25 8% 40%;
+    --accent: 38 45% 60%;            /* dourado */
+    --accent-foreground: 20 14% 12%;
+    --border: 30 12% 85%;
+    --input: 30 12% 82%;
+    --ring: 350 75% 30%;
+    --radius: 0.6rem;
+  }
+
+  * {
+    border-color: hsl(var(--border));
+  }
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* ---------- Impressão A4 ---------- */
+@media print {
+  @page {
+    size: A4;
+    margin: 10mm;
+  }
+  html,
+  body {
+    background: #fff !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-page {
+    break-after: page;
+  }
+  .print-avoid-break {
+    break-inside: avoid;
+  }
+  /* garante que fundos/bordas apareçam na impressão */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}
+
+/* No modo "força A4" na tela, simula a folha para o usuário conferir antes de imprimir */
+.a4-preview .sheet {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 0 auto 8mm auto;
+  background: #fff;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.12);
+  padding: 10mm;
+}
