@@ -49,3 +49,10 @@ arquivos-alterados:
 
 ## A revisar no playtest
 - Balanceamento do encadeamento dano→fadiga→PA (pode punir rápido demais) — ver a decisão.
+
+## Adendo v0.10
+- **Contador de usos consumíveis** (regras vigentes): cada habilidade mostra, por nível,
+  os usos disponíveis/total em pips clicáveis (consumir/devolver). Novo campo
+  `usosGastosPorNivel` no modelo (migração preenche com zeros).
+- **Botão "Descanso"** no topo: recupera todas as aptidões (usado), devolve todos os usos de
+  habilidades e zera a fadiga (helper `descansar`). O antigo "zerar" da fadiga foi removido.

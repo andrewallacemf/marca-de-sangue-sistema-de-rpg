@@ -186,6 +186,51 @@ export function CaracteristicasSection({
                         </div>
                       ))}
                     </div>
+
+                    {c.usosPorNivel.some((u) => u > 0) && (
+                      <div className="mt-2 border-t pt-2">
+                        <Label>Usos disponíveis (clique p/ consumir)</Label>
+                        <div className="mt-1 flex flex-col gap-1">
+                          {c.usosPorNivel.map((total, ni) => {
+                            if (!total) return null;
+                            const gasto = c.usosGastosPorNivel[ni] || 0;
+                            const avail = total - gasto;
+                            return (
+                              <div key={ni} className="flex items-center gap-2">
+                                <span className="w-8 shrink-0 text-[10px] uppercase text-muted-foreground">
+                                  Nv{ni + 1}
+                                </span>
+                                <div className="flex flex-wrap gap-1">
+                                  {Array.from({ length: total }, (_, j) => {
+                                    const filled = j < avail;
+                                    return (
+                                      <button
+                                        key={j}
+                                        type="button"
+                                        title={filled ? "disponível (clique p/ consumir)" : "usado (clique p/ devolver)"}
+                                        onClick={() => {
+                                          const novoAvail = filled ? j : j + 1;
+                                          const arr = [...c.usosGastosPorNivel];
+                                          arr[ni] = total - novoAvail;
+                                          upd(i, { usosGastosPorNivel: arr });
+                                        }}
+                                        className={cn(
+                                          "h-5 w-5 rounded-[3px] border border-input",
+                                          filled ? "bg-primary" : "bg-transparent"
+                                        )}
+                                      />
+                                    );
+                                  })}
+                                </div>
+                                <span className="text-[11px] font-medium text-muted-foreground">
+                                  {avail}/{total}
+                                </span>
+                              </div>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    )}
                   </div>
                 ) : (
                   <div>

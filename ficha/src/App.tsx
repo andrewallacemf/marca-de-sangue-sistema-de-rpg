@@ -8,6 +8,7 @@ import {
   Swords,
   HeartPulse,
   BatteryLow,
+  BedDouble,
 } from "lucide-react";
 import {
   Button,
@@ -34,6 +35,7 @@ import {
   inconsciente,
   LS_KEY,
   MEMBROS,
+  descansar,
   migrarFicha,
   novoItem,
   paTotalComp,
@@ -192,6 +194,16 @@ export default function App() {
     }
   }
 
+  function descanso() {
+    if (
+      confirm(
+        "Descanso: recupera todas as aptidões, devolve todos os usos de habilidades e zera a fadiga. Continuar?"
+      )
+    ) {
+      setFicha((f) => descansar(f));
+    }
+  }
+
   const habCards = ficha.caracteristicas.filter((c) => c.tipo === "Habilidade" && c.nome.trim());
 
   // valores calculados automaticamente (campos travados)
@@ -259,6 +271,9 @@ export default function App() {
             <input ref={fileRef} type="file" accept=".json,application/json" className="hidden" onChange={carregar} />
             <Button size="sm" onClick={salvar}>
               <Save className="h-3.5 w-3.5" /> Salvar
+            </Button>
+            <Button variant="outline" size="sm" onClick={descanso} title="Recupera aptidões, usos de habilidades e zera a fadiga">
+              <BedDouble className="h-3.5 w-3.5" /> Descanso
             </Button>
             <Button variant={a4 ? "default" : "outline"} size="sm" onClick={() => setA4((s) => !s)}>
               A4
@@ -541,13 +556,9 @@ export default function App() {
                   <span className="text-sm text-muted-foreground">
                     / 50 · {penalidadeFadiga(ficha.fadiga, rulesVersion)}
                   </span>
-                  <button
-                    type="button"
-                    className="no-print ml-auto rounded-md border px-2 py-1 text-xs text-muted-foreground hover:bg-secondary"
-                    onClick={() => update("fadiga", 0)}
-                  >
-                    zerar (descanso)
-                  </button>
+                  <span className="no-print ml-auto text-[11px] text-muted-foreground">
+                    zera no “Descanso” (topo)
+                  </span>
                 </div>
                 <div className="flex flex-col gap-1">
                   {[0, 1].map((linha) => (
@@ -640,7 +651,7 @@ export default function App() {
           </div>
 
           <p className="no-print mt-4 text-center text-[11px] text-muted-foreground">
-            Marca de Sangue — ficha v0.9 ({rulesVersion === "vigente" ? "regras vigentes" : "regras alternativas"}).
+            Marca de Sangue — ficha v0.10 ({rulesVersion === "vigente" ? "regras vigentes" : "regras alternativas"}).
             Os dados ficam só no seu navegador; use “Salvar” para baixar um arquivo e “Carregar” para retomá-lo.
           </p>
         </div>

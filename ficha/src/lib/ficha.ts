@@ -35,6 +35,7 @@ export type CaracteristicaCard = {
   valorCompra: string;
   custoPA: string;
   usosPorNivel: number[]; // regras vigentes: quantos usos em cada nível (5 posições)
+  usosGastosPorNivel: number[]; // regras vigentes: quantos usos já consumidos em cada nível
   nivel: number; // regras alternativas: nível único da habilidade (1–5)
 };
 
@@ -222,6 +223,7 @@ export function novaCaracteristica(): CaracteristicaCard {
     valorCompra: "",
     custoPA: "",
     usosPorNivel: [0, 0, 0, 0, 0],
+    usosGastosPorNivel: [0, 0, 0, 0, 0],
     nivel: 1,
   };
 }
@@ -260,6 +262,19 @@ export function fichaVazia(): Ficha {
 
 export const LS_KEY = "marca-de-sangue-ficha:v1";
 
+/** Descanso: recupera tudo o que um descanso recupera —
+ *  zera a fadiga, devolve todos os usos de aptidões e todos os usos de habilidades. */
+export function descansar(f: Ficha): Ficha {
+  const aptidoes = { ...f.aptidoes };
+  for (const k of APT_KEYS) aptidoes[k] = { ...aptidoes[k], usado: "" };
+  return {
+    ...f,
+    fadiga: 0,
+    aptidoes,
+    caracteristicas: f.caracteristicas.map((c) => ({ ...c, usosGastosPorNivel: [0, 0, 0, 0, 0] })),
+  };
+}
+
 /** Mescla dados carregados com a ficha vazia e migra formatos antigos. */
 export function migrarFicha(data: unknown): Ficha {
   const base = fichaVazia();
@@ -290,6 +305,8 @@ export function migrarFicha(data: unknown): Ficha {
       }
     }
     while (c.usosPorNivel.length < 5) c.usosPorNivel.push(0);
+    if (!Array.isArray(c.usosGastosPorNivel)) c.usosGastosPorNivel = [0, 0, 0, 0, 0];
+    while (c.usosGastosPorNivel.length < 5) c.usosGastosPorNivel.push(0);
     if (typeof c.nivel !== "number") c.nivel = 1;
     delete c.niveis;
     return c;
