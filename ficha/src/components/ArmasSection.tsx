@@ -26,13 +26,13 @@ export function ArmasSection({
   ];
 
   return (
-    <Card className="lg:col-span-3">
+    <Card className="col-full lg:col-span-3">
       <CardHeader>
         <CardTitle className="flex items-center gap-1.5">
           <Swords className="h-4 w-4" /> Armas
         </CardTitle>
       </CardHeader>
-      <CardContent className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+      <CardContent className="armas-grid grid grid-cols-1 gap-4 lg:grid-cols-2">
         {armas.map((arma, i) => (
           <div key={i} className="flex flex-col gap-2 rounded-md border p-2 print-avoid-break">
             <div className="flex items-center gap-2">

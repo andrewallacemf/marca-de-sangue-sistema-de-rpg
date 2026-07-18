@@ -24,7 +24,7 @@ export function EquipamentosSection({
   }
 
   return (
-    <Card className="lg:col-span-2">
+    <Card className="col-full lg:col-span-2">
       <CardHeader>
         <CardTitle className="flex items-center gap-1.5">
           <Package className="h-4 w-4" /> Equipamentos

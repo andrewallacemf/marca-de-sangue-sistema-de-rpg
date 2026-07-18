@@ -54,21 +54,34 @@ export const Input = React.forwardRef<
 ));
 Input.displayName = "Input";
 
-export const Textarea = React.forwardRef<
-  HTMLTextAreaElement,
-  React.TextareaHTMLAttributes<HTMLTextAreaElement>
->(({ className, ...props }, ref) => (
-  <textarea
-    ref={ref}
-    className={cn(
-      "flex min-h-[70px] w-full rounded-md border border-input bg-transparent px-2 py-1 text-sm shadow-sm",
-      "placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring",
-      className
-    )}
-    {...props}
-  />
-));
-Textarea.displayName = "Textarea";
+export function Textarea({
+  className,
+  value,
+  ...props
+}: React.TextareaHTMLAttributes<HTMLTextAreaElement>) {
+  const ref = React.useRef<HTMLTextAreaElement>(null);
+  // cresce automaticamente até caber todo o conteúdo (evita corte na impressão)
+  React.useLayoutEffect(() => {
+    const el = ref.current;
+    if (el) {
+      el.style.height = "auto";
+      el.style.height = `${el.scrollHeight}px`;
+    }
+  }, [value]);
+  return (
+    <textarea
+      ref={ref}
+      value={value}
+      rows={2}
+      className={cn(
+        "flex min-h-[56px] w-full resize-none overflow-hidden rounded-md border border-input bg-transparent px-2 py-1 text-sm shadow-sm",
+        "placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring",
+        className
+      )}
+      {...props}
+    />
+  );
+}
 
 export function Label({ className, ...props }: React.LabelHTMLAttributes<HTMLLabelElement>) {
   return (

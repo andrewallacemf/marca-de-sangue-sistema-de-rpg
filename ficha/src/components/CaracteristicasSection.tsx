@@ -29,7 +29,7 @@ export function CaracteristicasSection({
   }
 
   return (
-    <Card className="lg:col-span-3">
+    <Card className="col-full lg:col-span-3">
       <CardHeader>
         <CardTitle className="flex items-center gap-1.5">
           <ScrollText className="h-4 w-4" /> Habilidades & traços (detalhado)

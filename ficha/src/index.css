@@ -33,38 +33,106 @@
   }
 }
 
-/* ---------- Impressão A4 ---------- */
+/* =====================================================================
+   Layout A4 — compartilhado entre a IMPRESSÃO real (@media print) e o
+   PREVIEW na tela (.a4-preview), para que um seja fiel ao outro.
+   ===================================================================== */
+
+/* cabeçalho por folha (aparece só no A4/impressão) */
+.print-header {
+  display: none;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  border-bottom: 1px solid hsl(var(--accent));
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+  font-size: 10pt;
+}
+.print-header .ph-nome {
+  font-weight: 700;
+  color: hsl(var(--primary));
+}
+.print-header .ph-marca {
+  color: hsl(var(--muted-foreground));
+  letter-spacing: 0.5px;
+}
+
+/* Grade da folha: 2 colunas fixas (não depende da largura da janela).
+   Aplicada no preview (.a4-preview) e na impressão (@media print, abaixo). */
+.a4-preview .sheet-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 4mm !important;
+  align-items: start;
+}
+.a4-preview .col-full {
+  grid-column: 1 / -1 !important;
+}
+.a4-preview .armas-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+}
+
+/* ---------- PREVIEW A4 na tela ---------- */
+.a4-preview {
+  background: hsl(var(--muted));
+}
+.a4-preview .sheet {
+  width: 210mm;
+  margin: 0 auto 8mm auto;
+  background: #fff;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.12);
+  padding: 12mm;
+}
+.a4-preview .print-header {
+  display: flex;
+}
+
+/* ---------- IMPRESSÃO real ---------- */
 @media print {
   @page {
     size: A4;
-    margin: 10mm;
+    margin: 12mm 10mm 14mm 10mm;
+  }
+  @page {
+    @bottom-right {
+      content: "pág. " counter(page);
+      font-size: 8pt;
+      color: #8a6d3b;
+    }
   }
   html,
   body {
     background: #fff !important;
+    font-size: 9.5pt;
   }
   .no-print {
     display: none !important;
   }
-  .print-page {
-    break-after: page;
+  .print-header {
+    display: flex;
+  }
+  .sheet-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 4mm !important;
+    align-items: start;
+  }
+  .col-full {
+    grid-column: 1 / -1 !important;
+  }
+  .armas-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
   .print-avoid-break {
     break-inside: avoid;
   }
-  /* garante que fundos/bordas apareçam na impressão */
+  .shadow-sm {
+    box-shadow: none !important;
+  }
+  /* fundos/bordas (dano, fadiga marcados) aparecem no papel */
   * {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
   }
-}
-
-/* No modo "força A4" na tela, simula a folha para o usuário conferir antes de imprimir */
-.a4-preview .sheet {
-  width: 210mm;
-  min-height: 297mm;
-  margin: 0 auto 8mm auto;
-  background: #fff;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.12);
-  padding: 10mm;
 }

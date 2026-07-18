@@ -23,7 +23,7 @@ export function ProtecoesSection({
   }
 
   return (
-    <Card className="lg:col-span-3">
+    <Card className="col-full lg:col-span-3">
       <CardHeader>
         <CardTitle className="flex items-center gap-1.5">
           <Shield className="h-4 w-4" /> Proteções

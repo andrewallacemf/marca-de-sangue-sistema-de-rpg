@@ -223,9 +223,15 @@ export default function App() {
 
       <main className={cn("mx-auto max-w-6xl px-4 py-4", a4 && "px-0")}>
         <div className={cn(a4 && "sheet")}>
-          <div className="grid grid-cols-1 gap-3 lg:grid-cols-3">
+          <div className="print-header">
+            <span className="ph-nome">{ficha.info.nome || "Personagem sem nome"}</span>
+            <span className="ph-marca">
+              Marca de Sangue · Ficha {rulesVersion === "vigente" ? "(regras vigentes)" : "(regras alternativas)"}
+            </span>
+          </div>
+          <div className="sheet-grid grid grid-cols-1 gap-3 lg:grid-cols-3">
             {/* Informações */}
-            <Card className="lg:col-span-2">
+            <Card className="col-full lg:col-span-2">
               <CardHeader>
                 <CardTitle>Informações</CardTitle>
               </CardHeader>
@@ -365,7 +371,7 @@ export default function App() {
             </Card>
 
             {/* Habilidades — referência rápida (resumo automático dos cards) */}
-            <Card className="lg:col-span-3">
+            <Card className="col-full lg:col-span-3">
               <CardHeader>
                 <CardTitle className="flex items-center gap-1.5">
                   <Swords className="h-4 w-4" /> Habilidades — referência rápida
@@ -437,7 +443,7 @@ export default function App() {
             <ProtecoesSection protecoes={ficha.protecoes} setProtecoes={(v) => update("protecoes", v)} />
 
             {/* Saúde */}
-            <Card className="lg:col-span-3">
+            <Card className="col-full lg:col-span-3">
               <CardHeader>
                 <CardTitle className="flex items-center gap-1.5">
                   <HeartPulse className="h-4 w-4" /> Saúde — 60 PV (10 por membro)
@@ -476,7 +482,7 @@ export default function App() {
             </Card>
 
             {/* Fadiga — destaque, perto da Saúde */}
-            <Card className="lg:col-span-3">
+            <Card className="col-full lg:col-span-3">
               <CardHeader>
                 <CardTitle className="flex items-center gap-1.5">
                   <BatteryLow className="h-4 w-4" /> Fadiga
@@ -543,7 +549,7 @@ export default function App() {
             />
 
             {/* Anotações */}
-            <Card className="lg:col-span-1">
+            <Card className="col-full lg:col-span-1">
               <CardHeader>
                 <CardTitle>Anotações</CardTitle>
               </CardHeader>
@@ -561,7 +567,7 @@ export default function App() {
           </div>
 
           <p className="mt-4 text-center text-[11px] text-muted-foreground">
-            Marca de Sangue — ficha v0.5 ({rulesVersion === "vigente" ? "regras vigentes" : "regras alternativas"}).
+            Marca de Sangue — ficha v0.6 ({rulesVersion === "vigente" ? "regras vigentes" : "regras alternativas"}).
             Os dados ficam só no seu navegador; use “Salvar” para baixar um arquivo e “Carregar” para retomá-lo.
           </p>
         </div>
