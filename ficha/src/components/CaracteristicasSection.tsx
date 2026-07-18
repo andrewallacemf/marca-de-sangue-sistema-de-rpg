@@ -11,14 +11,16 @@ import {
   Textarea,
 } from "@/components/ui";
 import { cn } from "@/lib/utils";
-import { novaCaracteristica, type CaracteristicaCard } from "@/lib/ficha";
+import { novaCaracteristica, type CaracteristicaCard, type RulesVersion } from "@/lib/ficha";
 
 export function CaracteristicasSection({
   itens,
   setItens,
+  rulesVersion,
 }: {
   itens: CaracteristicaCard[];
   setItens: (v: CaracteristicaCard[]) => void;
+  rulesVersion: RulesVersion;
 }) {
   function upd(i: number, patch: Partial<CaracteristicaCard>) {
     const arr = [...itens];
@@ -96,28 +98,48 @@ export function CaracteristicasSection({
                 </Field>
               </div>
 
-              <div>
-                <Label>Níveis</Label>
-                <div className="mt-1 flex gap-1">
-                  {c.niveis.map((on, ni) => (
-                    <button
-                      key={ni}
-                      type="button"
-                      onClick={() => {
-                        const niveis = [...c.niveis];
-                        niveis[ni] = !on;
-                        upd(i, { niveis });
-                      }}
-                      className={cn(
-                        "h-6 flex-1 rounded-[4px] border text-[10px] font-medium",
-                        on ? "bg-primary text-primary-foreground" : "hover:bg-secondary"
-                      )}
-                    >
-                      Nv{ni + 1}
-                    </button>
-                  ))}
-                </div>
-              </div>
+              {c.tipo === "Habilidade" &&
+                (rulesVersion === "vigente" ? (
+                  <div>
+                    <Label>Usos por nível</Label>
+                    <div className="mt-1 grid grid-cols-5 gap-1">
+                      {[0, 1, 2, 3, 4].map((ni) => (
+                        <div key={ni} className="flex flex-col items-center gap-0.5">
+                          <span className="text-[9px] uppercase text-muted-foreground">Nv{ni + 1}</span>
+                          <Input
+                            className="h-7 px-1 text-center"
+                            inputMode="numeric"
+                            value={c.usosPorNivel[ni] ? String(c.usosPorNivel[ni]) : ""}
+                            onChange={(e) => {
+                              const usosPorNivel = [...c.usosPorNivel];
+                              usosPorNivel[ni] = parseInt(e.target.value, 10) || 0;
+                              upd(i, { usosPorNivel });
+                            }}
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ) : (
+                  <div>
+                    <Label>Nível</Label>
+                    <div className="mt-1 flex gap-1">
+                      {[1, 2, 3, 4, 5].map((n) => (
+                        <button
+                          key={n}
+                          type="button"
+                          onClick={() => upd(i, { nivel: n })}
+                          className={cn(
+                            "h-7 flex-1 rounded-[4px] border text-[11px] font-medium",
+                            c.nivel === n ? "bg-primary text-primary-foreground" : "hover:bg-secondary"
+                          )}
+                        >
+                          Nv{n}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                ))}
             </div>
           ))}
         </div>

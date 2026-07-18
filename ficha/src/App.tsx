@@ -27,6 +27,7 @@ import {
   fichaVazia,
   LS_KEY,
   MEMBROS,
+  migrarFicha,
   PROP_KEYS,
   SCHEMA_VERSION,
   type Ficha,
@@ -99,7 +100,7 @@ export default function App() {
       if (raw) {
         const parsed = JSON.parse(raw);
         if (parsed?.rulesVersion) setTimeout(() => setRulesVersion(parsed.rulesVersion), 0);
-        if (parsed?.data) return { ...fichaVazia(), ...parsed.data };
+        if (parsed?.data) return migrarFicha(parsed.data);
       }
     } catch {
       /* ignora */
@@ -152,7 +153,7 @@ export default function App() {
         if (parsed?.rulesVersion === "alternativa" || parsed?.rulesVersion === "vigente") {
           setRulesVersion(parsed.rulesVersion);
         }
-        if (parsed?.data) setFicha({ ...fichaVazia(), ...parsed.data });
+        if (parsed?.data) setFicha(migrarFicha(parsed.data));
       } catch {
         alert("Não consegui ler esse arquivo de ficha.");
       }
@@ -168,6 +169,7 @@ export default function App() {
   }
 
   const limiar = 10;
+  const habCards = ficha.caracteristicas.filter((c) => c.tipo === "Habilidade" && c.nome.trim());
 
   return (
     <div className={cn("min-h-screen pb-16", a4 && "a4-preview bg-muted")}>
@@ -359,57 +361,69 @@ export default function App() {
               </CardContent>
             </Card>
 
-            {/* Habilidades (grade rápida) */}
+            {/* Habilidades — referência rápida (resumo automático dos cards) */}
             <Card className="lg:col-span-3">
               <CardHeader>
                 <CardTitle className="flex items-center gap-1.5">
                   <Swords className="h-4 w-4" /> Habilidades — referência rápida
                   <span className="ml-2 text-[11px] font-normal normal-case text-muted-foreground">
-                    marque os níveis; o detalhe fica nos cards mais abaixo
+                    {rulesVersion === "vigente"
+                      ? "resumo automático dos cards (usos por nível)"
+                      : "resumo automático dos cards (nível)"}
                   </span>
                 </CardTitle>
               </CardHeader>
               <CardContent className="flex flex-col gap-1">
-                <div className="flex items-center gap-2 pb-1 text-[11px] uppercase text-muted-foreground">
-                  <span className="flex-1">Nome</span>
-                  <span className="flex w-40 justify-between px-1">
-                    {[1, 2, 3, 4, 5].map((n) => (
-                      <span key={n} className="w-6 text-center">
-                        Nv{n}
+                {habCards.length === 0 ? (
+                  <p className="text-sm text-muted-foreground">
+                    Adicione habilidades nos cards de “Habilidades &amp; traços” — elas aparecem aqui automaticamente.
+                  </p>
+                ) : (
+                  <>
+                    <div className="flex items-center gap-2 pb-1 text-[11px] uppercase text-muted-foreground">
+                      <span className="flex-1">Nome</span>
+                      <span className="flex w-40 justify-between px-1">
+                        {[1, 2, 3, 4, 5].map((n) => (
+                          <span key={n} className="w-6 text-center">
+                            Nv{n}
+                          </span>
+                        ))}
                       </span>
-                    ))}
-                  </span>
-                </div>
-                {ficha.habilidades.map((h, i) => (
-                  <div key={i} className="flex items-center gap-2">
-                    <Input
-                      className="h-7 flex-1"
-                      placeholder="—"
-                      value={h.nome}
-                      onChange={(e) => {
-                        const arr = [...ficha.habilidades];
-                        arr[i] = { ...h, nome: e.target.value };
-                        update("habilidades", arr);
-                      }}
-                    />
-                    <div className="flex w-40 justify-between px-1">
-                      {h.niveis.map((on, ni) => (
-                        <button
-                          key={ni}
-                          type="button"
-                          onClick={() => {
-                            const arr = [...ficha.habilidades];
-                            const niveis = [...h.niveis];
-                            niveis[ni] = !on;
-                            arr[i] = { ...h, niveis };
-                            update("habilidades", arr);
-                          }}
-                          className={cn("h-5 w-6 rounded-[3px] border", on ? "bg-primary" : "bg-transparent hover:bg-secondary")}
-                        />
-                      ))}
                     </div>
-                  </div>
-                ))}
+                    {habCards.map((h, i) => (
+                      <div key={i} className="flex items-center gap-2 border-t pt-1 first:border-0 first:pt-0">
+                        <span className="flex-1 truncate text-sm">{h.nome}</span>
+                        <div className="flex w-40 justify-between px-1">
+                          {[0, 1, 2, 3, 4].map((ni) => {
+                            if (rulesVersion === "vigente") {
+                              const u = h.usosPorNivel[ni] || 0;
+                              return (
+                                <span
+                                  key={ni}
+                                  className={cn(
+                                    "w-6 text-center text-sm",
+                                    u ? "font-semibold text-primary" : "text-muted-foreground/40"
+                                  )}
+                                >
+                                  {u || "·"}
+                                </span>
+                              );
+                            }
+                            const on = h.nivel === ni + 1;
+                            return (
+                              <span
+                                key={ni}
+                                className={cn("w-6 text-center", on ? "font-bold text-primary" : "text-muted-foreground/40")}
+                              >
+                                {on ? "●" : "·"}
+                              </span>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    ))}
+                  </>
+                )}
               </CardContent>
             </Card>
 
@@ -582,11 +596,15 @@ export default function App() {
             </Card>
 
             {/* Habilidades & traços detalhados */}
-            <CaracteristicasSection itens={ficha.caracteristicas} setItens={(v) => update("caracteristicas", v)} />
+            <CaracteristicasSection
+              itens={ficha.caracteristicas}
+              setItens={(v) => update("caracteristicas", v)}
+              rulesVersion={rulesVersion}
+            />
           </div>
 
           <p className="mt-4 text-center text-[11px] text-muted-foreground">
-            Marca de Sangue — ficha v0.2 ({rulesVersion === "vigente" ? "regras vigentes" : "regras alternativas"}).
+            Marca de Sangue — ficha v0.4 ({rulesVersion === "vigente" ? "regras vigentes" : "regras alternativas"}).
             Os dados ficam só no seu navegador; use “Salvar” para baixar um arquivo e “Carregar” para retomá-lo.
           </p>
         </div>

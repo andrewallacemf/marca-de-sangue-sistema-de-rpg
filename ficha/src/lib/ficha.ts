@@ -25,8 +25,6 @@ export type Protecao = {
   durabilidade: string;
 };
 
-export type HabilidadeGrid = { nome: string; niveis: boolean[] };
-
 export type CaracteristicaCard = {
   tipo: "Habilidade" | "Traço";
   nome: string;
@@ -35,7 +33,8 @@ export type CaracteristicaCard = {
   atributo: string;
   valorCompra: string;
   custoPA: string;
-  niveis: boolean[];
+  usosPorNivel: number[]; // regras vigentes: quantos usos em cada nível (5 posições)
+  nivel: number; // regras alternativas: nível único da habilidade (1–5)
 };
 
 export type ItemEquip = {
@@ -66,7 +65,6 @@ export type Ficha = {
     outros: string;
     total: string;
   };
-  habilidades: HabilidadeGrid[];
   armas: Arma[];
   protecoes: Protecao[];
   saude: Record<MembroKey, number[]>; // 0 vazio · 1 superficial · 2 profundo · 3 permanente
@@ -124,7 +122,8 @@ export function novaCaracteristica(): CaracteristicaCard {
     atributo: "",
     valorCompra: "",
     custoPA: "",
-    niveis: [false, false, false, false, false],
+    usosPorNivel: [0, 0, 0, 0, 0],
+    nivel: 1,
   };
 }
 
@@ -139,10 +138,6 @@ export function fichaVazia(): Ficha {
       social: { total: "", usado: "" },
     },
     pa: { base: "10", redArmadura: "", redDano: "", redCarga: "", outros: "", total: "" },
-    habilidades: Array.from({ length: 8 }, () => ({
-      nome: "",
-      niveis: [false, false, false, false, false],
-    })),
     armas: [novaArma(), novaArma()],
     protecoes: [novaProtecao("Superior"), novaProtecao("Inferior"), novaProtecao("Escudo")],
     saude: Object.fromEntries(MEMBROS.map((m) => [m.key, Array(10).fill(0)])) as Record<
@@ -165,3 +160,35 @@ export function fichaVazia(): Ficha {
 }
 
 export const LS_KEY = "marca-de-sangue-ficha:v1";
+
+/** Mescla dados carregados com a ficha vazia e migra formatos antigos. */
+export function migrarFicha(data: unknown): Ficha {
+  const base = fichaVazia();
+  const d = (data ?? {}) as Record<string, unknown>;
+  const f: Ficha = { ...base, ...(d as Partial<Ficha>) };
+
+  const cards = Array.isArray(d.caracteristicas) ? (d.caracteristicas as unknown[]) : [];
+  f.caracteristicas = cards.map((raw) => {
+    const rawObj = (raw ?? {}) as Record<string, unknown>;
+    const c = { ...novaCaracteristica(), ...rawObj } as CaracteristicaCard & { niveis?: boolean[] };
+    // decide pela forma do dado BRUTO (não pelo default que acabamos de aplicar)
+    if (!Array.isArray(rawObj.usosPorNivel)) {
+      if (Array.isArray(rawObj.niveis)) {
+        const niveis = rawObj.niveis as boolean[];
+        c.usosPorNivel = niveis.map((b) => (b ? 1 : 0));
+        const idx = niveis.lastIndexOf(true);
+        c.nivel = idx >= 0 ? idx + 1 : 1;
+      } else {
+        c.usosPorNivel = [0, 0, 0, 0, 0];
+      }
+    }
+    while (c.usosPorNivel.length < 5) c.usosPorNivel.push(0);
+    if (typeof c.nivel !== "number") c.nivel = 1;
+    delete c.niveis;
+    return c;
+  });
+
+  // remove grade de habilidades legada (agora derivada dos cards)
+  delete (f as Record<string, unknown>).habilidades;
+  return f;
+}
