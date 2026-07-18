@@ -70,17 +70,17 @@ function TotalUsadoRow({
   onChange: (v: TotalUsado) => void;
 }) {
   return (
-    <div className="flex items-center gap-2">
-      <span className="w-16 text-sm">{label}</span>
+    <div className="grid grid-cols-[4rem_1fr_auto_1fr] items-center gap-2">
+      <span className="text-sm">{label}</span>
       <Input
-        className="h-7 w-14 text-center"
+        className="h-7 text-center"
         placeholder="tot."
         value={value.total}
         onChange={(e) => onChange({ ...value, total: e.target.value })}
       />
-      <span className="text-muted-foreground">/</span>
+      <span className="text-center text-muted-foreground">/</span>
       <Input
-        className="h-7 w-14 text-center"
+        className="h-7 text-center"
         placeholder="usad."
         value={value.usado}
         onChange={(e) => onChange({ ...value, usado: e.target.value })}
@@ -240,22 +240,29 @@ export default function App() {
               <CardHeader>
                 <CardTitle>Experiência & características</CardTitle>
               </CardHeader>
-              <CardContent className="grid grid-cols-2 gap-2">
-                <Field label="Exp. base — total">
-                  <Input value={ficha.exp.baseTotal} onChange={(e) => update("exp", { ...ficha.exp, baseTotal: e.target.value })} />
-                </Field>
-                <Field label="Exp. base — usada">
-                  <Input value={ficha.exp.baseUsada} onChange={(e) => update("exp", { ...ficha.exp, baseUsada: e.target.value })} />
-                </Field>
-                <Field label="Aptidões">
-                  <Input value={ficha.exp.qtdAptidoes} onChange={(e) => update("exp", { ...ficha.exp, qtdAptidoes: e.target.value })} />
-                </Field>
-                <Field label="Habilidades">
-                  <Input value={ficha.exp.qtdHabilidades} onChange={(e) => update("exp", { ...ficha.exp, qtdHabilidades: e.target.value })} />
-                </Field>
-                <Field label="Traços" className="col-span-2">
-                  <Input value={ficha.exp.qtdTracos} onChange={(e) => update("exp", { ...ficha.exp, qtdTracos: e.target.value })} />
-                </Field>
+              <CardContent className="flex flex-col gap-3">
+                <div className="grid grid-cols-2 gap-2">
+                  <Field label="Exp. base — total">
+                    <Input value={ficha.exp.baseTotal} onChange={(e) => update("exp", { ...ficha.exp, baseTotal: e.target.value })} />
+                  </Field>
+                  <Field label="Exp. base — usada">
+                    <Input value={ficha.exp.baseUsada} onChange={(e) => update("exp", { ...ficha.exp, baseUsada: e.target.value })} />
+                  </Field>
+                </div>
+                <div>
+                  <Label className="mb-1 block">Características compradas</Label>
+                  <div className="grid grid-cols-3 gap-2">
+                    <Field label="Aptidões">
+                      <Input value={ficha.exp.qtdAptidoes} onChange={(e) => update("exp", { ...ficha.exp, qtdAptidoes: e.target.value })} />
+                    </Field>
+                    <Field label="Habilidades">
+                      <Input value={ficha.exp.qtdHabilidades} onChange={(e) => update("exp", { ...ficha.exp, qtdHabilidades: e.target.value })} />
+                    </Field>
+                    <Field label="Traços">
+                      <Input value={ficha.exp.qtdTracos} onChange={(e) => update("exp", { ...ficha.exp, qtdTracos: e.target.value })} />
+                    </Field>
+                  </div>
+                </div>
               </CardContent>
             </Card>
 
@@ -525,7 +532,7 @@ export default function App() {
                   </span>
                 </CardTitle>
               </CardHeader>
-              <CardContent className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
+              <CardContent className="grid grid-cols-1 gap-2 sm:grid-cols-2">
                 {MEMBROS.map((m) => (
                   <div key={m.key} className="flex items-center justify-between gap-2 rounded-md border p-2">
                     <span className="flex items-center gap-1.5 text-sm font-medium">
