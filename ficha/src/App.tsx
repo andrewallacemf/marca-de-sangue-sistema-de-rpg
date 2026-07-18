@@ -23,6 +23,7 @@ import {
 import { cn } from "@/lib/utils";
 import { EquipamentosSection } from "@/components/EquipamentosSection";
 import { CaracteristicasSection } from "@/components/CaracteristicasSection";
+import { ProtecoesSection } from "@/components/ProtecoesSection";
 import {
   fichaVazia,
   LS_KEY,
@@ -36,6 +37,14 @@ import {
 } from "@/lib/ficha";
 
 /* ============================ Componentes auxiliares ============================ */
+
+function penalidadeFadiga(f: number, rv: RulesVersion): string {
+  if (f >= 50) return "inconsciente";
+  let p = 0;
+  if (rv === "vigente") p = f >= 10 ? Math.floor((f - 10) / 5) + 1 : 0;
+  else p = f > 10 ? Math.floor((f - 11) / 5) + 1 : 0;
+  return p > 0 ? `−${p} PA` : "sem penalidade";
+}
 
 function DamageCell({ state, onClick }: { state: number; onClick: () => void }) {
   const styles = [
@@ -168,7 +177,6 @@ export default function App() {
     }
   }
 
-  const limiar = 10;
   const habCards = ficha.caracteristicas.filter((c) => c.tipo === "Habilidade" && c.nome.trim());
 
   return (
@@ -317,47 +325,42 @@ export default function App() {
               </CardContent>
             </Card>
 
-            {/* Fadiga & guardas */}
+            {/* Guardas */}
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center gap-1.5">
-                  <BatteryLow className="h-4 w-4" /> Fadiga & guardas
+                  <Shield className="h-4 w-4" /> Guardas
                 </CardTitle>
               </CardHeader>
-              <CardContent className="flex flex-col gap-2">
-                <Field label="Guardas levantadas">
-                  <Input className="w-20" value={ficha.guardas} onChange={(e) => update("guardas", e.target.value)} />
-                </Field>
-                <div>
-                  <Label>
-                    Fadiga: {ficha.fadiga}
-                    {rulesVersion === "alternativa"
-                      ? ` (livre até ${limiar}; −1 PA a cada 5 acima)`
-                      : " (−1 PA a cada 5 a partir de 10; 50 = inconsciente)"}
-                  </Label>
-                  <div className="mt-1 flex flex-wrap gap-0.5">
-                    {Array.from({ length: 50 }, (_, i) => i + 1).map((n) => {
-                      const filled = n <= ficha.fadiga;
-                      const isThreshold =
-                        rulesVersion === "alternativa"
-                          ? n > limiar && (n - limiar) % 5 === 0
-                          : n >= 10 && n % 5 === 0;
-                      return (
-                        <button
-                          key={n}
-                          type="button"
-                          onClick={() => update("fadiga", ficha.fadiga === n ? n - 1 : n)}
-                          title={`${n}`}
-                          className={cn(
-                            "h-4 w-4 rounded-[2px] border text-[8px] leading-none",
-                            filled ? "bg-primary" : "bg-transparent",
-                            isThreshold && "border-accent border-2"
-                          )}
-                        />
-                      );
-                    })}
-                  </div>
+              <CardContent>
+                <Label>Guardas levantadas</Label>
+                <div className="mt-1 flex items-center gap-2">
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    className="no-print"
+                    onClick={() => update("guardas", String(Math.max(0, (parseInt(ficha.guardas, 10) || 0) - 1)))}
+                  >
+                    −
+                  </Button>
+                  <Input
+                    className="w-16 text-center text-lg font-semibold"
+                    inputMode="numeric"
+                    value={ficha.guardas}
+                    onChange={(e) => update("guardas", e.target.value)}
+                  />
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    className="no-print"
+                    onClick={() => update("guardas", String((parseInt(ficha.guardas, 10) || 0) + 1))}
+                  >
+                    +
+                  </Button>
                 </div>
+                <p className="mt-2 text-[11px] text-muted-foreground">
+                  Abaixe conforme recebe ataques, até chegar a zero.
+                </p>
               </CardContent>
             </Card>
 
@@ -493,48 +496,8 @@ export default function App() {
               </Card>
             ))}
 
-            {/* Proteções */}
-            <Card className="lg:col-span-1">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-1.5">
-                  <Shield className="h-4 w-4" /> Proteções
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="flex flex-col gap-2">
-                <div className="flex gap-1 text-[10px] uppercase text-muted-foreground">
-                  <span className="flex-1">Espaço / tipo</span>
-                  <span className="w-10 text-center">R.PA</span>
-                  <span className="w-10 text-center">R.Dano</span>
-                  <span className="w-10 text-center">Durab.</span>
-                </div>
-                {ficha.protecoes.map((p, i) => (
-                  <div key={i} className="flex gap-1">
-                    <Input
-                      className="h-7 flex-1"
-                      placeholder={p.local}
-                      value={p.tipo}
-                      onChange={(e) => {
-                        const arr = [...ficha.protecoes];
-                        arr[i] = { ...p, tipo: e.target.value };
-                        update("protecoes", arr);
-                      }}
-                    />
-                    {(["redPA", "redDano", "durabilidade"] as const).map((campo) => (
-                      <Input
-                        key={campo}
-                        className="h-7 w-10 text-center"
-                        value={p[campo]}
-                        onChange={(e) => {
-                          const arr = [...ficha.protecoes];
-                          arr[i] = { ...p, [campo]: e.target.value };
-                          update("protecoes", arr);
-                        }}
-                      />
-                    ))}
-                  </div>
-                ))}
-              </CardContent>
-            </Card>
+            {/* Proteções (dinâmicas, com regiões cobertas) */}
+            <ProtecoesSection protecoes={ficha.protecoes} setProtecoes={(v) => update("protecoes", v)} />
 
             {/* Saúde */}
             <Card className="lg:col-span-3">
@@ -575,6 +538,63 @@ export default function App() {
               </CardContent>
             </Card>
 
+            {/* Fadiga — destaque, perto da Saúde */}
+            <Card className="lg:col-span-3">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-1.5">
+                  <BatteryLow className="h-4 w-4" /> Fadiga
+                  <span className="ml-2 text-[11px] font-normal normal-case text-muted-foreground">
+                    {rulesVersion === "alternativa"
+                      ? "livre até 10; −1 PA a cada 5 acima; 50 = inconsciente"
+                      : "−1 PA a cada 5 a partir de 10; 50 = inconsciente"}
+                  </span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="mb-3 flex items-baseline gap-3">
+                  <span className="text-3xl font-bold leading-none text-primary">{ficha.fadiga}</span>
+                  <span className="text-sm text-muted-foreground">
+                    / 50 · {penalidadeFadiga(ficha.fadiga, rulesVersion)}
+                  </span>
+                  <button
+                    type="button"
+                    className="no-print ml-auto rounded-md border px-2 py-1 text-xs text-muted-foreground hover:bg-secondary"
+                    onClick={() => update("fadiga", 0)}
+                  >
+                    zerar (descanso)
+                  </button>
+                </div>
+                <div className="flex flex-wrap gap-x-4 gap-y-3">
+                  {[0, 1, 2, 3, 4].map((dec) => (
+                    <div key={dec} className="flex flex-col items-center gap-1">
+                      <div className="flex items-center gap-1">
+                        {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((a) => {
+                          const n = dec * 10 + a + 1;
+                          const filled = n <= ficha.fadiga;
+                          return (
+                            <span key={a} className="flex">
+                              {a === 5 && <span className="w-2" />}
+                              <button
+                                type="button"
+                                onClick={() => update("fadiga", ficha.fadiga === n ? n - 1 : n)}
+                                title={`${n}`}
+                                className={cn(
+                                  "h-6 w-6 rounded-[3px] border text-[9px] leading-none",
+                                  filled ? "bg-primary text-primary-foreground" : "bg-transparent hover:bg-secondary",
+                                  n % 5 === 0 && "border-accent"
+                                )}
+                              />
+                            </span>
+                          );
+                        })}
+                      </div>
+                      <span className="text-[11px] font-semibold text-muted-foreground">{dec * 10 + 10}</span>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+
             {/* Equipamentos / carga / tesouro */}
             <EquipamentosSection
               equipamentos={ficha.equipamentos}
@@ -604,7 +624,7 @@ export default function App() {
           </div>
 
           <p className="mt-4 text-center text-[11px] text-muted-foreground">
-            Marca de Sangue — ficha v0.4 ({rulesVersion === "vigente" ? "regras vigentes" : "regras alternativas"}).
+            Marca de Sangue — ficha v0.5 ({rulesVersion === "vigente" ? "regras vigentes" : "regras alternativas"}).
             Os dados ficam só no seu navegador; use “Salvar” para baixar um arquivo e “Carregar” para retomá-lo.
           </p>
         </div>

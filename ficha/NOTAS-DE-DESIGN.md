@@ -29,6 +29,17 @@ detectou e o que o André apontou. Serve de checklist para o passe de robustez.
 7. **Traços não têm níveis/usos.** Nos cards, quando tipo = Traço, esconder a área de
    níveis/usos.
 
+## Fadiga & guardas / Proteções (RESOLVIDO na v0.5)
+
+- **[RESOLVIDO] Fadiga com importância.** Seção própria e destacada logo abaixo da Saúde:
+  valor grande + penalidade de PA calculada, caixas maiores (como as da Saúde), agrupadas
+  de 10 em 10 com separação de 5 em 5 e rótulos (10/20/30/40/50), botão "zerar (descanso)".
+- **[RESOLVIDO] Guardas** virou um contador simples (+/−) — abaixa conforme recebe ataques.
+- **[RESOLVIDO] Proteções dinâmicas.** Adicionar/remover quantas quiser (≥6); cada peça tem
+  **nome**, **regiões cobertas** (toggles dos 6 membros), redutor de PA (vale por estar
+  usando), redutor de dano e durabilidade (só quando acertam região coberta). Migração do
+  formato antigo incluída.
+
 ## Impressão / A4 (a implementar)
 
 8. **Preview A4 ≠ impressão real.** O `lg:` do Tailwind responde à largura da janela, não

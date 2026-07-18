@@ -18,11 +18,11 @@ export type Arma = {
 };
 
 export type Protecao = {
-  local: string;
-  tipo: string;
+  nome: string;
   redPA: string;
   redDano: string;
   durabilidade: string;
+  regioes: MembroKey[]; // regiões do corpo que a peça cobre
 };
 
 export type CaracteristicaCard = {
@@ -81,14 +81,14 @@ export const PROP_KEYS = ["ARRE", "AGAR", "CORT", "CONT", "DEFL", "PERF", "PROJ"
 
 export type MembroKey = "cabeca" | "tronco" | "bracoE" | "bracoD" | "pernaE" | "pernaD";
 
-/** Ordem de exibição + número do d6 de acerto aleatório (ataque descuidado). */
-export const MEMBROS: { key: MembroKey; label: string; d6: number }[] = [
-  { key: "cabeca", label: "Cabeça", d6: 1 },
-  { key: "tronco", label: "Tronco", d6: 4 },
-  { key: "bracoD", label: "Braço direito", d6: 2 },
-  { key: "bracoE", label: "Braço esquerdo", d6: 5 },
-  { key: "pernaD", label: "Perna direita", d6: 6 },
-  { key: "pernaE", label: "Perna esquerda", d6: 3 },
+/** Ordem de exibição + número do d6 de acerto aleatório (ataque descuidado) + abreviação. */
+export const MEMBROS: { key: MembroKey; label: string; d6: number; abbr: string }[] = [
+  { key: "cabeca", label: "Cabeça", d6: 1, abbr: "Cab" },
+  { key: "tronco", label: "Tronco", d6: 4, abbr: "Tro" },
+  { key: "bracoD", label: "Braço direito", d6: 2, abbr: "BD" },
+  { key: "bracoE", label: "Braço esquerdo", d6: 5, abbr: "BE" },
+  { key: "pernaD", label: "Perna direita", d6: 6, abbr: "PD" },
+  { key: "pernaE", label: "Perna esquerda", d6: 3, abbr: "PE" },
 ];
 
 export function novaArma(): Arma {
@@ -105,8 +105,8 @@ export function novaArma(): Arma {
   };
 }
 
-export function novaProtecao(local: string): Protecao {
-  return { local, tipo: "", redPA: "", redDano: "", durabilidade: "" };
+export function novaProtecao(): Protecao {
+  return { nome: "", redPA: "", redDano: "", durabilidade: "", regioes: [] };
 }
 
 export function novoItem(): ItemEquip {
@@ -139,7 +139,7 @@ export function fichaVazia(): Ficha {
     },
     pa: { base: "10", redArmadura: "", redDano: "", redCarga: "", outros: "", total: "" },
     armas: [novaArma(), novaArma()],
-    protecoes: [novaProtecao("Superior"), novaProtecao("Inferior"), novaProtecao("Escudo")],
+    protecoes: Array.from({ length: 4 }, novaProtecao),
     saude: Object.fromEntries(MEMBROS.map((m) => [m.key, Array(10).fill(0)])) as Record<
       MembroKey,
       number[]
@@ -187,6 +187,22 @@ export function migrarFicha(data: unknown): Ficha {
     delete c.niveis;
     return c;
   });
+
+  // proteções: formato antigo {local,tipo,...} → {nome, regioes[], ...}
+  const prots = Array.isArray(d.protecoes) ? (d.protecoes as unknown[]) : [];
+  if (prots.length) {
+    f.protecoes = prots.map((raw) => {
+      const p = { ...novaProtecao(), ...(raw as Record<string, unknown>) } as Protecao & {
+        local?: string;
+        tipo?: string;
+      };
+      if (!p.nome) p.nome = p.tipo || p.local || "";
+      if (!Array.isArray(p.regioes)) p.regioes = [];
+      delete p.local;
+      delete p.tipo;
+      return p;
+    });
+  }
 
   // remove grade de habilidades legada (agora derivada dos cards)
   delete (f as Record<string, unknown>).habilidades;
