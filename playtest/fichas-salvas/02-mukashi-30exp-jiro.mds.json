@@ -2,7 +2,7 @@
   "app": "marca-de-sangue-ficha",
   "schemaVersion": 1,
   "rulesVersion": "vigente",
-  "salvoEm": "2026-07-18T01:06:21.023753",
+  "salvoEm": "2026-07-18T10:38:25.516315",
   "data": {
     "info": {
       "nome": "Jiro, o Arqueiro Yumi",
@@ -229,7 +229,7 @@
         "efeito": "Mantém o alvo à distância ignorando a desvantagem de ataques múltiplos.",
         "requisitos": "",
         "atributo": "Ágil",
-        "valorCompra": "6 exp.",
+        "valorCompra": "2 exp.",
         "custoPA": "1 PA",
         "usosPorNivel": [
           0,
@@ -246,7 +246,7 @@
         "efeito": "Aumenta a área de alcance ideal da arma à distância.",
         "requisitos": "",
         "atributo": "Ágil",
-        "valorCompra": "4 exp.",
+        "valorCompra": "2 exp.",
         "custoPA": "2 PA + PA da arma",
         "usosPorNivel": [
           0,
@@ -297,7 +297,7 @@
         "efeito": "Vê quanto dano o oponente recebeu em partes do corpo à escolha.",
         "requisitos": "",
         "atributo": "Mental",
-        "valorCompra": "2 exp.",
+        "valorCompra": "1 exp.",
         "custoPA": "1 PA",
         "usosPorNivel": [
           0,

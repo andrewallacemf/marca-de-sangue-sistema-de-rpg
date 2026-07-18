@@ -5,3 +5,4 @@ export * from "./label";
 export * from "./textarea";
 export * from "./field";
 export * from "./catalogo-select";
+export * from "./catalogo-combo";

@@ -21,6 +21,7 @@ A **fadiga** representa o desgaste físico e mental que o personagem acumula ao 
 
 O personagem acumula pontos de fadiga quando:
 
+- **Sofre dano superficial** — cada ponto de dano superficial recebido gera **1 ponto de fadiga**. É por este caminho que o desgaste físico do combate pesa nos [`PA`](07-pontos-de-acao.md): o dano vira fadiga e a fadiga reduz os `PA` (ver [Penalidades por acúmulo](#penalidades-por-acumulo)). O dano **profundo** e o **permanente** não geram fadiga — suas consequências são a incapacitação/invalidação do membro (ver [Saúde e Proteção](../conflitos/03-saude-e-protecao.md#penalidades-por-perda-de-vida));
 - **Sofre danos ou efeitos que indicam fadiga** — armas, habilidades e regras específicas dizem quando infligem fadiga. Condições específicas de cenário também podem infligir ou custar fadiga (por exemplo, condições do cenário Colapso);
 - **Realiza uma reação** (incluindo o ataque de oportunidade) — a reação não custa `PA`, mas custa **pontos de fadiga iguais ao custo em [`PA`](07-pontos-de-acao.md) que a ação realizada teria** (1 fadiga por 1 `PA`; ver [Reação](../conflitos/02-acoes-em-conflito.md#reação));
 - **Gasta fadiga voluntariamente** para ganhar `PA` extras — os pontos gastos somam-se à sua fadiga acumulada (ver a seção seguinte).

@@ -23,6 +23,7 @@ export type Protecao = {
   redDano: string;
   durabilidade: string;
   regioes: MembroKey[]; // regiões do corpo que a peça cobre
+  equipada: boolean; // se está sendo usada (conta o redutor de PA); escudos não cobrem região
 };
 
 export type CaracteristicaCard = {
@@ -100,11 +101,27 @@ export function custoPAComprado(base: string): number {
   return (5 * n * (n + 1)) / 2;
 }
 
-export function expUsada(f: Ficha): number {
+/** EXP investida em uma característica.
+ *  - Traço: custo único (valorCompra).
+ *  - Habilidade (vigente): custo base × Σ (usos no nível × nível) — subir de nível custa o base
+ *    multiplicado pelo nível; ter vários usos multiplica.
+ *  - Habilidade (alternativa): custo base × (n·(n+1)/2) — soma-se o custo de cada degrau até o nível.
+ *  valorCompra guarda o **custo base (nível 1)**. */
+export function custoCard(c: CaracteristicaCard, rv: RulesVersion): number {
+  if (!c.nome.trim()) return 0;
+  const base = parseNum(c.valorCompra);
+  if (c.tipo !== "Habilidade") return base;
+  if (rv === "vigente") {
+    const soma = c.usosPorNivel.reduce((s, usos, i) => s + (usos || 0) * (i + 1), 0);
+    return base * soma;
+  }
+  const n = Math.max(0, Math.min(5, Math.round(c.nivel || 0)));
+  return base * ((n * (n + 1)) / 2);
+}
+
+export function expUsada(f: Ficha, rv: RulesVersion): number {
   const apt = APT_KEYS.reduce((s, k) => s + Math.round(parseNum(f.aptidoes[k].total)), 0);
-  const cards = f.caracteristicas
-    .filter((c) => c.nome.trim())
-    .reduce((s, c) => s + parseNum(c.valorCompra), 0);
+  const cards = f.caracteristicas.reduce((s, c) => s + custoCard(c, rv), 0);
   return apt + cards + custoPAComprado(f.pa.base);
 }
 
@@ -118,14 +135,32 @@ export function qtdTracosComp(f: Ficha): number {
   return f.caracteristicas.filter((c) => c.tipo === "Traço" && c.nome.trim()).length;
 }
 
-export function paTotalComp(f: Ficha): number {
+/** Penalidade de PA pela fadiga acumulada (−1 a cada 5 a partir de 10; 50 = inconsciente). */
+export function penalidadeFadigaNum(fadiga: number, rv: RulesVersion): number {
+  if (fadiga >= 50) return 0; // inconsciente — tratado à parte
+  if (rv === "vigente") return fadiga >= 10 ? Math.floor((fadiga - 10) / 5) + 1 : 0;
+  return fadiga > 10 ? Math.floor((fadiga - 11) / 5) + 1 : 0;
+}
+
+export function inconsciente(f: Ficha): boolean {
+  return f.fadiga >= 50;
+}
+
+/** Redutor de PA das armaduras: soma os redutores de PA das proteções equipadas
+ *  (com pelo menos uma região marcada). */
+export function redArmaduraComp(f: Ficha): number {
+  return f.protecoes
+    .filter((p) => p.equipada !== false && p.nome.trim())
+    .reduce((s, p) => s + Math.abs(parseNum(p.redPA)), 0);
+}
+
+export function paTotalComp(f: Ficha, rv: RulesVersion): number {
+  if (inconsciente(f)) return 0;
   const base = parseNum(f.pa.base);
-  const red =
-    Math.abs(parseNum(f.pa.redArmadura)) +
-    Math.abs(parseNum(f.pa.redDano)) +
-    Math.abs(parseNum(f.pa.redCarga));
   const outros = parseNum(f.pa.outros);
-  return Math.max(3, base - red + outros);
+  const redCarga = Math.abs(parseNum(f.pa.redCarga));
+  const total = base - redArmaduraComp(f) - penalidadeFadigaNum(f.fadiga, rv) - redCarga + outros;
+  return Math.max(3, total);
 }
 
 /** Peso total de uma linha (0 se faltar quantidade ou peso unitário). */
@@ -170,7 +205,7 @@ export function novaArma(): Arma {
 }
 
 export function novaProtecao(): Protecao {
-  return { nome: "", redPA: "", redDano: "", durabilidade: "", regioes: [] };
+  return { nome: "", redPA: "", redDano: "", durabilidade: "", regioes: [], equipada: true };
 }
 
 export function novoItem(): ItemEquip {
@@ -270,6 +305,7 @@ export function migrarFicha(data: unknown): Ficha {
       };
       if (!p.nome) p.nome = p.tipo || p.local || "";
       if (!Array.isArray(p.regioes)) p.regioes = [];
+      if (typeof p.equipada !== "boolean") p.equipada = true;
       delete p.local;
       delete p.tipo;
       return p;

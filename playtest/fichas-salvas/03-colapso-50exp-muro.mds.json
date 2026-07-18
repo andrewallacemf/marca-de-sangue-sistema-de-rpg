@@ -2,7 +2,7 @@
   "app": "marca-de-sangue-ficha",
   "schemaVersion": 1,
   "rulesVersion": "vigente",
-  "salvoEm": "2026-07-18T01:06:21.032910",
+  "salvoEm": "2026-07-18T10:38:25.517272",
   "data": {
     "info": {
       "nome": "\"Muro\", a Retaguarda",
@@ -72,14 +72,16 @@
         "durabilidade": "25",
         "regioes": [
           "tronco"
-        ]
+        ],
+        "equipada": true
       },
       {
         "nome": "Escudo médio (guarda 3 PA)",
         "redPA": "-2",
         "redDano": "-2",
         "durabilidade": "15",
-        "regioes": []
+        "regioes": [],
+        "equipada": true
       }
     ],
     "saude": {
@@ -295,7 +297,7 @@
         "efeito": "Metade do dano e reduz PA do alvo de forma persistente (até descanso curto).",
         "requisitos": "",
         "atributo": "Físico",
-        "valorCompra": "12 exp.",
+        "valorCompra": "4 exp.",
         "custoPA": "1 PA + PA da arma",
         "usosPorNivel": [
           0,
@@ -312,7 +314,7 @@
         "efeito": "Corre 2 m e empurra o oponente; metade do dano.",
         "requisitos": "",
         "atributo": "Físico",
-        "valorCompra": "4 exp.",
+        "valorCompra": "2 exp.",
         "custoPA": "1 PA + PA da arma",
         "usosPorNivel": [
           0,

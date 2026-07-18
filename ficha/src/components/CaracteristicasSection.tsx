@@ -10,9 +10,9 @@ import {
   Label,
   Textarea,
 } from "@/components/ui";
-import { CatalogoSelect } from "@/components/ui";
+import { CatalogoCombo } from "@/components/ui";
 import { cn } from "@/lib/utils";
-import { novaCaracteristica, type CaracteristicaCard, type RulesVersion } from "@/lib/ficha";
+import { custoCard, novaCaracteristica, type CaracteristicaCard, type RulesVersion } from "@/lib/ficha";
 import { CAT_HABILIDADES, CAT_TRACOS } from "@/lib/catalogo";
 
 type PickItem =
@@ -106,14 +106,12 @@ export function CaracteristicasSection({
                     </button>
                   ))}
                 </div>
-                <Input
-                  className="h-7 w-full min-w-0 flex-1 sm:w-auto"
-                  placeholder="Nome"
+                <CatalogoCombo
+                  className="w-full min-w-0 flex-1 sm:w-auto"
+                  inputClassName="h-7"
+                  placeholder="Nome (digite ou escolha do catálogo)"
                   value={c.nome}
-                  onChange={(e) => upd(i, { nome: e.target.value })}
-                />
-                <CatalogoSelect
-                  placeholder="do catálogo…"
+                  onChangeText={(v) => upd(i, { nome: v })}
                   grupos={GRUPOS_CARS}
                   onPick={(item) => upd(i, cardDoCatalogo(item, c))}
                 />
@@ -146,13 +144,26 @@ export function CaracteristicasSection({
                 <Field label="Atributo">
                   <Input value={c.atributo} onChange={(e) => upd(i, { atributo: e.target.value })} />
                 </Field>
-                <Field label="Val. compra">
+                <Field label={c.tipo === "Habilidade" ? "Custo base (nv1)" : "Val. compra"}>
                   <Input value={c.valorCompra} onChange={(e) => upd(i, { valorCompra: e.target.value })} />
                 </Field>
                 <Field label="Custo de PA">
                   <Input value={c.custoPA} onChange={(e) => upd(i, { custoPA: e.target.value })} />
                 </Field>
               </div>
+
+              {c.nome.trim() && (
+                <p className="text-[11px] text-muted-foreground">
+                  Investido nesta característica:{" "}
+                  <span className="font-semibold text-primary">{custoCard(c, rulesVersion)} exp</span>
+                  {c.tipo === "Habilidade" && (
+                    <span className="text-muted-foreground">
+                      {" "}
+                      ({rulesVersion === "vigente" ? "base × Σ usos por nível" : "base × soma dos degraus"})
+                    </span>
+                  )}
+                </p>
+              )}
 
               {c.tipo === "Habilidade" &&
                 (rulesVersion === "vigente" ? (

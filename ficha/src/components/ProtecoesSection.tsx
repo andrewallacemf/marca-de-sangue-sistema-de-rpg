@@ -1,5 +1,5 @@
-import { Plus, Trash2, Shield } from "lucide-react";
-import { Button, Card, CardContent, CardHeader, CardTitle, CatalogoSelect, Input, Label } from "@/components/ui";
+import { Plus, Trash2, Shield, PackagePlus } from "lucide-react";
+import { Button, Card, CardContent, CardHeader, CardTitle, CatalogoCombo, Input, Label } from "@/components/ui";
 import { cn } from "@/lib/utils";
 import { MEMBROS, novaProtecao, type MembroKey, type Protecao } from "@/lib/ficha";
 import { CAT_PROTECOES, type CatProtecao } from "@/lib/catalogo";
@@ -35,12 +35,14 @@ export function ProtecoesSection({
   guardas,
   setGuardas,
   className,
+  onAddItem,
 }: {
   protecoes: Protecao[];
   setProtecoes: (v: Protecao[]) => void;
   guardas: string;
   setGuardas: (v: string) => void;
   className?: string;
+  onAddItem: (nome: string) => void;
 }) {
   function upd(i: number, patch: Partial<Protecao>) {
     const arr = [...protecoes];
@@ -67,21 +69,27 @@ export function ProtecoesSection({
       <CardContent className="flex flex-col gap-2">
         {protecoes.map((p, i) => (
           <div key={i} className="flex flex-wrap items-end gap-x-3 gap-y-2 rounded-md border p-2 print-avoid-break">
-            <div className="min-w-[10rem] flex-1">
-              <div className="flex items-center justify-between gap-2">
-                <Label>Nome da proteção</Label>
-                <CatalogoSelect
-                  placeholder="do catálogo…"
+            <div className="min-w-[12rem] flex-1">
+              <Label>Nome da proteção</Label>
+              <div className="mt-1 flex items-center gap-1">
+                <CatalogoCombo
+                  className="min-w-0 flex-1"
+                  placeholder="ex.: Peitoral, Capacete… (ou escolha do catálogo)"
+                  value={p.nome}
+                  onChangeText={(v) => upd(i, { nome: v })}
                   grupos={GRUPOS_PROTECOES}
                   onPick={(cat) => upd(i, protecaoDoCatalogo(cat, p))}
                 />
+                <button
+                  type="button"
+                  title="Adicionar esta proteção à lista de itens/equipamentos"
+                  disabled={!p.nome.trim()}
+                  onClick={() => onAddItem(p.nome.trim())}
+                  className="no-print flex h-8 shrink-0 items-center gap-1 rounded-md border px-2 text-[11px] font-medium text-muted-foreground hover:bg-secondary disabled:opacity-40"
+                >
+                  <PackagePlus className="h-3.5 w-3.5" /> itens
+                </button>
               </div>
-              <Input
-                className="mt-1 h-8"
-                placeholder="ex.: Peitoral, Capacete, Cota, Calça…"
-                value={p.nome}
-                onChange={(e) => upd(i, { nome: e.target.value })}
-              />
             </div>
 
             <div>
@@ -108,6 +116,15 @@ export function ProtecoesSection({
             </div>
 
             <div className="flex items-end gap-2">
+              <label className="flex cursor-pointer flex-col items-center gap-1" title="Se está equipada (conta o redutor de PA)">
+                <Label>Equip.</Label>
+                <input
+                  type="checkbox"
+                  className="mb-1.5 h-4 w-4 accent-[hsl(var(--primary))]"
+                  checked={p.equipada}
+                  onChange={(e) => upd(i, { equipada: e.target.checked })}
+                />
+              </label>
               <div className="w-14">
                 <Label>R. PA</Label>
                 <Input className="mt-1 h-8 text-center" value={p.redPA} onChange={(e) => upd(i, { redPA: e.target.value })} />

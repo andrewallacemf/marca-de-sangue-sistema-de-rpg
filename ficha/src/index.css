@@ -161,9 +161,13 @@
 .a4-preview textarea::placeholder {
   color: transparent !important;
 }
-/* seletores de catálogo não fazem parte da folha impressa — some no preview A4 também */
-.a4-preview select {
+/* no preview A4, esconder toda a interface de edição (igual à impressão real),
+   mantendo apenas o cabeçalho fixo para o usuário conseguir sair do modo A4 */
+.a4-preview .no-print {
   display: none !important;
+}
+.a4-preview header.no-print {
+  display: block !important;
 }
 
 /* ---------- IMPRESSÃO real ---------- */

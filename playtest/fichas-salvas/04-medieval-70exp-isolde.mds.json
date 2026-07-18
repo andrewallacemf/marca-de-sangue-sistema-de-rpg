@@ -2,7 +2,7 @@
   "app": "marca-de-sangue-ficha",
   "schemaVersion": 1,
   "rulesVersion": "vigente",
-  "salvoEm": "2026-07-18T01:06:21.033791",
+  "salvoEm": "2026-07-18T10:38:25.518045",
   "data": {
     "info": {
       "nome": "Dame Isolde, a Comandante",
@@ -72,14 +72,16 @@
         "durabilidade": "10",
         "regioes": [
           "tronco"
-        ]
+        ],
+        "equipada": true
       },
       {
         "nome": "Escudo pequeno (leve · guarda 2 PA)",
         "redPA": "-1",
         "redDano": "-1",
         "durabilidade": "10",
-        "regioes": []
+        "regioes": [],
+        "equipada": true
       }
     ],
     "saude": {
@@ -210,7 +212,7 @@
         "efeito": "Vantagem no próximo contrateste de defesa/esquiva de aliados a até 4 m.",
         "requisitos": "",
         "atributo": "Social",
-        "valorCompra": "9 exp.",
+        "valorCompra": "3 exp.",
         "custoPA": "4 PA",
         "usosPorNivel": [
           0,
@@ -227,7 +229,7 @@
         "efeito": "Vantagem no próximo ataque de aliados a até 4 m.",
         "requisitos": "",
         "atributo": "Social",
-        "valorCompra": "9 exp.",
+        "valorCompra": "3 exp.",
         "custoPA": "2 PA",
         "usosPorNivel": [
           0,
@@ -244,7 +246,7 @@
         "efeito": "Transfere pontos de ação do seu próximo turno para um aliado.",
         "requisitos": "",
         "atributo": "Social",
-        "valorCompra": "8 exp.",
+        "valorCompra": "2 exp.",
         "custoPA": "1 PA",
         "usosPorNivel": [
           0,
@@ -278,7 +280,7 @@
         "efeito": "Desvantagem no próximo contrateste de defesa/esquiva de oponentes (até 6 m).",
         "requisitos": "",
         "atributo": "Mental",
-        "valorCompra": "9 exp.",
+        "valorCompra": "3 exp.",
         "custoPA": "4 PA",
         "usosPorNivel": [
           0,
@@ -295,7 +297,7 @@
         "efeito": "Atrasa os turnos de oponentes em 1 posição (até 6 m).",
         "requisitos": "",
         "atributo": "Mental",
-        "valorCompra": "6 exp.",
+        "valorCompra": "3 exp.",
         "custoPA": "4 PA",
         "usosPorNivel": [
           0,

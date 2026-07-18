@@ -2,7 +2,7 @@
   "app": "marca-de-sangue-ficha",
   "schemaVersion": 1,
   "rulesVersion": "vigente",
-  "salvoEm": "2026-07-18T01:06:21.022914",
+  "salvoEm": "2026-07-18T10:38:25.515327",
   "data": {
     "info": {
       "nome": "Kaede, a Shinobi",
@@ -290,7 +290,7 @@
         "efeito": "Escondido, com arma leve: causa dado adicional de dano (1d4→1d10).",
         "requisitos": "",
         "atributo": "Ágil",
-        "valorCompra": "6 exp.",
+        "valorCompra": "2 exp.",
         "custoPA": "1 PA + PA da arma",
         "usosPorNivel": [
           0,
@@ -307,7 +307,7 @@
         "efeito": "Muda de alvo com armas leves ignorando a desvantagem de ataques múltiplos.",
         "requisitos": "",
         "atributo": "Ágil",
-        "valorCompra": "2 exp.",
+        "valorCompra": "1 exp.",
         "custoPA": "1 PA",
         "usosPorNivel": [
           0,

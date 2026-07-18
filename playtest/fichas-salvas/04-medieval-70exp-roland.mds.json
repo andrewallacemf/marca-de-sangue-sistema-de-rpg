@@ -2,7 +2,7 @@
   "app": "marca-de-sangue-ficha",
   "schemaVersion": 1,
   "rulesVersion": "vigente",
-  "salvoEm": "2026-07-18T01:06:21.033376",
+  "salvoEm": "2026-07-18T10:38:25.517631",
   "data": {
     "info": {
       "nome": "Ser Roland, o Guardião",
@@ -72,14 +72,16 @@
         "durabilidade": "25",
         "regioes": [
           "tronco"
-        ]
+        ],
+        "equipada": true
       },
       {
         "nome": "Escudo grande (média · guarda 3 PA)",
         "redPA": "-2",
         "redDano": "-2",
         "durabilidade": "20",
-        "regioes": []
+        "regioes": [],
+        "equipada": true
       }
     ],
     "saude": {
@@ -414,7 +416,7 @@
         "efeito": "Força o inimigo a gastar a guarda levantada; metade do dano.",
         "requisitos": "",
         "atributo": "Físico",
-        "valorCompra": "4 exp.",
+        "valorCompra": "2 exp.",
         "custoPA": "1 PA + PA da arma",
         "usosPorNivel": [
           0,
@@ -431,7 +433,7 @@
         "efeito": "Corre 2 m e empurra o oponente; metade do dano.",
         "requisitos": "",
         "atributo": "Físico",
-        "valorCompra": "6 exp.",
+        "valorCompra": "2 exp.",
         "custoPA": "1 PA + PA da arma",
         "usosPorNivel": [
           0,

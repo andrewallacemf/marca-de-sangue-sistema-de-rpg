@@ -2,7 +2,7 @@
   "app": "marca-de-sangue-ficha",
   "schemaVersion": 1,
   "rulesVersion": "vigente",
-  "salvoEm": "2026-07-18T01:06:21.034198",
+  "salvoEm": "2026-07-18T10:38:25.518376",
   "data": {
     "info": {
       "nome": "Gareth, o Lanceiro de Formação",
@@ -72,7 +72,8 @@
         "durabilidade": "25",
         "regioes": [
           "tronco"
-        ]
+        ],
+        "equipada": true
       }
     ],
     "saude": {
@@ -264,7 +265,7 @@
         "efeito": "Aumenta o alcance ideal da arma corpo a corpo de longo alcance.",
         "requisitos": "",
         "atributo": "Ágil",
-        "valorCompra": "6 exp.",
+        "valorCompra": "2 exp.",
         "custoPA": "3 PA + PA da arma (reduz por nível)",
         "usosPorNivel": [
           0,
@@ -281,7 +282,7 @@
         "efeito": "Avança na direção do alvo ignorando engajamento e ataca.",
         "requisitos": "",
         "atributo": "Físico",
-        "valorCompra": "9 exp.",
+        "valorCompra": "3 exp.",
         "custoPA": "1 PA + PA da arma",
         "usosPorNivel": [
           0,
@@ -298,7 +299,7 @@
         "efeito": "Muda de alvo com armas pesadas ignorando a desvantagem de ataques múltiplos.",
         "requisitos": "",
         "atributo": "Físico",
-        "valorCompra": "6 exp.",
+        "valorCompra": "3 exp.",
         "custoPA": "1 PA",
         "usosPorNivel": [
           0,
@@ -315,7 +316,7 @@
         "efeito": "Corre 2 m e empurra o oponente; metade do dano.",
         "requisitos": "",
         "atributo": "Físico",
-        "valorCompra": "6 exp.",
+        "valorCompra": "2 exp.",
         "custoPA": "1 PA + PA da arma",
         "usosPorNivel": [
           0,

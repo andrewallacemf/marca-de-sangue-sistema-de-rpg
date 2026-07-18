@@ -2,7 +2,7 @@
   "app": "marca-de-sangue-ficha",
   "schemaVersion": 1,
   "rulesVersion": "vigente",
-  "salvoEm": "2026-07-18T01:06:21.022389",
+  "salvoEm": "2026-07-18T10:38:25.514782",
   "data": {
     "info": {
       "nome": "Elina, a Arqueira",
@@ -229,7 +229,7 @@
         "efeito": "Mantém o alvo à distância ignorando a desvantagem de ataques múltiplos.",
         "requisitos": "",
         "atributo": "Ágil",
-        "valorCompra": "4 exp.",
+        "valorCompra": "2 exp.",
         "custoPA": "1 PA",
         "usosPorNivel": [
           0,

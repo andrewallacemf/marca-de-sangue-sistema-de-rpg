@@ -2,7 +2,7 @@
   "app": "marca-de-sangue-ficha",
   "schemaVersion": 1,
   "rulesVersion": "vigente",
-  "salvoEm": "2026-07-18T01:06:21.035399",
+  "salvoEm": "2026-07-18T10:38:25.519434",
   "data": {
     "info": {
       "nome": "Syla, a Assassina",
@@ -334,7 +334,7 @@
         "efeito": "Escondido, com arma leve: causa dado adicional de dano (1d4→1d10).",
         "requisitos": "",
         "atributo": "Ágil",
-        "valorCompra": "8 exp.",
+        "valorCompra": "2 exp.",
         "custoPA": "1 PA + PA da arma",
         "usosPorNivel": [
           0,
@@ -351,7 +351,7 @@
         "efeito": "Muda de alvo com armas leves ignorando a desvantagem de ataques múltiplos.",
         "requisitos": "",
         "atributo": "Ágil",
-        "valorCompra": "5 exp.",
+        "valorCompra": "1 exp.",
         "custoPA": "1 PA",
         "usosPorNivel": [
           0,
@@ -368,7 +368,7 @@
         "efeito": "Movimento em linha reta (6–10 m por nível).",
         "requisitos": "",
         "atributo": "Ágil",
-        "valorCompra": "10 exp.",
+        "valorCompra": "2 exp.",
         "custoPA": "5 PA",
         "usosPorNivel": [
           0,
@@ -385,7 +385,7 @@
         "efeito": "Avança na direção do alvo ignorando engajamento e ataca.",
         "requisitos": "",
         "atributo": "Físico",
-        "valorCompra": "12 exp.",
+        "valorCompra": "3 exp.",
         "custoPA": "1 PA + PA da arma",
         "usosPorNivel": [
           0,
@@ -402,7 +402,7 @@
         "efeito": "Vê quanto dano o oponente recebeu em partes do corpo à escolha.",
         "requisitos": "",
         "atributo": "Mental",
-        "valorCompra": "4 exp.",
+        "valorCompra": "1 exp.",
         "custoPA": "1 PA",
         "usosPorNivel": [
           0,
@@ -419,7 +419,7 @@
         "efeito": "Arremessa armas/objetos como se fossem armas de arremesso neste turno.",
         "requisitos": "",
         "atributo": "Ágil",
-        "valorCompra": "4 exp.",
+        "valorCompra": "2 exp.",
         "custoPA": "1 PA",
         "usosPorNivel": [
           0,

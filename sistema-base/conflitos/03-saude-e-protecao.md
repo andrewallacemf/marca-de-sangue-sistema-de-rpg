@@ -87,7 +87,9 @@ Se o jogador ganhar, **`1d4`** pontos de dano profundo são transformados em sup
 
 ## Penalidades por perda de vida
 
-A cada 10 pontos de dano total que um personagem tiver em sua ficha, ele perde o direito de utilizar 1 ponto de ação. **O mínimo que um personagem pode ter de `PA` por turno é `3 PA`** (piso unificado — ver [Pontos de ação](../conceitos/07-pontos-de-acao.md)), a não ser que esteja inconsciente.
+O desgaste do combate pesa nos `PA` **através da [fadiga](../conceitos/08-fadiga.md)**: cada ponto de **dano superficial** recebido gera **1 ponto de fadiga**, e a fadiga acumulada reduz os `PA` do turno (−1 `PA` a cada 5 pontos a partir de 10; ver [Fadiga — penalidades por acúmulo](../conceitos/08-fadiga.md#penalidades-por-acumulo)). Dessa forma, não há uma penalidade de `PA` separada por "dano total": ela já está contabilizada na fadiga que o dano gera. **O mínimo que um personagem pode ter de `PA` por turno é `3 PA`** (piso unificado — ver [Pontos de ação](../conceitos/07-pontos-de-acao.md)), a não ser que esteja inconsciente.
+
+> ✅ Reconciliado em 2026-07-18: a antiga regra "a cada 10 de dano total, −1 `PA`" foi **substituída** pelo encadeamento dano superficial → fadiga → `PA`, evitando dupla contagem. Ver [decisões — dano, fadiga e PA](../../notas-de-design/decisoes/2026-07-18-dano-fadiga-pa.md).
 
 Membros se tornam **incapacitados** se receberem 10 pontos de dano profundo. Isso significa que uma ação que dependa daquele membro será mais difícil de realizar. As consequências são:
 

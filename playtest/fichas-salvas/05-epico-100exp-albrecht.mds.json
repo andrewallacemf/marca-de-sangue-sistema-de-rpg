@@ -2,7 +2,7 @@
   "app": "marca-de-sangue-ficha",
   "schemaVersion": 1,
   "rulesVersion": "vigente",
-  "salvoEm": "2026-07-18T01:06:21.036167",
+  "salvoEm": "2026-07-18T10:38:25.520167",
   "data": {
     "info": {
       "nome": "Albrecht, o Cantor de Guerra",
@@ -196,7 +196,7 @@
         "efeito": "Cura dano superficial de um aliado adjacente (1d4→1d12).",
         "requisitos": "",
         "atributo": "Social",
-        "valorCompra": "15 exp.",
+        "valorCompra": "3 exp.",
         "custoPA": "4 PA",
         "usosPorNivel": [
           0,
@@ -213,7 +213,7 @@
         "efeito": "Trata dano profundo de um aliado adjacente (1d4→3d6).",
         "requisitos": "",
         "atributo": "Social",
-        "valorCompra": "16 exp.",
+        "valorCompra": "4 exp.",
         "custoPA": "5 PA",
         "usosPorNivel": [
           0,
@@ -230,7 +230,7 @@
         "efeito": "Traz um aliado inconsciente à consciência e faz um tratamento automático.",
         "requisitos": "",
         "atributo": "Social",
-        "valorCompra": "12 exp.",
+        "valorCompra": "4 exp.",
         "custoPA": "7 PA",
         "usosPorNivel": [
           0,
@@ -247,7 +247,7 @@
         "efeito": "Vantagem no próximo ataque de aliados a até 4 m.",
         "requisitos": "",
         "atributo": "Social",
-        "valorCompra": "12 exp.",
+        "valorCompra": "3 exp.",
         "custoPA": "2 PA",
         "usosPorNivel": [
           0,
@@ -264,7 +264,7 @@
         "efeito": "Vantagem no próximo contrateste de defesa/esquiva de aliados a até 4 m.",
         "requisitos": "",
         "atributo": "Social",
-        "valorCompra": "12 exp.",
+        "valorCompra": "3 exp.",
         "custoPA": "4 PA",
         "usosPorNivel": [
           0,
@@ -281,7 +281,7 @@
         "efeito": "Transfere pontos de ação do seu próximo turno para um aliado.",
         "requisitos": "",
         "atributo": "Social",
-        "valorCompra": "6 exp.",
+        "valorCompra": "2 exp.",
         "custoPA": "1 PA",
         "usosPorNivel": [
           0,
@@ -298,7 +298,7 @@
         "efeito": "Recupera aptidões consumidas de um aliado adjacente.",
         "requisitos": "",
         "atributo": "Social",
-        "valorCompra": "4 exp.",
+        "valorCompra": "2 exp.",
         "custoPA": "2 PA",
         "usosPorNivel": [
           0,

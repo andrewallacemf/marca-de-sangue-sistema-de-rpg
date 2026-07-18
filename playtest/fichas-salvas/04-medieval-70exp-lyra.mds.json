@@ -2,7 +2,7 @@
   "app": "marca-de-sangue-ficha",
   "schemaVersion": 1,
   "rulesVersion": "vigente",
-  "salvoEm": "2026-07-18T01:06:21.034537",
+  "salvoEm": "2026-07-18T10:38:25.518682",
   "data": {
     "info": {
       "nome": "Lyra, a Batedora-Arqueira",
@@ -91,7 +91,8 @@
         "durabilidade": "10",
         "regioes": [
           "tronco"
-        ]
+        ],
+        "equipada": true
       }
     ],
     "saude": {
@@ -263,7 +264,7 @@
         "efeito": "Mantém o alvo à distância ignorando a desvantagem de ataques múltiplos.",
         "requisitos": "",
         "atributo": "Ágil",
-        "valorCompra": "8 exp.",
+        "valorCompra": "2 exp.",
         "custoPA": "1 PA",
         "usosPorNivel": [
           0,
@@ -280,7 +281,7 @@
         "efeito": "Aumenta a área de alcance ideal da arma à distância.",
         "requisitos": "",
         "atributo": "Ágil",
-        "valorCompra": "6 exp.",
+        "valorCompra": "2 exp.",
         "custoPA": "2 PA + PA da arma",
         "usosPorNivel": [
           0,
@@ -297,7 +298,7 @@
         "efeito": "Vê quanto dano o oponente recebeu em partes do corpo à escolha.",
         "requisitos": "",
         "atributo": "Mental",
-        "valorCompra": "3 exp.",
+        "valorCompra": "1 exp.",
         "custoPA": "1 PA",
         "usosPorNivel": [
           0,
@@ -314,7 +315,7 @@
         "efeito": "Desvantagem no próximo contrateste de defesa/esquiva de oponentes (até 6 m).",
         "requisitos": "",
         "atributo": "Mental",
-        "valorCompra": "6 exp.",
+        "valorCompra": "3 exp.",
         "custoPA": "4 PA",
         "usosPorNivel": [
           0,
@@ -331,7 +332,7 @@
         "efeito": "Movimento em linha reta (6–10 m por nível).",
         "requisitos": "",
         "atributo": "Ágil",
-        "valorCompra": "4 exp.",
+        "valorCompra": "2 exp.",
         "custoPA": "5 PA",
         "usosPorNivel": [
           0,

@@ -2,7 +2,7 @@
   "app": "marca-de-sangue-ficha",
   "schemaVersion": 1,
   "rulesVersion": "vigente",
-  "salvoEm": "2026-07-18T01:06:21.022682",
+  "salvoEm": "2026-07-18T10:38:25.515078",
   "data": {
     "info": {
       "nome": "Brás, o Lanceiro",
@@ -72,7 +72,8 @@
         "durabilidade": "10",
         "regioes": [
           "tronco"
-        ]
+        ],
+        "equipada": true
       }
     ],
     "saude": {
@@ -230,7 +231,7 @@
         "efeito": "Avança na direção do alvo ignorando engajamento e ataca.",
         "requisitos": "",
         "atributo": "Físico",
-        "valorCompra": "6 exp.",
+        "valorCompra": "3 exp.",
         "custoPA": "1 PA + PA da arma",
         "usosPorNivel": [
           0,

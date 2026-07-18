@@ -1,8 +1,8 @@
-import { Swords } from "lucide-react";
-import { Card, CardContent, CardHeader, CardTitle, CatalogoSelect, Field, Input, Label } from "@/components/ui";
+import { Swords, PackagePlus } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle, CatalogoCombo, Field, Input, Label } from "@/components/ui";
 import { cn } from "@/lib/utils";
 import { PROP_KEYS, type Arma } from "@/lib/ficha";
-import { CAT_ARMAS, type CatArma } from "@/lib/catalogo";
+import { CAT_ARMAS, PROP_INFO, type CatArma } from "@/lib/catalogo";
 
 const GRUPOS_ARMAS = [
   {
@@ -40,10 +40,14 @@ export function ArmasSection({
   armas,
   setArmas,
   className,
+  temMaestria,
+  onAddItem,
 }: {
   armas: Arma[];
   setArmas: (v: Arma[]) => void;
   className?: string;
+  temMaestria: (p: (typeof PROP_KEYS)[number]) => boolean;
+  onAddItem: (nome: string) => void;
 }) {
   function upd(i: number, patch: Partial<Arma>) {
     const arr = [...armas];
@@ -74,18 +78,23 @@ export function ArmasSection({
               <span className="whitespace-nowrap text-xs font-semibold uppercase tracking-wide text-primary">
                 Arma {i + 1}
               </span>
-              <Input
-                className="h-8 w-full min-w-0 flex-1 sm:w-auto"
-                placeholder="Nome"
+              <CatalogoCombo
+                className="w-full min-w-0 flex-1 sm:w-auto"
+                placeholder="Nome (digite ou escolha do catálogo)"
                 value={arma.nome}
-                onChange={(e) => upd(i, { nome: e.target.value })}
-              />
-              <CatalogoSelect
-                className="shrink-0"
-                placeholder="do catálogo…"
+                onChangeText={(v) => upd(i, { nome: v })}
                 grupos={GRUPOS_ARMAS}
                 onPick={(cat) => upd(i, armaDoCatalogo(cat, arma))}
               />
+              <button
+                type="button"
+                title="Adicionar esta arma à lista de itens/equipamentos"
+                disabled={!arma.nome.trim()}
+                onClick={() => onAddItem(arma.nome.trim())}
+                className="no-print flex h-8 shrink-0 items-center gap-1 rounded-md border px-2 text-[11px] font-medium text-muted-foreground hover:bg-secondary disabled:opacity-40"
+              >
+                <PackagePlus className="h-3.5 w-3.5" /> itens
+              </button>
             </div>
 
             <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
@@ -102,21 +111,37 @@ export function ArmasSection({
             </div>
 
             <div>
-              <Label>Propriedades</Label>
+              <Label>
+                Propriedades{" "}
+                <span className="font-normal normal-case text-muted-foreground">
+                  · preenchido = a arma tem · anel dourado = você tem a maestria
+                </span>
+              </Label>
               <div className="mt-1 flex flex-wrap gap-1">
-                {PROP_KEYS.map((p) => (
-                  <button
-                    key={p}
-                    type="button"
-                    onClick={() => upd(i, { props: { ...arma.props, [p]: !arma.props[p] } })}
-                    className={cn(
-                      "rounded border px-1.5 py-0.5 text-[11px] font-medium",
-                      arma.props[p] ? "bg-primary text-primary-foreground" : "hover:bg-secondary"
-                    )}
-                  >
-                    {p}
-                  </button>
-                ))}
+                {PROP_KEYS.map((p) => {
+                  const info = PROP_INFO[p];
+                  const armaTem = arma.props[p];
+                  const precisaMaes = !!info.maestria;
+                  const maes = precisaMaes && temMaestria(p);
+                  const linhaMaes = precisaMaes
+                    ? `\nRequisito: ${info.maestria} — ${maes ? "✓ você tem" : "✗ você não tem"}`
+                    : "\nNão exige maestria.";
+                  return (
+                    <button
+                      key={p}
+                      type="button"
+                      title={`${info.nome} (${p})\n${info.efeito}${linhaMaes}`}
+                      onClick={() => upd(i, { props: { ...arma.props, [p]: !arma.props[p] } })}
+                      className={cn(
+                        "rounded border px-1.5 py-0.5 text-[11px] font-medium",
+                        armaTem ? "bg-primary text-primary-foreground" : "hover:bg-secondary",
+                        maes && "ring-2 ring-accent ring-offset-1"
+                      )}
+                    >
+                      {p}
+                    </button>
+                  );
+                })}
               </div>
             </div>
           </div>

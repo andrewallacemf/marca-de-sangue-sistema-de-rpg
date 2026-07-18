@@ -2,7 +2,7 @@
   "app": "marca-de-sangue-ficha",
   "schemaVersion": 1,
   "rulesVersion": "vigente",
-  "salvoEm": "2026-07-18T01:06:21.034887",
+  "salvoEm": "2026-07-18T10:38:25.519038",
   "data": {
     "info": {
       "nome": "Thorne, o Quebra-Colosso",
@@ -91,14 +91,16 @@
         "durabilidade": "50",
         "regioes": [
           "tronco"
-        ]
+        ],
+        "equipada": true
       },
       {
         "nome": "Escudo médio (guarda 3 PA)",
         "redPA": "-2",
         "redDano": "-2",
         "durabilidade": "15",
-        "regioes": []
+        "regioes": [],
+        "equipada": true
       }
     ],
     "saude": {
@@ -440,7 +442,7 @@
         "efeito": "Metade do dano e reduz PA do alvo de forma persistente (até descanso curto).",
         "requisitos": "",
         "atributo": "Físico",
-        "valorCompra": "20 exp.",
+        "valorCompra": "4 exp.",
         "custoPA": "1 PA + PA da arma",
         "usosPorNivel": [
           0,
@@ -457,7 +459,7 @@
         "efeito": "Força o inimigo a gastar a guarda levantada; metade do dano.",
         "requisitos": "",
         "atributo": "Físico",
-        "valorCompra": "4 exp.",
+        "valorCompra": "2 exp.",
         "custoPA": "1 PA + PA da arma",
         "usosPorNivel": [
           0,
@@ -474,7 +476,7 @@
         "efeito": "Corre 2 m e empurra o oponente; metade do dano.",
         "requisitos": "",
         "atributo": "Físico",
-        "valorCompra": "4 exp.",
+        "valorCompra": "2 exp.",
         "custoPA": "1 PA + PA da arma",
         "usosPorNivel": [
           0,

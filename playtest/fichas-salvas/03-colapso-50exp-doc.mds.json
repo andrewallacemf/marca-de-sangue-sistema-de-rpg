@@ -2,7 +2,7 @@
   "app": "marca-de-sangue-ficha",
   "schemaVersion": 1,
   "rulesVersion": "vigente",
-  "salvoEm": "2026-07-18T01:06:21.024381",
+  "salvoEm": "2026-07-18T10:38:25.516891",
   "data": {
     "info": {
       "nome": "Doc, o Sucateiro-Médico",
@@ -246,7 +246,7 @@
         "efeito": "Cura dano superficial de um aliado adjacente (1d4→1d12).",
         "requisitos": "",
         "atributo": "Social",
-        "valorCompra": "9 exp.",
+        "valorCompra": "3 exp.",
         "custoPA": "4 PA",
         "usosPorNivel": [
           0,
@@ -280,7 +280,7 @@
         "efeito": "Depõe uma armadilha que prende e causa dano ao ser acionada.",
         "requisitos": "",
         "atributo": "Mental",
-        "valorCompra": "6 exp.",
+        "valorCompra": "2 exp.",
         "custoPA": "1 PA",
         "usosPorNivel": [
           0,
@@ -297,7 +297,7 @@
         "efeito": "Transfere pontos de ação do seu próximo turno para um aliado.",
         "requisitos": "",
         "atributo": "Social",
-        "valorCompra": "6 exp.",
+        "valorCompra": "2 exp.",
         "custoPA": "1 PA",
         "usosPorNivel": [
           0,
@@ -314,7 +314,7 @@
         "efeito": "Reativa uma habilidade de um aliado.",
         "requisitos": "",
         "atributo": "Social",
-        "valorCompra": "4 exp.",
+        "valorCompra": "2 exp.",
         "custoPA": "2 PA",
         "usosPorNivel": [
           0,

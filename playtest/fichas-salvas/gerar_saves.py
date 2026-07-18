@@ -5,7 +5,7 @@ def props(on): return {k: (k in on) for k in PROPK}
 def arma(nome,tipo,equipado,categoria,alcance,dur,custoPA,dano,on):
     return {"nome":nome,"tipo":tipo,"equipado":equipado,"categoria":categoria,"alcance":alcance,
             "durabilidade":dur,"custoPA":custoPA,"dano":dano,"props":props(on)}
-def prot(nome,rpa,rd,dur,reg): return {"nome":nome,"redPA":rpa,"redDano":rd,"durabilidade":dur,"regioes":reg}
+def prot(nome,rpa,rd,dur,reg): return {"nome":nome,"redPA":rpa,"redDano":rd,"durabilidade":dur,"regioes":reg,"equipada":True}
 def item(it,q,pu,pt,eq=True): return {"equipado":eq,"item":it,"qtd":q,"pesoUnit":pu,"pesoTotal":pt}
 def saude(): 
     return {k:[0]*10 for k in ["cabeca","tronco","bracoE","bracoD","pernaE","pernaD"]}
@@ -80,7 +80,7 @@ def H(nome,nivel):
     base,custo,atr,ef = HAB[nome]
     usos=[0,0,0,0,0]; usos[nivel-1]=1
     return {"tipo":"Habilidade","nome":nome,"efeito":ef,"requisitos":"","atributo":atr,
-            "valorCompra":f"{base*nivel} exp.","custoPA":custo,"usosPorNivel":usos,"nivel":nivel}
+            "valorCompra":f"{base} exp.","custoPA":custo,"usosPorNivel":usos,"nivel":nivel}  # base unitario (nv1); total = base*nivel
 def T(nome):
     base,atr,ef = TRC[nome]
     return {"tipo":"Traço","nome":nome,"efeito":ef,"requisitos":"","atributo":atr,

@@ -2,7 +2,7 @@
   "app": "marca-de-sangue-ficha",
   "schemaVersion": 1,
   "rulesVersion": "vigente",
-  "salvoEm": "2026-07-18T01:06:21.023496",
+  "salvoEm": "2026-07-18T10:38:25.515976",
   "data": {
     "info": {
       "nome": "Haruko, a Curandeira",
@@ -213,7 +213,7 @@
         "efeito": "Cura dano superficial de um aliado adjacente (1d4→1d12).",
         "requisitos": "",
         "atributo": "Social",
-        "valorCompra": "6 exp.",
+        "valorCompra": "3 exp.",
         "custoPA": "4 PA",
         "usosPorNivel": [
           0,
@@ -247,7 +247,7 @@
         "efeito": "Vantagem no próximo ataque de aliados a até 4 m.",
         "requisitos": "",
         "atributo": "Social",
-        "valorCompra": "6 exp.",
+        "valorCompra": "3 exp.",
         "custoPA": "2 PA",
         "usosPorNivel": [
           0,
@@ -264,7 +264,7 @@
         "efeito": "Transfere pontos de ação do seu próximo turno para um aliado.",
         "requisitos": "",
         "atributo": "Social",
-        "valorCompra": "4 exp.",
+        "valorCompra": "2 exp.",
         "custoPA": "1 PA",
         "usosPorNivel": [
           0,

@@ -1214,3 +1214,56 @@ export const CAT_TRACOS: CatTraco[] = [
     requisitos: "O aliado só pode ser carregado de forma voluntária.",
   },
 ];
+
+// ---------------------------------------------------------------------------
+// PROPRIEDADES DAS ARMAS (glossário + maestria correspondente)
+// ---------------------------------------------------------------------------
+
+export type PropInfo = {
+  nome: string;
+  efeito: string;
+  /** traço de maestria que ativa a propriedade (undefined = não exige maestria). */
+  maestria?: string;
+};
+
+export const PROP_INFO: Record<PropKey, PropInfo> = {
+  CORT: {
+    nome: "Cortante",
+    efeito:
+      "Expande o engajamento: permite um ataque de oportunidade quando o alvo SAI do seu alcance ideal (consome a reação).",
+    maestria: "Maestria em armas cortantes",
+  },
+  CONT: {
+    nome: "Contundente",
+    efeito:
+      "Ao acertar, reduz PA do alvo sem teste até o próximo turno dele (leve −1, média −2, pesada −3).",
+    maestria: "Maestria em armas contundentes",
+  },
+  PERF: {
+    nome: "Perfurante",
+    efeito:
+      "Expande o engajamento: permite um ataque de oportunidade quando o alvo ENTRA no seu alcance ideal (consome a reação).",
+    maestria: "Maestria em armas perfurantes",
+  },
+  AGAR: {
+    nome: "Agarrar",
+    efeito: "Concede vantagem para a ação Agarrar.",
+    maestria: "Maestria em armas de agarrar",
+  },
+  DEFL: {
+    nome: "Deflexão",
+    efeito: "Ignora um dado de desvantagem em contratestes de defesa.",
+    maestria: "Maestria em armas de deflexão",
+  },
+  PROJ: {
+    nome: "Projéteis",
+    efeito:
+      "Ignora barreiras no caminho do alvo (se não estiverem acima dele); ao acertar, recarregar não custa PA.",
+    maestria: "Maestria em projéteis",
+  },
+  ARRE: {
+    nome: "Arremesso",
+    efeito:
+      "Ignora um dado de desvantagem ao arremessar. Sem a propriedade, arremessar é ataque com desvantagem (fora do alcance ideal, +2d10).",
+  },
+};

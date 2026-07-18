@@ -31,19 +31,25 @@ import { ArmasSection } from "@/components/ArmasSection";
 import {
   expUsada,
   fichaVazia,
+  inconsciente,
   LS_KEY,
   MEMBROS,
   migrarFicha,
+  novoItem,
   paTotalComp,
   parseNum,
+  penalidadeFadigaNum,
+  PROP_KEYS,
   qtdAptidoesComp,
   qtdHabilidadesComp,
   qtdTracosComp,
+  redArmaduraComp,
   SCHEMA_VERSION,
   type Ficha,
   type RulesVersion,
   type TotalUsado,
 } from "@/lib/ficha";
+import { PROP_INFO } from "@/lib/catalogo";
 
 /* ============================ Componentes auxiliares ============================ */
 
@@ -189,10 +195,29 @@ export default function App() {
   const habCards = ficha.caracteristicas.filter((c) => c.tipo === "Habilidade" && c.nome.trim());
 
   // valores calculados automaticamente (campos travados)
-  const expUsadaCalc = expUsada(ficha);
+  const expUsadaCalc = expUsada(ficha, rulesVersion);
   const expTotalNum = parseNum(ficha.exp.baseTotal);
   const expExcedida = expTotalNum > 0 && expUsadaCalc > expTotalNum;
-  const paTotalCalc = paTotalComp(ficha);
+  const paTotalCalc = paTotalComp(ficha, rulesVersion);
+  const redArmaduraCalc = redArmaduraComp(ficha);
+  const redFadigaCalc = penalidadeFadigaNum(ficha.fadiga, rulesVersion);
+  const inconsc = inconsciente(ficha);
+
+  // maestrias que o personagem possui (por traço comprado), para indicar nas armas
+  const maestriasSet = new Set(
+    ficha.caracteristicas.filter((c) => c.nome.trim()).map((c) => c.nome.trim().toLowerCase())
+  );
+  const temMaestria = (p: (typeof PROP_KEYS)[number]) => {
+    const m = PROP_INFO[p].maestria;
+    return m ? maestriasSet.has(m.toLowerCase()) : false;
+  };
+  const adicionarAoInventario = (nome: string) => {
+    if (!nome.trim()) return;
+    setFicha((f) => ({
+      ...f,
+      equipamentos: [...f.equipamentos, { ...novoItem(), equipado: true, item: nome.trim(), qtd: "1" }],
+    }));
+  };
 
   const printHeader = (
     <div className="print-header col-full">
@@ -342,10 +367,17 @@ export default function App() {
                   <Input className="text-center" value={ficha.pa.base} onChange={(e) => update("pa", { ...ficha.pa, base: e.target.value })} />
                 </Field>
                 <Field label="Red. armadura">
-                  <Input className="text-center" value={ficha.pa.redArmadura} onChange={(e) => update("pa", { ...ficha.pa, redArmadura: e.target.value })} />
+                  <Computed
+                    value={redArmaduraCalc ? `−${redArmaduraCalc}` : "0"}
+                    title="soma dos redutores de PA das proteções equipadas (com região marcada)"
+                  />
                 </Field>
-                <Field label="Red. por dano">
-                  <Input className="text-center" value={ficha.pa.redDano} onChange={(e) => update("pa", { ...ficha.pa, redDano: e.target.value })} />
+                <Field label="Red. fadiga">
+                  <Computed
+                    value={inconsc ? "inconsc." : redFadigaCalc ? `−${redFadigaCalc}` : "0"}
+                    alerta={inconsc}
+                    title="penalidade automática pela fadiga acumulada (−1 a cada 5 a partir de 10)"
+                  />
                 </Field>
                 <Field label="Red. carga">
                   <Input className="text-center" value={ficha.pa.redCarga} onChange={(e) => update("pa", { ...ficha.pa, redCarga: e.target.value })} />
@@ -355,8 +387,9 @@ export default function App() {
                 </Field>
                 <Field label="PA TOTAL">
                   <Computed
-                    value={paTotalCalc}
-                    title="base − reduções + outros (piso de 3 PA)"
+                    value={inconsc ? "0" : paTotalCalc}
+                    alerta={inconsc}
+                    title="base − red. armadura − red. fadiga − red. carga + outros (piso de 3 PA)"
                     className="text-base"
                   />
                 </Field>
@@ -430,7 +463,13 @@ export default function App() {
             </Card>
 
             {/* Armas (seção full-width, duas lado a lado) */}
-            <ArmasSection className="area-armas" armas={ficha.armas} setArmas={(v) => update("armas", v)} />
+            <ArmasSection
+              className="area-armas"
+              armas={ficha.armas}
+              setArmas={(v) => update("armas", v)}
+              temMaestria={temMaestria}
+              onAddItem={adicionarAoInventario}
+            />
 
             {/* Proteções (dinâmicas, com regiões cobertas) + guardas */}
             <ProtecoesSection
@@ -439,6 +478,7 @@ export default function App() {
               setProtecoes={(v) => update("protecoes", v)}
               guardas={ficha.guardas}
               setGuardas={(v) => update("guardas", v)}
+              onAddItem={adicionarAoInventario}
             />
 
             {/* Saúde */}
@@ -465,13 +505,16 @@ export default function App() {
                         <DamageCell
                           key={ci}
                           state={st}
-                          onClick={() => {
-                            const saude = { ...ficha.saude };
-                            const arr = [...saude[m.key]];
-                            arr[ci] = (arr[ci] + 1) % 4;
-                            saude[m.key] = arr;
-                            update("saude", saude);
-                          }}
+                          onClick={() =>
+                            setFicha((f) => {
+                              const prev = f.saude[m.key][ci];
+                              const next = (prev + 1) % 4;
+                              const saude = { ...f.saude, [m.key]: f.saude[m.key].map((v, j) => (j === ci ? next : v)) };
+                              // entrar em dano superficial (0 → 1) gera 1 de fadiga (não é removida ao curar)
+                              const fadiga = prev === 0 && next === 1 ? Math.min(50, f.fadiga + 1) : f.fadiga;
+                              return { ...f, saude, fadiga };
+                            })
+                          }
                         />
                       ))}
                     </div>
@@ -546,13 +589,18 @@ export default function App() {
               setTesouro={(v) => update("tesouro", v)}
             />
 
-            {/* Anotações */}
-            <Card className="col-full lg:col-span-1">
+            {/* Anotações — acompanha a altura da coluna de equipamentos; rola se exceder */}
+            <Card className="col-full flex flex-col lg:col-span-1">
               <CardHeader>
                 <CardTitle>Anotações</CardTitle>
               </CardHeader>
-              <CardContent>
-                <Textarea className="min-h-[160px]" value={ficha.anotacoes} onChange={(e) => update("anotacoes", e.target.value)} />
+              <CardContent className="flex flex-1 flex-col">
+                <Textarea
+                  autoGrow={false}
+                  className="min-h-[160px] flex-1"
+                  value={ficha.anotacoes}
+                  onChange={(e) => update("anotacoes", e.target.value)}
+                />
               </CardContent>
             </Card>
 
@@ -566,10 +614,33 @@ export default function App() {
               setItens={(v) => update("caracteristicas", v)}
               rulesVersion={rulesVersion}
             />
+
+            {/* Glossário de propriedades de armas */}
+            <Card className="col-full lg:col-span-3">
+              <CardHeader>
+                <CardTitle>Propriedades de armas — referência</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid grid-cols-1 gap-x-6 gap-y-1.5 sm:grid-cols-2">
+                  {PROP_KEYS.map((p) => {
+                    const info = PROP_INFO[p];
+                    return (
+                      <p key={p} className="text-[12px] leading-snug">
+                        <span className="font-semibold text-primary">{p}</span>{" "}
+                        <span className="font-medium">· {info.nome}:</span> {info.efeito}{" "}
+                        <span className="text-muted-foreground">
+                          {info.maestria ? `(requer ${info.maestria})` : "(não exige maestria)"}
+                        </span>
+                      </p>
+                    );
+                  })}
+                </div>
+              </CardContent>
+            </Card>
           </div>
 
           <p className="no-print mt-4 text-center text-[11px] text-muted-foreground">
-            Marca de Sangue — ficha v0.8 ({rulesVersion === "vigente" ? "regras vigentes" : "regras alternativas"}).
+            Marca de Sangue — ficha v0.9 ({rulesVersion === "vigente" ? "regras vigentes" : "regras alternativas"}).
             Os dados ficam só no seu navegador; use “Salvar” para baixar um arquivo e “Carregar” para retomá-lo.
           </p>
         </div>
