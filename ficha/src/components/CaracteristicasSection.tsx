@@ -168,15 +168,15 @@ export function CaracteristicasSection({
                 </Field>
                 <Field label="Custo de PA">
                   {c.tipo === "Habilidade" ? (
-                    <div className="flex items-center gap-1">
+                    <div className="relative">
                       <Input
-                        className="w-12 px-1 text-center"
+                        className="pr-[4.5rem]"
                         inputMode="numeric"
                         value={c.custoPANum}
                         onChange={(e) => upd(i, { custoPANum: e.target.value })}
                       />
                       <label
-                        className="flex cursor-pointer items-center gap-1 text-[10px] text-muted-foreground"
+                        className="absolute right-1.5 top-1/2 flex -translate-y-1/2 cursor-pointer items-center gap-1 text-[10px] text-muted-foreground"
                         title="Somar também o PA da arma equipada"
                       >
                         <input
