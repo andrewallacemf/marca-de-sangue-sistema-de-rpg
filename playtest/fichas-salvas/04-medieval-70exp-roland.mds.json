@@ -1,0 +1,448 @@
+{
+  "app": "marca-de-sangue-ficha",
+  "schemaVersion": 1,
+  "rulesVersion": "vigente",
+  "salvoEm": "2026-07-18T00:34:10.816523",
+  "data": {
+    "info": {
+      "nome": "Ser Roland, o Guardião",
+      "jogador": "",
+      "cenario": "Cenário 4 — A Escolta da Chama (Medieval)",
+      "ultimaSessao": ""
+    },
+    "exp": {
+      "baseTotal": "70",
+      "baseUsada": "70",
+      "qtdAptidoes": "25",
+      "qtdHabilidades": "2",
+      "qtdTracos": "12"
+    },
+    "aptidoes": {
+      "fisica": {
+        "total": "25",
+        "usado": ""
+      },
+      "agil": {
+        "total": "",
+        "usado": ""
+      },
+      "mental": {
+        "total": "",
+        "usado": ""
+      },
+      "social": {
+        "total": "",
+        "usado": ""
+      }
+    },
+    "pa": {
+      "base": "10",
+      "redArmadura": "-4",
+      "redDano": "0",
+      "redCarga": "0",
+      "outros": "+1",
+      "total": "7"
+    },
+    "armas": [
+      {
+        "nome": "Espada longa",
+        "tipo": "Média · versátil · longo alcance",
+        "equipado": "Mão hábil",
+        "categoria": "Cortante/Perfurante",
+        "alcance": "1–2 m",
+        "durabilidade": "",
+        "custoPA": "4",
+        "dano": "1d8 CORT · 1d6 PERF (+1d4 a 2 mãos)",
+        "props": {
+          "ARRE": false,
+          "AGAR": false,
+          "CORT": true,
+          "CONT": false,
+          "DEFL": false,
+          "PERF": true,
+          "PROJ": false
+        }
+      }
+    ],
+    "protecoes": [
+      {
+        "nome": "Peitoral médio",
+        "redPA": "-2",
+        "redDano": "-2",
+        "durabilidade": "25",
+        "regioes": [
+          "tronco"
+        ]
+      },
+      {
+        "nome": "Escudo grande (média · guarda 3 PA)",
+        "redPA": "-2",
+        "redDano": "-2",
+        "durabilidade": "20",
+        "regioes": []
+      }
+    ],
+    "saude": {
+      "cabeca": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tronco": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bracoE": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bracoD": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "pernaE": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "pernaD": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "fadiga": 0,
+    "guardas": "0",
+    "equipamentos": [
+      {
+        "equipado": true,
+        "item": "Espada longa",
+        "qtd": "1",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      },
+      {
+        "equipado": true,
+        "item": "Peitoral médio",
+        "qtd": "1",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      },
+      {
+        "equipado": true,
+        "item": "Escudo grande",
+        "qtd": "1",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      }
+    ],
+    "carga": {
+      "capacidade": "",
+      "carregado": ""
+    },
+    "tesouro": [
+      {
+        "label": "Moedas",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      }
+    ],
+    "caracteristicas": [
+      {
+        "tipo": "Traço",
+        "nome": "Maestria em armaduras pesadas",
+        "efeito": "Domínio de armaduras pesadas.",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Maestria em armaduras médias",
+        "efeito": "Domínio de armaduras médias.",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Maestria em armas cortantes",
+        "efeito": "Ativa a propriedade cortante: ataque de oportunidade quando o alvo SAI do alcance ideal.",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Maestria em armas contundentes",
+        "efeito": "Ativa a propriedade contundente: cada acerto reduz PA do alvo (leve −1, média −2, pesada −3).",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Maestria em armas versáteis",
+        "efeito": "Alterna a empunhadura sem gastar PA (+1d4 a duas mãos).",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Protetor",
+        "efeito": "Desvia para si o dano de um aliado adjacente (requer escudo).",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "4 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Resistente",
+        "efeito": "Reduz o dano recebido pela metade (guarda + armadura média/pesada).",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "3 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Blindado",
+        "efeito": "+1d10 para defender ataques à distância com escudo.",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "4 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Reativo",
+        "efeito": "Ataque de oportunidade quando um oponente sai do seu alcance ideal (guarda levantada).",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "4 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Alerta",
+        "efeito": "Ataque de oportunidade quando um oponente entra no seu alcance ideal (guarda levantada).",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "4 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Firme",
+        "efeito": "Usa arma pesada com uma mão (−3 dano).",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "4 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Empacado",
+        "efeito": "Reduz movimentação forçada pela metade.",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "2 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Quebrar guarda",
+        "efeito": "Força o inimigo a gastar a guarda levantada; metade do dano.",
+        "requisitos": "",
+        "atributo": "Físico",
+        "valorCompra": "4 exp.",
+        "custoPA": "1 PA + PA da arma",
+        "usosPorNivel": [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "nivel": 2
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Encontrão",
+        "efeito": "Corre 2 m e empurra o oponente; metade do dano.",
+        "requisitos": "",
+        "atributo": "Físico",
+        "valorCompra": "6 exp.",
+        "custoPA": "1 PA + PA da arma",
+        "usosPorNivel": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "nivel": 3
+      }
+    ],
+    "anotacoes": "Mão hábil: direita (+1 PA comprado). Escudo vivo: Protetor intercepta golpes no Arauto, Resistente corta pela metade; Blindado apara flechas; Alerta+Reativo punem quem se aproxima; Encontrão joga da ponte."
+  }
+}

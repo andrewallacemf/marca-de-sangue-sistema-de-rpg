@@ -1,0 +1,264 @@
+{
+  "app": "marca-de-sangue-ficha",
+  "schemaVersion": 1,
+  "rulesVersion": "vigente",
+  "salvoEm": "2026-07-18T00:34:10.814115",
+  "data": {
+    "info": {
+      "nome": "Brás, o Lanceiro",
+      "jogador": "",
+      "cenario": "Cenário 1 — A Brecha na Muralha (Medieval)",
+      "ultimaSessao": ""
+    },
+    "exp": {
+      "baseTotal": "15",
+      "baseUsada": "15",
+      "qtdAptidoes": "3",
+      "qtdHabilidades": "1",
+      "qtdTracos": "3"
+    },
+    "aptidoes": {
+      "fisica": {
+        "total": "3",
+        "usado": ""
+      },
+      "agil": {
+        "total": "",
+        "usado": ""
+      },
+      "mental": {
+        "total": "",
+        "usado": ""
+      },
+      "social": {
+        "total": "",
+        "usado": ""
+      }
+    },
+    "pa": {
+      "base": "10",
+      "redArmadura": "-1",
+      "redDano": "0",
+      "redCarga": "0",
+      "outros": "0",
+      "total": "9"
+    },
+    "armas": [
+      {
+        "nome": "Lança curta",
+        "tipo": "Média · longo alcance",
+        "equipado": "Mão hábil",
+        "categoria": "Perfurante",
+        "alcance": "2 m",
+        "durabilidade": "",
+        "custoPA": "4",
+        "dano": "1d6",
+        "props": {
+          "ARRE": true,
+          "AGAR": false,
+          "CORT": false,
+          "CONT": false,
+          "DEFL": false,
+          "PERF": true,
+          "PROJ": false
+        }
+      }
+    ],
+    "protecoes": [
+      {
+        "nome": "Peitoral leve",
+        "redPA": "-1",
+        "redDano": "-1",
+        "durabilidade": "10",
+        "regioes": [
+          "tronco"
+        ]
+      }
+    ],
+    "saude": {
+      "cabeca": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tronco": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bracoE": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bracoD": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "pernaE": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "pernaD": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "fadiga": 0,
+    "guardas": "0",
+    "equipamentos": [
+      {
+        "equipado": true,
+        "item": "Lança curta",
+        "qtd": "1",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      },
+      {
+        "equipado": true,
+        "item": "Peitoral leve",
+        "qtd": "1",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      }
+    ],
+    "carga": {
+      "capacidade": "",
+      "carregado": ""
+    },
+    "tesouro": [
+      {
+        "label": "Moedas",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      }
+    ],
+    "caracteristicas": [
+      {
+        "tipo": "Traço",
+        "nome": "Maestria em armas perfurantes",
+        "efeito": "Ativa a propriedade perfurante: ataque de oportunidade quando o alvo ENTRA no alcance ideal.",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Maestria em armaduras leves",
+        "efeito": "Domínio de armaduras leves.",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Investida",
+        "efeito": "Avança na direção do alvo ignorando engajamento e ataca.",
+        "requisitos": "",
+        "atributo": "Físico",
+        "valorCompra": "6 exp.",
+        "custoPA": "1 PA + PA da arma",
+        "usosPorNivel": [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "nivel": 2
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Reativo",
+        "efeito": "Ataque de oportunidade quando um oponente sai do seu alcance ideal (guarda levantada).",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "4 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      }
+    ],
+    "anotacoes": "Mão hábil: direita. Alcance 2 m: perfurante + Reativo punem quem entra E sai; Investida fura a guarda; segura a lateral da brecha."
+  }
+}

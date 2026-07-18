@@ -1,0 +1,349 @@
+{
+  "app": "marca-de-sangue-ficha",
+  "schemaVersion": 1,
+  "rulesVersion": "vigente",
+  "salvoEm": "2026-07-18T00:34:10.814621",
+  "data": {
+    "info": {
+      "nome": "Takeshi, o Ronin",
+      "jogador": "",
+      "cenario": "Cenário 2 — O Selo do Templo (Mukashi)",
+      "ultimaSessao": ""
+    },
+    "exp": {
+      "baseTotal": "30",
+      "baseUsada": "30",
+      "qtdAptidoes": "8",
+      "qtdHabilidades": "2",
+      "qtdTracos": "7"
+    },
+    "aptidoes": {
+      "fisica": {
+        "total": "8",
+        "usado": ""
+      },
+      "agil": {
+        "total": "",
+        "usado": ""
+      },
+      "mental": {
+        "total": "",
+        "usado": ""
+      },
+      "social": {
+        "total": "",
+        "usado": ""
+      }
+    },
+    "pa": {
+      "base": "10",
+      "redArmadura": "-1",
+      "redDano": "0",
+      "redCarga": "0",
+      "outros": "0",
+      "total": "9"
+    },
+    "armas": [
+      {
+        "nome": "Katana",
+        "tipo": "Média · versátil · longo alcance",
+        "equipado": "Duas mãos",
+        "categoria": "Cortante/Perfurante",
+        "alcance": "1–2 m",
+        "durabilidade": "",
+        "custoPA": "4",
+        "dano": "1d8 CORT · 1d6 PERF (+1d4 a 2 mãos)",
+        "props": {
+          "ARRE": false,
+          "AGAR": false,
+          "CORT": true,
+          "CONT": false,
+          "DEFL": false,
+          "PERF": true,
+          "PROJ": false
+        }
+      }
+    ],
+    "protecoes": [
+      {
+        "nome": "Peitoral leve",
+        "redPA": "-1",
+        "redDano": "-1",
+        "durabilidade": "10",
+        "regioes": [
+          "tronco"
+        ]
+      }
+    ],
+    "saude": {
+      "cabeca": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tronco": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bracoE": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bracoD": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "pernaE": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "pernaD": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "fadiga": 0,
+    "guardas": "0",
+    "equipamentos": [
+      {
+        "equipado": true,
+        "item": "Katana",
+        "qtd": "1",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      },
+      {
+        "equipado": true,
+        "item": "Peitoral leve",
+        "qtd": "1",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      }
+    ],
+    "carga": {
+      "capacidade": "",
+      "carregado": ""
+    },
+    "tesouro": [
+      {
+        "label": "Moedas",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      }
+    ],
+    "caracteristicas": [
+      {
+        "tipo": "Traço",
+        "nome": "Maestria em armas cortantes",
+        "efeito": "Ativa a propriedade cortante: ataque de oportunidade quando o alvo SAI do alcance ideal.",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Maestria em armas perfurantes",
+        "efeito": "Ativa a propriedade perfurante: ataque de oportunidade quando o alvo ENTRA no alcance ideal.",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Maestria em armas versáteis",
+        "efeito": "Alterna a empunhadura sem gastar PA (+1d4 a duas mãos).",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Maestria em armaduras leves",
+        "efeito": "Domínio de armaduras leves.",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Ataques múltiplos & médios",
+        "efeito": "Muda de alvo com armas médias ignorando a desvantagem de ataques múltiplos.",
+        "requisitos": "",
+        "atributo": "Físico",
+        "valorCompra": "4 exp.",
+        "custoPA": "1 PA",
+        "usosPorNivel": [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "nivel": 2
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Investida",
+        "efeito": "Avança na direção do alvo ignorando engajamento e ataca.",
+        "requisitos": "",
+        "atributo": "Físico",
+        "valorCompra": "6 exp.",
+        "custoPA": "1 PA + PA da arma",
+        "usosPorNivel": [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "nivel": 2
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Reativo",
+        "efeito": "Ataque de oportunidade quando um oponente sai do seu alcance ideal (guarda levantada).",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "4 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Lépido",
+        "efeito": "Recua 1 m após acertar com arma de longo alcance.",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "3 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Técnica em Ponderar",
+        "efeito": "Anula a desvantagem natural para ponderar.",
+        "requisitos": "",
+        "atributo": "Mental",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      }
+    ],
+    "anotacoes": "Mão hábil: direita. Katana a 2 mãos (+1d4); alterna cortante/perfurante; Investida fura engajamento; Lépido para bater e recuar."
+  }
+}

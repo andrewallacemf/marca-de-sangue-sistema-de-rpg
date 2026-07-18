@@ -1,0 +1,382 @@
+{
+  "app": "marca-de-sangue-ficha",
+  "schemaVersion": 1,
+  "rulesVersion": "vigente",
+  "salvoEm": "2026-07-18T00:34:10.817749",
+  "data": {
+    "info": {
+      "nome": "Lyra, a Batedora-Arqueira",
+      "jogador": "",
+      "cenario": "Cenário 4 — A Escolta da Chama (Medieval)",
+      "ultimaSessao": ""
+    },
+    "exp": {
+      "baseTotal": "70",
+      "baseUsada": "70",
+      "qtdAptidoes": "34",
+      "qtdHabilidades": "5",
+      "qtdTracos": "4"
+    },
+    "aptidoes": {
+      "fisica": {
+        "total": "",
+        "usado": ""
+      },
+      "agil": {
+        "total": "24",
+        "usado": ""
+      },
+      "mental": {
+        "total": "10",
+        "usado": ""
+      },
+      "social": {
+        "total": "",
+        "usado": ""
+      }
+    },
+    "pa": {
+      "base": "10",
+      "redArmadura": "-1",
+      "redDano": "0",
+      "redCarga": "0",
+      "outros": "+1",
+      "total": "10"
+    },
+    "armas": [
+      {
+        "nome": "Arco longo",
+        "tipo": "Pesada · à distância",
+        "equipado": "Duas mãos",
+        "categoria": "Projétil",
+        "alcance": "8–12 m",
+        "durabilidade": "",
+        "custoPA": "6",
+        "dano": "1d4 (flecha de ferro)",
+        "props": {
+          "ARRE": false,
+          "AGAR": false,
+          "CORT": false,
+          "CONT": false,
+          "DEFL": false,
+          "PERF": false,
+          "PROJ": true
+        }
+      },
+      {
+        "nome": "Adaga (reserva)",
+        "tipo": "Leve",
+        "equipado": "Mão hábil",
+        "categoria": "Cortante/Perfurante",
+        "alcance": "1 m",
+        "durabilidade": "",
+        "custoPA": "2",
+        "dano": "1d4",
+        "props": {
+          "ARRE": true,
+          "AGAR": false,
+          "CORT": true,
+          "CONT": false,
+          "DEFL": false,
+          "PERF": true,
+          "PROJ": false
+        }
+      }
+    ],
+    "protecoes": [
+      {
+        "nome": "Peitoral leve",
+        "redPA": "-1",
+        "redDano": "-1",
+        "durabilidade": "10",
+        "regioes": [
+          "tronco"
+        ]
+      }
+    ],
+    "saude": {
+      "cabeca": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tronco": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bracoE": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bracoD": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "pernaE": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "pernaD": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "fadiga": 0,
+    "guardas": "0",
+    "equipamentos": [
+      {
+        "equipado": true,
+        "item": "Arco longo",
+        "qtd": "1",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      },
+      {
+        "equipado": true,
+        "item": "Flechas ponta de ferro",
+        "qtd": "20",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      },
+      {
+        "equipado": true,
+        "item": "Adaga",
+        "qtd": "1",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      },
+      {
+        "equipado": true,
+        "item": "Peitoral leve",
+        "qtd": "1",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      }
+    ],
+    "carga": {
+      "capacidade": "",
+      "carregado": ""
+    },
+    "tesouro": [
+      {
+        "label": "Moedas",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      }
+    ],
+    "caracteristicas": [
+      {
+        "tipo": "Traço",
+        "nome": "Maestria em projéteis",
+        "efeito": "Ignora barreiras no caminho do alvo; recarregar não custa PA ao acertar.",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Maestria em armaduras leves",
+        "efeito": "Domínio de armaduras leves.",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Ataques à distância concentrados",
+        "efeito": "Mantém o alvo à distância ignorando a desvantagem de ataques múltiplos.",
+        "requisitos": "",
+        "atributo": "Ágil",
+        "valorCompra": "8 exp.",
+        "custoPA": "1 PA",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "nivel": 4
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Alcance à distância",
+        "efeito": "Aumenta a área de alcance ideal da arma à distância.",
+        "requisitos": "",
+        "atributo": "Ágil",
+        "valorCompra": "6 exp.",
+        "custoPA": "2 PA + PA da arma",
+        "usosPorNivel": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "nivel": 3
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Analisar fraquezas",
+        "efeito": "Vê quanto dano o oponente recebeu em partes do corpo à escolha.",
+        "requisitos": "",
+        "atributo": "Mental",
+        "valorCompra": "3 exp.",
+        "custoPA": "1 PA",
+        "usosPorNivel": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "nivel": 3
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Confundir inimigo",
+        "efeito": "Desvantagem no próximo contrateste de defesa/esquiva de oponentes (até 6 m).",
+        "requisitos": "",
+        "atributo": "Mental",
+        "valorCompra": "6 exp.",
+        "custoPA": "4 PA",
+        "usosPorNivel": [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "nivel": 2
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Disparada",
+        "efeito": "Movimento em linha reta (6–10 m por nível).",
+        "requisitos": "",
+        "atributo": "Ágil",
+        "valorCompra": "4 exp.",
+        "custoPA": "5 PA",
+        "usosPorNivel": [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "nivel": 2
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Técnica em Investigar/Observar",
+        "efeito": "Anula a desvantagem natural para investigar/observar.",
+        "requisitos": "",
+        "atributo": "Mental",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Técnica em Esconder-se",
+        "efeito": "Anula a desvantagem natural para esconder-se.",
+        "requisitos": "",
+        "atributo": "Ágil",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      }
+    ],
+    "anotacoes": "Mão hábil: direita (+1 PA comprado). Contra-artilharia: alcance 12 m elimina o Arqueiro inimigo; Analisar fraquezas + Confundir; Disparada busca elevação."
+  }
+}

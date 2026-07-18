@@ -1,0 +1,383 @@
+{
+  "app": "marca-de-sangue-ficha",
+  "schemaVersion": 1,
+  "rulesVersion": "vigente",
+  "salvoEm": "2026-07-18T00:34:10.817430",
+  "data": {
+    "info": {
+      "nome": "Gareth, o Lanceiro de Formação",
+      "jogador": "",
+      "cenario": "Cenário 4 — A Escolta da Chama (Medieval)",
+      "ultimaSessao": ""
+    },
+    "exp": {
+      "baseTotal": "70",
+      "baseUsada": "70",
+      "qtdAptidoes": "26",
+      "qtdHabilidades": "5",
+      "qtdTracos": "6"
+    },
+    "aptidoes": {
+      "fisica": {
+        "total": "26",
+        "usado": ""
+      },
+      "agil": {
+        "total": "",
+        "usado": ""
+      },
+      "mental": {
+        "total": "",
+        "usado": ""
+      },
+      "social": {
+        "total": "",
+        "usado": ""
+      }
+    },
+    "pa": {
+      "base": "10",
+      "redArmadura": "-2",
+      "redDano": "0",
+      "redCarga": "0",
+      "outros": "0",
+      "total": "8"
+    },
+    "armas": [
+      {
+        "nome": "Alabarda",
+        "tipo": "Pesada · longo alcance",
+        "equipado": "Duas mãos",
+        "categoria": "Perfurante",
+        "alcance": "2–3 m",
+        "durabilidade": "",
+        "custoPA": "6",
+        "dano": "1d8",
+        "props": {
+          "ARRE": false,
+          "AGAR": false,
+          "CORT": false,
+          "CONT": false,
+          "DEFL": false,
+          "PERF": true,
+          "PROJ": false
+        }
+      }
+    ],
+    "protecoes": [
+      {
+        "nome": "Peitoral médio",
+        "redPA": "-2",
+        "redDano": "-2",
+        "durabilidade": "25",
+        "regioes": [
+          "tronco"
+        ]
+      }
+    ],
+    "saude": {
+      "cabeca": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tronco": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bracoE": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bracoD": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "pernaE": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "pernaD": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "fadiga": 0,
+    "guardas": "0",
+    "equipamentos": [
+      {
+        "equipado": true,
+        "item": "Alabarda",
+        "qtd": "1",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      },
+      {
+        "equipado": true,
+        "item": "Peitoral médio",
+        "qtd": "1",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      }
+    ],
+    "carga": {
+      "capacidade": "",
+      "carregado": ""
+    },
+    "tesouro": [
+      {
+        "label": "Moedas",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      }
+    ],
+    "caracteristicas": [
+      {
+        "tipo": "Traço",
+        "nome": "Maestria em armas perfurantes",
+        "efeito": "Ativa a propriedade perfurante: ataque de oportunidade quando o alvo ENTRA no alcance ideal.",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Maestria em armaduras médias",
+        "efeito": "Domínio de armaduras médias.",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Reativo",
+        "efeito": "Ataque de oportunidade quando um oponente sai do seu alcance ideal (guarda levantada).",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "4 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Alerta",
+        "efeito": "Ataque de oportunidade quando um oponente entra no seu alcance ideal (guarda levantada).",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "4 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Alcance corpo a corpo",
+        "efeito": "Aumenta o alcance ideal da arma corpo a corpo de longo alcance.",
+        "requisitos": "",
+        "atributo": "Ágil",
+        "valorCompra": "6 exp.",
+        "custoPA": "3 PA + PA da arma (reduz por nível)",
+        "usosPorNivel": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "nivel": 3
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Investida",
+        "efeito": "Avança na direção do alvo ignorando engajamento e ataca.",
+        "requisitos": "",
+        "atributo": "Físico",
+        "valorCompra": "9 exp.",
+        "custoPA": "1 PA + PA da arma",
+        "usosPorNivel": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "nivel": 3
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Ataques múltiplos & pesados",
+        "efeito": "Muda de alvo com armas pesadas ignorando a desvantagem de ataques múltiplos.",
+        "requisitos": "",
+        "atributo": "Físico",
+        "valorCompra": "6 exp.",
+        "custoPA": "1 PA",
+        "usosPorNivel": [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "nivel": 2
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Encontrão",
+        "efeito": "Corre 2 m e empurra o oponente; metade do dano.",
+        "requisitos": "",
+        "atributo": "Físico",
+        "valorCompra": "6 exp.",
+        "custoPA": "1 PA + PA da arma",
+        "usosPorNivel": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "nivel": 3
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Quebrar guarda",
+        "efeito": "Força o inimigo a gastar a guarda levantada; metade do dano.",
+        "requisitos": "",
+        "atributo": "Físico",
+        "valorCompra": "2 exp.",
+        "custoPA": "1 PA + PA da arma",
+        "usosPorNivel": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Empacado",
+        "efeito": "Reduz movimentação forçada pela metade.",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "2 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Resistente",
+        "efeito": "Reduz o dano recebido pela metade (guarda + armadura média/pesada).",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "3 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      }
+    ],
+    "anotacoes": "Mão hábil: direita. Muralha móvel: alcance 2–3 m + perfurante + Reativo + Alerta = anel de ameaça ao redor do Arauto; Encontrão empurra pra fora da ponte."
+  }
+}

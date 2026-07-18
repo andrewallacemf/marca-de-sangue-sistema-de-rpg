@@ -1,0 +1,491 @@
+{
+  "app": "marca-de-sangue-ficha",
+  "schemaVersion": 1,
+  "rulesVersion": "vigente",
+  "salvoEm": "2026-07-18T00:34:10.818028",
+  "data": {
+    "info": {
+      "nome": "Thorne, o Quebra-Colosso",
+      "jogador": "",
+      "cenario": "Cenário 5 — O Coração do Colosso (Épico)",
+      "ultimaSessao": ""
+    },
+    "exp": {
+      "baseTotal": "100",
+      "baseUsada": "100",
+      "qtdAptidoes": "9",
+      "qtdHabilidades": "3",
+      "qtdTracos": "12"
+    },
+    "aptidoes": {
+      "fisica": {
+        "total": "9",
+        "usado": ""
+      },
+      "agil": {
+        "total": "",
+        "usado": ""
+      },
+      "mental": {
+        "total": "",
+        "usado": ""
+      },
+      "social": {
+        "total": "",
+        "usado": ""
+      }
+    },
+    "pa": {
+      "base": "10",
+      "redArmadura": "-5",
+      "redDano": "0",
+      "redCarga": "0",
+      "outros": "+3",
+      "total": "8"
+    },
+    "armas": [
+      {
+        "nome": "Martelo de batalha",
+        "tipo": "Pesada · longo alcance",
+        "equipado": "Uma mão (Firme apr.) + escudo",
+        "categoria": "Contundente",
+        "alcance": "1–2 m",
+        "durabilidade": "",
+        "custoPA": "6",
+        "dano": "3d4",
+        "props": {
+          "ARRE": false,
+          "AGAR": false,
+          "CORT": false,
+          "CONT": true,
+          "DEFL": false,
+          "PERF": false,
+          "PROJ": false
+        }
+      },
+      {
+        "nome": "Machado de batalha (reserva)",
+        "tipo": "Pesada",
+        "equipado": "Duas mãos",
+        "categoria": "Cortante",
+        "alcance": "1–2 m",
+        "durabilidade": "",
+        "custoPA": "6",
+        "dano": "1d12",
+        "props": {
+          "ARRE": false,
+          "AGAR": false,
+          "CORT": true,
+          "CONT": false,
+          "DEFL": false,
+          "PERF": false,
+          "PROJ": false
+        }
+      }
+    ],
+    "protecoes": [
+      {
+        "nome": "Peitoral pesado",
+        "redPA": "-3",
+        "redDano": "-3",
+        "durabilidade": "50",
+        "regioes": [
+          "tronco"
+        ]
+      },
+      {
+        "nome": "Escudo médio (guarda 3 PA)",
+        "redPA": "-2",
+        "redDano": "-2",
+        "durabilidade": "15",
+        "regioes": []
+      }
+    ],
+    "saude": {
+      "cabeca": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tronco": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bracoE": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bracoD": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "pernaE": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "pernaD": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "fadiga": 0,
+    "guardas": "0",
+    "equipamentos": [
+      {
+        "equipado": true,
+        "item": "Martelo de batalha",
+        "qtd": "1",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      },
+      {
+        "equipado": true,
+        "item": "Machado de batalha",
+        "qtd": "1",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      },
+      {
+        "equipado": true,
+        "item": "Peitoral pesado",
+        "qtd": "1",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      },
+      {
+        "equipado": true,
+        "item": "Escudo médio",
+        "qtd": "1",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      }
+    ],
+    "carga": {
+      "capacidade": "",
+      "carregado": ""
+    },
+    "tesouro": [
+      {
+        "label": "Moedas",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      }
+    ],
+    "caracteristicas": [
+      {
+        "tipo": "Traço",
+        "nome": "Maestria em armaduras pesadas",
+        "efeito": "Domínio de armaduras pesadas.",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Maestria em armaduras médias",
+        "efeito": "Domínio de armaduras médias.",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Maestria em armas contundentes",
+        "efeito": "Ativa a propriedade contundente: cada acerto reduz PA do alvo (leve −1, média −2, pesada −3).",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Maestria em armas cortantes",
+        "efeito": "Ativa a propriedade cortante: ataque de oportunidade quando o alvo SAI do alcance ideal.",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Firme",
+        "efeito": "Usa arma pesada com uma mão (−3 dano).",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "4 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Firme aprimorado",
+        "efeito": "Remove a redução do Firme: arma pesada numa mão sem penalidade (requer Firme).",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "4 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Resistente",
+        "efeito": "Reduz o dano recebido pela metade (guarda + armadura média/pesada).",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "3 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Blindado",
+        "efeito": "+1d10 para defender ataques à distância com escudo.",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "4 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Protetor",
+        "efeito": "Desvia para si o dano de um aliado adjacente (requer escudo).",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "4 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Reativo",
+        "efeito": "Ataque de oportunidade quando um oponente sai do seu alcance ideal (guarda levantada).",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "4 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Alerta",
+        "efeito": "Ataque de oportunidade quando um oponente entra no seu alcance ideal (guarda levantada).",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "4 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Empacado",
+        "efeito": "Reduz movimentação forçada pela metade.",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "2 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Atordoar",
+        "efeito": "Metade do dano e reduz PA do alvo de forma persistente (até descanso curto).",
+        "requisitos": "",
+        "atributo": "Físico",
+        "valorCompra": "20 exp.",
+        "custoPA": "1 PA + PA da arma",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "nivel": 5
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Quebrar guarda",
+        "efeito": "Força o inimigo a gastar a guarda levantada; metade do dano.",
+        "requisitos": "",
+        "atributo": "Físico",
+        "valorCompra": "4 exp.",
+        "custoPA": "1 PA + PA da arma",
+        "usosPorNivel": [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "nivel": 2
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Encontrão",
+        "efeito": "Corre 2 m e empurra o oponente; metade do dano.",
+        "requisitos": "",
+        "atributo": "Físico",
+        "valorCompra": "4 exp.",
+        "custoPA": "1 PA + PA da arma",
+        "usosPorNivel": [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "nivel": 2
+      }
+    ],
+    "anotacoes": "Mão hábil: direita (+3 PA comprados). Âncora: Firme aprimorado = martelo pesado numa mão + escudo; Atordoar nv5 (−5 PA) + maestria contundente (−3) estrangulam o Colosso; Protetor+Resistente salvam aliados da Esmagada."
+  }
+}

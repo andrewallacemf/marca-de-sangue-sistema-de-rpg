@@ -1,0 +1,341 @@
+{
+  "app": "marca-de-sangue-ficha",
+  "schemaVersion": 1,
+  "rulesVersion": "vigente",
+  "salvoEm": "2026-07-18T00:34:10.815555",
+  "data": {
+    "info": {
+      "nome": "Vera, a Batedora",
+      "jogador": "",
+      "cenario": "Cenário 3 — Correr no Ferro-Velho (Colapso)",
+      "ultimaSessao": ""
+    },
+    "exp": {
+      "baseTotal": "50",
+      "baseUsada": "50",
+      "qtdAptidoes": "22",
+      "qtdHabilidades": "2",
+      "qtdTracos": "6"
+    },
+    "aptidoes": {
+      "fisica": {
+        "total": "4",
+        "usado": ""
+      },
+      "agil": {
+        "total": "18",
+        "usado": ""
+      },
+      "mental": {
+        "total": "",
+        "usado": ""
+      },
+      "social": {
+        "total": "",
+        "usado": ""
+      }
+    },
+    "pa": {
+      "base": "10",
+      "redArmadura": "0",
+      "redDano": "0",
+      "redCarga": "0",
+      "outros": "0",
+      "total": "10"
+    },
+    "armas": [
+      {
+        "nome": "Machadinha",
+        "tipo": "Média · arremesso",
+        "equipado": "Mão hábil",
+        "categoria": "Cortante",
+        "alcance": "1 m / 2–4 m",
+        "durabilidade": "",
+        "custoPA": "4",
+        "dano": "1d8",
+        "props": {
+          "ARRE": true,
+          "AGAR": false,
+          "CORT": true,
+          "CONT": false,
+          "DEFL": false,
+          "PERF": false,
+          "PROJ": false
+        }
+      },
+      {
+        "nome": "Faca (reserva)",
+        "tipo": "Leve",
+        "equipado": "Mão inábil",
+        "categoria": "Cortante/Perfurante",
+        "alcance": "1 m",
+        "durabilidade": "",
+        "custoPA": "2",
+        "dano": "1d4",
+        "props": {
+          "ARRE": true,
+          "AGAR": false,
+          "CORT": true,
+          "CONT": false,
+          "DEFL": false,
+          "PERF": true,
+          "PROJ": false
+        }
+      }
+    ],
+    "protecoes": [],
+    "saude": {
+      "cabeca": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tronco": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bracoE": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bracoD": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "pernaE": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "pernaD": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "fadiga": 0,
+    "guardas": "0",
+    "equipamentos": [
+      {
+        "equipado": true,
+        "item": "Machadinha",
+        "qtd": "1",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      },
+      {
+        "equipado": true,
+        "item": "Faca",
+        "qtd": "1",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      }
+    ],
+    "carga": {
+      "capacidade": "",
+      "carregado": ""
+    },
+    "tesouro": [
+      {
+        "label": "Moedas",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      }
+    ],
+    "caracteristicas": [
+      {
+        "tipo": "Traço",
+        "nome": "Corredor",
+        "efeito": "Dobra o teto de PA usado no deslocamento.",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "8 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Maratonista",
+        "efeito": "Dobra o movimento correndo em linha reta (≥5 PA, sem peso pesado).",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "4 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Disparada",
+        "efeito": "Movimento em linha reta (6–10 m por nível).",
+        "requisitos": "",
+        "atributo": "Ágil",
+        "valorCompra": "6 exp.",
+        "custoPA": "5 PA",
+        "usosPorNivel": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "nivel": 3
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Técnica em Saltar",
+        "efeito": "Anula a desvantagem natural para saltar.",
+        "requisitos": "",
+        "atributo": "Ágil",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Saltador",
+        "efeito": "Salto sobe de 5 m para 10 m (requer Técnica em Saltar).",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "3 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Técnica em Nadar",
+        "efeito": "Anula a desvantagem natural para nadar.",
+        "requisitos": "",
+        "atributo": "Ágil",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Escorregadio",
+        "efeito": "+1d10 para esquivar de ataques de oportunidade (sem armadura média/pesada).",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "4 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Ataques múltiplos & leves",
+        "efeito": "Muda de alvo com armas leves ignorando a desvantagem de ataques múltiplos.",
+        "requisitos": "",
+        "atributo": "Ágil",
+        "valorCompra": "1 exp.",
+        "custoPA": "1 PA",
+        "usosPorNivel": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      }
+    ],
+    "anotacoes": "Mão hábil: direita. A mais rápida: Corredor+Maratonista+Disparada atravessam o mapa; Escorregadio anula oportunidade ao fugir; serve de isca."
+  }
+}

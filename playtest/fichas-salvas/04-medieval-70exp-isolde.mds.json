@@ -1,0 +1,363 @@
+{
+  "app": "marca-de-sangue-ficha",
+  "schemaVersion": 1,
+  "rulesVersion": "vigente",
+  "salvoEm": "2026-07-18T00:34:10.817022",
+  "data": {
+    "info": {
+      "nome": "Dame Isolde, a Comandante",
+      "jogador": "",
+      "cenario": "Cenário 4 — A Escolta da Chama (Medieval)",
+      "ultimaSessao": ""
+    },
+    "exp": {
+      "baseTotal": "70",
+      "baseUsada": "70",
+      "qtdAptidoes": "22",
+      "qtdHabilidades": "5",
+      "qtdTracos": "4"
+    },
+    "aptidoes": {
+      "fisica": {
+        "total": "",
+        "usado": ""
+      },
+      "agil": {
+        "total": "",
+        "usado": ""
+      },
+      "mental": {
+        "total": "4",
+        "usado": ""
+      },
+      "social": {
+        "total": "18",
+        "usado": ""
+      }
+    },
+    "pa": {
+      "base": "10",
+      "redArmadura": "-2",
+      "redDano": "0",
+      "redCarga": "0",
+      "outros": "0",
+      "total": "8"
+    },
+    "armas": [
+      {
+        "nome": "Sabre",
+        "tipo": "Média · versátil · longo alcance",
+        "equipado": "Mão hábil",
+        "categoria": "Cortante/Perfurante",
+        "alcance": "1–2 m",
+        "durabilidade": "",
+        "custoPA": "4",
+        "dano": "1d8 CORT · 1d6 PERF (+1d4 a 2 mãos)",
+        "props": {
+          "ARRE": false,
+          "AGAR": false,
+          "CORT": true,
+          "CONT": false,
+          "DEFL": false,
+          "PERF": true,
+          "PROJ": false
+        }
+      }
+    ],
+    "protecoes": [
+      {
+        "nome": "Peitoral leve",
+        "redPA": "-1",
+        "redDano": "-1",
+        "durabilidade": "10",
+        "regioes": [
+          "tronco"
+        ]
+      },
+      {
+        "nome": "Escudo pequeno (leve · guarda 2 PA)",
+        "redPA": "-1",
+        "redDano": "-1",
+        "durabilidade": "10",
+        "regioes": []
+      }
+    ],
+    "saude": {
+      "cabeca": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tronco": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bracoE": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bracoD": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "pernaE": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "pernaD": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "fadiga": 0,
+    "guardas": "0",
+    "equipamentos": [
+      {
+        "equipado": true,
+        "item": "Sabre",
+        "qtd": "1",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      },
+      {
+        "equipado": true,
+        "item": "Peitoral leve",
+        "qtd": "1",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      },
+      {
+        "equipado": true,
+        "item": "Escudo pequeno",
+        "qtd": "1",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      }
+    ],
+    "carga": {
+      "capacidade": "",
+      "carregado": ""
+    },
+    "tesouro": [
+      {
+        "label": "Moedas",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      }
+    ],
+    "caracteristicas": [
+      {
+        "tipo": "Habilidade",
+        "nome": "Grito de alerta",
+        "efeito": "Vantagem no próximo contrateste de defesa/esquiva de aliados a até 4 m.",
+        "requisitos": "",
+        "atributo": "Social",
+        "valorCompra": "9 exp.",
+        "custoPA": "4 PA",
+        "usosPorNivel": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "nivel": 3
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Brado de guerra",
+        "efeito": "Vantagem no próximo ataque de aliados a até 4 m.",
+        "requisitos": "",
+        "atributo": "Social",
+        "valorCompra": "9 exp.",
+        "custoPA": "2 PA",
+        "usosPorNivel": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "nivel": 3
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Comandar",
+        "efeito": "Transfere pontos de ação do seu próximo turno para um aliado.",
+        "requisitos": "",
+        "atributo": "Social",
+        "valorCompra": "8 exp.",
+        "custoPA": "1 PA",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "nivel": 4
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Apoiador",
+        "efeito": "Usa aptidões nos testes de um aliado adjacente.",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "4 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Confundir inimigo",
+        "efeito": "Desvantagem no próximo contrateste de defesa/esquiva de oponentes (até 6 m).",
+        "requisitos": "",
+        "atributo": "Mental",
+        "valorCompra": "9 exp.",
+        "custoPA": "4 PA",
+        "usosPorNivel": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "nivel": 3
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Intimidação generalizada",
+        "efeito": "Atrasa os turnos de oponentes em 1 posição (até 6 m).",
+        "requisitos": "",
+        "atributo": "Mental",
+        "valorCompra": "6 exp.",
+        "custoPA": "4 PA",
+        "usosPorNivel": [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "nivel": 2
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Maestria em armaduras leves",
+        "efeito": "Domínio de armaduras leves.",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Maestria em armas cortantes",
+        "efeito": "Ativa a propriedade cortante: ataque de oportunidade quando o alvo SAI do alcance ideal.",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Técnica em Persuadir/Seduzir",
+        "efeito": "Anula a desvantagem natural para persuadir/seduzir.",
+        "requisitos": "",
+        "atributo": "Social",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      }
+    ],
+    "anotacoes": "Mão hábil: direita. Cérebro: Comandar dá PA ao Arauto; Grito de alerta blinda a formação; Confundir/Intimidação desmontam a emboscada; Apoiador empresta aptidões ao NPC."
+  }
+}

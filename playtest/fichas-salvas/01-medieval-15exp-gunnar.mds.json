@@ -1,0 +1,295 @@
+{
+  "app": "marca-de-sangue-ficha",
+  "schemaVersion": 1,
+  "rulesVersion": "vigente",
+  "salvoEm": "2026-07-18T00:34:10.813461",
+  "data": {
+    "info": {
+      "nome": "Gunnar, o Escudeiro",
+      "jogador": "",
+      "cenario": "Cenário 1 — A Brecha na Muralha (Medieval)",
+      "ultimaSessao": ""
+    },
+    "exp": {
+      "baseTotal": "15",
+      "baseUsada": "15",
+      "qtdAptidoes": "5",
+      "qtdHabilidades": "3",
+      "qtdTracos": "2"
+    },
+    "aptidoes": {
+      "fisica": {
+        "total": "5",
+        "usado": ""
+      },
+      "agil": {
+        "total": "",
+        "usado": ""
+      },
+      "mental": {
+        "total": "",
+        "usado": ""
+      },
+      "social": {
+        "total": "",
+        "usado": ""
+      }
+    },
+    "pa": {
+      "base": "10",
+      "redArmadura": "-2",
+      "redDano": "0",
+      "redCarga": "0",
+      "outros": "0",
+      "total": "8"
+    },
+    "armas": [
+      {
+        "nome": "Maça",
+        "tipo": "Média · versátil",
+        "equipado": "Mão hábil",
+        "categoria": "Contundente/Perfurante",
+        "alcance": "1 m",
+        "durabilidade": "",
+        "custoPA": "4",
+        "dano": "2d4 CONT · 1d6 PERF",
+        "props": {
+          "ARRE": false,
+          "AGAR": false,
+          "CORT": false,
+          "CONT": true,
+          "DEFL": false,
+          "PERF": true,
+          "PROJ": false
+        }
+      }
+    ],
+    "protecoes": [
+      {
+        "nome": "Escudo pequeno (leve · guarda 2 PA)",
+        "redPA": "-1",
+        "redDano": "-1",
+        "durabilidade": "10",
+        "regioes": []
+      },
+      {
+        "nome": "Peitoral leve",
+        "redPA": "-1",
+        "redDano": "-1",
+        "durabilidade": "10",
+        "regioes": [
+          "tronco"
+        ]
+      }
+    ],
+    "saude": {
+      "cabeca": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tronco": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bracoE": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bracoD": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "pernaE": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "pernaD": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "fadiga": 0,
+    "guardas": "0",
+    "equipamentos": [
+      {
+        "equipado": true,
+        "item": "Maça",
+        "qtd": "1",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      },
+      {
+        "equipado": true,
+        "item": "Escudo pequeno",
+        "qtd": "1",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      },
+      {
+        "equipado": true,
+        "item": "Peitoral leve",
+        "qtd": "1",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      }
+    ],
+    "carga": {
+      "capacidade": "",
+      "carregado": ""
+    },
+    "tesouro": [
+      {
+        "label": "Moedas",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      }
+    ],
+    "caracteristicas": [
+      {
+        "tipo": "Traço",
+        "nome": "Maestria em armas contundentes",
+        "efeito": "Ativa a propriedade contundente: cada acerto reduz PA do alvo (leve −1, média −2, pesada −3).",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Maestria em armaduras leves",
+        "efeito": "Domínio de armaduras leves.",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Quebrar guarda",
+        "efeito": "Força o inimigo a gastar a guarda levantada; metade do dano.",
+        "requisitos": "",
+        "atributo": "Físico",
+        "valorCompra": "2 exp.",
+        "custoPA": "1 PA + PA da arma",
+        "usosPorNivel": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Encontrão",
+        "efeito": "Corre 2 m e empurra o oponente; metade do dano.",
+        "requisitos": "",
+        "atributo": "Físico",
+        "valorCompra": "2 exp.",
+        "custoPA": "1 PA + PA da arma",
+        "usosPorNivel": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Atordoar",
+        "efeito": "Metade do dano e reduz PA do alvo de forma persistente (até descanso curto).",
+        "requisitos": "",
+        "atributo": "Físico",
+        "valorCompra": "4 exp.",
+        "custoPA": "1 PA + PA da arma",
+        "usosPorNivel": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      }
+    ],
+    "anotacoes": "Mão hábil: direita. Muro da brecha: maça contundente (−2 PA/acerto) + Atordoar; Encontrão para repelir; guarda + aptidões físicas."
+  }
+}

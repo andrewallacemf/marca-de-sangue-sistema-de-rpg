@@ -1,0 +1,281 @@
+{
+  "app": "marca-de-sangue-ficha",
+  "schemaVersion": 1,
+  "rulesVersion": "vigente",
+  "salvoEm": "2026-07-18T00:34:10.814919",
+  "data": {
+    "info": {
+      "nome": "Haruko, a Curandeira",
+      "jogador": "",
+      "cenario": "Cenário 2 — O Selo do Templo (Mukashi)",
+      "ultimaSessao": ""
+    },
+    "exp": {
+      "baseTotal": "30",
+      "baseUsada": "30",
+      "qtdAptidoes": "8",
+      "qtdHabilidades": "4",
+      "qtdTracos": "2"
+    },
+    "aptidoes": {
+      "fisica": {
+        "total": "",
+        "usado": ""
+      },
+      "agil": {
+        "total": "",
+        "usado": ""
+      },
+      "mental": {
+        "total": "2",
+        "usado": ""
+      },
+      "social": {
+        "total": "6",
+        "usado": ""
+      }
+    },
+    "pa": {
+      "base": "10",
+      "redArmadura": "0",
+      "redDano": "0",
+      "redCarga": "0",
+      "outros": "0",
+      "total": "10"
+    },
+    "armas": [
+      {
+        "nome": "Bastão médio",
+        "tipo": "Média · versátil",
+        "equipado": "Duas mãos",
+        "categoria": "Contundente",
+        "alcance": "1 m",
+        "durabilidade": "",
+        "custoPA": "4",
+        "dano": "2d4 (+1d4 a 2 mãos)",
+        "props": {
+          "ARRE": false,
+          "AGAR": false,
+          "CORT": false,
+          "CONT": true,
+          "DEFL": false,
+          "PERF": false,
+          "PROJ": false
+        }
+      }
+    ],
+    "protecoes": [],
+    "saude": {
+      "cabeca": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tronco": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bracoE": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bracoD": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "pernaE": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "pernaD": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "fadiga": 0,
+    "guardas": "0",
+    "equipamentos": [
+      {
+        "equipado": true,
+        "item": "Bastão médio",
+        "qtd": "1",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      }
+    ],
+    "carga": {
+      "capacidade": "",
+      "carregado": ""
+    },
+    "tesouro": [
+      {
+        "label": "Moedas",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      }
+    ],
+    "caracteristicas": [
+      {
+        "tipo": "Traço",
+        "nome": "Técnica em Tratar/Curar",
+        "efeito": "Anula a desvantagem natural para tratar/curar.",
+        "requisitos": "",
+        "atributo": "Social/Mental",
+        "valorCompra": "3 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Técnica em Ponderar",
+        "efeito": "Anula a desvantagem natural para ponderar.",
+        "requisitos": "",
+        "atributo": "Mental",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Cura especializada",
+        "efeito": "Cura dano superficial de um aliado adjacente (1d4→1d12).",
+        "requisitos": "",
+        "atributo": "Social",
+        "valorCompra": "6 exp.",
+        "custoPA": "4 PA",
+        "usosPorNivel": [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "nivel": 2
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Animar",
+        "efeito": "Recupera aptidões consumidas de um aliado adjacente.",
+        "requisitos": "",
+        "atributo": "Social",
+        "valorCompra": "2 exp.",
+        "custoPA": "2 PA",
+        "usosPorNivel": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Brado de guerra",
+        "efeito": "Vantagem no próximo ataque de aliados a até 4 m.",
+        "requisitos": "",
+        "atributo": "Social",
+        "valorCompra": "6 exp.",
+        "custoPA": "2 PA",
+        "usosPorNivel": [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "nivel": 2
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Comandar",
+        "efeito": "Transfere pontos de ação do seu próximo turno para um aliado.",
+        "requisitos": "",
+        "atributo": "Social",
+        "valorCompra": "4 exp.",
+        "custoPA": "1 PA",
+        "usosPorNivel": [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "nivel": 2
+      }
+    ],
+    "anotacoes": "Mão hábil: direita. Fica atrás: Comandar dá PA à Kaede; Brado garante o acerto da emboscada; cura fora/dentro; Animar recarrega aptidões dela."
+  }
+}

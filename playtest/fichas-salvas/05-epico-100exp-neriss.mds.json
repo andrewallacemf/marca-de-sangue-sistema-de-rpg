@@ -1,0 +1,390 @@
+{
+  "app": "marca-de-sangue-ficha",
+  "schemaVersion": 1,
+  "rulesVersion": "vigente",
+  "salvoEm": "2026-07-18T00:34:10.818807",
+  "data": {
+    "info": {
+      "nome": "Neriss, a Tática de Batalha",
+      "jogador": "",
+      "cenario": "Cenário 5 — O Coração do Colosso (Épico)",
+      "ultimaSessao": ""
+    },
+    "exp": {
+      "baseTotal": "100",
+      "baseUsada": "100",
+      "qtdAptidoes": "29",
+      "qtdHabilidades": "8",
+      "qtdTracos": "3"
+    },
+    "aptidoes": {
+      "fisica": {
+        "total": "",
+        "usado": ""
+      },
+      "agil": {
+        "total": "4",
+        "usado": ""
+      },
+      "mental": {
+        "total": "25",
+        "usado": ""
+      },
+      "social": {
+        "total": "",
+        "usado": ""
+      }
+    },
+    "pa": {
+      "base": "10",
+      "redArmadura": "-1",
+      "redDano": "0",
+      "redCarga": "0",
+      "outros": "0",
+      "total": "9"
+    },
+    "armas": [
+      {
+        "nome": "Besta leve",
+        "tipo": "Média · à distância",
+        "equipado": "Duas mãos",
+        "categoria": "Projétil",
+        "alcance": "7–10 m",
+        "durabilidade": "",
+        "custoPA": "4",
+        "dano": "1d4 (virote)",
+        "props": {
+          "ARRE": false,
+          "AGAR": false,
+          "CORT": false,
+          "CONT": false,
+          "DEFL": false,
+          "PERF": false,
+          "PROJ": true
+        }
+      }
+    ],
+    "protecoes": [
+      {
+        "nome": "Peitoral leve",
+        "redPA": "-1",
+        "redDano": "-1",
+        "durabilidade": "10",
+        "regioes": [
+          "tronco"
+        ]
+      }
+    ],
+    "saude": {
+      "cabeca": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tronco": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bracoE": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bracoD": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "pernaE": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "pernaD": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "fadiga": 0,
+    "guardas": "0",
+    "equipamentos": [
+      {
+        "equipado": true,
+        "item": "Besta leve",
+        "qtd": "1",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      },
+      {
+        "equipado": true,
+        "item": "Virotes",
+        "qtd": "20",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      },
+      {
+        "equipado": true,
+        "item": "Peitoral leve",
+        "qtd": "1",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      }
+    ],
+    "carga": {
+      "capacidade": "",
+      "carregado": ""
+    },
+    "tesouro": [
+      {
+        "label": "Moedas",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      }
+    ],
+    "caracteristicas": [
+      {
+        "tipo": "Habilidade",
+        "nome": "Consumir",
+        "efeito": "Consome/desativa habilidades de um oponente.",
+        "requisitos": "",
+        "atributo": "Mental",
+        "valorCompra": "12 exp.",
+        "custoPA": "4 PA",
+        "usosPorNivel": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "nivel": 3
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Confundir inimigo",
+        "efeito": "Desvantagem no próximo contrateste de defesa/esquiva de oponentes (até 6 m).",
+        "requisitos": "",
+        "atributo": "Mental",
+        "valorCompra": "12 exp.",
+        "custoPA": "4 PA",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "nivel": 4
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Intimidação generalizada",
+        "efeito": "Atrasa os turnos de oponentes em 1 posição (até 6 m).",
+        "requisitos": "",
+        "atributo": "Mental",
+        "valorCompra": "12 exp.",
+        "custoPA": "4 PA",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "nivel": 4
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Urro de Intimidação",
+        "efeito": "Atrasa muito o turno de um oponente (até 3 m).",
+        "requisitos": "",
+        "atributo": "Mental",
+        "valorCompra": "9 exp.",
+        "custoPA": "4 PA",
+        "usosPorNivel": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "nivel": 3
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Criar armadilha",
+        "efeito": "Depõe uma armadilha que prende e causa dano ao ser acionada.",
+        "requisitos": "",
+        "atributo": "Mental",
+        "valorCompra": "8 exp.",
+        "custoPA": "1 PA",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "nivel": 4
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Analisar fraquezas",
+        "efeito": "Vê quanto dano o oponente recebeu em partes do corpo à escolha.",
+        "requisitos": "",
+        "atributo": "Mental",
+        "valorCompra": "3 exp.",
+        "custoPA": "1 PA",
+        "usosPorNivel": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "nivel": 3
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Recompor",
+        "efeito": "Recupera as próprias aptidões consumidas.",
+        "requisitos": "",
+        "atributo": "Mental",
+        "valorCompra": "8 exp.",
+        "custoPA": "4 PA",
+        "usosPorNivel": [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "nivel": 2
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Maestria em projéteis",
+        "efeito": "Ignora barreiras no caminho do alvo; recarregar não custa PA ao acertar.",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Ataques à distância concentrados",
+        "efeito": "Mantém o alvo à distância ignorando a desvantagem de ataques múltiplos.",
+        "requisitos": "",
+        "atributo": "Ágil",
+        "valorCompra": "4 exp.",
+        "custoPA": "1 PA",
+        "usosPorNivel": [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "nivel": 2
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Técnica em Investigar/Observar",
+        "efeito": "Anula a desvantagem natural para investigar/observar.",
+        "requisitos": "",
+        "atributo": "Mental",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Técnica em Ponderar",
+        "efeito": "Anula a desvantagem natural para ponderar.",
+        "requisitos": "",
+        "atributo": "Mental",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      }
+    ],
+    "anotacoes": "Mão hábil: direita. Controle: Confundir dá desvantagem na defesa do Colosso (todos acertam mais); Intimidação/Urro atrasam o chefe; Consumir desliga o Tremor; Recompor recarrega aptidões; armadilhas nos Fragmentos."
+  }
+}

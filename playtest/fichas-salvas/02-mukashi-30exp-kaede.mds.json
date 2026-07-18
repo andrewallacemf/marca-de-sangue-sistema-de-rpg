@@ -1,0 +1,341 @@
+{
+  "app": "marca-de-sangue-ficha",
+  "schemaVersion": 1,
+  "rulesVersion": "vigente",
+  "salvoEm": "2026-07-18T00:34:10.814322",
+  "data": {
+    "info": {
+      "nome": "Kaede, a Shinobi",
+      "jogador": "",
+      "cenario": "Cenário 2 — O Selo do Templo (Mukashi)",
+      "ultimaSessao": ""
+    },
+    "exp": {
+      "baseTotal": "30",
+      "baseUsada": "30",
+      "qtdAptidoes": "11",
+      "qtdHabilidades": "2",
+      "qtdTracos": "6"
+    },
+    "aptidoes": {
+      "fisica": {
+        "total": "2",
+        "usado": ""
+      },
+      "agil": {
+        "total": "9",
+        "usado": ""
+      },
+      "mental": {
+        "total": "",
+        "usado": ""
+      },
+      "social": {
+        "total": "",
+        "usado": ""
+      }
+    },
+    "pa": {
+      "base": "10",
+      "redArmadura": "0",
+      "redDano": "0",
+      "redCarga": "0",
+      "outros": "0",
+      "total": "10"
+    },
+    "armas": [
+      {
+        "nome": "Kunai",
+        "tipo": "Leve",
+        "equipado": "Mão hábil",
+        "categoria": "Cortante/Perfurante",
+        "alcance": "1 m",
+        "durabilidade": "",
+        "custoPA": "2",
+        "dano": "1d4",
+        "props": {
+          "ARRE": true,
+          "AGAR": false,
+          "CORT": true,
+          "CONT": false,
+          "DEFL": false,
+          "PERF": true,
+          "PROJ": false
+        }
+      },
+      {
+        "nome": "Shuriken",
+        "tipo": "Leve · arremesso",
+        "equipado": "Mão inábil",
+        "categoria": "Perfurante",
+        "alcance": "2–5 m",
+        "durabilidade": "",
+        "custoPA": "2",
+        "dano": "1d4",
+        "props": {
+          "ARRE": true,
+          "AGAR": false,
+          "CORT": false,
+          "CONT": false,
+          "DEFL": false,
+          "PERF": true,
+          "PROJ": false
+        }
+      }
+    ],
+    "protecoes": [],
+    "saude": {
+      "cabeca": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tronco": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bracoE": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bracoD": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "pernaE": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "pernaD": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "fadiga": 0,
+    "guardas": "0",
+    "equipamentos": [
+      {
+        "equipado": true,
+        "item": "Kunai",
+        "qtd": "1",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      },
+      {
+        "equipado": true,
+        "item": "Shuriken",
+        "qtd": "5",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      }
+    ],
+    "carga": {
+      "capacidade": "",
+      "carregado": ""
+    },
+    "tesouro": [
+      {
+        "label": "Moedas",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      }
+    ],
+    "caracteristicas": [
+      {
+        "tipo": "Traço",
+        "nome": "Técnica em Esconder-se",
+        "efeito": "Anula a desvantagem natural para esconder-se.",
+        "requisitos": "",
+        "atributo": "Ágil",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Técnica em Realizar truques",
+        "efeito": "Anula a desvantagem natural para realizar truques.",
+        "requisitos": "",
+        "atributo": "Ágil/Social",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Técnica em Saltar",
+        "efeito": "Anula a desvantagem natural para saltar.",
+        "requisitos": "",
+        "atributo": "Ágil",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Maestria em armas cortantes",
+        "efeito": "Ativa a propriedade cortante: ataque de oportunidade quando o alvo SAI do alcance ideal.",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Emboscador",
+        "efeito": "Pelas costas, escondido, com arma leve: dobra o resultado do dano.",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "4 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Golpe surpresa",
+        "efeito": "Escondido, com arma leve: causa dado adicional de dano (1d4→1d10).",
+        "requisitos": "",
+        "atributo": "Ágil",
+        "valorCompra": "6 exp.",
+        "custoPA": "1 PA + PA da arma",
+        "usosPorNivel": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "nivel": 3
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Ataques múltiplos & leves",
+        "efeito": "Muda de alvo com armas leves ignorando a desvantagem de ataques múltiplos.",
+        "requisitos": "",
+        "atributo": "Ágil",
+        "valorCompra": "2 exp.",
+        "custoPA": "1 PA",
+        "usosPorNivel": [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "nivel": 2
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Saltador",
+        "efeito": "Salto sobe de 5 m para 10 m (requer Técnica em Saltar).",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "3 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      }
+    ],
+    "anotacoes": "Mão hábil: direita. Ataca pelas costas, escondida: Emboscador (dobra) + Golpe surpresa (+1d8) derruba sentinela num golpe. Saltar vence muros/lago."
+  }
+}

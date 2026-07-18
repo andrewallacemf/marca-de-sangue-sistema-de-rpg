@@ -1,0 +1,436 @@
+{
+  "app": "marca-de-sangue-ficha",
+  "schemaVersion": 1,
+  "rulesVersion": "vigente",
+  "salvoEm": "2026-07-18T00:34:10.818483",
+  "data": {
+    "info": {
+      "nome": "Syla, a Assassina",
+      "jogador": "",
+      "cenario": "Cenário 5 — O Coração do Colosso (Épico)",
+      "ultimaSessao": ""
+    },
+    "exp": {
+      "baseTotal": "100",
+      "baseUsada": "100",
+      "qtdAptidoes": "41",
+      "qtdHabilidades": "6",
+      "qtdTracos": "8"
+    },
+    "aptidoes": {
+      "fisica": {
+        "total": "6",
+        "usado": ""
+      },
+      "agil": {
+        "total": "34",
+        "usado": ""
+      },
+      "mental": {
+        "total": "1",
+        "usado": ""
+      },
+      "social": {
+        "total": "",
+        "usado": ""
+      }
+    },
+    "pa": {
+      "base": "10",
+      "redArmadura": "0",
+      "redDano": "0",
+      "redCarga": "0",
+      "outros": "0",
+      "total": "10"
+    },
+    "armas": [
+      {
+        "nome": "Adaga (mão hábil)",
+        "tipo": "Leve",
+        "equipado": "Mão hábil",
+        "categoria": "Cortante/Perfurante",
+        "alcance": "1 m",
+        "durabilidade": "",
+        "custoPA": "2",
+        "dano": "1d4",
+        "props": {
+          "ARRE": true,
+          "AGAR": false,
+          "CORT": true,
+          "CONT": false,
+          "DEFL": false,
+          "PERF": true,
+          "PROJ": false
+        }
+      },
+      {
+        "nome": "Adaga (mão inábil)",
+        "tipo": "Leve",
+        "equipado": "Mão inábil",
+        "categoria": "Cortante/Perfurante",
+        "alcance": "1 m",
+        "durabilidade": "",
+        "custoPA": "2",
+        "dano": "1d4",
+        "props": {
+          "ARRE": true,
+          "AGAR": false,
+          "CORT": true,
+          "CONT": false,
+          "DEFL": false,
+          "PERF": true,
+          "PROJ": false
+        }
+      }
+    ],
+    "protecoes": [],
+    "saude": {
+      "cabeca": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tronco": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bracoE": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bracoD": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "pernaE": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "pernaD": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "fadiga": 0,
+    "guardas": "0",
+    "equipamentos": [
+      {
+        "equipado": true,
+        "item": "Adaga",
+        "qtd": "2",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      }
+    ],
+    "carga": {
+      "capacidade": "",
+      "carregado": ""
+    },
+    "tesouro": [
+      {
+        "label": "Moedas",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      }
+    ],
+    "caracteristicas": [
+      {
+        "tipo": "Traço",
+        "nome": "Técnica em Esconder-se",
+        "efeito": "Anula a desvantagem natural para esconder-se.",
+        "requisitos": "",
+        "atributo": "Ágil",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Técnica em Realizar truques",
+        "efeito": "Anula a desvantagem natural para realizar truques.",
+        "requisitos": "",
+        "atributo": "Ágil/Social",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Técnica em Saltar",
+        "efeito": "Anula a desvantagem natural para saltar.",
+        "requisitos": "",
+        "atributo": "Ágil",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Saltador",
+        "efeito": "Salto sobe de 5 m para 10 m (requer Técnica em Saltar).",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "3 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Maestria em armas cortantes",
+        "efeito": "Ativa a propriedade cortante: ataque de oportunidade quando o alvo SAI do alcance ideal.",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Maestria em armas perfurantes",
+        "efeito": "Ativa a propriedade perfurante: ataque de oportunidade quando o alvo ENTRA no alcance ideal.",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Emboscador",
+        "efeito": "Pelas costas, escondido, com arma leve: dobra o resultado do dano.",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "4 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Escorregadio",
+        "efeito": "+1d10 para esquivar de ataques de oportunidade (sem armadura média/pesada).",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "4 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Golpe surpresa",
+        "efeito": "Escondido, com arma leve: causa dado adicional de dano (1d4→1d10).",
+        "requisitos": "",
+        "atributo": "Ágil",
+        "valorCompra": "8 exp.",
+        "custoPA": "1 PA + PA da arma",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "nivel": 4
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Ataques múltiplos & leves",
+        "efeito": "Muda de alvo com armas leves ignorando a desvantagem de ataques múltiplos.",
+        "requisitos": "",
+        "atributo": "Ágil",
+        "valorCompra": "5 exp.",
+        "custoPA": "1 PA",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "nivel": 5
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Disparada",
+        "efeito": "Movimento em linha reta (6–10 m por nível).",
+        "requisitos": "",
+        "atributo": "Ágil",
+        "valorCompra": "10 exp.",
+        "custoPA": "5 PA",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "nivel": 5
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Investida",
+        "efeito": "Avança na direção do alvo ignorando engajamento e ataca.",
+        "requisitos": "",
+        "atributo": "Físico",
+        "valorCompra": "12 exp.",
+        "custoPA": "1 PA + PA da arma",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "nivel": 4
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Analisar fraquezas",
+        "efeito": "Vê quanto dano o oponente recebeu em partes do corpo à escolha.",
+        "requisitos": "",
+        "atributo": "Mental",
+        "valorCompra": "4 exp.",
+        "custoPA": "1 PA",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "nivel": 4
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Arremesso improvisado",
+        "efeito": "Arremessa armas/objetos como se fossem armas de arremesso neste turno.",
+        "requisitos": "",
+        "atributo": "Ágil",
+        "valorCompra": "4 exp.",
+        "custoPA": "1 PA",
+        "usosPorNivel": [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "nivel": 2
+      }
+    ],
+    "anotacoes": "Mão hábil: direita. Pico de dano: Disparada/Investida até as costas; Emboscador (dobra) + Golpe surpresa (+1d10). Foca o braço; ao expor, muda pro Núcleo. Escorregadio foge dos Fragmentos."
+  }
+}

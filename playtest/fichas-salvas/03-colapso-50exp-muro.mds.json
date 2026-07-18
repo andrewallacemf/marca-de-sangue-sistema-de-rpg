@@ -1,0 +1,363 @@
+{
+  "app": "marca-de-sangue-ficha",
+  "schemaVersion": 1,
+  "rulesVersion": "vigente",
+  "salvoEm": "2026-07-18T00:34:10.816187",
+  "data": {
+    "info": {
+      "nome": "\"Muro\", a Retaguarda",
+      "jogador": "",
+      "cenario": "Cenário 3 — Correr no Ferro-Velho (Colapso)",
+      "ultimaSessao": ""
+    },
+    "exp": {
+      "baseTotal": "50",
+      "baseUsada": "50",
+      "qtdAptidoes": "15",
+      "qtdHabilidades": "3",
+      "qtdTracos": "6"
+    },
+    "aptidoes": {
+      "fisica": {
+        "total": "15",
+        "usado": ""
+      },
+      "agil": {
+        "total": "",
+        "usado": ""
+      },
+      "mental": {
+        "total": "",
+        "usado": ""
+      },
+      "social": {
+        "total": "",
+        "usado": ""
+      }
+    },
+    "pa": {
+      "base": "10",
+      "redArmadura": "-4",
+      "redDano": "0",
+      "redCarga": "0",
+      "outros": "0",
+      "total": "6"
+    },
+    "armas": [
+      {
+        "nome": "Martelo grande",
+        "tipo": "Pesada · longo alcance",
+        "equipado": "Duas mãos",
+        "categoria": "Contundente",
+        "alcance": "1–2 m",
+        "durabilidade": "",
+        "custoPA": "6",
+        "dano": "3d4",
+        "props": {
+          "ARRE": false,
+          "AGAR": false,
+          "CORT": false,
+          "CONT": true,
+          "DEFL": false,
+          "PERF": false,
+          "PROJ": false
+        }
+      }
+    ],
+    "protecoes": [
+      {
+        "nome": "Peitoral médio",
+        "redPA": "-2",
+        "redDano": "-2",
+        "durabilidade": "25",
+        "regioes": [
+          "tronco"
+        ]
+      },
+      {
+        "nome": "Escudo médio (guarda 3 PA)",
+        "redPA": "-2",
+        "redDano": "-2",
+        "durabilidade": "15",
+        "regioes": []
+      }
+    ],
+    "saude": {
+      "cabeca": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tronco": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bracoE": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bracoD": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "pernaE": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "pernaD": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "fadiga": 0,
+    "guardas": "0",
+    "equipamentos": [
+      {
+        "equipado": true,
+        "item": "Martelo grande",
+        "qtd": "1",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      },
+      {
+        "equipado": true,
+        "item": "Peitoral médio",
+        "qtd": "1",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      },
+      {
+        "equipado": true,
+        "item": "Escudo médio",
+        "qtd": "1",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      }
+    ],
+    "carga": {
+      "capacidade": "",
+      "carregado": ""
+    },
+    "tesouro": [
+      {
+        "label": "Moedas",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      }
+    ],
+    "caracteristicas": [
+      {
+        "tipo": "Traço",
+        "nome": "Maestria em armas contundentes",
+        "efeito": "Ativa a propriedade contundente: cada acerto reduz PA do alvo (leve −1, média −2, pesada −3).",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Maestria em armaduras médias",
+        "efeito": "Domínio de armaduras médias.",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Resistente",
+        "efeito": "Reduz o dano recebido pela metade (guarda + armadura média/pesada).",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "3 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Empacado",
+        "efeito": "Reduz movimentação forçada pela metade.",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "2 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Reativo",
+        "efeito": "Ataque de oportunidade quando um oponente sai do seu alcance ideal (guarda levantada).",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "4 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Atordoar",
+        "efeito": "Metade do dano e reduz PA do alvo de forma persistente (até descanso curto).",
+        "requisitos": "",
+        "atributo": "Físico",
+        "valorCompra": "12 exp.",
+        "custoPA": "1 PA + PA da arma",
+        "usosPorNivel": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "nivel": 3
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Encontrão",
+        "efeito": "Corre 2 m e empurra o oponente; metade do dano.",
+        "requisitos": "",
+        "atributo": "Físico",
+        "valorCompra": "4 exp.",
+        "custoPA": "1 PA + PA da arma",
+        "usosPorNivel": [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "nivel": 2
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Quebrar guarda",
+        "efeito": "Força o inimigo a gastar a guarda levantada; metade do dano.",
+        "requisitos": "",
+        "atributo": "Físico",
+        "valorCompra": "2 exp.",
+        "custoPA": "1 PA + PA da arma",
+        "usosPorNivel": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Burro de carga",
+        "efeito": "Carrega um aliado agarrado sem gastar PA extra.",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "6 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      }
+    ],
+    "anotacoes": "Mão hábil: direita. Tampão no gargalo: martelo contundente (−3 PA) + Atordoar atrasam o bando; Resistente aguenta; Empacado não é empurrado; carrega ferido (Burro de carga). PA baixo (6): administre."
+  }
+}

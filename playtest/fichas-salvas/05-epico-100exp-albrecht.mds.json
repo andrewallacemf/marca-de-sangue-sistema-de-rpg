@@ -1,0 +1,332 @@
+{
+  "app": "marca-de-sangue-ficha",
+  "schemaVersion": 1,
+  "rulesVersion": "vigente",
+  "salvoEm": "2026-07-18T00:34:10.819237",
+  "data": {
+    "info": {
+      "nome": "Albrecht, o Cantor de Guerra",
+      "jogador": "",
+      "cenario": "Cenário 5 — O Coração do Colosso (Épico)",
+      "ultimaSessao": ""
+    },
+    "exp": {
+      "baseTotal": "100",
+      "baseUsada": "100",
+      "qtdAptidoes": "16",
+      "qtdHabilidades": "7",
+      "qtdTracos": "2"
+    },
+    "aptidoes": {
+      "fisica": {
+        "total": "",
+        "usado": ""
+      },
+      "agil": {
+        "total": "",
+        "usado": ""
+      },
+      "mental": {
+        "total": "",
+        "usado": ""
+      },
+      "social": {
+        "total": "16",
+        "usado": ""
+      }
+    },
+    "pa": {
+      "base": "10",
+      "redArmadura": "0",
+      "redDano": "0",
+      "redCarga": "0",
+      "outros": "0",
+      "total": "10"
+    },
+    "armas": [
+      {
+        "nome": "Bastão médio",
+        "tipo": "Média · versátil",
+        "equipado": "Duas mãos",
+        "categoria": "Contundente",
+        "alcance": "1 m",
+        "durabilidade": "",
+        "custoPA": "4",
+        "dano": "2d4 (+1d4 a 2 mãos)",
+        "props": {
+          "ARRE": false,
+          "AGAR": false,
+          "CORT": false,
+          "CONT": true,
+          "DEFL": false,
+          "PERF": false,
+          "PROJ": false
+        }
+      }
+    ],
+    "protecoes": [],
+    "saude": {
+      "cabeca": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tronco": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bracoE": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bracoD": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "pernaE": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "pernaD": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "fadiga": 0,
+    "guardas": "0",
+    "equipamentos": [
+      {
+        "equipado": true,
+        "item": "Bastão médio",
+        "qtd": "1",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      }
+    ],
+    "carga": {
+      "capacidade": "",
+      "carregado": ""
+    },
+    "tesouro": [
+      {
+        "label": "Moedas",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      }
+    ],
+    "caracteristicas": [
+      {
+        "tipo": "Traço",
+        "nome": "Técnica em Tratar/Curar",
+        "efeito": "Anula a desvantagem natural para tratar/curar.",
+        "requisitos": "",
+        "atributo": "Social/Mental",
+        "valorCompra": "3 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Cura especializada",
+        "efeito": "Cura dano superficial de um aliado adjacente (1d4→1d12).",
+        "requisitos": "",
+        "atributo": "Social",
+        "valorCompra": "15 exp.",
+        "custoPA": "4 PA",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "nivel": 5
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Tratamento especializado",
+        "efeito": "Trata dano profundo de um aliado adjacente (1d4→3d6).",
+        "requisitos": "",
+        "atributo": "Social",
+        "valorCompra": "16 exp.",
+        "custoPA": "5 PA",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "nivel": 4
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Revitalizar",
+        "efeito": "Traz um aliado inconsciente à consciência e faz um tratamento automático.",
+        "requisitos": "",
+        "atributo": "Social",
+        "valorCompra": "12 exp.",
+        "custoPA": "7 PA",
+        "usosPorNivel": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "nivel": 3
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Brado de guerra",
+        "efeito": "Vantagem no próximo ataque de aliados a até 4 m.",
+        "requisitos": "",
+        "atributo": "Social",
+        "valorCompra": "12 exp.",
+        "custoPA": "2 PA",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "nivel": 4
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Grito de alerta",
+        "efeito": "Vantagem no próximo contrateste de defesa/esquiva de aliados a até 4 m.",
+        "requisitos": "",
+        "atributo": "Social",
+        "valorCompra": "12 exp.",
+        "custoPA": "4 PA",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "nivel": 4
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Comandar",
+        "efeito": "Transfere pontos de ação do seu próximo turno para um aliado.",
+        "requisitos": "",
+        "atributo": "Social",
+        "valorCompra": "6 exp.",
+        "custoPA": "1 PA",
+        "usosPorNivel": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "nivel": 3
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Animar",
+        "efeito": "Recupera aptidões consumidas de um aliado adjacente.",
+        "requisitos": "",
+        "atributo": "Social",
+        "valorCompra": "4 exp.",
+        "custoPA": "2 PA",
+        "usosPorNivel": [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "nivel": 2
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Apoiador",
+        "efeito": "Usa aptidões nos testes de um aliado adjacente.",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "4 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      }
+    ],
+    "anotacoes": "Mão hábil: direita. Fôlego do grupo: Grito de alerta blinda contra a área do chefe; Brado prepara o burst; Revitalizar ressuscita; Tratamento desfaz dano profundo; Animar recarrega Neriss/Syla."
+  }
+}
