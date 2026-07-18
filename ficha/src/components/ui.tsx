@@ -147,3 +147,23 @@ export function Field({
     </div>
   );
 }
+
+/** Campo com o rótulo DENTRO do input, alinhado à direita (para números curtos). */
+export function InlineField({
+  label,
+  value,
+  onChange,
+}: {
+  label: string;
+  value: string;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+}) {
+  return (
+    <div className="relative">
+      <Input className="pr-[4.5rem]" value={value} onChange={onChange} />
+      <span className="pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-[10px] font-medium uppercase tracking-wide text-muted-foreground">
+        {label}
+      </span>
+    </div>
+  );
+}

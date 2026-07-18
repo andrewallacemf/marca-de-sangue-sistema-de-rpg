@@ -6,9 +6,11 @@ import { PROP_KEYS, type Arma } from "@/lib/ficha";
 export function ArmasSection({
   armas,
   setArmas,
+  className,
 }: {
   armas: Arma[];
   setArmas: (v: Arma[]) => void;
+  className?: string;
 }) {
   function upd(i: number, patch: Partial<Arma>) {
     const arr = [...armas];
@@ -26,7 +28,7 @@ export function ArmasSection({
   ];
 
   return (
-    <Card className="col-full lg:col-span-3">
+    <Card className={cn(className)}>
       <CardHeader>
         <CardTitle className="flex items-center gap-1.5">
           <Swords className="h-4 w-4" /> Armas

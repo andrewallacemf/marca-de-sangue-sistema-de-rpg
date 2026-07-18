@@ -8,11 +8,13 @@ export function ProtecoesSection({
   setProtecoes,
   guardas,
   setGuardas,
+  className,
 }: {
   protecoes: Protecao[];
   setProtecoes: (v: Protecao[]) => void;
   guardas: string;
   setGuardas: (v: string) => void;
+  className?: string;
 }) {
   function upd(i: number, patch: Partial<Protecao>) {
     const arr = [...protecoes];
@@ -27,7 +29,7 @@ export function ProtecoesSection({
   }
 
   return (
-    <Card className="col-full lg:col-span-3">
+    <Card className={cn(className)}>
       <CardHeader>
         <CardTitle className="flex items-center gap-1.5">
           <Shield className="h-4 w-4" /> Proteções

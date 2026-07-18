@@ -16,6 +16,7 @@ import {
   CardHeader,
   CardTitle,
   Field,
+  InlineField,
   Input,
   Label,
   Textarea,
@@ -232,10 +233,10 @@ export default function App() {
 
       <main className={cn("mx-auto max-w-6xl px-4 py-4", a4 && "px-0")}>
         <div className={cn(a4 && "sheet")}>
-          <div className="sheet-grid grid grid-cols-1 gap-3 lg:grid-cols-3">
-            {printHeader}
+          {printHeader}
+          <div className="grid-p1">
             {/* Informações */}
-            <Card className="col-full lg:col-span-2">
+            <Card className="area-info">
               <CardHeader>
                 <CardTitle>Informações</CardTitle>
               </CardHeader>
@@ -257,11 +258,8 @@ export default function App() {
               </CardContent>
             </Card>
 
-            {/* Zona A4: coluna esquerda (Experiência, Aptidões, PA) + direita (Habilidades ref) */}
-            <div className="a4-zone col-full">
-              <div className="a4-left">
             {/* Experiência */}
-            <Card>
+            <Card className="area-exp">
               <CardHeader>
                 <CardTitle>Experiência & características</CardTitle>
               </CardHeader>
@@ -269,33 +267,23 @@ export default function App() {
                 <div>
                   <Label className="mb-1 block">Experiência base</Label>
                   <div className="grid grid-cols-2 gap-2">
-                    <Field label="total">
-                      <Input value={ficha.exp.baseTotal} onChange={(e) => update("exp", { ...ficha.exp, baseTotal: e.target.value })} />
-                    </Field>
-                    <Field label="usada">
-                      <Input value={ficha.exp.baseUsada} onChange={(e) => update("exp", { ...ficha.exp, baseUsada: e.target.value })} />
-                    </Field>
+                    <InlineField label="Total" value={ficha.exp.baseTotal} onChange={(e) => update("exp", { ...ficha.exp, baseTotal: e.target.value })} />
+                    <InlineField label="Usada" value={ficha.exp.baseUsada} onChange={(e) => update("exp", { ...ficha.exp, baseUsada: e.target.value })} />
                   </div>
                 </div>
                 <div>
                   <Label className="mb-1 block">Características compradas</Label>
-                  <div className="grid grid-cols-3 gap-2">
-                    <Field label="Aptidões">
-                      <Input value={ficha.exp.qtdAptidoes} onChange={(e) => update("exp", { ...ficha.exp, qtdAptidoes: e.target.value })} />
-                    </Field>
-                    <Field label="Habilidades">
-                      <Input value={ficha.exp.qtdHabilidades} onChange={(e) => update("exp", { ...ficha.exp, qtdHabilidades: e.target.value })} />
-                    </Field>
-                    <Field label="Traços">
-                      <Input value={ficha.exp.qtdTracos} onChange={(e) => update("exp", { ...ficha.exp, qtdTracos: e.target.value })} />
-                    </Field>
+                  <div className="flex flex-col gap-2">
+                    <InlineField label="Aptidões" value={ficha.exp.qtdAptidoes} onChange={(e) => update("exp", { ...ficha.exp, qtdAptidoes: e.target.value })} />
+                    <InlineField label="Habilidades" value={ficha.exp.qtdHabilidades} onChange={(e) => update("exp", { ...ficha.exp, qtdHabilidades: e.target.value })} />
+                    <InlineField label="Traços" value={ficha.exp.qtdTracos} onChange={(e) => update("exp", { ...ficha.exp, qtdTracos: e.target.value })} />
                   </div>
                 </div>
               </CardContent>
             </Card>
 
             {/* Aptidões */}
-            <Card>
+            <Card className="area-apt">
               <CardHeader>
                 <CardTitle>Aptidões (total / usado)</CardTitle>
               </CardHeader>
@@ -317,7 +305,7 @@ export default function App() {
             </Card>
 
             {/* PA */}
-            <Card>
+            <Card className="area-pa">
               <CardHeader>
                 <CardTitle>Pontos de ação (P.A.)</CardTitle>
               </CardHeader>
@@ -343,10 +331,8 @@ export default function App() {
               </CardContent>
             </Card>
 
-              </div>
-              <div className="a4-right">
             {/* Habilidades — referência rápida (resumo automático dos cards) */}
-            <Card className="lg:col-span-1">
+            <Card className="area-hab">
               <CardHeader>
                 <CardTitle className="flex items-center gap-1.5">
                   <Swords className="h-4 w-4" /> Habilidades — referência rápida
@@ -411,14 +397,12 @@ export default function App() {
               </CardContent>
             </Card>
 
-              </div>
-            </div>
-
             {/* Armas (seção full-width, duas lado a lado) */}
-            <ArmasSection armas={ficha.armas} setArmas={(v) => update("armas", v)} />
+            <ArmasSection className="area-armas" armas={ficha.armas} setArmas={(v) => update("armas", v)} />
 
             {/* Proteções (dinâmicas, com regiões cobertas) + guardas */}
             <ProtecoesSection
+              className="area-prot"
               protecoes={ficha.protecoes}
               setProtecoes={(v) => update("protecoes", v)}
               guardas={ficha.guardas}
@@ -426,7 +410,7 @@ export default function App() {
             />
 
             {/* Saúde */}
-            <Card className="col-full lg:col-span-3">
+            <Card className="area-saude">
               <CardHeader>
                 <CardTitle className="flex items-center gap-1.5">
                   <HeartPulse className="h-4 w-4" /> Saúde — 60 PV (10 por membro)
@@ -465,7 +449,7 @@ export default function App() {
             </Card>
 
             {/* Fadiga — destaque, perto da Saúde */}
-            <Card className="col-full lg:col-span-3">
+            <Card className="area-fad">
               <CardHeader>
                 <CardTitle className="flex items-center gap-1.5">
                   <BatteryLow className="h-4 w-4" /> Fadiga
@@ -490,30 +474,25 @@ export default function App() {
                     zerar (descanso)
                   </button>
                 </div>
-                <div className="flex flex-wrap gap-x-6 gap-y-2">
-                  {[0, 1].map((bloco) => (
-                    <div key={bloco} className="flex flex-col gap-1">
-                      <div className="grid grid-cols-5 gap-1">
-                        {Array.from({ length: 25 }, (_, k) => bloco * 25 + k + 1).map((n) => {
-                          const filled = n <= ficha.fadiga;
-                          return (
-                            <button
-                              key={n}
-                              type="button"
-                              onClick={() => update("fadiga", ficha.fadiga === n ? n - 1 : n)}
-                              title={`${n}`}
-                              className={cn(
-                                "h-5 w-5 rounded-[3px] text-[8px] leading-none",
-                                filled ? "bg-primary text-primary-foreground" : "bg-transparent hover:bg-secondary",
-                                n % 10 === 0 ? "border-2 border-accent" : "border border-input"
-                              )}
-                            />
-                          );
-                        })}
-                      </div>
-                      <span className="text-[10px] font-semibold text-muted-foreground">
-                        {bloco === 0 ? "1–25" : "26–50"}
-                      </span>
+                <div className="flex flex-col gap-1">
+                  {[0, 1].map((linha) => (
+                    <div key={linha} className="flex flex-wrap gap-1">
+                      {Array.from({ length: 25 }, (_, k) => linha * 25 + k + 1).map((n) => {
+                        const filled = n <= ficha.fadiga;
+                        return (
+                          <button
+                            key={n}
+                            type="button"
+                            onClick={() => update("fadiga", ficha.fadiga === n ? n - 1 : n)}
+                            title={`${n}`}
+                            className={cn(
+                              "h-5 w-5 rounded-[3px] text-[8px] leading-none",
+                              filled ? "bg-primary text-primary-foreground" : "bg-transparent hover:bg-secondary",
+                              n % 10 === 0 ? "border-2 border-accent" : "border border-input"
+                            )}
+                          />
+                        );
+                      })}
                     </div>
                   ))}
                 </div>
