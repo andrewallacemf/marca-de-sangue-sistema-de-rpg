@@ -2,7 +2,7 @@
   "app": "marca-de-sangue-ficha",
   "schemaVersion": 1,
   "rulesVersion": "vigente",
-  "salvoEm": "2026-07-18T10:38:25.519434",
+  "salvoEm": "2026-07-18T18:42:38.744863",
   "data": {
     "info": {
       "nome": "Syla, a Assassina",
@@ -13,17 +13,17 @@
     "exp": {
       "baseTotal": "100",
       "baseUsada": "100",
-      "qtdAptidoes": "41",
+      "qtdAptidoes": "11",
       "qtdHabilidades": "6",
       "qtdTracos": "8"
     },
     "aptidoes": {
       "fisica": {
-        "total": "6",
+        "total": "2",
         "usado": ""
       },
       "agil": {
-        "total": "34",
+        "total": "8",
         "usado": ""
       },
       "mental": {
@@ -46,7 +46,7 @@
     "armas": [
       {
         "nome": "Adaga (mão hábil)",
-        "tipo": "Leve",
+        "tipo": "Leve · acuidade",
         "equipado": "Mão hábil",
         "categoria": "Cortante/Perfurante",
         "alcance": "1 m",
@@ -65,7 +65,7 @@
       },
       {
         "nome": "Adaga (mão inábil)",
-        "tipo": "Leve",
+        "tipo": "Leve · acuidade",
         "equipado": "Mão inábil",
         "categoria": "Cortante/Perfurante",
         "alcance": "1 m",
@@ -85,78 +85,12 @@
     ],
     "protecoes": [],
     "saude": {
-      "cabeca": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "tronco": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "bracoE": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "bracoD": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "pernaE": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "pernaD": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
+      "cabeca": 0,
+      "tronco": 0,
+      "bracoE": 0,
+      "bracoD": 0,
+      "pernaE": 0,
+      "pernaD": 0
     },
     "fadiga": 0,
     "guardas": "0",

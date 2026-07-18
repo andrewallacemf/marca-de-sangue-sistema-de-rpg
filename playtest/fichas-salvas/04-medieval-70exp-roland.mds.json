@@ -2,7 +2,7 @@
   "app": "marca-de-sangue-ficha",
   "schemaVersion": 1,
   "rulesVersion": "vigente",
-  "salvoEm": "2026-07-18T10:38:25.517631",
+  "salvoEm": "2026-07-18T18:42:38.742962",
   "data": {
     "info": {
       "nome": "Ser Roland, o Guardião",
@@ -13,21 +13,21 @@
     "exp": {
       "baseTotal": "70",
       "baseUsada": "70",
-      "qtdAptidoes": "25",
+      "qtdAptidoes": "8",
       "qtdHabilidades": "2",
-      "qtdTracos": "12"
+      "qtdTracos": "11"
     },
     "aptidoes": {
       "fisica": {
-        "total": "25",
+        "total": "5",
         "usado": ""
       },
       "agil": {
-        "total": "",
+        "total": "2",
         "usado": ""
       },
       "mental": {
-        "total": "",
+        "total": "1",
         "usado": ""
       },
       "social": {
@@ -85,78 +85,12 @@
       }
     ],
     "saude": {
-      "cabeca": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "tronco": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "bracoE": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "bracoD": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "pernaE": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "pernaD": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
+      "cabeca": 0,
+      "tronco": 0,
+      "bracoE": 0,
+      "bracoD": 0,
+      "pernaE": 0,
+      "pernaD": 0
     },
     "fadiga": 0,
     "guardas": "0",
@@ -329,23 +263,6 @@
         "tipo": "Traço",
         "nome": "Blindado",
         "efeito": "+1d10 para defender ataques à distância com escudo.",
-        "requisitos": "",
-        "atributo": "—",
-        "valorCompra": "4 exp.",
-        "custoPA": "—",
-        "usosPorNivel": [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "nivel": 1
-      },
-      {
-        "tipo": "Traço",
-        "nome": "Reativo",
-        "efeito": "Ataque de oportunidade quando um oponente sai do seu alcance ideal (guarda levantada).",
         "requisitos": "",
         "atributo": "—",
         "valorCompra": "4 exp.",

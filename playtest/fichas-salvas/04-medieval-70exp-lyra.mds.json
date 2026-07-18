@@ -2,7 +2,7 @@
   "app": "marca-de-sangue-ficha",
   "schemaVersion": 1,
   "rulesVersion": "vigente",
-  "salvoEm": "2026-07-18T10:38:25.518682",
+  "salvoEm": "2026-07-18T18:42:38.744065",
   "data": {
     "info": {
       "nome": "Lyra, a Batedora-Arqueira",
@@ -13,21 +13,21 @@
     "exp": {
       "baseTotal": "70",
       "baseUsada": "70",
-      "qtdAptidoes": "34",
+      "qtdAptidoes": "10",
       "qtdHabilidades": "5",
       "qtdTracos": "4"
     },
     "aptidoes": {
       "fisica": {
-        "total": "",
+        "total": "2",
         "usado": ""
       },
       "agil": {
-        "total": "24",
+        "total": "7",
         "usado": ""
       },
       "mental": {
-        "total": "10",
+        "total": "1",
         "usado": ""
       },
       "social": {
@@ -65,7 +65,7 @@
       },
       {
         "nome": "Adaga (reserva)",
-        "tipo": "Leve",
+        "tipo": "Leve · acuidade",
         "equipado": "Mão hábil",
         "categoria": "Cortante/Perfurante",
         "alcance": "1 m",
@@ -96,78 +96,12 @@
       }
     ],
     "saude": {
-      "cabeca": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "tronco": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "bracoE": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "bracoD": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "pernaE": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "pernaD": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
+      "cabeca": 0,
+      "tronco": 0,
+      "bracoE": 0,
+      "bracoD": 0,
+      "pernaE": 0,
+      "pernaD": 0
     },
     "fadiga": 0,
     "guardas": "0",
@@ -303,11 +237,11 @@
         "usosPorNivel": [
           0,
           0,
-          1,
           0,
+          1,
           0
         ],
-        "nivel": 3
+        "nivel": 4
       },
       {
         "tipo": "Habilidade",

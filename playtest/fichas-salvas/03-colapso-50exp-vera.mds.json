@@ -2,7 +2,7 @@
   "app": "marca-de-sangue-ficha",
   "schemaVersion": 1,
   "rulesVersion": "vigente",
-  "salvoEm": "2026-07-18T10:38:25.516601",
+  "salvoEm": "2026-07-18T18:42:38.741991",
   "data": {
     "info": {
       "nome": "Vera, a Batedora",
@@ -13,17 +13,17 @@
     "exp": {
       "baseTotal": "50",
       "baseUsada": "50",
-      "qtdAptidoes": "22",
+      "qtdAptidoes": "7",
       "qtdHabilidades": "2",
       "qtdTracos": "6"
     },
     "aptidoes": {
       "fisica": {
-        "total": "4",
+        "total": "1",
         "usado": ""
       },
       "agil": {
-        "total": "18",
+        "total": "6",
         "usado": ""
       },
       "mental": {
@@ -85,78 +85,12 @@
     ],
     "protecoes": [],
     "saude": {
-      "cabeca": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "tronco": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "bracoE": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "bracoD": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "pernaE": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "pernaD": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
+      "cabeca": 0,
+      "tronco": 0,
+      "bracoE": 0,
+      "bracoD": 0,
+      "pernaE": 0,
+      "pernaD": 0
     },
     "fadiga": 0,
     "guardas": "0",

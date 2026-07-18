@@ -201,7 +201,7 @@ mk("02-mukashi-30exp-jiro","Jiro, o Arqueiro Yumi",C2,30,
 # ---------- Cenário 3 — Colapso — Correr no Ferro-Velho (50 exp) ----------
 C3="Cenário 3 — Correr no Ferro-Velho (Colapso)"
 mk("03-colapso-50exp-vera","Vera, a Batedora",C3,50,
-   apt(a=18,f=4), pa(0,0,10),
+   apt(a=6,f=1), pa(0,0,10),
    [arma("Machadinha","Média · arremesso","Mão hábil","Cortante","1 m / 2–4 m","","4","1d8",["CORT","ARRE"]),
     arma("Faca (reserva)","Leve","Mão inábil","Cortante/Perfurante","1 m","","2","1d4",["CORT","PERF","ARRE"])],
    [],
@@ -211,7 +211,7 @@ mk("03-colapso-50exp-vera","Vera, a Batedora",C3,50,
    "Mão hábil: direita. A mais rápida: Corredor+Maratonista+Disparada atravessam o mapa; Escorregadio anula oportunidade ao fugir; serve de isca.")
 
 mk("03-colapso-50exp-doc","Doc, o Sucateiro-Médico",C3,50,
-   apt(s=9,m=8), pa(0,0,10),
+   apt(s=5,m=1,a=1), pa(0,0,10),
    [arma("Bastão médio","Média · versátil","Duas mãos","Contundente","1 m","","4","2d4",["CONT"]),
     arma("Funda","Leve · à distância","Mão hábil","Projétil","4–7 m","","2","2 (pedra)",["PROJ"])],
    [],
@@ -221,31 +221,31 @@ mk("03-colapso-50exp-doc","Doc, o Sucateiro-Médico",C3,50,
    "Mão hábil: direita. Nega terreno: Criar armadilha trava perseguidores; Comandar dá PA para fugir; cura quem cai. Compra tempo.")
 
 mk("03-colapso-50exp-muro","\"Muro\", a Retaguarda",C3,50,
-   apt(f=15), pa(-4,0,6),
+   apt(f=5,a=2), pa(-4,0,6),
    [arma("Martelo grande","Pesada · longo alcance","Duas mãos","Contundente","1–2 m","","6","3d4",["CONT"])],
    [prot("Peitoral médio","-2","-2","25",["tronco"]),
     prot("Escudo médio (guarda 3 PA)","-2","-2","15",[])],
    [item("Martelo grande","1","",""),item("Peitoral médio","1","",""),item("Escudo médio","1","","")],
    [T("Maestria em armas contundentes"),T("Maestria em armaduras médias"),T("Resistente"),
-    T("Empacado"),T("Reativo"),H("Atordoar",3),H("Encontrão",2),H("Quebrar guarda",1),T("Burro de carga")],
+    T("Empacado"),H("Atordoar",3),H("Encontrão",2),H("Quebrar guarda",1),T("Burro de carga")],
    "Mão hábil: direita. Tampão no gargalo: martelo contundente (−3 PA) + Atordoar atrasam o bando; Resistente aguenta; Empacado não é empurrado; carrega ferido (Burro de carga). PA baixo (6): administre.")
 
 # ---------- Cenário 4 — Medieval — A Escolta da Chama (70 exp) ----------
 C4="Cenário 4 — A Escolta da Chama (Medieval)"
 mk("04-medieval-70exp-roland","Ser Roland, o Guardião",C4,70,
-   apt(f=25), pa(-4,1,7),
+   apt(f=5,a=2,m=1), pa(-4,1,7),
    [arma("Espada longa","Média · versátil · longo alcance","Mão hábil","Cortante/Perfurante","1–2 m","","4","1d8 CORT · 1d6 PERF (+1d4 a 2 mãos)",["CORT","PERF"])],
    [prot("Peitoral médio","-2","-2","25",["tronco"]),
     prot("Escudo grande (média · guarda 3 PA)","-2","-2","20",[])],
    [item("Espada longa","1","",""),item("Peitoral médio","1","",""),item("Escudo grande","1","","")],
    [T("Maestria em armaduras pesadas"),T("Maestria em armaduras médias"),T("Maestria em armas cortantes"),
     T("Maestria em armas contundentes"),T("Maestria em armas versáteis"),T("Protetor"),T("Resistente"),
-    T("Blindado"),T("Reativo"),T("Alerta"),T("Firme"),T("Empacado"),
+    T("Blindado"),T("Alerta"),T("Firme"),T("Empacado"),
     H("Quebrar guarda",2),H("Encontrão",3)],
    "Mão hábil: direita (+1 PA comprado). Escudo vivo: Protetor intercepta golpes no Arauto, Resistente corta pela metade; Blindado apara flechas; Alerta+Reativo punem quem se aproxima; Encontrão joga da ponte.")
 
 mk("04-medieval-70exp-isolde","Dame Isolde, a Comandante",C4,70,
-   apt(s=18,m=4), pa(-2,0,8),
+   apt(s=5,m=3), pa(-2,0,8),
    [arma("Sabre","Média · versátil · longo alcance","Mão hábil","Cortante/Perfurante","1–2 m","","4","1d8 CORT · 1d6 PERF (+1d4 a 2 mãos)",["CORT","PERF"])],
    [prot("Peitoral leve","-1","-1","10",["tronco"]),
     prot("Escudo pequeno (leve · guarda 2 PA)","-1","-1","10",[])],
@@ -256,30 +256,30 @@ mk("04-medieval-70exp-isolde","Dame Isolde, a Comandante",C4,70,
    "Mão hábil: direita. Cérebro: Comandar dá PA ao Arauto; Grito de alerta blinda a formação; Confundir/Intimidação desmontam a emboscada; Apoiador empresta aptidões ao NPC.")
 
 mk("04-medieval-70exp-gareth","Gareth, o Lanceiro de Formação",C4,70,
-   apt(f=26), pa(-2,0,8),
+   apt(f=7,a=1), pa(-2,0,8),
    [arma("Alabarda","Pesada · longo alcance","Duas mãos","Perfurante","2–3 m","","6","1d8",["PERF"])],
    [prot("Peitoral médio","-2","-2","25",["tronco"])],
    [item("Alabarda","1","",""),item("Peitoral médio","1","","")],
-   [T("Maestria em armas perfurantes"),T("Maestria em armaduras médias"),T("Reativo"),T("Alerta"),
+   [T("Maestria em armas perfurantes"),T("Maestria em armaduras médias"),T("Alerta"),
     H("Alcance corpo a corpo",3),H("Investida",3),H("Ataques múltiplos & pesados",2),
     H("Encontrão",3),H("Quebrar guarda",1),T("Empacado"),T("Resistente")],
    "Mão hábil: direita. Muralha móvel: alcance 2–3 m + perfurante + Reativo + Alerta = anel de ameaça ao redor do Arauto; Encontrão empurra pra fora da ponte.")
 
 mk("04-medieval-70exp-lyra","Lyra, a Batedora-Arqueira",C4,70,
-   apt(a=24,m=10), pa(-1,1,10),
+   apt(a=7,f=2,m=1), pa(-1,1,10),
    [arma("Arco longo","Pesada · à distância","Duas mãos","Projétil","8–12 m","","6","1d4 (flecha de ferro)",["PROJ"]),
-    arma("Adaga (reserva)","Leve","Mão hábil","Cortante/Perfurante","1 m","","2","1d4",["CORT","PERF","ARRE"])],
+    arma("Adaga (reserva)","Leve · acuidade","Mão hábil","Cortante/Perfurante","1 m","","2","1d4",["CORT","PERF","ARRE"])],
    [prot("Peitoral leve","-1","-1","10",["tronco"])],
    [item("Arco longo","1","",""),item("Flechas ponta de ferro","20","",""),item("Adaga","1","",""),item("Peitoral leve","1","","")],
    [T("Maestria em projéteis"),T("Maestria em armaduras leves"),H("Ataques à distância concentrados",4),
-    H("Alcance à distância",3),H("Analisar fraquezas",3),H("Confundir inimigo",2),H("Disparada",2),
+    H("Alcance à distância",3),H("Analisar fraquezas",4),H("Confundir inimigo",2),H("Disparada",2),
     T("Técnica em Investigar/Observar"),T("Técnica em Esconder-se")],
    "Mão hábil: direita (+1 PA comprado). Contra-artilharia: alcance 12 m elimina o Arqueiro inimigo; Analisar fraquezas + Confundir; Disparada busca elevação.")
 
 # ---------- Cenário 5 — Épico — O Coração do Colosso (100 exp) ----------
 C5="Cenário 5 — O Coração do Colosso (Épico)"
 mk("05-epico-100exp-thorne","Thorne, o Quebra-Colosso",C5,100,
-   apt(f=9), pa(-5,3,8),
+   apt(f=3,a=1), pa(-5,3,8),
    [arma("Martelo de batalha","Pesada · longo alcance","Uma mão (Firme apr.) + escudo","Contundente","1–2 m","","6","3d4",["CONT"]),
     arma("Machado de batalha (reserva)","Pesada","Duas mãos","Cortante","1–2 m","","6","1d12",["CORT"])],
    [prot("Peitoral pesado","-3","-3","50",["tronco"]),
@@ -287,13 +287,13 @@ mk("05-epico-100exp-thorne","Thorne, o Quebra-Colosso",C5,100,
    [item("Martelo de batalha","1","",""),item("Machado de batalha","1","",""),item("Peitoral pesado","1","",""),item("Escudo médio","1","","")],
    [T("Maestria em armaduras pesadas"),T("Maestria em armaduras médias"),T("Maestria em armas contundentes"),
     T("Maestria em armas cortantes"),T("Firme"),T("Firme aprimorado"),T("Resistente"),T("Blindado"),
-    T("Protetor"),T("Reativo"),T("Alerta"),T("Empacado"),H("Atordoar",5),H("Quebrar guarda",2),H("Encontrão",2)],
+    T("Protetor"),T("Alerta"),T("Empacado"),H("Atordoar",5),H("Quebrar guarda",2),H("Encontrão",2)],
    "Mão hábil: direita (+3 PA comprados). Âncora: Firme aprimorado = martelo pesado numa mão + escudo; Atordoar nv5 (−5 PA) + maestria contundente (−3) estrangulam o Colosso; Protetor+Resistente salvam aliados da Esmagada.")
 
 mk("05-epico-100exp-syla","Syla, a Assassina",C5,100,
-   apt(a=34,f=6,m=1), pa(0,0,10),
-   [arma("Adaga (mão hábil)","Leve","Mão hábil","Cortante/Perfurante","1 m","","2","1d4",["CORT","PERF","ARRE"]),
-    arma("Adaga (mão inábil)","Leve","Mão inábil","Cortante/Perfurante","1 m","","2","1d4",["CORT","PERF","ARRE"])],
+   apt(a=8,f=2,m=1), pa(0,0,10),
+   [arma("Adaga (mão hábil)","Leve · acuidade","Mão hábil","Cortante/Perfurante","1 m","","2","1d4",["CORT","PERF","ARRE"]),
+    arma("Adaga (mão inábil)","Leve · acuidade","Mão inábil","Cortante/Perfurante","1 m","","2","1d4",["CORT","PERF","ARRE"])],
    [],
    [item("Adaga","2","","")],
    [T("Técnica em Esconder-se"),T("Técnica em Realizar truques"),T("Técnica em Saltar"),T("Saltador"),
@@ -303,7 +303,7 @@ mk("05-epico-100exp-syla","Syla, a Assassina",C5,100,
    "Mão hábil: direita. Pico de dano: Disparada/Investida até as costas; Emboscador (dobra) + Golpe surpresa (+1d10). Foca o braço; ao expor, muda pro Núcleo. Escorregadio foge dos Fragmentos.")
 
 mk("05-epico-100exp-neriss","Neriss, a Tática de Batalha",C5,100,
-   apt(m=25,a=4), pa(-1,0,9),
+   apt(m=7,a=1), pa(-1,0,9),
    [arma("Besta leve","Média · à distância","Duas mãos","Projétil","7–10 m","","4","1d4 (virote)",["PROJ"])],
    [prot("Peitoral leve","-1","-1","10",["tronco"])],
    [item("Besta leve","1","",""),item("Virotes","20","",""),item("Peitoral leve","1","","")],
@@ -313,7 +313,7 @@ mk("05-epico-100exp-neriss","Neriss, a Tática de Batalha",C5,100,
    "Mão hábil: direita. Controle: Confundir dá desvantagem na defesa do Colosso (todos acertam mais); Intimidação/Urro atrasam o chefe; Consumir desliga o Tremor; Recompor recarrega aptidões; armadilhas nos Fragmentos.")
 
 mk("05-epico-100exp-albrecht","Albrecht, o Cantor de Guerra",C5,100,
-   apt(s=16), pa(0,0,10),
+   apt(s=5,m=1), pa(0,0,10),
    [arma("Bastão médio","Média · versátil","Duas mãos","Contundente","1 m","","4","2d4 (+1d4 a 2 mãos)",["CONT"])],
    [],
    [item("Bastão médio","1","","")],
