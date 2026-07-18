@@ -56,3 +56,12 @@ arquivos-alterados:
   `usosGastosPorNivel` no modelo (migração preenche com zeros).
 - **Botão "Descanso"** no topo: recupera todas as aptidões (usado), devolve todos os usos de
   habilidades e zera a fadiga (helper `descansar`). O antigo "zerar" da fadiga foi removido.
+
+## Adendo v0.11 — valores por nível
+- Extraída a **progressão por nível** das 35 habilidades base (`ficha/src/lib/catalogo-niveis.ts`,
+  do manual `habilidades-base-*.md`). Novo campo `niveisDesc` no card.
+- Na regra vigente, cada habilidade mostra, por nível, a **descrição dos valores que mudam**
+  (dano, alcance, alvos, PA…) junto com os pips de uso. Campos editáveis (habilidade custom também
+  pode ter notas por nível).
+- A **migração autopreenche** a progressão pelo nome da habilidade, então os 18 saves do playtest
+  já exibem os valores por nível sem precisar regenerar.

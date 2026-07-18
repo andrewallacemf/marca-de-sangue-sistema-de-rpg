@@ -1,5 +1,7 @@
 /* Modelo de dados da ficha + fábricas. Centralizado para App e seções usarem. */
 
+import { HABILIDADES_NIVEIS } from "./catalogo-niveis";
+
 export const SCHEMA_VERSION = 1;
 export type RulesVersion = "vigente" | "alternativa";
 
@@ -36,6 +38,7 @@ export type CaracteristicaCard = {
   custoPA: string;
   usosPorNivel: number[]; // regras vigentes: quantos usos em cada nível (5 posições)
   usosGastosPorNivel: number[]; // regras vigentes: quantos usos já consumidos em cada nível
+  niveisDesc: string[]; // descrição do que muda em cada nível (progressão), 5 posições
   nivel: number; // regras alternativas: nível único da habilidade (1–5)
 };
 
@@ -224,6 +227,7 @@ export function novaCaracteristica(): CaracteristicaCard {
     custoPA: "",
     usosPorNivel: [0, 0, 0, 0, 0],
     usosGastosPorNivel: [0, 0, 0, 0, 0],
+    niveisDesc: ["", "", "", "", ""],
     nivel: 1,
   };
 }
@@ -307,6 +311,13 @@ export function migrarFicha(data: unknown): Ficha {
     while (c.usosPorNivel.length < 5) c.usosPorNivel.push(0);
     if (!Array.isArray(c.usosGastosPorNivel)) c.usosGastosPorNivel = [0, 0, 0, 0, 0];
     while (c.usosGastosPorNivel.length < 5) c.usosGastosPorNivel.push(0);
+    if (!Array.isArray(c.niveisDesc)) c.niveisDesc = ["", "", "", "", ""];
+    while (c.niveisDesc.length < 5) c.niveisDesc.push("");
+    // autopreenche a progressão do manual para habilidades sem descrição salva
+    if (c.tipo === "Habilidade" && c.niveisDesc.every((d) => !d.trim())) {
+      const prog = HABILIDADES_NIVEIS[c.nome.trim()];
+      if (prog) c.niveisDesc = [0, 1, 2, 3, 4].map((k) => prog[k] ?? "");
+    }
     if (typeof c.nivel !== "number") c.nivel = 1;
     delete c.niveis;
     return c;

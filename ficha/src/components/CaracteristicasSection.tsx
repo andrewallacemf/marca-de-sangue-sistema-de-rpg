@@ -14,6 +14,7 @@ import { CatalogoCombo } from "@/components/ui";
 import { cn } from "@/lib/utils";
 import { custoCard, novaCaracteristica, type CaracteristicaCard, type RulesVersion } from "@/lib/ficha";
 import { CAT_HABILIDADES, CAT_TRACOS } from "@/lib/catalogo";
+import { HABILIDADES_NIVEIS } from "@/lib/catalogo-niveis";
 
 type PickItem =
   | { kind: "hab"; nome: string; efeito: string; requisitos?: string; atributo: string; valorCompra: string; custoPA: string }
@@ -41,6 +42,8 @@ const GRUPOS_CARS = [
 
 function cardDoCatalogo(item: PickItem, base: CaracteristicaCard): CaracteristicaCard {
   if (item.kind === "hab") {
+    const niveis = HABILIDADES_NIVEIS[item.nome] ?? [];
+    const niveisDesc = [0, 1, 2, 3, 4].map((i) => niveis[i] ?? "");
     return {
       ...base,
       tipo: "Habilidade",
@@ -50,6 +53,7 @@ function cardDoCatalogo(item: PickItem, base: CaracteristicaCard): Caracteristic
       atributo: item.atributo,
       valorCompra: `${item.valorCompra} exp.`,
       custoPA: item.custoPA,
+      niveisDesc,
     };
   }
   return {
@@ -187,44 +191,62 @@ export function CaracteristicasSection({
                       ))}
                     </div>
 
-                    {c.usosPorNivel.some((u) => u > 0) && (
+                    {(c.usosPorNivel.some((u) => u > 0) || c.niveisDesc.some((d) => d.trim())) && (
                       <div className="mt-2 border-t pt-2">
-                        <Label>Usos disponíveis (clique p/ consumir)</Label>
-                        <div className="mt-1 flex flex-col gap-1">
-                          {c.usosPorNivel.map((total, ni) => {
-                            if (!total) return null;
+                        <Label>Níveis (valores) e usos disponíveis</Label>
+                        <div className="mt-1 flex flex-col gap-1.5">
+                          {[0, 1, 2, 3, 4].map((ni) => {
+                            const total = c.usosPorNivel[ni] || 0;
+                            const desc = c.niveisDesc[ni] || "";
+                            if (!total && !desc.trim()) return null;
                             const gasto = c.usosGastosPorNivel[ni] || 0;
                             const avail = total - gasto;
                             return (
-                              <div key={ni} className="flex items-center gap-2">
-                                <span className="w-8 shrink-0 text-[10px] uppercase text-muted-foreground">
+                              <div key={ni} className="flex items-start gap-2">
+                                <span className="mt-1.5 w-8 shrink-0 text-[10px] uppercase text-muted-foreground">
                                   Nv{ni + 1}
                                 </span>
-                                <div className="flex flex-wrap gap-1">
-                                  {Array.from({ length: total }, (_, j) => {
-                                    const filled = j < avail;
-                                    return (
-                                      <button
-                                        key={j}
-                                        type="button"
-                                        title={filled ? "disponível (clique p/ consumir)" : "usado (clique p/ devolver)"}
-                                        onClick={() => {
-                                          const novoAvail = filled ? j : j + 1;
-                                          const arr = [...c.usosGastosPorNivel];
-                                          arr[ni] = total - novoAvail;
-                                          upd(i, { usosGastosPorNivel: arr });
-                                        }}
-                                        className={cn(
-                                          "h-5 w-5 rounded-[3px] border border-input",
-                                          filled ? "bg-primary" : "bg-transparent"
-                                        )}
-                                      />
-                                    );
-                                  })}
+                                <div className="flex min-w-0 flex-1 flex-col gap-1">
+                                  <Input
+                                    className="h-7 text-[12px]"
+                                    placeholder="valores deste nível…"
+                                    value={desc}
+                                    onChange={(e) => {
+                                      const arr = [...c.niveisDesc];
+                                      arr[ni] = e.target.value;
+                                      upd(i, { niveisDesc: arr });
+                                    }}
+                                  />
+                                  {total > 0 && (
+                                    <div className="flex items-center gap-2">
+                                      <div className="flex flex-wrap gap-1">
+                                        {Array.from({ length: total }, (_, j) => {
+                                          const filled = j < avail;
+                                          return (
+                                            <button
+                                              key={j}
+                                              type="button"
+                                              title={filled ? "disponível (clique p/ consumir)" : "usado (clique p/ devolver)"}
+                                              onClick={() => {
+                                                const novoAvail = filled ? j : j + 1;
+                                                const arr = [...c.usosGastosPorNivel];
+                                                arr[ni] = total - novoAvail;
+                                                upd(i, { usosGastosPorNivel: arr });
+                                              }}
+                                              className={cn(
+                                                "h-5 w-5 rounded-[3px] border border-input",
+                                                filled ? "bg-primary" : "bg-transparent"
+                                              )}
+                                            />
+                                          );
+                                        })}
+                                      </div>
+                                      <span className="text-[11px] font-medium text-muted-foreground">
+                                        {avail}/{total}
+                                      </span>
+                                    </div>
+                                  )}
                                 </div>
-                                <span className="text-[11px] font-medium text-muted-foreground">
-                                  {avail}/{total}
-                                </span>
                               </div>
                             );
                           })}
