@@ -181,7 +181,7 @@ Situações comuns que costumam gerar esses modificadores:
 - Escuridão ou visibilidade reduzida;
 - Lutar dentro d'água;
 - Chuva forte ou vento;
-- Alvo em cobertura;
+- Alvo em cobertura (regra própria em [Cobertura](#cobertura));
 - Calor ou frio extremos;
 - Superfície escorregadia.
 
@@ -199,6 +199,24 @@ Diferença de altura entre atacante e alvo só conta como **elevação** a parti
 O racional: superioridade visual e gravidade favorecem quem está no alto; quem está embaixo já paga `PA` para subir e ainda luta contra a posição.
 
 > ✅ Decidido em 11/07/2026 (ver [notas-de-design/decisoes/2026-07-11-revisao-testes-aptidoes-fadiga.md](../../notas-de-design/decisoes/2026-07-11-revisao-testes-aptidoes-fadiga.md)). Movido de "Testes e contratestes" para cá em 11/07/2026, por decisão do grupo.
+
+### Cobertura
+
+> 🧪 Mecânica **em teste** (proposta de Daniel, 18/07/2026) — ver [decisões — cobertura](../../notas-de-design/decisoes/2026-07-18-cobertura.md).
+
+A **cobertura** protege contra **ataques à distância** (arcos, bestas, armas de fogo, arremessos) usando o cenário — muros, pedras, árvores, destroços, veículos. Contra ataques **corpo a corpo** a cobertura não vale (o oponente está ao seu lado).
+
+Há dois graus, definidos pelo narrador conforme o objeto:
+
+- **Meia cobertura** — cobre parte do corpo ou serve para se abrigar atrás (mureta, tronco, pedra, capô): concede **`+1d10 de vantagem`** nos contratestes de defesa/esquiva contra ataques à distância.
+- **Cobertura completa** — bloqueia totalmente a linha de tiro (parede, muro, contêiner): o alvo **não pode ser atingido** por ataques à distância vindos daquela direção.
+
+**Como se usa — pela [guarda levantada](02-acoes-em-conflito.md#levantar-guarda-entrar-em-postura-defensiva):** não existe uma ação separada de "entrar em cobertura". Para se valer dela, o personagem **levanta uma guarda** estando na cobertura (custo normal da guarda: **`2 PA`** fora de engajamento, **`3 PA`** engajado). Enquanto essa guarda estiver de pé, a cobertura **complementa** a guarda com o efeito acima, contra ataques à distância daquela direção.
+
+- **Sem a guarda levantada, a cobertura completa conta como meia cobertura** — o personagem está exposto (de pé, saindo para atirar): recebe só o `+1d10` e **pode ser atingido**. Parede na frente não basta: é preciso **se encaixar na cobertura** (levantar a guarda) para a proteção ser total.
+- **Atirar de dentro da cobertura expõe:** ao fazer um **ataque à distância** a partir de uma cobertura completa, o personagem se mostra — até a sua próxima guarda levantada, aquela cobertura vale como **meia cobertura** contra quem o enxerga (o vaivém de "sair, atirar, voltar").
+- **Mover-se cancela a guarda** (regra geral): trocar de cobertura exige levantar a guarda de novo no novo ponto.
+- Combina com [elevação](#elevação): atiradores no alto atacam com vantagem; a cobertura é a resposta de quem avança por baixo.
 
 ## Sequência de ações em um combate
 

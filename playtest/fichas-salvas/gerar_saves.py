@@ -319,6 +319,49 @@ mk("05-epico-100exp-albrecht","Albrecht, o Cantor de Guerra",C5,100,
     H("Animar",2),T("Apoiador")],
    "Mão hábil: direita. Fôlego do grupo: Grito de alerta blinda contra a área do chefe; Brado prepara o burst; Revitalizar ressuscita; Tratamento desfaz dano profundo; Animar recarrega Neriss/Syla.")
 
+# ---------- Cenário 6 — Colapso — O Vale dos Atiradores (50 exp) — TESTE DE COBERTURA ----------
+C6="Cenário 6 — O Vale dos Atiradores (Colapso)"
+mk("06-colapso-50exp-fio","Fio, a Franco-atiradora",C6,50,
+   apt(a=20,m=6), pa(0,0,10),
+   [arma("Rifle","Pesada · à distância","Duas mãos","Projétil","3–20 m","","6","1d8 (bala)",["PROJ"]),
+    arma("Pistola simples (reserva)","Leve · à distância","Coldre","Projétil","2–15 m","","2","1d8 (bala)",["PROJ"])],
+   [],
+   [item("Rifle","1","",""),item("Balas de pólvora","20","",""),item("Pistola simples","1","","")],
+   [T("Maestria em projéteis"),T("Técnica em Esconder-se"),T("Lépido"),T("Escorregadio"),
+    H("Ataques à distância concentrados",3),H("Alcance à distância",2),H("Analisar fraquezas",3),H("Disparada",1)],
+   "Mão hábil: direita. Contra-atiradora: da cobertura completa, levanta guarda e só sai para atirar (atirar expõe até a próxima guarda). Analisar + concentrados afunilam um Olho de Chumbo por vez; Lépido volta pra trás da cobertura.")
+
+mk("06-colapso-50exp-brecha","Brecha, o Assaltante",C6,50,
+   apt(a=16,f=6), pa(0,0,10),
+   [arma("Espingarda","Média · à distância","Duas mãos","Projétil","1–5 m","","4","1d8 (bala)",["PROJ"]),
+    arma("Faca (reserva)","Leve","Cinto","Cortante/Perfurante","1 m","","2","1d4",["CORT","PERF"])],
+   [],
+   [item("Espingarda","1","",""),item("Balas de pólvora","16","",""),item("Faca","1","","")],
+   [T("Maestria em projéteis"),T("Escorregadio"),T("Empacado"),
+    H("Disparada",3),H("Investida",3),H("Ataques à distância concentrados",2),H("Arremesso improvisado",1)],
+   "Mão hábil: direita. Ponta de lança: Disparada cruza os vãos expostos num lance; quando os Cães emboscam, Investida leva até eles e a espingarda de perto limpa o corredor, poupando o resto de largar a cobertura.")
+
+mk("06-colapso-50exp-torre","\"Torre\", a Barricada",C6,50,
+   apt(f=17), pa(-4,0,6),
+   [arma("Martelo médio","Média · versátil","Mão hábil","Contundente","1 m","","4","2d4 (+1d4 a 2 mãos)",["CONT"]),
+    arma("Pistola simples (reserva)","Leve · à distância","Coldre","Projétil","2–15 m","","2","1d8 (bala)",["PROJ"])],
+   [prot("Peitoral médio","-2","-2","25",["tronco"]),
+    prot("Escudo médio (guarda 3 PA)","-2","-2","15",[])],
+   [item("Martelo médio","1","",""),item("Peitoral médio","1","",""),item("Escudo médio","1",""," "),item("Pistola simples","1","","")],
+   [T("Maestria em armaduras médias"),T("Maestria em armas contundentes"),T("Blindado"),T("Resistente"),
+    T("Protetor"),T("Reativo"),T("Empacado"),H("Atordoar",2),H("Encontrão",2),H("Quebrar guarda",1)],
+   "Mão hábil: direita. Cobertura ambulante: escudo + Blindado dão defesa contra os tiros de cima para quem está atrás; enfrenta os Cães de perto (Atordoar/Encontrão) enquanto Fio/Brecha cuidam dos espinhaços; Protetor salva aliado exposto. PA 6: administre.")
+
+mk("06-colapso-50exp-eco","Eco, o Coiote",C6,50,
+   apt(s=9,m=6), pa(0,0,10),
+   [arma("Pistola simples","Leve · à distância","Mão hábil","Projétil","2–15 m","","2","1d8 (bala)",["PROJ"]),
+    arma("Faca (reserva)","Leve","Cinto","Cortante/Perfurante","1 m","","2","1d4",["CORT","PERF"])],
+   [],
+   [item("Pistola simples","1","",""),item("Balas de pólvora","12","",""),item("Kit de primeiros socorros","1","",""),item("Faca","1","","")],
+   [T("Técnica em Investigar/Observar"),T("Técnica em Realizar truques"),T("Apoiador"),
+    H("Comandar",3),H("Criar armadilha",3),H("Cura especializada",2),H("Confundir inimigo",3),H("Analisar fraquezas",2)],
+   "Mão hábil: direita. Maestro: Comandar empurra PA para quem cruza um vão exposto; Criar armadilha recebe os Cães na boca da manilha; Confundir estraga o tiro de um atirador sobre um aliado sem cobertura; Cura levanta quem apanhar.")
+
 # ---------- verificação de exp ----------
 print("\n=== verificação de exp por ficha ===")
 allok=True

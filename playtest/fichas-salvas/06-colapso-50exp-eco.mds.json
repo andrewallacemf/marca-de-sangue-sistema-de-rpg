@@ -1,0 +1,355 @@
+{
+  "app": "marca-de-sangue-ficha",
+  "schemaVersion": 1,
+  "rulesVersion": "vigente",
+  "salvoEm": "2026-07-18T13:14:21.580790",
+  "data": {
+    "info": {
+      "nome": "Eco, o Coiote",
+      "jogador": "",
+      "cenario": "Cenário 6 — O Vale dos Atiradores (Colapso)",
+      "ultimaSessao": ""
+    },
+    "exp": {
+      "baseTotal": "50",
+      "baseUsada": "50",
+      "qtdAptidoes": "15",
+      "qtdHabilidades": "5",
+      "qtdTracos": "3"
+    },
+    "aptidoes": {
+      "fisica": {
+        "total": "",
+        "usado": ""
+      },
+      "agil": {
+        "total": "",
+        "usado": ""
+      },
+      "mental": {
+        "total": "6",
+        "usado": ""
+      },
+      "social": {
+        "total": "9",
+        "usado": ""
+      }
+    },
+    "pa": {
+      "base": "10",
+      "redArmadura": "0",
+      "redDano": "0",
+      "redCarga": "0",
+      "outros": "0",
+      "total": "10"
+    },
+    "armas": [
+      {
+        "nome": "Pistola simples",
+        "tipo": "Leve · à distância",
+        "equipado": "Mão hábil",
+        "categoria": "Projétil",
+        "alcance": "2–15 m",
+        "durabilidade": "",
+        "custoPA": "2",
+        "dano": "1d8 (bala)",
+        "props": {
+          "ARRE": false,
+          "AGAR": false,
+          "CORT": false,
+          "CONT": false,
+          "DEFL": false,
+          "PERF": false,
+          "PROJ": true
+        }
+      },
+      {
+        "nome": "Faca (reserva)",
+        "tipo": "Leve",
+        "equipado": "Cinto",
+        "categoria": "Cortante/Perfurante",
+        "alcance": "1 m",
+        "durabilidade": "",
+        "custoPA": "2",
+        "dano": "1d4",
+        "props": {
+          "ARRE": false,
+          "AGAR": false,
+          "CORT": true,
+          "CONT": false,
+          "DEFL": false,
+          "PERF": true,
+          "PROJ": false
+        }
+      }
+    ],
+    "protecoes": [],
+    "saude": {
+      "cabeca": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tronco": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bracoE": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bracoD": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "pernaE": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "pernaD": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "fadiga": 0,
+    "guardas": "0",
+    "equipamentos": [
+      {
+        "equipado": true,
+        "item": "Pistola simples",
+        "qtd": "1",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      },
+      {
+        "equipado": true,
+        "item": "Balas de pólvora",
+        "qtd": "12",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      },
+      {
+        "equipado": true,
+        "item": "Kit de primeiros socorros",
+        "qtd": "1",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      },
+      {
+        "equipado": true,
+        "item": "Faca",
+        "qtd": "1",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      }
+    ],
+    "carga": {
+      "capacidade": "",
+      "carregado": ""
+    },
+    "tesouro": [
+      {
+        "label": "Moedas",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      }
+    ],
+    "caracteristicas": [
+      {
+        "tipo": "Traço",
+        "nome": "Técnica em Investigar/Observar",
+        "efeito": "Anula a desvantagem natural para investigar/observar.",
+        "requisitos": "",
+        "atributo": "Mental",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Técnica em Realizar truques",
+        "efeito": "Anula a desvantagem natural para realizar truques.",
+        "requisitos": "",
+        "atributo": "Ágil/Social",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Apoiador",
+        "efeito": "Usa aptidões nos testes de um aliado adjacente.",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "4 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Comandar",
+        "efeito": "Transfere pontos de ação do seu próximo turno para um aliado.",
+        "requisitos": "",
+        "atributo": "Social",
+        "valorCompra": "2 exp.",
+        "custoPA": "1 PA",
+        "usosPorNivel": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "nivel": 3
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Criar armadilha",
+        "efeito": "Depõe uma armadilha que prende e causa dano ao ser acionada.",
+        "requisitos": "",
+        "atributo": "Mental",
+        "valorCompra": "2 exp.",
+        "custoPA": "1 PA",
+        "usosPorNivel": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "nivel": 3
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Cura especializada",
+        "efeito": "Cura dano superficial de um aliado adjacente (1d4→1d12).",
+        "requisitos": "",
+        "atributo": "Social",
+        "valorCompra": "3 exp.",
+        "custoPA": "4 PA",
+        "usosPorNivel": [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "nivel": 2
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Confundir inimigo",
+        "efeito": "Desvantagem no próximo contrateste de defesa/esquiva de oponentes (até 6 m).",
+        "requisitos": "",
+        "atributo": "Mental",
+        "valorCompra": "3 exp.",
+        "custoPA": "4 PA",
+        "usosPorNivel": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "nivel": 3
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Analisar fraquezas",
+        "efeito": "Vê quanto dano o oponente recebeu em partes do corpo à escolha.",
+        "requisitos": "",
+        "atributo": "Mental",
+        "valorCompra": "1 exp.",
+        "custoPA": "1 PA",
+        "usosPorNivel": [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "nivel": 2
+      }
+    ],
+    "anotacoes": "Mão hábil: direita. Maestro: Comandar empurra PA para quem cruza um vão exposto; Criar armadilha recebe os Cães na boca da manilha; Confundir estraga o tiro de um atirador sobre um aliado sem cobertura; Cura levanta quem apanhar."
+  }
+}

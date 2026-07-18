@@ -165,6 +165,8 @@ Para isso, siga os passos:
 
 > 💡 **Quando estiver engajado,** levantar a guarda custa **`3 PA`** por guarda levantada.
 
+> 🧪 **Guarda + cobertura:** se o personagem estiver numa **cobertura** (muro, pedra, destroço), a guarda levantada também ativa os efeitos dela contra ataques à distância — ver [Cobertura](01-conflito-fisico.md#cobertura) (em teste).
+
 ## Atrasar turno
 
 O jogador pode gastar pontos de ação em seu turno para atrasar sua posição na fila de iniciativa da batalha. Para cada ponto de ação utilizado, o jogador desce 1 posição na sequência de turnos, sendo que, independente de quantos pontos gastar para atrasar seu turno, quando chegar novamente a sua vez, ele poderá utilizar somente os **`PA`** restantes.

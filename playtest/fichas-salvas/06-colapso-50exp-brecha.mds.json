@@ -1,0 +1,331 @@
+{
+  "app": "marca-de-sangue-ficha",
+  "schemaVersion": 1,
+  "rulesVersion": "vigente",
+  "salvoEm": "2026-07-18T13:14:21.578846",
+  "data": {
+    "info": {
+      "nome": "Brecha, o Assaltante",
+      "jogador": "",
+      "cenario": "Cenário 6 — O Vale dos Atiradores (Colapso)",
+      "ultimaSessao": ""
+    },
+    "exp": {
+      "baseTotal": "50",
+      "baseUsada": "50",
+      "qtdAptidoes": "22",
+      "qtdHabilidades": "4",
+      "qtdTracos": "3"
+    },
+    "aptidoes": {
+      "fisica": {
+        "total": "6",
+        "usado": ""
+      },
+      "agil": {
+        "total": "16",
+        "usado": ""
+      },
+      "mental": {
+        "total": "",
+        "usado": ""
+      },
+      "social": {
+        "total": "",
+        "usado": ""
+      }
+    },
+    "pa": {
+      "base": "10",
+      "redArmadura": "0",
+      "redDano": "0",
+      "redCarga": "0",
+      "outros": "0",
+      "total": "10"
+    },
+    "armas": [
+      {
+        "nome": "Espingarda",
+        "tipo": "Média · à distância",
+        "equipado": "Duas mãos",
+        "categoria": "Projétil",
+        "alcance": "1–5 m",
+        "durabilidade": "",
+        "custoPA": "4",
+        "dano": "1d8 (bala)",
+        "props": {
+          "ARRE": false,
+          "AGAR": false,
+          "CORT": false,
+          "CONT": false,
+          "DEFL": false,
+          "PERF": false,
+          "PROJ": true
+        }
+      },
+      {
+        "nome": "Faca (reserva)",
+        "tipo": "Leve",
+        "equipado": "Cinto",
+        "categoria": "Cortante/Perfurante",
+        "alcance": "1 m",
+        "durabilidade": "",
+        "custoPA": "2",
+        "dano": "1d4",
+        "props": {
+          "ARRE": false,
+          "AGAR": false,
+          "CORT": true,
+          "CONT": false,
+          "DEFL": false,
+          "PERF": true,
+          "PROJ": false
+        }
+      }
+    ],
+    "protecoes": [],
+    "saude": {
+      "cabeca": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tronco": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bracoE": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bracoD": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "pernaE": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "pernaD": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "fadiga": 0,
+    "guardas": "0",
+    "equipamentos": [
+      {
+        "equipado": true,
+        "item": "Espingarda",
+        "qtd": "1",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      },
+      {
+        "equipado": true,
+        "item": "Balas de pólvora",
+        "qtd": "16",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      },
+      {
+        "equipado": true,
+        "item": "Faca",
+        "qtd": "1",
+        "pesoUnit": "",
+        "pesoTotal": ""
+      }
+    ],
+    "carga": {
+      "capacidade": "",
+      "carregado": ""
+    },
+    "tesouro": [
+      {
+        "label": "Moedas",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      },
+      {
+        "label": "",
+        "valor": ""
+      }
+    ],
+    "caracteristicas": [
+      {
+        "tipo": "Traço",
+        "nome": "Maestria em projéteis",
+        "efeito": "Ignora barreiras no caminho do alvo; recarregar não custa PA ao acertar.",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "1 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Escorregadio",
+        "efeito": "+1d10 para esquivar de ataques de oportunidade (sem armadura média/pesada).",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "4 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Empacado",
+        "efeito": "Reduz movimentação forçada pela metade.",
+        "requisitos": "",
+        "atributo": "—",
+        "valorCompra": "2 exp.",
+        "custoPA": "—",
+        "usosPorNivel": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Disparada",
+        "efeito": "Movimento em linha reta (6–10 m por nível).",
+        "requisitos": "",
+        "atributo": "Ágil",
+        "valorCompra": "2 exp.",
+        "custoPA": "5 PA",
+        "usosPorNivel": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "nivel": 3
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Investida",
+        "efeito": "Avança na direção do alvo ignorando engajamento e ataca.",
+        "requisitos": "",
+        "atributo": "Físico",
+        "valorCompra": "3 exp.",
+        "custoPA": "1 PA + PA da arma",
+        "usosPorNivel": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "nivel": 3
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Ataques à distância concentrados",
+        "efeito": "Mantém o alvo à distância ignorando a desvantagem de ataques múltiplos.",
+        "requisitos": "",
+        "atributo": "Ágil",
+        "valorCompra": "2 exp.",
+        "custoPA": "1 PA",
+        "usosPorNivel": [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "nivel": 2
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Arremesso improvisado",
+        "efeito": "Arremessa armas/objetos como se fossem armas de arremesso neste turno.",
+        "requisitos": "",
+        "atributo": "Ágil",
+        "valorCompra": "2 exp.",
+        "custoPA": "1 PA",
+        "usosPorNivel": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nivel": 1
+      }
+    ],
+    "anotacoes": "Mão hábil: direita. Ponta de lança: Disparada cruza os vãos expostos num lance; quando os Cães emboscam, Investida leva até eles e a espingarda de perto limpa o corredor, poupando o resto de largar a cobertura."
+  }
+}
