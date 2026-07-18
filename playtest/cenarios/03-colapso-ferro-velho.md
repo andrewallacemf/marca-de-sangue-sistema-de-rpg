@@ -54,80 +54,36 @@ difícil (dobro de custo) cria decisões interessantes de rota.
 
 ---
 
-## Ficha 1 — VERA, a Batedora
+## Ficha 1 — Doc, o Sucateiro-Médico
 
-*A mais rápida. Voa pelo mapa e serve de isca.*
-
-- **Mão hábil:** direita · **PA por turno:** **10** · **PV:** 60 (10 por membro)
-- **Armas:** Machadinha (média · cortante `1d8` · arremesso · 4 PA) · Faca (leve, reserva)
-- **Proteção:** nenhuma (mobilidade total)
-
-**Características (50 exp):**
-
-- Corredor (8) — dobra o teto de PA gasto em deslocamento
-- Maratonista (4) — dobra o movimento correndo em linha reta (≥5 PA, sem peso pesado)
-- Disparada — nível 3 (6) — movimento reto de até 8 m por 5 PA
-- Técnica em Saltar (1) · Saltador (3) — salta até 10 m
-- Técnica em Nadar (1)
-- Escorregadio (4) — +1d10 para esquivar de ataques de oportunidade
-- Ataques múltiplos & leves — nível 1 (1)
-- Aptidão Ágil ×18 (18) · Aptidão Física ×4 (4)
-
-**Como jogar:** você é o coelho. **Corredor + Maratonista + Disparada** te tiram do mapa
-num piscar. **Escorregadio** anula os ataques de oportunidade quando você passa por entre
-os perseguidores. Use sua velocidade para atrair o bando para uma rota e abrir espaço aos
-outros — ou para saltar o terreno difícil que atrasaria todo mundo.
-
----
-
-## Ficha 2 — DOC, o Sucateiro-Médico
-
-*Nega terreno e mantém o grupo inteiro na corrida.*
-
-- **Mão hábil:** direita · **PA por turno:** **10** · **PV:** 60 (10 por membro)
-- **Armas:** Bastão médio (média · contundente `2d4` · versátil · 4 PA) · Funda (leve · alcance 4–7 m · pedras `2`)
+- **PA base:** 10 · **PA total:** 10 · **PV:** 60 (10 por membro)
+- **Armas:** Bastão médio (Média · versátil · dano 2d4 · 4 PA · alc. 1 m) · Funda (Leve · à distância · dano 2 (pedra) · 2 PA · alc. 4–7 m)
 - **Proteção:** nenhuma
+- **Traços:** Técnica em Tratar/Curar, Técnica em Investigar/Observar
+- **Habilidades:** Cura especializada (nível 3), Tratamento especializado (nível 1), Criar armadilha (nível 3), Comandar (nível 3), Revigorar (nível 2)
+- **Aptidões (custo escalonado):** Ágil ×1, Mental ×1, Social ×5
 
-**Características (50 exp):**
+**Como jogar:** Mão hábil: direita. Nega terreno: Criar armadilha trava perseguidores; Comandar dá PA para fugir; cura quem cai. Compra tempo.
 
-- Técnica em Tratar/Curar (3) · Técnica em Investigar/Observar (1)
-- Cura especializada — nível 3 (9)
-- Tratamento especializado — nível 1 (4)
-- Criar armadilha — nível 3 (6) — deixa armadilhas de 3 de dano para frear o bando
-- Comandar — nível 3 (6) — transfere até 4 PA a um aliado
-- Revigorar — nível 2 (4)
-- Aptidão Social ×9 (9) · Aptidão Mental ×8 (8)
+## Ficha 2 — "Muro", a Retaguarda
 
-**Como jogar:** transforme o terreno em arma. **Criar armadilha** no gargalo da passarela
-ou na lama trava os perseguidores (eles precisam se soltar). **Comandar** dá PA extra para
-quem precisa acelerar. Se alguém cair, **Cura especializada** o recoloca de pé. Você
-compra tempo.
+- **PA base:** 10 · **PA total:** 6 · **PV:** 60 (10 por membro)
+- **Armas:** Martelo grande (Pesada · longo alcance · dano 3d4 · 6 PA · alc. 1–2 m)
+- **Proteção:** Peitoral médio (R.PA -2, R.Dano -2) · Escudo médio (guarda 3 PA) (R.PA -2, R.Dano -2)
+- **Maestrias:** Maestria em armas contundentes, Maestria em armaduras médias
+- **Traços:** Resistente, Empacado, Burro de carga
+- **Habilidades:** Atordoar (nível 3), Encontrão (nível 2), Quebrar guarda (nível 1)
+- **Aptidões (custo escalonado):** Física ×5, Ágil ×2
 
----
+**Como jogar:** Mão hábil: direita. Tampão no gargalo: martelo contundente (−3 PA) + Atordoar atrasam o bando; Resistente aguenta; Empacado não é empurrado; carrega ferido (Burro de carga). PA baixo (6): administre.
 
-## Ficha 3 — "MURO", a Retaguarda
+## Ficha 3 — Vera, a Batedora
 
-*Segura o bando no gargalo e carrega quem cair.*
+- **PA base:** 10 · **PA total:** 10 · **PV:** 60 (10 por membro)
+- **Armas:** Machadinha (Média · arremesso · dano 1d8 · 4 PA · alc. 1 m / 2–4 m) · Faca (reserva) (Leve · dano 1d4 · 2 PA · alc. 1 m)
+- **Proteção:** nenhuma
+- **Traços:** Corredor, Maratonista, Técnica em Saltar, Saltador, Técnica em Nadar, Escorregadio
+- **Habilidades:** Disparada (nível 3), Ataques múltiplos & leves (nível 1)
+- **Aptidões (custo escalonado):** Física ×1, Ágil ×6
 
-- **Mão hábil:** direita · **PA por turno:** **6** (10 −2 peitoral −2 escudo) · **PV:** 60 (10 por membro)
-- **Armas:** Martelo grande (pesada · contundente `3d4` · 6 PA · alcance 1–2 m)
-- **Proteção:** Peitoral médio (−2 dano no tronco) · Escudo médio (−2 dano, levantar guarda 3 PA)
-
-**Características (50 exp):**
-
-- Maestria em armas contundentes (1) — tira **3 PA** do alvo por acerto (arma pesada)
-- Maestria em armaduras médias (1)
-- Resistente (3) — reduz o dano recebido pela metade (com guarda + armadura média)
-- Empacado (2) — reduz movimentação forçada pela metade
-- Reativo (4) — ataque de oportunidade quando o alvo sai do alcance
-- Atordoar — nível 3 (12) — tira até 3 PA persistentes do alvo
-- Encontrão — nível 2 (4) — empurra até 3 m
-- Quebrar guarda — nível 1 (2)
-- Burro de carga (6) — carrega um aliado agarrado sem gastar PA extra
-- Aptidão Física ×15 (15)
-
-**Como jogar:** você é o tampão. Fique na **passarela** (1 espaço) e segure o bando com o
-alcance do martelo + **Reativo**. **Atordoar** e a maça contundente roubam PA dos
-perseguidores — quanto menos PA eles têm, menos avançam. **Empacado** evita que te
-empurrem da linha. Seu PA é baixo (6): é o preço da armadura — administre. Se um aliado
-cair, você pode carregá-lo (**Burro de carga**) até o portão.
+**Como jogar:** Mão hábil: direita. A mais rápida: Corredor+Maratonista+Disparada atravessam o mapa; Escorregadio anula oportunidade ao fugir; serve de isca.

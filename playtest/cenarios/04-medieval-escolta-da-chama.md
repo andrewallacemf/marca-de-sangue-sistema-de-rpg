@@ -52,112 +52,50 @@ mirando o NPC) cria a tensão certa. Empurrar inimigos da ponte deve ser uma jog
 
 ---
 
-## Ficha 1 — SER ROLAND, o Guardião
+## Ficha 1 — Gareth, o Lanceiro de Formação
 
-*Escudo vivo. Intercepta os golpes destinados ao Arauto.*
+- **PA base:** 10 · **PA total:** 8 · **PV:** 60 (10 por membro)
+- **Armas:** Alabarda (Pesada · longo alcance · dano 1d8 · 6 PA · alc. 2–3 m)
+- **Proteção:** Peitoral médio (R.PA -2, R.Dano -2)
+- **Maestrias:** Maestria em armas perfurantes, Maestria em armaduras médias
+- **Traços:** Alerta, Empacado, Resistente
+- **Habilidades:** Alcance corpo a corpo (nível 3), Investida (nível 3), Ataques múltiplos & pesados (nível 2), Encontrão (nível 3), Quebrar guarda (nível 1)
+- **Aptidões (custo escalonado):** Física ×7, Ágil ×1
 
-- **Mão hábil:** direita · **PA por turno:** **7** (10 −2 peitoral médio −2 escudo +1 comprado) · **PV:** 60 (10 por membro)
-- **Armas:** Espada longa (média · cortante `1d8` / perfurante `1d6` · versátil · longo alcance 1–2 m · 4 PA)
-- **Proteção:** Peitoral médio (−2 dano no tronco) · Escudo grande (média, −2 dano, levantar guarda 3 PA)
+**Como jogar:** Mão hábil: direita. Muralha móvel: alcance 2–3 m + perfurante + Reativo + Alerta = anel de ameaça ao redor do Arauto; Encontrão empurra pra fora da ponte.
 
-**Características (70 exp):**
+## Ficha 2 — Dame Isolde, a Comandante
 
-- Maestria em armaduras pesadas (1) · Maestria em armaduras médias (1)
-- Maestria em armas cortantes (1) · Maestria em armas contundentes (1) · Maestria em armas versáteis (1)
-- Protetor (4) — desvia para si o dano de um aliado adjacente (requer escudo)
-- Resistente (3) — reduz o dano recebido pela metade
-- Blindado (4) — +1d10 para defender ataques à distância com escudo
-- Reativo (4) — oportunidade quando o alvo sai do alcance
-- Alerta (4) — oportunidade quando o alvo entra no alcance
-- Firme (4) — pode usar arma pesada com uma mão (−3 dano)
-- Empacado (2) — reduz movimentação forçada pela metade
-- Quebrar guarda — nível 2 (4) · Encontrão — nível 3 (6)
-- +1 PA (5) · Aptidão Física ×25 (25)
+- **PA base:** 10 · **PA total:** 8 · **PV:** 60 (10 por membro)
+- **Armas:** Sabre (Média · versátil · longo alcance · dano 1d8 CORT · 1d6 PERF (+1d4 a 2 mãos) · 4 PA · alc. 1–2 m)
+- **Proteção:** Peitoral leve (R.PA -1, R.Dano -1) · Escudo pequeno (leve · guarda 2 PA) (R.PA -1, R.Dano -1)
+- **Maestrias:** Maestria em armaduras leves, Maestria em armas cortantes
+- **Traços:** Apoiador, Técnica em Persuadir/Seduzir
+- **Habilidades:** Grito de alerta (nível 3), Brado de guerra (nível 3), Comandar (nível 4), Confundir inimigo (nível 3), Intimidação generalizada (nível 2)
+- **Aptidões (custo escalonado):** Mental ×3, Social ×5
 
-**Como jogar:** cole no Arauto. **Protetor** faz você levar o golpe que iria nele; com
-**Resistente** você reduz esse dano pela metade. **Blindado** te deixa aparar as flechas
-do Arqueiro. **Alerta + Reativo** punem qualquer bandido que se aproxime do NPC.
-**Encontrão** joga inimigos para fora da ponte.
+**Como jogar:** Mão hábil: direita. Cérebro: Comandar dá PA ao Arauto; Grito de alerta blinda a formação; Confundir/Intimidação desmontam a emboscada; Apoiador empresta aptidões ao NPC.
 
----
+## Ficha 3 — Lyra, a Batedora-Arqueira
 
-## Ficha 2 — DAME ISOLDE, a Comandante
+- **PA base:** 11 · **PA total:** 10 · **PV:** 60 (10 por membro)
+- **Armas:** Arco longo (Pesada · à distância · dano 1d4 (flecha de ferro) · 6 PA · alc. 8–12 m) · Adaga (reserva) (Leve · acuidade · dano 1d4 · 2 PA · alc. 1 m)
+- **Proteção:** Peitoral leve (R.PA -1, R.Dano -1)
+- **Maestrias:** Maestria em projéteis, Maestria em armaduras leves
+- **Traços:** Técnica em Investigar/Observar, Técnica em Esconder-se
+- **Habilidades:** Ataques à distância concentrados (nível 4), Alcance à distância (nível 3), Analisar fraquezas (nível 4), Confundir inimigo (nível 2), Disparada (nível 2)
+- **Aptidões (custo escalonado):** Física ×2, Ágil ×7, Mental ×1
 
-*O cérebro. Blinda a formação e empresta ações ao Arauto.*
+**Como jogar:** Mão hábil: direita (+1 PA comprado). Contra-artilharia: alcance 12 m elimina o Arqueiro inimigo; Analisar fraquezas + Confundir; Disparada busca elevação.
 
-- **Mão hábil:** direita · **PA por turno:** **8** (10 −1 peitoral −1 escudo) · **PV:** 60 (10 por membro)
-- **Armas:** Sabre (média · cortante `1d8` / perfurante `1d6` · versátil · longo alcance 1–2 m · 4 PA)
-- **Proteção:** Peitoral leve (−1) · Escudo pequeno (leve, −1, levantar 2 PA)
+## Ficha 4 — Ser Roland, o Guardião
 
-**Características (70 exp):**
+- **PA base:** 11 · **PA total:** 7 · **PV:** 60 (10 por membro)
+- **Armas:** Espada longa (Média · versátil · longo alcance · dano 1d8 CORT · 1d6 PERF (+1d4 a 2 mãos) · 4 PA · alc. 1–2 m)
+- **Proteção:** Peitoral médio (R.PA -2, R.Dano -2) · Escudo grande (média · guarda 3 PA) (R.PA -2, R.Dano -2)
+- **Maestrias:** Maestria em armaduras pesadas, Maestria em armaduras médias, Maestria em armas cortantes, Maestria em armas contundentes, Maestria em armas versáteis
+- **Traços:** Protetor, Resistente, Blindado, Alerta, Firme, Empacado
+- **Habilidades:** Quebrar guarda (nível 2), Encontrão (nível 3)
+- **Aptidões (custo escalonado):** Física ×5, Ágil ×2, Mental ×1
 
-- Grito de alerta — nível 3 (9) — vantagem na defesa de até 3 aliados
-- Brado de guerra — nível 3 (9) — vantagem no ataque de até 3 aliados
-- Comandar — nível 4 (8) — transfere até 5 PA a um aliado (ou ao Arauto!)
-- Apoiador (4) — usa suas aptidões nos testes de um aliado adjacente
-- Confundir inimigo — nível 3 (9) — desvantagem na defesa de até 3 inimigos
-- Intimidação generalizada — nível 2 (6) — atrasa o turno de até 2 inimigos
-- Maestria em armaduras leves (1) · Maestria em armas cortantes (1)
-- Técnica em Persuadir/Seduzir (1)
-- Aptidão Social ×18 (18) · Aptidão Mental ×4 (4)
-
-**Como jogar:** você orquestra. **Comandar** dá PA ao Arauto para ele andar mais rápido
-até o santuário. **Grito de alerta** cobre a formação contra o Arqueiro. **Confundir** e
-**Intimidação** desmontam a emboscada. **Apoiador** deixa você gastar aptidões na defesa
-do próprio Arauto quando estiver ao lado dele.
-
----
-
-## Ficha 3 — GARETH, o Lanceiro de Formação
-
-*Cria uma zona de ameaça enorme em volta do Arauto.*
-
-- **Mão hábil:** direita · **PA por turno:** **8** (10 −2 peitoral médio) · **PV:** 60 (10 por membro)
-- **Armas:** Alabarda (pesada · perfurante `1d8` · longo alcance 2–3 m · 6 PA)
-- **Proteção:** Peitoral médio (−2 dano no tronco)
-
-**Características (70 exp):**
-
-- Maestria em armas perfurantes (1) — oportunidade quando o alvo entra no alcance
-- Maestria em armaduras médias (1)
-- Reativo (4) — oportunidade quando o alvo sai do alcance
-- Alerta (4) — oportunidade quando o alvo entra (guarda levantada)
-- Alcance corpo a corpo — nível 3 (6) — amplia o alcance ideal e reduz o custo de PA
-- Investida — nível 3 (9)
-- Ataques múltiplos & pesados — nível 2 (6)
-- Encontrão — nível 3 (6) — empurra até 4 m (para fora da ponte)
-- Quebrar guarda — nível 1 (2)
-- Empacado (2) · Resistente (3)
-- Aptidão Física ×26 (26)
-
-**Como jogar:** com alcance de 2–3 m (ampliado pela habilidade) e **perfurante + Reativo +
-Alerta**, você ameaça um anel gigante ao redor do Arauto — todo inimigo que **entra ou
-sai** leva um ataque de graça. **Encontrão** empurra bandidos para o abismo da ponte.
-Fique entre o NPC e o lado de onde vêm as ondas.
-
----
-
-## Ficha 4 — LYRA, a Batedora-Arqueira
-
-*Abre caminho e cala o Arqueiro inimigo.*
-
-- **Mão hábil:** direita · **PA por turno:** **10** (10 −1 peitoral +1 comprado) · **PV:** 60 (10 por membro)
-- **Armas:** Arco longo (pesada · 6 PA · alcance 8–12 m · flecha ponta de ferro `1d4`) · Adaga (reserva)
-- **Proteção:** Peitoral leve (−1 dano no tronco)
-
-**Características (70 exp):**
-
-- Maestria em projéteis (1) · Maestria em armaduras leves (1)
-- Ataques à distância concentrados — nível 4 (8)
-- Alcance à distância — nível 3 (6)
-- Analisar fraquezas — nível 3 (3)
-- Confundir inimigo — nível 2 (6) — desvantagem na defesa de até 2 inimigos
-- Disparada — nível 2 (4) — reposicionar rápido
-- Técnica em Investigar/Observar (1) · Técnica em Esconder-se (1)
-- +1 PA (5)
-- Aptidão Ágil ×24 (24) · Aptidão Mental ×10 (10)
-
-**Como jogar:** você é a contra-artilharia. Com alcance de até 12 m, elimine o **Arqueiro
-inimigo** antes que ele fira o Arauto. **Analisar fraquezas** aponta a região ferida do
-alvo; **Confundir** dá desvantagem na defesa dele. Use **Disparada** para achar um ângulo
-elevado (vantagem à distância).
+**Como jogar:** Mão hábil: direita (+1 PA comprado). Escudo vivo: Protetor intercepta golpes no Arauto, Resistente corta pela metade; Blindado apara flechas; Alerta+Reativo punem quem se aproxima; Encontrão joga da ponte.

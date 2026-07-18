@@ -94,108 +94,49 @@ Legenda da cobertura:
 
 ---
 
-## Ficha 1 — FIO, a Franco-atiradora
+## Ficha 1 — Brecha, o Assaltante
 
-*Responde aos espinhaços. Da cobertura, escolhe a janela e derruba um atirador por vez.*
-
-- **Mão hábil:** direita · **PA por turno:** **10** · **PV:** 60 (10 por membro)
-- **Armas:** Rifle (pesada · à distância · 6 PA · alcance 3–20 m · bala `1d8` · `PROJ`) · Pistola simples (leve · reserva · 2 PA · 2–15 m · `1d8`)
-- **Proteção:** nenhuma (mobilidade e furtividade)
-
-**Características (50 exp):**
-
-- Maestria em projéteis (1) — ignora barreiras leves; recarregar não custa PA ao acertar
-- Técnica em Esconder-se (1)
-- Lépido (3) — recua 1 m após acertar com arma de longo alcance (reposiciona a cobertura)
-- Escorregadio (4) — +1d10 para esquivar de ataques de oportunidade
-- Ataques à distância concentrados — nível 3 (6) — mantém o mesmo atirador na mira sem penalidade
-- Alcance à distância — nível 2 (4) — amplia a faixa ideal do rifle
-- Analisar fraquezas — nível 3 (3) — mira onde o alvo já apanhou
-- Disparada — nível 1 (2) — reposiciona rápido entre coberturas
-- Aptidão Ágil ×20 (20) · Aptidão Mental ×6 (6)
-
-**Como jogar:** você é o contrapeso dos espinhaços. Fique em **cobertura completa**, levante a
-guarda e só **saia para atirar** quando valer — lembre que atirar te **expõe** até a próxima
-guarda. **Analisar fraquezas + Ataques à distância concentrados** afunilam o dano num atirador
-até derrubá-lo. **Lépido** te devolve para trás da cobertura depois do tiro.
-
----
-
-## Ficha 2 — BRECHA, o Assaltante
-
-*Fecha a distância de cobertura em cobertura e resolve a emboscada de perto.*
-
-- **Mão hábil:** direita · **PA por turno:** **10** · **PV:** 60 (10 por membro)
-- **Armas:** Espingarda (média · à distância · 4 PA · alcance 1–5 m · bala `1d8`) · Faca (leve · reserva · 1d4)
-- **Proteção:** nenhuma (velocidade)
-
-**Características (50 exp):**
-
-- Maestria em projéteis (1)
-- Escorregadio (4) — passa entre inimigos sem levar ataque de oportunidade
-- Empacado (2) — os Cães não te arrastam para fora da linha
-- Disparada — nível 3 (6) — salto de até 8 m em linha reta entre coberturas
-- Investida — nível 3 (9) — avança ignorando engajamento e ataca (resolve a emboscada)
-- Ataques à distância concentrados — nível 2 (4) — foca um alvo de perto
-- Arremesso improvisado — nível 1 (2) — improvisa um arremesso quando precisar
-- Aptidão Ágil ×16 (16) · Aptidão Física ×6 (6)
-
-**Como jogar:** você é a ponta de lança. Use **Disparada** para cruzar os vãos expostos num
-lance só (menos tempo sob mira) e chegar à próxima cobertura. Quando os **Cães** aparecerem,
-**Investida** te leva até eles e a **espingarda de perto** limpa o corredor — poupando o resto do
-grupo de largar a cobertura.
-
----
-
-## Ficha 3 — TORRE, a Barricada
-
-*Cobertura ambulante. Segura a emboscada e protege quem está atirando.*
-
-- **Mão hábil:** direita · **PA por turno:** **6** (10 −2 peitoral −2 escudo) · **PV:** 60 (10 por membro)
-- **Armas:** Martelo médio (média · contundente `2d4` · versátil · 4 PA) · Pistola simples (leve · reserva · 2 PA · 2–15 m · `1d8`)
-- **Proteção:** Peitoral médio (−2 dano no tronco) · Escudo médio (−2 dano · levantar guarda 3 PA)
-
-**Características (50 exp):**
-
-- Maestria em armaduras médias (1) · Maestria em armas contundentes (1) — cada acerto tira 2 PA do alvo
-- Blindado (4) — **+1d10 para defender ataques à distância com o escudo** (casa com a cobertura)
-- Resistente (3) — reduz o dano recebido pela metade (com guarda + armadura média)
-- Protetor (4) — intercepta para si um golpe que acertaria um aliado adjacente
-- Reativo (4) — ataque de oportunidade quando um Cão sai do seu alcance
-- Empacado (2) — não é empurrado/arrastado
-- Atordoar — nível 2 (8) — tira PA persistente dos Cães
-- Encontrão — nível 2 (4) — empurra para fora da linha
-- Quebrar guarda — nível 1 (2)
-- Aptidão Física ×17 (17)
-
-**Como jogar:** você é a cobertura que anda. Poste-se à frente dos atiradores do grupo: com
-**escudo + Blindado**, você e quem está atrás ganham defesa contra os tiros de cima. Quando os
-**Cães** emboscam, **você** os enfrenta de perto (Atordoar/Encontrão) enquanto **Fio e Brecha**
-seguem cuidando dos espinhaços. **Protetor** salva um aliado exposto de um tiro certeiro. PA baixo
-(6): é o preço da lata — administre.
-
----
-
-## Ficha 4 — ECO, o Coiote
-
-*Move o grupo, arma o terreno e cura. Faz a incursão fluir.*
-
-- **Mão hábil:** direita · **PA por turno:** **10** · **PV:** 60 (10 por membro)
-- **Armas:** Pistola simples (leve · à distância · 2 PA · alcance 2–15 m · bala `1d8`) · Faca (leve · reserva · 1d4)
+- **PA base:** 10 · **PA total:** 10 · **PV:** 60 (10 por membro)
+- **Armas:** Espingarda (Média · à distância · dano 1d8 (bala) · 4 PA · alc. 1–5 m) · Faca (reserva) (Leve · dano 1d4 · 2 PA · alc. 1 m)
 - **Proteção:** nenhuma
+- **Maestrias:** Maestria em projéteis
+- **Traços:** Escorregadio, Empacado
+- **Habilidades:** Disparada (nível 3), Investida (nível 3), Ataques à distância concentrados (nível 2), Arremesso improvisado (nível 1)
+- **Aptidões (custo escalonado):** Física ×3, Ágil ×5, Mental ×1
 
-**Características (50 exp):**
+**Como jogar:** Mão hábil: direita. Ponta de lança: Disparada cruza os vãos expostos num lance; quando os Cães emboscam, Investida leva até eles e a espingarda de perto limpa o corredor, poupando o resto de largar a cobertura.
 
-- Técnica em Investigar/Observar (1) · Técnica em Realizar truques (1)
-- Apoiador (4) — usa aptidões nos testes de um aliado adjacente
-- Comandar — nível 3 (6) — transfere até 4 PA para quem precisa cruzar um vão
-- Criar armadilha — nível 3 (6) — prepara a manilha contra os Cães (dano ao acionar)
-- Cura especializada — nível 2 (6) — recoloca de pé quem apanhou dos atiradores
-- Confundir inimigo — nível 3 (9) — impõe desvantagem no próximo tiro de um atirador
-- Analisar fraquezas — nível 2 (2)
-- Aptidão Social ×9 (9) · Aptidão Mental ×6 (6)
+## Ficha 2 — Eco, o Coiote
 
-**Como jogar:** você é o maestro. **Comandar** dá PA extra para Brecha (ou qualquer um) cruzar um
-trecho exposto num turno só. **Criar armadilha** na boca da manilha recebe os **Cães** antes que
-cheguem. **Confundir inimigo** estraga o tiro do atirador que estiver mirando um aliado sem
-cobertura. Se alguém cair na reta final, **Cura especializada** o levanta.
+- **PA base:** 10 · **PA total:** 10 · **PV:** 60 (10 por membro)
+- **Armas:** Pistola simples (Leve · à distância · dano 1d8 (bala) · 2 PA · alc. 2–15 m) · Faca (reserva) (Leve · dano 1d4 · 2 PA · alc. 1 m)
+- **Proteção:** nenhuma
+- **Traços:** Técnica em Investigar/Observar, Técnica em Realizar truques, Apoiador
+- **Habilidades:** Comandar (nível 3), Criar armadilha (nível 3), Cura especializada (nível 2), Confundir inimigo (nível 3), Analisar fraquezas (nível 2)
+- **Aptidões (custo escalonado):** Social ×5
+
+**Como jogar:** Mão hábil: direita. Maestro: Comandar empurra PA para quem cruza um vão exposto; Criar armadilha recebe os Cães na boca da manilha; Confundir estraga o tiro de um atirador sobre um aliado sem cobertura; Cura levanta quem apanhar.
+
+## Ficha 3 — Fio, a Franco-atiradora
+
+- **PA base:** 10 · **PA total:** 10 · **PV:** 60 (10 por membro)
+- **Armas:** Rifle (Pesada · à distância · dano 1d8 (bala) · 6 PA · alc. 3–20 m) · Pistola simples (reserva) (Leve · à distância · dano 1d8 (bala) · 2 PA · alc. 2–15 m)
+- **Proteção:** nenhuma
+- **Maestrias:** Maestria em projéteis
+- **Traços:** Técnica em Esconder-se, Lépido, Escorregadio
+- **Habilidades:** Ataques à distância concentrados (nível 4), Alcance à distância (nível 3), Analisar fraquezas (nível 4), Disparada (nível 2)
+- **Aptidões (custo escalonado):** Física ×1, Ágil ×5, Mental ×2
+
+**Como jogar:** Mão hábil: direita. Contra-atiradora: da cobertura completa, levanta guarda e só sai para atirar (atirar expõe até a próxima guarda). Analisar + concentrados afunilam um Olho de Chumbo por vez; Lépido volta pra trás da cobertura.
+
+## Ficha 4 — "Torre", a Barricada
+
+- **PA base:** 10 · **PA total:** 6 · **PV:** 60 (10 por membro)
+- **Armas:** Martelo médio (Média · versátil · dano 2d4 (+1d4 a 2 mãos) · 4 PA · alc. 1 m) · Pistola simples (reserva) (Leve · à distância · dano 1d8 (bala) · 2 PA · alc. 2–15 m)
+- **Proteção:** Peitoral médio (R.PA -2, R.Dano -2) · Escudo médio (guarda 3 PA) (R.PA -2, R.Dano -2)
+- **Maestrias:** Maestria em armaduras médias, Maestria em armas contundentes
+- **Traços:** Blindado, Resistente, Protetor, Empacado
+- **Habilidades:** Atordoar (nível 3), Encontrão (nível 2), Quebrar guarda (nível 1)
+- **Aptidões (custo escalonado):** Física ×5, Ágil ×1
+
+**Como jogar:** Mão hábil: direita. Cobertura ambulante: escudo + Blindado dão defesa contra os tiros de cima para quem está atrás; enfrenta os Cães de perto (Atordoar/Encontrão) enquanto Fio/Brecha cuidam dos espinhaços; Protetor salva aliado exposto. PA 6: administre.

@@ -62,97 +62,49 @@ uma vez, pelas costas, é possível e satisfatório.
 
 ---
 
-## Ficha 1 — KAEDE, a Shinobi
+## Ficha 1 — Haruko, a Curandeira
 
-*Sombra. Elimina guardas isolados com um golpe.*
-
-- **Mão hábil:** direita · **PA por turno:** **10** · **PV:** 60 (10 por membro)
-- **Armas:** Kunai (leve · cortante/perfurante `1d4` · arremesso · 2 PA) · Shuriken (leve · arremesso `1d4`)
-- **Proteção:** nenhuma (furtividade)
-
-**Características (30 exp):**
-
-- Técnica em Esconder-se (1) · Técnica em Realizar truques (1) · Técnica em Saltar (1)
-- Maestria em armas cortantes (1)
-- Emboscador (4) — pelas costas, escondido, arma leve: **dobra o dano total**
-- Golpe surpresa — nível 3 (6) — **+1d8** de dano extra ao atacar escondido
-- Ataques múltiplos & leves — nível 2 (2)
-- Saltador (3) — salta até 10 m
-- Aptidão Ágil ×9 (9) · Aptidão Física ×2 (2)
-
-**Como jogar:** você é a faca no escuro. Aproxime-se de um guarda **pelas costas** e
-escondida: **Emboscador** dobra o dano e **Golpe surpresa** soma +1d8 — o suficiente para
-derrubar uma sentinela num golpe. Use Saltar para vencer muros e o lago. Não seja vista:
-seu forte é o primeiro golpe.
-
----
-
-## Ficha 2 — TAKESHI, o Ronin
-
-*Espadachim versátil. Resolve o que a furtividade não resolveu.*
-
-- **Mão hábil:** direita · **PA por turno:** **9** (10 −1 peitoral) · **PV:** 60 (10 por membro)
-- **Armas:** Katana (média · cortante `1d8` / perfurante `1d6` · versátil, +`1d4` a duas mãos · longo alcance 1–2 m · 4 PA)
-- **Proteção:** Peitoral leve (−1 dano no tronco)
-
-**Características (30 exp):**
-
-- Maestria em armas cortantes (1) · Maestria em armas perfurantes (1) · Maestria em armas versáteis (1) · Maestria em armaduras leves (1)
-- Ataques múltiplos & médios — nível 2 (4)
-- Investida — nível 2 (6)
-- Reativo (4) — ataque de oportunidade quando o alvo sai do alcance
-- Lépido (3) — recua 1 m após acertar (arma de longo alcance)
-- Técnica em Ponderar (1)
-- Aptidão Física ×8 (8)
-
-**Como jogar:** a katana a duas mãos ganha +1d4; **alterne cortante/perfurante** conforme
-a defesa do alvo (maestria nos dois). **Investida** fura o engajamento do Capitão.
-**Lépido** deixa você bater e recuar 1 m — ótimo para não ficar cercado. Quando o plano
-furtivo falha, você segura a linha.
-
----
-
-## Ficha 3 — HARUKO, a Curandeira
-
-*Suporte de sombra: mantém o time inteiro e acelera a shinobi.*
-
-- **Mão hábil:** direita · **PA por turno:** **10** · **PV:** 60 (10 por membro)
-- **Armas:** Bastão médio (média · contundente `2d4` · versátil · 4 PA)
+- **PA base:** 10 · **PA total:** 10 · **PV:** 60 (10 por membro)
+- **Armas:** Bastão médio (Média · versátil · dano 2d4 (+1d4 a 2 mãos) · 4 PA · alc. 1 m)
 - **Proteção:** nenhuma
+- **Traços:** Técnica em Tratar/Curar, Técnica em Ponderar
+- **Habilidades:** Cura especializada (nível 2), Animar (nível 1), Brado de guerra (nível 1), Comandar (nível 2)
+- **Aptidões (custo escalonado):** Mental ×1, Social ×4
 
-**Características (30 exp):**
+**Como jogar:** Mão hábil: direita. Fica atrás: Comandar dá PA à Kaede; Brado garante o acerto da emboscada; cura fora/dentro; Animar recarrega aptidões dela.
 
-- Técnica em Tratar/Curar (3) · Técnica em Ponderar (1)
-- Cura especializada — nível 2 (6)
-- Animar — nível 1 (2) — recupera aptidões de um aliado adjacente
-- Brado de guerra — nível 2 (6) — vantagem no próximo ataque de até 2 aliados
-- Comandar — nível 2 (4) — transfere até 3 PA a um aliado
-- Aptidão Social ×6 (6) · Aptidão Mental ×2 (2)
+## Ficha 2 — Jiro, o Arqueiro Yumi
 
-**Como jogar:** fique atrás. **Comandar** dá PA à Kaede para ela agir mais numa janela
-crítica; **Brado de guerra** garante o acerto do golpe de emboscada. Cure fora e dentro do
-combate. **Animar** recarrega as aptidões da shinobi entre as eliminações.
-
----
-
-## Ficha 4 — JIRO, o Arqueiro Yumi
-
-*Olhos e cobertura à distância.*
-
-- **Mão hábil:** direita · **PA por turno:** **10** · **PV:** 60 (10 por membro)
-- **Armas:** Arco composto (média · 4 PA · alcance 7–10 m · flecha ponta de ferro `1d4`) · Adaga (reserva)
+- **PA base:** 10 · **PA total:** 10 · **PV:** 60 (10 por membro)
+- **Armas:** Arco composto (Média · à distância · dano 1d4 (flecha de ferro) · 4 PA · alc. 7–10 m) · Adaga (reserva) (Leve · dano 1d4 · 2 PA · alc. 1 m)
 - **Proteção:** nenhuma
+- **Maestrias:** Maestria em projéteis
+- **Traços:** Técnica em Esconder-se, Técnica em Investigar/Observar
+- **Habilidades:** Ataques à distância concentrados (nível 3), Alcance à distância (nível 2), Analisar fraquezas (nível 2)
+- **Aptidões (custo escalonado):** Ágil ×5
 
-**Características (30 exp):**
+**Como jogar:** Mão hábil: direita. Cobertura à distância: Projéteis ignora barreiras; Analisar fraquezas para mirar; fica escondido.
 
-- Maestria em projéteis (1)
-- Ataques à distância concentrados — nível 3 (6)
-- Alcance à distância — nível 2 (4)
-- Técnica em Esconder-se (1) · Técnica em Investigar/Observar (1)
-- Analisar fraquezas — nível 2 (2)
-- Aptidão Ágil ×12 (12) · Aptidão Mental ×3 (3)
+## Ficha 3 — Kaede, a Shinobi
 
-**Como jogar:** posicione-se com linha de visão para os corredores. **Projéteis** ignora
-barreiras — você atira por aberturas e portas. **Analisar fraquezas** revela onde o alvo
-já está ferido para você mirar. Fique escondido; sua flecha é o plano B quando um guarda
-escapa da Kaede.
+- **PA base:** 10 · **PA total:** 10 · **PV:** 60 (10 por membro)
+- **Armas:** Kunai (Leve · acuidade · dano 1d4 · 2 PA · alc. 1 m) · Shuriken (Leve · arremesso · dano 1d4 · 2 PA · alc. 2–5 m)
+- **Proteção:** nenhuma
+- **Maestrias:** Maestria em armas cortantes
+- **Traços:** Técnica em Esconder-se, Técnica em Realizar truques, Técnica em Saltar, Emboscador, Saltador
+- **Habilidades:** Golpe surpresa (nível 3), Ataques múltiplos & leves (nível 2)
+- **Aptidões (custo escalonado):** Física ×1, Ágil ×4
+
+**Como jogar:** Mão hábil: direita. Ataca pelas costas, escondida: Emboscador (dobra) + Golpe surpresa (+1d8) derruba sentinela num golpe. Saltar vence muros/lago.
+
+## Ficha 4 — Takeshi, o Ronin
+
+- **PA base:** 10 · **PA total:** 9 · **PV:** 60 (10 por membro)
+- **Armas:** Katana (Média · versátil · longo alcance · dano 1d8 CORT · 1d6 PERF (+1d4 a 2 mãos) · 4 PA · alc. 1–2 m)
+- **Proteção:** Peitoral leve (R.PA -1, R.Dano -1)
+- **Maestrias:** Maestria em armas cortantes, Maestria em armas perfurantes, Maestria em armas versáteis, Maestria em armaduras leves
+- **Traços:** Lépido, Técnica em Ponderar
+- **Habilidades:** Ataques múltiplos & médios (nível 2), Investida (nível 1)
+- **Aptidões (custo escalonado):** Física ×3, Ágil ×2
+
+**Como jogar:** Mão hábil: direita. Katana a 2 mãos (+1d4); alterna cortante/perfurante; Investida fura engajamento; Lépido para bater e recuar. 4 maestrias pesam no orçamento (custo escalonado).

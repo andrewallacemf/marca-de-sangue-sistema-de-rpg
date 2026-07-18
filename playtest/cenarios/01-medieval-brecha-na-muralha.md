@@ -71,71 +71,36 @@ flanqueado acontecem naturalmente.
 
 ---
 
-## Ficha 1 — GUNNAR, o Escudeiro
+## Ficha 1 — Brás, o Lanceiro
 
-*O muro humano. Fecha a brecha com escudo e maça.*
+- **PA base:** 10 · **PA total:** 9 · **PV:** 60 (10 por membro)
+- **Armas:** Lança (Média · longo alcance · dano 1d6 · 4 PA · alc. 2 m)
+- **Proteção:** Peitoral leve (R.PA -1, R.Dano -1)
+- **Maestrias:** Maestria em armas perfurantes, Maestria em armaduras leves
+- **Habilidades:** Investida (nível 2)
+- **Aptidões (custo escalonado):** Física ×3
 
-- **Mão hábil:** direita · **PA por turno:** **8** (10 −1 escudo −1 peitoral) · **PV:** 60 (10 por membro)
-- **Armas:** Maça (média · contundente `2d4` · também perfurante `1d6` · versátil · 4 PA · alcance 1 m)
-- **Proteção:** Escudo pequeno (leve, levantar guarda 2 PA, −1 dano) · Peitoral leve (−1 dano no tronco)
+**Como jogar:** Mão hábil: direita. Alcance 2 m: perfurante pune quem ENTRA; sair do engajamento já provoca AoO (regra nova); Investida fura a guarda; segura a lateral da brecha. 3 aptidões físicas.
 
-**Características (15 exp):**
+## Ficha 2 — Elina, a Arqueira
 
-- Maestria em armas contundentes (1) — cada acerto tira **2 PA** do inimigo
-- Maestria em armaduras leves (1)
-- Quebrar guarda — nível 1 (2)
-- Encontrão — nível 1 (2) — empurra 2 m
-- Atordoar — nível 1 (4) — tira 1 PA do alvo de forma persistente
-- Aptidão Física ×5 (5)
+- **PA base:** 10 · **PA total:** 10 · **PV:** 60 (10 por membro)
+- **Armas:** Arco curto (Leve · à distância · dano 1d4 (flecha) · 2 PA · alc. 6–9 m) · Faca (reserva) (Leve · dano 1d4 · 2 PA · alc. 1 m)
+- **Proteção:** nenhuma
+- **Maestrias:** Maestria em projéteis
+- **Traços:** Técnica em Investigar/Observar
+- **Habilidades:** Ataques à distância concentrados (nível 2), Alcance à distância (nível 1)
+- **Aptidões (custo escalonado):** Física ×1, Ágil ×3
 
-**Como jogar:** fique parado na brecha e deixe os inimigos virem. A maça contundente
-(com maestria) já rouba 2 PA por acerto; **Atordoar** rouba mais 1 de forma persistente —
-some tudo e o saqueador quase não age. Use **Encontrão** para jogar inimigos de volta
-para fora (é assim que você "repele"). Levante a guarda e gaste aptidões para não ser
-derrubado.
+**Como jogar:** Mão hábil: direita. Fica no fundo; ~5 tiros/turno (arco 2 PA); foca quem vai passar pela brecha; aptidões ágeis para os acertos decisivos.
 
----
+## Ficha 3 — Gunnar, o Escudeiro
 
-## Ficha 2 — ELINA, a Arqueira
+- **PA base:** 10 · **PA total:** 8 · **PV:** 60 (10 por membro)
+- **Armas:** Maça (Média · versátil · dano 2d4 CONT · 1d6 PERF · 4 PA · alc. 1 m)
+- **Proteção:** Escudo pequeno (leve · guarda 2 PA) (R.PA -1, R.Dano -1) · Peitoral leve (R.PA -1, R.Dano -1)
+- **Maestrias:** Maestria em armas contundentes, Maestria em armaduras leves
+- **Habilidades:** Atordoar (nível 1), Encontrão (nível 1)
+- **Aptidões (custo escalonado):** Física ×3
 
-*Derruba os saqueadores antes de chegarem à brecha.*
-
-- **Mão hábil:** direita · **PA por turno:** **10** · **PV:** 60 (10 por membro)
-- **Armas:** Arco curto (leve · 2 PA · alcance 6–9 m · flecha ponta de madeira `1d4`) · Faca (leve · 1d4 · reserva)
-- **Proteção:** nenhuma (mobilidade)
-
-**Características (15 exp):**
-
-- Maestria em projéteis (1) — ignora barreiras no caminho; recarga grátis ao acertar
-- Ataques à distância concentrados — nível 2 (4) — até 3 tiros no mesmo alvo sem desvantagem
-- Alcance à distância — nível 1 (2)
-- Técnica em Investigar/Observar (1)
-- Aptidão Ágil ×7 (7)
-
-**Como jogar:** fique no fundo. Com 10 PA e o arco a 2 PA por tiro, você dispara **até
-5 vezes** num turno — e **Ataques à distância concentrados** remove a desvantagem de
-insistir no mesmo alvo. Foque quem está prestes a passar pela brecha. Gaste aptidões
-ágeis para garantir os acertos decisivos.
-
----
-
-## Ficha 3 — BRÁS, o Lanceiro
-
-*Domina o espaço à frente da brecha com alcance e reação.*
-
-- **Mão hábil:** direita · **PA por turno:** **9** (10 −1 peitoral) · **PV:** 60 (10 por membro)
-- **Armas:** Lança curta (média · perfurante `1d6` · arremesso · 4 PA · alcance 2 m)
-- **Proteção:** Peitoral leve (−1 dano no tronco)
-
-**Características (15 exp):**
-
-- Maestria em armas perfurantes (1) — ataque de oportunidade quando o alvo **entra** no seu alcance
-- Maestria em armaduras leves (1)
-- Investida — nível 2 (6) — avança 2 m ignorando engajamento e ataca
-- Reativo (4) — ataque de oportunidade quando o alvo **sai** do seu alcance
-- Aptidão Física ×3 (3)
-
-**Como jogar:** com alcance de 2 m e **perfurante + Reativo**, você ameaça todo inimigo
-que **entra ou sai** do seu alcance — cada movimento errado deles vira um ataque seu de
-graça (custa só a reação e um pouco de fadiga). Use **Investida** para furar a guarda de
-um saqueador específico. Segure uma das laterais da brecha.
+**Como jogar:** Mão hábil: direita. Muro da brecha: maça contundente (−2 PA/acerto) + Atordoar; Encontrão para repelir; guarda + 3 aptidões físicas.

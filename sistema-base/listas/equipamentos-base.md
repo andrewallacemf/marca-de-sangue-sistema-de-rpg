@@ -46,7 +46,7 @@ As propriedades só produzem efeito se o personagem tiver a **maestria** corresp
 - **Agarrar (`AGAR.`)** — armas agarradoras conferem **vantagem para o uso da ação "Agarrar"**.
 - **Arremesso (`ARRE.`)** — armas de arremesso **ignoram um dado de desvantagem para realizar arremessos**. Regra geral do manual: arremessar um objeto ou arma **sem** essa propriedade é uma ação de ataque **com desvantagem**; fora do alcance ideal, a desvantagem total é **`+2d10`** (+1d10 pelo alcance não ideal, +1d10 por ser objeto impróprio para arremesso).
 - **Deflexão (`DEFL.`)** — itens com deflexão **ignoram um dado de desvantagem em contratestes de defesa**. *(Na v0.4.1 esta propriedade usava a sigla `PROT`; a sigla foi unificada em `DEFL.`.)*
-- **Acuidade (`ACUI.`)** — armas leves e precisas (facas, adagas, rapieira, estiletes…). Com uma arma de acuidade você pode usar **aptidões do atributo Ágil** (no lugar de Física) para **rerrolar** os testes de ataque com ela. Não exige maestria. *(Decidido no playtest 1, 18/07/2026 — ver [relatório](../../notas-de-design/playtests/2026-07-18-playtest-cenario-1.md).)*
+- **Acuidade (`ACUI.`)** — armas leves e precisas (facas, adagas, rapieira, estiletes…). Com uma arma de acuidade você pode usar **aptidões do atributo Ágil** (no lugar de Física) para **rerrolar** os testes de ataque com ela. Não exige maestria.
 
 ## Dano por tamanho e tipo (matriz)
 

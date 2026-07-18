@@ -52,114 +52,49 @@ grupo contra os ataques de área. É o cenário para achar picos e vales de pode
 
 ---
 
-## Ficha 1 — THORNE, o Quebra-Colosso
+## Ficha 1 — Albrecht, o Cantor de Guerra
 
-*Âncora. Estrangula as ações do chefe e protege o grupo.*
-
-- **Mão hábil:** direita · **PA por turno:** **8** (10 −3 peitoral pesado −2 escudo médio +3 comprados) · **PV:** 60 (10 por membro)
-- **Armas:** Martelo de batalha (pesada · contundente `3d4` · longo alcance 1–2 m · 6 PA) · Machado de batalha (pesada · cortante `1d12` · reserva)
-- **Proteção:** Peitoral pesado (−3 dano no tronco) · Escudo médio (−2 dano, levantar guarda 3 PA)
-
-**Características (100 exp):**
-
-- Maestria em armaduras pesadas (1) · Maestria em armaduras médias (1)
-- Maestria em armas contundentes (1) · Maestria em armas cortantes (1)
-- Firme (4) · Firme aprimorado (4) — usa arma pesada com uma mão **sem redução** (+ escudo!)
-- Resistente (3) · Blindado (4) · Protetor (4) · Reativo (4) · Alerta (4) · Empacado (2)
-- Atordoar — nível 5 (20) — tira até **5 PA persistentes** do Colosso
-- Quebrar guarda — nível 2 (4) · Encontrão — nível 2 (4)
-- +1 PA ×3 (5 + 10 + 15 = 30)
-- Aptidão Física ×9 (9)
-
-**Como jogar:** você segura o chefe. Com **Firme aprimorado**, empunha o martelo pesado
-(3d4) numa mão **e** o escudo na outra. A maestria contundente (−3 PA por acerto) somada a
-**Atordoar nível 5** (−5 PA persistentes) pode derrubar os 14 PA do Colosso para perto do
-piso — ele passa a agir muito menos. **Protetor** intercepta a Esmagada que iria num
-aliado; **Resistente** corta esse dano pela metade.
-
----
-
-## Ficha 2 — SYLA, a Assassina
-
-*Dano explosivo. Some o Núcleo assim que ele for exposto.*
-
-- **Mão hábil:** direita · **PA por turno:** **10** · **PV:** 60 (10 por membro)
-- **Armas:** duas Adagas (leve · cortante/perfurante `1d4` · arremesso · 2 PA cada)
-- **Proteção:** nenhuma (mobilidade total)
-
-**Características (100 exp):**
-
-- Técnica em Esconder-se (1) · Técnica em Realizar truques (1) · Técnica em Saltar (1) · Saltador (3)
-- Maestria em armas cortantes (1) · Maestria em armas perfurantes (1)
-- Emboscador (4) — pelas costas, escondida, arma leve: **dobra o dano total**
-- Escorregadio (4)
-- Golpe surpresa — nível 4 (8) — +1d10 de dano
-- Ataques múltiplos & leves — nível 5 (5)
-- Disparada — nível 5 (10) · Investida — nível 4 (12)
-- Analisar fraquezas — nível 4 (4)
-- Arremesso improvisado — nível 2 (4)
-- Aptidão Ágil ×34 (34) · Aptidão Física ×6 (6) · Aptidão Mental ×1 (1)
-
-**Como jogar:** você é o pico de dano. Use **Disparada/Investida** para chegar às costas
-do Colosso, escondida atrás das colunas; então **Emboscador (dobra) + Golpe surpresa
-(+1d10)** despejam um golpe enorme. Foque o braço que o grupo escolheu quebrar para expor
-o Núcleo; quando ele abrir, mude o alvo para o Núcleo. **Analisar fraquezas** mostra onde
-já bateram. **Escorregadio** te tira dos Fragmentos.
-
----
-
-## Ficha 3 — NERISS, a Tática de Batalha
-
-*Controle. Faz o chefe agir menos e errar mais.*
-
-- **Mão hábil:** direita · **PA por turno:** **9** (10 −1 peitoral) · **PV:** 60 (10 por membro)
-- **Armas:** Besta leve (média · 4 PA · alcance 7–10 m · virote `1d4`)
-- **Proteção:** Peitoral leve (−1 dano no tronco)
-
-**Características (100 exp):**
-
-- Consumir — nível 3 (12) — desativa habilidades do Colosso (ex.: segura o Tremor)
-- Confundir inimigo — nível 4 (12) — desvantagem na defesa de até 4 alvos (habilita o burst do grupo)
-- Intimidação generalizada — nível 4 (12) — atrasa o turno de até 4 inimigos
-- Urro de Intimidação — nível 3 (9) — atrasa muito o turno do Colosso
-- Criar armadilha — nível 4 (8) — trava os Fragmentos
-- Analisar fraquezas — nível 3 (3)
-- Recompor — nível 2 (8) — recupera as próprias aptidões
-- Maestria em projéteis (1)
-- Ataques à distância concentrados — nível 2 (4)
-- Técnica em Investigar/Observar (1) · Técnica em Ponderar (1)
-- Aptidão Mental ×25 (25) · Aptidão Ágil ×4 (4)
-
-**Como jogar:** você inclina o combate. **Confundir** dá desvantagem na defesa do Colosso
-— com isso o grupo inteiro acerta mais o braço/Núcleo. **Intimidação** e **Urro** atrasam
-os turnos do chefe (menos ações dele por rodada). **Consumir** desliga o Tremor antes que
-ele derrube todo mundo. **Recompor** recarrega suas aptidões para você não secar. Segure
-os Fragmentos com armadilhas.
-
----
-
-## Ficha 4 — ALBRECHT, o Cantor de Guerra
-
-*Suporte total. Mantém o grupo de pé sob o ataque de área.*
-
-- **Mão hábil:** direita · **PA por turno:** **10** · **PV:** 60 (10 por membro)
-- **Armas:** Bastão médio (média · contundente `2d4` · versátil · 4 PA)
+- **PA base:** 10 · **PA total:** 10 · **PV:** 60 (10 por membro)
+- **Armas:** Bastão médio (Média · versátil · dano 2d4 (+1d4 a 2 mãos) · 4 PA · alc. 1 m)
 - **Proteção:** nenhuma
+- **Traços:** Técnica em Tratar/Curar, Apoiador
+- **Habilidades:** Cura especializada (nível 5), Tratamento especializado (nível 4), Revitalizar (nível 3), Brado de guerra (nível 4), Grito de alerta (nível 4), Comandar (nível 3), Animar (nível 2)
+- **Aptidões (custo escalonado):** Mental ×1, Social ×5
 
-**Características (100 exp):**
+**Como jogar:** Mão hábil: direita. Fôlego do grupo: Grito de alerta blinda contra a área do chefe; Brado prepara o burst; Revitalizar ressuscita; Tratamento desfaz dano profundo; Animar recarrega Neriss/Syla.
 
-- Técnica em Tratar/Curar (3)
-- Cura especializada — nível 5 (15) — cura dano superficial (até 1d12)
-- Tratamento especializado — nível 4 (16) — trata dano profundo (até 3d6)
-- Revitalizar — nível 3 (12) — traz um aliado inconsciente de volta
-- Brado de guerra — nível 4 (12) — vantagem no ataque de até 4 aliados
-- Grito de alerta — nível 4 (12) — vantagem na defesa de até 4 aliados
-- Comandar — nível 3 (6) · Animar — nível 2 (4)
-- Apoiador (4)
-- Aptidão Social ×16 (16)
+## Ficha 2 — Neriss, a Tática de Batalha
 
-**Como jogar:** você é o fôlego do grupo. **Grito de alerta** blinda os quatro contra a
-Esmagada e a Varredura; **Brado de guerra** garante os golpes decisivos no braço/Núcleo.
-Quando o Colosso derrubar alguém, **Revitalizar** o traz de volta. **Tratamento
-especializado** desfaz o dano profundo que incapacitaria um membro. **Animar** recarrega
-as aptidões da Neriss e da Syla. Fique perto, mas atrás das colunas.
+- **PA base:** 10 · **PA total:** 9 · **PV:** 60 (10 por membro)
+- **Armas:** Besta leve (Média · à distância · dano 1d4 (virote) · 4 PA · alc. 7–10 m)
+- **Proteção:** Peitoral leve (R.PA -1, R.Dano -1)
+- **Maestrias:** Maestria em projéteis
+- **Traços:** Técnica em Investigar/Observar, Técnica em Ponderar
+- **Habilidades:** Consumir (nível 3), Confundir inimigo (nível 4), Intimidação generalizada (nível 4), Urro de Intimidação (nível 3), Criar armadilha (nível 4), Analisar fraquezas (nível 3), Recompor (nível 2), Ataques à distância concentrados (nível 2)
+- **Aptidões (custo escalonado):** Ágil ×1, Mental ×7
+
+**Como jogar:** Mão hábil: direita. Controle: Confundir dá desvantagem na defesa do Colosso (todos acertam mais); Intimidação/Urro atrasam o chefe; Consumir desliga o Tremor; Recompor recarrega aptidões; armadilhas nos Fragmentos.
+
+## Ficha 3 — Syla, a Assassina
+
+- **PA base:** 10 · **PA total:** 10 · **PV:** 60 (10 por membro)
+- **Armas:** Adaga (mão hábil) (Leve · acuidade · dano 1d4 · 2 PA · alc. 1 m) · Adaga (mão inábil) (Leve · acuidade · dano 1d4 · 2 PA · alc. 1 m)
+- **Proteção:** nenhuma
+- **Maestrias:** Maestria em armas cortantes, Maestria em armas perfurantes
+- **Traços:** Técnica em Esconder-se, Técnica em Realizar truques, Técnica em Saltar, Saltador, Emboscador, Escorregadio
+- **Habilidades:** Golpe surpresa (nível 4), Ataques múltiplos & leves (nível 5), Disparada (nível 5), Investida (nível 4), Analisar fraquezas (nível 4), Arremesso improvisado (nível 2)
+- **Aptidões (custo escalonado):** Física ×2, Ágil ×8, Mental ×1
+
+**Como jogar:** Mão hábil: direita. Pico de dano: Disparada/Investida até as costas; Emboscador (dobra) + Golpe surpresa (+1d10). Foca o braço; ao expor, muda pro Núcleo. Escorregadio foge dos Fragmentos.
+
+## Ficha 4 — Thorne, o Quebra-Colosso
+
+- **PA base:** 13 · **PA total:** 8 · **PV:** 60 (10 por membro)
+- **Armas:** Martelo de batalha (Pesada · longo alcance · dano 3d4 · 6 PA · alc. 1–2 m) · Machado de batalha (reserva) (Pesada · dano 1d12 · 6 PA · alc. 1–2 m)
+- **Proteção:** Peitoral pesado (R.PA -3, R.Dano -3) · Escudo médio (guarda 3 PA) (R.PA -2, R.Dano -2)
+- **Maestrias:** Maestria em armaduras pesadas, Maestria em armaduras médias, Maestria em armas contundentes, Maestria em armas cortantes
+- **Traços:** Firme, Firme aprimorado, Resistente, Blindado, Protetor, Alerta, Empacado
+- **Habilidades:** Atordoar (nível 5), Quebrar guarda (nível 2), Encontrão (nível 2)
+- **Aptidões (custo escalonado):** Física ×3, Ágil ×1
+
+**Como jogar:** Mão hábil: direita (+3 PA comprados). Âncora: Firme aprimorado = martelo pesado numa mão + escudo; Atordoar nv5 (−5 PA) + maestria contundente (−3) estrangulam o Colosso; Protetor+Resistente salvam aliados da Esmagada.
