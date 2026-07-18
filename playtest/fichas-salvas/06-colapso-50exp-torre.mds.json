@@ -2,7 +2,7 @@
   "app": "marca-de-sangue-ficha",
   "schemaVersion": 1,
   "rulesVersion": "vigente",
-  "salvoEm": "2026-07-18T13:14:21.579213",
+  "salvoEm": "2026-07-18T18:35:15.051793",
   "data": {
     "info": {
       "nome": "\"Torre\", a Barricada",
@@ -13,17 +13,17 @@
     "exp": {
       "baseTotal": "50",
       "baseUsada": "50",
-      "qtdAptidoes": "17",
+      "qtdAptidoes": "6",
       "qtdHabilidades": "3",
-      "qtdTracos": "7"
+      "qtdTracos": "6"
     },
     "aptidoes": {
       "fisica": {
-        "total": "17",
+        "total": "5",
         "usado": ""
       },
       "agil": {
-        "total": "",
+        "total": "1",
         "usado": ""
       },
       "mental": {
@@ -104,78 +104,12 @@
       }
     ],
     "saude": {
-      "cabeca": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "tronco": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "bracoE": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "bracoD": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "pernaE": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "pernaD": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
+      "cabeca": 0,
+      "tronco": 0,
+      "bracoE": 0,
+      "bracoD": 0,
+      "pernaE": 0,
+      "pernaD": 0
     },
     "fadiga": 0,
     "guardas": "0",
@@ -319,23 +253,6 @@
       },
       {
         "tipo": "Traço",
-        "nome": "Reativo",
-        "efeito": "Ataque de oportunidade quando um oponente sai do seu alcance ideal (guarda levantada).",
-        "requisitos": "",
-        "atributo": "—",
-        "valorCompra": "4 exp.",
-        "custoPA": "—",
-        "usosPorNivel": [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "nivel": 1
-      },
-      {
-        "tipo": "Traço",
         "nome": "Empacado",
         "efeito": "Reduz movimentação forçada pela metade.",
         "requisitos": "",
@@ -361,12 +278,12 @@
         "custoPA": "1 PA + PA da arma",
         "usosPorNivel": [
           0,
-          1,
           0,
+          1,
           0,
           0
         ],
-        "nivel": 2
+        "nivel": 3
       },
       {
         "tipo": "Habilidade",

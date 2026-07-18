@@ -7,8 +7,11 @@ def arma(nome,tipo,equipado,categoria,alcance,dur,custoPA,dano,on):
             "durabilidade":dur,"custoPA":custoPA,"dano":dano,"props":props(on)}
 def prot(nome,rpa,rd,dur,reg): return {"nome":nome,"redPA":rpa,"redDano":rd,"durabilidade":dur,"regioes":reg,"equipada":True}
 def item(it,q,pu,pt,eq=True): return {"equipado":eq,"item":it,"qtd":q,"pesoUnit":pu,"pesoTotal":pt}
-def saude(): 
-    return {k:[0]*10 for k in ["cabeca","tronco","bracoE","bracoD","pernaE","pernaD"]}
+def saude():
+    # novo modelo: dano acumulado por membro (0–20), começa em 0
+    return {k:0 for k in ["cabeca","tronco","bracoE","bracoD","pernaE","pernaD"]}
+def tri(n):  # custo escalonado: 1+2+...+n
+    n=max(0,int(n)); return n*(n+1)//2
 
 # base exp, custo PA, atributo, efeito curto p/ habilidades
 HAB = {
@@ -125,17 +128,17 @@ def mk(*a,**k):
 # ---------- Cenário 1 — Medieval — A Brecha na Muralha (15 exp) ----------
 C1="Cenário 1 — A Brecha na Muralha (Medieval)"
 mk("01-medieval-15exp-gunnar","Gunnar, o Escudeiro",C1,15,
-   apt(f=5), pa(-2,0,8),
+   apt(f=3), pa(-2,0,8),
    [arma("Maça","Média · versátil","Mão hábil","Contundente/Perfurante","1 m","","4","2d4 CONT · 1d6 PERF",["CONT","PERF"])],
    [prot("Escudo pequeno (leve · guarda 2 PA)","-1","-1","10",[]),
     prot("Peitoral leve","-1","-1","10",["tronco"])],
    [item("Maça","1","",""),item("Escudo pequeno","1","",""),item("Peitoral leve","1","","")],
    [T("Maestria em armas contundentes"),T("Maestria em armaduras leves"),
-    H("Quebrar guarda",1),H("Encontrão",1),H("Atordoar",1)],
-   "Mão hábil: direita. Muro da brecha: maça contundente (−2 PA/acerto) + Atordoar; Encontrão para repelir; guarda + aptidões físicas.")
+    H("Atordoar",1),H("Encontrão",1)],
+   "Mão hábil: direita. Muro da brecha: maça contundente (−2 PA/acerto) + Atordoar; Encontrão para repelir; guarda + 3 aptidões físicas.")
 
 mk("01-medieval-15exp-elina","Elina, a Arqueira",C1,15,
-   apt(a=7), pa(0,0,10),
+   apt(a=3,f=1), pa(0,0,10),
    [arma("Arco curto","Leve · à distância","Duas mãos","Projétil","6–9 m","","2","1d4 (flecha)",["PROJ"]),
     arma("Faca (reserva)","Leve","Mão hábil","Cortante/Perfurante","1 m","","2","1d4",["CORT","PERF","ARRE"])],
    [],
@@ -146,18 +149,18 @@ mk("01-medieval-15exp-elina","Elina, a Arqueira",C1,15,
 
 mk("01-medieval-15exp-bras","Brás, o Lanceiro",C1,15,
    apt(f=3), pa(-1,0,9),
-   [arma("Lança curta","Média · longo alcance","Mão hábil","Perfurante","2 m","","4","1d6",["PERF","ARRE"])],
+   [arma("Lança","Média · longo alcance","Mão hábil","Perfurante","2 m","","4","1d6",["PERF","ARRE"])],
    [prot("Peitoral leve","-1","-1","10",["tronco"])],
-   [item("Lança curta","1","",""),item("Peitoral leve","1","","")],
+   [item("Lança","1","",""),item("Peitoral leve","1","","")],
    [T("Maestria em armas perfurantes"),T("Maestria em armaduras leves"),
-    H("Investida",2),T("Reativo")],
-   "Mão hábil: direita. Alcance 2 m: perfurante + Reativo punem quem entra E sai; Investida fura a guarda; segura a lateral da brecha.")
+    H("Investida",2)],
+   "Mão hábil: direita. Alcance 2 m: perfurante pune quem ENTRA; sair do engajamento já provoca AoO (regra nova); Investida fura a guarda; segura a lateral da brecha. 3 aptidões físicas.")
 
 # ---------- Cenário 2 — Mukashi — O Selo do Templo (30 exp) ----------
 C2="Cenário 2 — O Selo do Templo (Mukashi)"
 mk("02-mukashi-30exp-kaede","Kaede, a Shinobi",C2,30,
-   apt(a=9,f=2), pa(0,0,10),
-   [arma("Kunai","Leve","Mão hábil","Cortante/Perfurante","1 m","","2","1d4",["CORT","PERF","ARRE"]),
+   apt(a=4,f=1), pa(0,0,10),
+   [arma("Kunai","Leve · acuidade","Mão hábil","Cortante/Perfurante","1 m","","2","1d4",["CORT","PERF","ARRE"]),
     arma("Shuriken","Leve · arremesso","Mão inábil","Perfurante","2–5 m","","2","1d4",["ARRE","PERF"])],
    [],
    [item("Kunai","1","",""),item("Shuriken","5","","")],
@@ -167,26 +170,26 @@ mk("02-mukashi-30exp-kaede","Kaede, a Shinobi",C2,30,
    "Mão hábil: direita. Ataca pelas costas, escondida: Emboscador (dobra) + Golpe surpresa (+1d8) derruba sentinela num golpe. Saltar vence muros/lago.")
 
 mk("02-mukashi-30exp-takeshi","Takeshi, o Ronin",C2,30,
-   apt(f=8), pa(-1,0,9),
+   apt(f=3,a=2), pa(-1,0,9),
    [arma("Katana","Média · versátil · longo alcance","Duas mãos","Cortante/Perfurante","1–2 m","","4","1d8 CORT · 1d6 PERF (+1d4 a 2 mãos)",["CORT","PERF"])],
    [prot("Peitoral leve","-1","-1","10",["tronco"])],
    [item("Katana","1","",""),item("Peitoral leve","1","","")],
    [T("Maestria em armas cortantes"),T("Maestria em armas perfurantes"),T("Maestria em armas versáteis"),
-    T("Maestria em armaduras leves"),H("Ataques múltiplos & médios",2),H("Investida",2),
-    T("Reativo"),T("Lépido"),T("Técnica em Ponderar")],
-   "Mão hábil: direita. Katana a 2 mãos (+1d4); alterna cortante/perfurante; Investida fura engajamento; Lépido para bater e recuar.")
+    T("Maestria em armaduras leves"),H("Ataques múltiplos & médios",2),H("Investida",1),
+    T("Lépido"),T("Técnica em Ponderar")],
+   "Mão hábil: direita. Katana a 2 mãos (+1d4); alterna cortante/perfurante; Investida fura engajamento; Lépido para bater e recuar. 4 maestrias pesam no orçamento (custo escalonado).")
 
 mk("02-mukashi-30exp-haruko","Haruko, a Curandeira",C2,30,
-   apt(s=6,m=2), pa(0,0,10),
+   apt(s=4,m=1), pa(0,0,10),
    [arma("Bastão médio","Média · versátil","Duas mãos","Contundente","1 m","","4","2d4 (+1d4 a 2 mãos)",["CONT"])],
    [],
    [item("Bastão médio","1","","")],
    [T("Técnica em Tratar/Curar"),T("Técnica em Ponderar"),H("Cura especializada",2),
-    H("Animar",1),H("Brado de guerra",2),H("Comandar",2)],
+    H("Animar",1),H("Brado de guerra",1),H("Comandar",2)],
    "Mão hábil: direita. Fica atrás: Comandar dá PA à Kaede; Brado garante o acerto da emboscada; cura fora/dentro; Animar recarrega aptidões dela.")
 
 mk("02-mukashi-30exp-jiro","Jiro, o Arqueiro Yumi",C2,30,
-   apt(a=12,m=3), pa(0,0,10),
+   apt(a=5), pa(0,0,10),
    [arma("Arco composto","Média · à distância","Duas mãos","Projétil","7–10 m","","4","1d4 (flecha de ferro)",["PROJ"]),
     arma("Adaga (reserva)","Leve","Mão hábil","Cortante/Perfurante","1 m","","2","1d4",["CORT","PERF","ARRE"])],
    [],
@@ -322,17 +325,17 @@ mk("05-epico-100exp-albrecht","Albrecht, o Cantor de Guerra",C5,100,
 # ---------- Cenário 6 — Colapso — O Vale dos Atiradores (50 exp) — TESTE DE COBERTURA ----------
 C6="Cenário 6 — O Vale dos Atiradores (Colapso)"
 mk("06-colapso-50exp-fio","Fio, a Franco-atiradora",C6,50,
-   apt(a=20,m=6), pa(0,0,10),
+   apt(a=5,m=2,f=1), pa(0,0,10),
    [arma("Rifle","Pesada · à distância","Duas mãos","Projétil","3–20 m","","6","1d8 (bala)",["PROJ"]),
     arma("Pistola simples (reserva)","Leve · à distância","Coldre","Projétil","2–15 m","","2","1d8 (bala)",["PROJ"])],
    [],
    [item("Rifle","1","",""),item("Balas de pólvora","20","",""),item("Pistola simples","1","","")],
    [T("Maestria em projéteis"),T("Técnica em Esconder-se"),T("Lépido"),T("Escorregadio"),
-    H("Ataques à distância concentrados",3),H("Alcance à distância",2),H("Analisar fraquezas",3),H("Disparada",1)],
+    H("Ataques à distância concentrados",4),H("Alcance à distância",3),H("Analisar fraquezas",4),H("Disparada",2)],
    "Mão hábil: direita. Contra-atiradora: da cobertura completa, levanta guarda e só sai para atirar (atirar expõe até a próxima guarda). Analisar + concentrados afunilam um Olho de Chumbo por vez; Lépido volta pra trás da cobertura.")
 
 mk("06-colapso-50exp-brecha","Brecha, o Assaltante",C6,50,
-   apt(a=16,f=6), pa(0,0,10),
+   apt(a=5,f=3,m=1), pa(0,0,10),
    [arma("Espingarda","Média · à distância","Duas mãos","Projétil","1–5 m","","4","1d8 (bala)",["PROJ"]),
     arma("Faca (reserva)","Leve","Cinto","Cortante/Perfurante","1 m","","2","1d4",["CORT","PERF"])],
    [],
@@ -342,18 +345,18 @@ mk("06-colapso-50exp-brecha","Brecha, o Assaltante",C6,50,
    "Mão hábil: direita. Ponta de lança: Disparada cruza os vãos expostos num lance; quando os Cães emboscam, Investida leva até eles e a espingarda de perto limpa o corredor, poupando o resto de largar a cobertura.")
 
 mk("06-colapso-50exp-torre","\"Torre\", a Barricada",C6,50,
-   apt(f=17), pa(-4,0,6),
+   apt(f=5,a=1), pa(-4,0,6),
    [arma("Martelo médio","Média · versátil","Mão hábil","Contundente","1 m","","4","2d4 (+1d4 a 2 mãos)",["CONT"]),
     arma("Pistola simples (reserva)","Leve · à distância","Coldre","Projétil","2–15 m","","2","1d8 (bala)",["PROJ"])],
    [prot("Peitoral médio","-2","-2","25",["tronco"]),
     prot("Escudo médio (guarda 3 PA)","-2","-2","15",[])],
    [item("Martelo médio","1","",""),item("Peitoral médio","1","",""),item("Escudo médio","1",""," "),item("Pistola simples","1","","")],
    [T("Maestria em armaduras médias"),T("Maestria em armas contundentes"),T("Blindado"),T("Resistente"),
-    T("Protetor"),T("Reativo"),T("Empacado"),H("Atordoar",2),H("Encontrão",2),H("Quebrar guarda",1)],
+    T("Protetor"),T("Empacado"),H("Atordoar",3),H("Encontrão",2),H("Quebrar guarda",1)],
    "Mão hábil: direita. Cobertura ambulante: escudo + Blindado dão defesa contra os tiros de cima para quem está atrás; enfrenta os Cães de perto (Atordoar/Encontrão) enquanto Fio/Brecha cuidam dos espinhaços; Protetor salva aliado exposto. PA 6: administre.")
 
 mk("06-colapso-50exp-eco","Eco, o Coiote",C6,50,
-   apt(s=9,m=6), pa(0,0,10),
+   apt(s=5), pa(0,0,10),
    [arma("Pistola simples","Leve · à distância","Mão hábil","Projétil","2–15 m","","2","1d8 (bala)",["PROJ"]),
     arma("Faca (reserva)","Leve","Cinto","Cortante/Perfurante","1 m","","2","1d4",["CORT","PERF"])],
    [],
@@ -369,13 +372,19 @@ for r in results:
     fname,_,_ = r
     p=json.load(open(f"/tmp/fichas/{fname}.mds.json",encoding="utf-8"))
     d=p["data"]; budget=int(d["exp"]["baseTotal"])
-    ap=int(d["exp"]["qtdAptidoes"])
-    total=ap
+    # aptidões: custo escalonado por atributo (triangular)
+    total=sum(tri(int(v["total"] or 0)) for v in d["aptidoes"].values())
+    maestrias=0
     for c in d["caracteristicas"]:
+        nome=c["nome"].strip()
+        if not nome: continue
         if c["tipo"]=="Habilidade":
-            base=HAB[c["nome"]][0]; total+=base*c["nivel"]
+            total+=HAB[nome][0]*c["nivel"]
+        elif nome.lower().startswith("maestria"):
+            maestrias+=1
         else:
-            total+=TRC[c["nome"]][0]
+            total+=TRC[nome][0]
+    total+=tri(maestrias)  # maestrias escalonadas pela quantidade total
     n=int(d["pa"]["base"])-10
     if n>0: total+=5*n*(n+1)//2
     ok = total==budget

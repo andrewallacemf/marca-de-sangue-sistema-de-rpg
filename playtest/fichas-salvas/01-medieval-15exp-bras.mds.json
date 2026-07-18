@@ -2,7 +2,7 @@
   "app": "marca-de-sangue-ficha",
   "schemaVersion": 1,
   "rulesVersion": "vigente",
-  "salvoEm": "2026-07-18T10:38:25.515078",
+  "salvoEm": "2026-07-18T18:35:15.041136",
   "data": {
     "info": {
       "nome": "Brás, o Lanceiro",
@@ -15,7 +15,7 @@
       "baseUsada": "15",
       "qtdAptidoes": "3",
       "qtdHabilidades": "1",
-      "qtdTracos": "3"
+      "qtdTracos": "2"
     },
     "aptidoes": {
       "fisica": {
@@ -45,7 +45,7 @@
     },
     "armas": [
       {
-        "nome": "Lança curta",
+        "nome": "Lança",
         "tipo": "Média · longo alcance",
         "equipado": "Mão hábil",
         "categoria": "Perfurante",
@@ -77,85 +77,19 @@
       }
     ],
     "saude": {
-      "cabeca": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "tronco": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "bracoE": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "bracoD": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "pernaE": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "pernaD": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
+      "cabeca": 0,
+      "tronco": 0,
+      "bracoE": 0,
+      "bracoD": 0,
+      "pernaE": 0,
+      "pernaD": 0
     },
     "fadiga": 0,
     "guardas": "0",
     "equipamentos": [
       {
         "equipado": true,
-        "item": "Lança curta",
+        "item": "Lança",
         "qtd": "1",
         "pesoUnit": "",
         "pesoTotal": ""
@@ -241,25 +175,8 @@
           0
         ],
         "nivel": 2
-      },
-      {
-        "tipo": "Traço",
-        "nome": "Reativo",
-        "efeito": "Ataque de oportunidade quando um oponente sai do seu alcance ideal (guarda levantada).",
-        "requisitos": "",
-        "atributo": "—",
-        "valorCompra": "4 exp.",
-        "custoPA": "—",
-        "usosPorNivel": [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "nivel": 1
       }
     ],
-    "anotacoes": "Mão hábil: direita. Alcance 2 m: perfurante + Reativo punem quem entra E sai; Investida fura a guarda; segura a lateral da brecha."
+    "anotacoes": "Mão hábil: direita. Alcance 2 m: perfurante pune quem ENTRA; sair do engajamento já provoca AoO (regra nova); Investida fura a guarda; segura a lateral da brecha. 3 aptidões físicas."
   }
 }

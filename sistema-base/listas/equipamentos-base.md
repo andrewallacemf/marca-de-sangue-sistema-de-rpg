@@ -61,6 +61,7 @@ O dano de **qualquer arma** — tabelada ou não — é aferido cruzando o **tam
 - **Versátil (`VERS.`)** é exclusiva de armas **médias**: a arma ganha **+`1d4`** quando usada **com duas mãos**.
 - **Armas de mais de um tipo:** a arma pode ser usada em **qualquer um de seus tipos** — o atacante declara o tipo no golpe e usa o dado + o efeito daquele tipo (a propriedade correspondente, com maestria). Na tabela, os tipos são listados lado a lado.
 - **Ataque desarmado** = `1` fixo; itens improvisados usam dano fixo baixo.
+- **Arremesso de objeto improvisado** (arremessar algo que não é arma de arremesso, ou pela habilidade "Arremesso improvisado"): objeto **leve = `1`**, **médio = `1d4−2`** (≈1d2), **pesado = `1d4−1`**, sempre **com desvantagem** por ser impróprio. **Arremessar uma arma de verdade** sem a propriedade `ARRE.` usa o **dano normal da arma**, também com desvantagem. *(Corrigido no playtest 1, 18/07/2026.)*
 
 > ✅ Decidido em 12/07/2026 (ver [decisões — dano das armas](../../notas-de-design/decisoes/2026-07-12-dano-variavel-armas.md)). Os danos das tabelas abaixo foram gerados por esta matriz — **em revisão** arma por arma.
 

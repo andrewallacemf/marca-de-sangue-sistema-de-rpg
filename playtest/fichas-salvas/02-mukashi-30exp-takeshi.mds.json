@@ -2,7 +2,7 @@
   "app": "marca-de-sangue-ficha",
   "schemaVersion": 1,
   "rulesVersion": "vigente",
-  "salvoEm": "2026-07-18T10:38:25.515648",
+  "salvoEm": "2026-07-18T18:35:15.041728",
   "data": {
     "info": {
       "nome": "Takeshi, o Ronin",
@@ -13,17 +13,17 @@
     "exp": {
       "baseTotal": "30",
       "baseUsada": "30",
-      "qtdAptidoes": "8",
+      "qtdAptidoes": "5",
       "qtdHabilidades": "2",
-      "qtdTracos": "7"
+      "qtdTracos": "6"
     },
     "aptidoes": {
       "fisica": {
-        "total": "8",
+        "total": "3",
         "usado": ""
       },
       "agil": {
-        "total": "",
+        "total": "2",
         "usado": ""
       },
       "mental": {
@@ -77,78 +77,12 @@
       }
     ],
     "saude": {
-      "cabeca": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "tronco": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "bracoE": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "bracoD": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "pernaE": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "pernaD": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
+      "cabeca": 0,
+      "tronco": 0,
+      "bracoE": 0,
+      "bracoD": 0,
+      "pernaE": 0,
+      "pernaD": 0
     },
     "fadiga": 0,
     "guardas": "0",
@@ -285,24 +219,7 @@
         "valorCompra": "3 exp.",
         "custoPA": "1 PA + PA da arma",
         "usosPorNivel": [
-          0,
           1,
-          0,
-          0,
-          0
-        ],
-        "nivel": 2
-      },
-      {
-        "tipo": "Traço",
-        "nome": "Reativo",
-        "efeito": "Ataque de oportunidade quando um oponente sai do seu alcance ideal (guarda levantada).",
-        "requisitos": "",
-        "atributo": "—",
-        "valorCompra": "4 exp.",
-        "custoPA": "—",
-        "usosPorNivel": [
-          0,
           0,
           0,
           0,
@@ -345,6 +262,6 @@
         "nivel": 1
       }
     ],
-    "anotacoes": "Mão hábil: direita. Katana a 2 mãos (+1d4); alterna cortante/perfurante; Investida fura engajamento; Lépido para bater e recuar."
+    "anotacoes": "Mão hábil: direita. Katana a 2 mãos (+1d4); alterna cortante/perfurante; Investida fura engajamento; Lépido para bater e recuar. 4 maestrias pesam no orçamento (custo escalonado)."
   }
 }
