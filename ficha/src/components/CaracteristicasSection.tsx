@@ -202,7 +202,7 @@ export function CaracteristicasSection({
                                       upd(i, { niveisDesc: arr });
                                     }}
                                   />
-                                  <div className="flex shrink-0 flex-col items-center">
+                                  <div className="flex shrink-0 items-center gap-1">
                                     <span className="text-[9px] uppercase text-muted-foreground">usos</span>
                                     <Input
                                       className="h-7 w-12 px-1 text-center"
@@ -256,21 +256,29 @@ export function CaracteristicasSection({
                   </div>
                 ) : (
                   <div>
-                    <Label>Nível</Label>
-                    <div className="mt-1 flex gap-1">
-                      {[1, 2, 3, 4, 5].map((n) => (
-                        <button
-                          key={n}
-                          type="button"
-                          onClick={() => upd(i, { nivel: n })}
-                          className={cn(
-                            "h-7 flex-1 rounded-[4px] border text-[11px] font-medium",
-                            c.nivel === n ? "bg-primary text-primary-foreground" : "hover:bg-secondary"
-                          )}
-                        >
-                          Nv{n}
-                        </button>
-                      ))}
+                    <Label>Nível · descrição</Label>
+                    <div className="mt-1 flex items-center gap-2">
+                      <select
+                        className="h-7 shrink-0 rounded-md border border-input bg-transparent px-2 text-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+                        value={c.nivel}
+                        onChange={(e) => upd(i, { nivel: parseInt(e.target.value, 10) || 1 })}
+                      >
+                        {[1, 2, 3, 4, 5].map((n) => (
+                          <option key={n} value={n}>
+                            Nv {n}
+                          </option>
+                        ))}
+                      </select>
+                      <Input
+                        className="h-7 min-w-0 flex-1 text-[12px]"
+                        placeholder="descrição do efeito neste nível…"
+                        value={c.niveisDesc[c.nivel - 1] || ""}
+                        onChange={(e) => {
+                          const arr = [...c.niveisDesc];
+                          arr[c.nivel - 1] = e.target.value;
+                          upd(i, { niveisDesc: arr });
+                        }}
+                      />
                     </div>
                   </div>
                 ))}

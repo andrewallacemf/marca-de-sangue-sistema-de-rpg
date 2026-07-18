@@ -71,3 +71,8 @@ arquivos-alterados:
   equipamentos: **Nv · descrição (valores) · campo "usos"** na mesma linha e os **marcadores de uso
   logo abaixo**. Removido o antigo grid separado de "usos por nível". A lista cresce mostrando um
   nível além do último ativo (até Nv5), para adicionar o próximo.
+
+## Adendo v0.13
+- Alinhados os campos de **descrição** e **usos** na lista de níveis (rótulo "usos" agora inline).
+- Na **regra alternativa**, os botões de nível viraram um **selector Nv 1–5** com a **descrição do
+  efeito daquele nível** ao lado (puxada do catálogo pela progressão, editável p/ habilidade custom).
