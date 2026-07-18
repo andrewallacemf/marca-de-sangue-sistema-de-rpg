@@ -85,10 +85,10 @@ export type MembroKey = "cabeca" | "tronco" | "bracoE" | "bracoD" | "pernaE" | "
 export const MEMBROS: { key: MembroKey; label: string; d6: number; abbr: string }[] = [
   { key: "cabeca", label: "Cabeça", d6: 1, abbr: "Cab" },
   { key: "tronco", label: "Tronco", d6: 4, abbr: "Tro" },
-  { key: "bracoD", label: "Braço direito", d6: 2, abbr: "BD" },
-  { key: "bracoE", label: "Braço esquerdo", d6: 5, abbr: "BE" },
-  { key: "pernaD", label: "Perna direita", d6: 6, abbr: "PD" },
-  { key: "pernaE", label: "Perna esquerda", d6: 3, abbr: "PE" },
+  { key: "bracoD", label: "Braço dir.", d6: 2, abbr: "BD" },
+  { key: "bracoE", label: "Braço esq.", d6: 5, abbr: "BE" },
+  { key: "pernaD", label: "Perna dir.", d6: 6, abbr: "PD" },
+  { key: "pernaE", label: "Perna esq.", d6: 3, abbr: "PE" },
 ];
 
 export function novaArma(): Arma {

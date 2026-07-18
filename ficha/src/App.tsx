@@ -273,10 +273,10 @@ export default function App() {
                 </div>
                 <div>
                   <Label className="mb-1 block">Características compradas</Label>
-                  <div className="flex flex-col gap-2">
-                    <InlineField label="Aptidões" value={ficha.exp.qtdAptidoes} onChange={(e) => update("exp", { ...ficha.exp, qtdAptidoes: e.target.value })} />
-                    <InlineField label="Habilidades" value={ficha.exp.qtdHabilidades} onChange={(e) => update("exp", { ...ficha.exp, qtdHabilidades: e.target.value })} />
-                    <InlineField label="Traços" value={ficha.exp.qtdTracos} onChange={(e) => update("exp", { ...ficha.exp, qtdTracos: e.target.value })} />
+                  <div className="grid grid-cols-3 gap-2">
+                    <InlineField label="Apt." value={ficha.exp.qtdAptidoes} onChange={(e) => update("exp", { ...ficha.exp, qtdAptidoes: e.target.value })} />
+                    <InlineField label="Hab." value={ficha.exp.qtdHabilidades} onChange={(e) => update("exp", { ...ficha.exp, qtdHabilidades: e.target.value })} />
+                    <InlineField label="Traç." value={ficha.exp.qtdTracos} onChange={(e) => update("exp", { ...ficha.exp, qtdTracos: e.target.value })} />
                   </div>
                 </div>
               </CardContent>
@@ -422,13 +422,13 @@ export default function App() {
               <CardContent className="grid grid-cols-1 gap-2 sm:grid-cols-2">
                 {MEMBROS.map((m) => (
                   <div key={m.key} className="flex items-center justify-between gap-2 rounded-md border p-2">
-                    <span className="flex items-center gap-1.5 text-sm font-medium">
-                      <span className="flex h-5 w-5 items-center justify-center rounded-full border border-accent text-[10px] font-bold text-accent-foreground">
+                    <span className="flex shrink-0 items-center gap-1.5 whitespace-nowrap text-sm font-medium">
+                      <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full border border-accent text-[10px] font-bold text-accent-foreground">
                         {m.d6}
                       </span>
                       {m.label}
                     </span>
-                    <div className="flex gap-0.5">
+                    <div className="flex shrink-0 gap-0.5">
                       {ficha.saude[m.key].map((st, ci) => (
                         <DamageCell
                           key={ci}
