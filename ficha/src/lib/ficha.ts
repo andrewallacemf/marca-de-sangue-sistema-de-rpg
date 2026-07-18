@@ -75,7 +75,7 @@ export type Ficha = {
   };
   armas: Arma[];
   protecoes: Protecao[];
-  saude: Record<MembroKey, number[]>; // 0 vazio · 1 superficial · 2 profundo · 3 permanente
+  saude: Record<MembroKey, number>; // dano acumulado no membro (0–20): 0–9 superficial · 10 = cheio (profundo/incapacitado) · +além converte para permanente · 20 = invalidado
   fadiga: number;
   guardas: string;
   equipamentos: ItemEquip[];
@@ -145,10 +145,29 @@ export function paArmaPrincipal(f: Ficha): number {
   return parseNum((equipada ?? comPA[0])?.custoPA);
 }
 
+/** Soma triangular 1+2+…+n (custo escalonado: a n-ésima compra custa n). */
+export function triangular(n: number): number {
+  const m = Math.max(0, Math.round(n));
+  return (m * (m + 1)) / 2;
+}
+
+/** É uma maestria? (traço cujo nome começa com "Maestria"). */
+export function ehMaestria(c: CaracteristicaCard): boolean {
+  return c.tipo === "Traço" && /^\s*maestria/i.test(c.nome.trim());
+}
+
 export function expUsada(f: Ficha, rv: RulesVersion): number {
-  const apt = APT_KEYS.reduce((s, k) => s + Math.round(parseNum(f.aptidoes[k].total)), 0);
-  const cards = f.caracteristicas.reduce((s, c) => s + custoCard(c, rv), 0);
-  return apt + cards + custoPAComprado(f.pa.base);
+  // aptidões: custo escalonado por atributo — T aptidões de um tipo custam 1+2+…+T
+  const apt = APT_KEYS.reduce((s, k) => s + triangular(parseNum(f.aptidoes[k].total)), 0);
+  // maestrias: escalonadas pela quantidade total (1ª=1, 2ª=2…); demais características somam custoCard
+  let maestrias = 0;
+  let outros = 0;
+  for (const c of f.caracteristicas) {
+    if (!c.nome.trim()) continue;
+    if (ehMaestria(c)) maestrias += 1;
+    else outros += custoCard(c, rv);
+  }
+  return apt + outros + triangular(maestrias) + custoPAComprado(f.pa.base);
 }
 
 export function qtdAptidoesComp(f: Ficha): number {
@@ -204,6 +223,28 @@ export function fmtPeso(n: number): string {
   return Number.isInteger(n) ? String(n) : n.toFixed(1);
 }
 
+/** Estados dos 10 espaços de um membro a partir do dano acumulado (0–20):
+ *  0 vazio · 1 superficial · 2 profundo (membro cheio) · 3 permanente. */
+export function cellsFromDano(dano: number): number[] {
+  const d = Math.max(0, Math.min(20, Math.round(dano)));
+  const perm = Math.max(0, d - 10); // além de 10 vira permanente
+  const cheio = d >= 10;
+  return Array.from({ length: 10 }, (_, i) => {
+    if (i < perm) return 3;
+    if (cheio) return 2;
+    return i < d ? 1 : 0;
+  });
+}
+
+/** Rótulo de status do membro pelo dano acumulado. */
+export function statusMembro(dano: number): string {
+  const d = Math.max(0, Math.min(20, Math.round(dano)));
+  if (d >= 20) return "invalidado";
+  if (d >= 10) return "incapacitado";
+  if (d > 0) return "ferido";
+  return "";
+}
+
 export type MembroKey = "cabeca" | "tronco" | "bracoE" | "bracoD" | "pernaE" | "pernaD";
 
 /** Ordem de exibição + número do d6 de acerto aleatório (ataque descuidado) + abreviação. */
@@ -212,8 +253,8 @@ export const MEMBROS: { key: MembroKey; label: string; d6: number; abbr: string 
   { key: "tronco", label: "Tronco", d6: 4, abbr: "Tro" },
   { key: "bracoD", label: "Braço dir.", d6: 2, abbr: "BD" },
   { key: "bracoE", label: "Braço esq.", d6: 5, abbr: "BE" },
-  { key: "pernaD", label: "Perna dir.", d6: 6, abbr: "PD" },
-  { key: "pernaE", label: "Perna esq.", d6: 3, abbr: "PE" },
+  { key: "pernaD", label: "Perna dir.", d6: 3, abbr: "PD" },
+  { key: "pernaE", label: "Perna esq.", d6: 6, abbr: "PE" },
 ];
 
 export function novaArma(): Arma {
@@ -270,10 +311,7 @@ export function fichaVazia(): Ficha {
     pa: { base: "10", redArmadura: "", redDano: "", redCarga: "", outros: "", total: "" },
     armas: [novaArma(), novaArma()],
     protecoes: Array.from({ length: 4 }, novaProtecao),
-    saude: Object.fromEntries(MEMBROS.map((m) => [m.key, Array(10).fill(0)])) as Record<
-      MembroKey,
-      number[]
-    >,
+    saude: Object.fromEntries(MEMBROS.map((m) => [m.key, 0])) as Record<MembroKey, number>,
     fadiga: 0,
     guardas: "",
     equipamentos: Array.from({ length: 6 }, novoItem),
@@ -393,6 +431,22 @@ export function migrarFicha(data: unknown): Ficha {
   f.equipamentos = preencher(f.equipamentos, base.equipamentos.length, novoItem);
   f.caracteristicas = preencher(f.caracteristicas, base.caracteristicas.length, novaCaracteristica);
   f.tesouro = preencher(f.tesouro, base.tesouro.length, () => ({ label: "", valor: "" }));
+
+  // saúde: converte o formato antigo (array de 10 por membro) para dano acumulado (número 0–20)
+  const saude = { ...base.saude } as Record<MembroKey, number>;
+  const rawSaude = (d.saude ?? {}) as Record<string, unknown>;
+  for (const m of MEMBROS) {
+    const v = rawSaude[m.key];
+    if (typeof v === "number") saude[m.key] = Math.max(0, Math.min(20, Math.round(v)));
+    else if (Array.isArray(v)) {
+      const dano = (v as unknown[]).reduce<number>(
+        (s, c) => s + (Number(c) > 0 ? 1 : 0) + (Number(c) === 3 ? 1 : 0),
+        0
+      );
+      saude[m.key] = Math.max(0, Math.min(20, dano));
+    }
+  }
+  f.saude = saude;
 
   // remove grade de habilidades legada (agora derivada dos cards)
   delete (f as Record<string, unknown>).habilidades;

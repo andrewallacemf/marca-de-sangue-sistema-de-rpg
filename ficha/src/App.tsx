@@ -30,6 +30,8 @@ import { CaracteristicasSection } from "@/components/CaracteristicasSection";
 import { ProtecoesSection } from "@/components/ProtecoesSection";
 import { ArmasSection } from "@/components/ArmasSection";
 import {
+  cellsFromDano,
+  statusMembro,
   expUsada,
   fichaVazia,
   inconsciente,
@@ -506,39 +508,63 @@ export default function App() {
                 <CardTitle className="flex items-center gap-1.5">
                   <HeartPulse className="h-4 w-4" /> Saúde — 60 PV (10 por membro)
                   <span className="ml-2 text-[11px] font-normal normal-case text-muted-foreground">
-                    clique para marcar: 1× superficial ／ · 2× profundo ✕ · 3× permanente ■ · o nº é o d6 do ataque descuidado
+                    clique para somar dano (gera 1 fadiga/ponto); − remove. Enche (10) → profundo/incapacitado ✕; além → permanente ■. O nº é o d6 do ataque descuidado.
                   </span>
                 </CardTitle>
               </CardHeader>
               <CardContent className="grid grid-cols-1 gap-2 sm:grid-cols-2">
-                {MEMBROS.map((m) => (
-                  <div key={m.key} className="flex items-center justify-between gap-2 rounded-md border p-2">
-                    <span className="flex shrink-0 items-center gap-1.5 whitespace-nowrap text-sm font-medium">
-                      <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full border border-accent text-[10px] font-bold text-accent-foreground">
-                        {m.d6}
-                      </span>
-                      {m.label}
-                    </span>
-                    <div className="flex shrink-0 gap-0.5">
-                      {ficha.saude[m.key].map((st, ci) => (
-                        <DamageCell
-                          key={ci}
-                          state={st}
-                          onClick={() =>
-                            setFicha((f) => {
-                              const prev = f.saude[m.key][ci];
-                              const next = (prev + 1) % 4;
-                              const saude = { ...f.saude, [m.key]: f.saude[m.key].map((v, j) => (j === ci ? next : v)) };
-                              // entrar em dano superficial (0 → 1) gera 1 de fadiga (não é removida ao curar)
-                              const fadiga = prev === 0 && next === 1 ? Math.min(50, f.fadiga + 1) : f.fadiga;
-                              return { ...f, saude, fadiga };
-                            })
-                          }
-                        />
-                      ))}
+                {MEMBROS.map((m) => {
+                  const dano = ficha.saude[m.key] || 0;
+                  const cells = cellsFromDano(dano);
+                  const status = statusMembro(dano);
+                  const addDano = (delta: number) =>
+                    setFicha((f) => {
+                      const atual = f.saude[m.key] || 0;
+                      const novo = Math.max(0, Math.min(20, atual + delta));
+                      if (novo === atual) return f;
+                      const saude = { ...f.saude, [m.key]: novo };
+                      // receber dano gera 1 fadiga por ponto (só ao aumentar); curar não remove fadiga
+                      const fadiga = novo > atual ? Math.min(50, f.fadiga + (novo - atual)) : f.fadiga;
+                      return { ...f, saude, fadiga };
+                    });
+                  return (
+                    <div key={m.key} className="flex flex-col gap-1 rounded-md border p-2">
+                      <div className="flex items-center justify-between gap-2">
+                        <span className="flex shrink-0 items-center gap-1.5 whitespace-nowrap text-sm font-medium">
+                          <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full border border-accent text-[10px] font-bold text-accent-foreground">
+                            {m.d6}
+                          </span>
+                          {m.label}
+                        </span>
+                        <span className="flex items-center gap-1">
+                          {status && (
+                            <span
+                              className={cn(
+                                "text-[9px] font-semibold uppercase",
+                                dano >= 20 ? "text-destructive" : dano >= 10 ? "text-primary" : "text-muted-foreground"
+                              )}
+                            >
+                              {status}
+                            </span>
+                          )}
+                          <button
+                            type="button"
+                            className="no-print flex h-5 w-5 items-center justify-center rounded border text-xs text-muted-foreground hover:bg-secondary"
+                            title="Remover 1 de dano (não remove fadiga)"
+                            onClick={() => addDano(-1)}
+                          >
+                            −
+                          </button>
+                        </span>
+                      </div>
+                      <div className="flex flex-wrap gap-0.5">
+                        {cells.map((st, ci) => (
+                          <DamageCell key={ci} state={st} onClick={() => addDano(1)} />
+                        ))}
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  );
+                })}
               </CardContent>
             </Card>
 
@@ -657,7 +683,7 @@ export default function App() {
           </div>
 
           <p className="no-print mt-4 text-center text-[11px] text-muted-foreground">
-            Marca de Sangue — ficha v0.15 ({rulesVersion === "vigente" ? "regras vigentes" : "regras alternativas"}).
+            Marca de Sangue — ficha v0.16 ({rulesVersion === "vigente" ? "regras vigentes" : "regras alternativas"}).
             Os dados ficam só no seu navegador; use “Salvar” para baixar um arquivo e “Carregar” para retomá-lo.
           </p>
         </div>

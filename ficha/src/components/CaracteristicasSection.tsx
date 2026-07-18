@@ -16,6 +16,7 @@ import {
   custoCard,
   custoFadigaEfetivo,
   custoPAEfetivo,
+  ehMaestria,
   novaCaracteristica,
   type CaracteristicaCard,
   type RulesVersion,
@@ -194,18 +195,24 @@ export function CaracteristicasSection({
                 </Field>
               </div>
 
-              {c.nome.trim() && (
-                <p className="text-[11px] text-muted-foreground">
-                  Investido nesta característica:{" "}
-                  <span className="font-semibold text-primary">{custoCard(c, rulesVersion)} exp</span>
-                  {c.tipo === "Habilidade" && (
-                    <span className="text-muted-foreground">
-                      {" "}
-                      ({rulesVersion === "vigente" ? "base × Σ usos por nível" : "base × soma dos degraus"})
-                    </span>
-                  )}
-                </p>
-              )}
+              {c.nome.trim() &&
+                (ehMaestria(c) ? (
+                  <p className="text-[11px] text-muted-foreground">
+                    Maestria — <span className="font-semibold text-primary">custo escalonado</span> (1ª=1,
+                    2ª=2, 3ª=3…; entra na EXP usada total).
+                  </p>
+                ) : (
+                  <p className="text-[11px] text-muted-foreground">
+                    Investido nesta característica:{" "}
+                    <span className="font-semibold text-primary">{custoCard(c, rulesVersion)} exp</span>
+                    {c.tipo === "Habilidade" && (
+                      <span className="text-muted-foreground">
+                        {" "}
+                        ({rulesVersion === "vigente" ? "base × Σ usos por nível" : "base × soma dos degraus"})
+                      </span>
+                    )}
+                  </p>
+                ))}
 
               {c.tipo === "Habilidade" &&
                 (rulesVersion === "vigente" ? (
