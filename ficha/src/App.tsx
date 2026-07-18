@@ -24,12 +24,12 @@ import { cn } from "@/lib/utils";
 import { EquipamentosSection } from "@/components/EquipamentosSection";
 import { CaracteristicasSection } from "@/components/CaracteristicasSection";
 import { ProtecoesSection } from "@/components/ProtecoesSection";
+import { ArmasSection } from "@/components/ArmasSection";
 import {
   fichaVazia,
   LS_KEY,
   MEMBROS,
   migrarFicha,
-  PROP_KEYS,
   SCHEMA_VERSION,
   type Ficha,
   type RulesVersion,
@@ -303,24 +303,24 @@ export default function App() {
               <CardHeader>
                 <CardTitle>Pontos de ação (P.A.)</CardTitle>
               </CardHeader>
-              <CardContent className="grid grid-cols-2 gap-2">
+              <CardContent className="grid grid-cols-3 gap-2">
                 <Field label="PA base">
-                  <Input value={ficha.pa.base} onChange={(e) => update("pa", { ...ficha.pa, base: e.target.value })} />
+                  <Input className="text-center" value={ficha.pa.base} onChange={(e) => update("pa", { ...ficha.pa, base: e.target.value })} />
                 </Field>
                 <Field label="Red. armadura">
-                  <Input value={ficha.pa.redArmadura} onChange={(e) => update("pa", { ...ficha.pa, redArmadura: e.target.value })} />
+                  <Input className="text-center" value={ficha.pa.redArmadura} onChange={(e) => update("pa", { ...ficha.pa, redArmadura: e.target.value })} />
                 </Field>
                 <Field label="Red. por dano">
-                  <Input value={ficha.pa.redDano} onChange={(e) => update("pa", { ...ficha.pa, redDano: e.target.value })} />
+                  <Input className="text-center" value={ficha.pa.redDano} onChange={(e) => update("pa", { ...ficha.pa, redDano: e.target.value })} />
                 </Field>
                 <Field label="Red. carga">
-                  <Input value={ficha.pa.redCarga} onChange={(e) => update("pa", { ...ficha.pa, redCarga: e.target.value })} />
+                  <Input className="text-center" value={ficha.pa.redCarga} onChange={(e) => update("pa", { ...ficha.pa, redCarga: e.target.value })} />
                 </Field>
                 <Field label="Outros modif.">
-                  <Input value={ficha.pa.outros} onChange={(e) => update("pa", { ...ficha.pa, outros: e.target.value })} />
+                  <Input className="text-center" value={ficha.pa.outros} onChange={(e) => update("pa", { ...ficha.pa, outros: e.target.value })} />
                 </Field>
                 <Field label="PA TOTAL">
-                  <Input className="font-semibold" value={ficha.pa.total} onChange={(e) => update("pa", { ...ficha.pa, total: e.target.value })} />
+                  <Input className="text-center font-semibold" value={ficha.pa.total} onChange={(e) => update("pa", { ...ficha.pa, total: e.target.value })} />
                 </Field>
               </CardContent>
             </Card>
@@ -430,71 +430,8 @@ export default function App() {
               </CardContent>
             </Card>
 
-            {/* Armas */}
-            {ficha.armas.map((arma, i) => (
-              <Card key={i} className="lg:col-span-1">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-1.5">
-                    <Swords className="h-4 w-4" /> Arma {i + 1}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="flex flex-col gap-2">
-                  <Field label="Nome">
-                    <Input
-                      value={arma.nome}
-                      onChange={(e) => {
-                        const arr = [...ficha.armas];
-                        arr[i] = { ...arma, nome: e.target.value };
-                        update("armas", arr);
-                      }}
-                    />
-                  </Field>
-                  <div className="grid grid-cols-2 gap-2">
-                    {([
-                      ["tipo", "Tipo (leve/média/pesada)"],
-                      ["equipado", "Equipado"],
-                      ["custoPA", "Custo de PA"],
-                      ["dano", "Dano"],
-                      ["alcance", "Alcance"],
-                      ["durabilidade", "Durabilidade"],
-                    ] as const).map(([campo, label]) => (
-                      <Field key={campo} label={label}>
-                        <Input
-                          value={arma[campo]}
-                          onChange={(e) => {
-                            const arr = [...ficha.armas];
-                            arr[i] = { ...arma, [campo]: e.target.value };
-                            update("armas", arr);
-                          }}
-                        />
-                      </Field>
-                    ))}
-                  </div>
-                  <div>
-                    <Label>Propriedades</Label>
-                    <div className="mt-1 flex flex-wrap gap-1">
-                      {PROP_KEYS.map((p) => (
-                        <button
-                          key={p}
-                          type="button"
-                          onClick={() => {
-                            const arr = [...ficha.armas];
-                            arr[i] = { ...arma, props: { ...arma.props, [p]: !arma.props[p] } };
-                            update("armas", arr);
-                          }}
-                          className={cn(
-                            "rounded border px-1.5 py-0.5 text-[11px] font-medium",
-                            arma.props[p] ? "bg-primary text-primary-foreground" : "hover:bg-secondary"
-                          )}
-                        >
-                          {p}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+            {/* Armas (seção full-width, duas lado a lado) */}
+            <ArmasSection armas={ficha.armas} setArmas={(v) => update("armas", v)} />
 
             {/* Proteções (dinâmicas, com regiões cobertas) */}
             <ProtecoesSection protecoes={ficha.protecoes} setProtecoes={(v) => update("protecoes", v)} />
