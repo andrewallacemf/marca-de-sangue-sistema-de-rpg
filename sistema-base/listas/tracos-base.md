@@ -39,6 +39,10 @@ Técnicas são traços que **apenas anulam a desvantagem natural** dos testes da
 > ✅ Decidido em 11/07/2026: a categoria "especializações" deixou de existir — a antiga
 > "especialização em ataque desarmado" agora é a maestria abaixo, com o mesmo custo das demais.
 
+**Custo escalonado.** As propriedades de maestria são fortes, então o custo **cresce conforme quantas maestrias você já tem**: a **1ª** maestria custa **`1 exp.`**, a **2ª** custa **`2 exp.`**, a **3ª** custa **`3 exp.`**, e assim por diante (conta o total de maestrias que você possui, de qualquer tipo). Assim, na criação todo mundo consegue pegar **uma** maestria barata, mas juntar várias fica caro. Os valores da tabela abaixo são o **custo-base (1ª maestria)**.
+
+> ✅ Playtest 1 (18/07/2026): custo de maestria passou de fixo `1 exp.` para **escalonado** (1ª = 1, 2ª = 2, 3ª = 3…). Ver [relatório do playtest 1](../../notas-de-design/playtests/2026-07-18-playtest-cenario-1.md).
+
 | **Equipamento / forma de combate**         | **Custo de compra** |
 | ------------------------------------------ | ------------------- |
 | Maestria em **armas cortantes `CORT.`**    | **`1 exp.`**        |
@@ -83,6 +87,8 @@ valendo **apenas para ataques desarmados** (ex.: soco). Viabiliza builds de luta
 | Firme aprimorado | **`4 exp.`** |
 | Saltador | **`3 exp.`** |
 | Burro de carga | **`6 exp.`** |
+| Fôlego de ferro | **`4 exp.`** |
+| Mão rápida | **`2 exp.`** |
 
 Aspectos são traços que afetam a forma como o personagem responde a determinadas situações. Comprar aspectos permite que o personagem realize ações ou ignore regras em determinadas situações.
 
@@ -388,3 +394,31 @@ Não gasta PA extra para deslocar um aliado que esteja agarrado.
 #### Requisitos de uso
 
 —
+
+### Fôlego de ferro
+
+**Custo de compra:** `4 exp.`
+
+#### Descrição
+
+Eleva o teto do **uso voluntário de [fadiga](../conceitos/08-fadiga.md#uso-voluntario-fadiga-vira-pa-extra)**: você pode comprar `PA` extra com fadiga até o **`PA` base inteiro** (em vez de só metade dele).
+
+#### Requisitos de uso
+
+- Sem requisitos.
+
+> ✅ Playtest 1 (18/07/2026): traço criado para permitir gastar mais fadiga por turno, já que o teto padrão caiu para metade do `PA` base.
+
+### Mão rápida
+
+**Custo de compra:** `2 exp.`
+
+#### Descrição
+
+Guardar e sacar (trocar) uma arma equipada custa **`1 PA`** (em vez de `2 PA`).
+
+#### Requisitos de uso
+
+- Sem requisitos.
+
+> ✅ Playtest 1 (18/07/2026): resgatado para o **sistema base** (existia como traço de cenário no Colapso).

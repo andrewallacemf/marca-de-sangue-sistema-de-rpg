@@ -1230,7 +1230,7 @@ export const PROP_INFO: Record<PropKey, PropInfo> = {
   CORT: {
     nome: "Cortante",
     efeito:
-      "Expande o engajamento: permite um ataque de oportunidade quando o alvo SAI do seu alcance ideal (consome a reação).",
+      "Ataque de oportunidade quando o alvo se move para te CONTORNAR (rodeia dentro do seu alcance ideal). Consome a reação. (Sair do alcance já provoca AoO de qualquer arma.)",
     maestria: "Maestria em armas cortantes",
   },
   CONT: {

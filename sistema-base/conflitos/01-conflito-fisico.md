@@ -19,15 +19,16 @@ Os conflitos funcionam em um sistema de turnos. Chamamos de “**turno**” o pe
 
 Cada vez que um conflito se inicia, tanto personagens de jogadores como NPCs precisam definir sua **INICIATIVA**, ou seja, a sequência em que farão suas ações.
 
-Para isso, jogadores e narrador jogam **`1d10`**. Jogadores podem aplicar aptidões de qualquer atributo para rerrolar esse dado.
-
-**Especificamente para iniciativa, o resultado final será a soma de todos os dados jogados pelo jogador.** Então os personagens são ordenados dos que obtiveram maior resultado até o menor.
+Para isso, jogadores e narrador jogam **`1d10`**. Um jogador pode gastar **aptidões de qualquer atributo para rerrolar** o dado de iniciativa (vale o melhor resultado, como qualquer rerrolagem). Os personagens são ordenados do **maior para o menor** resultado.
 
 ### Empates em iniciativa
 
-- Para caso de personagens com valores iguais de iniciativa, **os jogadores sempre jogam primeiro do que NPCs** e inimigos na lista de iniciativa.
-- Para o caso de dois jogadores com valores iguais, **o jogador que rolou mais dados para iniciativa fica à frente** na lista.
-- Caso o mesmo número de dados tenha sido rolado, **ambos jogam `1d10` novamente** (até que tirem valores diferentes) e **o jogador com o maior número ficará à frente** na lista de iniciativa.
+- **Jogador antes de NPC:** empatando com um NPC/inimigo, **o jogador sempre age primeiro**.
+- **Entre jogadores (ou entre NPCs):** fica à frente quem tem **mais aptidões do atributo Ágil**.
+- **Persistindo o empate:** fica à frente quem tem **mais aptidões do atributo Mental**.
+- **Ainda empatados:** rolam **`1d10`** até sair valor diferente; o maior fica à frente.
+
+> ✅ Playtest 1 (18/07/2026): desempate revisado para **jogador > NPC → mais aptidões Ágil → mais aptidões Mental** (antes era "quem rolou mais dados"), e a rerrolagem de iniciativa segue a regra geral de aptidão (vale o melhor). Ver [relatório do playtest 1](../../notas-de-design/playtests/2026-07-18-playtest-cenario-1.md).
 
 ## Malha de combate físico
 
@@ -141,12 +142,23 @@ No caso de estar utilizando a malha quadriculada, o personagem possui 3 espaços
 
 O engajamento é a zona de ataque de oportunidade das armas **corpo a corpo**, expressa em termos de **[alcance ideal](../listas/equipamentos-base.md#alcance-ideal-e-alcance-não-ideal)**. Um personagem está **engajado** quando ocupa um espaço dentro do alcance ideal da arma corpo a corpo de um oponente.
 
-- **Gatilho padrão:** se um oponente **se move de um espaço dentro do alcance ideal da sua arma corpo a corpo para outro espaço ainda dentro do alcance ideal**, você pode usar a sua **[reação](02-acoes-em-conflito.md#reação)** para realizar um **[ataque de oportunidade](#ataque-de-oportunidade)**.
+- **Gatilho padrão — sair do engajamento:** se um oponente **sai do alcance ideal da sua arma corpo a corpo** (deixa o engajamento), você pode usar a sua **[reação](02-acoes-em-conflito.md#reação)** para realizar um **[ataque de oportunidade](#ataque-de-oportunidade)** — a menos que ele use a ação **[Desengajar](#desengajar)**.
 - **Não vale no alcance não ideal:** movimento que acontece no alcance não ideal da arma **não** ativa o ataque de oportunidade.
-- **Propriedades expandem o engajamento** (os gatilhos se somam, não se substituem): armas **cortantes (`CORT.`)** também ativam o ataque de oportunidade quando o alvo **sai** do alcance ideal; armas **perfurantes (`PERF.`)**, quando o alvo **entra** nele (ver [Propriedades das armas](../listas/equipamentos-base.md#propriedades-das-armas)).
+- **Propriedades expandem o engajamento** (os gatilhos se somam, não se substituem): armas **cortantes (`CORT.`)** também ativam o ataque de oportunidade quando o alvo **se move para te contornar** (rodeia você de um espaço a outro dentro do seu alcance ideal); armas **perfurantes (`PERF.`)**, quando o alvo **entra** no alcance ideal (ver [Propriedades das armas](../listas/equipamentos-base.md#propriedades-das-armas)).
 - **Ataques à distância não fazem ataque de oportunidade** — a não ser por traço específico, como o aspecto **[Vigilante](../listas/tracos-base.md#vigilante)**.
 
 > ✅ Decidido em 11/07/2026: engajamento redefinido em termos de alcance ideal — a antiga "área de engajamento" deixa de ser usada como termo (ver [notas-de-design/decisoes/2026-07-11-terminologia-alcance-descanso.md](../../notas-de-design/decisoes/2026-07-11-terminologia-alcance-descanso.md), item A3).
+
+> ✅ Playtest 1 (18/07/2026): **sair do alcance ideal passou a provocar ataque de oportunidade** (antes o gatilho padrão era o movimento dentro do alcance). O movimento **para contornar** dentro do alcance virou efeito da maestria **cortante**. Ver [relatório do playtest 1](../../notas-de-design/playtests/2026-07-18-playtest-cenario-1.md).
+
+### Desengajar
+
+**Desengajar** é uma ação de movimento que permite **andar 1 espaço sem provocar ataque de oportunidade** de quem está engajado com você.
+
+- **Custo:** **`1 PA` de movimento + `1 PA` por inimigo engajado** com você naquele espaço. *(Ex.: cercado por 2 inimigos, andar 1 espaço saindo = 1 de movimento + 2 de desengajamento = `3 PA`.)*
+- **É por espaço:** para andar mais de um espaço saindo do engajamento, repete-se o custo a cada espaço enquanto houver inimigos engajados.
+- **Contornar mantém o inimigo de frente:** ao se mover ao redor de um oponente, ele é **sempre considerado de frente para você** enquanto você faz isso (você não ganha as costas dele de graça). O oponente pode **gastar a reação** dele para **acompanhar** o seu movimento e se reposicionar; sem gastar, ele permanece virado para você mas não muda de lugar.
+- Habilidades como **Investida** e **Disparada** já ignoram o engajamento (não precisam desengajar).
 
 > 💡 **Engajamento no posicionamento Definido**
 >

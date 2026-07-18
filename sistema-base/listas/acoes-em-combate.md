@@ -25,6 +25,7 @@ atualizado-em: 2026-07-12
 | **Ações** | **Pontos** | **Unidade** |
 | --- | --- | --- |
 | Movimento | **`1 PA`** | por metro (espaço da malha) — máx. `7 PA`/turno |
+| Desengajar (andar sem sofrer ataque de oportunidade) | **`1 PA` + `1 PA` por inimigo engajado** | por espaço andado saindo do engajamento (ver [Desengajar](../conflitos/01-conflito-fisico.md#desengajar)) |
 | Ataque desarmado | **`1 PA`** | por ataque |
 | Ataque com arma leve | **`2 PA`** | por ataque |
 | Ataque com arma média | **`4 PA`** | por ataque |

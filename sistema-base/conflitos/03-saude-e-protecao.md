@@ -23,23 +23,21 @@ Armaduras, habilidades e a ação “entrar em defensiva” podem garantir vanta
 
 ## Pontos de vida e dano
 
-Um dano sofrido em uma parte do corpo pode ser **superficial, profundo** ou **permanente.**
+Cada membro tem **10 espaços de dano**. O dano pode ser **superficial**, **profundo** ou **permanente** — e, na prática, o mesmo espaço **muda de status** conforme o membro é castigado:
 
-Um soco no olho, por exemplo, vai doer, inchar e te deixar tonto, mas eventualmente vai sarar sozinho e você vai voltar a ser o que era antes — **é o que chamamos de “dano superficial”.**
+- **Dano superficial:** enquanto o membro ainda tem espaços livres, cada golpe marca **dano superficial** — machucados que **saram sozinhos com [descanso](../conceitos/10-descanso.md)** (o soco que incha e passa).
+- **Ferida profunda (membro cheio):** **ao preencher os 10 espaços**, o membro entra em estado de **ferida profunda** — todos aqueles danos passam a ser **profundos** e o membro fica **incapacitado** (não pode ser usado para ações até se recuperar). Dano profundo **não sara sozinho**: só melhora com **tratamento** (ver [Cura](#cura)).
+- **Dano permanente:** com o membro já cheio (em ferida profunda), **cada novo golpe converte um dano em permanente** — marca definitiva, que **não volta** por meios convencionais. Quando os 10 espaços do membro se tornam permanentes, ele é **invalidado**.
 
-Um corte de espada, por outro lado, pode causar dano que precisa de atenção especial. Precisará limpar e talvez suturar. Mesmo assim, não são todos os tipos de cortes que vão te atrapalhar para o resto da vida. Esses machucados que demandam cuidado, mas são tratáveis, **é o que chamamos de “dano profundo**”. Ao levar 10 de dano profundo em um membro, ele é **incapacitado** e, de forma geral, passa a não poder ser usado para fazer ações, até que se recupere. Veja as consequências com detalhes mais abaixo.
+> **Resumo:** encher o membro → vira **profundo/incapacitado** → continuar apanhando ali → vira **permanente/invalidado**. Fica mais perigoso e recompensa proteger (e mirar) membros específicos.
 
-Entretanto, levar uma facada em algum órgão vital ou ter algum tendão danificado, por exemplo, pode ter consequências para o resto da vida. **É o que chamamos de “dano permanente”. É importante ter atenção: se um dano profundo não for tratado, ele pode se tornar permanente.** Quando um membro leva 10 PV de dano permanente, ele é considerado um membro **invalidado**.
-
-Um ponto de dano profundo se torna permanente em duas situações:
+**Todo dano recebido gera [fadiga](../conceitos/08-fadiga.md):** cada ponto de dano sofrido (de qualquer tipo) adiciona **1 ponto de fadiga**. Mudar o status do membro (encher, virar profundo/permanente) **não** gera fadiga por si só — apenas os pontos de dano recebidos.
 
 > 💡 **Falta de tratamento**
 >
-> Se o personagem passar um longo período de tempo ou um descanso sem tentar se tratar, um ponto de dano profundo se torna automaticamente em um dano permanente. *Exemplo: Claus, o espadachim, levou um horrível corte no braço que lhe conferiu 5 pontos de dano profundo. Se ele não passar por tratamento, no próximo dia, terá 4 pontos de dano profundo no braço e 1 ponto de dano permanente.*
+> Se o personagem passar um descanso sem tentar se tratar, um ponto de dano **profundo** se torna **permanente** automaticamente. *Exemplo: Claus levou um corte que encheu o braço (ferida profunda). Sem tratamento, no dia seguinte 1 daqueles pontos já vira permanente.*
 
-> 💡 **Continuidade de danos**
->
-> Uma vez que um membro do personagem está preenchido com danos superficiais e ele continuar a levar golpes naquele lugar, todo o novo dano será convertido em dano profundo. Se o membro do personagem está preenchido com danos profundos e ele continuar recebendo dano, todo o novo dano será convertido em dano permanente.
+> ✅ Playtest 1 (18/07/2026): modelo de dano reformulado — antes cada membro somava 10 superficiais + 10 profundos + 10 permanentes (30 no total); agora são **10 espaços que mudam de status**. E **todo dano gera 1 fadiga por ponto**. Ver [relatório do playtest 1](../../notas-de-design/playtests/2026-07-18-playtest-cenario-1.md).
 
 Cada arma pode infligir uma certa quantidade de dano (saiba mais na seção Equipamentos). Da mesma forma, as armaduras podem defender o seu personagem de uma determinada quantidade de pontos de dano.
 

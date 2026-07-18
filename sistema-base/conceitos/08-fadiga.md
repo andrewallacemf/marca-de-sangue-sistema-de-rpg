@@ -21,7 +21,7 @@ A **fadiga** representa o desgaste físico e mental que o personagem acumula ao 
 
 O personagem acumula pontos de fadiga quando:
 
-- **Sofre dano superficial** — cada ponto de dano superficial recebido gera **1 ponto de fadiga**. É por este caminho que o desgaste físico do combate pesa nos [`PA`](07-pontos-de-acao.md): o dano vira fadiga e a fadiga reduz os `PA` (ver [Penalidades por acúmulo](#penalidades-por-acumulo)). O dano **profundo** e o **permanente** não geram fadiga — suas consequências são a incapacitação/invalidação do membro (ver [Saúde e Proteção](../conflitos/03-saude-e-protecao.md#penalidades-por-perda-de-vida));
+- **Sofre dano** — **cada ponto de dano recebido (de qualquer tipo: superficial, profundo ou permanente) gera 1 ponto de fadiga**. É por este caminho que o desgaste do combate pesa nos [`PA`](07-pontos-de-acao.md): o dano vira fadiga e a fadiga reduz os `PA` (ver [Penalidades por acúmulo](#penalidades-por-acumulo)). Mudar o status do membro (encher, virar profundo/permanente) não gera fadiga por si só — apenas os pontos de dano (ver [Saúde e Proteção](../conflitos/03-saude-e-protecao.md#pontos-de-vida-e-dano));
 - **Sofre danos ou efeitos que indicam fadiga** — armas, habilidades e regras específicas dizem quando infligem fadiga. Condições específicas de cenário também podem infligir ou custar fadiga (por exemplo, condições do cenário Colapso);
 - **Realiza uma reação** (incluindo o ataque de oportunidade) — a reação não custa `PA`, mas custa **pontos de fadiga iguais ao custo em [`PA`](07-pontos-de-acao.md) que a ação realizada teria** (1 fadiga por 1 `PA`; ver [Reação](../conflitos/02-acoes-em-conflito.md#reação));
 - **Gasta fadiga voluntariamente** para ganhar `PA` extras — os pontos gastos somam-se à sua fadiga acumulada (ver a seção seguinte).
@@ -31,9 +31,11 @@ O personagem acumula pontos de fadiga quando:
 No próprio turno, o personagem pode se esforçar além do limite e comprar pontos de ação com fadiga:
 
 - **2 pontos de fadiga = 1 `PA` extra.**
-- **Teto por turno:** os `PA` extras comprados não podem ultrapassar o **total de `PA` do personagem**.
+- **Teto por turno:** os `PA` extras comprados não podem ultrapassar **metade do `PA` base** do personagem (arredondado para baixo). Traços específicos podem elevar esse teto (ver [Fôlego de ferro](../listas/tracos-base.md#folego-de-ferro)).
 
-> *Exemplo: um personagem com **10 `PA` totais** pode comprar até **+10 `PA`** em um turno, acumulando **20 pontos de fadiga** para isso.*
+> *Exemplo: um personagem com **`PA` base 10** pode comprar até **+5 `PA`** em um turno, acumulando **10 pontos de fadiga** para isso.*
+
+> ✅ Playtest 1 (18/07/2026): o teto do uso voluntário caiu de "todo o `PA`" para **metade do `PA` base** (era agressivo demais). Ver [relatório do playtest 1](../../notas-de-design/playtests/2026-07-18-playtest-cenario-1.md).
 
 ## Penalidades por acúmulo
 
