@@ -172,87 +172,87 @@ export function CaracteristicasSection({
               {c.tipo === "Habilidade" &&
                 (rulesVersion === "vigente" ? (
                   <div>
-                    <Label>Usos por nível</Label>
-                    <div className="mt-1 grid grid-cols-5 gap-1">
-                      {[0, 1, 2, 3, 4].map((ni) => (
-                        <div key={ni} className="flex flex-col items-center gap-0.5">
-                          <span className="text-[9px] uppercase text-muted-foreground">Nv{ni + 1}</span>
-                          <Input
-                            className="h-7 px-1 text-center"
-                            inputMode="numeric"
-                            value={c.usosPorNivel[ni] ? String(c.usosPorNivel[ni]) : ""}
-                            onChange={(e) => {
-                              const usosPorNivel = [...c.usosPorNivel];
-                              usosPorNivel[ni] = parseInt(e.target.value, 10) || 0;
-                              upd(i, { usosPorNivel });
-                            }}
-                          />
-                        </div>
-                      ))}
-                    </div>
-
-                    {(c.usosPorNivel.some((u) => u > 0) || c.niveisDesc.some((d) => d.trim())) && (
-                      <div className="mt-2 border-t pt-2">
-                        <Label>Níveis (valores) e usos disponíveis</Label>
-                        <div className="mt-1 flex flex-col gap-1.5">
-                          {[0, 1, 2, 3, 4].map((ni) => {
+                    <Label>Níveis · descrição · usos</Label>
+                    <div className="mt-1 flex flex-col gap-1.5">
+                      {(() => {
+                        let last = 0;
+                        for (let k = 0; k < 5; k++) {
+                          if ((c.usosPorNivel[k] || 0) > 0 || (c.niveisDesc[k] || "").trim()) last = k;
+                        }
+                        const ate = Math.min(4, last + 1); // um nível além do último ativo, p/ adicionar
+                        return [0, 1, 2, 3, 4]
+                          .filter((ni) => ni <= ate)
+                          .map((ni) => {
                             const total = c.usosPorNivel[ni] || 0;
-                            const desc = c.niveisDesc[ni] || "";
-                            if (!total && !desc.trim()) return null;
                             const gasto = c.usosGastosPorNivel[ni] || 0;
                             const avail = total - gasto;
                             return (
-                              <div key={ni} className="flex items-start gap-2">
-                                <span className="mt-1.5 w-8 shrink-0 text-[10px] uppercase text-muted-foreground">
-                                  Nv{ni + 1}
-                                </span>
-                                <div className="flex min-w-0 flex-1 flex-col gap-1">
+                              <div key={ni} className="rounded-md border p-1.5 print-avoid-break">
+                                <div className="flex items-center gap-2">
+                                  <span className="w-8 shrink-0 text-[10px] font-semibold uppercase text-primary">
+                                    Nv{ni + 1}
+                                  </span>
                                   <Input
-                                    className="h-7 text-[12px]"
+                                    className="h-7 min-w-0 flex-1 text-[12px]"
                                     placeholder="valores deste nível…"
-                                    value={desc}
+                                    value={c.niveisDesc[ni] || ""}
                                     onChange={(e) => {
                                       const arr = [...c.niveisDesc];
                                       arr[ni] = e.target.value;
                                       upd(i, { niveisDesc: arr });
                                     }}
                                   />
-                                  {total > 0 && (
-                                    <div className="flex items-center gap-2">
-                                      <div className="flex flex-wrap gap-1">
-                                        {Array.from({ length: total }, (_, j) => {
-                                          const filled = j < avail;
-                                          return (
-                                            <button
-                                              key={j}
-                                              type="button"
-                                              title={filled ? "disponível (clique p/ consumir)" : "usado (clique p/ devolver)"}
-                                              onClick={() => {
-                                                const novoAvail = filled ? j : j + 1;
-                                                const arr = [...c.usosGastosPorNivel];
-                                                arr[ni] = total - novoAvail;
-                                                upd(i, { usosGastosPorNivel: arr });
-                                              }}
-                                              className={cn(
-                                                "h-5 w-5 rounded-[3px] border border-input",
-                                                filled ? "bg-primary" : "bg-transparent"
-                                              )}
-                                            />
-                                          );
-                                        })}
-                                      </div>
-                                      <span className="text-[11px] font-medium text-muted-foreground">
-                                        {avail}/{total}
-                                      </span>
-                                    </div>
-                                  )}
+                                  <div className="flex shrink-0 flex-col items-center">
+                                    <span className="text-[9px] uppercase text-muted-foreground">usos</span>
+                                    <Input
+                                      className="h-7 w-12 px-1 text-center"
+                                      inputMode="numeric"
+                                      value={total ? String(total) : ""}
+                                      onChange={(e) => {
+                                        const n = parseInt(e.target.value, 10) || 0;
+                                        const usosPorNivel = [...c.usosPorNivel];
+                                        usosPorNivel[ni] = n;
+                                        const usosGastosPorNivel = [...c.usosGastosPorNivel];
+                                        if (usosGastosPorNivel[ni] > n) usosGastosPorNivel[ni] = n;
+                                        upd(i, { usosPorNivel, usosGastosPorNivel });
+                                      }}
+                                    />
+                                  </div>
                                 </div>
+                                {total > 0 && (
+                                  <div className="mt-1.5 flex items-center gap-2 pl-10">
+                                    <div className="flex flex-wrap gap-1">
+                                      {Array.from({ length: total }, (_, j) => {
+                                        const filled = j < avail;
+                                        return (
+                                          <button
+                                            key={j}
+                                            type="button"
+                                            title={filled ? "disponível (clique p/ consumir)" : "usado (clique p/ devolver)"}
+                                            onClick={() => {
+                                              const novoAvail = filled ? j : j + 1;
+                                              const arr = [...c.usosGastosPorNivel];
+                                              arr[ni] = total - novoAvail;
+                                              upd(i, { usosGastosPorNivel: arr });
+                                            }}
+                                            className={cn(
+                                              "h-5 w-5 rounded-[3px] border border-input",
+                                              filled ? "bg-primary" : "bg-transparent"
+                                            )}
+                                          />
+                                        );
+                                      })}
+                                    </div>
+                                    <span className="text-[11px] font-medium text-muted-foreground">
+                                      {avail}/{total}
+                                    </span>
+                                  </div>
+                                )}
                               </div>
                             );
-                          })}
-                        </div>
-                      </div>
-                    )}
+                          });
+                      })()}
+                    </div>
                   </div>
                 ) : (
                   <div>

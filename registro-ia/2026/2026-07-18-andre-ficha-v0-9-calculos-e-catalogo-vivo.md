@@ -65,3 +65,9 @@ arquivos-alterados:
   pode ter notas por nível).
 - A **migração autopreenche** a progressão pelo nome da habilidade, então os 18 saves do playtest
   já exibem os valores por nível sem precisar regenerar.
+
+## Adendo v0.12 — UI de nível unificada
+- Unificado o controle por nível (regras vigentes) num bloco só por nível, no estilo da lista de
+  equipamentos: **Nv · descrição (valores) · campo "usos"** na mesma linha e os **marcadores de uso
+  logo abaixo**. Removido o antigo grid separado de "usos por nível". A lista cresce mostrando um
+  nível além do último ativo (até Nv5), para adicionar o próximo.
