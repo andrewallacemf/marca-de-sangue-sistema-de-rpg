@@ -76,3 +76,11 @@ arquivos-alterados:
 - Alinhados os campos de **descrição** e **usos** na lista de níveis (rótulo "usos" agora inline).
 - Na **regra alternativa**, os botões de nível viraram um **selector Nv 1–5** com a **descrição do
   efeito daquele nível** ao lado (puxada do catálogo pela progressão, editável p/ habilidade custom).
+
+## Adendo v0.14 — custo de PA (número + arma) e fadiga
+- **Custo de PA** da habilidade agora é **campo numérico + marcação "+arma"**. Quando marcado, soma o
+  **PA da arma equipada** (primeira arma equipada com PA; `paArmaPrincipal`). Novos campos
+  `custoPANum` e `custoPAArma` (migração deriva do texto antigo, checando o dado bruto).
+- **Regra alternativa:** cada habilidade tem **custo de fadiga** (campo `custoFadiga`, vazio = 1:1 com
+  o PA efetivo) e um **botão "Usar"** que soma esse custo à fadiga acumulada automaticamente.
+  Permite habilidades com custo de fadiga diferente (futuras/custom).

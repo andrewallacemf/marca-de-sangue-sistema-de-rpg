@@ -35,7 +35,10 @@ export type CaracteristicaCard = {
   requisitos: string;
   atributo: string;
   valorCompra: string;
-  custoPA: string;
+  custoPA: string; // texto livre (usado por traços; "—" quando não há)
+  custoPANum: string; // habilidade: parte numérica do custo de PA de ativação
+  custoPAArma: boolean; // habilidade: soma também o PA da arma equipada
+  custoFadiga: string; // habilidade (regras alternativas): custo de fadiga; vazio = 1:1 com o PA
   usosPorNivel: number[]; // regras vigentes: quantos usos em cada nível (5 posições)
   usosGastosPorNivel: number[]; // regras vigentes: quantos usos já consumidos em cada nível
   niveisDesc: string[]; // descrição do que muda em cada nível (progressão), 5 posições
@@ -121,6 +124,25 @@ export function custoCard(c: CaracteristicaCard, rv: RulesVersion): number {
   }
   const n = Math.max(0, Math.min(5, Math.round(c.nivel || 0)));
   return base * ((n * (n + 1)) / 2);
+}
+
+/** PA de ativação efetivo de uma habilidade = número indicado + (PA da arma, se marcado). */
+export function custoPAEfetivo(c: CaracteristicaCard, paArma: number): number {
+  return parseNum(c.custoPANum) + (c.custoPAArma ? paArma : 0);
+}
+
+/** Custo de fadiga de uma habilidade (regras alternativas): o indicado, ou 1:1 com o PA efetivo. */
+export function custoFadigaEfetivo(c: CaracteristicaCard, paArma: number): number {
+  const f = c.custoFadiga.trim();
+  return f ? parseNum(f) : custoPAEfetivo(c, paArma);
+}
+
+/** PA da arma "principal" para as habilidades que somam o PA da arma:
+ *  primeira arma equipada com custo de PA numérico; senão a primeira com custo. */
+export function paArmaPrincipal(f: Ficha): number {
+  const comPA = f.armas.filter((a) => a.nome.trim() && parseNum(a.custoPA) > 0);
+  const equipada = comPA.find((a) => a.equipado.trim());
+  return parseNum((equipada ?? comPA[0])?.custoPA);
 }
 
 export function expUsada(f: Ficha, rv: RulesVersion): number {
@@ -225,6 +247,9 @@ export function novaCaracteristica(): CaracteristicaCard {
     atributo: "",
     valorCompra: "",
     custoPA: "",
+    custoPANum: "",
+    custoPAArma: false,
+    custoFadiga: "",
     usosPorNivel: [0, 0, 0, 0, 0],
     usosGastosPorNivel: [0, 0, 0, 0, 0],
     niveisDesc: ["", "", "", "", ""],
@@ -313,6 +338,13 @@ export function migrarFicha(data: unknown): Ficha {
     while (c.usosGastosPorNivel.length < 5) c.usosGastosPorNivel.push(0);
     if (!Array.isArray(c.niveisDesc)) c.niveisDesc = ["", "", "", "", ""];
     while (c.niveisDesc.length < 5) c.niveisDesc.push("");
+    // custo de PA: deriva número + "PA da arma" do texto antigo (checa o dado BRUTO, não o default)
+    if (typeof rawObj.custoPANum !== "string") {
+      const m = /-?\d+/.exec(c.custoPA || "");
+      c.custoPANum = c.tipo === "Habilidade" && m ? m[0] : "";
+    }
+    if (typeof rawObj.custoPAArma !== "boolean") c.custoPAArma = /arma/i.test(c.custoPA || "");
+    if (typeof rawObj.custoFadiga !== "string") c.custoFadiga = "";
     // autopreenche a progressão do manual para habilidades sem descrição salva
     if (c.tipo === "Habilidade" && c.niveisDesc.every((d) => !d.trim())) {
       const prog = HABILIDADES_NIVEIS[c.nome.trim()];

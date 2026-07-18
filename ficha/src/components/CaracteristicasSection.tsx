@@ -1,4 +1,4 @@
-import { Plus, Trash2, ScrollText } from "lucide-react";
+import { Plus, Trash2, ScrollText, Zap } from "lucide-react";
 import {
   Button,
   Card,
@@ -12,7 +12,14 @@ import {
 } from "@/components/ui";
 import { CatalogoCombo } from "@/components/ui";
 import { cn } from "@/lib/utils";
-import { custoCard, novaCaracteristica, type CaracteristicaCard, type RulesVersion } from "@/lib/ficha";
+import {
+  custoCard,
+  custoFadigaEfetivo,
+  custoPAEfetivo,
+  novaCaracteristica,
+  type CaracteristicaCard,
+  type RulesVersion,
+} from "@/lib/ficha";
 import { CAT_HABILIDADES, CAT_TRACOS } from "@/lib/catalogo";
 import { HABILIDADES_NIVEIS } from "@/lib/catalogo-niveis";
 
@@ -44,6 +51,7 @@ function cardDoCatalogo(item: PickItem, base: CaracteristicaCard): Caracteristic
   if (item.kind === "hab") {
     const niveis = HABILIDADES_NIVEIS[item.nome] ?? [];
     const niveisDesc = [0, 1, 2, 3, 4].map((i) => niveis[i] ?? "");
+    const m = /-?\d+/.exec(item.custoPA || "");
     return {
       ...base,
       tipo: "Habilidade",
@@ -53,6 +61,9 @@ function cardDoCatalogo(item: PickItem, base: CaracteristicaCard): Caracteristic
       atributo: item.atributo,
       valorCompra: `${item.valorCompra} exp.`,
       custoPA: item.custoPA,
+      custoPANum: m ? m[0] : "",
+      custoPAArma: /arma/i.test(item.custoPA || ""),
+      custoFadiga: "",
       niveisDesc,
     };
   }
@@ -72,10 +83,14 @@ export function CaracteristicasSection({
   itens,
   setItens,
   rulesVersion,
+  paArma,
+  onUsarFadiga,
 }: {
   itens: CaracteristicaCard[];
   setItens: (v: CaracteristicaCard[]) => void;
   rulesVersion: RulesVersion;
+  paArma: number;
+  onUsarFadiga: (qtd: number) => void;
 }) {
   function upd(i: number, patch: Partial<CaracteristicaCard>) {
     const arr = [...itens];
@@ -152,7 +167,30 @@ export function CaracteristicasSection({
                   <Input value={c.valorCompra} onChange={(e) => upd(i, { valorCompra: e.target.value })} />
                 </Field>
                 <Field label="Custo de PA">
-                  <Input value={c.custoPA} onChange={(e) => upd(i, { custoPA: e.target.value })} />
+                  {c.tipo === "Habilidade" ? (
+                    <div className="flex items-center gap-1">
+                      <Input
+                        className="w-12 px-1 text-center"
+                        inputMode="numeric"
+                        value={c.custoPANum}
+                        onChange={(e) => upd(i, { custoPANum: e.target.value })}
+                      />
+                      <label
+                        className="flex cursor-pointer items-center gap-1 text-[10px] text-muted-foreground"
+                        title="Somar também o PA da arma equipada"
+                      >
+                        <input
+                          type="checkbox"
+                          className="h-3.5 w-3.5 accent-[hsl(var(--primary))]"
+                          checked={c.custoPAArma}
+                          onChange={(e) => upd(i, { custoPAArma: e.target.checked })}
+                        />
+                        +arma
+                      </label>
+                    </div>
+                  ) : (
+                    <Input value={c.custoPA} onChange={(e) => upd(i, { custoPA: e.target.value })} />
+                  )}
                 </Field>
               </div>
 
@@ -255,30 +293,56 @@ export function CaracteristicasSection({
                     </div>
                   </div>
                 ) : (
-                  <div>
-                    <Label>Nível · descrição</Label>
-                    <div className="mt-1 flex items-center gap-2">
-                      <select
-                        className="h-7 shrink-0 rounded-md border border-input bg-transparent px-2 text-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-                        value={c.nivel}
-                        onChange={(e) => upd(i, { nivel: parseInt(e.target.value, 10) || 1 })}
+                  <div className="flex flex-col gap-2">
+                    <div>
+                      <Label>Nível · descrição</Label>
+                      <div className="mt-1 flex items-center gap-2">
+                        <select
+                          className="h-7 shrink-0 rounded-md border border-input bg-transparent px-2 text-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+                          value={c.nivel}
+                          onChange={(e) => upd(i, { nivel: parseInt(e.target.value, 10) || 1 })}
+                        >
+                          {[1, 2, 3, 4, 5].map((n) => (
+                            <option key={n} value={n}>
+                              Nv {n}
+                            </option>
+                          ))}
+                        </select>
+                        <Input
+                          className="h-7 min-w-0 flex-1 text-[12px]"
+                          placeholder="descrição do efeito neste nível…"
+                          value={c.niveisDesc[c.nivel - 1] || ""}
+                          onChange={(e) => {
+                            const arr = [...c.niveisDesc];
+                            arr[c.nivel - 1] = e.target.value;
+                            upd(i, { niveisDesc: arr });
+                          }}
+                        />
+                      </div>
+                    </div>
+
+                    <div className="flex flex-wrap items-end gap-2">
+                      <div className="flex flex-col items-start gap-1">
+                        <Label>Custo de fadiga</Label>
+                        <Input
+                          className="h-8 w-16 text-center"
+                          inputMode="numeric"
+                          placeholder={String(custoFadigaEfetivo(c, paArma))}
+                          value={c.custoFadiga}
+                          onChange={(e) => upd(i, { custoFadiga: e.target.value })}
+                        />
+                      </div>
+                      <span className="mb-1.5 text-[11px] text-muted-foreground">
+                        vazio = 1:1 com o PA{c.custoPAArma ? " + arma" : ""} = {custoFadigaEfetivo(c, paArma)}
+                      </span>
+                      <button
+                        type="button"
+                        className="no-print mb-0.5 ml-auto flex h-8 items-center gap-1 rounded-md bg-primary px-2.5 text-[12px] font-medium text-primary-foreground hover:opacity-90"
+                        title="Usar a habilidade: soma o custo de fadiga à fadiga acumulada"
+                        onClick={() => onUsarFadiga(custoFadigaEfetivo(c, paArma))}
                       >
-                        {[1, 2, 3, 4, 5].map((n) => (
-                          <option key={n} value={n}>
-                            Nv {n}
-                          </option>
-                        ))}
-                      </select>
-                      <Input
-                        className="h-7 min-w-0 flex-1 text-[12px]"
-                        placeholder="descrição do efeito neste nível…"
-                        value={c.niveisDesc[c.nivel - 1] || ""}
-                        onChange={(e) => {
-                          const arr = [...c.niveisDesc];
-                          arr[c.nivel - 1] = e.target.value;
-                          upd(i, { niveisDesc: arr });
-                        }}
-                      />
+                        <Zap className="h-3.5 w-3.5" /> Usar (+{custoFadigaEfetivo(c, paArma)} fad.)
+                      </button>
                     </div>
                   </div>
                 ))}

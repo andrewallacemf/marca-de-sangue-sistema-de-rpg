@@ -38,6 +38,7 @@ import {
   descansar,
   migrarFicha,
   novoItem,
+  paArmaPrincipal,
   paTotalComp,
   parseNum,
   penalidadeFadigaNum,
@@ -223,6 +224,9 @@ export default function App() {
     const m = PROP_INFO[p].maestria;
     return m ? maestriasSet.has(m.toLowerCase()) : false;
   };
+  const paArma = paArmaPrincipal(ficha);
+  const usarFadiga = (qtd: number) =>
+    setFicha((f) => ({ ...f, fadiga: Math.min(50, f.fadiga + Math.max(0, Math.round(qtd))) }));
   const adicionarAoInventario = (nome: string) => {
     if (!nome.trim()) return;
     setFicha((f) => ({
@@ -624,6 +628,8 @@ export default function App() {
               itens={ficha.caracteristicas}
               setItens={(v) => update("caracteristicas", v)}
               rulesVersion={rulesVersion}
+              paArma={paArma}
+              onUsarFadiga={usarFadiga}
             />
 
             {/* Glossário de propriedades de armas */}
@@ -651,7 +657,7 @@ export default function App() {
           </div>
 
           <p className="no-print mt-4 text-center text-[11px] text-muted-foreground">
-            Marca de Sangue — ficha v0.13 ({rulesVersion === "vigente" ? "regras vigentes" : "regras alternativas"}).
+            Marca de Sangue — ficha v0.14 ({rulesVersion === "vigente" ? "regras vigentes" : "regras alternativas"}).
             Os dados ficam só no seu navegador; use “Salvar” para baixar um arquivo e “Carregar” para retomá-lo.
           </p>
         </div>
