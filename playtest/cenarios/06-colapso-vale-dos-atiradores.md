@@ -2,6 +2,13 @@
 
 **Ambientação:** Colapso (pós-apocalíptico junkpunk) · **Fichas:** 50 exp · **Jogadores:** 4 · **Missão:** incursão sob fogo
 
+> ♻️ **Fichas rebalanceadas (playtest 1 → custo escalonado).** Carregue os `.mds.json`; os
+> blocos em prosa abaixo são referência e podem diferir.
+> ⚙️ **Regras novas:** sair do engajamento provoca AoO (desengajar 1 PA + 1/inimigo); todo
+> dano gera 1 fadiga/ponto; membro enche em 10 → profundo. **HP de minion:** fraco 10 · médio
+> 20 · forte 30. Olhos de Chumbo = **médio (20)**; Cães da Gorja = **médio (20)**; Vigia-mor
+> = **forte (30)**.
+
 > 🧪 **Cenário-teste da COBERTURA** (proposta de Daniel). Ele existe para estressar a
 > mecânica de [cobertura](../../sistema-base/conflitos/01-conflito-fisico.md#cobertura),
 > a [elevação](../../sistema-base/conflitos/01-conflito-fisico.md#elevação) e o

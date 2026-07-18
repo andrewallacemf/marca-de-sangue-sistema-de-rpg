@@ -2,6 +2,10 @@
 
 **Ambientação:** Medieval · **Fichas:** 15 exp · **Jogadores:** 3 · **Missão:** vencer a batalha
 
+> ♻️ **Fichas rebalanceadas (playtest 1 → custo escalonado).** Carregue os arquivos
+> `.mds.json` (pasta `fichas-salvas/`) na ficha digital — os blocos de personagem em prosa
+> mais abaixo são só referência e podem diferir do build atual.
+
 ## Situação (para o narrador)
 
 O aríete inimigo abriu uma brecha na muralha do vilarejo. Os três defensores são a
@@ -32,13 +36,25 @@ duas ondas.
 
 ## Inimigos
 
+> **HP de minion (tiers):** fraco = **cai com 10** de dano · médio = **20** · forte = **30**
+> (dano total no corpo). Os Saqueadores são **médios (20)**; o Bruto é **forte (30)**.
+> **Reforços entram na iniciativa mas só agem na próxima rodada** (regra nova).
+
 **Onda 1 (entram na rodada 1):** 3 **Saqueadores** — PA 10 · faca (leve, 1d4, 2 PA) ou
-machadinha (média, 1d8, 4 PA) · sem armadura · tática: avançam pela brecha e tentam
-ultrapassar os defensores.
+machadinha (média, 1d8, 4 PA) · sem armadura · **cai com 20**.
+Táticas (variar, não só atacar): tentam **ultrapassar** pela brecha; se levam um golpe forte,
+podem **recuar/desengajar** (lembre que sair do alcance provoca ataque de oportunidade);
+um deles pode **empurrar** um defensor para abrir passagem para os outros.
 
 **Onda 2 (entram na rodada 3):** 1 **Saqueador** + 1 **Bruto** — o Bruto tem PA 8,
-maça pesada (contundente, 3d4, 6 PA), peitoral leve (−1 dano no tronco) · tática: o Bruto
-tenta abrir caminho na força.
+maça pesada (contundente, 3d4, 6 PA), peitoral leve (−1 dano no tronco) · **cai com 30**.
+Táticas: o Bruto **abre caminho na força** e usa **Encontrão/empurrar** para tirar quem
+segura a linha; protege o Saqueador que corre para passar.
+
+> ⚙️ **Regras novas em vigor (playtest 2):** sair do engajamento provoca ataque de
+> oportunidade (desengajar custa 1 PA + 1 por inimigo); **todo dano gera 1 fadiga/ponto**;
+> membro **enche em 10 → profundo/incapacitado**. Isso deixa o combate bem mais letal —
+> calibre a agressividade dos minions.
 
 ## Objetivo
 

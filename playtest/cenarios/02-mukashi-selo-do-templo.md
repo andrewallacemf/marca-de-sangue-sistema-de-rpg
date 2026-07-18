@@ -2,6 +2,12 @@
 
 **Ambientação:** Mukashi (fantasia medieval japonesa) · **Fichas:** 30 exp · **Jogadores:** 4 · **Missão:** pegar algo e sair
 
+> ♻️ **Fichas rebalanceadas (playtest 1 → custo escalonado).** Carregue os `.mds.json`
+> (`fichas-salvas/`); os blocos em prosa abaixo são referência e podem diferir.
+> ⚙️ **Regras novas:** sair do engajamento provoca AoO (desengajar 1 PA + 1/inimigo);
+> todo dano gera 1 fadiga/ponto; membro enche em 10 → profundo. **HP de minion:** fraco 10 ·
+> médio 20 · forte 30 (dano total). Sentinelas = **médio (20)**; Capitão = **forte (30)**.
+
 ## Situação (para o narrador)
 
 O **Selo de Jade** foi roubado do clã e está guardado no santuário de um templo de
