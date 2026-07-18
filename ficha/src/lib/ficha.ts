@@ -167,6 +167,14 @@ export function migrarFicha(data: unknown): Ficha {
   const d = (data ?? {}) as Record<string, unknown>;
   const f: Ficha = { ...base, ...(d as Partial<Ficha>) };
 
+  // completa uma lista até o mínimo de slots vazios (para a ficha carregada
+  // manter os mesmos campos em branco da ficha vazia, sem "sumir" slots).
+  const preencher = <T,>(arr: T[] | undefined, min: number, criar: () => T): T[] => {
+    const out = Array.isArray(arr) ? [...arr] : [];
+    while (out.length < min) out.push(criar());
+    return out;
+  };
+
   const cards = Array.isArray(d.caracteristicas) ? (d.caracteristicas as unknown[]) : [];
   f.caracteristicas = cards.map((raw) => {
     const rawObj = (raw ?? {}) as Record<string, unknown>;
@@ -203,6 +211,28 @@ export function migrarFicha(data: unknown): Ficha {
       return p;
     });
   }
+
+  // normaliza armas (garante todos os campos + objeto de propriedades) e completa slots
+  const armasRaw = Array.isArray(d.armas) ? (d.armas as unknown[]) : [];
+  f.armas = armasRaw.map((raw) => {
+    const r = (raw ?? {}) as Record<string, unknown>;
+    return {
+      ...novaArma(),
+      ...r,
+      props: { ...novaArma().props, ...((r.props as Record<string, boolean>) ?? {}) },
+    } as Arma;
+  });
+
+  // normaliza equipamentos
+  const equipRaw = Array.isArray(d.equipamentos) ? (d.equipamentos as unknown[]) : [];
+  f.equipamentos = equipRaw.map((raw) => ({ ...novoItem(), ...((raw ?? {}) as Record<string, unknown>) }) as ItemEquip);
+
+  // completa todas as coleções até o mínimo da ficha vazia (slots vazios visíveis)
+  f.armas = preencher(f.armas, base.armas.length, novaArma);
+  f.protecoes = preencher(f.protecoes, base.protecoes.length, novaProtecao);
+  f.equipamentos = preencher(f.equipamentos, base.equipamentos.length, novoItem);
+  f.caracteristicas = preencher(f.caracteristicas, base.caracteristicas.length, novaCaracteristica);
+  f.tesouro = preencher(f.tesouro, base.tesouro.length, () => ({ label: "", valor: "" }));
 
   // remove grade de habilidades legada (agora derivada dos cards)
   delete (f as Record<string, unknown>).habilidades;
