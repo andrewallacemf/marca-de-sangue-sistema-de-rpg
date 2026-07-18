@@ -154,7 +154,7 @@ export function fichaVazia(): Ficha {
       { label: "", valor: "" },
       { label: "", valor: "" },
     ],
-    caracteristicas: Array.from({ length: 4 }, novaCaracteristica),
+    caracteristicas: Array.from({ length: 6 }, novaCaracteristica),
     anotacoes: "",
   };
 }

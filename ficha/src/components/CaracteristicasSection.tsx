@@ -36,7 +36,7 @@ export function CaracteristicasSection({
         </CardTitle>
       </CardHeader>
       <CardContent>
-        <div className="grid grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-3">
+        <div className="cards-grid grid grid-cols-1 gap-3 md:grid-cols-2">
           {itens.map((c, i) => (
             <div key={i} className="flex flex-col gap-2 rounded-md border p-2 print-avoid-break">
               <div className="flex items-center gap-1">

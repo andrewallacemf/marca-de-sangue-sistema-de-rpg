@@ -16,13 +16,13 @@ export function ArmasSection({
     setArmas(arr);
   }
 
-  const campos: [keyof Arma, string][] = [
-    ["tipo", "Tipo (leve/média/pesada)"],
-    ["equipado", "Equipado"],
-    ["custoPA", "Custo de PA"],
-    ["dano", "Dano"],
-    ["alcance", "Alcance"],
-    ["durabilidade", "Durabilidade"],
+  const campos: [keyof Arma, string, string][] = [
+    ["tipo", "Tipo", "leve/média/pesada"],
+    ["equipado", "Equipado", "mão hábil/inábil…"],
+    ["custoPA", "Custo de PA", ""],
+    ["dano", "Dano", ""],
+    ["alcance", "Alcance", ""],
+    ["durabilidade", "Durab.", ""],
   ];
 
   return (
@@ -48,10 +48,11 @@ export function ArmasSection({
             </div>
 
             <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
-              {campos.map(([campo, label]) => (
+              {campos.map(([campo, label, ph]) => (
                 <Field key={campo} label={label}>
                   <Input
                     className="h-8"
+                    placeholder={ph}
                     value={arma[campo] as string}
                     onChange={(e) => upd(i, { [campo]: e.target.value } as Partial<Arma>)}
                   />

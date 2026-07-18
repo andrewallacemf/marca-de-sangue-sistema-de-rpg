@@ -6,9 +6,13 @@ import { MEMBROS, novaProtecao, type MembroKey, type Protecao } from "@/lib/fich
 export function ProtecoesSection({
   protecoes,
   setProtecoes,
+  guardas,
+  setGuardas,
 }: {
   protecoes: Protecao[];
   setProtecoes: (v: Protecao[]) => void;
+  guardas: string;
+  setGuardas: (v: string) => void;
 }) {
   function upd(i: number, patch: Partial<Protecao>) {
     const arr = [...protecoes];
@@ -100,6 +104,34 @@ export function ProtecoesSection({
         <Button variant="outline" size="sm" className="no-print self-start" onClick={() => setProtecoes([...protecoes, novaProtecao()])}>
           <Plus className="h-3.5 w-3.5" /> Adicionar proteção
         </Button>
+
+        {/* Subseção: guardas levantadas */}
+        <div className="mt-1 flex items-center gap-2 border-t pt-3">
+          <Label className="whitespace-nowrap">Guardas levantadas</Label>
+          <Button
+            variant="outline"
+            size="icon"
+            className="no-print h-7 w-7"
+            onClick={() => setGuardas(String(Math.max(0, (parseInt(guardas, 10) || 0) - 1)))}
+          >
+            −
+          </Button>
+          <Input
+            className="w-14 text-center font-semibold"
+            inputMode="numeric"
+            value={guardas}
+            onChange={(e) => setGuardas(e.target.value)}
+          />
+          <Button
+            variant="outline"
+            size="icon"
+            className="no-print h-7 w-7"
+            onClick={() => setGuardas(String((parseInt(guardas, 10) || 0) + 1))}
+          >
+            +
+          </Button>
+          <span className="text-[11px] text-muted-foreground">abaixe conforme recebe ataques, até zero.</span>
+        </div>
       </CardContent>
     </Card>
   );

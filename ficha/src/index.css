@@ -38,6 +38,31 @@
    PREVIEW na tela (.a4-preview), para que um seja fiel ao outro.
    ===================================================================== */
 
+/* Zona A4 (esquerda 40% / direita 60%): no desktop some (display:contents) e os
+   cards fluem na grade normal; no A4/impressão vira 2 colunas. */
+.a4-zone,
+.a4-left,
+.a4-right {
+  display: contents;
+}
+.a4-preview .a4-zone {
+  display: grid !important;
+  grid-template-columns: 2fr 3fr !important;
+  gap: 4mm !important;
+  align-items: start;
+}
+.a4-preview .a4-left {
+  display: flex !important;
+  flex-direction: column;
+  gap: 4mm;
+}
+.a4-preview .a4-right {
+  display: block !important;
+}
+.a4-preview .pa-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+}
+
 /* cabeçalho por folha (aparece só no A4/impressão) */
 .print-header {
   display: none;
@@ -66,10 +91,18 @@
   gap: 4mm !important;
   align-items: start;
 }
-.a4-preview .col-full {
+/* na folha, o span vem só do .col-full — zera os col-span de desktop (lg:)
+   para o preview bater com a impressão (onde lg: não vale) */
+.a4-preview .sheet-grid > * {
+  grid-column: auto !important;
+}
+.a4-preview .sheet-grid > .col-full {
   grid-column: 1 / -1 !important;
 }
 .a4-preview .armas-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+}
+.a4-preview .cards-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
 }
 
@@ -86,6 +119,11 @@
 }
 .a4-preview .print-header {
   display: flex;
+}
+/* na folha (preview e impressão) não mostrar placeholders — a pessoa escreve por cima */
+.a4-preview input::placeholder,
+.a4-preview textarea::placeholder {
+  color: transparent !important;
 }
 
 /* ---------- IMPRESSÃO real ---------- */
@@ -124,11 +162,32 @@
   .armas-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
+  .cards-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
   .print-avoid-break {
     break-inside: avoid;
   }
   .shadow-sm {
     box-shadow: none !important;
+  }
+  input::placeholder,
+  textarea::placeholder {
+    color: transparent !important;
+  }
+  /* quebras de página deliberadas */
+  .page-break-before {
+    break-before: page;
+  }
+  /* compactação para caber "informações → fadiga" em uma página */
+  .mds-card-header {
+    padding: 2mm 3mm 1mm !important;
+  }
+  .mds-card-content {
+    padding: 1.5mm 3mm 2.5mm !important;
+  }
+  .sheet-grid {
+    gap: 3mm !important;
   }
   /* fundos/bordas (dano, fadiga marcados) aparecem no papel */
   * {

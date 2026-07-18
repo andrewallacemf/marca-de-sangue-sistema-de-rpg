@@ -179,6 +179,15 @@ export default function App() {
 
   const habCards = ficha.caracteristicas.filter((c) => c.tipo === "Habilidade" && c.nome.trim());
 
+  const printHeader = (
+    <div className="print-header col-full">
+      <span className="ph-nome">{ficha.info.nome || "Personagem sem nome"}</span>
+      <span className="ph-marca">
+        Marca de Sangue · Ficha {rulesVersion === "vigente" ? "(regras vigentes)" : "(regras alternativas)"}
+      </span>
+    </div>
+  );
+
   return (
     <div className={cn("min-h-screen pb-16", a4 && "a4-preview bg-muted")}>
       <header className="no-print sticky top-0 z-10 border-b bg-card/95 backdrop-blur">
@@ -223,47 +232,50 @@ export default function App() {
 
       <main className={cn("mx-auto max-w-6xl px-4 py-4", a4 && "px-0")}>
         <div className={cn(a4 && "sheet")}>
-          <div className="print-header">
-            <span className="ph-nome">{ficha.info.nome || "Personagem sem nome"}</span>
-            <span className="ph-marca">
-              Marca de Sangue · Ficha {rulesVersion === "vigente" ? "(regras vigentes)" : "(regras alternativas)"}
-            </span>
-          </div>
           <div className="sheet-grid grid grid-cols-1 gap-3 lg:grid-cols-3">
+            {printHeader}
             {/* Informações */}
             <Card className="col-full lg:col-span-2">
               <CardHeader>
                 <CardTitle>Informações</CardTitle>
               </CardHeader>
-              <CardContent className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-                <Field label="Nome do personagem" className="col-span-2">
+              <CardContent className="flex flex-col gap-2">
+                <Field label="Nome do personagem">
                   <Input value={ficha.info.nome} onChange={(e) => update("info", { ...ficha.info, nome: e.target.value })} />
                 </Field>
-                <Field label="Jogador">
-                  <Input value={ficha.info.jogador} onChange={(e) => update("info", { ...ficha.info, jogador: e.target.value })} />
-                </Field>
-                <Field label="Cenário">
-                  <Input value={ficha.info.cenario} onChange={(e) => update("info", { ...ficha.info, cenario: e.target.value })} />
-                </Field>
-                <Field label="Última sessão" className="col-span-2 sm:col-span-1">
-                  <Input value={ficha.info.ultimaSessao} onChange={(e) => update("info", { ...ficha.info, ultimaSessao: e.target.value })} />
-                </Field>
+                <div className="grid grid-cols-3 gap-2">
+                  <Field label="Jogador">
+                    <Input value={ficha.info.jogador} onChange={(e) => update("info", { ...ficha.info, jogador: e.target.value })} />
+                  </Field>
+                  <Field label="Cenário">
+                    <Input value={ficha.info.cenario} onChange={(e) => update("info", { ...ficha.info, cenario: e.target.value })} />
+                  </Field>
+                  <Field label="Última sessão">
+                    <Input value={ficha.info.ultimaSessao} onChange={(e) => update("info", { ...ficha.info, ultimaSessao: e.target.value })} />
+                  </Field>
+                </div>
               </CardContent>
             </Card>
 
+            {/* Zona A4: coluna esquerda (Experiência, Aptidões, PA) + direita (Habilidades ref) */}
+            <div className="a4-zone col-full">
+              <div className="a4-left">
             {/* Experiência */}
             <Card>
               <CardHeader>
                 <CardTitle>Experiência & características</CardTitle>
               </CardHeader>
               <CardContent className="flex flex-col gap-3">
-                <div className="grid grid-cols-2 gap-2">
-                  <Field label="Exp. base — total">
-                    <Input value={ficha.exp.baseTotal} onChange={(e) => update("exp", { ...ficha.exp, baseTotal: e.target.value })} />
-                  </Field>
-                  <Field label="Exp. base — usada">
-                    <Input value={ficha.exp.baseUsada} onChange={(e) => update("exp", { ...ficha.exp, baseUsada: e.target.value })} />
-                  </Field>
+                <div>
+                  <Label className="mb-1 block">Experiência base</Label>
+                  <div className="grid grid-cols-2 gap-2">
+                    <Field label="total">
+                      <Input value={ficha.exp.baseTotal} onChange={(e) => update("exp", { ...ficha.exp, baseTotal: e.target.value })} />
+                    </Field>
+                    <Field label="usada">
+                      <Input value={ficha.exp.baseUsada} onChange={(e) => update("exp", { ...ficha.exp, baseUsada: e.target.value })} />
+                    </Field>
+                  </div>
                 </div>
                 <div>
                   <Label className="mb-1 block">Características compradas</Label>
@@ -309,7 +321,7 @@ export default function App() {
               <CardHeader>
                 <CardTitle>Pontos de ação (P.A.)</CardTitle>
               </CardHeader>
-              <CardContent className="grid grid-cols-3 gap-2">
+              <CardContent className="pa-grid grid grid-cols-3 gap-2">
                 <Field label="PA base">
                   <Input className="text-center" value={ficha.pa.base} onChange={(e) => update("pa", { ...ficha.pa, base: e.target.value })} />
                 </Field>
@@ -331,47 +343,10 @@ export default function App() {
               </CardContent>
             </Card>
 
-            {/* Guardas */}
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-1.5">
-                  <Shield className="h-4 w-4" /> Guardas
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <Label>Guardas levantadas</Label>
-                <div className="mt-1 flex items-center gap-2">
-                  <Button
-                    variant="outline"
-                    size="icon"
-                    className="no-print"
-                    onClick={() => update("guardas", String(Math.max(0, (parseInt(ficha.guardas, 10) || 0) - 1)))}
-                  >
-                    −
-                  </Button>
-                  <Input
-                    className="w-16 text-center text-lg font-semibold"
-                    inputMode="numeric"
-                    value={ficha.guardas}
-                    onChange={(e) => update("guardas", e.target.value)}
-                  />
-                  <Button
-                    variant="outline"
-                    size="icon"
-                    className="no-print"
-                    onClick={() => update("guardas", String((parseInt(ficha.guardas, 10) || 0) + 1))}
-                  >
-                    +
-                  </Button>
-                </div>
-                <p className="mt-2 text-[11px] text-muted-foreground">
-                  Abaixe conforme recebe ataques, até chegar a zero.
-                </p>
-              </CardContent>
-            </Card>
-
+              </div>
+              <div className="a4-right">
             {/* Habilidades — referência rápida (resumo automático dos cards) */}
-            <Card className="col-full lg:col-span-3">
+            <Card className="lg:col-span-1">
               <CardHeader>
                 <CardTitle className="flex items-center gap-1.5">
                   <Swords className="h-4 w-4" /> Habilidades — referência rápida
@@ -436,11 +411,19 @@ export default function App() {
               </CardContent>
             </Card>
 
+              </div>
+            </div>
+
             {/* Armas (seção full-width, duas lado a lado) */}
             <ArmasSection armas={ficha.armas} setArmas={(v) => update("armas", v)} />
 
-            {/* Proteções (dinâmicas, com regiões cobertas) */}
-            <ProtecoesSection protecoes={ficha.protecoes} setProtecoes={(v) => update("protecoes", v)} />
+            {/* Proteções (dinâmicas, com regiões cobertas) + guardas */}
+            <ProtecoesSection
+              protecoes={ficha.protecoes}
+              setProtecoes={(v) => update("protecoes", v)}
+              guardas={ficha.guardas}
+              setGuardas={(v) => update("guardas", v)}
+            />
 
             {/* Saúde */}
             <Card className="col-full lg:col-span-3">
@@ -507,37 +490,41 @@ export default function App() {
                     zerar (descanso)
                   </button>
                 </div>
-                <div className="flex flex-wrap gap-x-4 gap-y-3">
-                  {[0, 1, 2, 3, 4].map((dec) => (
-                    <div key={dec} className="flex flex-col items-center gap-1">
-                      <div className="flex items-center gap-1">
-                        {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((a) => {
-                          const n = dec * 10 + a + 1;
+                <div className="flex flex-wrap gap-x-6 gap-y-2">
+                  {[0, 1].map((bloco) => (
+                    <div key={bloco} className="flex flex-col gap-1">
+                      <div className="grid grid-cols-5 gap-1">
+                        {Array.from({ length: 25 }, (_, k) => bloco * 25 + k + 1).map((n) => {
                           const filled = n <= ficha.fadiga;
                           return (
-                            <span key={a} className="flex">
-                              {a === 5 && <span className="w-2" />}
-                              <button
-                                type="button"
-                                onClick={() => update("fadiga", ficha.fadiga === n ? n - 1 : n)}
-                                title={`${n}`}
-                                className={cn(
-                                  "h-6 w-6 rounded-[3px] border text-[9px] leading-none",
-                                  filled ? "bg-primary text-primary-foreground" : "bg-transparent hover:bg-secondary",
-                                  n % 5 === 0 && "border-accent"
-                                )}
-                              />
-                            </span>
+                            <button
+                              key={n}
+                              type="button"
+                              onClick={() => update("fadiga", ficha.fadiga === n ? n - 1 : n)}
+                              title={`${n}`}
+                              className={cn(
+                                "h-5 w-5 rounded-[3px] text-[8px] leading-none",
+                                filled ? "bg-primary text-primary-foreground" : "bg-transparent hover:bg-secondary",
+                                n % 10 === 0 ? "border-2 border-accent" : "border border-input"
+                              )}
+                            />
                           );
                         })}
                       </div>
-                      <span className="text-[11px] font-semibold text-muted-foreground">{dec * 10 + 10}</span>
+                      <span className="text-[10px] font-semibold text-muted-foreground">
+                        {bloco === 0 ? "1–25" : "26–50"}
+                      </span>
                     </div>
                   ))}
                 </div>
               </CardContent>
             </Card>
 
+          </div>
+
+          {/* ---- Página 2: equipamentos + anotações ---- */}
+          <div className="page-break-before sheet-grid grid grid-cols-1 gap-3 lg:grid-cols-3">
+            {printHeader}
             {/* Equipamentos / carga / tesouro */}
             <EquipamentosSection
               equipamentos={ficha.equipamentos}
@@ -558,7 +545,11 @@ export default function App() {
               </CardContent>
             </Card>
 
-            {/* Habilidades & traços detalhados */}
+          </div>
+
+          {/* ---- Página 3: habilidades & traços detalhados ---- */}
+          <div className="page-break-before sheet-grid grid grid-cols-1 gap-3 lg:grid-cols-3">
+            {printHeader}
             <CaracteristicasSection
               itens={ficha.caracteristicas}
               setItens={(v) => update("caracteristicas", v)}
@@ -566,8 +557,8 @@ export default function App() {
             />
           </div>
 
-          <p className="mt-4 text-center text-[11px] text-muted-foreground">
-            Marca de Sangue — ficha v0.6 ({rulesVersion === "vigente" ? "regras vigentes" : "regras alternativas"}).
+          <p className="no-print mt-4 text-center text-[11px] text-muted-foreground">
+            Marca de Sangue — ficha v0.7 ({rulesVersion === "vigente" ? "regras vigentes" : "regras alternativas"}).
             Os dados ficam só no seu navegador; use “Salvar” para baixar um arquivo e “Carregar” para retomá-lo.
           </p>
         </div>
