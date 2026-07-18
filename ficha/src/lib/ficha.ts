@@ -79,6 +79,70 @@ export type Ficha = {
 
 export const PROP_KEYS = ["ARRE", "AGAR", "CORT", "CONT", "DEFL", "PERF", "PROJ"] as const;
 
+export const APT_KEYS = ["fisica", "agil", "mental", "social"] as const;
+
+/* ============================ Cálculos automáticos ============================
+   Fórmulas do manual base:
+   - EXP usada = Σ aptidões (1 exp cada) + Σ valor de compra das características + custo do PA comprado.
+   - Custo de PA: base a partir de 10; +1 PA = 5 exp, +2 = +10, +3 = +15… (5·n·(n+1)/2).
+   - PA total = base − |red. armadura| − |red. dano| − |red. carga| + outros, com piso de 3.
+   - Peso carregado = Σ (qtd × peso unitário). */
+
+/** Extrai o primeiro número (aceita decimais com , ou .) de um texto. */
+export function parseNum(s: string | number | null | undefined): number {
+  const m = /-?\d+(?:[.,]\d+)?/.exec(String(s ?? "").replace(",", "."));
+  return m ? parseFloat(m[0]) : 0;
+}
+
+/** Custo em exp dos PA comprados acima de 10 (5·n·(n+1)/2). */
+export function custoPAComprado(base: string): number {
+  const n = Math.max(0, Math.round(parseNum(base)) - 10);
+  return (5 * n * (n + 1)) / 2;
+}
+
+export function expUsada(f: Ficha): number {
+  const apt = APT_KEYS.reduce((s, k) => s + Math.round(parseNum(f.aptidoes[k].total)), 0);
+  const cards = f.caracteristicas
+    .filter((c) => c.nome.trim())
+    .reduce((s, c) => s + parseNum(c.valorCompra), 0);
+  return apt + cards + custoPAComprado(f.pa.base);
+}
+
+export function qtdAptidoesComp(f: Ficha): number {
+  return APT_KEYS.reduce((s, k) => s + Math.round(parseNum(f.aptidoes[k].total)), 0);
+}
+export function qtdHabilidadesComp(f: Ficha): number {
+  return f.caracteristicas.filter((c) => c.tipo === "Habilidade" && c.nome.trim()).length;
+}
+export function qtdTracosComp(f: Ficha): number {
+  return f.caracteristicas.filter((c) => c.tipo === "Traço" && c.nome.trim()).length;
+}
+
+export function paTotalComp(f: Ficha): number {
+  const base = parseNum(f.pa.base);
+  const red =
+    Math.abs(parseNum(f.pa.redArmadura)) +
+    Math.abs(parseNum(f.pa.redDano)) +
+    Math.abs(parseNum(f.pa.redCarga));
+  const outros = parseNum(f.pa.outros);
+  return Math.max(3, base - red + outros);
+}
+
+/** Peso total de uma linha (0 se faltar quantidade ou peso unitário). */
+export function pesoTotalItem(it: ItemEquip): number {
+  const q = parseNum(it.qtd);
+  const p = parseNum(it.pesoUnit);
+  return q && p ? q * p : 0;
+}
+export function cargaCarregadaNum(f: Ficha): number {
+  return f.equipamentos.reduce((s, it) => s + pesoTotalItem(it), 0);
+}
+/** Formata um peso: inteiro sem casas, senão 1 casa; vazio se 0. */
+export function fmtPeso(n: number): string {
+  if (!n) return "";
+  return Number.isInteger(n) ? String(n) : n.toFixed(1);
+}
+
 export type MembroKey = "cabeca" | "tronco" | "bracoE" | "bracoD" | "pernaE" | "pernaD";
 
 /** Ordem de exibição + número do d6 de acerto aleatório (ataque descuidado) + abreviação. */

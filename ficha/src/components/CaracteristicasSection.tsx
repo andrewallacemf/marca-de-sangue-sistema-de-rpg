@@ -10,8 +10,59 @@ import {
   Label,
   Textarea,
 } from "@/components/ui";
+import { CatalogoSelect } from "@/components/ui";
 import { cn } from "@/lib/utils";
 import { novaCaracteristica, type CaracteristicaCard, type RulesVersion } from "@/lib/ficha";
+import { CAT_HABILIDADES, CAT_TRACOS } from "@/lib/catalogo";
+
+type PickItem =
+  | { kind: "hab"; nome: string; efeito: string; requisitos?: string; atributo: string; valorCompra: string; custoPA: string }
+  | { kind: "trc"; nome: string; efeito: string; requisitos?: string; atributo?: string; valorCompra: string };
+
+const ATRIBUTOS = ["Físico", "Ágil", "Mental", "Social"] as const;
+const CATEGORIAS = ["Técnica", "Maestria", "Aspecto"] as const;
+
+const GRUPOS_CARS = [
+  ...ATRIBUTOS.map((atr) => ({
+    label: `Habilidades — ${atr}`,
+    itens: CAT_HABILIDADES.filter((h) => h.atributo === atr).map((h) => ({
+      rotulo: h.nome,
+      valor: { kind: "hab", ...h } as PickItem,
+    })),
+  })),
+  ...CATEGORIAS.map((cat) => ({
+    label: `Traços — ${cat}s`,
+    itens: CAT_TRACOS.filter((t) => t.categoria === cat).map((t) => ({
+      rotulo: t.nome,
+      valor: { kind: "trc", ...t } as PickItem,
+    })),
+  })),
+].filter((g) => g.itens.length > 0);
+
+function cardDoCatalogo(item: PickItem, base: CaracteristicaCard): CaracteristicaCard {
+  if (item.kind === "hab") {
+    return {
+      ...base,
+      tipo: "Habilidade",
+      nome: item.nome,
+      efeito: item.efeito,
+      requisitos: item.requisitos ?? "",
+      atributo: item.atributo,
+      valorCompra: `${item.valorCompra} exp.`,
+      custoPA: item.custoPA,
+    };
+  }
+  return {
+    ...base,
+    tipo: "Traço",
+    nome: item.nome,
+    efeito: item.efeito,
+    requisitos: item.requisitos ?? "",
+    atributo: item.atributo ?? "—",
+    valorCompra: `${item.valorCompra} exp.`,
+    custoPA: "—",
+  };
+}
 
 export function CaracteristicasSection({
   itens,
@@ -39,8 +90,8 @@ export function CaracteristicasSection({
         <div className="cards-grid grid grid-cols-1 gap-3 md:grid-cols-2">
           {itens.map((c, i) => (
             <div key={i} className="flex flex-col gap-2 rounded-md border p-2 print-avoid-break">
-              <div className="flex items-center gap-1">
-                <div className="flex overflow-hidden rounded-md border">
+              <div className="flex flex-wrap items-center gap-1">
+                <div className="flex shrink-0 overflow-hidden rounded-md border">
                   {(["Habilidade", "Traço"] as const).map((t) => (
                     <button
                       key={t}
@@ -56,10 +107,15 @@ export function CaracteristicasSection({
                   ))}
                 </div>
                 <Input
-                  className="h-7 flex-1"
+                  className="h-7 w-full min-w-0 flex-1 sm:w-auto"
                   placeholder="Nome"
                   value={c.nome}
                   onChange={(e) => upd(i, { nome: e.target.value })}
+                />
+                <CatalogoSelect
+                  placeholder="do catálogo…"
+                  grupos={GRUPOS_CARS}
+                  onPick={(item) => upd(i, cardDoCatalogo(item, c))}
                 />
                 <button
                   type="button"

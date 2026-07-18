@@ -2,7 +2,7 @@
   "app": "marca-de-sangue-ficha",
   "schemaVersion": 1,
   "rulesVersion": "vigente",
-  "salvoEm": "2026-07-18T00:34:10.816523",
+  "salvoEm": "2026-07-18T01:06:21.033376",
   "data": {
     "info": {
       "nome": "Ser Roland, o Guardião",
@@ -36,11 +36,11 @@
       }
     },
     "pa": {
-      "base": "10",
+      "base": "11",
       "redArmadura": "-4",
       "redDano": "0",
       "redCarga": "0",
-      "outros": "+1",
+      "outros": "0",
       "total": "7"
     },
     "armas": [

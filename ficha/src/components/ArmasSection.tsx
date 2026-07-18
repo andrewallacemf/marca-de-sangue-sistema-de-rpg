@@ -1,7 +1,40 @@
 import { Swords } from "lucide-react";
-import { Card, CardContent, CardHeader, CardTitle, Field, Input, Label } from "@/components/ui";
+import { Card, CardContent, CardHeader, CardTitle, CatalogoSelect, Field, Input, Label } from "@/components/ui";
 import { cn } from "@/lib/utils";
 import { PROP_KEYS, type Arma } from "@/lib/ficha";
+import { CAT_ARMAS, type CatArma } from "@/lib/catalogo";
+
+const GRUPOS_ARMAS = [
+  {
+    label: "Corpo a corpo",
+    itens: CAT_ARMAS.filter((a) => !a.distancia).map((a) => ({ rotulo: a.nome, valor: a })),
+  },
+  {
+    label: "À distância",
+    itens: CAT_ARMAS.filter((a) => a.distancia).map((a) => ({ rotulo: a.nome, valor: a })),
+  },
+];
+
+function armaDoCatalogo(cat: CatArma, base: Arma): Arma {
+  const tipo = [
+    cat.tipo,
+    cat.versatil ? "versátil" : null,
+    cat.distancia ? "à distância" : cat.categoria === "Longa" ? "longo alcance" : null,
+  ]
+    .filter(Boolean)
+    .join(" · ");
+  const props = Object.fromEntries(PROP_KEYS.map((k) => [k, cat.props.includes(k as never)]));
+  return {
+    ...base,
+    nome: cat.nome,
+    tipo,
+    categoria: cat.categoria,
+    custoPA: cat.custoPA,
+    alcance: cat.alcance,
+    dano: cat.dano,
+    props,
+  };
+}
 
 export function ArmasSection({
   armas,
@@ -37,15 +70,21 @@ export function ArmasSection({
       <CardContent className="armas-grid grid grid-cols-1 gap-4 lg:grid-cols-2">
         {armas.map((arma, i) => (
           <div key={i} className="flex flex-col gap-2 rounded-md border p-2 print-avoid-break">
-            <div className="flex items-center gap-2">
+            <div className="flex flex-wrap items-center gap-2">
               <span className="whitespace-nowrap text-xs font-semibold uppercase tracking-wide text-primary">
                 Arma {i + 1}
               </span>
               <Input
-                className="h-8 flex-1"
+                className="h-8 w-full min-w-0 flex-1 sm:w-auto"
                 placeholder="Nome"
                 value={arma.nome}
                 onChange={(e) => upd(i, { nome: e.target.value })}
+              />
+              <CatalogoSelect
+                className="shrink-0"
+                placeholder="do catálogo…"
+                grupos={GRUPOS_ARMAS}
+                onPick={(cat) => upd(i, armaDoCatalogo(cat, arma))}
               />
             </div>
 

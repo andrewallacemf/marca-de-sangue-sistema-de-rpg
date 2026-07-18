@@ -2,7 +2,7 @@
   "app": "marca-de-sangue-ficha",
   "schemaVersion": 1,
   "rulesVersion": "vigente",
-  "salvoEm": "2026-07-18T00:34:10.817749",
+  "salvoEm": "2026-07-18T01:06:21.034537",
   "data": {
     "info": {
       "nome": "Lyra, a Batedora-Arqueira",
@@ -36,11 +36,11 @@
       }
     },
     "pa": {
-      "base": "10",
+      "base": "11",
       "redArmadura": "-1",
       "redDano": "0",
       "redCarga": "0",
-      "outros": "+1",
+      "outros": "0",
       "total": "10"
     },
     "armas": [

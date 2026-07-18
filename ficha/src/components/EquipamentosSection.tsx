@@ -1,6 +1,6 @@
 import { Plus, Trash2, Package, Coins } from "lucide-react";
-import { Button, Card, CardContent, CardHeader, CardTitle, Field, Input, Label } from "@/components/ui";
-import { novoItem, type ItemEquip, type TesouroSlot } from "@/lib/ficha";
+import { Button, Card, CardContent, CardHeader, CardTitle, Computed, Field, Input, Label } from "@/components/ui";
+import { fmtPeso, novoItem, parseNum, pesoTotalItem, type ItemEquip, type TesouroSlot } from "@/lib/ficha";
 
 export function EquipamentosSection({
   equipamentos,
@@ -66,11 +66,7 @@ export function EquipamentosSection({
               value={it.pesoUnit}
               onChange={(e) => updItem(i, { pesoUnit: e.target.value })}
             />
-            <Input
-              className="h-7 w-16 text-center"
-              value={it.pesoTotal}
-              onChange={(e) => updItem(i, { pesoTotal: e.target.value })}
-            />
+            <Computed className="h-7 w-16 font-normal" value={fmtPeso(pesoTotalItem(it))} title="quantidade × peso unitário" />
             <button
               type="button"
               className="no-print flex h-7 w-7 items-center justify-center rounded-md text-muted-foreground hover:bg-secondary"
@@ -91,14 +87,36 @@ export function EquipamentosSection({
           <Plus className="h-3.5 w-3.5" /> Adicionar item
         </Button>
 
-        <div className="mt-2 grid grid-cols-2 gap-3 border-t pt-2 sm:grid-cols-4">
-          <Field label="Capacidade de carga">
-            <Input value={carga.capacidade} onChange={(e) => setCarga({ ...carga, capacidade: e.target.value })} />
-          </Field>
-          <Field label="Peso carregado">
-            <Input value={carga.carregado} onChange={(e) => setCarga({ ...carga, carregado: e.target.value })} />
-          </Field>
-        </div>
+        {(() => {
+          const carregadoNum = equipamentos.reduce((s, it) => s + pesoTotalItem(it), 0);
+          const cap = parseNum(carga.capacidade);
+          const excesso = cap > 0 && carregadoNum > cap;
+          return (
+            <div className="mt-2 border-t pt-2">
+              <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+                <Field label="Capacidade de carga">
+                  <Input
+                    inputMode="decimal"
+                    value={carga.capacidade}
+                    onChange={(e) => setCarga({ ...carga, capacidade: e.target.value })}
+                  />
+                </Field>
+                <Field label="Peso carregado">
+                  <Computed
+                    value={fmtPeso(carregadoNum) || "0"}
+                    alerta={excesso}
+                    title="soma automática do peso total dos itens"
+                  />
+                </Field>
+              </div>
+              {excesso && (
+                <p className="mt-1 text-[11px] text-destructive">
+                  Sobrecarregado: {fmtPeso(carregadoNum)} acima da capacidade de {fmtPeso(cap)}.
+                </p>
+              )}
+            </div>
+          );
+        })()}
 
         <div className="mt-1">
           <Label className="flex items-center gap-1">

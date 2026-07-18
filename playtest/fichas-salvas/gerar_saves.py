@@ -92,8 +92,9 @@ def apt(f=0,a=0,m=0,s=0):
             "mental":{"total":str(m) if m else "","usado":""},
             "social":{"total":str(s) if s else "","usado":""}}
 
-def pa(red_arm=0,outros=0,total=10):
-    return {"base":"10","redArmadura":(str(red_arm) if red_arm else "0"),"redDano":"0",
+def pa(red_arm=0,comprado=0,total=10,outros=0):
+    # 'comprado' = PA adquiridos com exp (entram na base, a partir de 10); 'outros' = modificador avulso
+    return {"base":str(10+comprado),"redArmadura":(str(red_arm) if red_arm else "0"),"redDano":"0",
             "redCarga":"0","outros":(f"+{outros}" if outros else "0"),"total":str(total)}
 
 def build(fname, nome, cenario, budget, aptd, pontos, armas, protec, equip, cars, anot, rules="vigente"):
@@ -332,6 +333,8 @@ for r in results:
             base=HAB[c["nome"]][0]; total+=base*c["nivel"]
         else:
             total+=TRC[c["nome"]][0]
+    n=int(d["pa"]["base"])-10
+    if n>0: total+=5*n*(n+1)//2
     ok = total==budget
     allok = allok and ok
     print(f"  {'OK ' if ok else 'ERRO'} {fname:<34} exp={total:>3} / {budget}")

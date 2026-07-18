@@ -2,7 +2,7 @@
   "app": "marca-de-sangue-ficha",
   "schemaVersion": 1,
   "rulesVersion": "vigente",
-  "salvoEm": "2026-07-18T00:34:10.818028",
+  "salvoEm": "2026-07-18T01:06:21.034887",
   "data": {
     "info": {
       "nome": "Thorne, o Quebra-Colosso",
@@ -36,11 +36,11 @@
       }
     },
     "pa": {
-      "base": "10",
+      "base": "13",
       "redArmadura": "-5",
       "redDano": "0",
       "redCarga": "0",
-      "outros": "+3",
+      "outros": "0",
       "total": "8"
     },
     "armas": [

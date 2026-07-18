@@ -15,7 +15,9 @@ import {
   CardContent,
   CardHeader,
   CardTitle,
+  Computed,
   Field,
+  InlineComputed,
   InlineField,
   Input,
   Label,
@@ -27,10 +29,16 @@ import { CaracteristicasSection } from "@/components/CaracteristicasSection";
 import { ProtecoesSection } from "@/components/ProtecoesSection";
 import { ArmasSection } from "@/components/ArmasSection";
 import {
+  expUsada,
   fichaVazia,
   LS_KEY,
   MEMBROS,
   migrarFicha,
+  paTotalComp,
+  parseNum,
+  qtdAptidoesComp,
+  qtdHabilidadesComp,
+  qtdTracosComp,
   SCHEMA_VERSION,
   type Ficha,
   type RulesVersion,
@@ -180,6 +188,12 @@ export default function App() {
 
   const habCards = ficha.caracteristicas.filter((c) => c.tipo === "Habilidade" && c.nome.trim());
 
+  // valores calculados automaticamente (campos travados)
+  const expUsadaCalc = expUsada(ficha);
+  const expTotalNum = parseNum(ficha.exp.baseTotal);
+  const expExcedida = expTotalNum > 0 && expUsadaCalc > expTotalNum;
+  const paTotalCalc = paTotalComp(ficha);
+
   const printHeader = (
     <div className="print-header col-full">
       <span className="ph-nome">{ficha.info.nome || "Personagem sem nome"}</span>
@@ -268,15 +282,29 @@ export default function App() {
                   <Label className="mb-1 block">Experiência base</Label>
                   <div className="grid grid-cols-2 gap-2">
                     <InlineField label="Total" value={ficha.exp.baseTotal} onChange={(e) => update("exp", { ...ficha.exp, baseTotal: e.target.value })} />
-                    <InlineField label="Usada" value={ficha.exp.baseUsada} onChange={(e) => update("exp", { ...ficha.exp, baseUsada: e.target.value })} />
+                    <InlineComputed
+                      label="Usada"
+                      value={expUsadaCalc}
+                      alerta={expExcedida}
+                      title={
+                        expExcedida
+                          ? `Acima do total (${expTotalNum}). Reveja aptidões, características e PA.`
+                          : "Soma automática: aptidões + características + PA comprado."
+                      }
+                    />
                   </div>
+                  {expExcedida && (
+                    <p className="mt-1 text-[11px] text-destructive">
+                      Passou {expUsadaCalc - expTotalNum} exp do total.
+                    </p>
+                  )}
                 </div>
                 <div>
                   <Label className="mb-1 block">Características compradas</Label>
                   <div className="grid grid-cols-3 gap-2">
-                    <InlineField label="Apt." value={ficha.exp.qtdAptidoes} onChange={(e) => update("exp", { ...ficha.exp, qtdAptidoes: e.target.value })} />
-                    <InlineField label="Hab." value={ficha.exp.qtdHabilidades} onChange={(e) => update("exp", { ...ficha.exp, qtdHabilidades: e.target.value })} />
-                    <InlineField label="Traç." value={ficha.exp.qtdTracos} onChange={(e) => update("exp", { ...ficha.exp, qtdTracos: e.target.value })} />
+                    <InlineComputed label="Apt." value={qtdAptidoesComp(ficha)} />
+                    <InlineComputed label="Hab." value={qtdHabilidadesComp(ficha)} />
+                    <InlineComputed label="Traç." value={qtdTracosComp(ficha)} />
                   </div>
                 </div>
               </CardContent>
@@ -326,7 +354,11 @@ export default function App() {
                   <Input className="text-center" value={ficha.pa.outros} onChange={(e) => update("pa", { ...ficha.pa, outros: e.target.value })} />
                 </Field>
                 <Field label="PA TOTAL">
-                  <Input className="text-center font-semibold" value={ficha.pa.total} onChange={(e) => update("pa", { ...ficha.pa, total: e.target.value })} />
+                  <Computed
+                    value={paTotalCalc}
+                    title="base − reduções + outros (piso de 3 PA)"
+                    className="text-base"
+                  />
                 </Field>
               </CardContent>
             </Card>
@@ -537,7 +569,7 @@ export default function App() {
           </div>
 
           <p className="no-print mt-4 text-center text-[11px] text-muted-foreground">
-            Marca de Sangue — ficha v0.7 ({rulesVersion === "vigente" ? "regras vigentes" : "regras alternativas"}).
+            Marca de Sangue — ficha v0.8 ({rulesVersion === "vigente" ? "regras vigentes" : "regras alternativas"}).
             Os dados ficam só no seu navegador; use “Salvar” para baixar um arquivo e “Carregar” para retomá-lo.
           </p>
         </div>

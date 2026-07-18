@@ -1,7 +1,33 @@
 import { Plus, Trash2, Shield } from "lucide-react";
-import { Button, Card, CardContent, CardHeader, CardTitle, Input, Label } from "@/components/ui";
+import { Button, Card, CardContent, CardHeader, CardTitle, CatalogoSelect, Input, Label } from "@/components/ui";
 import { cn } from "@/lib/utils";
 import { MEMBROS, novaProtecao, type MembroKey, type Protecao } from "@/lib/ficha";
+import { CAT_PROTECOES, type CatProtecao } from "@/lib/catalogo";
+
+const GRUPOS_PROTECOES = [
+  {
+    label: "Armaduras",
+    itens: CAT_PROTECOES.filter((p) => p.classe === "Armadura").map((p) => ({ rotulo: p.nome, valor: p })),
+  },
+  {
+    label: "Escudos",
+    itens: CAT_PROTECOES.filter((p) => p.classe === "Escudo").map((p) => ({ rotulo: p.nome, valor: p })),
+  },
+];
+
+function protecaoDoCatalogo(cat: CatProtecao, base: Protecao): Protecao {
+  const nota =
+    cat.classe === "Escudo" && cat.paUso
+      ? ` (${cat.tipo.toLowerCase()} · guarda ${cat.paUso} PA)`
+      : ` (${cat.tipo.toLowerCase()})`;
+  return {
+    ...base,
+    nome: cat.nome + nota,
+    redPA: cat.redPA,
+    redDano: cat.redDano,
+    durabilidade: cat.durabilidade,
+  };
+}
 
 export function ProtecoesSection({
   protecoes,
@@ -42,7 +68,14 @@ export function ProtecoesSection({
         {protecoes.map((p, i) => (
           <div key={i} className="flex flex-wrap items-end gap-x-3 gap-y-2 rounded-md border p-2 print-avoid-break">
             <div className="min-w-[10rem] flex-1">
-              <Label>Nome da proteção</Label>
+              <div className="flex items-center justify-between gap-2">
+                <Label>Nome da proteção</Label>
+                <CatalogoSelect
+                  placeholder="do catálogo…"
+                  grupos={GRUPOS_PROTECOES}
+                  onPick={(cat) => upd(i, protecaoDoCatalogo(cat, p))}
+                />
+              </div>
               <Input
                 className="mt-1 h-8"
                 placeholder="ex.: Peitoral, Capacete, Cota, Calça…"
