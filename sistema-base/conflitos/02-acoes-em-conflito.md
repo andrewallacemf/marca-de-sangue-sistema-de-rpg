@@ -59,13 +59,13 @@ Um jogador pode realizar um ataque com a mão inábil, porém, recebe uma **`des
 
 ### Ataque de oportunidade
 
-Caso um inimigo **já esteja dentro do alcance ideal da sua arma corpo a corpo e se mova para outro espaço ainda dentro do alcance ideal**, você pode reivindicar um ataque de oportunidade (ver [Engajamento](01-conflito-fisico.md#engajamento) — o movimento no alcance não ideal não ativa o ataque). O ataque de oportunidade é um caso da regra geral de **[Reação](#reação)**: consome a sua reação da rodada e, em vez de custar `PA`, custa **pontos de [fadiga](../conceitos/08-fadiga.md) iguais ao custo em `PA` da ação realizada**. Como toda reação, é opcional — você pode escolher não reagir para não gastar fadiga.
+Caso um inimigo **saia do alcance ideal da sua arma corpo a corpo** (deixe o engajamento), você pode reivindicar um ataque de oportunidade — a menos que ele use a ação **[Desengajar](01-conflito-fisico.md#desengajar)**. Maestrias expandem esse gatilho: **cortante** também dispara quando o alvo **te contorna**; **perfurante**, quando o alvo **entra** no alcance ideal (ver [Engajamento](01-conflito-fisico.md#engajamento) — o movimento no alcance não ideal não ativa o ataque). O ataque de oportunidade é um caso da regra geral de **[Reação](#reação)**: consome a sua reação da rodada e, em vez de custar `PA`, custa **pontos de [fadiga](../conceitos/08-fadiga.md) iguais ao custo em `PA` da ação realizada**. Como toda reação, é opcional. **Só vale para ataques corpo a corpo** — ataques à distância não fazem ataque de oportunidade por reação.
 
 O ataque de oportunidade deve consistir em um ataque corporal simples, com o que o personagem estiver segurando naquele momento, ou um ataque desarmado.
 
 Este ataque conta como um ataque descuidado e não possui vantagens ou desvantagens provenientes de posicionamento (o narrador pode aplicar vantagens e desvantagens de acordo com o contexto).
 
-Efeitos gerados por aptidões também se aplicam a ataques de oportunidade.
+**O ataque de oportunidade é uma reação e, como toda reação, não pode usar aptidões nem habilidades** (é um reflexo). Para reagir usando aptidão/habilidade, é preciso ter preparado um **[gatilho](#criar-um-gatilho)** (que custa `PA` antecipado) — ver [Reação](#reação).
 
 > 💡 O ataque de oportunidade **consome a [reação](#reação)** do personagem. Como cada personagem tem, por padrão, **1 reação por rodada**, só é possível realizar **um ataque de oportunidade por rodada de combate** — a menos que um traço conceda reações extras ou o narrador indique o contrário.
 
@@ -196,5 +196,13 @@ Além das ações pagas com `PA` no próprio turno, todo personagem tem, **fora 
 - O **[ataque de oportunidade](#ataque-de-oportunidade)** é o caso clássico dessa regra: consome a reação da rodada e paga em fadiga o custo em `PA` da ação realizada;
 - **Traços** poderão conceder **reações extras**;
 - A reação **não** é necessária para contratestes (como esquiva e defesa), que continuam funcionando como descrito em [Testes e Contratestes](../conceitos/01-testes-e-contratestes.md).
+
+**A reação é um reflexo: não pode usar aptidões nem habilidades.** Se você quer reagir gastando aptidão/habilidade, prepare um **[gatilho](#criar-um-gatilho)** (que custa `PA` antecipado) — foi por gastar esse recurso que o gatilho ganha esse direito; a reação, que é "de graça", não. Reação e gatilho são independentes: se você tem só 1 reação e 1 gatilho, e ambos poderiam disparar no mesmo movimento do inimigo, você escolhe **um** (o tempo não para para você usar os dois).
+
+**Ataque de oportunidade por reação só vale corpo a corpo.** Outras reações válidas (que não são ataque) incluem: **empurrar, tirar/vestir a armadura, pegar ou soltar uma arma, fechar uma porta** e ações rápidas semelhantes, a critério do narrador.
+
+- **Tirar a armadura como reação:** o `PA` que a armadura reduzia volta **a partir do próximo turno** do personagem (igual a tirá-la no próprio turno), tenha sido feito no turno ou como reação entre turnos.
+
+> ✅ Playtest 1 (18/07/2026): reforçado que **reação não usa aptidão/habilidade** (só o gatilho, que custa `PA`); ataque de oportunidade por reação **só corpo a corpo**; exemplos de reação adicionados. Ver [relatório do playtest 1](../../notas-de-design/playtests/2026-07-18-playtest-cenario-1.md).
 
 > ✅ Reação como recurso por rodada decidida em 11/07/2026 (ver [notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md](../../notas-de-design/decisoes/2026-07-11-reunioes-de-mecanica.md)); custo pago em fadiga e posição da seção após as ações decididos em 11/07/2026 (ver [notas-de-design/decisoes/2026-07-11-reacao-posicionamento-propriedades.md](../../notas-de-design/decisoes/2026-07-11-reacao-posicionamento-propriedades.md)).

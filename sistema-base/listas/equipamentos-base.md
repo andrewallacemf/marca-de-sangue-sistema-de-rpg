@@ -46,6 +46,7 @@ As propriedades só produzem efeito se o personagem tiver a **maestria** corresp
 - **Agarrar (`AGAR.`)** — armas agarradoras conferem **vantagem para o uso da ação "Agarrar"**.
 - **Arremesso (`ARRE.`)** — armas de arremesso **ignoram um dado de desvantagem para realizar arremessos**. Regra geral do manual: arremessar um objeto ou arma **sem** essa propriedade é uma ação de ataque **com desvantagem**; fora do alcance ideal, a desvantagem total é **`+2d10`** (+1d10 pelo alcance não ideal, +1d10 por ser objeto impróprio para arremesso).
 - **Deflexão (`DEFL.`)** — itens com deflexão **ignoram um dado de desvantagem em contratestes de defesa**. *(Na v0.4.1 esta propriedade usava a sigla `PROT`; a sigla foi unificada em `DEFL.`.)*
+- **Acuidade (`ACUI.`)** — armas leves e precisas (facas, adagas, rapieira, estiletes…). Com uma arma de acuidade você pode usar **aptidões do atributo Ágil** (no lugar de Física) para **rerrolar** os testes de ataque com ela. Não exige maestria. *(Decidido no playtest 1, 18/07/2026 — ver [relatório](../../notas-de-design/playtests/2026-07-18-playtest-cenario-1.md).)*
 
 ## Dano por tamanho e tipo (matriz)
 
@@ -77,7 +78,7 @@ O dano de **qualquer arma** — tabelada ou não — é aferido cruzando o **tam
 | Escudo de arremesso | **`Leve`**<br>**`2 PA`** | **`CURT.`** **`CONT.` `DEFL.`** **`ARRE.`** | **`2m a 5m`** | **`1d4`** | **`12 moedas`** |  |
 | Facão, Machete, Peixeira | **`Média`**<br>**`4 PA`** | **`CURT.`** **`CORT.`** | **`1m`** | **`1d8`** | **`4 moedas`** |  |
 | Espada Curta, Foice curta, Cimitarra, Falcione, Khopesh | **`Média`**<br>**`4 PA`** | **`CURT.`** **`CORT.` `PERF.`** | **`1m`** | **`1d8` `CORT.` · `1d6` `PERF.`** | **`8 moedas`** |  |
-| Lança curta, Seta | **`Média`**<br>**`4 PA`** | **`LONG.`** **`PERF.` `ARRE.`** | **`2m`** | **`1d6`** | **`8 moedas`** |  |
+| Lança, Seta | **`Média`**<br>**`4 PA`** | **`LONG.`** **`PERF.` `ARRE.`** | **`2m`** | **`1d6`** | **`8 moedas`** |  |
 | Gato de nove caudas | **`Média`**<br>**`4 PA`** | **`CURT.`** **`CORT.` `AGAR.`** | **`1m`** | **`1d8`** | **`32 moedas`** |  |
 | Chicote, Corrente | **`Média`**<br>**`4 PA`** | **`LONG.`** **`CORT.` `AGAR.`** | **`3m a 4m`** | **`1d8`** | **`12 moedas`** |  |
 | Machadinha | **`Média`**<br>**`4 PA`** | **`CURT.`** **`CORT.` `ARRE.`** | **`1m`** / **`2m a 4m`** | **`1d8`** | **`6 moedas`** |  |

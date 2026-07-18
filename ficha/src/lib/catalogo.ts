@@ -159,7 +159,7 @@ export const CAT_ARMAS: CatArma[] = [
     preco: "8 moedas",
   },
   {
-    nome: "Lança curta",
+    nome: "Lança",
     variantes: ["Seta"],
     tipo: "Média",
     categoria: "Longa",
