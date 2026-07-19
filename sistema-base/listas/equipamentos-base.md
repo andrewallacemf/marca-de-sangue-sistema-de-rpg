@@ -9,9 +9,19 @@ atualizado-em: 2026-07-12
 
 # Lista de equipamentos base
 
-> ⚠️ A DEFINIR: a coluna "Durabilidade" das tabelas de armas está sem valores no manual.
-
 O **dano** de cada arma é derivado da [matriz tamanho × tipo](#dano-por-tamanho-e-tipo-matriz) (ver abaixo).
+
+## Durabilidade das armas
+
+Toda arma tem uma **durabilidade** (coluna nas tabelas). A cada **golpe que acerta** algo ou
+alguém, a arma perde **`1` de durabilidade**. Ao chegar a **`0`**, a arma **quebra** e não pode
+mais ser usada até ser reparada. Golpes que **erram** não gastam durabilidade.
+
+> ✅ Decidido em 19/07/2026: a **regra** de perda de durabilidade das armas (−1 por golpe que
+> acerta; quebra em 0) foi definida pelo grupo.
+
+> ⚠️ A DEFINIR: os **valores** de durabilidade por arma ainda não estão preenchidos nas tabelas
+> (só a regra está fechada). Calibrar no playtest.
 
 **Versátil (`VERS.`):** propriedade **exclusiva de armas médias** — a arma pode ser usada com uma ou duas mãos e ganha **+`1d4` de dano quando empunhada com as duas mãos**. A **maestria em armas versáteis** permite **alternar a empunhadura sem gastar `PA`** durante o uso da arma.
 

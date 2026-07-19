@@ -112,7 +112,7 @@
 
 **Desvantagem natural** — define: [conceitos/01-testes-e-contratestes.md](sistema-base/conceitos/01-testes-e-contratestes.md) (ações que exigem conhecimento) · aparece: [06-tracos](sistema-base/conceitos/06-tracos.md) (técnicas anulam), [tracos-base](sistema-base/listas/tracos-base.md)
 
-**Durabilidade** — define: [listas/protecoes-base.md](sistema-base/listas/protecoes-base.md) (durabilidade por local) · aparece: [equipamentos-base](sistema-base/listas/equipamentos-base.md) (coluna sem valores; A DEFINIR)
+**Durabilidade** — define: [listas/protecoes-base.md](sistema-base/listas/protecoes-base.md#durabilidade-das-proteções) (armaduras e escudos: −1 **só quando o redutor de dano se aplica**, por região; quebra em 0) e [listas/equipamentos-base.md](sistema-base/listas/equipamentos-base.md#durabilidade-das-armas) (armas: −1 por golpe que **acerta**; quebra em 0) — **regra decidida em 19/07/2026**; os **valores** por item ainda serão preenchidos/calibrados · aparece: [03-saude-e-protecao](sistema-base/conflitos/03-saude-e-protecao.md) (redutor de dano)
 
 ## E
 
