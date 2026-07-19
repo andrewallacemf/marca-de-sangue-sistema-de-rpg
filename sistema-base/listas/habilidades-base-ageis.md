@@ -23,6 +23,7 @@ Habilidades base do atributo **`Ágil`**. Parte da "Lista de habilidades base" d
 | Ataques à distância concentrados | **`1 PA`** | **`2 exp.`** |
 | Disparada | **`5 PA`** | **`2 exp.`** |
 | Golpe surpresa | **`1 PA`** + **`PA da arma`** | **`2 exp.`** |
+| Ocultar-se à vista | **`2 PA`** (a ação Esconder-se) | **`3 exp.`** *(💡 proposta)* |
 
 ## Alcance à distância
 
@@ -223,3 +224,48 @@ abaixo.
   percebeu) para que a habilidade possa ser usada.
 - Combina com **[Emboscador](tracos-base.md#emboscador)** (que dobra o resultado do dano ao atacar
   pelas costas escondido, com arma leve).
+
+## Ocultar-se à vista
+
+**Atributo:** `Ágil` · **Custo de PA:** `2 PA` (a própria ação de [Esconder-se](../conflitos/05-furtividade.md#esconder-se)) · **Custo de compra:** `3 exp.`
+
+> 💡 **PROPOSTA (IA) — para o André revisar.** Habilidade criada a partir do gancho do módulo de
+> furtividade (playtest 2): "esconder-se dentro do campo de visão de um inimigo". Números e
+> nome a validar na mesa.
+
+### Descrição
+
+Normalmente, a ação [Esconder-se](../conflitos/05-furtividade.md#esconder-se) **só pode ser usada
+fora do campo de visão de todos os inimigos**. Esta habilidade quebra essa restrição: permite
+**tentar se esconder mesmo estando à vista** de um oponente — sumir num átimo de desatenção, atrás
+de fumaça, no vaivém de uma multidão, na troca de sombras. Você usa a ação de Esconder-se
+normalmente (rolando e guardando o seu valor de furtividade), mas **enquanto um oponente ainda
+pode te ver**.
+
+### Requisitos de uso
+
+- Estar usando a ação **Esconder-se** (paga os `2 PA` dela).
+- Não estar usando armaduras médias ou pesadas.
+- Haver **algo que quebre a atenção direta** entre você e o oponente — ao menos **meia cobertura**,
+  **penumbra/escuridão** ou uma **distração** que o narrador aceite. Não se some no meio de um
+  salão vazio e iluminado com os olhos de todos em você.
+
+### Progressão
+
+1. Pode se esconder à vista de **1** oponente por vez, rolando a furtividade com **desvantagem
+   adicional** (além da desvantagem natural que já se aplique).
+2. Pode se esconder à vista de **1** oponente **sem** a desvantagem adicional (rola como um
+   Esconder-se comum).
+3. Pode se esconder à vista de **até 2** oponentes ao mesmo tempo.
+4. Pode se esconder à vista de **quantos oponentes o enxerguem**, sem penalidade adicional.
+
+### Observações
+
+- Vale a regra geral: cada oponente que puder te ver rola **percepção** contra o seu valor de
+  furtividade guardado, com vantagem/desvantagem por **cobertura + iluminação** (ver
+  [Esconder-se](../conflitos/05-furtividade.md#esconder-se)). Esconder-se à vista à luz do dia e
+  sem cobertura é possível pela habilidade, mas o inimigo rola com **vantagem** — tende a te achar.
+- **Não** dispensa o custo da ação nem substitui o [Espreitador](tracos-base.md#espreitador):
+  para se esconder à vista **como reação**, é preciso ter os dois (esta habilidade + o aspecto).
+- O narrador continua com a palavra final sobre haver ou não uma brecha de atenção plausível na
+  cena.

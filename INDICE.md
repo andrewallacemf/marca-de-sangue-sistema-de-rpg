@@ -232,6 +232,8 @@
 
 ## O
 
+**Ocultar-se à vista** — 💡 proposta — define: [listas/habilidades-base-ageis.md](sistema-base/listas/habilidades-base-ageis.md#ocultar-se-à-vista) (habilidade Ágil que permite usar Esconder-se dentro do campo de visão de um inimigo; progride de 1 oponente com desvantagem até vários sem penalidade) · aparece: [conflitos/05-furtividade.md](sistema-base/conflitos/05-furtividade.md) (Ganchos)
+
 **Ouro / ouros** → ver **Moedas** (termo aposentado em 11/07/2026 — "ouro" é coisa de cenário)
 
 ## P

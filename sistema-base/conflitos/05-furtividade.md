@@ -196,7 +196,8 @@ Como a **reação vem depois da ação**, um golpe forte o suficiente pode incap
 
 ## Ganchos (habilidades e traços)
 
-- **Esconder-se dentro do campo de visão de um inimigo** — deve depender de uma **habilidade
-  específica** (a criar), já que a ação padrão exige estar fora do campo de visão.
+- **Esconder-se dentro do campo de visão de um inimigo** — depende da habilidade
+  **[Ocultar-se à vista](../listas/habilidades-base-ageis.md#ocultar-se-à-vista)** (💡 proposta),
+  já que a ação padrão exige estar fora do campo de visão.
 - **Esconder-se como reação** — depende do aspecto
   **[Espreitador](../listas/tracos-base.md#espreitador)**.
