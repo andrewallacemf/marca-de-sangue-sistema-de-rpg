@@ -110,7 +110,7 @@ O dano de **qualquer arma** — tabelada ou não — é aferido cruzando o **tam
 
 - **Versátil (`VERS.`)** é exclusiva de armas **médias**: a arma ganha **+`1d4`** quando usada **com duas mãos**.
 - **Armas de mais de um tipo:** a arma pode ser usada em **qualquer um de seus tipos** — o atacante declara o tipo no golpe e usa o dado + o efeito daquele tipo (a propriedade correspondente, com maestria). Na tabela, os tipos são listados lado a lado.
-- **Ataque desarmado** = `1` fixo; itens improvisados usam dano fixo baixo.
+- **Ataque desarmado** = `1d4`. **Armas improvisadas** (usadas em corpo a corpo): leve `1d6−1`, média `1d8−1`, pesada `1d10−1`.
 - **Arremesso de objeto improvisado** (arremessar algo que não é arma de arremesso, ou pela habilidade "Arremesso improvisado"): objeto **leve = `1`**, **médio = `1d4−2`** (≈1d2), **pesado = `1d4−1`**, sempre **com desvantagem** por ser impróprio. **Arremessar uma arma de verdade** sem a propriedade `ARRE.` usa o **dano normal da arma**, também com desvantagem. *(Corrigido no playtest 1, 18/07/2026.)*
 
 > ✅ Decidido em 12/07/2026 (ver [decisões — dano das armas](../../notas-de-design/decisoes/2026-07-12-dano-variavel-armas.md)). Os danos das tabelas abaixo foram gerados por esta matriz — **em revisão** arma por arma.
@@ -119,7 +119,7 @@ O dano de **qualquer arma** — tabelada ou não — é aferido cruzando o **tam
 
 | **Item** | **Peso / Ações** | **Categoria / Propriedades** | **Alc. ideal** | **Dano** | **Preço suger.** | **Durabilidade** |
 | --- | --- | --- | --- | --- | --- | --- |
-| Ataque desarmado | **`1 PA`** | **`CONT.`** | **`1m`** | **`1`** | --- | — |
+| Ataque desarmado | **`1 PA`** | **`CONT.`** | **`1m`** | **`1d4`** | --- | — |
 | Manoplas com cravos, Adaga de soco, Tekkokagi, Rapieira | **`Leve`**<br>**`2 PA`** | **`CURT.`** **`PERF.`** | **`1m`** | **`1d6`** | **`6 moedas`** | **`20`** |
 | Shuriken | **`Leve`**<br>**`2 PA`** | **`CURT.`** **`PERF.` `ARRE.`** | **`2m a 5m`** | **`1d6`** | **`4 moedas`** | **`20`** |
 | Faca, Foice de mão | **`Leve`**<br>**`2 PA`** | **`CURT.`** **`CORT.` `PERF.`** | **`1m`** | **`1d8` `CORT.` · `1d6` `PERF.`** | **`3 moedas`** | **`20`** |
@@ -152,11 +152,11 @@ O dano de **qualquer arma** — tabelada ou não — é aferido cruzando o **tam
 | Lança longa | **`Pesada`**<br>**`6 PA`** | **`LONG.`** **`PERF.`** **`ARRE.`** | **`2m`** / **`2m a 3m`** | **`1d10`** | **`10 moedas`** | **`40`** |
 | Espada Larga, montante, Flamberge, Foice ceifadora | **`Pesada`**<br>**`6 PA`** | **`LONG.`** **`CORT.`** **`PERF.`** | **`2m`** | **`2d8` `CORT.` · `1d10` `PERF.`** | **`12 moedas`** | **`40`** |
 | Corrente de espinhos | **`Pesada`**<br>**`6 PA`** | **`LONG.`** **`CORT.`** **`AGAR.`** | **`3m a 4m`** | **`2d8`** | **`16 moedas`** | **`40`** |
-| Arma improvisada leve | **`Leve`** | **`CONT.`** |  | **`2`** |  | **`5`** |
-| Arma improvisada média | **`Média`** | **`CONT.`** |  | **`3`** |  | **`8`** |
-| Arma improvisada pesada | **`Pesada`** | **`CONT.`** |  | **`4`** |  | **`10`** |
+| Arma improvisada leve | **`Leve`** | **`CONT.`** |  | **`1d6−1`** |  | **`5`** |
+| Arma improvisada média | **`Média`** | **`CONT.`** |  | **`1d8−1`** |  | **`8`** |
+| Arma improvisada pesada | **`Pesada`** | **`CONT.`** |  | **`1d10−1`** |  | **`10`** |
 
-*⚠️ A revisar: a **lança montada** (perfurante pesada) agora é `1d10` pela matriz — conferir se merece exceção como arma de carga. O grupo **"Mangual pesado… Esp. de duas lâminas"** tem nome contundente mas só lista `CORT.`/`PERF.` — alinhar as propriedades (se receber `CONT.`, ganha também `4d4`). Itens improvisados seguem com dano fixo (2/3/4).*
+*⚠️ A revisar: a **lança montada** (perfurante pesada) agora é `1d10` pela matriz — conferir se merece exceção como arma de carga. O grupo **"Mangual pesado… Esp. de duas lâminas"** tem nome contundente mas só lista `CORT.`/`PERF.` — alinhar as propriedades (se receber `CONT.`, ganha também `4d4`).*
 
 ## Lista base de armas à distância
 
@@ -173,12 +173,12 @@ O dano de **qualquer arma** — tabelada ou não — é aferido cruzando o **tam
 
 ## Lista base de munições
 
-> 💡 PROPOSTA (IA) — dano convertido para dados em 12/07/2026 (projéteis = 1 dado; dano ≤2 fica fixo).
+> 💡 PROPOSTA (IA) — projéteis = 1 dado. **Dano aumentado em 19/07/2026** (playtest 2), junto com o aumento de letalidade do corpo a corpo: madeira `1d6`, ferro `1d10` (decisão do André) e o resto da escala subindo na mesma proporção.
 
 | **Item** | **Categoria** | **Dano** | **Preço sugerido** |
 | --- | --- | --- | --- |
-| Pedras | **`PROJ.`** | **`2`** | **`grátis`** (improvisado — 💡 proposta) |
-| Dardo | **`PROJ.`** | **`2`** | **`1 moeda`** |
-| Flecha ponta de madeira | **`PROJ.`** | **`1d4`** | **`1 moeda`** |
-| Flecha ponta de ferro | **`PROJ.`** | **`1d4`** | **`3 moedas`** |
-| Bala de pólvora | **`PROJ.`** | **`1d8`** | **`20 moedas`** |
+| Pedras | **`PROJ.`** | **`1d4−1`** | **`grátis`** (improvisado — 💡 proposta) |
+| Dardo | **`PROJ.`** | **`1d4`** | **`1 moeda`** |
+| Flecha ponta de madeira | **`PROJ.`** | **`1d6`** | **`1 moeda`** |
+| Flecha ponta de ferro | **`PROJ.`** | **`1d10`** | **`3 moedas`** |
+| Bala de pólvora | **`PROJ.`** | **`1d12`** | **`20 moedas`** |
