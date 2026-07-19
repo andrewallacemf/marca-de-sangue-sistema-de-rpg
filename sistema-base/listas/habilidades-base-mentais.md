@@ -24,6 +24,7 @@ Habilidades base do atributo **`Mental`**. Parte da "Lista de habilidades base" 
 | Urro de Intimidação | **`4 PA`** | **`3 exp.`** |
 | Recompor | **`4 PA`** | **`4 exp.`** |
 | Consumir | **`4 PA`** | **`4 exp.`** |
+| Reparar | **`—`** (fora de combate) | **`2 exp.`** |
 
 ## Analisar fraquezas
 
@@ -228,3 +229,28 @@ Realiza um teste mental contra um oponente dentro de 3 metros de distância para
 3. Atrasa o turno do oponente em 3 posições
 4. Atrasa o turno do oponente em 4 posições
 5. Atrasa o turno do oponente em 5 posições
+
+## Reparar
+
+**Atributo:** `Mental` · **Custo de PA:** `—` (usada **fora de combate**) · **Custo de compra:** `2 exp.`
+
+### Descrição
+
+**Fora de combate**, você recupera **[durabilidade](../listas/equipamentos-base.md#durabilidade-das-armas)** de um equipamento (arma, peça de armadura ou escudo). Faça um **teste Mental**; com sucesso, o item recupera durabilidade conforme o nível da habilidade (sem ultrapassar a durabilidade máxima).
+
+### Requisitos de uso
+
+- Estar **fora de combate** e dispor de **tempo e ferramentas adequadas**, a critério do narrador.
+
+### Progressão
+
+1. Recupera até **5** de durabilidade.
+2. Recupera até **10** de durabilidade.
+3. Recupera até **20** de durabilidade.
+4. Restaura o item à **durabilidade máxima**.
+
+### Observações
+
+- Não conserta um item **quebrado** (durabilidade 0) além do que o narrador julgar plausível para reparo em campo — restaurar totalmente pode exigir oficina/materiais.
+
+> ✅ Aprovada pelo grupo em 19/07/2026 (habilidades de durabilidade).

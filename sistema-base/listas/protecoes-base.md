@@ -72,3 +72,5 @@ golpe**, mas só quando a proteção **efetivamente absorve** o dano:
 > ✅ Decidido em 19/07/2026: a **regra** de perda de durabilidade de armaduras e escudos (−1 só
 > quando o redutor se aplica; por região; quebra em 0) foi definida pelo grupo. Os **valores** por
 > peça seguem como proposta a calibrar no playtest.
+
+> 💡 **Traços e habilidades que afetam a durabilidade:** [Zeloso](tracos-base.md#zeloso) (desgasta metade), [Reforçado](tracos-base.md#reforçado) (proteção +50%), [Guarda firme](tracos-base.md#guarda-firme) (defender não desgasta), [Reparar](habilidades-base-mentais.md#reparar) (recupera durabilidade) e [Golpe destruidor](habilidades-base-fisicas.md#golpe-destruidor) (força perda extra no alvo).

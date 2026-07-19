@@ -22,6 +22,7 @@ Habilidades base do atributo **`Físico`**. Parte da "Lista de habilidades base"
 | Encontrão | **`1 PA`** + **`PA da arma`** | **`2 exp.`** |
 | Esmagar | **`5 PA`** | **`2 exp.`** |
 | Investida | **`1 PA`** + **`PA da arma`** | **`3 exp.`** |
+| Golpe destruidor | **`1 PA`** + **`PA da arma`** | **`2 exp.`** |
 | Ataques múltiplos & médios | **`1 PA`** | **`2 exp.`** |
 | Ataques múltiplos & pesados | **`1 PA`** | **`3 exp.`** |
 
@@ -239,3 +240,30 @@ Realiza um golpe que força o inimigo a gastar sua guarda levantada e infringe m
 1. Força o oponente a gastar 1 guarda.
 2. Força o oponente a gastar 2 guardas.
 3. Força o oponente a gastar 3 guardas.
+
+## Golpe destruidor
+
+**Atributo:** `Físico` · **Custo de PA:** `1 PA` + `PA da arma` · **Custo de compra:** `2 exp.`
+
+### Descrição
+
+Um ataque voltado a **danificar o equipamento** do alvo. Ao acertar, além do dano normal, um item do alvo perde **[durabilidade](../listas/equipamentos-base.md#durabilidade-das-armas) extra** — à sua escolha, **a arma que ele empunha** ou a **peça de proteção** (armadura/escudo) da região atingida.
+
+### Requisitos de uso
+
+- Declarar o alvo do golpe (arma ou proteção) antes de rolar.
+- Acertar o ataque (é um ataque normal, sujeito a teste e contrateste).
+
+### Progressão
+
+1. O equipamento alvo perde **1** de durabilidade adicional.
+2. Perde **2** de durabilidade adicional.
+3. Perde **3** de durabilidade adicional.
+4. Perde **4** de durabilidade adicional.
+
+### Observações
+
+- A perda de durabilidade é **somada** à perda normal do golpe (ver [Durabilidade das armas](../listas/equipamentos-base.md#durabilidade-das-armas) e [Durabilidade das proteções](../listas/protecoes-base.md#durabilidade-das-proteções)).
+- Atingir uma proteção só a desgasta se o **redutor de dano dela se aplicar** ao golpe (região coberta).
+
+> ✅ Aprovada pelo grupo em 19/07/2026 (habilidades de durabilidade).

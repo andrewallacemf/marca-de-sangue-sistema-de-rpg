@@ -90,6 +90,9 @@ valendo **apenas para ataques desarmados** (ex.: soco). Viabiliza builds de luta
 | Burro de carga | **`6 exp.`** |
 | Fôlego de ferro | **`4 exp.`** |
 | Mão rápida | **`2 exp.`** |
+| Zeloso | **`4 exp.`** |
+| Reforçado | **`4 exp.`** |
+| Guarda firme | **`4 exp.`** |
 
 Aspectos são traços que afetam a forma como o personagem responde a determinadas situações. Comprar aspectos permite que o personagem realize ações ou ignore regras em determinadas situações.
 
@@ -446,3 +449,53 @@ Guardar e sacar (trocar) uma arma equipada custa **`1 PA`** (em vez de `2 PA`).
 - Sem requisitos.
 
 > ✅ Playtest 1 (18/07/2026): resgatado para o **sistema base** (existia como traço de cenário no Colapso).
+
+### Zeloso
+
+**Custo de compra:** `4 exp.`
+
+#### Descrição
+
+Cuida bem do próprio equipamento: seus itens perdem **[durabilidade](../listas/equipamentos-base.md#durabilidade-das-armas) na metade do ritmo** — a cada **2** golpes que normalmente tirariam 1 de durabilidade (da sua arma, ou da peça de armadura/escudo que absorveu o golpe), perde-se **apenas 1**.
+
+#### Condição de uso (gatilho)
+
+- Um golpe que gastaria durabilidade de um equipamento seu.
+
+#### Requisitos de uso
+
+- Sem requisitos.
+
+> ✅ Aprovado pelo grupo em 19/07/2026 (traços de durabilidade).
+
+### Reforçado
+
+**Custo de compra:** `4 exp.`
+
+#### Descrição
+
+Suas peças de proteção são mais resistentes: a **durabilidade máxima** de cada peça de armadura e de cada escudo que você usa é aumentada em **+50%** (arredondado para cima).
+
+#### Requisitos de uso
+
+- Estar usando a proteção (armadura ou escudo).
+
+> ✅ Aprovado pelo grupo em 19/07/2026 (traços de durabilidade).
+
+### Guarda firme
+
+**Custo de compra:** `4 exp.`
+
+#### Descrição
+
+Apara golpes sem desgastar o equipamento: quando você usa uma **[guarda levantada](../conflitos/02-acoes-em-conflito.md#levantar-guarda-entrar-em-postura-defensiva)** para defender um ataque, a arma ou o escudo usado **não perde durabilidade** por essa defesa.
+
+#### Condição de uso (gatilho)
+
+- Gastar uma guarda levantada para defender um ataque.
+
+#### Requisitos de uso
+
+- Ter a **Maestria em armas de deflexão `DEFL.`** (defender com arma) ou estar usando um **escudo**.
+
+> ✅ Aprovado pelo grupo em 19/07/2026 (traços de durabilidade).

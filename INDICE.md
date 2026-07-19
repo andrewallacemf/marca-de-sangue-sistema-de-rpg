@@ -112,7 +112,7 @@
 
 **Desvantagem natural** — define: [conceitos/01-testes-e-contratestes.md](sistema-base/conceitos/01-testes-e-contratestes.md) (ações que exigem conhecimento) · aparece: [06-tracos](sistema-base/conceitos/06-tracos.md) (técnicas anulam), [tracos-base](sistema-base/listas/tracos-base.md)
 
-**Durabilidade** — define: [listas/protecoes-base.md](sistema-base/listas/protecoes-base.md#durabilidade-das-proteções) (armaduras e escudos: −1 **só quando o redutor de dano se aplica**, por região; quebra em 0) e [listas/equipamentos-base.md](sistema-base/listas/equipamentos-base.md#durabilidade-das-armas) (armas: −1 por golpe que **acerta**; quebra em 0) — **regra decidida em 19/07/2026**; os **valores** por item ainda serão preenchidos/calibrados · aparece: [03-saude-e-protecao](sistema-base/conflitos/03-saude-e-protecao.md) (redutor de dano)
+**Durabilidade** — define: [listas/protecoes-base.md](sistema-base/listas/protecoes-base.md#durabilidade-das-proteções) (armaduras e escudos: −1 **só quando o redutor de dano se aplica**, por região; quebra em 0) e [listas/equipamentos-base.md](sistema-base/listas/equipamentos-base.md#durabilidade-das-armas) (armas: −1 por golpe que **acerta**; quebra em 0) — **regra decidida em 19/07/2026**; os **valores** por item ainda serão preenchidos/calibrados · aparece: [03-saude-e-protecao](sistema-base/conflitos/03-saude-e-protecao.md) (redutor de dano), [tracos-base](sistema-base/listas/tracos-base.md) (Zeloso, Reforçado, Guarda firme), [habilidades-base-fisicas](sistema-base/listas/habilidades-base-fisicas.md) (Golpe destruidor), [habilidades-base-mentais](sistema-base/listas/habilidades-base-mentais.md) (Reparar)
 
 ## E
 
@@ -158,7 +158,11 @@
 
 **Gatilho** — define: [conflitos/02-acoes-em-conflito.md](sistema-base/conflitos/02-acoes-em-conflito.md) (condição + ação, `1 PA` de armar + `PA` da ação; PA de armar se perde; vários gatilhos "ou/ou"; condição extra na mesma ação = `+1 PA`; **gatilho de ações encadeadas** opcional, `PA` por ação, "tudo ou nada", a critério do narrador — playtest 2, 18/07/2026) · aparece: [05-habilidades](sistema-base/conceitos/05-habilidades.md) (habilidades programadas), [07-pontos-de-acao](sistema-base/conceitos/07-pontos-de-acao.md), [conflitos/05-furtividade.md](sistema-base/conflitos/05-furtividade.md), [acoes-em-combate](sistema-base/listas/acoes-em-combate.md), [tracos-base](sistema-base/listas/tracos-base.md) (condição de uso dos aspectos), [habilidades-experimentais-sociais](sistema-base/listas/habilidades-experimentais-sociais.md) (Empatia)
 
+**Golpe destruidor** — define: [listas/habilidades-base-fisicas.md](sistema-base/listas/habilidades-base-fisicas.md#golpe-destruidor) (ataque Físico que força perda extra de durabilidade na arma ou proteção do alvo; `+1`→`+4` por nível — aprovado em 19/07/2026) · aparece: [durabilidade](sistema-base/listas/equipamentos-base.md#durabilidade-das-armas)
+
 **Golpe surpresa** — define: [listas/habilidades-base-ageis.md](sistema-base/listas/habilidades-base-ageis.md#golpe-surpresa) (ataque a partir do status escondido; dano extra `+1d4`→`+1d10` por nível) · aparece: [conflitos/05-furtividade.md](sistema-base/conflitos/05-furtividade.md) (emboscada), [tracos-base](sistema-base/listas/tracos-base.md) (combina com Emboscador)
+
+**Guarda firme (aspecto)** — define: [listas/tracos-base.md](sistema-base/listas/tracos-base.md#guarda-firme) (defender com guarda levantada não gasta durabilidade da arma/escudo; requer Maestria em deflexão ou escudo — aprovado em 19/07/2026) · aparece: [durabilidade](sistema-base/listas/protecoes-base.md#durabilidade-das-proteções)
 
 **Guarda (levantar guarda)** — define: [conflitos/02-acoes-em-conflito.md](sistema-base/conflitos/02-acoes-em-conflito.md) (**levantar guarda** / entrar em defensiva é a **ação**; **postura defensiva** é o **estado** resultante — decisão de 11/07/2026; custos engajado/não engajado) · aparece: [01-testes-e-contratestes](sistema-base/conceitos/01-testes-e-contratestes.md) (exemplo), [01-conflito-fisico](sistema-base/conflitos/01-conflito-fisico.md) (postura defensiva como tipo de posicionamento definido), [acoes-em-combate](sistema-base/listas/acoes-em-combate.md) (custos), [tracos-base](sistema-base/listas/tracos-base.md) (Alerta, Blindado, Reativo, Resistente), [habilidades-base-fisicas](sistema-base/listas/habilidades-base-fisicas.md) (Quebrar guarda), [habilidades-base-gerais](sistema-base/listas/habilidades-base-gerais.md)
 
@@ -266,6 +270,10 @@
 
 **Redutor de PA (redutor de ações)** — define: [listas/protecoes-base.md](sistema-base/listas/protecoes-base.md) (coluna "Red. Ações") · aparece: [04-conflito-social](sistema-base/conflitos/04-conflito-social.md) (ignorado no conflito social)
 
+**Reforçado (aspecto)** — define: [listas/tracos-base.md](sistema-base/listas/tracos-base.md#reforçado) (durabilidade máxima das suas peças de proteção +50% — aprovado em 19/07/2026) · aparece: [durabilidade](sistema-base/listas/protecoes-base.md#durabilidade-das-proteções)
+
+**Reparar** — define: [listas/habilidades-base-mentais.md](sistema-base/listas/habilidades-base-mentais.md#reparar) (habilidade Mental fora de combate; teste que recupera durabilidade de um equipamento, 5→máx. por nível — aprovada em 19/07/2026) · aparece: [durabilidade](sistema-base/listas/equipamentos-base.md#durabilidade-das-armas)
+
 **Requisito (de traço)** — define: [conceitos/06-tracos.md](sistema-base/conceitos/06-tracos.md) (tipos: condição simples, possuir outra característica, integridade corporal; determina se o traço está **ativo** — não impede a compra: traço comprado sem requisitos fica inativo) · aparece: [05-habilidades](sistema-base/conceitos/05-habilidades.md) (requisitos de uso de habilidades), [01-experiencia-e-evolucao](sistema-base/progressao/01-experiencia-e-evolucao.md) (efeito ativo enquanto requisitos em vigor), [02-acoes-em-conflito](sistema-base/conflitos/02-acoes-em-conflito.md) (requisitos de habilidades em combate), [01-passo-a-passo](sistema-base/criacao-de-personagem/01-passo-a-passo.md) (requisitos de condição), [tracos-base](sistema-base/listas/tracos-base.md) (requisitos de uso dos aspectos; Firme → Firme aprimorado encadeados), [habilidades-base-ageis](sistema-base/listas/habilidades-base-ageis.md), [habilidades-base-fisicas](sistema-base/listas/habilidades-base-fisicas.md), [habilidades-base-mentais](sistema-base/listas/habilidades-base-mentais.md), [habilidades-base-sociais](sistema-base/listas/habilidades-base-sociais.md) (requisitos de uso)
 
 **Rerrolagem** — define: [conceitos/04-aptidoes.md](sistema-base/conceitos/04-aptidoes.md) (mecânica oficial da aptidão; fica valendo o valor que beneficia quem a usou) · aparece: [00-indice](sistema-base/conceitos/00-indice.md), [01-testes-e-contratestes](sistema-base/conceitos/01-testes-e-contratestes.md), [03-caracteristicas](sistema-base/conceitos/03-caracteristicas.md), [05-habilidades](sistema-base/conceitos/05-habilidades.md), [01-conflito-fisico](sistema-base/conflitos/01-conflito-fisico.md) (iniciativa), [03-saude-e-protecao](sistema-base/conflitos/03-saude-e-protecao.md), [01-experiencia-e-evolucao](sistema-base/progressao/01-experiencia-e-evolucao.md), [01-passo-a-passo](sistema-base/criacao-de-personagem/01-passo-a-passo.md)
@@ -311,3 +319,7 @@
 ## X
 
 **XP** → ver **Experiência** (sigla oficial desde 11/07/2026: **`exp.`**, minúscula e com ponto — as grafias `Exp.`, `EXP` e `xp` foram unificadas)
+
+## Z
+
+**Zeloso (aspecto)** — define: [listas/tracos-base.md](sistema-base/listas/tracos-base.md#zeloso) (seus equipamentos perdem durabilidade na metade do ritmo — aprovado em 19/07/2026) · aparece: [durabilidade](sistema-base/listas/equipamentos-base.md#durabilidade-das-armas)

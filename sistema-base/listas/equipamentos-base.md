@@ -23,6 +23,8 @@ mais ser usada até ser reparada. Golpes que **erram** não gastam durabilidade.
 > ⚠️ A DEFINIR: os **valores** de durabilidade por arma ainda não estão preenchidos nas tabelas
 > (só a regra está fechada). Calibrar no playtest.
 
+> 💡 **Traços e habilidades que afetam a durabilidade:** [Zeloso](tracos-base.md#zeloso) (desgasta metade), [Reforçado](tracos-base.md#reforçado) (proteção +50%), [Guarda firme](tracos-base.md#guarda-firme) (defender não desgasta), [Reparar](habilidades-base-mentais.md#reparar) (recupera durabilidade) e [Golpe destruidor](habilidades-base-fisicas.md#golpe-destruidor) (força perda extra no alvo).
+
 **Versátil (`VERS.`):** propriedade **exclusiva de armas médias** — a arma pode ser usada com uma ou duas mãos e ganha **+`1d4` de dano quando empunhada com as duas mãos**. A **maestria em armas versáteis** permite **alternar a empunhadura sem gastar `PA`** durante o uso da arma.
 
 ## Alcance ideal e alcance não ideal
