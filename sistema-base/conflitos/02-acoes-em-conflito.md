@@ -131,23 +131,9 @@ Uma vez utilizada, a habilidade fica indisponível até que uma situação permi
 
 ## Movimentação
 
-**Teto de movimentação por turno: `7 PA`.** Independentemente de quantos `PA` o personagem tem,
-ele só pode gastar **até `7 PA` por turno em deslocamento comum** (o `PA` gasto **diretamente
-para se mover**). Esse teto:
-
-- **Não** conta o deslocamento que vem como **efeito de habilidades ou traços** (ex.: Investida,
-  Disparada, Maratonista) — só o `PA` gasto diretamente para andar;
-- **Não** se refere a quantos **espaços** você percorre: com traços/habilidades você pode andar
-  mais espaços, e com terreno difícil ou outras condições pode andar menos — o teto é sobre o
-  **`PA` gasto para mover**, que é sempre no máximo 7;
-- **Não** pode ser furado gastando [fadiga](../conceitos/08-fadiga.md) para comprar `PA`: fadiga
-  não eleva o teto de movimentação.
-- Quando uma regra fala em **"metade da movimentação"**, essa metade é **`3`** (metade de 7
-  **arredondada para baixo**).
-- O aspecto **[Corredor](../listas/tracos-base.md#corredor)** dobra esse teto.
-
-> ✅ Playtest 2 (18/07/2026): teto de movimentação fixado em **`7 PA` por turno** (metade = 3).
-> Ver [relatório do playtest 2](../../notas-de-design/playtests/2026-07-18-playtest-cenario-2.md).
+> 💡 **Teto de movimentação:** um personagem só pode gastar **até `7 PA` por turno em
+> deslocamento** (metade = 3; a fadiga não fura esse teto; o aspecto Corredor o dobra). A regra
+> completa fica em **[Pontos de ação](../conceitos/07-pontos-de-acao.md#pontos-de-ação-iniciais)**.
 
 Apesar de ser possível utilizar os dois tipos de malha, o terreno dividido em quadrados apresenta algumas peculiaridades que não existem quando o terreno é dividido em hexágonos, por isso necessita de regras específicas.
 

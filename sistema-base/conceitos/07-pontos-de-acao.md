@@ -17,7 +17,13 @@ Para ver a lista de ações básicas disponíveis e a lista de habilidades bási
 
 > 💡 No começo de uma campanha, **recomenda-se que cada personagem comece com `10 PA`.**
 
-Todo personagem só pode gastar até **`7 PA` em locomoção por turno** (ou seja, andar no máximo 7 metros). Para elevar esse limite é necessário adquirir habilidade específica para isso. Se o deslocamento é maior por conta de habilidade, ele não é contabilizado no limite porque o custo foi gasto em habilidade e não diretamente em deslocamento.
+Todo personagem só pode gastar até **`7 PA` em locomoção por turno** (ou seja, andar no máximo 7 metros). Para elevar esse limite é necessário adquirir habilidade específica para isso (o aspecto **[Corredor](../listas/tracos-base.md#corredor)** dobra o teto). Se o deslocamento é maior por conta de habilidade ou traço, ele **não** é contabilizado no limite, porque o custo foi gasto na habilidade e não diretamente em deslocamento.
+
+- **`PA` gasto diretamente para mover** é o que conta para o teto; quantos **espaços** isso rende varia (terreno difícil consome mais `PA` por espaço; traços/habilidades podem render mais espaços).
+- **[Fadiga](08-fadiga.md) não eleva o teto:** comprar `PA` extra com fadiga não permite ultrapassar os `7 PA` de locomoção.
+- Quando uma regra fala em **"metade da movimentação"**, essa metade é **`3`** (metade de 7 arredondada para baixo).
+
+> ✅ Playtest 2 (18/07/2026): o teto de movimentação (`7 PA`/turno; metade = 3; fadiga não fura) foi confirmado em mesa. Ver [relatório do playtest 2](../../notas-de-design/playtests/2026-07-18-playtest-cenario-2.md).
 
 **Piso de `PA`:** penalidades (acúmulo de [fadiga](08-fadiga.md), redutores de `PA` de armaduras etc.) nunca reduzem um personagem a menos de **3 `PA` por turno** — a não ser que ele esteja inconsciente.
 
