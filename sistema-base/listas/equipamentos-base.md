@@ -20,8 +20,38 @@ mais ser usada até ser reparada. Golpes que **erram** não gastam durabilidade.
 > ✅ Decidido em 19/07/2026: a **regra** de perda de durabilidade das armas (−1 por golpe que
 > acerta; quebra em 0) foi definida pelo grupo.
 
-> ⚠️ A DEFINIR: os **valores** de durabilidade por arma ainda não estão preenchidos nas tabelas
-> (só a regra está fechada). Calibrar no playtest.
+### Valores de durabilidade (💡 proposta para calibrar)
+
+Durabilidade-base por **peso da arma** — calibrada contra a durabilidade das
+[proteções](protecoes-base.md#durabilidade-das-proteções) (armadura por peça: leve 10 / média 25 / pesada 50; escudos 6–25):
+
+| Peso da arma | Durabilidade-base |
+|---|:---:|
+| **Leve** | **`20`** |
+| **Média** | **`30`** |
+| **Pesada** | **`40`** |
+
+**Lógica da calibragem:** a **armadura** é o objeto mais resistente (10/25/50), mas só perde
+durabilidade quando **absorve** um golpe; a **arma** fica no meio (20/30/40) e perde a cada
+**golpe que acerta** (desgasta mais rápido — lâmina cega, cabo racha); o **escudo** é o mais
+sacrificial (6–25) e perde a cada bloqueio. Assim, na prática, **espada precisa de manutenção
+antes da armadura**, o que é coerente e realista.
+
+**Ajustes por caso:**
+
+- **Armas improvisadas:** muito frágeis — **leve `5` · média `8` · pesada `10`**.
+- **Rede:** frágil e descartável — **`10`**.
+- **Armas à distância (arcos, bestas):** a arma **não perde durabilidade a cada disparo** (o
+  desgaste do tiro recai sobre a **munição**); a durabilidade só cai sob **estresse** (uso muito
+  intenso, queda, clima, corda arrebentando), a critério do narrador. Valor por peso, como
+  referência de robustez.
+- **Armas de fogo (pólvora):** valor por peso como referência; o **módulo do Colapso** pode
+  sobrepor com regra própria (encravamento/superaquecimento).
+- **Armas de haste flexível** (chicote, corrente, kusarigama): não lascam como uma lâmina — o
+  narrador pode ignorar/dobrar o desgaste conforme a cena.
+
+> ⚠️ A DEFINIR: **aprovar/ajustar** estes valores no playtest (a *regra* de perda já está fechada;
+> os *números* acima são proposta).
 
 > 💡 **Traços e habilidades que afetam a durabilidade:** [Zeloso](tracos-base.md#zeloso) (desgasta metade), [Reforçado](tracos-base.md#reforçado) (proteção +50%), [Guarda firme](tracos-base.md#guarda-firme) (defender não desgasta), [Reparar](habilidades-base-mentais.md#reparar) (recupera durabilidade) e [Golpe destruidor](habilidades-base-fisicas.md#golpe-destruidor) (força perda extra no alvo).
 
@@ -81,42 +111,42 @@ O dano de **qualquer arma** — tabelada ou não — é aferido cruzando o **tam
 
 | **Item** | **Peso / Ações** | **Categoria / Propriedades** | **Alc. ideal** | **Dano** | **Preço suger.** | **Durabilidade** |
 | --- | --- | --- | --- | --- | --- | --- |
-| Ataque desarmado | **`1 PA`** | **`CONT.`** | **`1m`** | **`1`** | --- |  |
-| Manoplas com cravos, Adaga de soco, Tekkokagi, Rapieira | **`Leve`**<br>**`2 PA`** | **`CURT.`** **`PERF.`** | **`1m`** | **`1d4`** | **`6 moedas`** |  |
-| Shuriken | **`Leve`**<br>**`2 PA`** | **`CURT.`** **`PERF.` `ARRE.`** | **`2m a 5m`** | **`1d4`** | **`4 moedas`** |  |
-| Faca, Foice de mão | **`Leve`**<br>**`2 PA`** | **`CURT.`** **`CORT.` `PERF.`** | **`1m`** | **`1d4`** | **`3 moedas`** |  |
-| Bastão curto, Tonfa, Martelo Curto | **`Leve`**<br>**`2 PA`** | **`CURT.`** **`CONT.` `ARRE.`** | **`1m`** / **`2m a 5m`** | **`1d4`** | **`4 moedas`** |  |
-| Adaga, Kukri, Kunai | **`Leve`**<br>**`2 PA`** | **`CURT.`** **`CORT.` `PERF.` `ARRE.`** | **`1m`** / **`2m a 5m`** | **`1d4`** | **`6 moedas`** |  |
-| Chakram | **`Leve`**<br>**`2 PA`** | **`CURT.`** **`CORT.` `ARRE.`** | **`1m`** / **`2m a 5m`** | **`1d4`** | **`20 moedas`** |  |
-| Escudo de arremesso | **`Leve`**<br>**`2 PA`** | **`CURT.`** **`CONT.` `DEFL.`** **`ARRE.`** | **`2m a 5m`** | **`1d4`** | **`12 moedas`** |  |
-| Facão, Machete, Peixeira | **`Média`**<br>**`4 PA`** | **`CURT.`** **`CORT.`** | **`1m`** | **`1d8`** | **`4 moedas`** |  |
-| Espada Curta, Foice curta, Cimitarra, Falcione, Khopesh | **`Média`**<br>**`4 PA`** | **`CURT.`** **`CORT.` `PERF.`** | **`1m`** | **`1d8` `CORT.` · `1d6` `PERF.`** | **`8 moedas`** |  |
-| Lança, Seta | **`Média`**<br>**`4 PA`** | **`LONG.`** **`PERF.` `ARRE.`** | **`2m`** | **`1d6`** | **`8 moedas`** |  |
-| Gato de nove caudas | **`Média`**<br>**`4 PA`** | **`CURT.`** **`CORT.` `AGAR.`** | **`1m`** | **`1d8`** | **`32 moedas`** |  |
-| Chicote, Corrente | **`Média`**<br>**`4 PA`** | **`LONG.`** **`CORT.` `AGAR.`** | **`3m a 4m`** | **`1d8`** | **`12 moedas`** |  |
-| Machadinha | **`Média`**<br>**`4 PA`** | **`CURT.`** **`CORT.` `ARRE.`** | **`1m`** / **`2m a 4m`** | **`1d8`** | **`6 moedas`** |  |
-| Boomerangue (Se não acerta um alvo, volta) | **`Média`**<br>**`4 PA`** | **`CURT.`** **`CONT.` `ARRE.`** | **`1m`** / **`2m a 5m`** | **`2d4`** | **`12 moedas`** |  |
-| Tridente, Brandistock | **`Média`**<br>**`4 PA`** | **`LONG.`** **`PERF.` `VERS.`** | **`2m a 3m`** | **`1d6`** (+`1d4` a 2 mãos) | **`12 moedas`** |  |
-| Bastão médio, Nunchaku, Martelo Médio | **`Média`**<br>**`4 PA`** | **`CURT.`** **`CONT.` `VERS.`** | **`1m`** | **`2d4`** (+`1d4` a 2 mãos) | **`8 moedas`** |  |
-| Rede | **`Média`**<br>**`4 PA`** | **`LONG.`** **`AGAR.`** **`ARRE.`** | **`1m a 5m`** | **`0`** | **`4 moedas`** |  |
-| Picareta de mão | **`Média`**<br>**`4 PA`** | **`CURT.`** **`PERF.` `VERS.`** | **`1m`** | **`1d6`** (+`1d4` a 2 mãos) | **`5 moedas`** |  |
-| Machado | **`Média`**<br>**`4 PA`** | **`CURT.`** **`CORT.` `VERS.` `ARRE.`** | **`1m`** / **`2m a 4m`** | **`1d8`** (+`1d4` a 2 mãos) | **`8 moedas`** |  |
-| Clava, Maça | **`Média`**<br>**`4 PA`** | **`CURT.`** **`CONT.`** **`PERF.`** **`VERS.`** | **`1m`** | **`2d4` `CONT.` · `1d6` `PERF.`** (+`1d4` a 2 mãos) | **`6 moedas`** |  |
-| Mangual, Maça estrela, Espada Longa, Bastarda, Sabre, Katana | **`Média`**<br>**`4 PA`** | **`LONG.`** **`CORT.`** **`PERF.` `VERS.`** | **`1m a 2m`** | **`1d8` `CORT.` · `1d6` `PERF.`** (+`1d4` a 2 mãos) | **`20 moedas`** |  |
-| Kusarigama, Double-chained Kama | **`Média`**<br>**`4 PA`** | **`LONG.`** **`CORT.` `CONT.` `AGAR.` `ARRE.`** | **`3m a 4m`** | **`1d8` `CORT.` · `2d4` `CONT.`** | **`30 moedas`** |  |
-| Bastão grande, Setsukon | **`Pesada`**<br>**`6 PA`** | **`LONG.`** **`CONT.`** | **`1m a 2m`** | **`3d4`** | **`6 moedas`** |  |
-| Machado Pesado, Machado de Batalha | **`Pesada`**<br>**`6 PA`** | **`LONG.`** **`CORT.`** | **`1m a 2m`** | **`1d12`** | **`10 moedas`** |  |
-| Picareta | **`Pesada`**<br>**`6 PA`** | **`CURT.`** **`PERF.`** | **`1m`** | **`1d8`** | **`6 moedas`** |  |
-| Martelo Grande, Martelo de batalha | **`Pesada`**<br>**`6 PA`** | **`LONG.`** **`CONT.`** | **`1m a 2m`** | **`3d4`** | **`14 moedas`** |  |
-| Alabarda | **`Pesada`**<br>**`6 PA`** | **`LONG.`** **`PERF.`** | **`2m a 3m`** | **`1d8`** | **`16 moedas`** |  |
-| Lança montada (necessário os traços "Montaria" e "Justa") ⚠️ | **`Pesada`**<br>**`6 PA`** | **`LONG.`** **`PERF.`** | **`3m`** | **`1d8`** | **`9 moedas`** |  |
-| Mangual pesado, Mangual Atroz, Maça Pesada, Clava pesada, Esp. de duas lâminas ⚠️ | **`Pesada`**<br>**`6 PA`** | **`LONG.`** **`CORT.`** **`PERF.`** | **`2m`** | **`1d12` `CORT.` · `1d8` `PERF.`** | **`14 moedas`** |  |
-| Lança longa | **`Pesada`**<br>**`6 PA`** | **`LONG.`** **`PERF.`** **`ARRE.`** | **`2m`** / **`2m a 3m`** | **`1d8`** | **`10 moedas`** |  |
-| Espada Larga, montante, Flamberge, Foice ceifadora | **`Pesada`**<br>**`6 PA`** | **`LONG.`** **`CORT.`** **`PERF.`** | **`2m`** | **`1d12` `CORT.` · `1d8` `PERF.`** | **`12 moedas`** |  |
-| Corrente de espinhos | **`Pesada`**<br>**`6 PA`** | **`LONG.`** **`CORT.`** **`AGAR.`** | **`3m a 4m`** | **`1d12`** | **`16 moedas`** |  |
-| Arma improvisada leve | **`Leve`** | **`CONT.`** |  | **`2`** |  |  |
-| Arma improvisada média | **`Média`** | **`CONT.`** |  | **`3`** |  |  |
-| Arma improvisada pesada | **`Pesada`** | **`CONT.`** |  | **`4`** |  |  |
+| Ataque desarmado | **`1 PA`** | **`CONT.`** | **`1m`** | **`1`** | --- | — |
+| Manoplas com cravos, Adaga de soco, Tekkokagi, Rapieira | **`Leve`**<br>**`2 PA`** | **`CURT.`** **`PERF.`** | **`1m`** | **`1d4`** | **`6 moedas`** | **`20`** |
+| Shuriken | **`Leve`**<br>**`2 PA`** | **`CURT.`** **`PERF.` `ARRE.`** | **`2m a 5m`** | **`1d4`** | **`4 moedas`** | **`20`** |
+| Faca, Foice de mão | **`Leve`**<br>**`2 PA`** | **`CURT.`** **`CORT.` `PERF.`** | **`1m`** | **`1d4`** | **`3 moedas`** | **`20`** |
+| Bastão curto, Tonfa, Martelo Curto | **`Leve`**<br>**`2 PA`** | **`CURT.`** **`CONT.` `ARRE.`** | **`1m`** / **`2m a 5m`** | **`1d4`** | **`4 moedas`** | **`20`** |
+| Adaga, Kukri, Kunai | **`Leve`**<br>**`2 PA`** | **`CURT.`** **`CORT.` `PERF.` `ARRE.`** | **`1m`** / **`2m a 5m`** | **`1d4`** | **`6 moedas`** | **`20`** |
+| Chakram | **`Leve`**<br>**`2 PA`** | **`CURT.`** **`CORT.` `ARRE.`** | **`1m`** / **`2m a 5m`** | **`1d4`** | **`20 moedas`** | **`20`** |
+| Escudo de arremesso | **`Leve`**<br>**`2 PA`** | **`CURT.`** **`CONT.` `DEFL.`** **`ARRE.`** | **`2m a 5m`** | **`1d4`** | **`12 moedas`** | **`20`** |
+| Facão, Machete, Peixeira | **`Média`**<br>**`4 PA`** | **`CURT.`** **`CORT.`** | **`1m`** | **`1d8`** | **`4 moedas`** | **`30`** |
+| Espada Curta, Foice curta, Cimitarra, Falcione, Khopesh | **`Média`**<br>**`4 PA`** | **`CURT.`** **`CORT.` `PERF.`** | **`1m`** | **`1d8` `CORT.` · `1d6` `PERF.`** | **`8 moedas`** | **`30`** |
+| Lança, Seta | **`Média`**<br>**`4 PA`** | **`LONG.`** **`PERF.` `ARRE.`** | **`2m`** | **`1d6`** | **`8 moedas`** | **`30`** |
+| Gato de nove caudas | **`Média`**<br>**`4 PA`** | **`CURT.`** **`CORT.` `AGAR.`** | **`1m`** | **`1d8`** | **`32 moedas`** | **`30`** |
+| Chicote, Corrente | **`Média`**<br>**`4 PA`** | **`LONG.`** **`CORT.` `AGAR.`** | **`3m a 4m`** | **`1d8`** | **`12 moedas`** | **`30`** |
+| Machadinha | **`Média`**<br>**`4 PA`** | **`CURT.`** **`CORT.` `ARRE.`** | **`1m`** / **`2m a 4m`** | **`1d8`** | **`6 moedas`** | **`30`** |
+| Boomerangue (Se não acerta um alvo, volta) | **`Média`**<br>**`4 PA`** | **`CURT.`** **`CONT.` `ARRE.`** | **`1m`** / **`2m a 5m`** | **`2d4`** | **`12 moedas`** | **`30`** |
+| Tridente, Brandistock | **`Média`**<br>**`4 PA`** | **`LONG.`** **`PERF.` `VERS.`** | **`2m a 3m`** | **`1d6`** (+`1d4` a 2 mãos) | **`12 moedas`** | **`30`** |
+| Bastão médio, Nunchaku, Martelo Médio | **`Média`**<br>**`4 PA`** | **`CURT.`** **`CONT.` `VERS.`** | **`1m`** | **`2d4`** (+`1d4` a 2 mãos) | **`8 moedas`** | **`30`** |
+| Rede | **`Média`**<br>**`4 PA`** | **`LONG.`** **`AGAR.`** **`ARRE.`** | **`1m a 5m`** | **`0`** | **`4 moedas`** | **`10`** |
+| Picareta de mão | **`Média`**<br>**`4 PA`** | **`CURT.`** **`PERF.` `VERS.`** | **`1m`** | **`1d6`** (+`1d4` a 2 mãos) | **`5 moedas`** | **`30`** |
+| Machado | **`Média`**<br>**`4 PA`** | **`CURT.`** **`CORT.` `VERS.` `ARRE.`** | **`1m`** / **`2m a 4m`** | **`1d8`** (+`1d4` a 2 mãos) | **`8 moedas`** | **`30`** |
+| Clava, Maça | **`Média`**<br>**`4 PA`** | **`CURT.`** **`CONT.`** **`PERF.`** **`VERS.`** | **`1m`** | **`2d4` `CONT.` · `1d6` `PERF.`** (+`1d4` a 2 mãos) | **`6 moedas`** | **`30`** |
+| Mangual, Maça estrela, Espada Longa, Bastarda, Sabre, Katana | **`Média`**<br>**`4 PA`** | **`LONG.`** **`CORT.`** **`PERF.` `VERS.`** | **`1m a 2m`** | **`1d8` `CORT.` · `1d6` `PERF.`** (+`1d4` a 2 mãos) | **`20 moedas`** | **`30`** |
+| Kusarigama, Double-chained Kama | **`Média`**<br>**`4 PA`** | **`LONG.`** **`CORT.` `CONT.` `AGAR.` `ARRE.`** | **`3m a 4m`** | **`1d8` `CORT.` · `2d4` `CONT.`** | **`30 moedas`** | **`30`** |
+| Bastão grande, Setsukon | **`Pesada`**<br>**`6 PA`** | **`LONG.`** **`CONT.`** | **`1m a 2m`** | **`3d4`** | **`6 moedas`** | **`40`** |
+| Machado Pesado, Machado de Batalha | **`Pesada`**<br>**`6 PA`** | **`LONG.`** **`CORT.`** | **`1m a 2m`** | **`1d12`** | **`10 moedas`** | **`40`** |
+| Picareta | **`Pesada`**<br>**`6 PA`** | **`CURT.`** **`PERF.`** | **`1m`** | **`1d8`** | **`6 moedas`** | **`40`** |
+| Martelo Grande, Martelo de batalha | **`Pesada`**<br>**`6 PA`** | **`LONG.`** **`CONT.`** | **`1m a 2m`** | **`3d4`** | **`14 moedas`** | **`40`** |
+| Alabarda | **`Pesada`**<br>**`6 PA`** | **`LONG.`** **`PERF.`** | **`2m a 3m`** | **`1d8`** | **`16 moedas`** | **`40`** |
+| Lança montada (necessário os traços "Montaria" e "Justa") ⚠️ | **`Pesada`**<br>**`6 PA`** | **`LONG.`** **`PERF.`** | **`3m`** | **`1d8`** | **`9 moedas`** | **`40`** |
+| Mangual pesado, Mangual Atroz, Maça Pesada, Clava pesada, Esp. de duas lâminas ⚠️ | **`Pesada`**<br>**`6 PA`** | **`LONG.`** **`CORT.`** **`PERF.`** | **`2m`** | **`1d12` `CORT.` · `1d8` `PERF.`** | **`14 moedas`** | **`40`** |
+| Lança longa | **`Pesada`**<br>**`6 PA`** | **`LONG.`** **`PERF.`** **`ARRE.`** | **`2m`** / **`2m a 3m`** | **`1d8`** | **`10 moedas`** | **`40`** |
+| Espada Larga, montante, Flamberge, Foice ceifadora | **`Pesada`**<br>**`6 PA`** | **`LONG.`** **`CORT.`** **`PERF.`** | **`2m`** | **`1d12` `CORT.` · `1d8` `PERF.`** | **`12 moedas`** | **`40`** |
+| Corrente de espinhos | **`Pesada`**<br>**`6 PA`** | **`LONG.`** **`CORT.`** **`AGAR.`** | **`3m a 4m`** | **`1d12`** | **`16 moedas`** | **`40`** |
+| Arma improvisada leve | **`Leve`** | **`CONT.`** |  | **`2`** |  | **`5`** |
+| Arma improvisada média | **`Média`** | **`CONT.`** |  | **`3`** |  | **`8`** |
+| Arma improvisada pesada | **`Pesada`** | **`CONT.`** |  | **`4`** |  | **`10`** |
 
 *⚠️ A revisar: a **lança montada** (perfurante pesada) caiu de 10 para `1d8` pela matriz — conferir se merece exceção como arma de carga. O grupo **"Mangual pesado… Esp. de duas lâminas"** tem nome contundente mas só lista `CORT.`/`PERF.` — alinhar as propriedades (se receber `CONT.`, ganha também `3d4`). Itens improvisados usam dano fixo a definir.*
 
@@ -124,14 +154,14 @@ O dano de **qualquer arma** — tabelada ou não — é aferido cruzando o **tam
 
 | **Item** | **Tipo e Ações** | **Alc. ideal** | **Munição (consultar dano na tabela de munições)** | **Preço sugerido** | **Durabilidade** |
 | --- | --- | --- | --- | --- | --- |
-| Funda / Zarabatana | **`Leve`**<br>**`2 PA`** | **`4m a 7m`** | Pedras / Dardo | **`5 moedas`** |  |
-| Arco curto, Besta de mão | **`Leve`**<br>**`2 PA`** | **`6m a 9m`** | Flecha ponta de madeira | **`20 moedas`** |  |
-| Arco composto, Besta leve | **`Média`**<br>**`4 PA`** | **`7m a 10m`** | Flecha ponta de madeira, Flecha ponta de ferro | **`30 moedas`** |  |
-| Arco longo, Besta pesada | **`Pesada`**<br>**`6 PA`** | **`8m a 12m`** | Flecha ponta de ferro | **`40 moedas`** |  |
-| Besta de repetição | **`Pesada`**<br>**`6 PA`** | **`7m a 10m`** | Flecha ponta de ferro (x3) | **`80 moedas`** |  |
-| Pistola simples | **`Leve`**<br>**`2 PA`** | **`2m a 15m`** | Bala de pólvora | **`220 moedas`** |  |
-| Espingarda, Arquebus, Handgonne | **`Média`**<br>**`4 PA`** | **`1m a 5m`** | Bala de pólvora (x2) | **`260 moedas`** |  |
-| Rifle, Mosquete | **`Pesada`**<br>**`6 PA`** | **`3m a 20m`** | Bala de pólvora | **`340 moedas`** |  |
+| Funda / Zarabatana | **`Leve`**<br>**`2 PA`** | **`4m a 7m`** | Pedras / Dardo | **`5 moedas`** | **`20`** |
+| Arco curto, Besta de mão | **`Leve`**<br>**`2 PA`** | **`6m a 9m`** | Flecha ponta de madeira | **`20 moedas`** | **`20`** |
+| Arco composto, Besta leve | **`Média`**<br>**`4 PA`** | **`7m a 10m`** | Flecha ponta de madeira, Flecha ponta de ferro | **`30 moedas`** | **`30`** |
+| Arco longo, Besta pesada | **`Pesada`**<br>**`6 PA`** | **`8m a 12m`** | Flecha ponta de ferro | **`40 moedas`** | **`40`** |
+| Besta de repetição | **`Pesada`**<br>**`6 PA`** | **`7m a 10m`** | Flecha ponta de ferro (x3) | **`80 moedas`** | **`40`** |
+| Pistola simples | **`Leve`**<br>**`2 PA`** | **`2m a 15m`** | Bala de pólvora | **`220 moedas`** | **`20`** |
+| Espingarda, Arquebus, Handgonne | **`Média`**<br>**`4 PA`** | **`1m a 5m`** | Bala de pólvora (x2) | **`260 moedas`** | **`30`** |
+| Rifle, Mosquete | **`Pesada`**<br>**`6 PA`** | **`3m a 20m`** | Bala de pólvora | **`340 moedas`** | **`40`** |
 
 ## Lista base de munições
 
