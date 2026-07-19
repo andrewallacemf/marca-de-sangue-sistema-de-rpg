@@ -71,6 +71,7 @@ valendo **apenas para ataques desarmados** (ex.: soco). Viabiliza builds de luta
 | --- | --- |
 | Empacado | **`2 exp.`** |
 | Emboscador | **`4 exp.`** |
+| Espreitador | **`4 exp.`** |
 | Lépido | **`3 exp.`** |
 | Resistente | **`3 exp.`** |
 | Protetor | **`4 exp.`** |
@@ -205,6 +206,29 @@ Dobra o **resultado** do dano do ataque (rola-se o dano normalmente e multiplica
 
 - Estar escondido de todos os oponentes.
 - Estar usando armas leves.
+
+### Espreitador
+
+**Custo de compra:** `4 exp.`
+
+#### Descrição
+
+Permite usar a ação **[Esconder-se](../conflitos/05-furtividade.md#esconder-se)** como uma
+**reação** (consumindo a reação da rodada e pagando o custo em [fadiga](../conceitos/08-fadiga.md),
+como toda reação). Sem este aspecto, esconder-se só pode ser feito como ação, no próprio turno.
+
+#### Condição de uso (gatilho)
+
+- Estar prestes a ser notado por um oponente (ou outra situação em que se esconder fora do turno
+  faça sentido, a critério do narrador).
+
+#### Requisitos de uso
+
+- Valem os pré-requisitos normais de [Esconder-se](../conflitos/05-furtividade.md#esconder-se)
+  (estar fora do campo de visão dos inimigos, salvo habilidade que diga o contrário).
+
+> ✅ Playtest 2 (18/07/2026): aspecto criado para permitir esconder-se como reação (a ação
+> padrão custa `2 PA` no turno). Ver [relatório do playtest 2](../../notas-de-design/playtests/2026-07-18-playtest-cenario-2.md).
 
 ### Empacado
 

@@ -194,7 +194,10 @@ Realiza um movimento em linha reta na direção escolhida.
 
 ### Descrição
 
-Realiza um golpe surpresa que causa dano adicional.
+Ao atacar a partir do **[status escondido](../conflitos/05-furtividade.md#esconder-se)**, o golpe
+causa **dano adicional** — rolado **junto** com o dano normal da arma. O dado extra **aumenta com
+o nível** da habilidade, de **`+1d4`** (nível 1) a **`+1d10`** (nível 4), conforme a progressão
+abaixo.
 
 ### Requisitos de uso
 
@@ -204,11 +207,19 @@ Realiza um golpe surpresa que causa dano adicional.
 
 ### Progressão
 
-1. Causa **`1d4`** de dano extra.
-2. Causa **`1d6`** de dano extra.
-3. Causa **`1d8`** de dano extra.
-4. Causa **`1d10`** de dano extra.
+| Nível | Dano extra |
+|:---:|:---:|
+| 1 | **`+1d4`** |
+| 2 | **`+1d6`** |
+| 3 | **`+1d8`** |
+| 4 | **`+1d10`** |
 
 ### Observações
 
-- Ao jogar contra outro jogador, você deve ser bem-sucedido em um teste ágil de "esconder-se" contra o personagem do oponente para que a habilidade possa ser utilizada.
+- O dano extra é **somado** ao dano da arma (ex.: no nível 3, uma adaga `1d4` que acerta escondido
+  causa `1d4` + `1d8`).
+- Contra outro personagem, você precisa estar de fato escondido dele — ou seja, ter sido
+  bem-sucedido na sua [furtividade](../conflitos/05-furtividade.md#esconder-se) (o oponente não te
+  percebeu) para que a habilidade possa ser usada.
+- Combina com **[Emboscador](tracos-base.md#emboscador)** (que dobra o resultado do dano ao atacar
+  pelas costas escondido, com arma leve).

@@ -131,6 +131,24 @@ Uma vez utilizada, a habilidade fica indisponível até que uma situação permi
 
 ## Movimentação
 
+**Teto de movimentação por turno: `7 PA`.** Independentemente de quantos `PA` o personagem tem,
+ele só pode gastar **até `7 PA` por turno em deslocamento comum** (o `PA` gasto **diretamente
+para se mover**). Esse teto:
+
+- **Não** conta o deslocamento que vem como **efeito de habilidades ou traços** (ex.: Investida,
+  Disparada, Maratonista) — só o `PA` gasto diretamente para andar;
+- **Não** se refere a quantos **espaços** você percorre: com traços/habilidades você pode andar
+  mais espaços, e com terreno difícil ou outras condições pode andar menos — o teto é sobre o
+  **`PA` gasto para mover**, que é sempre no máximo 7;
+- **Não** pode ser furado gastando [fadiga](../conceitos/08-fadiga.md) para comprar `PA`: fadiga
+  não eleva o teto de movimentação.
+- Quando uma regra fala em **"metade da movimentação"**, essa metade é **`3`** (metade de 7
+  **arredondada para baixo**).
+- O aspecto **[Corredor](../listas/tracos-base.md#corredor)** dobra esse teto.
+
+> ✅ Playtest 2 (18/07/2026): teto de movimentação fixado em **`7 PA` por turno** (metade = 3).
+> Ver [relatório do playtest 2](../../notas-de-design/playtests/2026-07-18-playtest-cenario-2.md).
+
 Apesar de ser possível utilizar os dois tipos de malha, o terreno dividido em quadrados apresenta algumas peculiaridades que não existem quando o terreno é dividido em hexágonos, por isso necessita de regras específicas.
 
 Quando diz respeito a movimentação em uma malha hexagonal, todos os espaços adjacentes dividem lados inteiros com o espaço onde o personagem está. Assim, existem 6 opções de direção para seguir e o conceito de “andar na diagonal” não existe. Portanto, a regra geral de movimentação em terrenos hexagonais pode ser resumido como “cada espaço exige `1 PA` para movimentação e equivale a 1 metro”.
@@ -177,7 +195,56 @@ O jogador pode gastar pontos de ação em seu turno para atrasar sua posição n
 
 ## Criar um gatilho
 
-É possível gastar pontos de ação para programar gatilhos, que são ações que podem ser desencadeadas caso algo específico aconteça. Todo gatilho custa **`1 PA`** + **`PA`** da ação, arma ou habilidade programada. Caso a situação do gatilho não aconteça até o próximo turno do jogador, o personagem perde os pontos programados e o gatilho deixa de existir.
+É possível gastar pontos de ação para programar **gatilhos**: ações guardadas que **disparam
+fora do seu turno** caso uma situação específica aconteça. Diferente da [reação](#reação) (que é
+um reflexo de graça), o gatilho **é pago com `PA`** — e é justamente por gastar esse recurso que
+ele pode usar **aptidões e habilidades**, que a reação não pode.
+
+**Estrutura — condição + ação.** Um gatilho é sempre *"se **[condição]**, então **[uma ação]**"*.
+
+**Custo.** Cada gatilho custa **`1 PA` para armar** + o **`PA` da ação/arma/habilidade** que ele
+vai desencadear.
+
+- O **`PA` de armar (`1 PA`) se perde** sempre, tenha o gatilho disparado ou não.
+- O **`PA` da ação guardada** fica reservado para aquele gatilho; pode ser reaproveitado entre
+  gatilhos diferentes, mas **não se acumula** (o mesmo `PA` não serve a dois disparos ao mesmo
+  tempo).
+
+**Validade.** Se a condição não acontecer até o **seu próximo turno**, o gatilho **deixa de
+existir** e os pontos guardados nele se perdem.
+
+**Vários gatilhos ("ou, ou, ou").** Você pode armar **quantos gatilhos quiser**, desde que tenha
+`PA` para cada um. Eles funcionam de forma independente: *este* gatilho faz *isto*, **ou** *aquele*
+faz *aquilo*. Ex.: um arqueiro pode armar um gatilho por inimigo ("se o inimigo A avançar, atiro
+nele; se o B avançar, atiro nele") — são gatilhos separados, cada um com o seu custo.
+
+**Condição extra na mesma ação custa `+1 PA`.** Querer que a **mesma ação** dispare por **mais de
+uma condição** (ex.: *"se eu vir o sinal **ou** for notado, eu ataco"*) custa **`+1 PA`** — na
+prática, é como armar um segundo gatilho para a mesma ação.
+
+### Gatilho de ações encadeadas (opcional)
+
+O **padrão** é que cada gatilho desencadeie **uma única ação simples** (não tão instantânea
+quanto um reflexo, mas nunca uma sequência complexa). Um gatilho de ação única **o narrador é
+obrigado a aceitar**.
+
+Encadear **várias ações** numa mesma condição (ex.: *"se ele avançar, eu **ando até ele e o
+ataco**"*) é um **gatilho de ações encadeadas** e funciona como **mecânica opcional**:
+
+- **Fica a critério do narrador** aceitar ou não, conforme a cena — fora do seu turno, o tempo
+  não para só porque você tem `PA` sobrando.
+- Cada ação encadeada **cobra o seu próprio `PA`** (o narrador pode cobrar `PA` proporcional à
+  complexidade).
+- **Tudo ou nada:** o encadeamento é resolvido em ordem; se **qualquer etapa** falhar (a condição
+  de uma das ações não se cumpre — o alvo saiu do alcance, a arma caiu, etc.), **todo o resto do
+  gatilho se perde**. É uma aposta de **alto risco e alta recompensa**.
+
+> 💡 Isso mantém o combate normal simples (gatilho = uma ação) e ainda abre jogadas elaboradas —
+> principalmente em cenas mais lentas, como infiltrações — sob o bom senso do narrador.
+
+> ✅ Playtest 2 (18/07/2026): consolidada a mecânica de gatilho (custo, "ou/ou", condição extra
+> = `+1 PA`) e criado o **gatilho de ações encadeadas** (opcional, `PA` por ação, "tudo ou
+> nada", palavra final do narrador). Ver [relatório do playtest 2](../../notas-de-design/playtests/2026-07-18-playtest-cenario-2.md).
 
 ## Ações complexas
 

@@ -14,6 +14,10 @@
 
 **Agilidade** → ver **Atributo** — o nome oficial do atributo é **Ágil** ("agilidade" pode aparecer como explicação, nunca como nome do atributo; decisão de 11/07/2026)
 
+**Alarme (nível do ambiente)** — define: [conflitos/05-furtividade.md](sistema-base/conflitos/05-furtividade.md) (marcador global 0→teto do ambiente; a percepção coletiva da sua presença; ao estourar, todos convergem — playtest 2, 18/07/2026) · aparece: [playtest cenário 2](notas-de-design/playtests/2026-07-18-playtest-cenario-2.md)
+
+**Alerta (nível do inimigo)** — define: [conflitos/05-furtividade.md](sistema-base/conflitos/05-furtividade.md) (escala 0–5 marcada com `d4`, por inimigo; muda o campo de visão de cone p/ meia-lua a partir do nível 2; espalha por som e vista — playtest 2, 18/07/2026). *Não confundir com o aspecto **[Alerta](sistema-base/listas/tracos-base.md#alerta)*** (ataque de oportunidade ao entrar no alcance).
+
 **Alcance ideal** — define: [listas/equipamentos-base.md](sistema-base/listas/equipamentos-base.md) (seção "Alcance ideal e alcance não ideal": valor único ou faixa, em metros; nele ataca-se normalmente; decisão de 11/07/2026) · aparece: [01-conflito-fisico](sistema-base/conflitos/01-conflito-fisico.md) (medido em metros/espaços da malha; delimita o engajamento), [02-acoes-em-conflito](sistema-base/conflitos/02-acoes-em-conflito.md) (ataque de oportunidade), [01-testes-e-contratestes](sistema-base/conceitos/01-testes-e-contratestes.md) (exemplo de modificadores inversos), [habilidades-base-ageis](sistema-base/listas/habilidades-base-ageis.md) (Alcance corpo a corpo, Alcance à distância), [habilidades-base-gerais](sistema-base/listas/habilidades-base-gerais.md), [tracos-base](sistema-base/listas/tracos-base.md) (Alerta, Reativo, Vigilante; Lépido)
 
 **Alcance não ideal** — define: [listas/equipamentos-base.md](sistema-base/listas/equipamentos-base.md) (ataca-se sempre com desvantagem; corpo a corpo: 1 m para dentro e para fora do ideal; à distância: a mesma amplitude do ideal para dentro e para fora; decisão de 11/07/2026) · aparece: [01-conflito-fisico](sistema-base/conflitos/01-conflito-fisico.md) (não ativa engajamento), [02-acoes-em-conflito](sistema-base/conflitos/02-acoes-em-conflito.md) (não ativa ataque de oportunidade), [01-testes-e-contratestes](sistema-base/conceitos/01-testes-e-contratestes.md) (exemplo), [equipamentos-base](sistema-base/listas/equipamentos-base.md) (propriedade `ARRE.`)
@@ -53,6 +57,8 @@
 ## C
 
 **Campo da emoção** — define: [conflitos/04-conflito-social.md](sistema-base/conflitos/04-conflito-social.md) (o espaço unitário da malha de embate social; termo oficial desde 11/07/2026) · aparece: [habilidades-experimentais-sociais](sistema-base/listas/habilidades-experimentais-sociais.md) (Meditação, Ressignificar, Empatia, Dilema; campos da tristeza, atração, alegria, ansiedade e surpresa)
+
+**Campo de visão** — define: [conflitos/05-furtividade.md](sistema-base/conflitos/05-furtividade.md) (cone à frente em alerta 0–1; meia-lua a partir do alerta 2; alcance de visão noturno 6/12/24 m por iluminação) · aparece: [playtest cenário 2](notas-de-design/playtests/2026-07-18-playtest-cenario-2.md)
 
 **Característica** — define: [conceitos/03-caracteristicas.md](sistema-base/conceitos/03-caracteristicas.md) (guarda-chuva de habilidades, aptidões e traços) · aparece: [00-indice](sistema-base/conceitos/00-indice.md), [01-testes-e-contratestes](sistema-base/conceitos/01-testes-e-contratestes.md), [02-atributos](sistema-base/conceitos/02-atributos.md), [04-aptidoes](sistema-base/conceitos/04-aptidoes.md) (recuperação), [05-habilidades](sistema-base/conceitos/05-habilidades.md), [06-tracos](sistema-base/conceitos/06-tracos.md), [01-experiencia-e-evolucao](sistema-base/progressao/01-experiencia-e-evolucao.md) (compra e fusão), [01-passo-a-passo](sistema-base/criacao-de-personagem/01-passo-a-passo.md) (escolha)
 
@@ -114,6 +120,10 @@
 
 **Embate** → ver **Conflito social** (embate = conflito social; decisão de 11/07/2026)
 
+**Emboscador (aspecto)** — define: [listas/tracos-base.md](sistema-base/listas/tracos-base.md#emboscador) (dobra o resultado do dano ao atacar pelas costas, escondido, com arma leve; arma de arremesso não conta) · aparece: [conflitos/05-furtividade.md](sistema-base/conflitos/05-furtividade.md) (emboscada), [habilidades-base-ageis](sistema-base/listas/habilidades-base-ageis.md) (Golpe surpresa combina)
+
+**Esconder-se** — define: [conflitos/05-furtividade.md](sistema-base/conflitos/05-furtividade.md) (ação de `2 PA`, só fora do campo de visão; desvantagem natural por cobertura; guarda o valor do dado como qualidade da furtividade; só o inimigo rola percepção; adv/desv por cobertura+luz — playtest 2, 18/07/2026) · aparece: [listas/tracos-base.md](sistema-base/listas/tracos-base.md) (Técnica em Esconder-se; aspecto Espreitador; Emboscador), [habilidades-base-ageis](sistema-base/listas/habilidades-base-ageis.md) (Golpe surpresa)
+
 **Empunhadura** — define: [listas/equipamentos-base.md](sistema-base/listas/equipamentos-base.md) (notação ✋ uma mão / 🤲 duas mãos; única menção)
 
 **Engajamento** — define: [conflitos/01-conflito-fisico.md](sistema-base/conflitos/01-conflito-fisico.md) (redefinido em 11/07/2026: zona de ataque de oportunidade expressa em alcance ideal — mover-se de espaço a espaço dentro do alcance ideal de arma corpo a corpo permite a reação; não vale no alcance não ideal; cortante/perfurante expandem; à distância só com traço, ex.: Vigilante) · aparece: [02-acoes-em-conflito](sistema-base/conflitos/02-acoes-em-conflito.md) (guarda custa mais engajado; ataque de oportunidade), [acoes-em-combate](sistema-base/listas/acoes-em-combate.md), [equipamentos-base](sistema-base/listas/equipamentos-base.md) (cortante e perfurante expandem), [tracos-base](sistema-base/listas/tracos-base.md) (Alerta, Reativo, Vigilante), [habilidades-base-fisicas](sistema-base/listas/habilidades-base-fisicas.md) (Investida ignora)
@@ -123,6 +133,8 @@
 **Escudo** — define: [listas/protecoes-base.md](sistema-base/listas/protecoes-base.md) (lista de escudos) · aparece: [05-habilidades](sistema-base/conceitos/05-habilidades.md) (exemplo de requisito), [equipamentos-base](sistema-base/listas/equipamentos-base.md) (escudo de arremesso), [itens-base](sistema-base/listas/itens-base.md), [tracos-base](sistema-base/listas/tracos-base.md) (Blindado, Protetor), [habilidades-base-fisicas](sistema-base/listas/habilidades-base-fisicas.md) (Atordoar)
 
 **Especialização (traço)** — **categoria extinta em 11/07/2026**: as antigas especializações que anulavam desvantagem natural viraram **Técnicas**, e a "especialização em ataque desarmado" virou **Maestria** — ver esses termos. Menção residual: [acoes-em-combate](sistema-base/listas/acoes-em-combate.md) (modelos vazios das ações complexas)
+
+**Espreitador (aspecto)** — define: [listas/tracos-base.md](sistema-base/listas/tracos-base.md#espreitador) (permite usar Esconder-se como reação; `4 exp.` — playtest 2, 18/07/2026) · aparece: [conflitos/05-furtividade.md](sistema-base/conflitos/05-furtividade.md)
 
 **Espaço (unidade da malha)** — define: [conflitos/01-conflito-fisico.md](sistema-base/conflitos/01-conflito-fisico.md) (1 espaço = 1 metro na malha de combate físico; termo oficial desde 11/07/2026 — aposenta "casa", "quadrado" e "hexágono" como unidade) · aparece: [02-acoes-em-conflito](sistema-base/conflitos/02-acoes-em-conflito.md) (movimentação; postura defensiva), [acoes-em-combate](sistema-base/listas/acoes-em-combate.md) (movimento por espaço), [05-habilidades](sistema-base/conceitos/05-habilidades.md) (exemplo), [habilidades-base-fisicas](sistema-base/listas/habilidades-base-fisicas.md) (Encontrão), [habilidades-base-mentais](sistema-base/listas/habilidades-base-mentais.md) (Criar armadilha). *No embate social, o espaço unitário é o **campo da emoção**.*
 
@@ -138,11 +150,15 @@
 
 **Flanqueamento** — define: [conflitos/01-conflito-fisico.md](sistema-base/conflitos/01-conflito-fisico.md) (única menção; "flanquear é um objetivo do sistema")
 
+**Furtividade** — 🧪 em teste — define: [conflitos/05-furtividade.md](sistema-base/conflitos/05-furtividade.md) (capítulo: visão/campo de visão, alcance noturno 6/12/24 m, esconder-se com valor guardado, nível de alerta por inimigo, nível de alarme do ambiente, emboscada, listas de ações que mantêm/removem a furtividade — playtest 2, 18/07/2026) · aparece: [listas/tracos-base.md](sistema-base/listas/tracos-base.md) (Técnica em Esconder-se, Espreitador, Emboscador), [habilidades-base-ageis](sistema-base/listas/habilidades-base-ageis.md) (Golpe surpresa), [playtest cenário 2](notas-de-design/playtests/2026-07-18-playtest-cenario-2.md)
+
 **Fusão de características** — define: [progressao/01-experiencia-e-evolucao.md](sistema-base/progressao/01-experiencia-e-evolucao.md) (fundindo características; separar custa 1 exp.) · aparece: [03-caracteristicas](sistema-base/conceitos/03-caracteristicas.md) (momentos de "compra e fusão"), [09-mecanica-alternativa-habilidades-e-fadiga](sistema-base/conceitos/09-mecanica-alternativa-habilidades-e-fadiga.md) (🧪 na alternativa, a fusão deixaria de existir)
 
 ## G
 
-**Gatilho** — define: [conflitos/02-acoes-em-conflito.md](sistema-base/conflitos/02-acoes-em-conflito.md) (criar um gatilho: 1 PA + ação) · aparece: [05-habilidades](sistema-base/conceitos/05-habilidades.md) (habilidades programadas), [07-pontos-de-acao](sistema-base/conceitos/07-pontos-de-acao.md), [acoes-em-combate](sistema-base/listas/acoes-em-combate.md), [tracos-base](sistema-base/listas/tracos-base.md) (condição de uso dos aspectos), [habilidades-experimentais-sociais](sistema-base/listas/habilidades-experimentais-sociais.md) (Empatia)
+**Gatilho** — define: [conflitos/02-acoes-em-conflito.md](sistema-base/conflitos/02-acoes-em-conflito.md) (condição + ação, `1 PA` de armar + `PA` da ação; PA de armar se perde; vários gatilhos "ou/ou"; condição extra na mesma ação = `+1 PA`; **gatilho de ações encadeadas** opcional, `PA` por ação, "tudo ou nada", a critério do narrador — playtest 2, 18/07/2026) · aparece: [05-habilidades](sistema-base/conceitos/05-habilidades.md) (habilidades programadas), [07-pontos-de-acao](sistema-base/conceitos/07-pontos-de-acao.md), [conflitos/05-furtividade.md](sistema-base/conflitos/05-furtividade.md), [acoes-em-combate](sistema-base/listas/acoes-em-combate.md), [tracos-base](sistema-base/listas/tracos-base.md) (condição de uso dos aspectos), [habilidades-experimentais-sociais](sistema-base/listas/habilidades-experimentais-sociais.md) (Empatia)
+
+**Golpe surpresa** — define: [listas/habilidades-base-ageis.md](sistema-base/listas/habilidades-base-ageis.md#golpe-surpresa) (ataque a partir do status escondido; dano extra `+1d4`→`+1d10` por nível) · aparece: [conflitos/05-furtividade.md](sistema-base/conflitos/05-furtividade.md) (emboscada), [tracos-base](sistema-base/listas/tracos-base.md) (combina com Emboscador)
 
 **Guarda (levantar guarda)** — define: [conflitos/02-acoes-em-conflito.md](sistema-base/conflitos/02-acoes-em-conflito.md) (**levantar guarda** / entrar em defensiva é a **ação**; **postura defensiva** é o **estado** resultante — decisão de 11/07/2026; custos engajado/não engajado) · aparece: [01-testes-e-contratestes](sistema-base/conceitos/01-testes-e-contratestes.md) (exemplo), [01-conflito-fisico](sistema-base/conflitos/01-conflito-fisico.md) (postura defensiva como tipo de posicionamento definido), [acoes-em-combate](sistema-base/listas/acoes-em-combate.md) (custos), [tracos-base](sistema-base/listas/tracos-base.md) (Alerta, Blindado, Reativo, Resistente), [habilidades-base-fisicas](sistema-base/listas/habilidades-base-fisicas.md) (Quebrar guarda), [habilidades-base-gerais](sistema-base/listas/habilidades-base-gerais.md)
 
@@ -202,7 +218,7 @@
 
 **Moedas (dinheiro)** — define: [criacao-de-personagem/01-passo-a-passo.md](sistema-base/criacao-de-personagem/01-passo-a-passo.md) (100 moedas iniciais; termo oficial — "ouros" aposentado em 11/07/2026) · aparece: [equipamentos-base](sistema-base/listas/equipamentos-base.md) (preços), [protecoes-base](sistema-base/listas/protecoes-base.md) (preços), [itens-base](sistema-base/listas/itens-base.md) (preços convertidos de "ouros" para moedas em 11/07/2026)
 
-**Movimentação** — define: [conflitos/02-acoes-em-conflito.md](sistema-base/conflitos/02-acoes-em-conflito.md) (regras por tipo de malha, diagonais) · aparece: [01-testes-e-contratestes](sistema-base/conceitos/01-testes-e-contratestes.md) (terreno difícil dobra o custo do deslocamento), [07-pontos-de-acao](sistema-base/conceitos/07-pontos-de-acao.md) (limite de 10 PA), [01-conflito-fisico](sistema-base/conflitos/01-conflito-fisico.md) (mover-se dentro do alcance ideal provoca ataque de oportunidade), [03-saude-e-protecao](sistema-base/conflitos/03-saude-e-protecao.md) (perna incapacitada), [04-conflito-social](sistema-base/conflitos/04-conflito-social.md) (mover-se na malha de embate social), [acoes-em-combate](sistema-base/listas/acoes-em-combate.md) (1 PA por metro), [tracos-base](sistema-base/listas/tracos-base.md) (Corredor, Empacado, Maratonista, Burro de carga), [habilidades-base-ageis](sistema-base/listas/habilidades-base-ageis.md) (Disparada), [habilidades-base-fisicas](sistema-base/listas/habilidades-base-fisicas.md) (Encontrão, Investida), [habilidades-experimentais-sociais](sistema-base/listas/habilidades-experimentais-sociais.md)
+**Movimentação** — define: [conflitos/02-acoes-em-conflito.md](sistema-base/conflitos/02-acoes-em-conflito.md) (regras por tipo de malha, diagonais; **teto de `7 PA` por turno em deslocamento comum**, metade = 3, não inclui deslocamento de habilidades/traços nem é furado por fadiga — playtest 2, 18/07/2026) · aparece: [01-testes-e-contratestes](sistema-base/conceitos/01-testes-e-contratestes.md) (terreno difícil dobra o custo do deslocamento), [07-pontos-de-acao](sistema-base/conceitos/07-pontos-de-acao.md) (limite de 10 PA), [01-conflito-fisico](sistema-base/conflitos/01-conflito-fisico.md) (mover-se dentro do alcance ideal provoca ataque de oportunidade), [03-saude-e-protecao](sistema-base/conflitos/03-saude-e-protecao.md) (perna incapacitada), [04-conflito-social](sistema-base/conflitos/04-conflito-social.md) (mover-se na malha de embate social), [acoes-em-combate](sistema-base/listas/acoes-em-combate.md) (1 PA por metro), [tracos-base](sistema-base/listas/tracos-base.md) (Corredor, Empacado, Maratonista, Burro de carga), [habilidades-base-ageis](sistema-base/listas/habilidades-base-ageis.md) (Disparada), [habilidades-base-fisicas](sistema-base/listas/habilidades-base-fisicas.md) (Encontrão, Investida), [habilidades-experimentais-sociais](sistema-base/listas/habilidades-experimentais-sociais.md)
 
 **Munição** — define: [listas/equipamentos-base.md](sistema-base/listas/equipamentos-base.md) (tabela de munições; única menção)
 
@@ -219,6 +235,8 @@
 **Ouro / ouros** → ver **Moedas** (termo aposentado em 11/07/2026 — "ouro" é coisa de cenário)
 
 ## P
+
+**Percepção (teste de)** — define: [conflitos/05-furtividade.md](sistema-base/conflitos/05-furtividade.md) (só o inimigo rola contra o valor de furtividade guardado do escondido; adv/desv por cobertura + iluminação) · aparece: [playtest cenário 2](notas-de-design/playtests/2026-07-18-playtest-cenario-2.md)
 
 **Perfurante (`PERF.`)** — define: [listas/equipamentos-base.md](sistema-base/listas/equipamentos-base.md) (propriedades das armas; efeito em revisão) · aparece: [tracos-base](sistema-base/listas/tracos-base.md) (maestria)
 
@@ -285,6 +303,8 @@
 **Versátil (`VERS.`)** — define: [listas/equipamentos-base.md](sistema-base/listas/equipamentos-base.md) (exclusiva de armas médias; **+1d4 de dano a duas mãos**; a maestria permite alternar a empunhadura sem gastar `PA`; decisão de 12/07/2026) · aparece: [tracos-base](sistema-base/listas/tracos-base.md) (maestria em armas versáteis)
 
 **Vida** → ver **PV (pontos de vida)** e **Saúde**
+
+**Visão (campo de visão / alcance de visão)** → ver **Campo de visão** — define: [conflitos/05-furtividade.md](sistema-base/conflitos/05-furtividade.md) (cone/meia-lua por nível de alerta; alcance noturno 6 m escuridão / 12 m penumbra / 24 m luz plena)
 
 ## X
 
