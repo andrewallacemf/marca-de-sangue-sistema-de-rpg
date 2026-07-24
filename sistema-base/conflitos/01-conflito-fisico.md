@@ -229,6 +229,7 @@ Há dois graus, definidos pelo narrador conforme o objeto:
 - **Atirar de dentro da cobertura expõe:** ao fazer um **ataque à distância** a partir de uma cobertura completa, o personagem se mostra — até a sua próxima guarda levantada, aquela cobertura vale como **meia cobertura** contra quem o enxerga (o vaivém de "sair, atirar, voltar").
 - **Mover-se cancela a guarda** (regra geral): trocar de cobertura exige levantar a guarda de novo no novo ponto.
 - Combina com [elevação](#elevação): atiradores no alto atacam com vantagem; a cobertura é a resposta de quem avança por baixo.
+- **Maestria em projéteis** reduz a cobertura do alvo em **um nível** (completa → meia; meia → nenhuma) — ver [Projéteis (`PROJ.`)](../listas/equipamentos-base.md#propriedades-das-armas).
 
 ## Sequência de ações em um combate
 

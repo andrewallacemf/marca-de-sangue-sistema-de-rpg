@@ -84,7 +84,7 @@ As propriedades só produzem efeito se o personagem tiver a **maestria** corresp
 
 > ✅ Aprovadas pelo grupo em 12/07/2026 (ver [decisões — lote 2](../../notas-de-design/decisoes/2026-07-12-decisoes-de-regra-lote-2.md), item 3).
 
-- **Projéteis (`PROJ.`)** — consegue **ignorar barreiras no caminho do alvo**, desde que a barreira não esteja acima do alvo. Se acertar o oponente, **recarregar o equipamento não custa `PA`**.
+- **Projéteis (`PROJ.`)** — **reduz a [cobertura](../conflitos/01-conflito-fisico.md#cobertura) do alvo em um nível**: **cobertura completa** conta como **meia cobertura** (o alvo deixa de ser inatingível e passa a só receber o `+1d10`), e **meia cobertura** é **ignorada** (o alvo não recebe o `+1d10`). Não afeta a [elevação](../conflitos/01-conflito-fisico.md#elevação) nem barreiras **acima** do alvo. Além disso, ao **acertar** o oponente, **recarregar o equipamento não custa `PA`**.
 - **Agarrar (`AGAR.`)** — armas agarradoras conferem **vantagem para o uso da ação "Agarrar"**.
 - **Arremesso (`ARRE.`)** — armas de arremesso **ignoram um dado de desvantagem para realizar arremessos**. Regra geral do manual: arremessar um objeto ou arma **sem** essa propriedade é uma ação de ataque **com desvantagem**; fora do alcance ideal, a desvantagem total é **`+2d10`** (+1d10 pelo alcance não ideal, +1d10 por ser objeto impróprio para arremesso).
 - **Deflexão (`DEFL.`)** — itens com deflexão **ignoram um dado de desvantagem em contratestes de defesa**. *(Na v0.4.1 esta propriedade usava a sigla `PROT`; a sigla foi unificada em `DEFL.`.)*
