@@ -91,10 +91,13 @@ levantou três insumos:
    `contrato/README.md`, ficha consumindo o catálogo gerado (adaptador em
    `ficha/src/lib/catalogo.ts`). Ver registro da sessão
    `registro-ia/2026/2026-07-24-andre-contrato-de-conteudo.md`.
-2. **Reviver o repo da plataforma**: SQLite → Postgres, registrar decisões 006+,
-   reapontar `CLAUDE.md` e a skill `rpg-rules-reference` para este repo (hoje apontam
-   para cópias defasadas no vault), ressincronizar schema/seed com as regras atuais
-   (regras vigentes × alternativas, fadiga 0–50, saúde 0–20 acumulada).
+2. ✅ **Reviver o repo da plataforma** — **feito em 24/07/2026** (código): decisões
+   006–009 registradas lá, `CLAUDE.md`/skills reapontados para este repo, SQLite →
+   Postgres (adapter pg + Docker local), schema ressincronizado (15 exp, PA 10, fadiga,
+   versão de regras, saúde 0–20, TECNICA, ACUI) e **seed lendo o
+   `contrato/catalogo.json`**. 369 testes passando. **Resta o provisionamento** (conta
+   Supabase + Vercel, MCPs, primeiro deploy) — depende de contas do André. Ver registro
+   `registro-ia/2026/2026-07-24-andre-fase-2-plataforma.md`.
 3. **v1**: contas + fichas persistidas + importar/exportar `.mds.json` (compatível com a
    ficha offline) + manual consultável.
 4. **v2**: campanhas, fichas de inimigos, gestor de batalha (especificação inicial em
