@@ -30,7 +30,7 @@ O script sempre imprime um relatório de verificação. Se aparecer
 criação de personagem 01–02, progressão 01, e as listas (aptidões, habilidades
 físicas/ágeis/mentais/sociais, traços, ações em combate, equipamentos, proteções, itens).
 
-**Fica de fora** (de propósito): `00-indice`, `09-mecanica-alternativa-*` (experimental),
+**Fica de fora** (de propósito): `00-indice`, a pasta `variantes/` (experimental),
 `habilidades-experimentais-sociais` (rascunho, depende da malha de embate social),
 `habilidades-base-gerais` (é só um índice) e todos os `README`. Para incluir/excluir
 capítulos, edite a lista `ARQUIVOS` no topo do script.

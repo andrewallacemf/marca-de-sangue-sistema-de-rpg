@@ -19,5 +19,6 @@ Regras universais do sistema Marca de Sangue (Manual base do jogador). A leitura
 6. [Traços](06-tracos.md) — características passivas e não consumíveis: técnicas, maestrias e aspectos.
 7. [Pontos de ação](07-pontos-de-acao.md) — a moeda de ações por turno (`PA`): valores iniciais, limite de locomoção e progressão.
 8. [Fadiga](08-fadiga.md) — o desgaste do personagem: como se acumula, o gasto voluntário por PA extras (2 fadiga = 1 PA), penalidades e recuperação.
-9. [Mecânica alternativa: habilidades por nível e fadiga](09-mecanica-alternativa-habilidades-e-fadiga.md) — 🧪 **em avaliação**: proposta que troca a compra de usos de habilidade por evolução por nível com custo em fadiga; não substitui as regras vigentes de Habilidades e Fadiga.
-10. [Descanso](10-descanso.md) — descanso longo (≥ 8 horas com sono; reseta características gastáveis e recupera mais vida) e descanso curto (recuperações pontuais); qualquer descanso recupera toda a fadiga; permitir descansar é decisão narrativa do narrador.
+9. [Descanso](09-descanso.md) — descanso longo (≥ 8 horas com sono; reseta características gastáveis e recupera mais vida) e descanso curto (recuperações pontuais); qualquer descanso recupera toda a fadiga; permitir descansar é decisão narrativa do narrador.
+
+> 🧪 A **mecânica alternativa de habilidades × fadiga** (proposta em avaliação) saiu daqui e vive agora em [`sistema-base/variantes/habilidades-por-fadiga/`](../variantes/habilidades-por-fadiga/README.md) — não é regra vigente.

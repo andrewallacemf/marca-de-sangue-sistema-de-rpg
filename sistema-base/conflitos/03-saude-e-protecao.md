@@ -25,7 +25,7 @@ Armaduras, habilidades e a ação “entrar em defensiva” podem garantir vanta
 
 Cada membro tem **10 espaços de dano**. O dano pode ser **superficial**, **profundo** ou **permanente** — e, na prática, o mesmo espaço **muda de status** conforme o membro é castigado:
 
-- **Dano superficial:** enquanto o membro ainda tem espaços livres, cada golpe marca **dano superficial** — machucados que **saram sozinhos com [descanso](../conceitos/10-descanso.md)** (o soco que incha e passa).
+- **Dano superficial:** enquanto o membro ainda tem espaços livres, cada golpe marca **dano superficial** — machucados que **saram sozinhos com [descanso](../conceitos/09-descanso.md)** (o soco que incha e passa).
 - **Ferida profunda (membro cheio):** **ao preencher os 10 espaços**, o membro entra em estado de **ferida profunda** — todos aqueles danos passam a ser **profundos** e o membro fica **incapacitado** (não pode ser usado para ações até se recuperar). Dano profundo **não sara sozinho**: só melhora com **tratamento** (ver [Cura](#cura)).
 - **Dano permanente:** com o membro já cheio (em ferida profunda), **cada novo golpe converte um dano em permanente** — marca definitiva, que **não volta** por meios convencionais. Quando os 10 espaços do membro se tornam permanentes, ele é **invalidado**.
 
@@ -67,11 +67,11 @@ A sugestão dada na ficha que você encontra no final deste manual é marcar os 
 
 ## Cura
 
-Quando é possível descansar — e o que cada tipo de descanso recupera — está definido em [Descanso](../conceitos/10-descanso.md).
+Quando é possível descansar — e o que cada tipo de descanso recupera — está definido em [Descanso](../conceitos/09-descanso.md).
 
 ### Curando danos superficiais
 
-Durante um [descanso longo](../conceitos/10-descanso.md#descanso-longo), o personagem recupera **`1d6`** pontos de dano superficial. Para curar mais do que isso de uma vez, é preciso a ação de um médico, algum item ou habilidade especial.
+Durante um [descanso longo](../conceitos/09-descanso.md#descanso-longo), o personagem recupera **`1d6`** pontos de dano superficial. Para curar mais do que isso de uma vez, é preciso a ação de um médico, algum item ou habilidade especial.
 
 Para tentar curar um dano superficial sem descansar e sem um médico, o personagem pode fazer um teste de cura desajeitada. Se passar o resultado do contrateste, cura **`1d4`** pontos de vida. **Se falhar no teste de cura, recebe mais um ponto de dano superficial no local ferido.**
 

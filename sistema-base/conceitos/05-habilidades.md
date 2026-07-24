@@ -11,7 +11,7 @@ atualizado-em: 2026-07-12
 
 Habilidades são ações consumíveis que garantem grandes vantagens em situações específicas ou permitem que você realize ações especiais sem penalidade.
 
-> 🧪 Existe uma mecânica alternativa em avaliação que altera esta regra — ver [09-mecanica-alternativa-habilidades-e-fadiga.md](09-mecanica-alternativa-habilidades-e-fadiga.md).
+> 🧪 Existe uma mecânica alternativa em avaliação que altera esta regra — ver [variante habilidades e fadiga](../variantes/habilidades-por-fadiga/README.md).
 
 Você pode utilizar quantas habilidades quiser em seu turno, desde que tenha usos da habilidade e [pontos de ação](07-pontos-de-acao.md) (**`PA`**) suficientes.
 
@@ -53,7 +53,7 @@ Após a execução de cada habilidade da fila, se houver necessidade de jogar os
 
 ## Recuperando Habilidades
 
-Habilidades podem ser recuperadas em um **[descanso longo](10-descanso.md#descanso-longo)** (o descanso curto não recupera usos de habilidades) ou por outras definições indicadas pelo narrador.
+Habilidades podem ser recuperadas em um **[descanso longo](09-descanso.md#descanso-longo)** (o descanso curto não recupera usos de habilidades) ou por outras definições indicadas pelo narrador.
 
 ### Recuperando habilidades em combate
 

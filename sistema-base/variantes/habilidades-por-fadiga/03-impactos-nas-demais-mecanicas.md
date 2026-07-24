@@ -39,7 +39,7 @@ traços seguem como no base (traços continuam passivos e sem níveis).
 
 ## Descanso — recupera fadiga
 
-O [descanso](../../conceitos/10-descanso.md) passa a ter um efeito mais simples sobre as
+O [descanso](../../conceitos/09-descanso.md) passa a ter um efeito mais simples sobre as
 habilidades: como não há "usos", **não há usos a resetar** — o que o descanso devolve é a
 **fadiga** (qualquer descanso zera a fadiga). Para as **aptidões**, que ficam fora da
 variante, o descanso continua valendo como no base (curto = 1 de cada tipo; longo = todas).

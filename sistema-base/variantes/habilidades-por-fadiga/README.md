@@ -20,7 +20,7 @@ Uma reescrita da relação **habilidades × fadiga**: em vez de comprar "usos" d
 a habilidade evolui por **nível** e **cada uso consome fadiga**. A fadiga vira o critério
 que define **quanto** você consegue usar suas habilidades num confronto.
 
-Origem da proposta: [conceitos/09-mecanica-alternativa-habilidades-e-fadiga.md](../../conceitos/09-mecanica-alternativa-habilidades-e-fadiga.md)
+Origem da proposta: [notas de design de 11/07/2026](../../../notas-de-design/decisoes/2026-07-11-aptidoes-e-cartas.md)
 e as notas de design de 11/07/2026 (revisão das 14h58 e 15h44).
 
 ## Como se relaciona com o sistema-base

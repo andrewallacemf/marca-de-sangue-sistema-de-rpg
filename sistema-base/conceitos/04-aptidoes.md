@@ -60,9 +60,9 @@ Exemplo (fora de batalha): para passar por um lugar proibido, o personagem tenta
 
 ## Recuperando aptidões
 
-Ao consumir a aptidão, é necessário um [descanso](10-descanso.md) ou outra indicação de recuperação de características para poder utilizá-la novamente.
+Ao consumir a aptidão, é necessário um [descanso](09-descanso.md) ou outra indicação de recuperação de características para poder utilizá-la novamente.
 
-Por padrão, um **[descanso longo](10-descanso.md#descanso-longo)** recupera **todas** as aptidões consumidas; um **[descanso curto](10-descanso.md#descanso-curto)** recupera **1 aptidão de cada tipo** (uma por atributo).
+Por padrão, um **[descanso longo](09-descanso.md#descanso-longo)** recupera **todas** as aptidões consumidas; um **[descanso curto](09-descanso.md#descanso-curto)** recupera **1 aptidão de cada tipo** (uma por atributo).
 
 ### Recuperando aptidões em combate
 

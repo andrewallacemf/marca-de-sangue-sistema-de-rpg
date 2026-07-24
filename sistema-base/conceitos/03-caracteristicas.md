@@ -31,7 +31,7 @@ As habilidades e aptidões que um jogador pode usar estão limitadas pela quanti
 
 Para utilizar essas características de uso limitado, o jogador deve indicar a habilidade que usará e realizar o teste (ou contrateste) aplicando as modificações impostas pela característica. Aptidões seguem um fluxo próprio: são gastas depois que o narrador anuncia o resultado, para rerrolar o dado do teste ou do contrateste (ver [Aptidões](04-aptidoes.md)).
 
-Após utilizar a característica, ela não poderá ser utilizada novamente até que se recupere o uso em um **descanso** — ver [Descanso](10-descanso.md) para o que cada tipo recupera — ou outra situação indicada pelo narrador.
+Após utilizar a característica, ela não poderá ser utilizada novamente até que se recupere o uso em um **descanso** — ver [Descanso](09-descanso.md) para o que cada tipo recupera — ou outra situação indicada pelo narrador.
 
 > 💡 **Registrando o uso na ficha**
 > Para consumir um uso, basta marcar a habilidade ou aptidão utilizada no campo “utilizado” da ficha, que permanecerá dessa forma até o momento de descanso, onde as marcações podem ser apagadas, recuperando o uso da característica de uso limitado.
