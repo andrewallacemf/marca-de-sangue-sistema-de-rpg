@@ -17,6 +17,12 @@ pendências de **regra** (que ficam em [PENDENCIAS.md](../PENDENCIAS.md)).
 > trabalhada na hora**. O foco atual é a **revisão das regras**. Quando o André disser que é
 > hora de mexer na ficha/plataforma, a gente vem para cá e executa.
 
+> 🧭 **Rumo decidido em 24/07/2026:** a plataforma robusta (contas, fichas no backend,
+> campanhas, mesa ao vivo) será desenvolvida no repo **`plataforma-rpg-marca-de-sangue`**,
+> alimentada por este repo via **contrato de conteúdo** (markdown limpo + `catalogo.json`).
+> A ficha e o manual daqui continuam como produto de playtest. Detalhes e roteiro em
+> [decisoes/2026-07-24-arquitetura-plataforma-e-backstages.md](decisoes/2026-07-24-arquitetura-plataforma-e-backstages.md).
+
 ---
 
 ## 1. Acesso e navegação (mobile)
