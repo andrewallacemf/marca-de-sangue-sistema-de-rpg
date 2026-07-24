@@ -33,20 +33,31 @@ arquétipos e listas próprias de habilidades, traços e equipamentos.
 | Arquivo/pasta | Conteúdo |
 |---------------|----------|
 | [`00-visao-geral.md`](00-visao-geral.md) | Pitch, tom, o que adiciona/muda no base. |
-| [`arquetipos.md`](arquetipos.md) | Papéis do ermo — reskin dos [genéricos](../../sistema-base/arquetipos/00-como-funcionam.md) + próprios (Piloto, Mutante). |
-| [`arsenal.md`](arsenal.md) | Onde estão as armas do Colapso (fogo, sucata, improvisadas). |
-| [`mecanicas-unicas/radiacao.md`](mecanicas-unicas/radiacao.md) | Radiação (exclusiva do cenário). |
-| [`mecanicas-unicas/veiculos.md`](mecanicas-unicas/veiculos.md) | Conflito de veículos. |
-| [`mecanicas-unicas/mutacoes.md`](mecanicas-unicas/mutacoes.md) | Mutações (Cromática e Púrpura). |
-| `lore/`, `itens/`, `criaturas/`, `locais/` | Mundo, facções, itens, criaturas e lugares. |
+| [`arquetipos.md`](arquetipos.md) | Papéis do ermo + arquétipos de veículo (Piloto, Mecânico copiloto, Combatente, Invasor). |
+| [`arsenal.md`](arsenal.md) | Onde estão as armas do Colapso (fogo, sucata, improvisadas, montadas). |
+| [`mecanicas-unicas/veiculos.md`](mecanicas-unicas/veiculos.md) | Conflito de veículos (ações, colisão, condições, integridade, Aptidão Veicular, exp. de veículo). |
+| [`mecanicas-unicas/equipamentos-de-veiculo.md`](mecanicas-unicas/equipamentos-de-veiculo.md) | Catálogo de equipamentos ativos/passivos + fabricação. |
+| [`mecanicas-unicas/radiacao.md`](mecanicas-unicas/radiacao.md) | Radiação, radiômetro, condições de ambiente e abrigo. |
+| [`mecanicas-unicas/mutacoes.md`](mecanicas-unicas/mutacoes.md) | Mutações Cromáticas (1d100) e Púrpuras (1d12). |
+| [`mecanicas-unicas/armas-de-fogo.md`](mecanicas-unicas/armas-de-fogo.md) | Confiabilidade das armas de fogo (5 níveis, tiro pela culatra). |
+| [`mecanicas-unicas/habilidades-do-cenario.md`](mecanicas-unicas/habilidades-do-cenario.md) · [`tracos-do-cenario.md`](mecanicas-unicas/tracos-do-cenario.md) | Listas próprias do cenário. |
+| [`lore/`](lore/README.md), [`locais/`](locais/README.md), [`criaturas/`](criaturas/README.md), [`itens/`](itens/README.md) | Mundo, facções, lugares, criaturas e itens. |
 
 ## Estado da importação
 
-> ⚠️ A DEFINIR: conteúdo aguardando importação (Fase 2 da migração do Notion) e o
-> preenchimento pelo Gabriel (campanha a começar) — mecânica veicular, mutações, condições,
-> abrigo, listas do cenário e o resgate do lore antigo (lugares, comunidades, gangues e facções,
-> clima). O esqueleto abaixo está pronto para receber. Ver [PENDENCIAS.md](../../PENDENCIAS.md).
+**Importado do Notion (24/07/2026), adaptado às regras atuais:** lore (o Colapso, clima e
+radiação, 13 comunidades, ~23 facções), 10 regiões em [locais](locais/README.md), e as mecânicas
+— [veículos](mecanicas-unicas/veiculos.md) (ações, colisão, condições, integridade),
+[equipamentos de veículo](mecanicas-unicas/equipamentos-de-veiculo.md),
+[radiação/abrigo](mecanicas-unicas/radiacao.md), [mutações](mecanicas-unicas/mutacoes.md),
+[armas de fogo](mecanicas-unicas/armas-de-fogo.md) e as
+[listas de habilidades](mecanicas-unicas/habilidades-do-cenario.md) e
+[traços](mecanicas-unicas/tracos-do-cenario.md).
 
-> ⚠️ A DEFINIR: conteúdo aguardando importação (Fase 2 da migração do Notion) — mecânica
-> veicular, mutações, condições, abrigo, listas do cenário e o resgate do lore antigo
-> (lugares, comunidades, gangues e facções, clima). Ver [PENDENCIAS.md](../../PENDENCIAS.md).
+**Falta (curadoria do Gabriel):** bestiário mutante; tabela de armas de fogo (dado/alcance/munição);
+Mutações Púrpuras 9–12; reconciliar a exp. inicial de veículo; e revisar as divergências de números
+que o material Alpha trazia (marcadas com `⚠️` nos arquivos). Ver
+[ganchos](lore/ganchos-e-a-desenvolver.md) e [PENDENCIAS.md](../../PENDENCIAS.md).
+
+> As pontas soltas usam `⚠️ A DEFINIR` nos arquivos e **não aparecem no manual publicado** (versão
+> limpa).

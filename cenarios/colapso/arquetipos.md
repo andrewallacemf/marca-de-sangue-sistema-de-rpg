@@ -26,5 +26,44 @@ do núcleo (ou é próprio, quando usa uma mecânica do cenário como veículos/
 | **Médico de Estrada** | Curandeiro | Mantém o bando de pé com o que houver. |
 | **Chefe de Bando** | Líder | Comanda uma gangue; honra e medo em partes iguais. |
 
-> ⚠️ A DEFINIR (Gabriel): completar sugestões, habilidades de caminho e descrições; ligar Piloto
-> e Mutante às mecânicas de veículo/mutação quando elas forem redigidas.
+## Arquétipos de veículo (importados)
+
+Sugestões de habilidades, traços, equipamentos e aptidões para montar rápido um personagem
+focado em veículos. São **opcionais e não exclusivos** — servem de ponto de partida. Referem-se
+às listas de [habilidades](mecanicas-unicas/habilidades-do-cenario.md),
+[traços](mecanicas-unicas/tracos-do-cenario.md) e
+[equipamentos de veículo](mecanicas-unicas/equipamentos-de-veiculo.md).
+
+### Piloto
+Especialista em conduzir e manobrar.
+
+- **Habilidades:** Atropelar, Piloto de fuga, Turbo, Drift, Retrovisor, Atenção difusa.
+- **Traços:** Baliza, Controle de embreagem, Pitstop.
+- **Aptidões:** 3 Ágil · 2 Mental · 1 Social ou Físico.
+
+### Mecânico copiloto
+Restaura e aprimora o veículo e auxilia o piloto.
+
+- **Habilidades:** Mecatrônica, Assumir direção, Autoescola, Co-piloto.
+- **Traços:** Catador, Cuidadoso, Lanternagem, Mão na roda.
+- **Itens:** Caixa de ferramentas.
+- **Aptidões:** 3 Mental · 2 Social · 1 Físico.
+
+### Combatente
+Ataca veículos em movimento — de longe ou com golpes fortes.
+
+- **Habilidades:** Atirador de elite, Atirador montado, Desmanchador, Projétil estilhaçador, Furar pneu.
+- **Traços:** Cartucho expandido, Saque rápido.
+- **Itens:** Suporte para arma montada, Gancho.
+- **Aptidões:** 2 Ágil · 2 Social · 2 Físico.
+
+### Invasor
+Invade veículos inimigos, sabota seus mecanismos e fere ocupantes.
+
+- **Habilidades:** Autoescola, Invasor, Sabotar, Golpe extravagante.
+- **Traços:** Elemento surpresa, Felino.
+- **Itens:** Aparato para invasão.
+- **Aptidões:** 1 de cada + 2 quaisquer.
+
+> ⚠️ A DEFINIR (Gabriel): completar os papéis genéricos (sugestões definitivas e habilidades de
+> caminho) e amarrar Piloto/Mutante às mecânicas quando a curadoria avançar.
