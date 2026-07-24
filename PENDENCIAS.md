@@ -24,6 +24,7 @@ parada para saber "no que dá pra ajudar?".
 |-----------|------|------|-------|
 | Importação do Notion — Fase 2: cenário Colapso (mecânica veicular, mutações, condições, listas) + resgate do lore antigo (lugares, comunidades, gangues, clima) | [cenarios/colapso/](cenarios/colapso/) | IA + grupo | 2026-07-11 |
 | Importação do Notion — Fase 3: Mukashi, Gaéria (incl. camada fantasia como rascunho), Peabiru; resgates da v0.4.1 (armaduras orientais, ~15 habilidades, traço Aproveitador) | [cenarios/](cenarios/) | IA + grupo | 2026-07-11 |
+| **Estruturar o "shell" de cenários e módulos** (André/IA) — templates/pastas para o Daniel popular o **Mukashi** de forma estruturada. **Pré-requisito** dos insumos do Daniel (jogo de 1º/ago) | [cenarios/](cenarios/), [modulos/](modulos/) | André/IA | 2026-07-19 |
 | **Regerar fichas/cenários/PDFs/planilha — só ANTES do próximo playtest** (muita coisa ainda pode mudar até lá): aplicar às fichas tudo que mudou depois do playtest 2 — dano das armas aumentado, munição aumentada, ataque desarmado `1d4`, improvisadas `1d6−1/1d8−1/1d10−1`, durabilidade, furtividade, gatilho, teto de movimento | [playtest/](playtest/), [ficha/](ficha/) | André/IA | 2026-07-19 |
 
 ## Sistema-base — decisões de regra
@@ -47,6 +48,8 @@ parada para saber "no que dá pra ajudar?".
 | **Furtividade — separar em módulo** (playtest 2): por ora está no `sistema-base` ([conflitos/05-furtividade.md](sistema-base/conflitos/05-furtividade.md)); num 2º momento, avaliar mover para um **módulo de furtividade** ao revisar a divisão em módulos | [sistema-base/conflitos/05-furtividade.md](sistema-base/conflitos/05-furtividade.md) | grupo | 2026-07-19 |
 | **Revisar a habilidade "Ocultar-se à vista"** (💡 proposta da IA, criada em 19/07): esconder-se dentro do campo de visão de um inimigo — validar nome, custo (`3 exp.`), requisitos e progressão na mesa | [listas/habilidades-base-ageis.md](sistema-base/listas/habilidades-base-ageis.md#ocultar-se-à-vista) | André/grupo | 2026-07-19 |
 | **Minions — tratamento único** (reincidente nos playtests 1 e 2): fechar o pacote de minion (não usa fadiga; limiar de queda menor **10/20/30**; sem habilidades; presets fraco/médio/forte) e onde documentar (base? guia do narrador?) | [conflitos/03-saude-e-protecao.md](sistema-base/conflitos/03-saude-e-protecao.md), [playtest cenário 2](notas-de-design/playtests/2026-07-18-playtest-cenario-2.md) | grupo | 2026-07-19 |
+| **Defesa com atributo Físico** (proposta do Gabriel — grupo favorável): ao ser atacado, escolher defender com **Ágil** (esquiva: passa = evita todo o dano) ou **Físico** (segurar: passa = toma **metade** do dano; **com escudo = 0**). Revisar o que já existe em saúde/contratestes e aplicar/refinar | [conflitos/03-saude-e-protecao.md](sistema-base/conflitos/03-saude-e-protecao.md), [conceitos/01-testes-e-contratestes.md](sistema-base/conceitos/01-testes-e-contratestes.md) | grupo | 2026-07-19 |
+| **Sistema de arquétipos (dō/caminhos)** — estrutura: atributo **primário + secundário**, sugestões de traços/habilidades/técnicas/maestrias, descrição narrativa curta, e **habilidades de caminho** com pré-requisito de ter ≥2 habilidades do caminho. Definir base × cenário e o suporte na ficha | [criacao-de-personagem/](sistema-base/criacao-de-personagem/), [modulos/](modulos/) | grupo | 2026-07-19 |
 
 ## Sistema-base — consistência e redação (varredura de 12/07/2026)
 
@@ -74,6 +77,9 @@ revisão completa** — os itens já resolvidos pelas mudanças recentes foram r
 
 | Pendência | Onde | Quem | Desde |
 |-----------|------|------|-------|
+| **Mukashi — campanha do Daniel (1º/ago)**: sobre o shell de cenário/módulo, Daniel popula **armas japonesas**, **arquétipos (dō/caminhos)** e a **parte mágica**. Depende do shell e da estrutura de arquétipos | [cenarios/mukashi/](cenarios/mukashi/) | Daniel + IA | 2026-07-19 |
+| **Colapso — campanha do Gabriel (a começar)**: ativar a preparação do módulo (veicular, mutações, condições, armas de fogo com base) e alinhar escopo mínimo com o Gabriel | [cenarios/colapso/](cenarios/colapso/) | Gabriel + IA | 2026-07-19 |
+| **Parte mágica do Mukashi**: definir como a magia funciona (habilidades com roupagem mágica; custo — ligar à variante de custo de magia abaixo) | [cenarios/mukashi/](cenarios/mukashi/) | grupo | 2026-07-19 |
 | Custo da magia: saúde vs sangue vs fadiga (variante nº 4) — **adiado para a fase de cenários** | [notas-de-design/variantes-pendentes.md](notas-de-design/variantes-pendentes.md) | grupo | 2026-07-11 |
 | "Experiência de Veículos" citada mas nunca definida (variante nº 6) — resolver na Fase 2 do Colapso; **pedir contexto ao Gabriel** | [cenarios/colapso/](cenarios/colapso/) | grupo | 2026-07-11 |
 | Converter (ou remover) o catálogo de magias derivado de D&D 5e — entra como rascunho na Fase 3, não coberto pela licença CC | [cenarios/gaeria/](cenarios/gaeria/) | grupo | 2026-07-11 |

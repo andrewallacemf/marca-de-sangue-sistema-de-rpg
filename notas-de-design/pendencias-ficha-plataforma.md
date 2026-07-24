@@ -48,6 +48,10 @@ pendências de **regra** (que ficam em [PENDENCIAS.md](../PENDENCIAS.md)).
 
 ## 4. Apoio de regras dentro do produto
 
+- [ ] **⭐ Tutorial de uso da ficha** (pedido do Daniel, 19/07 — jogadores se perdem): (a) uma
+      **página inicial/onboarding no próprio site** ensinando o básico (salvar/carregar o
+      `.mds.json`, marcar dano/usos, PA); (b) um **passo-a-passo curto em texto** para mandar no
+      WhatsApp. Precisa ser bem simples. *(Prioridade — há campanha começando em 1º/ago.)*
 - [ ] **Manual consultável dentro da ficha** (drawer/painel lateral) para ler a regra sem sair.
 - [ ] **Tabela de referência rápida** (ações e custos de PA, alcances, modificadores) com busca —
       houve **muita parada** para procurar regra nas duas sessões.
