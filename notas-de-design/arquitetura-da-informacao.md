@@ -89,7 +89,7 @@ Revisão do `sistema-base/` atual. Coluna "Proposta" marca o que eu sugiro tirar
 
 | Conteúdo hoje | Proposta | Por quê |
 |---|---|---|
-| **Furtividade** (`conflitos/05-furtividade.md` + traços/habilidades ligados: Espreitador, Ocultar-se à vista, Golpe surpresa, Emboscador) | **Módulo `furtividade`** | Subsistema opcional (alerta, alarme, esconder-se). Nem toda campanha usa; o playtest 2 já sugeriu separar. |
+| ✅ **Furtividade** — **feito (19/07):** movido para [`modulos/furtividade/`](../modulos/furtividade/README.md). Os traços/habilidades ligados (Espreitador, Ocultar-se à vista, Golpe surpresa, Emboscador) seguem nas listas do núcleo, referenciados pelo módulo | **Módulo `furtividade`** | Subsistema opcional; o playtest 2 sugeriu separar. |
 | **Conflito social** (`conflitos/04-conflito-social.md` + habilidades experimentais sociais) | **Módulo `conflito-social`** (ou manter no núcleo) | É uma malha/subsistema à parte; muitas mesas não usam. 🟠 Decidir se é núcleo ou módulo. |
 | **Catálogos de arma/munição/proteção** (as tabelas de itens em `listas/equipamentos-base` e `protecoes-base`) | **Coleção `armas`** (módulos: armas-marciais, armas-de-fogo, armas-exóticas, proteções) | As *regras* ficam no núcleo; as *listas* de itens nomeados viram módulos que o cenário escolhe. Já era o plano (coleção "armas"). |
 | **Mecânica alternativa de habilidades × fadiga** (`conceitos/09`) | **Mover para `sistema-base/variantes/`** | É uma variante (substitui a regra padrão), não um conceito do núcleo — está fora do lugar. |
@@ -137,8 +137,8 @@ Fluxo para trazer um mundo para dentro:
 
 Ordem pensada nas campanhas que estão começando (Mukashi 1º/ago; Colapso a seguir):
 
-1. **`furtividade`** — extrair de `conflitos/05` + traços/habilidades ligados. (Baixo risco;
-   ajuda o Daniel, que vai usar stealth.) 🟠
+1. ✅ **`furtividade`** — **feito (19/07):** extraído para `modulos/furtividade/`. Os traços/
+   habilidades ligados seguem nas listas do núcleo (podem migrar depois).
 2. **Coleção `armas`** — mover as tabelas de itens para módulos; o núcleo fica com o sistema.
    Abre espaço para o **módulo `armas-japonesas`** (Mukashi) e **`armas-de-fogo`** (Colapso). 🟠
 3. **`arquetipos`** (dō/caminhos) — estrutura definida na pendência de arquétipos; usada por
@@ -152,9 +152,9 @@ Ordem pensada nas campanhas que estão começando (Mukashi 1º/ago; Colapso a se
 
 Faseado, cada fase é um commit revisável. **Nenhum arquivo foi movido**; isto é o plano.
 
-- **Fase A — este guia + decisões.** Aprovar o modelo e as chamadas 🟠 (o que vira módulo).
-- **Fase B — mover Furtividade para `modulos/furtividade/`** (com redirecionamentos/links e
-  atualização do INDICE). Sem mudar regra, só de lugar.
+- ✅ **Fase A — este guia + decisões.** Aprovadas pelo André em 19/07/2026 (todas as recomendações).
+- ✅ **Fase B — Furtividade movida para `modulos/furtividade/`** (19/07): links e INDICE
+  atualizados; regra inalterada, só de lugar.
 - **Fase C — coleção `armas`:** separar catálogos de itens em módulos; núcleo mantém as regras.
 - **Fase D — encaixar os mundos** (`cenarios/<mundo>/`) e promover as mecânicas-únicas a
   módulos quando repetirem.
@@ -165,11 +165,13 @@ Faseado, cada fase é um commit revisável. **Nenhum arquivo foi movido**; isto 
 
 ## 7. Decisões abertas para o grupo (🟠)
 
-1. **Furtividade** vira módulo? (recomendo que sim)
-2. **Conflito social** é núcleo ou módulo?
-3. **Catálogos de arma/proteção** viram a coleção `armas` (regras ficam no núcleo)? (recomendo)
-4. Mover a **mecânica alternativa (fadiga)** de `conceitos/09` para `variantes/`? (recomendo)
-5. **`playtest/cenarios`** continua kit de teste separado, ou as aventuras migram para dentro
-   de cada mundo quando amadurecerem?
+**Todas aprovadas pelo André em 19/07/2026.** Situação:
 
-Resolvidas essas, eu executo a migração fase a fase.
+1. ✅ **Furtividade vira módulo** — **feito**.
+2. ✅ **Conflito social vira módulo** — a executar (Fase futura).
+3. ✅ **Catálogos de arma/proteção viram a coleção `armas`** (regras ficam no núcleo) — a
+   executar; **exige análise de impacto** no gerador de PDF e no catálogo da ficha antes de mover.
+4. ✅ **Mover a mecânica alternativa (fadiga)** de `conceitos/09` para `variantes/` — a executar
+   (renumera o índice de conceitos; cuidado com links).
+5. ✅ **`playtest/cenarios` continua kit de teste separado**; aventuras migram para dentro de
+   cada mundo só quando amadurecerem.

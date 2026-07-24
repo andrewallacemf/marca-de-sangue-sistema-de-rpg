@@ -216,7 +216,7 @@ Dobra o **resultado** do dano do ataque (rola-se o dano normalmente e multiplica
 
 #### Descrição
 
-Permite usar a ação **[Esconder-se](../conflitos/05-furtividade.md#esconder-se)** como uma
+Permite usar a ação **[Esconder-se](../../modulos/furtividade/README.md#esconder-se)** como uma
 **reação** (consumindo a reação da rodada e pagando o custo em [fadiga](../conceitos/08-fadiga.md),
 como toda reação). Sem este aspecto, esconder-se só pode ser feito como ação, no próprio turno.
 
@@ -227,7 +227,7 @@ como toda reação). Sem este aspecto, esconder-se só pode ser feito como açã
 
 #### Requisitos de uso
 
-- Valem os pré-requisitos normais de [Esconder-se](../conflitos/05-furtividade.md#esconder-se)
+- Valem os pré-requisitos normais de [Esconder-se](../../modulos/furtividade/README.md#esconder-se)
   (estar fora do campo de visão dos inimigos, salvo habilidade que diga o contrário).
 
 > ✅ Playtest 2 (18/07/2026): aspecto criado para permitir esconder-se como reação (a ação

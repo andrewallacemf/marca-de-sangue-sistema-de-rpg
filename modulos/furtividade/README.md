@@ -1,16 +1,17 @@
 ---
 titulo: Furtividade
-tipo: regra
-cenario: base
+tipo: mecanica
+cenario: modulo
+modulo: furtividade
 status: revisao
-tags: [furtividade, esconder-se, alerta, alarme, percepcao, visao, emboscada]
+tags: [furtividade, esconder-se, alerta, alarme, percepcao, visao, emboscada, modulo]
 atualizado-em: 2026-07-19
 ---
 
-# Furtividade
+# 🧩 Módulo: Furtividade
 
 Nem todo conflito é resolvido no grito. Infiltrar-se, passar despercebido, atacar de surpresa
-e sumir de novo são jogadas tão válidas quanto trocar golpes — e este capítulo dá as regras
+e sumir de novo são jogadas tão válidas quanto trocar golpes — e este módulo dá as regras
 para isso. A furtividade gira em torno de três coisas: **o que os inimigos percebem** (visão e
 alerta), **quão bem você está escondido** (esconder-se) e **quanto o ambiente inteiro já sabe
 da sua presença** (alarme).
@@ -66,7 +67,7 @@ esconde (desde que você **não esteja sendo visto** por nenhum oponente no mome
 - **No meio do nada** ou atrás de **meia cobertura** → rola **com desvantagem natural**.
 - Atrás de **cobertura completa** → rola **sem desvantagem natural**.
 
-A **[Técnica em Esconder-se](../listas/tracos-base.md#técnicas)** anula essa desvantagem natural
+A **[Técnica em Esconder-se](../../sistema-base/listas/tracos-base.md#técnicas)** anula essa desvantagem natural
 (como toda técnica).
 
 ### Qualidade da furtividade (o número guardado)
@@ -104,14 +105,14 @@ esconder da vista de alguém). Ela depende da sua cobertura **e** da iluminaçã
 
 Esconder-se é uma **ação** (2 PA) no seu turno. Para se esconder **como reação** (fora do seu
 turno, por exemplo ao ser notado), é preciso ter o aspecto
-**[Espreitador](../listas/tracos-base.md#espreitador)**.
+**[Espreitador](../../sistema-base/listas/tracos-base.md#espreitador)**.
 
 ### Agir sem perder a furtividade
 
 Estar escondido não te congela. **O narrador decide se uma ação remove ou não a furtividade** —
 mas deve **sempre avisar o jogador antes**, caso a ação pretendida vá revelá-lo, para que ele
 possa mudar de ideia. Um ataque bem-sucedido que **derruba o alvo antes que ele reaja** pode não
-quebrar a furtividade (a [reação acontece depois da ação](02-acoes-em-conflito.md#reação); alvo
+quebrar a furtividade (a [reação acontece depois da ação](../../sistema-base/conflitos/02-acoes-em-conflito.md#reação); alvo
 morto/nocauteado não reage nem dá o alarme).
 
 > 💡 **Ações feitas de dentro do esconderijo não pedem teste extra de furtividade.** O teste já
@@ -184,10 +185,10 @@ todo** já percebeu a sua presença. Use um marcador de **0 até o máximo defin
 
 Estar escondido é o que habilita as jogadas de assassino:
 
-- **[Golpe surpresa](../listas/habilidades-base-ageis.md#golpe-surpresa)** — dano adicional
+- **[Golpe surpresa](../../sistema-base/listas/habilidades-base-ageis.md#golpe-surpresa)** — dano adicional
   escalonado (de **`+1d4`** a **`+1d10`** conforme o nível), exigindo estar escondido, com arma
   leve corpo a corpo e sem armadura média/pesada.
-- **[Emboscador](../listas/tracos-base.md#emboscador)** — **dobra o resultado** do dano ao
+- **[Emboscador](../../sistema-base/listas/tracos-base.md#emboscador)** — **dobra o resultado** do dano ao
   atacar **pelas costas**, estando **escondido de todos** e **com arma leve**. **Armas de
   arremesso não contam** para o Emboscador.
 
@@ -197,7 +198,7 @@ Como a **reação vem depois da ação**, um golpe forte o suficiente pode incap
 ## Ganchos (habilidades e traços)
 
 - **Esconder-se dentro do campo de visão de um inimigo** — depende da habilidade
-  **[Ocultar-se à vista](../listas/habilidades-base-ageis.md#ocultar-se-à-vista)** (💡 proposta),
+  **[Ocultar-se à vista](../../sistema-base/listas/habilidades-base-ageis.md#ocultar-se-à-vista)** (💡 proposta),
   já que a ação padrão exige estar fora do campo de visão.
 - **Esconder-se como reação** — depende do aspecto
-  **[Espreitador](../listas/tracos-base.md#espreitador)**.
+  **[Espreitador](../../sistema-base/listas/tracos-base.md#espreitador)**.

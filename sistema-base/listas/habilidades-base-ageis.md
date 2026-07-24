@@ -195,7 +195,7 @@ Realiza um movimento em linha reta na direção escolhida.
 
 ### Descrição
 
-Ao atacar a partir do **[status escondido](../conflitos/05-furtividade.md#esconder-se)**, o golpe
+Ao atacar a partir do **[status escondido](../../modulos/furtividade/README.md#esconder-se)**, o golpe
 causa **dano adicional** — rolado **junto** com o dano normal da arma. O dado extra **aumenta com
 o nível** da habilidade, de **`+1d4`** (nível 1) a **`+1d10`** (nível 4), conforme a progressão
 abaixo.
@@ -220,14 +220,14 @@ abaixo.
 - O dano extra é **somado** ao dano da arma (ex.: no nível 3, uma adaga `1d4` que acerta escondido
   causa `1d4` + `1d8`).
 - Contra outro personagem, você precisa estar de fato escondido dele — ou seja, ter sido
-  bem-sucedido na sua [furtividade](../conflitos/05-furtividade.md#esconder-se) (o oponente não te
+  bem-sucedido na sua [furtividade](../../modulos/furtividade/README.md#esconder-se) (o oponente não te
   percebeu) para que a habilidade possa ser usada.
 - Combina com **[Emboscador](tracos-base.md#emboscador)** (que dobra o resultado do dano ao atacar
   pelas costas escondido, com arma leve).
 
 ## Ocultar-se à vista
 
-**Atributo:** `Ágil` · **Custo de PA:** `2 PA` (a própria ação de [Esconder-se](../conflitos/05-furtividade.md#esconder-se)) · **Custo de compra:** `3 exp.`
+**Atributo:** `Ágil` · **Custo de PA:** `2 PA` (a própria ação de [Esconder-se](../../modulos/furtividade/README.md#esconder-se)) · **Custo de compra:** `3 exp.`
 
 > 💡 **PROPOSTA (IA) — para o André revisar.** Habilidade criada a partir do gancho do módulo de
 > furtividade (playtest 2): "esconder-se dentro do campo de visão de um inimigo". Números e
@@ -235,7 +235,7 @@ abaixo.
 
 ### Descrição
 
-Normalmente, a ação [Esconder-se](../conflitos/05-furtividade.md#esconder-se) **só pode ser usada
+Normalmente, a ação [Esconder-se](../../modulos/furtividade/README.md#esconder-se) **só pode ser usada
 fora do campo de visão de todos os inimigos**. Esta habilidade quebra essa restrição: permite
 **tentar se esconder mesmo estando à vista** de um oponente — sumir num átimo de desatenção, atrás
 de fumaça, no vaivém de uma multidão, na troca de sombras. Você usa a ação de Esconder-se
@@ -263,7 +263,7 @@ pode te ver**.
 
 - Vale a regra geral: cada oponente que puder te ver rola **percepção** contra o seu valor de
   furtividade guardado, com vantagem/desvantagem por **cobertura + iluminação** (ver
-  [Esconder-se](../conflitos/05-furtividade.md#esconder-se)). Esconder-se à vista à luz do dia e
+  [Esconder-se](../../modulos/furtividade/README.md#esconder-se)). Esconder-se à vista à luz do dia e
   sem cobertura é possível pela habilidade, mas o inimigo rola com **vantagem** — tende a te achar.
 - **Não** dispensa o custo da ação nem substitui o [Espreitador](tracos-base.md#espreitador):
   para se esconder à vista **como reação**, é preciso ter os dois (esta habilidade + o aspecto).

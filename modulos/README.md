@@ -50,4 +50,5 @@ Frontmatter dos arquivos de módulo (ver [CONVENCOES.md](../CONVENCOES.md), seç
 
 | Módulo | Mecânica | Usado por | Estado |
 |--------|----------|-----------|--------|
-| *(nenhum ainda — os primeiros nascem na Fase 2 da importação: veículos, armas-de-fogo e mutações, extraídos do Colapso)* | | | |
+| [`furtividade`](furtividade/README.md) | Infiltração: visão/campo de visão, nível de alerta (por inimigo) e de alarme (do ambiente), esconder-se, emboscada. | (cenários com furtividade — ex.: Mukashi) | 🧪 em teste (extraído do sistema-base em 19/07/2026) |
+| *(próximos: veículos, armas-de-fogo, mutações — Fase 2 da importação, do Colapso; e a coleção `armas`)* | | | |
