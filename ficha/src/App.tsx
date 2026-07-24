@@ -9,6 +9,7 @@ import {
   HeartPulse,
   BatteryLow,
   BedDouble,
+  HelpCircle,
 } from "lucide-react";
 import {
   Button,
@@ -154,6 +155,8 @@ export default function App() {
     setFicha((f) => ({ ...f, [key]: value }));
   }
 
+  const [ajuda, setAjuda] = useState(false);
+
   function salvar() {
     const payload = {
       app: "marca-de-sangue-ficha",
@@ -268,6 +271,9 @@ export default function App() {
             ))}
           </div>
           <div className="ml-auto flex flex-wrap items-center gap-1.5">
+            <Button variant="outline" size="sm" onClick={() => setAjuda(true)} title="Como usar a ficha">
+              <HelpCircle className="h-3.5 w-3.5" /> Como usar
+            </Button>
             <Button variant="outline" size="sm" onClick={novo}>
               <FilePlus2 className="h-3.5 w-3.5" /> Nova
             </Button>
@@ -290,6 +296,53 @@ export default function App() {
           </div>
         </div>
       </header>
+
+      {ajuda && (
+        <div
+          className="no-print fixed inset-0 z-50 flex items-start justify-center overflow-y-auto bg-black/50 p-4"
+          onClick={() => setAjuda(false)}
+        >
+          <div
+            className="my-8 w-full max-w-2xl rounded-lg border bg-card p-6 shadow-xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="mb-3 flex items-center justify-between">
+              <h2 className="text-lg font-semibold text-primary">Como usar a ficha</h2>
+              <Button variant="outline" size="sm" onClick={() => setAjuda(false)}>Fechar</Button>
+            </div>
+            <div className="space-y-3 text-sm leading-relaxed">
+              <p>
+                A ficha é <strong>digital e offline</strong>: você preenche os campos e os cálculos
+                (PA, saúde, experiência) saem sozinhos. <strong>Os dados ficam só no seu navegador</strong> —
+                para guardar o personagem, use <strong>Salvar</strong>.
+              </p>
+              <div>
+                <p className="font-semibold">Os botões do topo</p>
+                <ul className="ml-4 list-disc space-y-1">
+                  <li><strong>Salvar</strong> — baixa um arquivo <code>.mds.json</code>: esse arquivo <em>é</em> o seu personagem. Guarde-o (Drive, pen-drive…).</li>
+                  <li><strong>Carregar</strong> — abre um <code>.mds.json</code> salvo antes, para continuar de onde parou.</li>
+                  <li><strong>Nova</strong> — começa uma ficha em branco.</li>
+                  <li><strong>Descanso</strong> — recupera aptidões e usos de habilidade e zera a fadiga.</li>
+                  <li><strong>A4 / Imprimir</strong> — visão e impressão em papel.</li>
+                  <li><strong>Regras vigentes × alternativas</strong> — troca o conjunto de regras. Use <strong>vigentes</strong>, salvo combinação do grupo.</li>
+                </ul>
+              </div>
+              <div>
+                <p className="font-semibold">Durante o jogo</p>
+                <ul className="ml-4 list-disc space-y-1">
+                  <li>Marque o <strong>dano</strong> clicando nos quadradinhos de cada membro; a <strong>fadiga</strong> acompanha o dano.</li>
+                  <li>Risque as <strong>aptidões</strong> e os <strong>usos de habilidade</strong> conforme gasta; o <strong>Descanso</strong> devolve.</li>
+                  <li>Escreva armas e itens no campo próprio — ao escolher do catálogo, o dano/PA vêm preenchidos.</li>
+                </ul>
+              </div>
+              <p className="rounded-md bg-muted p-2">
+                💾 <strong>Salve com frequência.</strong> Não há salvamento automático nem “desfazer”:
+                o que vale é o último arquivo <code>.mds.json</code> que você baixou.
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
 
       <main className={cn("mx-auto max-w-6xl px-4 py-4", a4 && "px-0")}>
         <div className={cn(a4 && "sheet")}>
