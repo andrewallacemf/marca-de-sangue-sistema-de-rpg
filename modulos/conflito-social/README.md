@@ -1,13 +1,14 @@
 ---
 titulo: Conflito social
-tipo: regra
-cenario: base
+tipo: mecanica
+cenario: modulo
+modulo: conflito-social
 status: revisao
-tags: [conflito, embate, social, malha-de-embate-social, trilha-emocional, argumentar]
-atualizado-em: 2026-07-12
+tags: [conflito, embate, social, malha-de-embate-social, trilha-emocional, argumentar, modulo]
+atualizado-em: 2026-07-19
 ---
 
-# Conflito social
+# 🧩 Módulo: Conflito social
 
 Conflitos não se limitam apenas a combates (conflitos físicos) entre personagens. Debates, tentativas de convencimento e intimidação também são formas de conflito. Para esses **embates sociais**, o sistema Marca de Sangue oferece regras que tornam as interações mais imersivas e interessantes. Embora os conflitos sociais não afetem diretamente os atributos físicos, eles ganham ainda mais força quando combinados com traços e habilidades específicas.
 
