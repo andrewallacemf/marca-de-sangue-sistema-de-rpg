@@ -28,7 +28,8 @@ mito e folclore japonês.
 - **Magia** com roupagem de KI, construída sobre habilidades (ver
   [mecanicas-unicas/magia.md](mecanicas-unicas/magia.md)).
 - **Dō (caminhos)** temáticos — reskin dos [arquétipos genéricos](../../sistema-base/arquetipos/01-arquetipos-genericos.md) + próprios (ver [arquetipos-do.md](arquetipos-do.md)).
-- **Raças** de Yamato (Tanuki, Oni, Daitengu, Kitsune) — a importar (Fase 3).
+- **Raças** de Yamato — Humanos, **Tanuki** e **Oni** já com efeito de raça; Daitengu e Kitsune
+  em aberto (ver [criaturas/raças jogáveis](criaturas/racas-jogaveis.md)).
 
 ## O que muda em relação ao base
 
@@ -36,4 +37,10 @@ mito e folclore japonês.
   [conflito-social](../../modulos/conflito-social/README.md), e as armas japonesas saem das
   famílias da coleção `armas` (ver [arsenal.md](arsenal.md)) — o cenário só **aponta** onde estão.
 
-> ⚠️ A DEFINIR: lore, raças e mecânica racial (Daniel / Fase 3 do Notion).
+## O mundo (lore)
+
+A ambientação está em [`lore/`](lore/README.md): o [mundo de Yamato](lore/01-mundo-de-yamato.md),
+o [Império da Grande Paz](lore/02-imperio-e-clas.md) e o [panteão dos Kami](lore/03-panteao-kami.md).
+A capital fica em [locais/Myoko](locais/myoko.md).
+
+> ⚠️ A DEFINIR: curadoria dos dō, custo da magia e bestiário de yokai (Daniel / campanha de 1º/ago).
