@@ -26,9 +26,14 @@ O script sempre imprime um relatório de verificação. Se aparecer
 
 ## O que entra e o que fica de fora
 
-**Entra** (na ordem do manual): introdução, conceitos 01–08 e 10, conflitos 01–04,
+**Entra** (na ordem do manual): introdução, conceitos 01–09, conflitos 01–03,
 criação de personagem 01–02, progressão 01, e as listas (aptidões, habilidades
 físicas/ágeis/mentais/sociais, traços, ações em combate, equipamentos, proteções, itens).
+
+> Os subsistemas **modulares** — **conflito social** e **furtividade** — saíram do
+> `sistema-base` para `modulos/` e **não entram** no manual base (viram PDFs de módulo à parte).
+> Quando os catálogos de arma/proteção virarem a coleção `armas`, esta lista precisará apontar
+> para os módulos (ou gerar um PDF de módulos separado).
 
 **Fica de fora** (de propósito): `00-indice`, a pasta `variantes/` (experimental),
 `habilidades-experimentais-sociais` (rascunho, depende da malha de embate social),
