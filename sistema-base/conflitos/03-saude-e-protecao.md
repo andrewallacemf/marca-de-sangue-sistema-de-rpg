@@ -11,11 +11,18 @@ atualizado-em: 2026-07-12
 
 ## Defesa e esquiva
 
-Ao ser atacado, um jogador que não esteja [desabilitado](#membro-desabilitado-incapacitado-ou-invalidado) possui a chance de rolar um contrateste de defesa para se proteger ou esquivar do ataque inimigo. A dificuldade do contrateste depende principalmente de onde o inimigo está mirando.
+Ao ser atacado, um personagem que não esteja [desabilitado](#membro-desabilitado-incapacitado-ou-invalidado) pode responder com um **contrateste** para não sofrer o golpe. Ele **escolhe como reage** (ver [contratestes](../conceitos/01-testes-e-contratestes.md#contrateste-de-esquiva)):
 
-**Ser alvejado nas pernas ou braços não garante `vantagem`, porém se o inimigo mirar na sua cabeça ou tronco, ele terá `desvantagem` de acerto.**
+- **Esquivar — atributo `Ágil`.** Se o contrateste **vencer** o teste de acerto, o personagem **desvia e não sofre dano nenhum**.
+- **Segurar / defender — atributo `Físico`.** Aparar o golpe na força bruta. Se o contrateste **vencer**, o personagem **ainda sofre metade do dano** (arredondado para baixo) — segurar apara, mas não anula o impacto. **Exceção:** defendendo com um **escudo em [guarda levantada](02-acoes-em-conflito.md#levantar-guarda-entrar-em-postura-defensiva)**, um contrateste de defesa bem-sucedido **anula todo o dano** (o escudo absorve — e perde **1 de [durabilidade](../listas/protecoes-base.md#durabilidade-das-proteções)**).
 
-Armaduras, habilidades e a ação “entrar em defensiva” podem garantir vantagens adicionais de defesa ou redutores de dano caso acertado. Já as [aptidões](../conceitos/04-aptidoes.md) não concedem vantagem: elas permitem rerrolar o dado do teste ou do contrateste depois de conhecido o resultado. O **redutor de dano de uma armadura só se aplica se o golpe acertar uma das regiões que ela cobre** (ver [Proteções](../listas/protecoes-base.md)); vantagens de esquiva de outras fontes seguem suas próprias descrições.
+Isso dá **flexibilidade de build**: um personagem físico — ou que já gastou as aptidões Ágil na rodada — pode **segurar** os golpes na força, enquanto quem investe em Ágil **esquiva** e evita o dano por inteiro.
+
+**Se o contrateste falhar** (o ataque conecta), o alvo sofre o dano, aplicando-se os **redutores de armadura/escudo** normalmente (dano mínimo 1; ver [Proteções](../listas/protecoes-base.md)).
+
+**Dificuldade e modificadores:** ser alvejado nas pernas ou braços não garante `vantagem`; mirar na **cabeça ou tronco** dá `desvantagem` de acerto ao atacante. Armaduras, habilidades e a ação **[levantar guarda](02-acoes-em-conflito.md#levantar-guarda-entrar-em-postura-defensiva)** podem dar vantagens/redutores; as [aptidões](../conceitos/04-aptidoes.md) não concedem vantagem (só rerrolam o dado). O redutor de dano de uma armadura só se aplica se o golpe acertar uma **região que ela cobre**.
+
+> ✅ Playtest 2 (19/07/2026): formalizada a escolha **esquivar (Ágil, evita todo o dano) × segurar (Físico, metade do dano; com escudo, zero)** — proposta do Gabriel, aprovada pelo grupo. Ver [relatório do playtest 2](../../notas-de-design/playtests/2026-07-18-playtest-cenario-2.md).
 
 ## Corpo e vida
 

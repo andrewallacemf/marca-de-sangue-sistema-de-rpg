@@ -41,6 +41,8 @@ Um **contrateste de esquiva** é a resposta direta mais natural a um **teste de 
 
 Ainda assim, não é obrigatório que o contrateste oposto ao teste de acerto seja uma tentativa de esquiva. Alternativamente, o jogador pode escolher abdicar de sua chance de esquiva para realizar outro contrateste como um "**contrateste de desempenho de defesa**" ou "**contrateste de desempenho para agarrar a arma do oponente**", por exemplo.
 
+> 💡 **Esquivar (`Ágil`) × segurar (`Físico`):** a esquiva bem-sucedida evita **todo** o dano; a **defesa na força** (`Físico`), mesmo bem-sucedida, ainda deixa passar **metade do dano** — a menos que se defenda com **escudo** (então anula). Regra completa em [Saúde e Proteção — Defesa e esquiva](../conflitos/03-saude-e-protecao.md#defesa-e-esquiva).
+
 > *Exemplo: O oponente ataca o jogador, que decide abdicar de sua esquiva para realizar um contrateste de desempenho para agarrar a arma do oponente como resposta ao ataque, o narrador decide que a ação pretendida faz sentido para o contexto e após o resultado, indica os benefícios da ação bem-sucedida ou os malefícios da falha (Neste caso o jogador recebe o dano da arma mesmo que seja bem-sucedido no teste de desempenho).*
 
 ### Contrateste de desempenho
