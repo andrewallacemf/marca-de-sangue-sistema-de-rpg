@@ -54,9 +54,9 @@ Praticamente tudo o que define o seu personagem se baseia na compra de caracter�
 
 **Arquétipos**
 
-Arquétipos são conjuntos de características padronizadas de referência para construção rápida de personagens baseados em conceitos específicos.
+Arquétipos são conjuntos de características padronizadas de referência para construção rápida de personagens baseados em conceitos específicos. Como funcionam e a estrutura de um arquétipo: ver [Arquétipos — como funcionam](../arquetipos/00-como-funcionam.md).
 
-Opcionalmente, você pode escolher um arquétipo de personagem genérico disponível neste manual base `em breve` ou arquétipo de personagem do cenário disponível no manual do cenário escolhido `em breve`.
+Opcionalmente, você pode escolher um **[arquétipo genérico](../arquetipos/01-arquetipos-genericos.md)** deste manual base (Guerreiro, Baluarte, Duelista, Atirador, Assassino, Estrategista, Curandeiro, Líder) ou um **arquétipo do cenário** escolhido (ex.: os *dō* do Mukashi) — todos são apenas sugestões de caminho, não obrigatórios.
 
 ### 3.1 Compre Traços
 

@@ -39,6 +39,7 @@ ARQUIVOS = [
     "conflitos/01-conflito-fisico.md", "conflitos/02-acoes-em-conflito.md",
     "conflitos/03-saude-e-protecao.md",
     "criacao-de-personagem/01-passo-a-passo.md", "criacao-de-personagem/02-fichas.md",
+    "arquetipos/00-como-funcionam.md", "arquetipos/01-arquetipos-genericos.md",
     "progressao/01-experiencia-e-evolucao.md",
     "listas/aptidoes-base.md", "listas/habilidades-base-fisicas.md",
     "listas/habilidades-base-ageis.md", "listas/habilidades-base-mentais.md",
