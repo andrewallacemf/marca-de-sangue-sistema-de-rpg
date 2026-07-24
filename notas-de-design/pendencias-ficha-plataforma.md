@@ -44,6 +44,20 @@ pendências de **regra** (que ficam em [PENDENCIAS.md](../PENDENCIAS.md)).
       nomenclatura. "Equipamentos" deve abarcar **itens gerais** (vela, corda, etc.), não só
       armas/proteções.
 
+## 2b. Catálogo / contrato de conteúdo
+
+- [x] **⭐ Catálogo gerado do manual** (24/07) — **feito:** os dados de autopreenchimento da
+      ficha deixaram de ser transcritos à mão; `ficha/src/lib/catalogo.ts` agora é adaptador
+      sobre [`contrato/catalogo.json`](../contrato/README.md), gerado das listas. A correção
+      trouxe a ficha de volta ao manual atual (39 armas com dano defasado, 3 habilidades e
+      6 traços que faltavam, efeito de `PROJ.` atualizado).
+- [ ] **Expor a propriedade `ACUI.` (Acuidade) na ficha** — o manual e o catálogo já a têm;
+      a grade de propriedades da ficha tem só as 7 colunas antigas (ARRE/AGAR/CORT/CONT/
+      DEFL/PERF/PROJ). Decidir como mostrar (coluna nova? badge?).
+- [ ] **Usar as `municoes` do catálogo** nas armas à distância (dano vem da munição; o
+      contrato já traz a lista compatível por arma + a tabela de munições com dano/preço) —
+      conecta com o item de **contador de munição** da seção 3.
+
 ## 3. Marcadores de combate (jogador)
 
 - [ ] **Marcador de "reação usada"** na rodada.

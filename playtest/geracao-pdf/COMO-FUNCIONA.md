@@ -4,6 +4,12 @@ Este diretório contém o pipeline que transforma os arquivos de `sistema-base/`
 **PDF limpo** do "Manual base do jogador" — só as regras, sem nada de bastidor
 (notas da IA, decisões, propostas, status, datas de atualização).
 
+> ℹ️ **A lógica de limpeza mudou de endereço (24/07/2026):** `limpa_arquivo`, os
+> marcadores `BASTIDOR` e as `SUBSTITUICOES` foram promovidos para
+> [`contrato/limpeza.py`](../../contrato/README.md) — o **contrato de conteúdo** oficial,
+> compartilhado com o manual web e o exportador de catálogo. Este script importa de lá.
+> Os aprendizados/armadilhas documentados abaixo continuam valendo.
+
 ## Como rodar
 
 No sandbox Linux (ou qualquer ambiente com Python 3):

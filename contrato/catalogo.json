@@ -1,0 +1,2591 @@
+{
+  "$comment": "GERADO por contrato/exportar_catalogo.py a partir das listas do manual — NÃO editar à mão. Contrato de conteúdo: ver contrato/README.md.",
+  "fontes": [
+    "sistema-base/listas/equipamentos-base.md",
+    "sistema-base/listas/acoes-em-combate.md",
+    "sistema-base/listas/tracos-base.md",
+    "modulos/protecoes/README.md",
+    "modulos/armas-brancas/README.md",
+    "modulos/armas-exoticas/README.md",
+    "modulos/arcos-e-bestas/README.md",
+    "modulos/armas-de-fogo/README.md",
+    "sistema-base/listas/habilidades-base-fisicas.md",
+    "sistema-base/listas/habilidades-base-ageis.md",
+    "sistema-base/listas/habilidades-base-mentais.md",
+    "sistema-base/listas/habilidades-base-sociais.md",
+    "sistema-base/listas/habilidades-experimentais-sociais.md"
+  ],
+  "propriedades": {
+    "CORT": {
+      "nome": "Cortante",
+      "efeito": "expande o engajamento: além do gatilho padrão (o alvo sair do alcance ideal, que já provoca ataque de oportunidade de qualquer arma), a maestria cortante permite realizar um ataque de oportunidade quando o alvo se move para te CONTORNAR (rodeia você de um espaço a outro dentro do seu alcance ideal). Esse ataque consome a reação do personagem (cada personagem tem 1 reação por rodada). O efeito antigo da propriedade (mirar na cabeça sem desvantagem) deixa de existir.",
+      "maestria": "Maestria em armas cortantes"
+    },
+    "CONT": {
+      "nome": "Contundente",
+      "efeito": "ao acertar, reduz pontos de ação (PA) do alvo sem necessidade de teste, valendo até o próximo turno do alvo. O valor depende do peso da arma: leve −1 PA, média −2 PA, pesada −3 PA. Só age se o atacante tiver a maestria em armas contundentes.",
+      "maestria": "Maestria em armas contundentes"
+    },
+    "PERF": {
+      "nome": "Perfurante",
+      "efeito": "expande o engajamento: além do gatilho padrão (movimento dentro do alcance ideal), permite realizar um ataque de oportunidade quando o alvo ENTRA no seu alcance ideal. Esse ataque consome a reação do personagem (cada personagem tem 1 reação por rodada). É o espelho do cortante: cortante cobre a saída do alcance ideal; perfurante, a entrada.",
+      "maestria": "Maestria em armas perfurantes"
+    },
+    "PROJ": {
+      "nome": "Projéteis",
+      "efeito": "reduz a cobertura do alvo em um nível: cobertura completa conta como meia cobertura (o alvo deixa de ser inatingível e passa a só receber o +1d10), e meia cobertura é ignorada (o alvo não recebe o +1d10). Não afeta a elevação nem barreiras acima do alvo. Além disso, ao acertar o oponente, recarregar o equipamento não custa PA.",
+      "maestria": "Maestria em projéteis"
+    },
+    "AGAR": {
+      "nome": "Agarrar",
+      "efeito": "armas agarradoras conferem vantagem para o uso da ação \"Agarrar\".",
+      "maestria": "Maestria em armas de agarrar"
+    },
+    "ARRE": {
+      "nome": "Arremesso",
+      "efeito": "armas de arremesso ignoram um dado de desvantagem para realizar arremessos. Regra geral do manual: arremessar um objeto ou arma sem essa propriedade é uma ação de ataque com desvantagem; fora do alcance ideal, a desvantagem total é +2d10 (+1d10 pelo alcance não ideal, +1d10 por ser objeto impróprio para arremesso)."
+    },
+    "DEFL": {
+      "nome": "Deflexão",
+      "efeito": "itens com deflexão ignoram um dado de desvantagem em contratestes de defesa. (Na v0.4.1 esta propriedade usava a sigla PROT; a sigla foi unificada em DEFL..)",
+      "maestria": "Maestria em armas de deflexão"
+    },
+    "ACUI": {
+      "nome": "Acuidade",
+      "efeito": "armas leves e precisas (facas, adagas, rapieira, estiletes…). Com uma arma de acuidade você pode usar aptidões do atributo Ágil (no lugar de Física) para rerrolar os testes de ataque com ela. Não exige maestria."
+    },
+    "VERS": {
+      "nome": "Versátil",
+      "efeito": "propriedade exclusiva de armas médias — a arma pode ser usada com uma ou duas mãos e ganha +1d4 de dano quando empunhada com as duas mãos. A maestria em armas versáteis permite alternar a empunhadura sem gastar PA durante o uso da arma.",
+      "maestria": "Maestria em armas versáteis"
+    }
+  },
+  "armas": [
+    {
+      "variantes": [],
+      "categoria": "",
+      "alcance": "1m",
+      "props": [],
+      "versatil": false,
+      "acuidade": false,
+      "distancia": false,
+      "municoes": [],
+      "preco": "",
+      "durabilidade": "",
+      "modulo": "sistema-base",
+      "nome": "Ataque desarmado",
+      "tamanho": "",
+      "custoPA": "1",
+      "dano": "1d4"
+    },
+    {
+      "variantes": [],
+      "categoria": "",
+      "alcance": "",
+      "props": [],
+      "versatil": false,
+      "acuidade": false,
+      "distancia": false,
+      "municoes": [],
+      "preco": "",
+      "durabilidade": "5",
+      "modulo": "sistema-base",
+      "nome": "Arma improvisada leve",
+      "tamanho": "Leve",
+      "custoPA": "",
+      "dano": "1d6−1"
+    },
+    {
+      "variantes": [],
+      "categoria": "",
+      "alcance": "",
+      "props": [],
+      "versatil": false,
+      "acuidade": false,
+      "distancia": false,
+      "municoes": [],
+      "preco": "",
+      "durabilidade": "8",
+      "modulo": "sistema-base",
+      "nome": "Arma improvisada média",
+      "tamanho": "Média",
+      "custoPA": "",
+      "dano": "1d8−1"
+    },
+    {
+      "variantes": [],
+      "categoria": "",
+      "alcance": "",
+      "props": [],
+      "versatil": false,
+      "acuidade": false,
+      "distancia": false,
+      "municoes": [],
+      "preco": "",
+      "durabilidade": "10",
+      "modulo": "sistema-base",
+      "nome": "Arma improvisada pesada",
+      "tamanho": "Pesada",
+      "custoPA": "",
+      "dano": "1d10−1"
+    },
+    {
+      "nome": "Manoplas com cravos",
+      "variantes": [
+        "Adaga de soco",
+        "Rapieira"
+      ],
+      "tamanho": "Leve",
+      "categoria": "Curta",
+      "custoPA": "2",
+      "alcance": "1m",
+      "dano": "1d6",
+      "props": [
+        "PERF"
+      ],
+      "versatil": false,
+      "acuidade": false,
+      "distancia": false,
+      "municoes": [],
+      "preco": "6 moedas",
+      "durabilidade": "20",
+      "modulo": "armas-brancas"
+    },
+    {
+      "nome": "Faca",
+      "variantes": [
+        "Foice de mão"
+      ],
+      "tamanho": "Leve",
+      "categoria": "Curta",
+      "custoPA": "2",
+      "alcance": "1m",
+      "dano": "1d8 CORT · 1d6 PERF",
+      "props": [
+        "CORT",
+        "PERF"
+      ],
+      "versatil": false,
+      "acuidade": false,
+      "distancia": false,
+      "municoes": [],
+      "preco": "3 moedas",
+      "durabilidade": "20",
+      "modulo": "armas-brancas"
+    },
+    {
+      "nome": "Bastão curto",
+      "variantes": [
+        "Tonfa",
+        "Martelo Curto"
+      ],
+      "tamanho": "Leve",
+      "categoria": "Curta",
+      "custoPA": "2",
+      "alcance": "1m / 2m a 5m",
+      "dano": "2d4",
+      "props": [
+        "CONT",
+        "ARRE"
+      ],
+      "versatil": false,
+      "acuidade": false,
+      "distancia": false,
+      "municoes": [],
+      "preco": "4 moedas",
+      "durabilidade": "20",
+      "modulo": "armas-brancas"
+    },
+    {
+      "nome": "Adaga",
+      "variantes": [
+        "Kukri",
+        "Kunai"
+      ],
+      "tamanho": "Leve",
+      "categoria": "Curta",
+      "custoPA": "2",
+      "alcance": "1m / 2m a 5m",
+      "dano": "1d8 CORT · 1d6 PERF",
+      "props": [
+        "CORT",
+        "PERF",
+        "ARRE"
+      ],
+      "versatil": false,
+      "acuidade": false,
+      "distancia": false,
+      "municoes": [],
+      "preco": "6 moedas",
+      "durabilidade": "20",
+      "modulo": "armas-brancas"
+    },
+    {
+      "nome": "Facão",
+      "variantes": [
+        "Machete",
+        "Peixeira"
+      ],
+      "tamanho": "Média",
+      "categoria": "Curta",
+      "custoPA": "4",
+      "alcance": "1m",
+      "dano": "1d12",
+      "props": [
+        "CORT"
+      ],
+      "versatil": false,
+      "acuidade": false,
+      "distancia": false,
+      "municoes": [],
+      "preco": "4 moedas",
+      "durabilidade": "30",
+      "modulo": "armas-brancas"
+    },
+    {
+      "nome": "Espada Curta",
+      "variantes": [
+        "Foice curta",
+        "Cimitarra",
+        "Falcione",
+        "Khopesh"
+      ],
+      "tamanho": "Média",
+      "categoria": "Curta",
+      "custoPA": "4",
+      "alcance": "1m",
+      "dano": "1d12 CORT · 1d8 PERF",
+      "props": [
+        "CORT",
+        "PERF"
+      ],
+      "versatil": false,
+      "acuidade": false,
+      "distancia": false,
+      "municoes": [],
+      "preco": "8 moedas",
+      "durabilidade": "30",
+      "modulo": "armas-brancas"
+    },
+    {
+      "nome": "Lança",
+      "variantes": [
+        "Seta"
+      ],
+      "tamanho": "Média",
+      "categoria": "Longa",
+      "custoPA": "4",
+      "alcance": "2m",
+      "dano": "1d8",
+      "props": [
+        "PERF",
+        "ARRE"
+      ],
+      "versatil": false,
+      "acuidade": false,
+      "distancia": false,
+      "municoes": [],
+      "preco": "8 moedas",
+      "durabilidade": "30",
+      "modulo": "armas-brancas"
+    },
+    {
+      "nome": "Machadinha",
+      "variantes": [],
+      "tamanho": "Média",
+      "categoria": "Curta",
+      "custoPA": "4",
+      "alcance": "1m / 2m a 4m",
+      "dano": "1d12",
+      "props": [
+        "CORT",
+        "ARRE"
+      ],
+      "versatil": false,
+      "acuidade": false,
+      "distancia": false,
+      "municoes": [],
+      "preco": "6 moedas",
+      "durabilidade": "30",
+      "modulo": "armas-brancas"
+    },
+    {
+      "nome": "Tridente",
+      "variantes": [
+        "Brandistock"
+      ],
+      "tamanho": "Média",
+      "categoria": "Longa",
+      "custoPA": "4",
+      "alcance": "2m a 3m",
+      "dano": "1d8 (+1d4 a 2 mãos)",
+      "props": [
+        "PERF"
+      ],
+      "versatil": true,
+      "acuidade": false,
+      "distancia": false,
+      "municoes": [],
+      "preco": "12 moedas",
+      "durabilidade": "30",
+      "modulo": "armas-brancas"
+    },
+    {
+      "nome": "Bastão médio",
+      "variantes": [
+        "Martelo Médio"
+      ],
+      "tamanho": "Média",
+      "categoria": "Curta",
+      "custoPA": "4",
+      "alcance": "1m",
+      "dano": "3d4 (+1d4 a 2 mãos)",
+      "props": [
+        "CONT"
+      ],
+      "versatil": true,
+      "acuidade": false,
+      "distancia": false,
+      "municoes": [],
+      "preco": "8 moedas",
+      "durabilidade": "30",
+      "modulo": "armas-brancas"
+    },
+    {
+      "nome": "Picareta de mão",
+      "variantes": [],
+      "tamanho": "Média",
+      "categoria": "Curta",
+      "custoPA": "4",
+      "alcance": "1m",
+      "dano": "1d8 (+1d4 a 2 mãos)",
+      "props": [
+        "PERF"
+      ],
+      "versatil": true,
+      "acuidade": false,
+      "distancia": false,
+      "municoes": [],
+      "preco": "5 moedas",
+      "durabilidade": "30",
+      "modulo": "armas-brancas"
+    },
+    {
+      "nome": "Machado",
+      "variantes": [],
+      "tamanho": "Média",
+      "categoria": "Curta",
+      "custoPA": "4",
+      "alcance": "1m / 2m a 4m",
+      "dano": "1d12 (+1d4 a 2 mãos)",
+      "props": [
+        "CORT",
+        "ARRE"
+      ],
+      "versatil": true,
+      "acuidade": false,
+      "distancia": false,
+      "municoes": [],
+      "preco": "8 moedas",
+      "durabilidade": "30",
+      "modulo": "armas-brancas"
+    },
+    {
+      "nome": "Clava",
+      "variantes": [
+        "Maça"
+      ],
+      "tamanho": "Média",
+      "categoria": "Curta",
+      "custoPA": "4",
+      "alcance": "1m",
+      "dano": "3d4 CONT · 1d8 PERF (+1d4 a 2 mãos)",
+      "props": [
+        "CONT",
+        "PERF"
+      ],
+      "versatil": true,
+      "acuidade": false,
+      "distancia": false,
+      "municoes": [],
+      "preco": "6 moedas",
+      "durabilidade": "30",
+      "modulo": "armas-brancas"
+    },
+    {
+      "nome": "Mangual",
+      "variantes": [
+        "Maça estrela",
+        "Espada Longa",
+        "Bastarda",
+        "Sabre",
+        "Katana"
+      ],
+      "tamanho": "Média",
+      "categoria": "Longa",
+      "custoPA": "4",
+      "alcance": "1m a 2m",
+      "dano": "1d12 CORT · 1d8 PERF (+1d4 a 2 mãos)",
+      "props": [
+        "CORT",
+        "PERF"
+      ],
+      "versatil": true,
+      "acuidade": false,
+      "distancia": false,
+      "municoes": [],
+      "preco": "20 moedas",
+      "durabilidade": "30",
+      "modulo": "armas-brancas"
+    },
+    {
+      "nome": "Bastão grande",
+      "variantes": [
+        "Setsukon"
+      ],
+      "tamanho": "Pesada",
+      "categoria": "Longa",
+      "custoPA": "6",
+      "alcance": "1m a 2m",
+      "dano": "4d4",
+      "props": [
+        "CONT"
+      ],
+      "versatil": false,
+      "acuidade": false,
+      "distancia": false,
+      "municoes": [],
+      "preco": "6 moedas",
+      "durabilidade": "40",
+      "modulo": "armas-brancas"
+    },
+    {
+      "nome": "Machado Pesado",
+      "variantes": [
+        "Machado de Batalha"
+      ],
+      "tamanho": "Pesada",
+      "categoria": "Longa",
+      "custoPA": "6",
+      "alcance": "1m a 2m",
+      "dano": "2d8",
+      "props": [
+        "CORT"
+      ],
+      "versatil": false,
+      "acuidade": false,
+      "distancia": false,
+      "municoes": [],
+      "preco": "10 moedas",
+      "durabilidade": "40",
+      "modulo": "armas-brancas"
+    },
+    {
+      "nome": "Picareta",
+      "variantes": [],
+      "tamanho": "Pesada",
+      "categoria": "Curta",
+      "custoPA": "6",
+      "alcance": "1m",
+      "dano": "1d10",
+      "props": [
+        "PERF"
+      ],
+      "versatil": false,
+      "acuidade": false,
+      "distancia": false,
+      "municoes": [],
+      "preco": "6 moedas",
+      "durabilidade": "40",
+      "modulo": "armas-brancas"
+    },
+    {
+      "nome": "Martelo Grande",
+      "variantes": [
+        "Martelo de batalha"
+      ],
+      "tamanho": "Pesada",
+      "categoria": "Longa",
+      "custoPA": "6",
+      "alcance": "1m a 2m",
+      "dano": "4d4",
+      "props": [
+        "CONT"
+      ],
+      "versatil": false,
+      "acuidade": false,
+      "distancia": false,
+      "municoes": [],
+      "preco": "14 moedas",
+      "durabilidade": "40",
+      "modulo": "armas-brancas"
+    },
+    {
+      "nome": "Alabarda",
+      "variantes": [],
+      "tamanho": "Pesada",
+      "categoria": "Longa",
+      "custoPA": "6",
+      "alcance": "2m a 3m",
+      "dano": "1d10",
+      "props": [
+        "PERF"
+      ],
+      "versatil": false,
+      "acuidade": false,
+      "distancia": false,
+      "municoes": [],
+      "preco": "16 moedas",
+      "durabilidade": "40",
+      "modulo": "armas-brancas"
+    },
+    {
+      "nome": "Lança montada",
+      "variantes": [],
+      "tamanho": "Pesada",
+      "categoria": "Longa",
+      "custoPA": "6",
+      "alcance": "3m",
+      "dano": "1d10",
+      "props": [
+        "PERF"
+      ],
+      "versatil": false,
+      "acuidade": false,
+      "distancia": false,
+      "municoes": [],
+      "preco": "9 moedas",
+      "durabilidade": "40",
+      "modulo": "armas-brancas",
+      "observacao": "necessário os traços \"Montaria\" e \"Justa\""
+    },
+    {
+      "nome": "Mangual pesado",
+      "variantes": [
+        "Mangual Atroz",
+        "Maça Pesada",
+        "Clava pesada",
+        "Esp. de duas lâminas"
+      ],
+      "tamanho": "Pesada",
+      "categoria": "Longa",
+      "custoPA": "6",
+      "alcance": "2m",
+      "dano": "2d8 CORT · 1d10 PERF",
+      "props": [
+        "CORT",
+        "PERF"
+      ],
+      "versatil": false,
+      "acuidade": false,
+      "distancia": false,
+      "municoes": [],
+      "preco": "14 moedas",
+      "durabilidade": "40",
+      "modulo": "armas-brancas"
+    },
+    {
+      "nome": "Lança longa",
+      "variantes": [],
+      "tamanho": "Pesada",
+      "categoria": "Longa",
+      "custoPA": "6",
+      "alcance": "2m / 2m a 3m",
+      "dano": "1d10",
+      "props": [
+        "PERF",
+        "ARRE"
+      ],
+      "versatil": false,
+      "acuidade": false,
+      "distancia": false,
+      "municoes": [],
+      "preco": "10 moedas",
+      "durabilidade": "40",
+      "modulo": "armas-brancas"
+    },
+    {
+      "nome": "Espada Larga",
+      "variantes": [
+        "montante",
+        "Flamberge",
+        "Foice ceifadora"
+      ],
+      "tamanho": "Pesada",
+      "categoria": "Longa",
+      "custoPA": "6",
+      "alcance": "2m",
+      "dano": "2d8 CORT · 1d10 PERF",
+      "props": [
+        "CORT",
+        "PERF"
+      ],
+      "versatil": false,
+      "acuidade": false,
+      "distancia": false,
+      "municoes": [],
+      "preco": "12 moedas",
+      "durabilidade": "40",
+      "modulo": "armas-brancas"
+    },
+    {
+      "nome": "Tekkokagi",
+      "variantes": [],
+      "tamanho": "Leve",
+      "categoria": "Curta",
+      "custoPA": "2",
+      "alcance": "1m",
+      "dano": "1d6",
+      "props": [
+        "PERF"
+      ],
+      "versatil": false,
+      "acuidade": false,
+      "distancia": false,
+      "municoes": [],
+      "preco": "6 moedas",
+      "durabilidade": "20",
+      "modulo": "armas-exoticas"
+    },
+    {
+      "nome": "Shuriken",
+      "variantes": [],
+      "tamanho": "Leve",
+      "categoria": "Curta",
+      "custoPA": "2",
+      "alcance": "2m a 5m",
+      "dano": "1d6",
+      "props": [
+        "PERF",
+        "ARRE"
+      ],
+      "versatil": false,
+      "acuidade": false,
+      "distancia": false,
+      "municoes": [],
+      "preco": "4 moedas",
+      "durabilidade": "20",
+      "modulo": "armas-exoticas"
+    },
+    {
+      "nome": "Chakram",
+      "variantes": [],
+      "tamanho": "Leve",
+      "categoria": "Curta",
+      "custoPA": "2",
+      "alcance": "1m / 2m a 5m",
+      "dano": "1d8",
+      "props": [
+        "CORT",
+        "ARRE"
+      ],
+      "versatil": false,
+      "acuidade": false,
+      "distancia": false,
+      "municoes": [],
+      "preco": "20 moedas",
+      "durabilidade": "20",
+      "modulo": "armas-exoticas"
+    },
+    {
+      "nome": "Escudo de arremesso",
+      "variantes": [],
+      "tamanho": "Leve",
+      "categoria": "Curta",
+      "custoPA": "2",
+      "alcance": "2m a 5m",
+      "dano": "2d4",
+      "props": [
+        "CONT",
+        "ARRE",
+        "DEFL"
+      ],
+      "versatil": false,
+      "acuidade": false,
+      "distancia": false,
+      "municoes": [],
+      "preco": "12 moedas",
+      "durabilidade": "20",
+      "modulo": "armas-exoticas"
+    },
+    {
+      "nome": "Gato de nove caudas",
+      "variantes": [],
+      "tamanho": "Média",
+      "categoria": "Curta",
+      "custoPA": "4",
+      "alcance": "1m",
+      "dano": "1d12",
+      "props": [
+        "CORT",
+        "AGAR"
+      ],
+      "versatil": false,
+      "acuidade": false,
+      "distancia": false,
+      "municoes": [],
+      "preco": "32 moedas",
+      "durabilidade": "30",
+      "modulo": "armas-exoticas"
+    },
+    {
+      "nome": "Chicote",
+      "variantes": [
+        "Corrente"
+      ],
+      "tamanho": "Média",
+      "categoria": "Longa",
+      "custoPA": "4",
+      "alcance": "3m a 4m",
+      "dano": "1d12",
+      "props": [
+        "CORT",
+        "AGAR"
+      ],
+      "versatil": false,
+      "acuidade": false,
+      "distancia": false,
+      "municoes": [],
+      "preco": "12 moedas",
+      "durabilidade": "30",
+      "modulo": "armas-exoticas"
+    },
+    {
+      "nome": "Boomerangue",
+      "variantes": [],
+      "tamanho": "Média",
+      "categoria": "Curta",
+      "custoPA": "4",
+      "alcance": "1m / 2m a 5m",
+      "dano": "3d4",
+      "props": [
+        "CONT",
+        "ARRE"
+      ],
+      "versatil": false,
+      "acuidade": false,
+      "distancia": false,
+      "municoes": [],
+      "preco": "12 moedas",
+      "durabilidade": "30",
+      "modulo": "armas-exoticas",
+      "observacao": "Se não acerta um alvo, volta"
+    },
+    {
+      "nome": "Nunchaku",
+      "variantes": [],
+      "tamanho": "Média",
+      "categoria": "Curta",
+      "custoPA": "4",
+      "alcance": "1m",
+      "dano": "3d4 (+1d4 a 2 mãos)",
+      "props": [
+        "CONT"
+      ],
+      "versatil": true,
+      "acuidade": false,
+      "distancia": false,
+      "municoes": [],
+      "preco": "8 moedas",
+      "durabilidade": "30",
+      "modulo": "armas-exoticas"
+    },
+    {
+      "nome": "Rede",
+      "variantes": [],
+      "tamanho": "Média",
+      "categoria": "Longa",
+      "custoPA": "4",
+      "alcance": "1m a 5m",
+      "dano": "0",
+      "props": [
+        "AGAR",
+        "ARRE"
+      ],
+      "versatil": false,
+      "acuidade": false,
+      "distancia": false,
+      "municoes": [],
+      "preco": "4 moedas",
+      "durabilidade": "10",
+      "modulo": "armas-exoticas"
+    },
+    {
+      "nome": "Kusarigama",
+      "variantes": [
+        "Double-chained Kama"
+      ],
+      "tamanho": "Média",
+      "categoria": "Longa",
+      "custoPA": "4",
+      "alcance": "3m a 4m",
+      "dano": "1d12 CORT · 3d4 CONT",
+      "props": [
+        "CORT",
+        "CONT",
+        "AGAR",
+        "ARRE"
+      ],
+      "versatil": false,
+      "acuidade": false,
+      "distancia": false,
+      "municoes": [],
+      "preco": "30 moedas",
+      "durabilidade": "30",
+      "modulo": "armas-exoticas"
+    },
+    {
+      "nome": "Corrente de espinhos",
+      "variantes": [],
+      "tamanho": "Pesada",
+      "categoria": "Longa",
+      "custoPA": "6",
+      "alcance": "3m a 4m",
+      "dano": "2d8",
+      "props": [
+        "CORT",
+        "AGAR"
+      ],
+      "versatil": false,
+      "acuidade": false,
+      "distancia": false,
+      "municoes": [],
+      "preco": "16 moedas",
+      "durabilidade": "40",
+      "modulo": "armas-exoticas"
+    },
+    {
+      "nome": "Funda",
+      "variantes": [
+        "Zarabatana"
+      ],
+      "tamanho": "Leve",
+      "categoria": "",
+      "custoPA": "2",
+      "alcance": "4m a 7m",
+      "dano": "",
+      "props": [],
+      "versatil": false,
+      "acuidade": false,
+      "distancia": true,
+      "municoes": [
+        "Pedras",
+        "Dardo"
+      ],
+      "preco": "5 moedas",
+      "durabilidade": "20",
+      "modulo": "arcos-e-bestas"
+    },
+    {
+      "nome": "Arco curto",
+      "variantes": [
+        "Besta de mão"
+      ],
+      "tamanho": "Leve",
+      "categoria": "",
+      "custoPA": "2",
+      "alcance": "6m a 9m",
+      "dano": "",
+      "props": [],
+      "versatil": false,
+      "acuidade": false,
+      "distancia": true,
+      "municoes": [
+        "Flecha ponta de madeira"
+      ],
+      "preco": "20 moedas",
+      "durabilidade": "20",
+      "modulo": "arcos-e-bestas"
+    },
+    {
+      "nome": "Arco composto",
+      "variantes": [
+        "Besta leve"
+      ],
+      "tamanho": "Média",
+      "categoria": "",
+      "custoPA": "4",
+      "alcance": "7m a 10m",
+      "dano": "",
+      "props": [],
+      "versatil": false,
+      "acuidade": false,
+      "distancia": true,
+      "municoes": [
+        "Flecha ponta de madeira",
+        "Flecha ponta de ferro"
+      ],
+      "preco": "30 moedas",
+      "durabilidade": "30",
+      "modulo": "arcos-e-bestas"
+    },
+    {
+      "nome": "Arco longo",
+      "variantes": [
+        "Besta pesada"
+      ],
+      "tamanho": "Pesada",
+      "categoria": "",
+      "custoPA": "6",
+      "alcance": "8m a 12m",
+      "dano": "",
+      "props": [],
+      "versatil": false,
+      "acuidade": false,
+      "distancia": true,
+      "municoes": [
+        "Flecha ponta de ferro"
+      ],
+      "preco": "40 moedas",
+      "durabilidade": "40",
+      "modulo": "arcos-e-bestas"
+    },
+    {
+      "nome": "Besta de repetição",
+      "variantes": [],
+      "tamanho": "Pesada",
+      "categoria": "",
+      "custoPA": "6",
+      "alcance": "7m a 10m",
+      "dano": "",
+      "props": [],
+      "versatil": false,
+      "acuidade": false,
+      "distancia": true,
+      "municoes": [
+        "Flecha ponta de ferro (x3)"
+      ],
+      "preco": "80 moedas",
+      "durabilidade": "40",
+      "modulo": "arcos-e-bestas"
+    },
+    {
+      "nome": "Pistola simples",
+      "variantes": [],
+      "tamanho": "Leve",
+      "categoria": "",
+      "custoPA": "2",
+      "alcance": "2m a 15m",
+      "dano": "",
+      "props": [],
+      "versatil": false,
+      "acuidade": false,
+      "distancia": true,
+      "municoes": [
+        "Bala de pólvora"
+      ],
+      "preco": "220 moedas",
+      "durabilidade": "20",
+      "modulo": "armas-de-fogo"
+    },
+    {
+      "nome": "Espingarda",
+      "variantes": [
+        "Arquebus",
+        "Handgonne"
+      ],
+      "tamanho": "Média",
+      "categoria": "",
+      "custoPA": "4",
+      "alcance": "1m a 5m",
+      "dano": "",
+      "props": [],
+      "versatil": false,
+      "acuidade": false,
+      "distancia": true,
+      "municoes": [
+        "Bala de pólvora (x2)"
+      ],
+      "preco": "260 moedas",
+      "durabilidade": "30",
+      "modulo": "armas-de-fogo"
+    },
+    {
+      "nome": "Rifle",
+      "variantes": [
+        "Mosquete"
+      ],
+      "tamanho": "Pesada",
+      "categoria": "",
+      "custoPA": "6",
+      "alcance": "3m a 20m",
+      "dano": "",
+      "props": [],
+      "versatil": false,
+      "acuidade": false,
+      "distancia": true,
+      "municoes": [
+        "Bala de pólvora"
+      ],
+      "preco": "340 moedas",
+      "durabilidade": "40",
+      "modulo": "armas-de-fogo"
+    }
+  ],
+  "municoes": [
+    {
+      "nome": "Pedras",
+      "variantes": [],
+      "categoria": "PROJ",
+      "dano": "1d4−1",
+      "preco": "grátis (improvisado)",
+      "modulo": "arcos-e-bestas"
+    },
+    {
+      "nome": "Dardo",
+      "variantes": [],
+      "categoria": "PROJ",
+      "dano": "1d4",
+      "preco": "1 moeda",
+      "modulo": "arcos-e-bestas"
+    },
+    {
+      "nome": "Flecha ponta de madeira",
+      "variantes": [],
+      "categoria": "PROJ",
+      "dano": "1d6",
+      "preco": "1 moeda",
+      "modulo": "arcos-e-bestas"
+    },
+    {
+      "nome": "Flecha ponta de ferro",
+      "variantes": [],
+      "categoria": "PROJ",
+      "dano": "1d10",
+      "preco": "3 moedas",
+      "modulo": "arcos-e-bestas"
+    },
+    {
+      "nome": "Bala de pólvora",
+      "variantes": [],
+      "categoria": "PROJ",
+      "dano": "1d12",
+      "preco": "20 moedas",
+      "modulo": "armas-de-fogo"
+    }
+  ],
+  "protecoes": [
+    {
+      "nome": "Peça leve",
+      "variantes": [],
+      "classe": "Armadura",
+      "tipo": "Leve",
+      "redDano": "-1",
+      "redPA": "-1",
+      "durabilidade": "10",
+      "preco": "20 moedas",
+      "modulo": "protecoes"
+    },
+    {
+      "nome": "Peça média",
+      "variantes": [],
+      "classe": "Armadura",
+      "tipo": "Média",
+      "redDano": "-2",
+      "redPA": "-2",
+      "durabilidade": "25",
+      "preco": "60 moedas",
+      "modulo": "protecoes"
+    },
+    {
+      "nome": "Peça pesada",
+      "variantes": [],
+      "classe": "Armadura",
+      "tipo": "Pesada",
+      "redDano": "-3",
+      "redPA": "-3",
+      "durabilidade": "50",
+      "preco": "140 moedas",
+      "modulo": "protecoes"
+    },
+    {
+      "nome": "Broquel",
+      "variantes": [],
+      "classe": "Escudo",
+      "tipo": "Leve",
+      "redDano": "-1",
+      "redPA": "-1",
+      "durabilidade": "6",
+      "paUso": "2",
+      "preco": "5 moedas",
+      "modulo": "protecoes"
+    },
+    {
+      "nome": "Escudo pequeno",
+      "variantes": [],
+      "classe": "Escudo",
+      "tipo": "Leve",
+      "redDano": "-1",
+      "redPA": "-1",
+      "durabilidade": "10",
+      "paUso": "2",
+      "preco": "8 moedas",
+      "modulo": "protecoes"
+    },
+    {
+      "nome": "Escudo médio",
+      "variantes": [
+        "Cestus",
+        "Áspide"
+      ],
+      "classe": "Escudo",
+      "tipo": "Média",
+      "redDano": "-2",
+      "redPA": "-2",
+      "durabilidade": "15",
+      "paUso": "3",
+      "preco": "14 moedas",
+      "modulo": "protecoes"
+    },
+    {
+      "nome": "Escudo Grande",
+      "variantes": [],
+      "classe": "Escudo",
+      "tipo": "Média",
+      "redDano": "-2",
+      "redPA": "-2",
+      "durabilidade": "20",
+      "paUso": "3",
+      "preco": "20 moedas",
+      "modulo": "protecoes"
+    },
+    {
+      "nome": "Escudo torre",
+      "variantes": [
+        "Tater"
+      ],
+      "classe": "Escudo",
+      "tipo": "Pesada",
+      "redDano": "-3",
+      "redPA": "-3",
+      "durabilidade": "25",
+      "paUso": "4",
+      "preco": "40 moedas",
+      "modulo": "protecoes"
+    }
+  ],
+  "habilidades": [
+    {
+      "nome": "Ataques múltiplos & médios",
+      "atributo": "Físico",
+      "custoPA": "1 PA",
+      "valorCompra": "2",
+      "efeito": "Pode mudar o alvo de ataques corpo a corpo com armas médias ignorando a desvantagem de ataques múltiplos neste turno.",
+      "requisitos": "Estar utilizando armas corpo a corpo médias.",
+      "niveis": [
+        "Pode mudar de alvo 1 vez no turno sem sofrer desvantagem.",
+        "Pode mudar de alvo 2 vezes no turno sem sofrer desvantagem.",
+        "Pode mudar de alvo 3 vezes no turno sem sofrer desvantagem.",
+        "Pode mudar de alvo 4 vezes no turno sem sofrer desvantagem."
+      ],
+      "experimental": false,
+      "fonte": "sistema-base/listas/habilidades-base-fisicas.md",
+      "observacoes": "O custo de PA de ativação da habilidade permite mudar o alvo mas os ataques ainda devem gastar seus respectivos custos.; Mesmo que o jogador já tenha atacado o alvo antes, é necessário gastar um uso da mudança de alvo para não sofrer a penalidade."
+    },
+    {
+      "nome": "Ataques múltiplos & pesados",
+      "atributo": "Físico",
+      "custoPA": "1 PA",
+      "valorCompra": "3",
+      "efeito": "Pode mudar o alvo de ataques corpo a corpo com armas pesadas ignorando a desvantagem de ataques múltiplos neste turno.",
+      "requisitos": "Estar utilizando armas corpo a corpo pesadas.",
+      "niveis": [
+        "Pode mudar de alvo 1 vez no turno sem sofrer desvantagem.",
+        "Pode mudar de alvo 2 vezes no turno sem sofrer desvantagem.",
+        "Pode mudar de alvo 3 vezes no turno sem sofrer desvantagem."
+      ],
+      "experimental": false,
+      "fonte": "sistema-base/listas/habilidades-base-fisicas.md",
+      "observacoes": "O custo de PA de ativação da habilidade permite mudar o alvo mas os ataques ainda devem gastar seus respectivos custos.; Mesmo que o jogador já tenha atacado o alvo antes, é necessário gastar um uso da mudança de alvo para não sofrer a penalidade."
+    },
+    {
+      "nome": "Atordoar",
+      "atributo": "Físico",
+      "custoPA": "1 PA + PA da arma",
+      "valorCompra": "4",
+      "efeito": "Infringe metade do dano da arma e atordoa o oponente: ele passa a ter menos pontos de ação (PA) de forma persistente, até realizar um descanso curto (respeitando o piso de 3 PA por turno).",
+      "requisitos": "Realizar o ataque usando escudo ou arma contundente (para efeitos de dano, escudo é considerado arma improvisada)",
+      "niveis": [
+        "O oponente perde 1 PA até um descanso curto.",
+        "O oponente perde 2 PA até um descanso curto.",
+        "O oponente perde 3 PA até um descanso curto.",
+        "O oponente perde 4 PA até um descanso curto.",
+        "O oponente perde 5 PA até um descanso curto."
+      ],
+      "experimental": false,
+      "fonte": "sistema-base/listas/habilidades-base-fisicas.md"
+    },
+    {
+      "nome": "Desarmar leve",
+      "atributo": "Físico",
+      "custoPA": "1 PA + PA da arma",
+      "valorCompra": "3",
+      "efeito": "Realiza um ataque mirado no braço do oponente que está segurando uma arma, se acertar, derruba a arma do inimigo no chão. Infringe o dano do golpe normalmente.",
+      "requisitos": "Estar utilizando uma arma leve ou não estar utilizando arma.",
+      "niveis": [
+        "Derruba a arma a 1 metro de distância.",
+        "Derruba a arma a 2 metros de distância.",
+        "Derruba a arma a 3 metros de distância."
+      ],
+      "experimental": false,
+      "fonte": "sistema-base/listas/habilidades-base-fisicas.md",
+      "observacoes": "Se o inimigo estiver segurando uma arma com as duas mãos, ele recebe vantagem para resistir ao ataque.; Ao derrubar uma arma, ela vai na direção escolhida pelo atacante."
+    },
+    {
+      "nome": "Desarmar pesado",
+      "atributo": "Físico",
+      "custoPA": "1 PA + PA da arma",
+      "valorCompra": "3",
+      "efeito": "Realiza um teste de ataque na arma do oponente, se acertar, derruba a arma do inimigo no chão. Não infringe o dano do golpe.",
+      "requisitos": "Estar utilizando uma arma média ou pesada.",
+      "niveis": [
+        "Derruba a arma a 2 metros de distância.",
+        "Derruba a arma a 4 metros de distância.",
+        "Derruba a arma a 6 metros de distância."
+      ],
+      "experimental": false,
+      "fonte": "sistema-base/listas/habilidades-base-fisicas.md",
+      "observacoes": "Ao derrubar uma arma, ela vai na direção escolhida pelo atacante."
+    },
+    {
+      "nome": "Encontrão",
+      "atributo": "Físico",
+      "custoPA": "1 PA + PA da arma",
+      "valorCompra": "2",
+      "efeito": "Corre 2 metros na direção do oponente e o empurra na mesma direção, infringe metade do dano da arma.",
+      "requisitos": "Estar usando uma arma média ou pesada.; Estar a 2 metros de distância do oponente.",
+      "niveis": [
+        "Empurra o oponente 2 metros.",
+        "Empurra o oponente 3 metros.",
+        "Empurra o oponente 4 metros.",
+        "Empurra o oponente 5 metros.",
+        "Empurra o oponente 6 metros."
+      ],
+      "experimental": false,
+      "fonte": "sistema-base/listas/habilidades-base-fisicas.md",
+      "observacoes": "A corrida acontece em linha reta.; O personagem para no mesmo espaço em que o oponente estava quando foi empurrado."
+    },
+    {
+      "nome": "Esmagar",
+      "atributo": "Físico",
+      "custoPA": "5 PA",
+      "valorCompra": "2",
+      "efeito": "Agarra o oponente e causa dano a ele. Em seu turno, pode gastar 4 PA para causar dano novamente ao oponente enquanto tiver PA suficiente para realizar a ação. O oponente pode gastar 2 PA para realizar um teste físico para tentar se soltar em seu turno, se falhar, pode tentar novamente enquanto ainda tiver PA para realizar a ação.",
+      "requisitos": "Não estar usando armas.; Não ter nenhum braço desabilitado.",
+      "niveis": [
+        "Causa 1 ponto de dano.",
+        "Causa 2 pontos de dano.",
+        "Causa 3 pontos de dano.",
+        "Causa 4 pontos de dano.",
+        "Causa 5 pontos de dano."
+      ],
+      "experimental": false,
+      "fonte": "sistema-base/listas/habilidades-base-fisicas.md",
+      "observacoes": "Para se movimentar segurando um oponente é necessário realizar um teste físico com desvantagem e o movimento é considerado terreno difícil."
+    },
+    {
+      "nome": "Investida",
+      "atributo": "Físico",
+      "custoPA": "1 PA + PA da arma",
+      "valorCompra": "3",
+      "efeito": "Realiza uma investida na direção do oponente para realizar teste de ataque mirado, ignorando regras e habilidades de engajamento do oponente alvo.",
+      "requisitos": "Não estar usando arma pesada.; Não ter nenhum braço ou perna desabilitado.",
+      "niveis": [
+        "Pode avançar 1 metro na direção do oponente.",
+        "Pode avançar 2 metros na direção do oponente.",
+        "Pode avançar 3 metros na direção do oponente.",
+        "Pode avançar 4 metros na direção do oponente."
+      ],
+      "experimental": false,
+      "fonte": "sistema-base/listas/habilidades-base-fisicas.md",
+      "observacoes": "As regras e habilidades de engajamento dos oponentes que não são alvos desta habilidade continuam válidos.; Não é necessário realizar teste para a movimentação, mas o ataque segue submetido a teste."
+    },
+    {
+      "nome": "Quebrar guarda",
+      "atributo": "Físico",
+      "custoPA": "1 PA + PA da arma",
+      "valorCompra": "2",
+      "efeito": "Realiza um golpe que força o inimigo a gastar sua guarda levantada e infringe metade do dano da arma.",
+      "requisitos": "Realizar o ataque usando arma contundente média ou pesada.; Atacar um oponente com ao menos 1 guarda levantada.",
+      "niveis": [
+        "Força o oponente a gastar 1 guarda.",
+        "Força o oponente a gastar 2 guardas.",
+        "Força o oponente a gastar 3 guardas."
+      ],
+      "experimental": false,
+      "fonte": "sistema-base/listas/habilidades-base-fisicas.md"
+    },
+    {
+      "nome": "Golpe destruidor",
+      "atributo": "Físico",
+      "custoPA": "1 PA + PA da arma",
+      "valorCompra": "2",
+      "efeito": "Um ataque voltado a danificar o equipamento do alvo. Ao acertar, além do dano normal, um item do alvo perde durabilidade extra — à sua escolha, a arma que ele empunha ou a peça de proteção (armadura/escudo) da região atingida.",
+      "requisitos": "Declarar o alvo do golpe (arma ou proteção) antes de rolar.; Acertar o ataque (é um ataque normal, sujeito a teste e contrateste).",
+      "niveis": [
+        "O equipamento alvo perde 1 de durabilidade adicional.",
+        "Perde 2 de durabilidade adicional.",
+        "Perde 3 de durabilidade adicional.",
+        "Perde 4 de durabilidade adicional."
+      ],
+      "experimental": false,
+      "fonte": "sistema-base/listas/habilidades-base-fisicas.md",
+      "observacoes": "A perda de durabilidade é somada à perda normal do golpe (ver Durabilidade das armas e Durabilidade das proteções).; Atingir uma proteção só a desgasta se o redutor de dano dela se aplicar ao golpe (região coberta)."
+    },
+    {
+      "nome": "Alcance à distância",
+      "atributo": "Ágil",
+      "custoPA": "2 PA + PA da arma",
+      "valorCompra": "2",
+      "efeito": "Aumenta a área de alcance ideal da arma.",
+      "requisitos": "Realizar o ataque usando arma à distância (DIST); Não estar usando armadura pesada",
+      "niveis": [
+        "Aumenta a área de alcance ideal da arma em 1 metro.",
+        "Aumenta a área de alcance ideal da arma em 2 metros.",
+        "Aumenta a área de alcance ideal da arma em 3 metros.",
+        "Aumenta a área de alcance ideal da arma em 4 metros.",
+        "Aumenta a área de alcance ideal da arma em 5 metros."
+      ],
+      "experimental": false,
+      "fonte": "sistema-base/listas/habilidades-base-ageis.md"
+    },
+    {
+      "nome": "Alcance corpo a corpo",
+      "atributo": "Ágil",
+      "custoPA": "3 PA + PA da arma (reduz por nível)",
+      "valorCompra": "2",
+      "efeito": "Aumenta a área de alcance ideal da arma em 1 metro. Cada nível reduz o custo de PA de ativação.",
+      "requisitos": "Realizar o ataque usando arma corpo a corpo de longo alcance (LONG); Não estar usando armadura pesada",
+      "niveis": [
+        "Custo de PA: 3 PA + PA da arma",
+        "Custo de PA: 2 PA + PA da arma",
+        "Custo de PA: 1 PA + PA da arma",
+        "Custo de PA: PA da arma"
+      ],
+      "experimental": false,
+      "fonte": "sistema-base/listas/habilidades-base-ageis.md"
+    },
+    {
+      "nome": "Arremesso improvisado",
+      "atributo": "Ágil",
+      "custoPA": "1 PA",
+      "valorCompra": "2",
+      "efeito": "Pode arremessar armas ou objetos como se fossem armas de arremesso neste turno.",
+      "requisitos": "Realizar o arremesso usando arma/objeto leve ou média",
+      "niveis": [
+        "Pode arremessar 1 arma/objeto como se fosse arma de arremesso neste turno.",
+        "Pode arremessar até 2 armas/objetos como se fossem armas de arremesso neste turno.",
+        "Pode arremessar até 3 armas/objetos como se fossem armas de arremesso neste turno.",
+        "Pode arremessar até 4 armas/objetos como se fossem armas de arremesso neste turno.",
+        "Pode arremessar até 5 armas/objetos como se fossem armas de arremesso neste turno."
+      ],
+      "experimental": false,
+      "fonte": "sistema-base/listas/habilidades-base-ageis.md",
+      "observacoes": "Objetos conferem dano de arma improvisada.; O custo de PA ativa a habilidade no turno mas os arremessos ainda gastam seus respectivos custos."
+    },
+    {
+      "nome": "Arremessos concentrados",
+      "atributo": "Ágil",
+      "custoPA": "1 PA",
+      "valorCompra": "2",
+      "efeito": "Pode manter o alvo dos ataques de arremesso no mesmo oponente ignorando a desvantagem de ataques múltiplos.",
+      "requisitos": "Estar arremessando uma arma de arremesso (ARRE).",
+      "niveis": [
+        "Pode atacar o mesmo alvo 2 vezes no turno sem sofrer desvantagem.",
+        "Pode atacar o mesmo alvo 3 vezes no turno sem sofrer desvantagem.",
+        "Pode atacar o mesmo alvo 4 vezes no turno sem sofrer desvantagem.",
+        "Pode atacar o mesmo alvo 5 vezes no turno sem sofrer desvantagem."
+      ],
+      "experimental": false,
+      "fonte": "sistema-base/listas/habilidades-base-ageis.md",
+      "observacoes": "O custo de PA permite manter o alvo mas os ataques ainda gastam seus respectivos custos."
+    },
+    {
+      "nome": "Ataques à distância concentrados",
+      "atributo": "Ágil",
+      "custoPA": "1 PA",
+      "valorCompra": "2",
+      "efeito": "Pode manter o alvo dos ataques à distância no mesmo oponente ignorando a desvantagem de ataques múltiplos.",
+      "requisitos": "Estar atacando com uma arma à distância (DIST).",
+      "niveis": [
+        "Pode atacar o mesmo alvo 2 vezes no turno sem sofrer desvantagem.",
+        "Pode atacar o mesmo alvo 3 vezes no turno sem sofrer desvantagem.",
+        "Pode atacar o mesmo alvo 4 vezes no turno sem sofrer desvantagem.",
+        "Pode atacar o mesmo alvo 5 vezes no turno sem sofrer desvantagem."
+      ],
+      "experimental": false,
+      "fonte": "sistema-base/listas/habilidades-base-ageis.md",
+      "observacoes": "O custo de PA permite manter o alvo mas os ataques ainda gastam seus respectivos custos."
+    },
+    {
+      "nome": "Ataques múltiplos & leves",
+      "atributo": "Ágil",
+      "custoPA": "1 PA",
+      "valorCompra": "1",
+      "efeito": "Pode mudar o alvo de ataques corpo a corpo com armas leves ignorando a desvantagem de ataques múltiplos neste turno.",
+      "requisitos": "Estar utilizando armas corpo a corpo leves.",
+      "niveis": [
+        "Pode mudar de alvo 1 vez no turno sem sofrer desvantagem.",
+        "Pode mudar de alvo 2 vezes no turno sem sofrer desvantagem.",
+        "Pode mudar de alvo 3 vezes no turno sem sofrer desvantagem.",
+        "Pode mudar de alvo 4 vezes no turno sem sofrer desvantagem.",
+        "Pode mudar de alvo 5 vezes no turno sem sofrer desvantagem."
+      ],
+      "experimental": false,
+      "fonte": "sistema-base/listas/habilidades-base-ageis.md",
+      "observacoes": "O custo de PA de ativação da habilidade permite mudar o alvo mas os ataques ainda devem gastar seus respectivos custos.; Mesmo que o jogador já tenha atacado o alvo antes, é necessário gastar um uso da mudança de alvo para não sofrer a penalidade."
+    },
+    {
+      "nome": "Disparada",
+      "atributo": "Ágil",
+      "custoPA": "5 PA",
+      "valorCompra": "2",
+      "efeito": "Realiza um movimento em linha reta na direção escolhida.",
+      "requisitos": "Não ter nenhuma perna desabilitada.",
+      "niveis": [
+        "Avança até 6 metros",
+        "Avança até 7 metros",
+        "Avança até 8 metros",
+        "Avança até 9 metros",
+        "Avança até 10 metros"
+      ],
+      "experimental": false,
+      "fonte": "sistema-base/listas/habilidades-base-ageis.md",
+      "observacoes": "Não é possível dividir o deslocamento ou mudar de direção no meio do movimento.; Você pode se deslocar menos do que o deslocamento máximo da habilidade, o excedente não utilizado é perdido."
+    },
+    {
+      "nome": "Golpe surpresa",
+      "atributo": "Ágil",
+      "custoPA": "1 PA + PA da arma",
+      "valorCompra": "2",
+      "efeito": "Ao atacar a partir do status escondido, o golpe causa dano adicional — rolado junto com o dano normal da arma. O dado extra aumenta com o nível da habilidade, de +1d4 (nível 1) a +1d10 (nível 4), conforme a progressão abaixo.",
+      "requisitos": "Estar escondido de qualquer oponente.; Não estar usando armaduras médias ou pesadas.; Estar usando armas leves corpo a corpo.",
+      "niveis": [
+        "Dano extra: +1d4",
+        "Dano extra: +1d6",
+        "Dano extra: +1d8",
+        "Dano extra: +1d10"
+      ],
+      "experimental": false,
+      "fonte": "sistema-base/listas/habilidades-base-ageis.md",
+      "observacoes": "O dano extra é somado ao dano da arma (ex.: no nível 3, uma adaga 1d4 que acerta escondido causa 1d4 + 1d8).; Contra outro personagem, você precisa estar de fato escondido dele — ou seja, ter sido bem-sucedido na sua furtividade (o oponente não te percebeu) para que a habilidade possa ser usada.; Combina com Emboscador (que dobra o resultado do dano ao atacar pelas costas escondido, com arma leve)."
+    },
+    {
+      "nome": "Ocultar-se à vista",
+      "atributo": "Ágil",
+      "custoPA": "2 PA (a própria ação de Esconder-se)",
+      "valorCompra": "3",
+      "efeito": "Normalmente, a ação Esconder-se só pode ser usada fora do campo de visão de todos os inimigos. Esta habilidade quebra essa restrição: permite tentar se esconder mesmo estando à vista de um oponente — sumir num átimo de desatenção, atrás de fumaça, no vaivém de uma multidão, na troca de sombras. Você usa a ação de Esconder-se normalmente (rolando e guardando o seu valor de furtividade), mas enquanto um oponente ainda pode te ver.",
+      "requisitos": "Estar usando a ação Esconder-se (paga os 2 PA dela).; Não estar usando armaduras médias ou pesadas.; Haver algo que quebre a atenção direta entre você e o oponente — ao menos meia cobertura, penumbra/escuridão ou uma distração que o narrador aceite. Não se some no meio de um salão vazio e iluminado com os olhos de todos em você.",
+      "niveis": [
+        "Pode se esconder à vista de 1 oponente por vez, rolando a furtividade com desvantagem adicional (além da desvantagem natural que já se aplique).",
+        "Pode se esconder à vista de 1 oponente sem a desvantagem adicional (rola como um Esconder-se comum).",
+        "Pode se esconder à vista de até 2 oponentes ao mesmo tempo.",
+        "Pode se esconder à vista de quantos oponentes o enxerguem, sem penalidade adicional."
+      ],
+      "experimental": false,
+      "fonte": "sistema-base/listas/habilidades-base-ageis.md",
+      "observacoes": "Vale a regra geral: cada oponente que puder te ver rola percepção contra o seu valor de furtividade guardado, com vantagem/desvantagem por cobertura + iluminação (ver Esconder-se). Esconder-se à vista à luz do dia e sem cobertura é possível pela habilidade, mas o inimigo rola com vantagem — tende a te achar.; Não dispensa o custo da ação nem substitui o Espreitador: para se esconder à vista como reação, é preciso ter os dois (esta habilidade + o aspecto).; O narrador continua com a palavra final sobre haver ou não uma brecha de atenção plausível na cena."
+    },
+    {
+      "nome": "Analisar fraquezas",
+      "atributo": "Mental",
+      "custoPA": "1 PA",
+      "valorCompra": "1",
+      "efeito": "Vê quanto dano o oponente recebeu em partes do corpo a escolha do jogador.",
+      "requisitos": "Conseguir enxergar o componente plenamente.",
+      "niveis": [
+        "Vê quanto dano o oponente recebeu em 1 parte do corpo.",
+        "Vê quanto dano o oponente recebeu em 2 partes do corpo.",
+        "Vê quanto dano o oponente recebeu em 3 partes do corpo.",
+        "Vê quanto dano o oponente recebeu em 4 partes do corpo.",
+        "Vê quanto dano o oponente recebeu em 5 partes do corpo.",
+        "Vê quanto dano o oponente recebeu em 6 partes do corpo."
+      ],
+      "experimental": false,
+      "fonte": "sistema-base/listas/habilidades-base-mentais.md"
+    },
+    {
+      "nome": "Auto cura",
+      "atributo": "Mental",
+      "custoPA": "4 PA",
+      "valorCompra": "3",
+      "efeito": "Realiza um teste de cura de dano superficial em si. Se falhar neste teste de cura, não recebe dano adicional.",
+      "requisitos": "Não estar desabilitado.",
+      "niveis": [
+        "Rola 1d4 de cura de dano superficial.",
+        "Rola 1d6 de cura de dano superficial.",
+        "Rola 1d8 de cura de dano superficial.",
+        "Rola 1d10 de cura de dano superficial.",
+        "Rola 1d12 de cura de dano superficial."
+      ],
+      "experimental": false,
+      "fonte": "sistema-base/listas/habilidades-base-mentais.md",
+      "observacoes": "A cura de dano superficial deve ser focada em um apenas membro.; Pontos de cura sobressalentes são perdidos."
+    },
+    {
+      "nome": "Auto tratamento",
+      "atributo": "Mental",
+      "custoPA": "5 PA",
+      "valorCompra": "4",
+      "efeito": "Realiza um teste de tratamento de dano profundo em si. Se falhar neste teste de tratamento, não recebe dano adicional.",
+      "requisitos": "Não estar desabilitado.",
+      "niveis": [
+        "Rola 1d4 de tratamento de dano profundo.",
+        "Rola 2d4 de tratamento de dano profundo.",
+        "Rola 3d4 de tratamento de dano profundo.",
+        "Rola 3d6 de tratamento de dano profundo."
+      ],
+      "experimental": false,
+      "fonte": "sistema-base/listas/habilidades-base-mentais.md",
+      "observacoes": "O tratamento de dano profundo deve ser focado em apenas um membro.; Os danos profundos tratados tornam-se danos superficiais.; Pontos de tratamento sobressalentes são perdidos.; Não é possível usar pontos de tratamento para curar danos superficiais."
+    },
+    {
+      "nome": "Confundir inimigo",
+      "atributo": "Mental",
+      "custoPA": "4 PA",
+      "valorCompra": "3",
+      "efeito": "Realiza um teste mental contra oponentes dentro de 6 metros de distância para conceder desvantagem no próximo contrateste de defesa/esquiva do oponente.",
+      "requisitos": "Os oponentes precisam conseguir te ouvir.",
+      "niveis": [
+        "Afeta até 1 oponente",
+        "Afeta até 2 oponentes",
+        "Afeta até 3 oponentes",
+        "Afeta até 4 oponentes"
+      ],
+      "experimental": false,
+      "fonte": "sistema-base/listas/habilidades-base-mentais.md",
+      "observacoes": "Você pode escolher os oponentes que serão afetados pela habilidade (e deverão realizar contrateste para resistir)."
+    },
+    {
+      "nome": "Consumir",
+      "atributo": "Mental",
+      "custoPA": "4 PA",
+      "valorCompra": "4",
+      "efeito": "Realiza um teste mental para: - Consome habilidades de um oponente (se for um oponente jogador) - Desativa habilidades de um oponente (se for um oponente NPC)",
+      "requisitos": "Não há.",
+      "niveis": [
+        "Consome até 1 habilidade ou desativa uma habilidade por 1 turno.",
+        "Consome até 2 habilidades ou desativa uma habilidade por 2 turnos.",
+        "Consome até 3 habilidades ou desativa uma habilidade por 3 turnos."
+      ],
+      "experimental": false,
+      "fonte": "sistema-base/listas/habilidades-base-mentais.md"
+    },
+    {
+      "nome": "Criar armadilha",
+      "atributo": "Mental",
+      "custoPA": "1 PA",
+      "valorCompra": "2",
+      "efeito": "Deposita/constrói uma armadilha em um espaço do terreno adjacente a você. Quando acionada, prende o oponente e causa dano. Para se soltar, o oponente deve realizar um teste físico, se falhar, sofre o dano novamente.",
+      "requisitos": "Estar escondido de qualquer oponente.",
+      "niveis": [
+        "Causa 1 ponto de dano.",
+        "Causa 2 pontos de dano.",
+        "Causa 3 pontos de dano.",
+        "Causa 4 pontos de dano.",
+        "Causa 5 pontos de dano.",
+        "Causa 6 pontos de dano."
+      ],
+      "experimental": false,
+      "fonte": "sistema-base/listas/habilidades-base-mentais.md"
+    },
+    {
+      "nome": "Intimidação generalizada",
+      "atributo": "Mental",
+      "custoPA": "4 PA",
+      "valorCompra": "3",
+      "efeito": "Realiza um teste mental contra oponentes dentro de 6 metros de distância para atrasar seus turnos em 1 posição.",
+      "requisitos": "Os oponentes precisam conseguir te ouvir.",
+      "niveis": [
+        "Afeta até 1 oponente",
+        "Afeta até 2 oponentes",
+        "Afeta até 3 oponentes",
+        "Afeta até 4 oponentes"
+      ],
+      "experimental": false,
+      "fonte": "sistema-base/listas/habilidades-base-mentais.md",
+      "observacoes": "Você pode escolher os oponentes que serão afetados pela habilidade (e deverão realizar contrateste para resistir)."
+    },
+    {
+      "nome": "Recompor",
+      "atributo": "Mental",
+      "custoPA": "4 PA",
+      "valorCompra": "4",
+      "efeito": "Recupera as próprias aptidões consumidas.",
+      "requisitos": "Não há.",
+      "niveis": [
+        "Recupera até 2 aptidões",
+        "Recupera até 3 aptidões",
+        "Recupera até 4 aptidões"
+      ],
+      "experimental": false,
+      "fonte": "sistema-base/listas/habilidades-base-mentais.md"
+    },
+    {
+      "nome": "Urro de Intimidação",
+      "atributo": "Mental",
+      "custoPA": "4 PA",
+      "valorCompra": "3",
+      "efeito": "Realiza um teste mental contra um oponente dentro de 3 metros de distância para atrasar seu turno.",
+      "requisitos": "Os oponentes precisam conseguir te ouvir.",
+      "niveis": [
+        "Atrasa o turno do oponente em 1 posição",
+        "Atrasa o turno do oponente em 2 posições",
+        "Atrasa o turno do oponente em 3 posições",
+        "Atrasa o turno do oponente em 4 posições",
+        "Atrasa o turno do oponente em 5 posições"
+      ],
+      "experimental": false,
+      "fonte": "sistema-base/listas/habilidades-base-mentais.md"
+    },
+    {
+      "nome": "Reparar",
+      "atributo": "Mental",
+      "custoPA": "— (usada fora de combate)",
+      "valorCompra": "2",
+      "efeito": "Fora de combate, você recupera durabilidade de um equipamento (arma, peça de armadura ou escudo). Faça um teste Mental; com sucesso, o item recupera durabilidade conforme o nível da habilidade (sem ultrapassar a durabilidade máxima).",
+      "requisitos": "Estar fora de combate e dispor de tempo e ferramentas adequadas, a critério do narrador.",
+      "niveis": [
+        "Recupera até 5 de durabilidade.",
+        "Recupera até 10 de durabilidade.",
+        "Recupera até 20 de durabilidade.",
+        "Restaura o item à durabilidade máxima."
+      ],
+      "experimental": false,
+      "fonte": "sistema-base/listas/habilidades-base-mentais.md",
+      "observacoes": "Não conserta um item quebrado (durabilidade 0) além do que o narrador julgar plausível para reparo em campo — restaurar totalmente pode exigir oficina/materiais."
+    },
+    {
+      "nome": "Desorientar",
+      "atributo": "Social",
+      "custoPA": "4 PA",
+      "valorCompra": "4",
+      "efeito": "Realiza um teste social contra um oponente para confundi-lo, fazendo-o perder pontos de ação (PA) apenas no próximo turno dele (respeitando o piso de 3 PA).",
+      "requisitos": "O oponente precisa conseguir te ouvir.",
+      "niveis": [
+        "O oponente perde 2 PA em seu próximo turno.",
+        "O oponente perde 4 PA em seu próximo turno.",
+        "O oponente perde 6 PA em seu próximo turno.",
+        "O oponente perde 8 PA em seu próximo turno.",
+        "O oponente perde 10 PA em seu próximo turno."
+      ],
+      "experimental": false,
+      "fonte": "sistema-base/listas/habilidades-base-sociais.md",
+      "observacoes": "O oponente pode realizar um contrateste para resistir."
+    },
+    {
+      "nome": "Animar",
+      "atributo": "Social",
+      "custoPA": "2 PA",
+      "valorCompra": "2",
+      "efeito": "Realiza um teste social para recuperar aptidões consumidas de um aliado.",
+      "requisitos": "O aliado alvo precisa estar adjacente a você.",
+      "niveis": [
+        "Recupera até 2 aptidões",
+        "Recupera até 3 aptidões",
+        "Recupera até 4 aptidões",
+        "Recupera até 5 aptidões"
+      ],
+      "experimental": false,
+      "fonte": "sistema-base/listas/habilidades-base-sociais.md",
+      "observacoes": "Você pode escolher quais aptidões consumidas do aliado quer recuperar."
+    },
+    {
+      "nome": "Brado de guerra",
+      "atributo": "Social",
+      "custoPA": "2 PA",
+      "valorCompra": "3",
+      "efeito": "Concede vantagem no próximo teste de ataque para aliados dentro de 4 metros de distância. O acerto é automático contanto que o aliado seja receptivo a você.",
+      "requisitos": "Os aliados precisam conseguir te ouvir.",
+      "niveis": [
+        "Afeta até 1 aliado",
+        "Afeta até 2 aliados",
+        "Afeta até 3 aliados",
+        "Afeta até 4 aliados",
+        "Afeta até 5 aliados",
+        "Afeta até 6 aliados"
+      ],
+      "experimental": false,
+      "fonte": "sistema-base/listas/habilidades-base-sociais.md",
+      "observacoes": "Você pode escolher os aliados afetados pela habilidade."
+    },
+    {
+      "nome": "Comandar",
+      "atributo": "Social",
+      "custoPA": "1 PA",
+      "valorCompra": "2",
+      "efeito": "Transfere pontos de ação do seu próximo turno para um aliado.",
+      "requisitos": "Possuir a quantidade de PA total que deseja transferir.; Poder ver/ouvir e ser visto/ouvido pelo aliado alvo da habilidade.",
+      "niveis": [
+        "Até 2 PA",
+        "Até 3 PA",
+        "Até 4 PA",
+        "Até 5 PA",
+        "Até 6 PA",
+        "Até 7 PA",
+        "Até 8 PA",
+        "Até 9 PA",
+        "Até 10 PA"
+      ],
+      "experimental": false,
+      "fonte": "sistema-base/listas/habilidades-base-sociais.md",
+      "observacoes": "O aliado pode usar os PA transferidos em seu turno, PA não usados são perdidos.; No seu turno seguinte, você só pode usar os PA restantes (não transferidos)"
+    },
+    {
+      "nome": "Cura especializada",
+      "atributo": "Social",
+      "custoPA": "4 PA",
+      "valorCompra": "3",
+      "efeito": "Realiza um teste de cura de dano superficial em um aliado adjacente. Se falhar neste teste de cura, o aliado não recebe dano adicional.",
+      "requisitos": "Não estar desabilitado.",
+      "niveis": [
+        "Rola 1d4 de cura de dano superficial.",
+        "Rola 1d6 de cura de dano superficial.",
+        "Rola 1d8 de cura de dano superficial.",
+        "Rola 1d10 de cura de dano superficial.",
+        "Rola 1d12 de cura de dano superficial."
+      ],
+      "experimental": false,
+      "fonte": "sistema-base/listas/habilidades-base-sociais.md",
+      "observacoes": "Pode distribuir a cura de dano superficial entre os membros do aliado como quiser."
+    },
+    {
+      "nome": "Grito de alerta",
+      "atributo": "Social",
+      "custoPA": "4 PA",
+      "valorCompra": "3",
+      "efeito": "Concede vantagem no próximo contrateste de defesa/esquiva para aliados dentro de 4 metros de distância. O acerto é automático contanto que o aliado seja receptivo a você.",
+      "requisitos": "Os aliados precisam conseguir te ouvir.",
+      "niveis": [
+        "Afeta até 1 aliado",
+        "Afeta até 2 aliados",
+        "Afeta até 3 aliados",
+        "Afeta até 4 aliados",
+        "Afeta até 5 aliados",
+        "Afeta até 6 aliados"
+      ],
+      "experimental": false,
+      "fonte": "sistema-base/listas/habilidades-base-sociais.md",
+      "observacoes": "Você pode escolher os aliados afetados pela habilidade."
+    },
+    {
+      "nome": "Revigorar",
+      "atributo": "Social",
+      "custoPA": "2 PA",
+      "valorCompra": "2",
+      "efeito": "Reativa uma habilidade de um aliado.",
+      "requisitos": "O aliado precisa conseguir te ouvir.",
+      "niveis": [
+        "Reativa habilidades de até nível 1",
+        "Reativa habilidades de até nível 2",
+        "Reativa habilidades de até nível 3",
+        "Reativa habilidades de até nível 4",
+        "Reativa habilidades de até nível 5"
+      ],
+      "experimental": false,
+      "fonte": "sistema-base/listas/habilidades-base-sociais.md",
+      "observacoes": "Você pode escolher qual habilidade reativar, respeitando o nível máximo permitido pela tabela de progressão."
+    },
+    {
+      "nome": "Revitalizar",
+      "atributo": "Social",
+      "custoPA": "7 PA",
+      "valorCompra": "4",
+      "efeito": "Realiza um teste social para retornar um aliado inconsciente à consciência e realiza um tratamento automático.",
+      "requisitos": "O aliado alvo precisa estar inconsciente.",
+      "niveis": [
+        "Trata/cura 1 ponto de dano profundo/superficial.",
+        "Trata/cura 2 pontos de dano profundo/superficial.",
+        "Trata/cura 3 pontos de dano profundo/superficial.",
+        "Trata/cura 4 pontos de dano profundo/superficial.",
+        "Trata/cura 5 pontos de dano profundo/superficial."
+      ],
+      "experimental": false,
+      "fonte": "sistema-base/listas/habilidades-base-sociais.md",
+      "observacoes": "Você pode escolher como distribuir os pontos de tratamento ou cura nos membros que quiser."
+    },
+    {
+      "nome": "Tratamento especializado",
+      "atributo": "Social",
+      "custoPA": "5 PA",
+      "valorCompra": "4",
+      "efeito": "Realiza um teste de tratamento de dano profundo em um aliado adjacente. Se falhar neste teste de tratamento, o aliado não recebe dano adicional.",
+      "requisitos": "Não estar desabilitado.",
+      "niveis": [
+        "Rola 1d4 de tratamento de dano profundo.",
+        "Rola 2d4 de tratamento de dano profundo.",
+        "Rola 3d4 de tratamento de dano profundo.",
+        "Rola 3d6 de tratamento de dano profundo."
+      ],
+      "experimental": false,
+      "fonte": "sistema-base/listas/habilidades-base-sociais.md",
+      "observacoes": "Pode distribuir o tratamento de dano profundo entre os membros do aliado como quiser.; Os danos profundos tratados tornam-se danos superficiais.; Não é possível usar pontos de tratamento para curar danos superficiais.; Pontos de tratamento sobressalentes são perdidos."
+    },
+    {
+      "nome": "Meditação",
+      "atributo": "Social",
+      "custoPA": "2 PA",
+      "valorCompra": "2",
+      "efeito": "Se você estiver em uma posição de descontrole da malha de embate social e for bem-sucedido num teste de ponderar, você sobe campos adicionais em direção ao centro da trilha.",
+      "requisitos": "Estar em uma posição de descontrole da malha de embate social.",
+      "niveis": [
+        "Sobe 1 campo, tendo como ponto máximo o campo neutro da trilha emocional (aquele em que não há bônus ou penalidades);",
+        "Sobe 2 campos, tendo como ponto máximo o campo neutro da trilha emocional (aquele em que não há bônus ou penalidades);",
+        "Sobe 2 campos, e pode subir mais do que o ponto de neutralidade da trilha emocional;"
+      ],
+      "experimental": true,
+      "fonte": "sistema-base/listas/habilidades-experimentais-sociais.md"
+    },
+    {
+      "nome": "Ressignificar",
+      "atributo": "Mental",
+      "custoPA": "5 PA",
+      "valorCompra": "3",
+      "efeito": "Se o personagem estiver no campo neutro de uma trilha emocional, ele pode transitar para outra trilha diretamente, sem passar por estágios intermediários (sem passar pelos campos da emoção intermediários).",
+      "requisitos": "Estar em posição neutra de uma trilha emocional",
+      "niveis": [
+        "Pode transitar para uma trilha adjacente;",
+        "Pode transitar para uma trilha adjacente, ou para a seguinte;",
+        "Pode transitar para qualquer trilha."
+      ],
+      "experimental": true,
+      "fonte": "sistema-base/listas/habilidades-experimentais-sociais.md"
+    },
+    {
+      "nome": "Empatia",
+      "atributo": "Social",
+      "custoPA": "4 PA",
+      "valorCompra": "3",
+      "efeito": "Ative um gatilho para se movimentar na mesma direção de um aliado quando ele se mover.",
+      "requisitos": "",
+      "niveis": [
+        "Ande um campo na direção de um aliado;",
+        "Ande dois campos na direção de um aliado;",
+        "Ande três campos na direção de um aliado."
+      ],
+      "experimental": true,
+      "fonte": "sistema-base/listas/habilidades-experimentais-sociais.md"
+    },
+    {
+      "nome": "Otimista",
+      "atributo": "Social",
+      "custoPA": "5 PA",
+      "valorCompra": "3",
+      "efeito": "Desloca um aliado na direção do controle emocional se ele estiver na trilha da alegria.",
+      "requisitos": "Ter um aliado na trilha da alegria.",
+      "niveis": [
+        "Desloca em 1 trilha;",
+        "Desloca em 2 trilhas;",
+        "Desloca em 3 trilhas;"
+      ],
+      "experimental": true,
+      "fonte": "sistema-base/listas/habilidades-experimentais-sociais.md"
+    },
+    {
+      "nome": "Liderar pelo exemplo",
+      "atributo": "Social",
+      "custoPA": "4 PA",
+      "valorCompra": "3",
+      "efeito": "Movimente um aliado na direção do seu personagem na malha de embate social.",
+      "requisitos": "",
+      "niveis": [
+        "Desloca em 1 trilha;",
+        "Desloca em 2 trilhas;",
+        "Desloca em 3 trilhas;"
+      ],
+      "experimental": true,
+      "fonte": "sistema-base/listas/habilidades-experimentais-sociais.md"
+    },
+    {
+      "nome": "Destacar defeitos",
+      "atributo": "Social",
+      "custoPA": "4 PA",
+      "valorCompra": "3",
+      "efeito": "Desloca o adversário lateralmente na direção da ansiedade.",
+      "requisitos": "",
+      "niveis": [
+        "Desloca em 1 trilha;",
+        "Desloca em 2 trilhas;",
+        "Desloca em 3 trilhas;"
+      ],
+      "experimental": true,
+      "fonte": "sistema-base/listas/habilidades-experimentais-sociais.md"
+    },
+    {
+      "nome": "Palhaço",
+      "atributo": "Social",
+      "custoPA": "4 PA",
+      "valorCompra": "3",
+      "efeito": "Desloca o adversário lateralmente na direção da alegria",
+      "requisitos": "",
+      "niveis": [
+        "Desloca em 1 trilha;",
+        "Desloca em 2 trilhas;",
+        "Desloca em 3 trilhas;"
+      ],
+      "experimental": true,
+      "fonte": "sistema-base/listas/habilidades-experimentais-sociais.md"
+    },
+    {
+      "nome": "Sedutor",
+      "atributo": "Social",
+      "custoPA": "4 PA",
+      "valorCompra": "3",
+      "efeito": "Desloca o adversário lateralmente na direção da atração",
+      "requisitos": "",
+      "niveis": [
+        "Desloca em 1 trilha;",
+        "Desloca em 2 trilhas;",
+        "Desloca em 3 trilhas;"
+      ],
+      "experimental": true,
+      "fonte": "sistema-base/listas/habilidades-experimentais-sociais.md"
+    },
+    {
+      "nome": "Enojar",
+      "atributo": "Social",
+      "custoPA": "4 PA",
+      "valorCompra": "3",
+      "efeito": "Desloca o adversário lateralmente na direção da aversão",
+      "requisitos": "",
+      "niveis": [
+        "Desloca em 1 trilha;",
+        "Desloca em 2 trilhas;",
+        "Desloca em 3 trilhas;"
+      ],
+      "experimental": true,
+      "fonte": "sistema-base/listas/habilidades-experimentais-sociais.md"
+    },
+    {
+      "nome": "Respirar fundo",
+      "atributo": "Mental",
+      "custoPA": "4 PA",
+      "valorCompra": "4",
+      "efeito": "Impede que você seja deslocado por um oponente nos próximos turnos na malha de embate social.",
+      "requisitos": "",
+      "niveis": [
+        "Até seu próximo turno.",
+        "Até seu próximo turno + 1 rodada.",
+        "Até seu próximo turno + 2 rodadas."
+      ],
+      "experimental": true,
+      "fonte": "sistema-base/listas/habilidades-experimentais-sociais.md"
+    },
+    {
+      "nome": "Agilizar derrota em [TRILHA]",
+      "atributo": "Social",
+      "custoPA": "4 PA",
+      "valorCompra": "4",
+      "efeito": "Adiciona x de pontuação negativa a um adversário no final do turno, se ele estiver em descontrole na trilha [TRILHA]",
+      "requisitos": "",
+      "niveis": [
+        "x = 1",
+        "x = 2",
+        "x = 3"
+      ],
+      "experimental": true,
+      "fonte": "sistema-base/listas/habilidades-experimentais-sociais.md"
+    },
+    {
+      "nome": "Agilizar vitória em [TRILHA]",
+      "atributo": "Social",
+      "custoPA": "4 PA",
+      "valorCompra": "4",
+      "efeito": "Adiciona x pontuação positiva a um aliado (ou você mesmo) no final do turno, se ele estiver em controle na trilha [TRILHA]",
+      "requisitos": "",
+      "niveis": [
+        "x = 1",
+        "x = 2",
+        "x = 3"
+      ],
+      "experimental": true,
+      "fonte": "sistema-base/listas/habilidades-experimentais-sociais.md"
+    },
+    {
+      "nome": "Dilema",
+      "atributo": "Social",
+      "custoPA": "8 PA",
+      "valorCompra": "6",
+      "efeito": "Movimenta todos os personagens elegíveis na malha de embate social até um dos campos da emoção adjacentes. O personagem movido dessa maneira escolhe qual campo da emoção quer ocupar.",
+      "requisitos": "",
+      "niveis": [
+        "Movimenta todos os personagens em campos de pontuação 0",
+        "Movimenta todos os personagens em campos de pontuação -1 e +1",
+        "Movimenta todos os personagens em campos de pontuação -2 e +2"
+      ],
+      "experimental": true,
+      "fonte": "sistema-base/listas/habilidades-experimentais-sociais.md"
+    },
+    {
+      "nome": "Psicólogo",
+      "atributo": "Social",
+      "custoPA": "1 PA",
+      "valorCompra": "3",
+      "efeito": "Reduz os PAs necessários para movimentar um aliado na malha de embate social.",
+      "requisitos": "",
+      "niveis": [
+        "-2 PAs do custo total da ação",
+        "-4 PAs do custo total da ação",
+        "-6 PAs do custo total da ação"
+      ],
+      "experimental": true,
+      "fonte": "sistema-base/listas/habilidades-experimentais-sociais.md"
+    }
+  ],
+  "tracos": [
+    {
+      "nome": "Técnica em Agarrar",
+      "categoria": "Técnica",
+      "atributo": "Físico",
+      "valorCompra": "1",
+      "efeito": "Anula a desvantagem natural dos testes da atividade correspondente — não concede vantagem.",
+      "requisitos": "",
+      "experimental": false
+    },
+    {
+      "nome": "Técnica em Empurrar",
+      "categoria": "Técnica",
+      "atributo": "Físico",
+      "valorCompra": "1",
+      "efeito": "Anula a desvantagem natural dos testes da atividade correspondente — não concede vantagem.",
+      "requisitos": "",
+      "experimental": false
+    },
+    {
+      "nome": "Técnica em Arremessar",
+      "categoria": "Técnica",
+      "atributo": "Físico",
+      "valorCompra": "1",
+      "efeito": "Anula a desvantagem natural dos testes da atividade correspondente — não concede vantagem.",
+      "requisitos": "",
+      "experimental": false
+    },
+    {
+      "nome": "Técnica em Saltar",
+      "categoria": "Técnica",
+      "atributo": "Ágil",
+      "valorCompra": "1",
+      "efeito": "Anula a desvantagem natural dos testes da atividade correspondente — não concede vantagem.",
+      "requisitos": "",
+      "experimental": false
+    },
+    {
+      "nome": "Técnica em Nadar",
+      "categoria": "Técnica",
+      "atributo": "Ágil",
+      "valorCompra": "1",
+      "efeito": "Anula a desvantagem natural dos testes da atividade correspondente — não concede vantagem.",
+      "requisitos": "",
+      "experimental": false
+    },
+    {
+      "nome": "Técnica em Realizar truques",
+      "categoria": "Técnica",
+      "atributo": "Ágil ou Social",
+      "valorCompra": "1",
+      "efeito": "Anula a desvantagem natural dos testes da atividade correspondente — não concede vantagem.",
+      "requisitos": "",
+      "experimental": false
+    },
+    {
+      "nome": "Técnica em Esconder-se",
+      "categoria": "Técnica",
+      "atributo": "Ágil",
+      "valorCompra": "1",
+      "efeito": "Anula a desvantagem natural dos testes da atividade correspondente — não concede vantagem.",
+      "requisitos": "",
+      "experimental": false
+    },
+    {
+      "nome": "Técnica em Investigar/Observar",
+      "categoria": "Técnica",
+      "atributo": "Mental",
+      "valorCompra": "1",
+      "efeito": "Anula a desvantagem natural dos testes da atividade correspondente — não concede vantagem.",
+      "requisitos": "",
+      "experimental": false
+    },
+    {
+      "nome": "Técnica em Ponderar",
+      "categoria": "Técnica",
+      "atributo": "Mental",
+      "valorCompra": "1",
+      "efeito": "Anula a desvantagem natural dos testes da atividade correspondente — não concede vantagem.",
+      "requisitos": "",
+      "experimental": false
+    },
+    {
+      "nome": "Técnica em Intimidar",
+      "categoria": "Técnica",
+      "atributo": "Social",
+      "valorCompra": "1",
+      "efeito": "Anula a desvantagem natural dos testes da atividade correspondente — não concede vantagem.",
+      "requisitos": "",
+      "experimental": false
+    },
+    {
+      "nome": "Técnica em Persuadir/Seduzir",
+      "categoria": "Técnica",
+      "atributo": "Social",
+      "valorCompra": "1",
+      "efeito": "Anula a desvantagem natural dos testes da atividade correspondente — não concede vantagem.",
+      "requisitos": "",
+      "experimental": false
+    },
+    {
+      "nome": "Técnica em Performar",
+      "categoria": "Técnica",
+      "atributo": "Social",
+      "valorCompra": "1",
+      "efeito": "Anula a desvantagem natural dos testes da atividade correspondente — não concede vantagem.",
+      "requisitos": "",
+      "experimental": false
+    },
+    {
+      "nome": "Técnica em Tratar/Curar",
+      "categoria": "Técnica",
+      "atributo": "Social ou Mental",
+      "valorCompra": "3",
+      "efeito": "Anula a desvantagem natural dos testes da atividade correspondente — não concede vantagem.",
+      "requisitos": "",
+      "experimental": false
+    },
+    {
+      "nome": "Técnica em Negociar",
+      "categoria": "Técnica",
+      "atributo": "Social ou Mental",
+      "valorCompra": "3",
+      "efeito": "Anula a desvantagem natural dos testes da atividade correspondente — não concede vantagem.",
+      "requisitos": "",
+      "experimental": false
+    },
+    {
+      "nome": "Maestria em armas cortantes",
+      "categoria": "Maestria",
+      "atributo": "",
+      "valorCompra": "1",
+      "efeito": "As propriedades só produzem efeito se o personagem tiver a maestria correspondente.",
+      "requisitos": "",
+      "observacao": "Custo escalonado: a 1ª maestria custa 1 exp., a 2ª custa 2 exp., a 3ª custa 3 exp., e assim por diante (conta o total de maestrias).",
+      "experimental": false
+    },
+    {
+      "nome": "Maestria em armas contundentes",
+      "categoria": "Maestria",
+      "atributo": "",
+      "valorCompra": "1",
+      "efeito": "As propriedades só produzem efeito se o personagem tiver a maestria correspondente.",
+      "requisitos": "",
+      "observacao": "Custo escalonado: a 1ª maestria custa 1 exp., a 2ª custa 2 exp., a 3ª custa 3 exp., e assim por diante (conta o total de maestrias).",
+      "experimental": false
+    },
+    {
+      "nome": "Maestria em armas perfurantes",
+      "categoria": "Maestria",
+      "atributo": "",
+      "valorCompra": "1",
+      "efeito": "As propriedades só produzem efeito se o personagem tiver a maestria correspondente.",
+      "requisitos": "",
+      "observacao": "Custo escalonado: a 1ª maestria custa 1 exp., a 2ª custa 2 exp., a 3ª custa 3 exp., e assim por diante (conta o total de maestrias).",
+      "experimental": false
+    },
+    {
+      "nome": "Maestria em armas de agarrar",
+      "categoria": "Maestria",
+      "atributo": "",
+      "valorCompra": "1",
+      "efeito": "As propriedades só produzem efeito se o personagem tiver a maestria correspondente.",
+      "requisitos": "",
+      "observacao": "Custo escalonado: a 1ª maestria custa 1 exp., a 2ª custa 2 exp., a 3ª custa 3 exp., e assim por diante (conta o total de maestrias).",
+      "experimental": false
+    },
+    {
+      "nome": "Maestria em armas versáteis",
+      "categoria": "Maestria",
+      "atributo": "",
+      "valorCompra": "1",
+      "efeito": "As propriedades só produzem efeito se o personagem tiver a maestria correspondente.",
+      "requisitos": "",
+      "observacao": "Custo escalonado: a 1ª maestria custa 1 exp., a 2ª custa 2 exp., a 3ª custa 3 exp., e assim por diante (conta o total de maestrias).",
+      "experimental": false
+    },
+    {
+      "nome": "Maestria em armas de deflexão",
+      "categoria": "Maestria",
+      "atributo": "",
+      "valorCompra": "1",
+      "efeito": "As propriedades só produzem efeito se o personagem tiver a maestria correspondente.",
+      "requisitos": "",
+      "observacao": "Custo escalonado: a 1ª maestria custa 1 exp., a 2ª custa 2 exp., a 3ª custa 3 exp., e assim por diante (conta o total de maestrias).",
+      "experimental": false
+    },
+    {
+      "nome": "Maestria em projéteis",
+      "categoria": "Maestria",
+      "atributo": "",
+      "valorCompra": "1",
+      "efeito": "As propriedades só produzem efeito se o personagem tiver a maestria correspondente.",
+      "requisitos": "",
+      "observacao": "Custo escalonado: a 1ª maestria custa 1 exp., a 2ª custa 2 exp., a 3ª custa 3 exp., e assim por diante (conta o total de maestrias).",
+      "experimental": false
+    },
+    {
+      "nome": "Maestria em armaduras leves",
+      "categoria": "Maestria",
+      "atributo": "",
+      "valorCompra": "1",
+      "efeito": "",
+      "requisitos": "",
+      "observacao": "Custo escalonado: a 1ª maestria custa 1 exp., a 2ª custa 2 exp., a 3ª custa 3 exp., e assim por diante (conta o total de maestrias).",
+      "experimental": false
+    },
+    {
+      "nome": "Maestria em armaduras médias",
+      "categoria": "Maestria",
+      "atributo": "",
+      "valorCompra": "1",
+      "efeito": "",
+      "requisitos": "",
+      "observacao": "Custo escalonado: a 1ª maestria custa 1 exp., a 2ª custa 2 exp., a 3ª custa 3 exp., e assim por diante (conta o total de maestrias).",
+      "experimental": false
+    },
+    {
+      "nome": "Maestria em armaduras pesadas",
+      "categoria": "Maestria",
+      "atributo": "",
+      "valorCompra": "1",
+      "efeito": "",
+      "requisitos": "",
+      "observacao": "Custo escalonado: a 1ª maestria custa 1 exp., a 2ª custa 2 exp., a 3ª custa 3 exp., e assim por diante (conta o total de maestrias).",
+      "experimental": false
+    },
+    {
+      "nome": "Maestria em ataque desarmado",
+      "categoria": "Maestria",
+      "atributo": "",
+      "valorCompra": "1",
+      "efeito": "permite realizar ataque mirado sem desvantagem, valendo apenas para ataques desarmados (ex.: soco). Viabiliza builds de lutador.",
+      "requisitos": "",
+      "observacao": "Custo escalonado: a 1ª maestria custa 1 exp., a 2ª custa 2 exp., a 3ª custa 3 exp., e assim por diante (conta o total de maestrias).",
+      "experimental": false
+    },
+    {
+      "nome": "Empacado",
+      "categoria": "Aspecto",
+      "atributo": "",
+      "valorCompra": "2",
+      "efeito": "Reduz qualquer movimentação forçada pela metade (arredondado para baixo).",
+      "requisitos": "Não ter nenhuma perna desabilitada.",
+      "experimental": false,
+      "gatilho": "Ser alvo de movimentação forçada (por oponentes ou causas naturais)."
+    },
+    {
+      "nome": "Emboscador",
+      "categoria": "Aspecto",
+      "atributo": "",
+      "valorCompra": "4",
+      "efeito": "Dobra o resultado do dano do ataque (rola-se o dano normalmente e multiplica-se o total por 2).",
+      "requisitos": "Estar escondido de todos os oponentes.; Estar usando armas leves.",
+      "experimental": false,
+      "gatilho": "Atacar um oponente pelas costas."
+    },
+    {
+      "nome": "Espreitador",
+      "categoria": "Aspecto",
+      "atributo": "",
+      "valorCompra": "4",
+      "efeito": "Permite usar a ação Esconder-se como uma reação (consumindo a reação da rodada e pagando o custo em fadiga, como toda reação). Sem este aspecto, esconder-se só pode ser feito como ação, no próprio turno.",
+      "requisitos": "Valem os pré-requisitos normais de Esconder-se (estar fora do campo de visão dos inimigos, salvo habilidade que diga o contrário).",
+      "experimental": false,
+      "gatilho": "Estar prestes a ser notado por um oponente (ou outra situação em que se esconder fora do turno faça sentido, a critério do narrador)."
+    },
+    {
+      "nome": "Lépido",
+      "categoria": "Aspecto",
+      "atributo": "",
+      "valorCompra": "3",
+      "efeito": "Pode recuar 1 metro imediatamente após atacar.",
+      "requisitos": "Estar utilizando uma arma de longo alcance.",
+      "experimental": false,
+      "gatilho": "Acertar o oponente com um ataque descuidado."
+    },
+    {
+      "nome": "Resistente",
+      "categoria": "Aspecto",
+      "atributo": "",
+      "valorCompra": "3",
+      "efeito": "Reduz o dano recebido pela metade.",
+      "requisitos": "Ter gasto uma guarda levantada para tentar se defender do ataque.; Estar utilizando armadura média ou pesada.",
+      "experimental": false,
+      "gatilho": "Ser acertado por um ataque."
+    },
+    {
+      "nome": "Protetor",
+      "categoria": "Aspecto",
+      "atributo": "",
+      "valorCompra": "4",
+      "efeito": "Pode realizar um teste para desviar o dano que um aliado adjacente receberia para você. Se obtiver sucesso no teste, é acertado pelo golpe e recebe o dano, seus redutores de dano são aplicados.",
+      "requisitos": "Estar a 1 metro de um aliado que está sendo atacado.; Estar usando escudo.",
+      "experimental": false,
+      "gatilho": "Ser acertado por um ataque."
+    },
+    {
+      "nome": "Blindado",
+      "categoria": "Aspecto",
+      "atributo": "",
+      "valorCompra": "4",
+      "efeito": "Defende ataques à distância com +1d10 de vantagem.",
+      "requisitos": "Estar usando escudo.",
+      "experimental": false,
+      "gatilho": "Utilizar uma guarda levantada ao ser atacado a distância."
+    },
+    {
+      "nome": "Vigilante",
+      "categoria": "Aspecto",
+      "atributo": "",
+      "valorCompra": "4",
+      "efeito": "Pode desferir um ataque de oportunidade a distância (exceção à regra geral de que ataques à distância não fazem ataque de oportunidade — ver Engajamento).",
+      "requisitos": "Estar usando uma arma de arremesso (já equipada).; Não ter usado seu ataque de oportunidade nesta rodada.",
+      "experimental": false,
+      "gatilho": "Se um oponente sair do seu alcance ideal."
+    },
+    {
+      "nome": "Escorregadio",
+      "categoria": "Aspecto",
+      "atributo": "",
+      "valorCompra": "4",
+      "efeito": "Recebe +1d10 de vantagem para esquivar de ataques de oportunidade.",
+      "requisitos": "Não estar utilizando armadura média ou pesada.",
+      "experimental": false,
+      "gatilho": "Receber um ataque de oportunidade."
+    },
+    {
+      "nome": "Reativo",
+      "categoria": "Aspecto",
+      "atributo": "",
+      "valorCompra": "4",
+      "efeito": "Pode desferir um ataque de oportunidade quando o oponente sai do seu alcance ideal.",
+      "requisitos": "Estar com guarda levantada.; Não ter usado seu ataque de oportunidade nesta rodada.",
+      "experimental": false,
+      "gatilho": "Um oponente sair do seu alcance ideal."
+    },
+    {
+      "nome": "Alerta",
+      "categoria": "Aspecto",
+      "atributo": "",
+      "valorCompra": "4",
+      "efeito": "Pode realizar um ataque corpo a corpo descuidado quando um oponente entra em seu alcance ideal.",
+      "requisitos": "Estar com guarda levantada.; Não ter usado seu ataque de oportunidade nesta rodada.",
+      "experimental": false,
+      "gatilho": "Um oponente entrar em seu alcance ideal."
+    },
+    {
+      "nome": "Apoiador",
+      "categoria": "Aspecto",
+      "atributo": "",
+      "valorCompra": "4",
+      "efeito": "Pode usar aptidões nos testes de um aliado adjacente.",
+      "requisitos": "Usar aptidões do mesmo atributo da ação.",
+      "experimental": false,
+      "gatilho": "Estar adjacente a um aliado."
+    },
+    {
+      "nome": "Corredor",
+      "categoria": "Aspecto",
+      "atributo": "",
+      "valorCompra": "8",
+      "efeito": "Dobra o limite de PA que podem ser utilizados no deslocamento.",
+      "requisitos": "Não ter pernas desabilitadas",
+      "experimental": false
+    },
+    {
+      "nome": "Maratonista",
+      "categoria": "Aspecto",
+      "atributo": "",
+      "valorCompra": "4",
+      "efeito": "Pode dobrar seu movimento ao correr em linha reta.",
+      "requisitos": "Não possuir nenhuma perna desabilitada.; Não mudar a direção do movimento.; Não estar utilizando armas ou armaduras pesadas.",
+      "experimental": false,
+      "gatilho": "Gastar pelo menos 5 PA de movimento em linha reta."
+    },
+    {
+      "nome": "Dorminhoco",
+      "categoria": "Aspecto",
+      "atributo": "",
+      "valorCompra": "7",
+      "efeito": "Ao descansar, utiliza 1d8 para curar dano ao invés de 1d6",
+      "requisitos": "Sem requisitos",
+      "experimental": false,
+      "gatilho": "Descanso longo"
+    },
+    {
+      "nome": "Firme",
+      "categoria": "Aspecto",
+      "atributo": "",
+      "valorCompra": "4",
+      "efeito": "Pode usar armas pesadas com apenas uma mão, com −3 de dano.",
+      "requisitos": "Não ter nenhuma mão desabilitada.",
+      "experimental": false,
+      "gatilho": "Usar uma arma pesada"
+    },
+    {
+      "nome": "Firme aprimorado",
+      "categoria": "Aspecto",
+      "atributo": "",
+      "valorCompra": "4",
+      "efeito": "Remove a redução de dano do Firme: pode usar armas pesadas com apenas uma mão sem redução de dano.",
+      "requisitos": "Possuir o traço Firme.; Não ter nenhuma mão desabilitada.",
+      "experimental": false,
+      "gatilho": "Usar uma arma pesada"
+    },
+    {
+      "nome": "Saltador",
+      "categoria": "Aspecto",
+      "atributo": "",
+      "valorCompra": "3",
+      "efeito": "Eleva o limite de salto de 5 metros para 10 metros.",
+      "requisitos": "Possuir a Técnica em Saltar.; Não ter nenhuma perna desabilitada.",
+      "experimental": false,
+      "gatilho": "Realizar a ação de saltar."
+    },
+    {
+      "nome": "Burro de carga",
+      "categoria": "Aspecto",
+      "atributo": "",
+      "valorCompra": "6",
+      "efeito": "Não gasta PA extra para deslocar um aliado que esteja agarrado.",
+      "requisitos": "",
+      "experimental": false,
+      "gatilho": "O aliado só pode ser carregado de forma voluntária."
+    },
+    {
+      "nome": "Fôlego de ferro",
+      "categoria": "Aspecto",
+      "atributo": "",
+      "valorCompra": "4",
+      "efeito": "Eleva o teto do uso voluntário de fadiga: você pode comprar PA extra com fadiga até o PA base inteiro (em vez de só metade dele).",
+      "requisitos": "Sem requisitos.",
+      "experimental": false
+    },
+    {
+      "nome": "Mão rápida",
+      "categoria": "Aspecto",
+      "atributo": "",
+      "valorCompra": "2",
+      "efeito": "Guardar e sacar (trocar) uma arma equipada custa 1 PA (em vez de 2 PA).",
+      "requisitos": "Sem requisitos.",
+      "experimental": false
+    },
+    {
+      "nome": "Zeloso",
+      "categoria": "Aspecto",
+      "atributo": "",
+      "valorCompra": "4",
+      "efeito": "Cuida bem do próprio equipamento: seus itens perdem durabilidade na metade do ritmo — a cada 2 golpes que normalmente tirariam 1 de durabilidade (da sua arma, ou da peça de armadura/escudo que absorveu o golpe), perde-se apenas 1.",
+      "requisitos": "Sem requisitos.",
+      "experimental": false,
+      "gatilho": "Um golpe que gastaria durabilidade de um equipamento seu."
+    },
+    {
+      "nome": "Reforçado",
+      "categoria": "Aspecto",
+      "atributo": "",
+      "valorCompra": "4",
+      "efeito": "Suas peças de proteção são mais resistentes: a durabilidade máxima de cada peça de armadura e de cada escudo que você usa é aumentada em +50% (arredondado para cima).",
+      "requisitos": "Estar usando a proteção (armadura ou escudo).",
+      "experimental": false
+    },
+    {
+      "nome": "Guarda firme",
+      "categoria": "Aspecto",
+      "atributo": "",
+      "valorCompra": "4",
+      "efeito": "Apara golpes sem desgastar o equipamento: quando você usa uma guarda levantada para defender um ataque, a arma ou o escudo usado não perde durabilidade por essa defesa.",
+      "requisitos": "Ter a Maestria em armas de deflexão DEFL. (defender com arma) ou estar usando um escudo.",
+      "experimental": false,
+      "gatilho": "Gastar uma guarda levantada para defender um ataque."
+    },
+    {
+      "nome": "Sinergia",
+      "categoria": "Aspecto",
+      "atributo": "Mental",
+      "valorCompra": "3",
+      "efeito": "Recebe vantagem para mover um adversário na trilha de uma emoção em que você tenha um aliado.",
+      "requisitos": "Ter ao menos 1 aliado no conflito social",
+      "experimental": true
+    },
+    {
+      "nome": "Cabeça dura",
+      "categoria": "Aspecto",
+      "atributo": "Mental",
+      "valorCompra": "5",
+      "efeito": "Tem vantagem em testes de resistência para ser tirado de uma trilha por um adversário.",
+      "requisitos": "",
+      "experimental": true
+    },
+    {
+      "nome": "Distanciamento emocional",
+      "categoria": "Aspecto",
+      "atributo": "Mental",
+      "valorCompra": "3",
+      "efeito": "Não gasta PA para entrar em uma trilha na qual não haja nenhum outro personagem.",
+      "requisitos": "Ter ao menos 2 oponentes no conflito social",
+      "experimental": true
+    },
+    {
+      "nome": "Sanguessuga social",
+      "categoria": "Aspecto",
+      "atributo": "Social",
+      "valorCompra": "4",
+      "efeito": "Tem vantagem em testes enquanto o oponente estiver em situação de descontrole no campo da tristeza.",
+      "requisitos": "",
+      "experimental": true
+    },
+    {
+      "nome": "Oportunista sedutor",
+      "categoria": "Aspecto",
+      "atributo": "Social",
+      "valorCompra": "4",
+      "efeito": "Tem vantagem em testes enquanto o oponente estiver em situação de descontrole no campo da atração",
+      "requisitos": "",
+      "experimental": true
+    },
+    {
+      "nome": "Companheiro de festa",
+      "categoria": "Aspecto",
+      "atributo": "Social",
+      "valorCompra": "4",
+      "efeito": "Tem vantagem em testes enquanto o oponente estiver em situação de descontrole no campo da alegria",
+      "requisitos": "",
+      "experimental": true
+    },
+    {
+      "nome": "Fobófago",
+      "categoria": "Aspecto",
+      "atributo": "Social",
+      "valorCompra": "4",
+      "efeito": "Tem vantagem em testes enquanto o oponente estiver em situação de descontrole no campo da ansiedade",
+      "requisitos": "",
+      "experimental": true
+    },
+    {
+      "nome": "Tomar vantagem da surpresa",
+      "categoria": "Aspecto",
+      "atributo": "Social",
+      "valorCompra": "4",
+      "efeito": "Tem vantagem em testes enquanto o oponente estiver em situação de descontrole no campo da surpresa",
+      "requisitos": "",
+      "experimental": true
+    },
+    {
+      "nome": "Turrão",
+      "categoria": "Aspecto",
+      "atributo": "Social",
+      "valorCompra": "5",
+      "efeito": "Toda vez que um adversário falhar em movimentar um personagem com esse traço, este adversário desce um campo em direção ao descontrole emocional caso já esteja em alguma trilha de sentimentos.",
+      "requisitos": "",
+      "experimental": true
+    }
+  ]
+}

@@ -4,7 +4,7 @@ tipo: regra
 cenario: base
 status: revisao
 tags: [tracos, tecnicas, maestrias, aspectos]
-atualizado-em: 2026-07-12
+atualizado-em: 2026-07-24
 ---
 
 # Lista de Traços base
@@ -59,6 +59,11 @@ Técnicas são traços que **apenas anulam a desvantagem natural** dos testes da
 
 **Maestria em ataque desarmado:** permite realizar **ataque mirado sem desvantagem**,
 valendo **apenas para ataques desarmados** (ex.: soco). Viabiliza builds de lutador.
+
+> ⚠️ A DEFINIR: o **efeito das maestrias de armadura** (leve/média/pesada) não está
+> definido em lugar nenhum do manual — as três estão na tabela de custos, mas nenhuma
+> regra diz o que dominam ou destravam (as maestrias de arma ativam a propriedade
+> correspondente; armadura não tem propriedade). Definir o efeito ou removê-las da lista.
 
 ## Aspectos base
 

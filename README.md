@@ -23,6 +23,7 @@ texto simples (Markdown), de forma que:
 | **[`sistema-base/`](sistema-base/)** | As **regras universais** — valem para qualquer cenário. |
 | **[`modulos/`](modulos/)** | **Mecânicas opcionais reutilizáveis** (veículos, armas de fogo...) que os cenários declaram usar. |
 | **[`cenarios/`](cenarios/)** | Os **livros de cenário**: narrativa + mecânicas exclusivas + os módulos que cada mundo usa. |
+| **[`contrato/`](contrato/)** | O **contrato de conteúdo**: a limpeza oficial (remove bastidor) e o `catalogo.json` gerado das listas — é daqui que a ficha, o site e a plataforma consomem o sistema. |
 | **[`notas-de-design/`](notas-de-design/)** | Hipóteses e variantes de regras ainda **não** decididas — o bastidor do design. |
 | **[`registro-ia/`](registro-ia/)** | O **diário de bordo das sessões com IA**: cada prompt dado e o que a IA fez, sessão por sessão. |
 | **[`assets/`](assets/)** | Fichas oficiais (PDF), ilustrações de malha e regras sobre arquivos grandes. |

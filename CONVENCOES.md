@@ -119,3 +119,14 @@ varrer o texto inteiro atrás de um termo.
 - Anti-duplicação: **cenário referencia módulo, módulo referencia base** — cada camada
   escreve só a própria diferença. Mecânica só vira módulo quando mais de um cenário a
   usa (ou vai usar).
+
+## 11. Contrato de conteúdo (`contrato/`) — quem consome o sistema, consome de lá
+
+A ficha, o manual web, o PDF e a plataforma **não transcrevem** regras: eles consomem a
+versão limpa e estruturada gerada em [`contrato/`](contrato/README.md). Consequência
+prática: **ao editar uma lista** (`sistema-base/listas/` ou módulo de armas/proteções),
+rode `python contrato/exportar_catalogo.py` e inclua o `contrato/catalogo.json`
+atualizado **no mesmo commit**. O parser do exportador depende dos formatos padrões das
+tabelas e seções (cabeçalhos das tabelas dos módulos, seções `### Descrição` /
+`### Requisitos de uso` / `### Progressão` das habilidades) — mudou a estrutura, atualize
+o exportador junto.

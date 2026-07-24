@@ -2,8 +2,10 @@
 """
 Gera o conteúdo LIMPO do manual web (VitePress) a partir do repositório.
 
-- Reaproveita a limpeza do gerador de PDF (`playtest/geracao-pdf/gerar_manual_pdf.py`):
+- Usa a limpeza oficial do CONTRATO DE CONTEÚDO (`contrato/limpeza.py`):
   remove frontmatter e blocos de bastidor (✅ decidido, 💡 proposta, ⚠️ a definir, datas…).
+  A mesma limpeza é usada pelo PDF e pelo exportador de catálogo — web, PDF e
+  ficha mostram sempre o mesmo texto limpo.
 - Espelha sistema-base/, modulos/ e cenarios/ em `manual/conteudo/`, já limpos.
 - Gera `manual/.vitepress/sidebar.json` com a navegação lateral.
 
@@ -14,11 +16,10 @@ import json, sys, shutil, re
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent          # .../marca-de-sangue-sistema-de-rpg
-PDF_DIR = RAIZ / "playtest" / "geracao-pdf"
 OUT = RAIZ / "manual" / "conteudo"
 
-sys.path.insert(0, str(PDF_DIR))
-from gerar_manual_pdf import limpa_arquivo               # reuso da limpeza  # noqa: E402
+sys.path.insert(0, str(RAIZ / "contrato"))
+from limpeza import limpa_arquivo                        # limpeza oficial  # noqa: E402
 
 # Seções do manual e como aparecem no menu.
 SECOES = [

@@ -32,6 +32,7 @@ function armaDoCatalogo(cat: CatArma, base: Arma): Arma {
     custoPA: cat.custoPA,
     alcance: cat.alcance,
     dano: cat.dano,
+    durabilidade: cat.durabilidade ?? base.durabilidade,
     props,
   };
 }

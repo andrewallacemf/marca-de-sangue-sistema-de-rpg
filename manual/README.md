@@ -10,10 +10,11 @@ a cada push, o GitHub Actions reconstrói e publica no GitHub Pages.
 ## Como funciona
 
 1. **`gerar-conteudo.py`** — preprocessador. Lê `sistema-base/`, `modulos/` e `cenarios/`,
-   remove frontmatter e blocos de bastidor (reaproveita a limpeza do gerador de PDF em
-   `playtest/geracao-pdf/gerar_manual_pdf.py`, então o site mostra a **versão limpa**, igual
-   ao PDF), e escreve o resultado em `manual/conteudo/`. Também espelha `assets/` e gera
-   `.vitepress/sidebar.json`. Exclui `variantes/` e pastas `_template-*`.
+   remove frontmatter e blocos de bastidor usando a **limpeza oficial do contrato de
+   conteúdo** (`contrato/limpeza.py` — a mesma do PDF e do exportador de catálogo, então o
+   site mostra a **versão limpa**, igual ao PDF), e escreve o resultado em `manual/conteudo/`.
+   Também espelha `assets/` e gera `.vitepress/sidebar.json`. Exclui `variantes/` e pastas
+   `_template-*`.
 2. **VitePress** builda `conteudo/` em `.vitepress/dist/`. A ficha (build single-file) é
    copiada para `conteudo/public/ficha/` antes do build, então sai em `/ficha/`.
 3. **Deploy** — `.github/workflows/deploy-ficha.yml` faz os dois builds e publica no Pages.

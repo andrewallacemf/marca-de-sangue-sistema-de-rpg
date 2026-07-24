@@ -9,7 +9,7 @@ on:
       - "sistema-base/**"
       - "modulos/**"
       - "cenarios/**"
-      - "playtest/geracao-pdf/gerar_manual_pdf.py"
+      - "contrato/**"
       - ".github/workflows/deploy-ficha.yml"
   workflow_dispatch:
 
@@ -36,14 +36,24 @@ jobs:
         with:
           python-version: "3.12"
 
-      # 1) Ficha (app single-file, base relativa) -> ficha/dist/index.html
+      # 1) Contrato de conteúdo: regenera o catálogo a partir das listas do
+      #    manual, garantindo que a ficha publica sempre os dados atuais
+      #    (o catalogo.json versionado é conferido contra o gerado).
+      - name: Exportar catálogo do contrato
+        run: |
+          python3 contrato/exportar_catalogo.py
+          git diff --exit-code contrato/catalogo.json || {
+            echo "::warning::contrato/catalogo.json estava desatualizado em relação às listas do manual — o site publica a versão recém-gerada; rode 'python contrato/exportar_catalogo.py' e commite para alinhar o repositório."
+          }
+
+      # 2) Ficha (app single-file, base relativa) -> ficha/dist/index.html
       - name: Buildar a ficha
         working-directory: ficha
         run: |
           npm install --no-audit --no-fund
           npm run build
 
-      # 2) Manual (VitePress): gera conteudo limpo, embute a ficha e builda
+      # 3) Manual (VitePress): gera conteudo limpo, embute a ficha e builda
       - name: Instalar deps do manual
         working-directory: manual
         run: npm install --no-audit --no-fund

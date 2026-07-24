@@ -26,16 +26,27 @@ npm run build    # gera dist/index.html (arquivo único, autossuficiente)
 O build usa `vite-plugin-singlefile`: tudo (HTML + CSS + JS) sai embutido em um único
 `dist/index.html`, que serve tanto para publicar quanto para abrir localmente.
 
-## Estado atual (v0)
+**Catálogo vem do contrato de conteúdo.** Os dados de autopreenchimento (armas,
+proteções, habilidades, traços) **não são mantidos aqui**: `src/lib/catalogo.ts` é um
+adaptador sobre [`contrato/catalogo.json`](../contrato/README.md), gerado das listas do
+manual. Mudou uma lista? `python contrato/exportar_catalogo.py` e rebuild — nada de
+editar dados na mão.
 
-- Ficha **principal** como formulário preenchível (campos livres — "formulário burro").
-- Trackers clicáveis: **saúde** (superficial ／ · profundo ✕ · permanente ■ por membro) e
-  **fadiga** (0–50, com marcas de limiar).
-- Toggle **regras vigentes × alternativas** (muda a leitura da fadiga; gravado no arquivo).
-- Salvar/carregar `.json` + autosave (localStorage) + impressão A4.
+## Estado atual
+
+- Ficha completa em 3 páginas: informações/experiência/aptidões/PA, armas, proteções
+  (com regiões), saúde clicável por membro, fadiga 0–50, equipamentos/carga/tesouro,
+  anotações e **cards de habilidades & traços** (usos por nível ou nível único conforme
+  a versão de regras).
+- **Catálogos com autopreenchimento** (armas, proteções, habilidades, traços) vindos do
+  contrato de conteúdo.
+- Toggle **regras vigentes × alternativas** (muda fadiga, custos e UI; gravado no arquivo).
+- Salvar/carregar `.mds.json` + autosave (localStorage) + preview/impressão A4 + painel
+  "Como usar".
 
 ## Próximos passos (planejados)
 
-- Páginas de **equipamentos/carga/tesouro** e **cards de habilidades/traços**.
-- **Catálogos** do manual (escolher arma/proteção/habilidade de uma lista que autopreenche).
-- Componentes oficiais do shadcn/ui (Radix) e refino do layout de impressão.
+- Impressão A4 estruturada de verdade (grid por folha, quebras lógicas) — ver
+  [NOTAS-DE-DESIGN.md](NOTAS-DE-DESIGN.md).
+- Backlog de UX/produto: [notas-de-design/pendencias-ficha-plataforma.md](../notas-de-design/pendencias-ficha-plataforma.md).
+- Componentes oficiais do shadcn/ui (Radix) — opcional, ao final.

@@ -14,6 +14,9 @@ Documentação do **Marca de Sangue**, um sistema de RPG de mesa, dividida em:
 - `cenarios/<nome>/` — livros de cenário: narrativa + mecânicas **exclusivas** daquele
   mundo + a declaração de quais módulos usa.
 - `manuais/` — guias operacionais para colaboradores humanos. **Não altere** sem pedido explícito.
+- `contrato/` — o **contrato de conteúdo**: limpeza oficial de bastidor + exportador do
+  `catalogo.json` (armas, proteções, habilidades, traços) consumido pela ficha, pelo site
+  e pela plataforma. Leia `contrato/README.md` antes de mexer em listas ou consumidores.
 - `registro-ia/` — diário de bordo das sessões com IA (ver protocolo abaixo).
 - `INDICE.md` — índice remissivo: cada conceito e onde aparece. **Consulte antes de
   procurar por grep às cegas; atualize a cada edição.**
@@ -51,6 +54,10 @@ arquivos.
     para **localizar** conceitos rapidamente em vez de varrer o texto.
 11. **Mudança de mecânica exige análise de impacto ANTES de editar** (protocolo abaixo).
     Nunca implemente direto uma alteração de regra que interage com outras.
+12. **Editou uma lista do manual (`sistema-base/listas/` ou módulos de armas/proteções)?
+    Regenere o catálogo no mesmo commit:** `python contrato/exportar_catalogo.py`.
+    Nunca transcreva dados de regra para dentro de código (ficha/plataforma) — os
+    consumidores leem o `contrato/catalogo.json` (ver `contrato/README.md`).
 
 ## Comandos Git proibidos
 

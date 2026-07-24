@@ -85,9 +85,12 @@ levantou três insumos:
 
 ## Roteiro aprovado (fases)
 
-1. **Contrato de conteúdo** (neste repo): promover a limpeza para fora de `playtest/`,
-   criar o exportador de `catalogo.json`, documentar o contrato, gerar o `catalogo.ts`
-   da ficha a partir dele.
+1. ✅ **Contrato de conteúdo** (neste repo) — **feito em 24/07/2026:** limpeza promovida
+   para `contrato/limpeza.py` (PDF e site importam de lá), exportador
+   `contrato/exportar_catalogo.py` → `catalogo.json` versionado, contrato documentado em
+   `contrato/README.md`, ficha consumindo o catálogo gerado (adaptador em
+   `ficha/src/lib/catalogo.ts`). Ver registro da sessão
+   `registro-ia/2026/2026-07-24-andre-contrato-de-conteudo.md`.
 2. **Reviver o repo da plataforma**: SQLite → Postgres, registrar decisões 006+,
    reapontar `CLAUDE.md` e a skill `rpg-rules-reference` para este repo (hoje apontam
    para cópias defasadas no vault), ressincronizar schema/seed com as regras atuais
@@ -100,8 +103,12 @@ levantou três insumos:
 
 ## Pontos em aberto
 
-- **Formato de consumo do contrato** pela plataforma (build da plataforma clona este repo
-  e roda o exportador? artefato de release no GitHub? pacote npm?) — decidir na fase 1.
-- **Onde exatamente o exportador vai morar** neste repo (ex.: pasta `exportador/` ou
-  `plataforma-contrato/`) e como o workflow de Pages passa a usá-lo.
-- Convite/permissões do repo da plataforma (verificar colaboradores atuais).
+- ~~**Formato de consumo do contrato** pela plataforma~~ — **resolvido na fase 1
+  (24/07):** o `contrato/catalogo.json` é **versionado** no repo (exceção consciente à
+  regra "gerado não versiona") e a plataforma pode consumi-lo pela URL raw do GitHub;
+  diffs do JSON em cada commit funcionam como revisão de conteúdo.
+- ~~**Onde exatamente o exportador vai morar**~~ — **resolvido na fase 1 (24/07):**
+  pasta **`contrato/`** na raiz (`limpeza.py` + `exportar_catalogo.py` +
+  `catalogo.json` + `README.md` com o contrato documentado). O workflow do Pages
+  regenera o catálogo antes dos builds e avisa se o versionado estiver defasado.
+- Convite/permissões do repo da plataforma (verificar colaboradores atuais) — fase 2.
