@@ -104,6 +104,10 @@ varrer o texto inteiro atrás de um termo.
 
 ## 10. Camadas: sistema-base, módulos, coleções e cenários
 
+> 🧭 O mapa completo (o que é núcleo × módulo × cenário × variante, com árvore de decisão e
+> plano de expansão) está em **[notas-de-design/arquitetura-da-informacao.md](notas-de-design/arquitetura-da-informacao.md)**.
+
+
 - **`sistema-base/`** — mecânicas básicas de qualquer jogo.
 - **`modulos/<nome>/`** — 1 módulo = 1 mecânica opcional + seus recursos (ex.:
   veículos, armas-de-fogo, mutações), reutilizável por vários cenários. Nomes seguem a

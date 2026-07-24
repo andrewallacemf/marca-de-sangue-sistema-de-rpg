@@ -20,12 +20,12 @@ parada para saber "no que dá pra ajudar?".
 
 ## Projeto e organização
 
-| Pendência | Onde | Quem | Desde |
-|-----------|------|------|-------|
-| Importação do Notion — Fase 2: cenário Colapso (mecânica veicular, mutações, condições, listas) + resgate do lore antigo (lugares, comunidades, gangues, clima) | [cenarios/colapso/](cenarios/colapso/) | IA + grupo | 2026-07-11 |
-| Importação do Notion — Fase 3: Mukashi, Gaéria (incl. camada fantasia como rascunho), Peabiru; resgates da v0.4.1 (armaduras orientais, ~15 habilidades, traço Aproveitador) | [cenarios/](cenarios/) | IA + grupo | 2026-07-11 |
-| **Estruturar o "shell" de cenários e módulos** (André/IA) — templates/pastas para o Daniel popular o **Mukashi** de forma estruturada. **Pré-requisito** dos insumos do Daniel (jogo de 1º/ago) | [cenarios/](cenarios/), [modulos/](modulos/) | André/IA | 2026-07-19 |
-| **Regerar fichas/cenários/PDFs/planilha — só ANTES do próximo playtest** (muita coisa ainda pode mudar até lá): aplicar às fichas tudo que mudou depois do playtest 2 — dano das armas aumentado, munição aumentada, ataque desarmado `1d4`, improvisadas `1d6−1/1d8−1/1d10−1`, durabilidade, furtividade, gatilho, teto de movimento | [playtest/](playtest/), [ficha/](ficha/) | André/IA | 2026-07-19 |
+| Pendência                                                                                                                                                                                                                                                                                                                             | Onde                                         | Quem       | Desde      |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- | ---------- | ---------- |
+| Importação do Notion — Fase 2: cenário Colapso (mecânica veicular, mutações, condições, listas) + resgate do lore antigo (lugares, comunidades, gangues, clima)                                                                                                                                                                       | [cenarios/colapso/](cenarios/colapso/)       | IA + grupo | 2026-07-11 |
+| Importação do Notion — Fase 3: Mukashi, Gaéria (incl. camada fantasia como rascunho), Peabiru; resgates da v0.4.1 (armaduras orientais, ~15 habilidades, traço Aproveitador)                                                                                                                                                          | [cenarios/](cenarios/)                       | IA + grupo | 2026-07-11 |
+| **Estruturar o "shell" de cenários e módulos** (André/IA) — templates/pastas para o Daniel popular o **Mukashi** de forma estruturada. **Pré-requisito** dos insumos do Daniel (jogo de 1º/ago)                                                                                                                                       | [cenarios/](cenarios/), [modulos/](modulos/) | André/IA   | 2026-07-19 |
+| **Regerar fichas/cenários/PDFs/planilha — só ANTES do próximo playtest** (muita coisa ainda pode mudar até lá): aplicar às fichas tudo que mudou depois do playtest 2 — dano das armas aumentado, munição aumentada, ataque desarmado `1d4`, improvisadas `1d6−1/1d8−1/1d10−1`, durabilidade, furtividade, gatilho, teto de movimento | [playtest/](playtest/), [ficha/](ficha/)     | André/IA   | 2026-07-19 |
 
 ## Sistema-base — decisões de regra
 
