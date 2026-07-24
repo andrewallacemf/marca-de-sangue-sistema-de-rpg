@@ -4,7 +4,7 @@ tipo: mecanica
 cenario: base
 status: rascunho
 tags: [pendencias, ficha, plataforma, ux, backlog]
-atualizado-em: 2026-07-19
+atualizado-em: 2026-07-24
 ---
 
 # Pendências de ficha e plataforma (UX / produto)
@@ -52,7 +52,12 @@ pendências de **regra** (que ficam em [PENDENCIAS.md](../PENDENCIAS.md)).
       **"Como usar"** no topo da ficha abre um painel com o básico (salvar/carregar `.mds.json`,
       marcar dano/usos/fadiga, botões); (b) passo-a-passo curto em texto para WhatsApp entregue no
       chat. *(Publicado via GitHub Pages; offline atualizado.)*
-- [ ] **Manual consultável dentro da ficha** (drawer/painel lateral) para ler a regra sem sair.
+- [x] **⭐ Portal do sistema** (24/07) — **feito:** o site virou plataforma. Raiz = **manual web**
+      (base + módulos + cenários, versão limpa como o PDF, gerado do repo via VitePress); a ficha
+      vive em **`/ficha/`**. Botão **Manual** na ficha e **Abrir a ficha** no manual ligam os dois.
+      Republica sozinho a cada push (ver `manual/README.md` e `registro-ia/2026/2026-07-24-…`).
+- [ ] **Manual consultável dentro da própria ficha** (drawer/painel lateral) para ler a regra sem
+      trocar de página — evolução do portal (hoje o link abre o manual em `/`).
 - [ ] **Tabela de referência rápida** (ações e custos de PA, alcances, modificadores) com busca —
       houve **muita parada** para procurar regra nas duas sessões.
 
