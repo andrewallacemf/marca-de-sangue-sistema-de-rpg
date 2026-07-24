@@ -1,0 +1,14 @@
+{
+  "name": "marca-de-sangue-manual",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "conteudo": "python3 gerar-conteudo.py",
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.3"
+  }
+}

@@ -1,10 +1,15 @@
-name: Deploy ficha (GitHub Pages)
+name: Deploy portal (Manual + Ficha) no GitHub Pages
 
 on:
   push:
     branches: [main]
     paths:
       - "ficha/**"
+      - "manual/**"
+      - "sistema-base/**"
+      - "modulos/**"
+      - "cenarios/**"
+      - "playtest/geracao-pdf/gerar_manual_pdf.py"
       - ".github/workflows/deploy-ficha.yml"
   workflow_dispatch:
 
@@ -22,18 +27,44 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
-      - name: Instalar dependências e buildar a ficha
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # 1) Ficha (app single-file, base relativa) -> ficha/dist/index.html
+      - name: Buildar a ficha
         working-directory: ficha
         run: |
           npm install --no-audit --no-fund
           npm run build
+
+      # 2) Manual (VitePress): gera conteudo limpo, embute a ficha e builda
+      - name: Instalar deps do manual
+        working-directory: manual
+        run: npm install --no-audit --no-fund
+
+      - name: Gerar conteudo limpo do manual
+        working-directory: manual
+        run: python3 gerar-conteudo.py
+
+      - name: Embutir a ficha no manual (/ficha/)
+        run: |
+          mkdir -p manual/conteudo/public/ficha
+          cp -r ficha/dist/. manual/conteudo/public/ficha/
+
+      - name: Buildar o site do manual
+        working-directory: manual
+        run: npm run build
+
       - name: Enviar artefato do Pages
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ficha/dist
+          path: manual/.vitepress/dist
 
   deploy:
     needs: build

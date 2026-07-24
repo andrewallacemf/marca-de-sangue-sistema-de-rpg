@@ -12,3 +12,16 @@ desktop.ini
 *.tmp
 *.bak
 *~
+
+# Dependências
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+
+# Manual web (VitePress) — tudo gerado pelo preprocessador/build; não versionar
+manual/conteudo/
+manual/.vitepress/sidebar.json
+manual/.vitepress/dist/
+manual/.vitepress/cache/

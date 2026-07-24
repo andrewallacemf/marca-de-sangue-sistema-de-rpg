@@ -10,6 +10,7 @@ import {
   BatteryLow,
   BedDouble,
   HelpCircle,
+  BookOpen,
 } from "lucide-react";
 import {
   Button,
@@ -271,6 +272,11 @@ export default function App() {
             ))}
           </div>
           <div className="ml-auto flex flex-wrap items-center gap-1.5">
+            <Button variant="outline" size="sm" asChild title="Abrir o manual do sistema">
+              <a href="https://andrewallacemf.github.io/marca-de-sangue-sistema-de-rpg/" target="_self">
+                <BookOpen className="h-3.5 w-3.5" /> Manual
+              </a>
+            </Button>
             <Button variant="outline" size="sm" onClick={() => setAjuda(true)} title="Como usar a ficha">
               <HelpCircle className="h-3.5 w-3.5" /> Como usar
             </Button>

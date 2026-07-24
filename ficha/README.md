@@ -6,7 +6,11 @@ localmente). React + Vite + Tailwind, no estilo shadcn/ui.
 
 ## Para o jogador (sem instalar nada)
 
-- **Online:** https://andrewallacemf.github.io/marca-de-sangue-sistema-de-rpg/ (publicado automaticamente pelo GitHub Actions a cada push em `ficha/`).
+- **Online:** https://andrewallacemf.github.io/marca-de-sangue-sistema-de-rpg/ficha/ — a raiz do
+  site agora é o **manual** (regras, módulos, cenários); a ficha fica em `/ficha/`. O botão
+  **Manual** no topo da ficha e o **Abrir a ficha** no manual ligam os dois. Publicado
+  automaticamente pelo GitHub Actions a cada push em `ficha/`, `manual/`, `sistema-base/`,
+  `modulos/` ou `cenarios/`.
 - **Offline:** baixe o arquivo `dist/index.html` e dê um clique duplo — abre no navegador,
   funciona sem internet. Use **Salvar** para baixar sua ficha (`.mds.json`) e **Carregar**
   para retomá-la depois. Os dados também ficam guardados no navegador (autosave).
