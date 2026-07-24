@@ -19,25 +19,10 @@ Você monta sua proteção com **peças**. Cada peça é de um **tipo** (leve/m�
 - Os **redutores de `PA`** de todas as peças (e escudos) vestidas **somam** (respeitando o piso de 3 `PA`).
 - Cada peça tem **durabilidade própria por região** e perde 1 quando **absorve** um golpe naquela região (ver [Durabilidade](#durabilidade-das-proteções)).
 
-| **Tipo de armadura** | **Redutor Dano 🛡️** | **Redutor PA 🐢** | **Durab. (por peça)** 💡 | **Preço (por peça)** 💡 |
-| --- | --- | --- | --- | --- |
-| Leve | **`-1`** | **`-1 PA`** | **`10`** | **`20 moedas`** |
-| Média | **`-2`** | **`-2 PA`** | **`25`** | **`60 moedas`** |
-| Pesada | **`-3`** | **`-3 PA`** | **`50`** | **`140 moedas`** |
-
-> 💡 PROPOSTA (IA) — durabilidade e preço por peça são valores iniciais a calibrar no playtest.
-
-## Lista base de Escudos
-
-O **`PA` de uso** (coluna "Tipo e Ações") é o custo para **levantar guarda** com o escudo; o **redutor de `PA`** é a penalidade permanente por **portá-lo** (soma com as armaduras vestidas). O **redutor de dano** do escudo vale **quando você defende com a guarda levantada**.
-
-| **Item** | **Tipo e Ações** | **Redutor Dano 🛡️** | **Redutor PA 🐢** | **Durab.** | **Preço sugerido** |
-| --- | --- | --- | --- | --- | --- |
-| Broquel | **`Leve`**<br>**`2 PA`** | **`-1`** | **`-1 PA`** | **`6`** | **`5 moedas`** |
-| Escudo pequeno | **`Leve`**<br>**`2 PA`** | **`-1`** | **`-1 PA`** | **`10`** | **`8 moedas`** |
-| Escudo médio, Cestus, Áspide | **`Média`**<br>**`3 PA`** | **`-2`** | **`-2 PA`** | **`15`** | **`14 moedas`** |
-| Escudo Grande | **`Média`**<br>**`3 PA`** | **`-2`** | **`-2 PA`** | **`20`** | **`20 moedas`** |
-| Escudo torre, Tater | **`Pesada`**<br>**`4 PA`** | **`-3`** | **`-3 PA`** | **`25`** | **`40 moedas`** |
+> 📦 **As listas de peças (armaduras por tipo) e de escudos ficam no módulo
+> [Proteções](../../modulos/protecoes/README.md).** Aqui no núcleo fica só o **sistema**: como as
+> armaduras funcionam, os redutores por tipo (Leve −1 / Média −2 / Pesada −3), o dano mínimo 1, o
+> uso/registro e a durabilidade.
 
 ## Uso e registro das proteções
 

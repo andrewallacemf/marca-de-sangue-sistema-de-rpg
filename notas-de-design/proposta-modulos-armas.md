@@ -75,7 +75,7 @@ improvisadas** (regra de improviso). O núcleo passa a **remeter** à coleção 
 4. ✅ **Armas japonesas**: sem módulo próprio — distribuídas nas famílias (brancas/exóticas),
    com o Mukashi só apontando onde estão (seção 4).
 
-## 7. Passos da Fase C (quando aprovada)
+## 7. Passos da Fase C — ✅ executada em 19/07/2026
 
 1. Criar `modulos/armas/` (coleção) com os módulos por família; mover as tabelas de itens do
    `equipamentos-base.md` para cada um; `protecoes` idem.

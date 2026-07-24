@@ -1,5 +1,8 @@
 // Catálogo do manual base — dados para autopreenchimento da ficha.
-// Gerado a partir de sistema-base/listas/*. Transcrição fiel do manual.
+// Gerado a partir de: sistema-base/listas/* (aptidões, traços, habilidades) +
+// os módulos da coleção `armas` (modulos/armas-brancas, armas-exoticas, arcos-e-bestas,
+// armas-de-fogo) e modulos/protecoes/ para armas/proteções. Transcrição fiel do manual.
+// (Este catálogo é hardcoded; ao mudar as listas nos módulos, sincronizar aqui.)
 
 export type PropKey = "ARRE" | "AGAR" | "CORT" | "CONT" | "DEFL" | "PERF" | "PROJ";
 

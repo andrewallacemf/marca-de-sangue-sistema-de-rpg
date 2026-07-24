@@ -52,4 +52,9 @@ Frontmatter dos arquivos de módulo (ver [CONVENCOES.md](../CONVENCOES.md), seç
 |--------|----------|-----------|--------|
 | [`furtividade`](furtividade/README.md) | Infiltração: visão/campo de visão, nível de alerta (por inimigo) e de alarme (do ambiente), esconder-se, emboscada. | (cenários com furtividade — ex.: Mukashi) | 🧪 em teste (extraído do sistema-base em 19/07/2026) |
 | [`conflito-social`](conflito-social/README.md) | Embate social: malha de embate, trilhas emocionais, campos da emoção, pontuação. | (cenários com foco social) | extraído do sistema-base em 19/07/2026 |
-| *(próximos: veículos, armas-de-fogo, mutações — Fase 2 da importação, do Colapso; e a coleção `armas`)* | | | |
+| [`armas-brancas`](armas-brancas/README.md) | Catálogo de armas brancas (corpo a corpo convencionais). | coleção `armas` | catálogo extraído em 19/07/2026 |
+| [`armas-exoticas`](armas-exoticas/README.md) | Catálogo de armas exóticas (flexíveis, agarre, arremesso-truque). | coleção `armas` | catálogo extraído em 19/07/2026 |
+| [`arcos-e-bestas`](arcos-e-bestas/README.md) | Arcos, bestas, lançadores simples + munição de flecha/pedra/dardo. | coleção `armas` | catálogo extraído em 19/07/2026 |
+| [`armas-de-fogo`](armas-de-fogo/README.md) | Armas de pólvora + balas. | coleção `armas` (esp. Colapso) | catálogo extraído em 19/07/2026 |
+| [`protecoes`](protecoes/README.md) | Armaduras (por tipo/peça) e escudos. | (módulo próprio) | catálogo extraído em 19/07/2026 |
+| *(próximos: veículos, mutações — Fase 2 da importação, do Colapso)* | | | |
