@@ -23,7 +23,7 @@ impacto, hastes, machados e foices. Faz parte da **coleção `armas`** (ver
 | --- | --- | --- | --- | --- | --- | --- |
 | Manoplas com cravos, Adaga de soco, Rapieira | **`Leve`**<br>**`2 PA`** | **`CURT.`** **`PERF.`** | **`1m`** | **`1d6`** | **`6 moedas`** | **`20`** |
 | Faca, Foice de mão | **`Leve`**<br>**`2 PA`** | **`CURT.`** **`CORT.` `PERF.`** | **`1m`** | **`1d8` `CORT.` · `1d6` `PERF.`** | **`3 moedas`** | **`20`** |
-| Bastão curto, Martelo Curto | **`Leve`**<br>**`2 PA`** | **`CURT.`** **`CONT.` `ARRE.`** | **`1m`** / **`2m a 5m`** | **`2d4`** | **`4 moedas`** | **`20`** |
+| Bastão curto, Tonfa, Martelo Curto | **`Leve`**<br>**`2 PA`** | **`CURT.`** **`CONT.` `ARRE.`** | **`1m`** / **`2m a 5m`** | **`2d4`** | **`4 moedas`** | **`20`** |
 | Adaga, Kukri, Kunai | **`Leve`**<br>**`2 PA`** | **`CURT.`** **`CORT.` `PERF.` `ARRE.`** | **`1m`** / **`2m a 5m`** | **`1d8` `CORT.` · `1d6` `PERF.`** | **`6 moedas`** | **`20`** |
 | Facão, Machete, Peixeira | **`Média`**<br>**`4 PA`** | **`CURT.`** **`CORT.`** | **`1m`** | **`1d12`** | **`4 moedas`** | **`30`** |
 | Espada Curta, Foice curta, Cimitarra, Falcione, Khopesh | **`Média`**<br>**`4 PA`** | **`CURT.`** **`CORT.` `PERF.`** | **`1m`** | **`1d12` `CORT.` · `1d8` `PERF.`** | **`8 moedas`** | **`30`** |
