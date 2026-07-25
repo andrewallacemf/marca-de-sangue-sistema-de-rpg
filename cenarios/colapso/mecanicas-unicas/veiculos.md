@@ -4,7 +4,7 @@ tipo: regra
 cenario: colapso
 status: rascunho
 tags: [colapso, veiculos, conflito, mecanica-unica]
-atualizado-em: 2026-07-24
+atualizado-em: 2026-07-25
 ---
 
 # Conflito de veículos
@@ -36,7 +36,8 @@ Um veículo tem:
   ocupantes.
 - **Combustível** — em pontos, consumidos por turno de viagem (o status *Vazando* dobra o
   consumo).
-- **Espaços** — assentos/lugares ocupáveis (piloto + passageiros) e slots para
+- **Espaços** — assentos/lugares ocupáveis (piloto + passageiros; cada um oferece meia
+  cobertura — ver [Cobertura do tripulante](#cobertura-do-tripulante)) e slots para
   [equipamentos](equipamentos-de-veiculo.md).
 
 ## Iniciativa e malha
@@ -94,6 +95,26 @@ movimento **dobra** os valores.
 | **E** | 1 | 1 | 1 | 1 | 1d4 | 1d6 |
 
 Um **veículo sem motor** que colide recebe o **dobro** do dano comum em parte aleatória.
+
+## Cobertura do tripulante
+
+> 🧪 Em teste, junto da regra-base de [Cobertura](../../../sistema-base/conflitos/01-conflito-fisico.md#cobertura).
+
+O próprio veículo abriga quem está dentro. Por padrão, **ocupar um espaço do veículo concede meia
+[cobertura](../../../sistema-base/conflitos/01-conflito-fisico.md#cobertura)** ao tripulante:
+**`+1d10` de vantagem** nos contratestes de defesa/esquiva contra **ataques à distância**, sem
+precisar levantar guarda e sem ser cancelada pelo movimento do veículo (a lataria protege por si).
+
+Vale só contra **ataques à distância**; **corpo a corpo ignora** a cobertura — por isso invasão e
+embarque seguem sendo o jeito de atingir a tripulação de perto. O dano de **colisão** e o que
+**transborda** de uma parte para os ocupantes são automáticos (não são testes de acerto) e **não**
+são reduzidos pela cobertura. Armas com a propriedade
+**[Projéteis (`PROJ.`)](../../../sistema-base/listas/equipamentos-base.md#propriedades-das-armas)**
+e a **Maestria em projéteis** reduzem a cobertura em um nível (meia → ignorada), furando a proteção.
+
+**Alguns equipamentos exigem exposição para operar** e, enquanto usados, **tiram** a meia cobertura
+(o personagem se projeta para fora): cada equipamento traz isso no campo **Cobertura** da lista de
+[equipamentos de veículo](equipamentos-de-veiculo.md).
 
 ## Condições de veículo
 

@@ -68,6 +68,8 @@
 
 **Casa / quadrado / hexágono (unidade da malha)** → ver **Espaço** (termos aposentados em 11/07/2026; "malha quadrada/hexagonal" permanece para descrever o tipo de malha)
 
+**Cobertura** — define: [conflitos/01-conflito-fisico.md](sistema-base/conflitos/01-conflito-fisico.md#cobertura) (meia/completa; `+1d10` na defesa contra ataques à distância; integra-se à guarda levantada; reduzida por Projéteis — em teste, 18/07/2026) · aparece: [02-acoes-em-conflito](sistema-base/conflitos/02-acoes-em-conflito.md) (guarda + cobertura), [listas/equipamentos-base.md](sistema-base/listas/equipamentos-base.md) (a propriedade Projéteis reduz a cobertura em um nível), [modulos/furtividade](modulos/furtividade/README.md) (adv/desv por cobertura), [colapso — veículos](cenarios/colapso/mecanicas-unicas/veiculos.md#cobertura-do-tripulante) (o veículo concede meia cobertura ao tripulante), [colapso — equipamentos de veículo](cenarios/colapso/mecanicas-unicas/equipamentos-de-veiculo.md) (campo Cobertura; estações expostas; Escudos)
+
 **Combate** → ver **Conflito físico**
 
 **Conflito (termo genérico)** — *conflito* é o termo genérico para qualquer disputa; conflito **físico** = **combate**; conflito **social** = **embate** (decisão de 11/07/2026) — ver **Conflito físico** e **Conflito social**
