@@ -91,12 +91,15 @@ levantou três insumos:
    `contrato/README.md`, ficha consumindo o catálogo gerado (adaptador em
    `ficha/src/lib/catalogo.ts`). Ver registro da sessão
    `registro-ia/2026/2026-07-24-andre-contrato-de-conteudo.md`.
-2. ✅ **Reviver o repo da plataforma** — **feito em 24/07/2026** (código): decisões
+2. ✅ **Reviver o repo da plataforma** — **feito e validado em 24/07/2026**: decisões
    006–009 registradas lá, `CLAUDE.md`/skills reapontados para este repo, SQLite →
    Postgres (adapter pg + Docker local), schema ressincronizado (15 exp, PA 10, fadiga,
    versão de regras, saúde 0–20, TECNICA, ACUI) e **seed lendo o
-   `contrato/catalogo.json`**. 369 testes passando. **Resta o provisionamento** (conta
-   Supabase + Vercel, MCPs, primeiro deploy) — depende de contas do André. Ver registro
+   `contrato/catalogo.json`**. **Provisionamento completo**: Supabase (sa-east-1,
+   migrado + seedado) e Vercel (deploy automático por push) — plataforma **no ar em
+   https://plataforma-rpg-marca-de-sangue.vercel.app com conta e personagem reais
+   criados** (15 exp / PA 10 confirmados na tela). Pendências menores de infra (SMTP,
+   OAuth, MCPs, CI) em `docs/PENDENCIAS.md` do repo da plataforma. Ver registro
    `registro-ia/2026/2026-07-24-andre-fase-2-plataforma.md`.
 3. **v1**: contas + fichas persistidas + importar/exportar `.mds.json` (compatível com a
    ficha offline) + manual consultável.
