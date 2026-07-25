@@ -37,9 +37,13 @@ pendências de **regra** (que ficam em [PENDENCIAS.md](../PENDENCIAS.md)).
 
 - [ ] **Colapsar/minimizar** os cards de habilidade e de maestria (ocupam muito espaço; a
       caixona "maestria em perfurante" podia ser recolhível).
-- [ ] **PA total** com **destaque visual** maior (é o número que o jogador consulta o tempo todo).
-- [ ] **Redutor de dano por membro** exibido no bloco de saúde (cabeça/tronco/braços/pernas), com
-      base nas armaduras equipadas, para facilitar descontar o dano.
+- [x] **⭐ PA total com destaque** (24/07, rodada 2) — **feito na plataforma:** stat-card "PA
+      total / turno" no topo da ficha (junto de exp, fadiga e PV). Na ficha offline segue como
+      estava (campo calculado na seção de PA).
+- [x] **⭐ Redutor de dano por membro** (24/07, rodada 2) — **feito na plataforma:** badge
+      "prot. −n" ao lado de cada membro no bloco de saúde, somando as proteções equipadas que
+      cobrem a região. A função (`redDanoPorMembro`) existe também na ficha offline, mas ainda
+      **sem exibição** lá.
 - [ ] **Resumo de equipamentos**: hoje aparece **depois** do detalhamento; revisar ordem e
       nomenclatura. "Equipamentos" deve abarcar **itens gerais** (vela, corda, etc.), não só
       armas/proteções.
@@ -65,6 +69,23 @@ pendências de **regra** (que ficam em [PENDENCIAS.md](../PENDENCIAS.md)).
       shuriken, consumíveis): marcar unidades gastas.
 - [ ] **Marcador de status de furtividade** para o jogador: **escondido** e **valor guardado do
       dado de furtividade** (a "qualidade" do esconderijo).
+
+## 3b. Saúde e descanso (pós-rodada 2 do modelo v2, 24/07)
+
+- [ ] **Descanso curto × longo** — hoje o botão Descanso é um reset único (fadiga + usos +
+      aptidões). A regra ([09-descanso.md](../sistema-base/conceitos/09-descanso.md)) distingue:
+      longo = tudo + cura 1d6 de superficial; curto = fadiga + 1 aptidão por atributo + 1
+      rolagem de cura, **sem** usos de habilidade. Exigiria UI de rolagem/entrada do d6.
+- [ ] **Falta de tratamento e tratamento improvisado** — automatizar "1 profundo vira
+      permanente por descanso sem tratamento" e a rolagem de tratamento (1d10 vs contrateste)
+      exigiria separar *profundo* de *superficial* dentro do curável (possível **v3** do modelo
+      de saúde, com 3 contadores por membro). Ver decisão
+      [2026-07-24-ficha-schema-v2-dano-permanente.md](decisoes/2026-07-24-ficha-schema-v2-dano-permanente.md).
+- [ ] **Exibir o redutor de dano por membro também na ficha offline** (a função
+      `redDanoPorMembro` já existe lá; falta o badge no bloco de saúde).
+- [ ] **⚠️ Atualizar cópias soltas do HTML da ficha** — builds antigos (antes do schema v2)
+      **zeram a saúde** de arquivos `.mds.json` v2 ao carregar. O GitHub Pages atualiza
+      sozinho; cópias locais (ex.: `Marca-de-Sangue-Ficha.html`) precisam ser trocadas.
 
 ## 4. Apoio de regras dentro do produto
 

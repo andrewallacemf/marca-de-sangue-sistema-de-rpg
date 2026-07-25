@@ -1,9 +1,22 @@
-/* Modelo de dados da ficha + fábricas. Centralizado para App e seções usarem. */
+/* Modelo de dados da ficha + fábricas. Centralizado para App e seções usarem.
+
+   SINCRONIZAÇÃO: as funções de saúde/fórmulas deste arquivo têm um port fiel em
+   `plataforma-rpg-marca-de-sangue/src/lib/game-engine/` (mds-model.ts + formulas.ts,
+   mesmos nomes e semântica — os testes automatizados vivem lá). Qualquer mudança
+   aqui deve ser replicada lá, e vice-versa. */
 
 import { HABILIDADES_NIVEIS } from "./catalogo-niveis";
 
-export const SCHEMA_VERSION = 1;
+// v2 (24/07/2026): saúde por membro virou {dano, permanente} — dano permanente
+// nunca sai por cura. Load aceita v0 (array de células), v1 (escalar 0–20) e v2.
+export const SCHEMA_VERSION = 2;
 export type RulesVersion = "vigente" | "alternativa";
+
+/** Saúde de um membro: dano curável e dano permanente separados.
+ *  `dano` = curável 0–10 · `permanente` = 0–10 · invariante: dano + permanente <= 10.
+ *  Permanente nunca sai por cura — só por ação explícita com confirmação
+ *  (regra: sistema-base/conflitos/03-saude-e-protecao.md). */
+export type SaudeMembro = { dano: number; permanente: number };
 
 export type TotalUsado = { total: string; usado: string };
 
@@ -75,7 +88,7 @@ export type Ficha = {
   };
   armas: Arma[];
   protecoes: Protecao[];
-  saude: Record<MembroKey, number>; // dano acumulado no membro (0–20): 0–9 superficial · 10 = cheio (profundo/incapacitado) · +além converte para permanente · 20 = invalidado
+  saude: Record<MembroKey, SaudeMembro>; // 10 espaços por membro: curável enche até 10 (cheio = profundo/incapacitado); com o membro cheio cada golpe converte 1 curável em permanente; 10 permanentes = invalidado
   fadiga: number;
   guardas: string;
   equipamentos: ItemEquip[];
@@ -223,26 +236,95 @@ export function fmtPeso(n: number): string {
   return Number.isInteger(n) ? String(n) : n.toFixed(1);
 }
 
-/** Estados dos 10 espaços de um membro a partir do dano acumulado (0–20):
- *  0 vazio · 1 superficial · 2 profundo (membro cheio) · 3 permanente. */
-export function cellsFromDano(dano: number): number[] {
-  const d = Math.max(0, Math.min(20, Math.round(dano)));
-  const perm = Math.max(0, d - 10); // além de 10 vira permanente
-  const cheio = d >= 10;
+/* ─── Saúde por membro (modelo v2: dano curável × permanente) ─────────────── */
+
+/** Converte o dano acumulado do schema v1 (escalar 0–20) para o par v2. */
+export function saudeDeEscalar(d: number): SaudeMembro {
+  const v = Math.max(0, Math.min(20, Math.round(Number(d) || 0)));
+  return v <= 10 ? { dano: v, permanente: 0 } : { dano: 20 - v, permanente: v - 10 };
+}
+
+/** Espaços ocupados de um membro (0–10). */
+export function totalMembro(s: SaudeMembro): number {
+  return s.dano + s.permanente;
+}
+
+/** Estados dos 10 espaços de um membro:
+ *  0 vazio · 1 superficial · 2 profundo (membro cheio) · 3 permanente.
+ *  Permanentes preenchem da esquerda; curáveis viram profundo quando o membro enche. */
+export function cellsFromSaude(s: SaudeMembro): number[] {
+  const total = totalMembro(s);
   return Array.from({ length: 10 }, (_, i) => {
-    if (i < perm) return 3;
-    if (cheio) return 2;
-    return i < d ? 1 : 0;
+    if (i < s.permanente) return 3;
+    if (i < total) return total >= 10 ? 2 : 1;
+    return 0;
   });
 }
 
-/** Rótulo de status do membro pelo dano acumulado. */
-export function statusMembro(dano: number): string {
-  const d = Math.max(0, Math.min(20, Math.round(dano)));
-  if (d >= 20) return "invalidado";
-  if (d >= 10) return "incapacitado";
-  if (d > 0) return "ferido";
+/** Rótulo de status do membro. */
+export function statusMembro(s: SaudeMembro): string {
+  if (s.permanente >= 10) return "invalidado";
+  if (totalMembro(s) >= 10) return "incapacitado";
+  if (totalMembro(s) > 0) return "ferido";
   return "";
+}
+
+/** Aplica pontos de dano a um membro: preenche o curável até encher (10);
+ *  com o membro cheio, cada ponto converte 1 curável em permanente; invalidado
+ *  (10 permanentes) ignora. TODO ponto aplicado — inclusive a conversão — gera
+ *  +1 fadiga (clamp 50), como manda o manual. Retorna nova ficha (imutável). */
+export function aplicarDano(f: Ficha, membro: MembroKey, pontos = 1): Ficha {
+  let { dano, permanente } = f.saude[membro];
+  let fadiga = f.fadiga;
+  for (let i = 0; i < Math.max(0, Math.round(pontos)); i++) {
+    if (dano + permanente < 10) dano += 1;
+    else if (permanente < 10) {
+      dano -= 1;
+      permanente += 1;
+    } else break;
+    fadiga = Math.min(50, fadiga + 1);
+  }
+  return { ...f, saude: { ...f.saude, [membro]: { dano, permanente } }, fadiga };
+}
+
+/** Cura só o dano curável (piso 0). Nunca toca permanente nem devolve fadiga. */
+export function curarDano(f: Ficha, membro: MembroKey, pontos = 1): Ficha {
+  const s = f.saude[membro];
+  const dano = Math.max(0, s.dano - Math.max(0, Math.round(pontos)));
+  return { ...f, saude: { ...f.saude, [membro]: { ...s, dano } } };
+}
+
+/** Remove 1 permanente (piso 0) — usar só após confirmação explícita do usuário. */
+export function removerPermanente(f: Ficha, membro: MembroKey): Ficha {
+  const s = f.saude[membro];
+  const permanente = Math.max(0, s.permanente - 1);
+  return { ...f, saude: { ...f.saude, [membro]: { ...s, permanente } } };
+}
+
+/** Zera os permanentes de todos os membros (mantém o curável) — reset com confirmação. */
+export function resetarPermanentes(f: Ficha): Ficha {
+  const saude = Object.fromEntries(
+    MEMBROS.map((m) => [m.key, { ...f.saude[m.key], permanente: 0 }])
+  ) as Record<MembroKey, SaudeMembro>;
+  return { ...f, saude };
+}
+
+/** PV restante = 60 − Σ espaços ocupados (10 por membro). */
+export function pvRestante(f: Ficha): number {
+  return 60 - MEMBROS.reduce((s, m) => s + totalMembro(f.saude[m.key]), 0);
+}
+
+/** Redutor de dano por membro: soma o red. dano das proteções equipadas (com nome)
+ *  que cobrem a região. Informativo — o narrador aplica a redução antes de marcar. */
+export function redDanoPorMembro(f: Ficha): Record<MembroKey, number> {
+  const out = Object.fromEntries(MEMBROS.map((m) => [m.key, 0])) as Record<MembroKey, number>;
+  for (const p of f.protecoes) {
+    if (p.equipada === false || !p.nome.trim()) continue;
+    const red = Math.abs(parseNum(p.redDano));
+    if (!red) continue;
+    for (const r of p.regioes) out[r] += red;
+  }
+  return out;
 }
 
 export type MembroKey = "cabeca" | "tronco" | "bracoE" | "bracoD" | "pernaE" | "pernaD";
@@ -311,7 +393,9 @@ export function fichaVazia(): Ficha {
     pa: { base: "10", redArmadura: "", redDano: "", redCarga: "", outros: "", total: "" },
     armas: [novaArma(), novaArma()],
     protecoes: Array.from({ length: 4 }, novaProtecao),
-    saude: Object.fromEntries(MEMBROS.map((m) => [m.key, 0])) as Record<MembroKey, number>,
+    saude: Object.fromEntries(
+      MEMBROS.map((m) => [m.key, { dano: 0, permanente: 0 }])
+    ) as Record<MembroKey, SaudeMembro>,
     fadiga: 0,
     guardas: "",
     equipamentos: Array.from({ length: 6 }, novoItem),
@@ -432,18 +516,28 @@ export function migrarFicha(data: unknown): Ficha {
   f.caracteristicas = preencher(f.caracteristicas, base.caracteristicas.length, novaCaracteristica);
   f.tesouro = preencher(f.tesouro, base.tesouro.length, () => ({ label: "", valor: "" }));
 
-  // saúde: converte o formato antigo (array de 10 por membro) para dano acumulado (número 0–20)
-  const saude = { ...base.saude } as Record<MembroKey, number>;
+  // saúde: detecta o formato pela FORMA do dado (não pelo schemaVersion) —
+  // v0 = array de 10 células · v1 = escalar 0–20 · v2 = {dano, permanente}
+  const saude = { ...base.saude } as Record<MembroKey, SaudeMembro>;
   const rawSaude = (d.saude ?? {}) as Record<string, unknown>;
   for (const m of MEMBROS) {
     const v = rawSaude[m.key];
-    if (typeof v === "number") saude[m.key] = Math.max(0, Math.min(20, Math.round(v)));
-    else if (Array.isArray(v)) {
-      const dano = (v as unknown[]).reduce<number>(
-        (s, c) => s + (Number(c) > 0 ? 1 : 0) + (Number(c) === 3 ? 1 : 0),
-        0
-      );
-      saude[m.key] = Math.max(0, Math.min(20, dano));
+    if (typeof v === "number") {
+      saude[m.key] = saudeDeEscalar(v); // v1
+    } else if (Array.isArray(v)) {
+      // v0 (array de 10 células): permanentes contam direto das células ===3 —
+      // o v2 consegue representá-los (a redução antiga para escalar convertia
+      // permanentes parciais em dano curável, violando "permanente não volta")
+      const cells = v as unknown[];
+      const permanente = Math.min(10, cells.filter((c) => Number(c) === 3).length);
+      const curaveis = cells.filter((c) => Number(c) > 0 && Number(c) !== 3).length;
+      saude[m.key] = { dano: Math.min(10 - permanente, curaveis), permanente };
+    } else if (v && typeof v === "object") {
+      // v2: clampa preservando o invariante (permanente manda no espaço restante)
+      const o = v as Record<string, unknown>;
+      const permanente = Math.max(0, Math.min(10, Math.round(Number(o.permanente) || 0)));
+      const dano = Math.max(0, Math.min(10 - permanente, Math.round(Number(o.dano) || 0)));
+      saude[m.key] = { dano, permanente };
     }
   }
   f.saude = saude;

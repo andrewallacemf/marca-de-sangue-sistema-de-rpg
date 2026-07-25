@@ -55,8 +55,8 @@ detectou e o que o André apontou. Serve de checklist para o passe de robustez.
 
 ## UX / conteúdo (a implementar)
 
-13. **Fadiga:** rótulo quebra em 2 linhas; trilha de 50 quebra em 3 fileiras e é difícil ler
-    o número. Rever para contador + trilha mais compacta.
+13. **[RESOLVIDO na rodada 2 (24/07)] Fadiga:** trilha refeita em **5 fileiras de 10**, com
+    separação visual a cada 5 e rótulo 10/20/30/40/50 no fim de cada fileira.
 14. **Duplicação grade × cards de habilidades:** decidir se os cards alimentam a grade
     automaticamente (fonte única) ou se seguem separados.
 15. **Limites fixos:** 2 armas (tornar dinâmico? builds maiores). Equipamentos e cards já
@@ -64,6 +64,22 @@ detectou e o que o André apontou. Serve de checklist para o passe de robustez.
 16. **Sem aviso de alterações não salvas** e sem confirmação ao Carregar por cima.
 17. **Mobile (validar):** barra de ferramentas, trilha de fadiga e fileiras de 10 células de
     saúde podem estourar em telas pequenas.
+
+## Modelo de saúde v2 (rodada 2, 24/07/2026)
+
+- **Dano permanente separado do curável**: `saude[membro] = {dano, permanente}`
+  (invariante `dano + permanente ≤ 10`), `schemaVersion: 2` no `.mds.json`. Motivo: no
+  modelo escalar antigo (0–20), curar apagava permanentes — contra a regra ("não volta
+  por meios convencionais"). Decisão completa em
+  [notas-de-design/decisoes/2026-07-24-ficha-schema-v2-dano-permanente.md](../notas-de-design/decisoes/2026-07-24-ficha-schema-v2-dano-permanente.md).
+- Comportamento: clique marca dano (com 1 fadiga/ponto, conversão em permanente com o
+  membro cheio); − cura só o curável; ■ ignora clique simples e só sai com **clique
+  duplo + confirmação**. Load aceita v0/v1/v2 (detecção pela forma do dado).
+- **Sincronização**: as funções têm port fiel em
+  `plataforma-rpg-marca-de-sangue/src/lib/game-engine/` — mudanças aqui devem ser
+  replicadas lá (os testes automatizados vivem na plataforma).
+- ⚠️ Builds antigos da ficha **zeram a saúde** de arquivos v2 ao carregar — atualizar
+  cópias soltas do `index.html`.
 
 ## Direção acordada
 
