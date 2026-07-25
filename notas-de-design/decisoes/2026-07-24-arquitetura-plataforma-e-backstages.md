@@ -101,8 +101,12 @@ levantou três insumos:
    criados** (15 exp / PA 10 confirmados na tela). Pendências menores de infra (SMTP,
    OAuth, MCPs, CI) em `docs/PENDENCIAS.md` do repo da plataforma. Ver registro
    `registro-ia/2026/2026-07-24-andre-fase-2-plataforma.md`.
-3. **v1**: contas + fichas persistidas + importar/exportar `.mds.json` (compatível com a
-   ficha offline) + manual consultável.
+3. ✅ **v1** — **feita em 24/07/2026**: contas (já havia) + **ficha completa editável**
+   (`/personagens/[id]/ficha`, todas as seções da ficha offline, autopreenchimento dos
+   catálogos do banco, fórmulas do game engine ao vivo) + **importar/exportar
+   `.mds.json`** (compatível com a ficha offline) + **manual consultável** (link no
+   header/editor para o portal). 502 testes, cobertura 100%. Ver registros
+   `registro-ia/2026/2026-07-24-andre-v1-fundacao.md` e `…-v1-ficha-completa.md`.
 4. **v2**: campanhas, fichas de inimigos, gestor de batalha (especificação inicial em
    [pendencias-ficha-plataforma.md](../pendencias-ficha-plataforma.md), seção 5).
 5. **v3**: mesa ao vivo — mapa hexagonal (Pixi.js), tempo real, conflitos físicos e sociais.
