@@ -36,10 +36,10 @@ Os valores do dado correspondem a:
 |:---:|---|
 | 1 | **Cabeça** |
 | 2 | **Braço Direito** |
-| 3 | **Perna Esquerda** |
+| 3 | **Perna Direita** |
 | 4 | **Tronco** |
 | 5 | **Braço Esquerdo** |
-| 6 | **Perna Direita** |
+| 6 | **Perna Esquerda** |
 
 > 💡 **Ataque indefinido**
 >

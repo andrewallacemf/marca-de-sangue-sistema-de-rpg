@@ -32,8 +32,12 @@ import { CaracteristicasSection } from "@/components/CaracteristicasSection";
 import { ProtecoesSection } from "@/components/ProtecoesSection";
 import { ArmasSection } from "@/components/ArmasSection";
 import {
-  cellsFromDano,
+  cellsFromSaude,
   statusMembro,
+  totalMembro,
+  aplicarDano,
+  curarDano,
+  removerPermanente,
   expUsada,
   fichaVazia,
   inconsciente,
@@ -68,7 +72,15 @@ function penalidadeFadiga(f: number, rv: RulesVersion): string {
   return p > 0 ? `−${p} PA` : "sem penalidade";
 }
 
-function DamageCell({ state, onClick }: { state: number; onClick: () => void }) {
+function DamageCell({
+  state,
+  onClick,
+  onDoubleClick,
+}: {
+  state: number;
+  onClick?: () => void;
+  onDoubleClick?: () => void;
+}) {
   const styles = [
     "bg-transparent",
     "bg-accent/40",
@@ -80,12 +92,29 @@ function DamageCell({ state, onClick }: { state: number; onClick: () => void }) 
     <button
       type="button"
       onClick={onClick}
+      onDoubleClick={onDoubleClick}
+      // célula ■ não tem onClick; Enter/Space abrem a mesma confirmação do
+      // clique duplo (senão a remoção fica inacessível por teclado)
+      onKeyDown={
+        state === 3 && onDoubleClick
+          ? (e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                onDoubleClick();
+              }
+            }
+          : undefined
+      }
       className={cn(
         "h-5 w-5 shrink-0 rounded-[3px] border border-input text-[10px] font-bold leading-none",
         "flex items-center justify-center transition-colors",
         styles[state]
       )}
-      title={["vazio", "superficial", "profundo", "permanente"][state]}
+      title={
+        state === 3
+          ? "permanente — clique duplo (ou Enter) remove, com confirmação"
+          : ["vazio", "superficial", "profundo", "permanente"][state]
+      }
     >
       {chars[state]}
     </button>
@@ -567,25 +596,24 @@ export default function App() {
                 <CardTitle className="flex items-center gap-1.5">
                   <HeartPulse className="h-4 w-4" /> Saúde — 60 PV (10 por membro)
                   <span className="ml-2 text-[11px] font-normal normal-case text-muted-foreground">
-                    clique para somar dano (gera 1 fadiga/ponto); − remove. Enche (10) → profundo/incapacitado ✕; além → permanente ■. O nº é o d6 do ataque descuidado.
+                    clique soma dano (gera 1 fadiga/ponto); − cura só o dano comum. Enche (10) → profundo/incapacitado ✕; além → permanente ■, que não sai com cura — clique duplo em ■ remove (com confirmação). O nº é o d6 do ataque descuidado.
                   </span>
                 </CardTitle>
               </CardHeader>
               <CardContent className="grid grid-cols-1 gap-2 sm:grid-cols-2">
                 {MEMBROS.map((m) => {
-                  const dano = ficha.saude[m.key] || 0;
-                  const cells = cellsFromDano(dano);
-                  const status = statusMembro(dano);
-                  const addDano = (delta: number) =>
-                    setFicha((f) => {
-                      const atual = f.saude[m.key] || 0;
-                      const novo = Math.max(0, Math.min(20, atual + delta));
-                      if (novo === atual) return f;
-                      const saude = { ...f.saude, [m.key]: novo };
-                      // receber dano gera 1 fadiga por ponto (só ao aumentar); curar não remove fadiga
-                      const fadiga = novo > atual ? Math.min(50, f.fadiga + (novo - atual)) : f.fadiga;
-                      return { ...f, saude, fadiga };
-                    });
+                  const saude = ficha.saude[m.key];
+                  const cells = cellsFromSaude(saude);
+                  const status = statusMembro(saude);
+                  const removerComConfirmacao = () => {
+                    if (
+                      confirm(
+                        `Remover 1 dano permanente de ${m.label}? Dano permanente não volta por meios convencionais — use só para corrigir marcação errada ou por efeito extraordinário do cenário.`
+                      )
+                    ) {
+                      setFicha((f) => removerPermanente(f, m.key));
+                    }
+                  };
                   return (
                     <div key={m.key} className="flex flex-col gap-1 rounded-md border p-2">
                       <div className="flex items-center justify-between gap-2">
@@ -600,7 +628,11 @@ export default function App() {
                             <span
                               className={cn(
                                 "text-[9px] font-semibold uppercase",
-                                dano >= 20 ? "text-destructive" : dano >= 10 ? "text-primary" : "text-muted-foreground"
+                                saude.permanente >= 10
+                                  ? "text-destructive"
+                                  : totalMembro(saude) >= 10
+                                    ? "text-primary"
+                                    : "text-muted-foreground"
                               )}
                             >
                               {status}
@@ -609,8 +641,8 @@ export default function App() {
                           <button
                             type="button"
                             className="no-print flex h-5 w-5 items-center justify-center rounded border text-xs text-muted-foreground hover:bg-secondary"
-                            title="Remover 1 de dano (não remove fadiga)"
-                            onClick={() => addDano(-1)}
+                            title="Curar 1 (não remove permanente nem fadiga)"
+                            onClick={() => setFicha((f) => curarDano(f, m.key))}
                           >
                             −
                           </button>
@@ -618,7 +650,12 @@ export default function App() {
                       </div>
                       <div className="flex flex-wrap gap-0.5">
                         {cells.map((st, ci) => (
-                          <DamageCell key={ci} state={st} onClick={() => addDano(1)} />
+                          <DamageCell
+                            key={ci}
+                            state={st}
+                            onClick={st === 3 ? undefined : () => setFicha((f) => aplicarDano(f, m.key))}
+                            onDoubleClick={st === 3 ? removerComConfirmacao : undefined}
+                          />
                         ))}
                       </div>
                     </div>
@@ -649,10 +686,11 @@ export default function App() {
                     zera no “Descanso” (topo)
                   </span>
                 </div>
+                {/* 5 fileiras de 10, separação a cada 5 e rótulo no fim da fileira */}
                 <div className="flex flex-col gap-1">
-                  {[0, 1].map((linha) => (
-                    <div key={linha} className="flex flex-wrap gap-1">
-                      {Array.from({ length: 25 }, (_, k) => linha * 25 + k + 1).map((n) => {
+                  {[0, 1, 2, 3, 4].map((linha) => (
+                    <div key={linha} className="flex items-center gap-1">
+                      {Array.from({ length: 10 }, (_, k) => linha * 10 + k + 1).map((n) => {
                         const filled = n <= ficha.fadiga;
                         return (
                           <button
@@ -661,13 +699,17 @@ export default function App() {
                             onClick={() => update("fadiga", ficha.fadiga === n ? n - 1 : n)}
                             title={`${n}`}
                             className={cn(
-                              "h-5 w-5 rounded-[3px] text-[8px] leading-none",
+                              "h-5 w-5 shrink-0 rounded-[3px] text-[8px] leading-none",
+                              n % 5 === 0 && n % 10 !== 0 && "mr-1.5",
                               filled ? "bg-primary text-primary-foreground" : "bg-transparent hover:bg-secondary",
-                              n % 10 === 0 ? "border-2 border-accent" : "border border-input"
+                              "border border-input"
                             )}
                           />
                         );
                       })}
+                      <span className="ml-0.5 w-5 text-right font-mono text-[9px] text-muted-foreground">
+                        {(linha + 1) * 10}
+                      </span>
                     </div>
                   ))}
                 </div>
