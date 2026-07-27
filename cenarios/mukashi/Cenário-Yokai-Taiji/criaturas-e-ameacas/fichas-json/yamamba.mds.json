@@ -1,0 +1,188 @@
+{
+  "app": "marca-de-sangue-ficha",
+  "schemaVersion": 2,
+  "rulesVersion": "vigente",
+  "salvoEm": "2026-07-27T00:00:00.000Z",
+  "data": {
+    "info": {
+      "nome": "Yamamba (chefe — Sessão 3)",
+      "jogador": "Mestre (Daniel)",
+      "cenario": "A Caça dos Yokais — Mukashi",
+      "ultimaSessao": ""
+    },
+    "exp": {
+      "baseTotal": "",
+      "baseUsada": "",
+      "qtdAptidoes": "13",
+      "qtdHabilidades": "5",
+      "qtdTracos": "0"
+    },
+    "aptidoes": {
+      "fisica": { "total": "4", "usado": "" },
+      "agil": { "total": "2", "usado": "" },
+      "mental": { "total": "3", "usado": "" },
+      "social": { "total": "4", "usado": "" }
+    },
+    "pa": {
+      "base": "16",
+      "redArmadura": "0",
+      "redDano": "0",
+      "redCarga": "0",
+      "outros": "0",
+      "total": "16"
+    },
+    "armas": [
+      {
+        "nome": "Garras",
+        "tipo": "Natural · corpo a corpo",
+        "equipado": "Duas mãos",
+        "categoria": "Cortante",
+        "alcance": "1-2 m",
+        "durabilidade": "",
+        "custoPA": "4",
+        "dano": "2d6",
+        "props": { "ARRE": false, "AGAR": false, "CORT": true, "CONT": false, "DEFL": false, "PERF": false, "PROJ": false }
+      },
+      {
+        "nome": "Investida",
+        "tipo": "Natural · corpo a corpo",
+        "equipado": "Corpo",
+        "categoria": "Contundente",
+        "alcance": "1 m",
+        "durabilidade": "",
+        "custoPA": "5",
+        "dano": "1d6 + desequilibra (alvo termina em posicionamento aberto)",
+        "props": { "ARRE": false, "AGAR": false, "CORT": false, "CONT": true, "DEFL": false, "PERF": false, "PROJ": false }
+      },
+      {
+        "nome": "Raízes da Montanha (habilidade de terreno, ver características)",
+        "tipo": "Natural · à distância",
+        "equipado": "—",
+        "categoria": "Terreno/convocação",
+        "alcance": "6 m",
+        "durabilidade": "",
+        "custoPA": "5",
+        "dano": "—",
+        "props": { "ARRE": false, "AGAR": false, "CORT": false, "CONT": false, "DEFL": false, "PERF": false, "PROJ": false }
+      }
+    ],
+    "protecoes": [
+      {
+        "nome": "Pele da Montanha (só enquanto o \"fluxo de espíritos\" estiver ativo — some quando a gaiola é aberta ou se ela entrar na poça de água)",
+        "redPA": "0",
+        "redDano": "2",
+        "durabilidade": "",
+        "regioes": ["cabeca", "tronco", "bracoD", "bracoE", "pernaD", "pernaE"],
+        "equipada": true
+      }
+    ],
+    "saude": {
+      "cabeca": { "dano": 0, "permanente": 0 },
+      "tronco": { "dano": 0, "permanente": 0 },
+      "bracoE": { "dano": 0, "permanente": 0 },
+      "bracoD": { "dano": 0, "permanente": 0 },
+      "pernaE": { "dano": 0, "permanente": 0 },
+      "pernaD": { "dano": 0, "permanente": 0 }
+    },
+    "fadiga": 0,
+    "guardas": "0",
+    "equipamentos": [
+      { "equipado": false, "item": "", "qtd": "", "pesoUnit": "", "pesoTotal": "" },
+      { "equipado": false, "item": "", "qtd": "", "pesoUnit": "", "pesoTotal": "" },
+      { "equipado": false, "item": "", "qtd": "", "pesoUnit": "", "pesoTotal": "" },
+      { "equipado": false, "item": "", "qtd": "", "pesoUnit": "", "pesoTotal": "" },
+      { "equipado": false, "item": "", "qtd": "", "pesoUnit": "", "pesoTotal": "" },
+      { "equipado": false, "item": "", "qtd": "", "pesoUnit": "", "pesoTotal": "" }
+    ],
+    "carga": { "capacidade": "", "carregado": "" },
+    "tesouro": [
+      { "label": "", "valor": "" },
+      { "label": "", "valor": "" },
+      { "label": "", "valor": "" },
+      { "label": "", "valor": "" }
+    ],
+    "caracteristicas": [
+      {
+        "tipo": "Habilidade",
+        "nome": "Fúria da Montanha",
+        "efeito": "Pode atacar duas vezes por rodada (Garras ou Investida), pagando o custo cheio de PA de cada ataque. Reflete a força \"de quatro ou cinco homens\" da lenda da yamauba.",
+        "requisitos": "—",
+        "atributo": "Físico",
+        "valorCompra": "0",
+        "custoPA": "PA do ataque, duas vezes",
+        "custoPANum": "0",
+        "custoPAArma": true,
+        "custoFadiga": "",
+        "usosPorNivel": [0, 0, 0, 0, 0],
+        "usosGastosPorNivel": [0, 0, 0, 0, 0],
+        "niveisDesc": ["", "", "", "", ""],
+        "nivel": 1
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Voracidade",
+        "efeito": "Sempre que acerta um ataque, recupera 1 PV (no membro que ela escolher; não reverte dano permanente/invalidado). Continua ativa mesmo depois da gaiola aberta — só para se ela for derrotada, fugir ou se render.",
+        "requisitos": "—",
+        "atributo": "Físico",
+        "valorCompra": "0",
+        "custoPA": "—",
+        "custoPANum": "0",
+        "custoPAArma": false,
+        "custoFadiga": "",
+        "usosPorNivel": [0, 0, 0, 0, 0],
+        "usosGastosPorNivel": [0, 0, 0, 0, 0],
+        "niveisDesc": ["", "", "", "", ""],
+        "nivel": 1
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Disfarce Materno",
+        "efeito": "Pode se passar por uma figura materna/familiar conhecida do alvo por uma cena. O alvo percebe o engano com um teste Mental contra o Social dela. Usar narrativamente antes ou durante a malha de atração.",
+        "requisitos": "—",
+        "atributo": "Social",
+        "valorCompra": "0",
+        "custoPA": "—",
+        "custoPANum": "0",
+        "custoPAArma": false,
+        "custoFadiga": "",
+        "usosPorNivel": [0, 0, 0, 0, 0],
+        "usosGastosPorNivel": [0, 0, 0, 0, 0],
+        "niveisDesc": ["", "", "", "", ""],
+        "nivel": 1
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Raízes da Montanha",
+        "efeito": "Alcance 6m. Aponta um ponto do chão; num raio de 2m a rocha racha e vira terreno difícil (dobra custo de PA de deslocamento) pelo resto do combate, e 1 Espírito Constritor emerge daquele ponto (ver ficha própria). Máximo 3 Espíritos Constritores vivos ao mesmo tempo — acima disso, só cria o terreno difícil. Se usada de uma posição mais alta que o alvo, é feita com vantagem. Recarrega só depois de 2 rodadas.",
+        "requisitos": "Recarga: 2 rodadas entre usos",
+        "atributo": "Mental",
+        "valorCompra": "0",
+        "custoPA": "5 PA",
+        "custoPANum": "5",
+        "custoPAArma": false,
+        "custoFadiga": "",
+        "usosPorNivel": [0, 0, 0, 0, 0],
+        "usosGastosPorNivel": [0, 0, 0, 0, 0],
+        "niveisDesc": ["", "", "", "", ""],
+        "nivel": 1
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Malha de Atração (Fase 1 — antes da caverna)",
+        "efeito": "A 8m de alcance, teste Social (1d10 + aptidões) contra cada alvo que quiser afetar; o alvo responde com contrateste Mental. Se ela vencer, o alvo entra na malha de atração: fica incapaz de atacá-la e, no próprio turno, só pode tentar convencer outro personagem (ação Social) ou se libertar. Libertação: no próprio turno, novo teste Mental como contrateste contra o resultado original dela. Resgate por aliado: outro personagem gasta 3 PA para um teste Social oposto ao Social dela.",
+        "requisitos": "Só antes do combate físico, a caminho da caverna",
+        "atributo": "Social",
+        "valorCompra": "0",
+        "custoPA": "—",
+        "custoPANum": "0",
+        "custoPAArma": false,
+        "custoFadiga": "",
+        "usosPorNivel": [0, 0, 0, 0, 0],
+        "usosGastosPorNivel": [0, 0, 0, 0, 0],
+        "niveisDesc": ["", "", "", "", ""],
+        "nivel": 1
+      }
+    ],
+    "anotacoes": "FICHA DE CHEFE — nivelada para um grupo de 4-5 personagens (ver cenarios/mukashi/Cenário-Yokai-Taiji/criaturas-e-ameacas/yamamba.md para lore, mapa tático completo e notas de balanceamento).\n\nGATILHO DA GAIOLA (Fase 2): ao libertar as crianças da gaiola (ação, 3 PA, sem teste), a Yamamba perde 5 PV de cada membro (marcar 5 de dano em cada um dos 6 membros nesta ficha), a proteção \"Pele da Montanha\" deixa de valer (redutor de dano cai a 0), e todos os Espíritos Constritores vivos se desfazem imediatamente. Voracidade continua ativa depois disso.\n\nTERRENO: mapa de 4 zonas — corredor de entrada (gargalo), salão central (estátua/gaiola), saliência rochosa (elevação — dá vantagem em Raízes da Montanha), poça de água (terreno difícil; SE a Yamamba estiver dentro da poça, a Pele da Montanha não funciona mesmo antes da gaiola — pode ser empurrada pra lá com a ação Empurrar, 1 PA, Físico).\n\nSe o grupo estiver com só 4 jogadores (sem o Aramaki): considere reduzir o PA base de 16 para 14, o dano da Investida de 1d6 para 1d4, e o limite de Espíritos Constritores simultâneos de 3 para 2.\n\nFalas: \"Entregue-me a criança, [protetor(a) de Kinjo], e eu abençoarei as colheitas e os rios de Okuta-kuni com fertilidade por cem anos.\" / \"Por que protege aqueles que a temem, filha da neve? Entregue a criança humana e junte-se à montanha.\" (para Mizuki)."
+  }
+}

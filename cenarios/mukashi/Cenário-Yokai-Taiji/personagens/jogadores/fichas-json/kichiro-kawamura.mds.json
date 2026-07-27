@@ -1,0 +1,169 @@
+{
+  "app": "marca-de-sangue-ficha",
+  "schemaVersion": 2,
+  "rulesVersion": "vigente",
+  "salvoEm": "2026-07-27T00:00:00.000Z",
+  "data": {
+    "info": {
+      "nome": "Kichiro Kawamura",
+      "jogador": "Rômulo",
+      "cenario": "A Caça dos Yokais — Mukashi",
+      "ultimaSessao": "Sessão 2 (04/07/2026)"
+    },
+    "exp": {
+      "baseTotal": "30",
+      "baseUsada": "25",
+      "qtdAptidoes": "10",
+      "qtdHabilidades": "2",
+      "qtdTracos": "1"
+    },
+    "aptidoes": {
+      "fisica": { "total": "3", "usado": "" },
+      "agil": { "total": "4", "usado": "" },
+      "mental": { "total": "2", "usado": "" },
+      "social": { "total": "1", "usado": "" }
+    },
+    "pa": {
+      "base": "10",
+      "redArmadura": "0",
+      "redDano": "0",
+      "redCarga": "0",
+      "outros": "0",
+      "total": "10"
+    },
+    "armas": [
+      {
+        "nome": "Martelo grande",
+        "tipo": "Pesada · corpo a corpo",
+        "equipado": "Duas mãos",
+        "categoria": "Contundente",
+        "alcance": "1-2 m",
+        "durabilidade": "40",
+        "custoPA": "6",
+        "dano": "4d4",
+        "props": { "ARRE": false, "AGAR": false, "CORT": false, "CONT": true, "DEFL": false, "PERF": false, "PROJ": false }
+      }
+    ],
+    "protecoes": [],
+    "saude": {
+      "cabeca": { "dano": 0, "permanente": 0 },
+      "tronco": { "dano": 0, "permanente": 0 },
+      "bracoE": { "dano": 0, "permanente": 0 },
+      "bracoD": { "dano": 0, "permanente": 0 },
+      "pernaE": { "dano": 0, "permanente": 0 },
+      "pernaD": { "dano": 0, "permanente": 0 }
+    },
+    "fadiga": 0,
+    "guardas": "0",
+    "equipamentos": [
+      { "equipado": false, "item": "", "qtd": "", "pesoUnit": "", "pesoTotal": "" },
+      { "equipado": false, "item": "", "qtd": "", "pesoUnit": "", "pesoTotal": "" }
+    ],
+    "carga": { "capacidade": "", "carregado": "" },
+    "tesouro": [
+      { "label": "", "valor": "" },
+      { "label": "", "valor": "" },
+      { "label": "", "valor": "" },
+      { "label": "", "valor": "" }
+    ],
+    "caracteristicas": [
+      {
+        "tipo": "Traço",
+        "nome": "Firme",
+        "efeito": "Pode usar armas pesadas com apenas uma mão, com −3 de dano.",
+        "requisitos": "Usar uma arma pesada",
+        "atributo": "Físico",
+        "valorCompra": "4",
+        "custoPA": "—",
+        "custoPANum": "0",
+        "custoPAArma": false,
+        "custoFadiga": "",
+        "usosPorNivel": [0, 0, 0, 0, 0],
+        "usosGastosPorNivel": [0, 0, 0, 0, 0],
+        "niveisDesc": ["", "", "", "", ""],
+        "nivel": 1
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Auto cura (Autocura)",
+        "efeito": "Realiza um teste de cura de dano superficial em si mesmo.",
+        "requisitos": "",
+        "atributo": "Mental",
+        "valorCompra": "3",
+        "custoPA": "4 PA",
+        "custoPANum": "4",
+        "custoPAArma": false,
+        "custoFadiga": "",
+        "usosPorNivel": [1, 0, 0, 0, 0],
+        "usosGastosPorNivel": [0, 0, 0, 0, 0],
+        "niveisDesc": ["", "", "", "", ""],
+        "nivel": 1
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Consumir",
+        "efeito": "Realiza um teste mental para consumir/desativar uma habilidade que um oponente esteja usando (ver descrição completa em sistema-base/listas/habilidades-base-mentais.md).",
+        "requisitos": "",
+        "atributo": "Mental",
+        "valorCompra": "4",
+        "custoPA": "4 PA",
+        "custoPANum": "4",
+        "custoPAArma": false,
+        "custoFadiga": "",
+        "usosPorNivel": [1, 0, 0, 0, 0],
+        "usosGastosPorNivel": [0, 0, 0, 0, 0],
+        "niveisDesc": ["", "", "", "", ""],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Corredor",
+        "efeito": "Dobra o limite de PA que pode ser usado em deslocamento.",
+        "requisitos": "",
+        "atributo": "Físico",
+        "valorCompra": "8",
+        "custoPA": "—",
+        "custoPANum": "0",
+        "custoPAArma": false,
+        "custoFadiga": "",
+        "usosPorNivel": [0, 0, 0, 0, 0],
+        "usosGastosPorNivel": [0, 0, 0, 0, 0],
+        "niveisDesc": ["", "", "", "", ""],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Reflexos",
+        "efeito": "⚠️ Não encontrado nas listas oficiais atuais com este nome exato. Pode ser referência informal ao sistema de contrateste/reação padrão, ou a um traço específico de Mukashi (monastério/Kyūdō) ainda não documentado. Mantido como consta na ficha original — confirmar em mesa.",
+        "requisitos": "⚠️ a confirmar",
+        "atributo": "Ágil",
+        "valorCompra": "0",
+        "custoPA": "—",
+        "custoPANum": "0",
+        "custoPAArma": false,
+        "custoFadiga": "",
+        "usosPorNivel": [0, 0, 0, 0, 0],
+        "usosGastosPorNivel": [0, 0, 0, 0, 0],
+        "niveisDesc": ["", "", "", "", ""],
+        "nivel": 1
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Ajuda",
+        "efeito": "⚠️ Não encontrado nas listas oficiais atuais com este nome exato — pode se referir à ação genérica de auxiliar um aliado em um teste, ou a uma habilidade Social como Animar/Revigorar mal-lembrada. Mantido como consta na ficha original — confirmar em mesa.",
+        "requisitos": "⚠️ a confirmar",
+        "atributo": "Social",
+        "valorCompra": "0",
+        "custoPA": "—",
+        "custoPANum": "0",
+        "custoPAArma": false,
+        "custoFadiga": "",
+        "usosPorNivel": [0, 0, 0, 0, 0],
+        "usosGastosPorNivel": [0, 0, 0, 0, 0],
+        "niveisDesc": ["", "", "", "", ""],
+        "nivel": 1
+      }
+    ],
+    "anotacoes": "ADAPTADA das regras antigas para as vigentes (27/07/2026) — ver cenarios/mukashi/Cenário-Yokai-Taiji/personagens/jogadores/kichiro-kawamura.md para a ficha narrativa completa (inclui o arco/Kyūdō da história dele, que a ficha em PDF não lista como arma — só o martelo grande de combate corpo a corpo aparece registrado).\n\nAJUSTES DE REGRA: PA base atualizado para o padrão vigente (10, sem redutor de armadura — nenhuma proteção registrada na ficha original). Dano do martelo grande (Tetsu-bō/Kanabō, pesada contundente) pela matriz atual = 4d4, custo 6 PA.\n\n\"Reflexos\" e \"Ajuda\" não têm entrada nas listas oficiais atuais — mantidos como a ficha original registrou, sinalizados para revisão em mesa."
+  }
+}

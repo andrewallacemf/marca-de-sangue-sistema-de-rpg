@@ -1,0 +1,217 @@
+{
+  "app": "marca-de-sangue-ficha",
+  "schemaVersion": 2,
+  "rulesVersion": "vigente",
+  "salvoEm": "2026-07-27T00:00:00.000Z",
+  "data": {
+    "info": {
+      "nome": "Tenaga e Ashinaga",
+      "jogador": "Matheus Reina",
+      "cenario": "A Caça dos Yokais — Mukashi",
+      "ultimaSessao": "Sessão 2 (04/07/2026)"
+    },
+    "exp": {
+      "baseTotal": "30",
+      "baseUsada": "30",
+      "qtdAptidoes": "5",
+      "qtdHabilidades": "4",
+      "qtdTracos": "3"
+    },
+    "aptidoes": {
+      "fisica": { "total": "1", "usado": "" },
+      "agil": { "total": "2", "usado": "" },
+      "mental": { "total": "0", "usado": "" },
+      "social": { "total": "2", "usado": "" }
+    },
+    "pa": {
+      "base": "10",
+      "redArmadura": "0",
+      "redDano": "0",
+      "redCarga": "0",
+      "outros": "1",
+      "total": "11"
+    },
+    "armas": [
+      {
+        "nome": "Kusarigama",
+        "tipo": "Média · agarradora · corpo a corpo",
+        "equipado": "Duas mãos",
+        "categoria": "Cortante/Contundente",
+        "alcance": "1-3 m (corrente)",
+        "durabilidade": "30 (arma de corrente — narrador pode ignorar/dobrar o desgaste)",
+        "custoPA": "4",
+        "dano": "1d12 CORT / 3d4 CONT",
+        "props": { "ARRE": false, "AGAR": true, "CORT": true, "CONT": true, "DEFL": false, "PERF": false, "PROJ": false }
+      }
+    ],
+    "protecoes": [],
+    "saude": {
+      "cabeca": { "dano": 0, "permanente": 0 },
+      "tronco": { "dano": 0, "permanente": 0 },
+      "bracoE": { "dano": 0, "permanente": 0 },
+      "bracoD": { "dano": 0, "permanente": 0 },
+      "pernaE": { "dano": 0, "permanente": 0 },
+      "pernaD": { "dano": 0, "permanente": 0 }
+    },
+    "fadiga": 0,
+    "guardas": "0",
+    "equipamentos": [
+      { "equipado": false, "item": "", "qtd": "", "pesoUnit": "", "pesoTotal": "" },
+      { "equipado": false, "item": "", "qtd": "", "pesoUnit": "", "pesoTotal": "" }
+    ],
+    "carga": { "capacidade": "", "carregado": "" },
+    "tesouro": [
+      { "label": "", "valor": "" },
+      { "label": "", "valor": "" },
+      { "label": "", "valor": "" },
+      { "label": "", "valor": "" }
+    ],
+    "caracteristicas": [
+      {
+        "tipo": "Habilidade",
+        "nome": "Empatia",
+        "efeito": "Ativa um gatilho para se movimentar na mesma direção de um aliado quando ele se mover.",
+        "requisitos": "",
+        "atributo": "Social",
+        "valorCompra": "3",
+        "custoPA": "4 PA",
+        "custoPANum": "4",
+        "custoPAArma": false,
+        "custoFadiga": "",
+        "usosPorNivel": [1, 0, 0, 0, 0],
+        "usosGastosPorNivel": [0, 0, 0, 0, 0],
+        "niveisDesc": ["", "", "", "", ""],
+        "nivel": 1
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Auto cura (Autocura)",
+        "efeito": "Realiza um teste de cura de dano superficial em si mesmo.",
+        "requisitos": "",
+        "atributo": "Mental",
+        "valorCompra": "3",
+        "custoPA": "4 PA",
+        "custoPANum": "4",
+        "custoPAArma": false,
+        "custoFadiga": "",
+        "usosPorNivel": [1, 0, 0, 0, 0],
+        "usosGastosPorNivel": [0, 0, 0, 0, 0],
+        "niveisDesc": ["", "", "", "", ""],
+        "nivel": 1
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Revigorar",
+        "efeito": "Reativa uma habilidade de um aliado.",
+        "requisitos": "",
+        "atributo": "Social",
+        "valorCompra": "2",
+        "custoPA": "2 PA",
+        "custoPANum": "2",
+        "custoPAArma": false,
+        "custoFadiga": "",
+        "usosPorNivel": [1, 0, 0, 0, 0],
+        "usosGastosPorNivel": [0, 0, 0, 0, 0],
+        "niveisDesc": ["", "", "", "", ""],
+        "nivel": 1
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Otimista",
+        "efeito": "Desloca um aliado na direção do controle emocional se ele estiver na trilha da alegria.",
+        "requisitos": "",
+        "atributo": "Social",
+        "valorCompra": "3",
+        "custoPA": "5 PA",
+        "custoPANum": "5",
+        "custoPAArma": false,
+        "custoFadiga": "",
+        "usosPorNivel": [1, 0, 0, 0, 0],
+        "usosGastosPorNivel": [0, 0, 0, 0, 0],
+        "niveisDesc": ["", "", "", "", ""],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Burro de carga",
+        "efeito": "Não gasta PA extra para deslocar um aliado que esteja agarrado.",
+        "requisitos": "",
+        "atributo": "Físico",
+        "valorCompra": "6",
+        "custoPA": "—",
+        "custoPANum": "0",
+        "custoPAArma": false,
+        "custoFadiga": "",
+        "usosPorNivel": [0, 0, 0, 0, 0],
+        "usosGastosPorNivel": [0, 0, 0, 0, 0],
+        "niveisDesc": ["", "", "", "", ""],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Corredor",
+        "efeito": "Dobra o limite de PA que pode ser usado em deslocamento.",
+        "requisitos": "",
+        "atributo": "Físico",
+        "valorCompra": "8",
+        "custoPA": "—",
+        "custoPANum": "0",
+        "custoPAArma": false,
+        "custoFadiga": "",
+        "usosPorNivel": [0, 0, 0, 0, 0],
+        "usosGastosPorNivel": [0, 0, 0, 0, 0],
+        "niveisDesc": ["", "", "", "", ""],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Maestria em armas cortantes",
+        "efeito": "Expande o engajamento: também provoca ataque de oportunidade quando o alvo se move para contornar você dentro do alcance ideal.",
+        "requisitos": "",
+        "atributo": "Físico",
+        "valorCompra": "1",
+        "custoPA": "—",
+        "custoPANum": "0",
+        "custoPAArma": false,
+        "custoFadiga": "",
+        "usosPorNivel": [0, 0, 0, 0, 0],
+        "usosGastosPorNivel": [0, 0, 0, 0, 0],
+        "niveisDesc": ["", "", "", "", ""],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Maestria em armas de agarrar",
+        "efeito": "Concede vantagem para o uso da ação \"Agarrar\" com armas dessa categoria (a Kusarigama já tem a propriedade AGAR. — a maestria reforça o uso dela).",
+        "requisitos": "",
+        "atributo": "Físico",
+        "valorCompra": "1",
+        "custoPA": "—",
+        "custoPANum": "0",
+        "custoPAArma": false,
+        "custoFadiga": "",
+        "usosPorNivel": [0, 0, 0, 0, 0],
+        "usosGastosPorNivel": [0, 0, 0, 0, 0],
+        "niveisDesc": ["", "", "", "", ""],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "[Traço não identificado]",
+        "efeito": "⚠️ A ficha original em PDF lista um 5º traço ilegível/não identificado. Slot mantido em branco — preencher quando o Daniel/Matheus confirmar qual é.",
+        "requisitos": "⚠️ a definir",
+        "atributo": "",
+        "valorCompra": "0",
+        "custoPA": "—",
+        "custoPANum": "0",
+        "custoPAArma": false,
+        "custoFadiga": "",
+        "usosPorNivel": [0, 0, 0, 0, 0],
+        "usosGastosPorNivel": [0, 0, 0, 0, 0],
+        "niveisDesc": ["", "", "", "", ""],
+        "nivel": 1
+      }
+    ],
+    "anotacoes": "ADAPTADA das regras antigas para as vigentes (27/07/2026) — ver cenarios/mukashi/Cenário-Yokai-Taiji/personagens/jogadores/tenaga-e-ashinaga.md para a ficha narrativa completa. Lembrete de canon: o personagem tem mobilidade reduzida por deficiência física (pernas frágeis de Tenaga OU braços frágeis de Ashinaga, conforme a inversão de nomes registrada na ficha narrativa) — recebeu ajuda de Mizuki para se deslocar mais rápido na sessão 2. Isso não está mecanicamente refletido nesta ficha (nenhum traço de movimento reduzido foi informado no PDF) — considerar se isso deveria ser um redutor de deslocamento ou só flavor.\n\nAJUSTES DE REGRA: PA base atualizado de 7 para o padrão vigente (10), mantendo o +1 PA comprado (\"+1 mod\" da ficha original) como pa.outros. Dano da kusarigama (média, agarradora, cortante/contundente) pela matriz atual = 1d12 cortante ou 3d4 contundente, à escolha no golpe, custo 4 PA."
+  }
+}

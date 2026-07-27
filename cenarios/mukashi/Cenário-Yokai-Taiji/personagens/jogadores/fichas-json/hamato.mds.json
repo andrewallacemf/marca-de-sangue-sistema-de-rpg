@@ -1,0 +1,221 @@
+{
+  "app": "marca-de-sangue-ficha",
+  "schemaVersion": 2,
+  "rulesVersion": "vigente",
+  "salvoEm": "2026-07-27T00:00:00.000Z",
+  "data": {
+    "info": {
+      "nome": "Hamato",
+      "jogador": "André",
+      "cenario": "A Caça dos Yokais — Mukashi",
+      "ultimaSessao": "Sessão 2 (04/07/2026)"
+    },
+    "exp": {
+      "baseTotal": "28",
+      "baseUsada": "23",
+      "qtdAptidoes": "12",
+      "qtdHabilidades": "3",
+      "qtdTracos": "5"
+    },
+    "aptidoes": {
+      "fisica": { "total": "6", "usado": "" },
+      "agil": { "total": "3", "usado": "" },
+      "mental": { "total": "2", "usado": "" },
+      "social": { "total": "1", "usado": "" }
+    },
+    "pa": {
+      "base": "10",
+      "redArmadura": "1",
+      "redDano": "0",
+      "redCarga": "0",
+      "outros": "0",
+      "total": "9"
+    },
+    "armas": [
+      {
+        "nome": "Lança curta",
+        "tipo": "Média · corpo a corpo",
+        "equipado": "Duas mãos",
+        "categoria": "Perfurante",
+        "alcance": "2 m",
+        "durabilidade": "30",
+        "custoPA": "4",
+        "dano": "1d8",
+        "props": { "ARRE": false, "AGAR": false, "CORT": false, "CONT": false, "DEFL": false, "PERF": true, "PROJ": false }
+      },
+      {
+        "nome": "Katana",
+        "tipo": "Média · versátil · corpo a corpo",
+        "equipado": "Mão hábil (ou duas mãos)",
+        "categoria": "Cortante/Perfurante",
+        "alcance": "1-2 m",
+        "durabilidade": "30",
+        "custoPA": "4",
+        "dano": "1d12 CORT / 1d8 PERF (+1d4 a duas mãos)",
+        "props": { "ARRE": false, "AGAR": false, "CORT": true, "CONT": false, "DEFL": false, "PERF": true, "PROJ": false }
+      }
+    ],
+    "protecoes": [
+      {
+        "nome": "Armadura de panos leve",
+        "redPA": "1",
+        "redDano": "1",
+        "durabilidade": "10",
+        "regioes": ["tronco", "bracoE", "bracoD"],
+        "equipada": true
+      }
+    ],
+    "saude": {
+      "cabeca": { "dano": 0, "permanente": 0 },
+      "tronco": { "dano": 0, "permanente": 0 },
+      "bracoE": { "dano": 0, "permanente": 0 },
+      "bracoD": { "dano": 0, "permanente": 0 },
+      "pernaE": { "dano": 0, "permanente": 10 },
+      "pernaD": { "dano": 0, "permanente": 0 }
+    },
+    "fadiga": 0,
+    "guardas": "0",
+    "equipamentos": [
+      { "equipado": false, "item": "", "qtd": "", "pesoUnit": "", "pesoTotal": "" },
+      { "equipado": false, "item": "", "qtd": "", "pesoUnit": "", "pesoTotal": "" }
+    ],
+    "carga": { "capacidade": "", "carregado": "" },
+    "tesouro": [
+      { "label": "", "valor": "" },
+      { "label": "", "valor": "" },
+      { "label": "", "valor": "" },
+      { "label": "", "valor": "" }
+    ],
+    "caracteristicas": [
+      {
+        "tipo": "Habilidade",
+        "nome": "Ataques múltiplos & pesados",
+        "efeito": "Pode mudar o alvo de ataques corpo a corpo com armas pesadas ignorando a desvantagem de ataques múltiplos neste turno.",
+        "requisitos": "",
+        "atributo": "Físico",
+        "valorCompra": "3",
+        "custoPA": "1 PA",
+        "custoPANum": "1",
+        "custoPAArma": false,
+        "custoFadiga": "",
+        "usosPorNivel": [3, 0, 0, 0, 0],
+        "usosGastosPorNivel": [0, 0, 0, 0, 0],
+        "niveisDesc": ["", "", "", "", ""],
+        "nivel": 1
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Alcance corpo a corpo",
+        "efeito": "Aumenta a área de alcance ideal da arma em 1 metro. Cada nível reduz o custo de PA de ativação.",
+        "requisitos": "",
+        "atributo": "Ágil",
+        "valorCompra": "2",
+        "custoPA": "3 PA + PA da arma",
+        "custoPANum": "3",
+        "custoPAArma": true,
+        "custoFadiga": "",
+        "usosPorNivel": [3, 0, 0, 0, 0],
+        "usosGastosPorNivel": [0, 0, 0, 0, 0],
+        "niveisDesc": ["", "", "", "", ""],
+        "nivel": 1
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Levantar guarda aprimorada",
+        "efeito": "⚠️ Gap de regra conhecido: na própria sessão 2 real, o jogador (André) perguntou o custo de PA da guarda aprimorada e não havia entrada definida (\"Quanto que é o custo de PA do meu levantar a guarda aprimorada? Não está aqui\" — transcrição da sessão). A ação-base \"Levantar guarda\" custa 2 PA (3 PA engajado); a versão \"aprimorada\" ainda não tem efeito/custo formalizado nas listas atuais. Sugestão de mesa até formalizar: tratar como a guarda normal com +1d10 de vantagem extra no contrateste, pelo mesmo custo.",
+        "requisitos": "⚠️ a formalizar",
+        "atributo": "Físico",
+        "valorCompra": "0",
+        "custoPA": "2 PA (3 PA engajado) — sugestão, não oficial",
+        "custoPANum": "2",
+        "custoPAArma": false,
+        "custoFadiga": "",
+        "usosPorNivel": [3, 0, 0, 0, 0],
+        "usosGastosPorNivel": [0, 0, 0, 0, 0],
+        "niveisDesc": ["", "", "", "", ""],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Reativo",
+        "efeito": "Pode desferir um ataque de oportunidade quando o oponente sai do seu alcance ideal.",
+        "requisitos": "",
+        "atributo": "Físico",
+        "valorCompra": "4",
+        "custoPA": "—",
+        "custoPANum": "0",
+        "custoPAArma": false,
+        "custoFadiga": "",
+        "usosPorNivel": [0, 0, 0, 0, 0],
+        "usosGastosPorNivel": [0, 0, 0, 0, 0],
+        "niveisDesc": ["", "", "", "", ""],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Escorregadio",
+        "efeito": "Recebe +1d10 de vantagem para esquivar de ataques de oportunidade.",
+        "requisitos": "",
+        "atributo": "Ágil",
+        "valorCompra": "4",
+        "custoPA": "—",
+        "custoPANum": "0",
+        "custoPAArma": false,
+        "custoFadiga": "",
+        "usosPorNivel": [0, 0, 0, 0, 0],
+        "usosGastosPorNivel": [0, 0, 0, 0, 0],
+        "niveisDesc": ["", "", "", "", ""],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Firme",
+        "efeito": "Pode usar armas pesadas com apenas uma mão, com −3 de dano. ⚠️ Nenhuma das armas atuais de Hamato (lança curta, katana) é pesada — o gatilho deste traço não está ativo com o equipamento atual; fica disponível se ele trocar de arma.",
+        "requisitos": "Usar uma arma pesada",
+        "atributo": "Físico",
+        "valorCompra": "4",
+        "custoPA": "—",
+        "custoPANum": "0",
+        "custoPAArma": false,
+        "custoFadiga": "",
+        "usosPorNivel": [0, 0, 0, 0, 0],
+        "usosGastosPorNivel": [0, 0, 0, 0, 0],
+        "niveisDesc": ["", "", "", "", ""],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Maestria em armas cortantes",
+        "efeito": "Expande o engajamento: também provoca ataque de oportunidade quando o alvo se move para contornar você dentro do alcance ideal.",
+        "requisitos": "",
+        "atributo": "Físico",
+        "valorCompra": "1",
+        "custoPA": "—",
+        "custoPANum": "0",
+        "custoPAArma": false,
+        "custoFadiga": "",
+        "usosPorNivel": [0, 0, 0, 0, 0],
+        "usosGastosPorNivel": [0, 0, 0, 0, 0],
+        "niveisDesc": ["", "", "", "", ""],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Maestria em armas perfurantes",
+        "efeito": "Expande o engajamento: também provoca ataque de oportunidade quando o alvo ENTRA no seu alcance ideal.",
+        "requisitos": "",
+        "atributo": "Físico",
+        "valorCompra": "1",
+        "custoPA": "—",
+        "custoPANum": "0",
+        "custoPAArma": false,
+        "custoFadiga": "",
+        "usosPorNivel": [0, 0, 0, 0, 0],
+        "usosGastosPorNivel": [0, 0, 0, 0, 0],
+        "niveisDesc": ["", "", "", "", ""],
+        "nivel": 1
+      }
+    ],
+    "anotacoes": "ADAPTADA das regras antigas para as vigentes (27/07/2026) — ver cenarios/mukashi/Cenário-Yokai-Taiji/personagens/jogadores/hamato.md para a ficha narrativa completa.\n\nAJUSTES DE REGRA: PA base atualizado para o padrão vigente (10); a Armadura de panos leve já tinha redutor de PA -1 e redutor de dano -1 na ficha original, mantidos (total 9 PA). Dano da lança curta tratado como média perfurante (1d8); katana como média versátil cortante/perfurante (1d12 CORT / 1d8 PERF, +1d4 a duas mãos), pela matriz atual.\n\n⚠️ DIVERGÊNCIA A CONFIRMAR COM O DANIEL: a ficha em PDF registra \"Perna Esquerda: Totalmente completa de dano permanente\" para Hamato (perna invalidada). Nenhuma sessão registrada até agora narra esse ferimento — nem sessao-01.md nem sessao-02.md mencionam Hamato mancando ou com a perna comprometida, e ele participa normalmente dos combates da sessão 2. Mantive pernaE com 10 de dano permanente por leitura literal da ficha, mas confirme antes da Sessão 3 — pode ser de outro contexto (a ficha usa o título \"Yokai's Embrace\") ou desatualizada. Se for engano, zere saude.pernaE nesta ficha. Se for real, é um fato grande (perna invalidada = -1 PA extra por metro de deslocamento, terreno difícil dobra ainda mais) que muda bastante a Sessão 3, especialmente na encosta gelada."
+  }
+}

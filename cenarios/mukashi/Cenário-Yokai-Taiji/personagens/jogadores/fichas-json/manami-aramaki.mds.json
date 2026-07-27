@@ -1,0 +1,121 @@
+{
+  "app": "marca-de-sangue-ficha",
+  "schemaVersion": 2,
+  "rulesVersion": "vigente",
+  "salvoEm": "2026-07-27T00:00:00.000Z",
+  "data": {
+    "info": {
+      "nome": "Manami Aramaki",
+      "jogador": "Henniton",
+      "cenario": "A Caça dos Yokais — Mukashi",
+      "ultimaSessao": "Sessão 1 — ausente na Sessão 2"
+    },
+    "exp": {
+      "baseTotal": "25",
+      "baseUsada": "20",
+      "qtdAptidoes": "8",
+      "qtdHabilidades": "2",
+      "qtdTracos": "1"
+    },
+    "aptidoes": {
+      "fisica": { "total": "2", "usado": "" },
+      "agil": { "total": "3", "usado": "" },
+      "mental": { "total": "0", "usado": "" },
+      "social": { "total": "3", "usado": "" }
+    },
+    "pa": {
+      "base": "10",
+      "redArmadura": "0",
+      "redDano": "0",
+      "redCarga": "0",
+      "outros": "0",
+      "total": "10"
+    },
+    "armas": [
+      {
+        "nome": "",
+        "tipo": "",
+        "equipado": "",
+        "categoria": "",
+        "alcance": "",
+        "durabilidade": "",
+        "custoPA": "",
+        "dano": "",
+        "props": { "ARRE": false, "AGAR": false, "CORT": false, "CONT": false, "DEFL": false, "PERF": false, "PROJ": false }
+      }
+    ],
+    "protecoes": [],
+    "saude": {
+      "cabeca": { "dano": 0, "permanente": 0 },
+      "tronco": { "dano": 0, "permanente": 0 },
+      "bracoE": { "dano": 0, "permanente": 0 },
+      "bracoD": { "dano": 0, "permanente": 0 },
+      "pernaE": { "dano": 0, "permanente": 0 },
+      "pernaD": { "dano": 0, "permanente": 0 }
+    },
+    "fadiga": 0,
+    "guardas": "0",
+    "equipamentos": [
+      { "equipado": false, "item": "", "qtd": "", "pesoUnit": "", "pesoTotal": "" },
+      { "equipado": false, "item": "", "qtd": "", "pesoUnit": "", "pesoTotal": "" }
+    ],
+    "carga": { "capacidade": "", "carregado": "" },
+    "tesouro": [
+      { "label": "", "valor": "" },
+      { "label": "", "valor": "" },
+      { "label": "", "valor": "" },
+      { "label": "", "valor": "" }
+    ],
+    "caracteristicas": [
+      {
+        "tipo": "Habilidade",
+        "nome": "Otimista",
+        "efeito": "Desloca um aliado na direção do controle emocional se ele estiver na trilha da alegria.",
+        "requisitos": "",
+        "atributo": "Social",
+        "valorCompra": "3",
+        "custoPA": "5 PA",
+        "custoPANum": "5",
+        "custoPAArma": false,
+        "custoFadiga": "",
+        "usosPorNivel": [1, 0, 0, 0, 0],
+        "usosGastosPorNivel": [0, 0, 0, 0, 0],
+        "niveisDesc": ["", "", "", "", ""],
+        "nivel": 1
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Animar",
+        "efeito": "Realiza um teste social para recuperar aptidões consumidas de um aliado.",
+        "requisitos": "",
+        "atributo": "Social",
+        "valorCompra": "2",
+        "custoPA": "2 PA",
+        "custoPANum": "2",
+        "custoPAArma": false,
+        "custoFadiga": "",
+        "usosPorNivel": [1, 0, 0, 0, 0],
+        "usosGastosPorNivel": [0, 0, 0, 0, 0],
+        "niveisDesc": ["", "", "", "", ""],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Técnica em Nadar (era \"Especialização em nadar\")",
+        "efeito": "Anula a desvantagem natural para nadar. Nome atualizado — a ficha original usava \"Especialização em nadar\", termo antigo.",
+        "requisitos": "",
+        "atributo": "Físico",
+        "valorCompra": "1",
+        "custoPA": "—",
+        "custoPANum": "0",
+        "custoPAArma": false,
+        "custoFadiga": "",
+        "usosPorNivel": [0, 0, 0, 0, 0],
+        "usosGastosPorNivel": [0, 0, 0, 0, 0],
+        "niveisDesc": ["", "", "", "", ""],
+        "nivel": 1
+      }
+    ],
+    "anotacoes": "ADAPTADA das regras antigas para as vigentes (27/07/2026) — ver cenarios/mukashi/Cenário-Yokai-Taiji/personagens/jogadores/manami-aramaki.md para a ficha narrativa completa.\n\n⚠️ FICHA INCOMPLETA NA FONTE: o PDF original não lista arma, armadura nem condições de saúde para Aramaki (só XP, aptidões e as duas habilidades + um traço). Coerente com o personagem estar ausente da Sessão 2 e pouco desenvolvido mecanicamente até agora (ver ficha narrativa, seção Pendências). PA base ajustado para o padrão vigente (10) — o \"PA: 7\" original não tinha detalhamento de base/mod, então foi tratado como o valor antigo cru, sem redutor conhecido.\n\nSe o Henniton confirmar presença na Sessão 3, vale fechar arma e proteção com ele antes de jogar — ele é filho de pescadores (Manami), então algo como arpão, faca de pesca ou machadinha seria coerente."
+  }
+}

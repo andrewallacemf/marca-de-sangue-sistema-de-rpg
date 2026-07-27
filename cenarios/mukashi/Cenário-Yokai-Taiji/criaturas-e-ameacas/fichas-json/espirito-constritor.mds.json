@@ -1,0 +1,89 @@
+{
+  "app": "marca-de-sangue-ficha",
+  "schemaVersion": 2,
+  "rulesVersion": "vigente",
+  "salvoEm": "2026-07-27T00:00:00.000Z",
+  "data": {
+    "info": {
+      "nome": "Espírito Constritor #1",
+      "jogador": "Mestre (Daniel)",
+      "cenario": "A Caça dos Yokais — Mukashi (encontro da Yamamba, Sessão 3)",
+      "ultimaSessao": ""
+    },
+    "exp": {
+      "baseTotal": "",
+      "baseUsada": "",
+      "qtdAptidoes": "2",
+      "qtdHabilidades": "1",
+      "qtdTracos": "0"
+    },
+    "aptidoes": {
+      "fisica": { "total": "2", "usado": "" },
+      "agil": { "total": "0", "usado": "" },
+      "mental": { "total": "0", "usado": "" },
+      "social": { "total": "0", "usado": "" }
+    },
+    "pa": {
+      "base": "6",
+      "redArmadura": "0",
+      "redDano": "0",
+      "redCarga": "0",
+      "outros": "0",
+      "total": "6"
+    },
+    "armas": [
+      {
+        "nome": "Constrição",
+        "tipo": "Natural · corpo a corpo",
+        "equipado": "—",
+        "categoria": "Agarrar",
+        "alcance": "1 m",
+        "durabilidade": "",
+        "custoPA": "1",
+        "dano": "1d4 por rodada, automático, enquanto mantiver o agarrão",
+        "props": { "ARRE": false, "AGAR": true, "CORT": false, "CONT": false, "DEFL": false, "PERF": false, "PROJ": false }
+      }
+    ],
+    "protecoes": [],
+    "saude": {
+      "cabeca": { "dano": 0, "permanente": 0 },
+      "tronco": { "dano": 0, "permanente": 0 },
+      "bracoE": { "dano": 0, "permanente": 0 },
+      "bracoD": { "dano": 0, "permanente": 0 },
+      "pernaE": { "dano": 0, "permanente": 0 },
+      "pernaD": { "dano": 0, "permanente": 0 }
+    },
+    "fadiga": 0,
+    "guardas": "0",
+    "equipamentos": [
+      { "equipado": false, "item": "", "qtd": "", "pesoUnit": "", "pesoTotal": "" },
+      { "equipado": false, "item": "", "qtd": "", "pesoUnit": "", "pesoTotal": "" }
+    ],
+    "carga": { "capacidade": "", "carregado": "" },
+    "tesouro": [
+      { "label": "", "valor": "" },
+      { "label": "", "valor": "" },
+      { "label": "", "valor": "" },
+      { "label": "", "valor": "" }
+    ],
+    "caracteristicas": [
+      {
+        "tipo": "Habilidade",
+        "nome": "Constrição (Agarrar)",
+        "efeito": "Custa 1 PA; teste Físico com vantagem contra o alvo. Se pegar, o alvo fica agarrado: sofre 1d4 automático a cada rodada em que o espírito mantiver o agarrão (sem novo teste). O alvo agarrado gasta 2 PA no próprio turno para um teste Físico e tentar se soltar (pode repetir enquanto tiver PA). Andar enquanto agarrado é terreno difícil (dobra custo de deslocamento) com desvantagem. Um aliado pode atacar diretamente o espírito para libertar o companheiro — só 8 PV, cai rápido.",
+        "requisitos": "—",
+        "atributo": "Físico",
+        "valorCompra": "0",
+        "custoPA": "1 PA",
+        "custoPANum": "1",
+        "custoPAArma": false,
+        "custoFadiga": "",
+        "usosPorNivel": [0, 0, 0, 0, 0],
+        "usosGastosPorNivel": [0, 0, 0, 0, 0],
+        "niveisDesc": ["", "", "", "", ""],
+        "nivel": 1
+      }
+    ],
+    "anotacoes": "PV real de bestiário: 8 (pool único — este espírito é pequeno demais pra usar o modelo de 6 membros de 10 PV do sistema). A ficha acima começa com saúde zerada (60 PV) só por compatibilidade com o app; na mesa, trate qualquer dano recebido como abatido de um contador único de 8 PV (ex.: marque manualmente ou anote à parte \"PV: 8/8\") — ele se dissolve ao chegar a 0.\n\nConvocado pela Yamamba via Raízes da Montanha (ver ficha dela). Máximo de 3 vivos ao mesmo tempo — duplique este arquivo (renomeie \"Espírito Constritor #2\", \"#3\") se quiser abrir uma aba por instância durante a sessão.\n\nSome imediatamente (junto com os outros que estiverem vivos) no instante em que as crianças da gaiola forem libertadas na Fase 2 do combate.\n\nDetalhes completos: cenarios/mukashi/Cenário-Yokai-Taiji/criaturas-e-ameacas/espiritos-constritores.md"
+  }
+}

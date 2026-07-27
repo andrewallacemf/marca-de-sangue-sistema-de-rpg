@@ -1,0 +1,206 @@
+{
+  "app": "marca-de-sangue-ficha",
+  "schemaVersion": 2,
+  "rulesVersion": "vigente",
+  "salvoEm": "2026-07-27T00:00:00.000Z",
+  "data": {
+    "info": {
+      "nome": "Mizuki",
+      "jogador": "Gabriel",
+      "cenario": "A Caça dos Yokais — Mukashi",
+      "ultimaSessao": "Sessão 2 (04/07/2026)"
+    },
+    "exp": {
+      "baseTotal": "30",
+      "baseUsada": "25",
+      "qtdAptidoes": "7",
+      "qtdHabilidades": "3",
+      "qtdTracos": "4"
+    },
+    "aptidoes": {
+      "fisica": { "total": "0", "usado": "" },
+      "agil": { "total": "5", "usado": "" },
+      "mental": { "total": "2", "usado": "" },
+      "social": { "total": "0", "usado": "" }
+    },
+    "pa": {
+      "base": "10",
+      "redArmadura": "0",
+      "redDano": "0",
+      "redCarga": "0",
+      "outros": "1",
+      "total": "11"
+    },
+    "armas": [
+      {
+        "nome": "Arco",
+        "tipo": "Leve · à distância",
+        "equipado": "Duas mãos",
+        "categoria": "Perfurante",
+        "alcance": "4-7 m (ideal)",
+        "durabilidade": "20",
+        "custoPA": "2",
+        "dano": "1d6 (flecha)",
+        "props": { "ARRE": false, "AGAR": false, "CORT": false, "CONT": false, "DEFL": false, "PERF": true, "PROJ": true }
+      },
+      {
+        "nome": "Faca curta (reserva)",
+        "tipo": "Leve · corpo a corpo",
+        "equipado": "Mão hábil",
+        "categoria": "Cortante",
+        "alcance": "1 m",
+        "durabilidade": "20",
+        "custoPA": "2",
+        "dano": "1d8",
+        "props": { "ARRE": false, "AGAR": false, "CORT": true, "CONT": false, "DEFL": false, "PERF": false, "PROJ": false }
+      }
+    ],
+    "protecoes": [],
+    "saude": {
+      "cabeca": { "dano": 0, "permanente": 0 },
+      "tronco": { "dano": 0, "permanente": 0 },
+      "bracoE": { "dano": 0, "permanente": 0 },
+      "bracoD": { "dano": 0, "permanente": 0 },
+      "pernaE": { "dano": 0, "permanente": 10 },
+      "pernaD": { "dano": 10, "permanente": 0 }
+    },
+    "fadiga": 0,
+    "guardas": "0",
+    "equipamentos": [
+      { "equipado": true, "item": "Munição (flechas)", "qtd": "13", "pesoUnit": "", "pesoTotal": "" },
+      { "equipado": true, "item": "Kit de fazer fogo", "qtd": "1", "pesoUnit": "", "pesoTotal": "" },
+      { "equipado": true, "item": "Corta-corda", "qtd": "1", "pesoUnit": "", "pesoTotal": "" },
+      { "equipado": true, "item": "Faca de cozinha", "qtd": "1", "pesoUnit": "", "pesoTotal": "" },
+      { "equipado": true, "item": "Mochila", "qtd": "1", "pesoUnit": "", "pesoTotal": "" },
+      { "equipado": true, "item": "Cantil", "qtd": "1", "pesoUnit": "", "pesoTotal": "" },
+      { "equipado": true, "item": "Lamparina", "qtd": "1", "pesoUnit": "", "pesoTotal": "" },
+      { "equipado": true, "item": "Panelinha", "qtd": "1", "pesoUnit": "", "pesoTotal": "" },
+      { "equipado": true, "item": "Giz", "qtd": "1", "pesoUnit": "", "pesoTotal": "" },
+      { "equipado": true, "item": "Alga", "qtd": "1", "pesoUnit": "", "pesoTotal": "" },
+      { "equipado": true, "item": "Carne seca", "qtd": "1", "pesoUnit": "", "pesoTotal": "" },
+      { "equipado": true, "item": "Pena de corvo", "qtd": "1", "pesoUnit": "", "pesoTotal": "" }
+    ],
+    "carga": { "capacidade": "", "carregado": "" },
+    "tesouro": [
+      { "label": "Moedas", "valor": "" },
+      { "label": "", "valor": "" },
+      { "label": "", "valor": "" },
+      { "label": "", "valor": "" }
+    ],
+    "caracteristicas": [
+      {
+        "tipo": "Habilidade",
+        "nome": "Meditar",
+        "efeito": "⚠️ Nome não encontrado nas listas oficiais atuais (sistema-base/listas) — mantido como consta na ficha original. Pode ser uma habilidade específica do cenário Mukashi (mantras/concentração) ainda não documentada nas listas base. Confirmar em mesa.",
+        "requisitos": "⚠️ a confirmar",
+        "atributo": "Mental",
+        "valorCompra": "0",
+        "custoPA": "—",
+        "custoPANum": "0",
+        "custoPAArma": false,
+        "custoFadiga": "",
+        "usosPorNivel": [1, 0, 0, 0, 0],
+        "usosGastosPorNivel": [0, 0, 0, 0, 0],
+        "niveisDesc": ["", "", "", "", ""],
+        "nivel": 1
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Alcance à distância",
+        "efeito": "Aumenta a área de alcance ideal da arma.",
+        "requisitos": "",
+        "atributo": "Ágil",
+        "valorCompra": "2",
+        "custoPA": "2 PA + PA da arma",
+        "custoPANum": "2",
+        "custoPAArma": true,
+        "custoFadiga": "",
+        "usosPorNivel": [1, 0, 0, 0, 0],
+        "usosGastosPorNivel": [0, 0, 0, 0, 0],
+        "niveisDesc": ["", "", "", "", ""],
+        "nivel": 1
+      },
+      {
+        "tipo": "Habilidade",
+        "nome": "Ataques à distância concentrados",
+        "efeito": "Pode manter o alvo dos ataques à distância no mesmo oponente ignorando a desvantagem de ataques múltiplos.",
+        "requisitos": "",
+        "atributo": "Ágil",
+        "valorCompra": "2",
+        "custoPA": "1 PA",
+        "custoPANum": "1",
+        "custoPAArma": false,
+        "custoFadiga": "",
+        "usosPorNivel": [1, 0, 0, 0, 0],
+        "usosGastosPorNivel": [0, 0, 0, 0, 0],
+        "niveisDesc": ["", "", "", "", ""],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Técnica em Investigar/Observar (era \"Especialização em procurar\")",
+        "efeito": "Anula a desvantagem natural para investigar/observar. Nome atualizado — a ficha original usava \"Especialização em procurar\", termo antigo.",
+        "requisitos": "",
+        "atributo": "Mental",
+        "valorCompra": "1",
+        "custoPA": "—",
+        "custoPANum": "0",
+        "custoPAArma": false,
+        "custoFadiga": "",
+        "usosPorNivel": [0, 0, 0, 0, 0],
+        "usosGastosPorNivel": [0, 0, 0, 0, 0],
+        "niveisDesc": ["", "", "", "", ""],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Maestria em projéteis",
+        "efeito": "Ignora um nível de cobertura do alvo (completa vira meia, meia vira nenhuma); recarregar após acertar não custa PA.",
+        "requisitos": "",
+        "atributo": "Ágil",
+        "valorCompra": "1",
+        "custoPA": "—",
+        "custoPANum": "0",
+        "custoPAArma": false,
+        "custoFadiga": "",
+        "usosPorNivel": [0, 0, 0, 0, 0],
+        "usosGastosPorNivel": [0, 0, 0, 0, 0],
+        "niveisDesc": ["", "", "", "", ""],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Maestria em armas cortantes",
+        "efeito": "Expande o engajamento: também provoca ataque de oportunidade quando o alvo se move para contornar você dentro do alcance ideal.",
+        "requisitos": "",
+        "atributo": "Físico",
+        "valorCompra": "1",
+        "custoPA": "—",
+        "custoPANum": "0",
+        "custoPAArma": false,
+        "custoFadiga": "",
+        "usosPorNivel": [0, 0, 0, 0, 0],
+        "usosGastosPorNivel": [0, 0, 0, 0, 0],
+        "niveisDesc": ["", "", "", "", ""],
+        "nivel": 1
+      },
+      {
+        "tipo": "Traço",
+        "nome": "Especialização em sobrevivência",
+        "efeito": "⚠️ Não encontrado nas listas oficiais atuais como traço nomeado — provavelmente cobre testes de sobrevivência (fazer fogo, achar comida/abrigo), coerente com o equipamento dela. Mantido como consta na ficha original; considerar formalizar como \"Técnica em Sobrevivência\" (Físico/Mental) se o grupo quiser oficializar.",
+        "requisitos": "⚠️ a confirmar",
+        "atributo": "Físico",
+        "valorCompra": "0",
+        "custoPA": "—",
+        "custoPANum": "0",
+        "custoPAArma": false,
+        "custoFadiga": "",
+        "usosPorNivel": [0, 0, 0, 0, 0],
+        "usosGastosPorNivel": [0, 0, 0, 0, 0],
+        "niveisDesc": ["", "", "", "", ""],
+        "nivel": 1
+      }
+    ],
+    "anotacoes": "ADAPTADA das regras antigas para as vigentes (27/07/2026) — ver cenarios/mukashi/Cenário-Yokai-Taiji/personagens/jogadores/mizuki.md para a ficha narrativa completa.\n\nAJUSTES DE REGRA: PA base atualizado de 7 para o padrão vigente (10); mantido o +1 PA comprado (\"+1 mod\" na ficha original) como pa.outros. Dano das armas recalculado pela matriz atual (leve perfurante = 1d6, leve cortante = 1d8) — os valores antigos da ficha em PDF (pré-\"aumento de letalidade\") não foram usados.\n\n⚠️ DIVERGÊNCIA A CONFIRMAR COM O DANIEL: a ficha em PDF registra \"Perna Esquerda: Dano Permanente\" e \"Perna Direita: Dano Profundo\" para Mizuki — nenhuma sessão registrada até agora (sessao-01.md, sessao-02.md) narra Mizuki sofrendo esse ferimento. Mantive os dois como totalmente preenchidos (perna esquerda = 10 permanente/invalidada; perna direita = 10 dano profundo/incapacitada) por leitura literal da ficha, mas isso pode estar desatualizado, ser de outro contexto (a ficha usa o título \"Yokai's Embrace\", diferente de \"A Caça dos Yokais\"), ou precisar de ajuste. Confirmar antes da Sessão 3 — se for engano, zere saude.pernaE e pernaD nesta ficha.\n\nHabilidades/traços \"Meditar\" e \"Especialização em sobrevivência\" não têm entrada nas listas oficiais atuais — mantidos como a ficha original registrou, sinalizados para revisão."
+  }
+}
