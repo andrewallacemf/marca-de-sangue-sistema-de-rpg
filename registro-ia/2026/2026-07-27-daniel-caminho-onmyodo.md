@@ -176,9 +176,42 @@ Também tirei a menção a "trocar de arma" do resumo de `02-acoes-em-conflito` 
 - Nova linha em `PENDENCIAS.md`: revisão do Iaijutsu (custo/efeito) após a remoção da regra de
   desvantagem de troca de arma.
 
+## Parte 4: correção de formatação (quebras de linha)
+
+O Daniel notou quebras de linha "em locais aleatórios" nos documentos de Mukashi. Causa: os
+arquivos que editei hoje (`arquetipos-do.md`, `habilidades-do.md`, `magia.md`, `arsenal.md`,
+`README.md`) tinham parágrafos quebrados manualmente em várias linhas dentro do próprio texto
+markdown (prática que usei ao compor os `Edit`/`Write`, sem um critério de largura fixo) — em
+visualizadores que não juntam quebras de linha simples dentro de um parágrafo (bastante comuns
+fora do GitHub), isso aparece como cortes no meio da frase. Reformatei os 5 arquivos pra
+**um parágrafo = uma linha** (deixando o visualizador de cada um fazer o próprio wrap), o mesmo
+padrão já usado no `sistema-base/`. Escrevi um script Python que preserva frontmatter, tabelas,
+blocos de código, citações (`>`, inclusive aninhadas dentro de listas) e itens de lista —
+juntando só o texto corrido. Validado por dois métodos: diff visual de um arquivo antes de
+aplicar nos demais, e comparação de "bag of words" antes/depois nos 5 arquivos (as únicas
+diferenças foram marcadores `>` redundantes de citações que ocupavam várias linhas — nenhuma
+palavra de conteúdo foi perdida).
+
+Inicialmente deixei de fora o resto do Mukashi (lore, raças, locais), avaliando errado que o wrap
+de largura fixa da importação do Notion era "consistente" e por isso não seria o mesmo problema.
+O Daniel apontou que `01-mundo-de-yamato.md` também estava com quebras estranhas — correção:
+qualquer parágrafo com quebra de linha manual no meio quebra da mesma forma em visualizadores que
+não juntam linha simples num só parágrafo, seja o wrap consistente ou não. Apliquei o mesmo
+script nos 12 arquivos restantes de `cenarios/mukashi/` (`00-visao-geral.md`, `criaturas/`,
+`itens/`, `locais/`, `lore/` inteiro, `mecanicas-unicas/ki.md`), com a mesma verificação de
+integridade (bag of words) — só marcadores `>` redundantes de citações somem, nenhum conteúdo.
+
+Também notei, via `git status`, que `AGENTS.md`, `.obsidian/core-plugins.json`,
+`cenarios/gaeria/README.md` e alguns arquivos de Mukashi/Colapso apareciam e desapareciam da
+lista de modificados entre uma checagem e outra, sem eu ter tocado neles — sugere que algo local
+(o Obsidian aberto no vault, possivelmente) está reescrevendo arquivos enquanto a sessão roda.
+Não mexi nisso; vale o Daniel conferir se o Obsidian tem algum plugin de auto-formatação ativo
+antes de comitar, já que isso pode reintroduzir o mesmo problema de quebra de linha depois.
+
 ## Observações
 
 Falta agora só o **Caminho da Corte** para fechar todos os dō do esqueleto. Os feitiços formalizados
 ainda têm custos 💡 propostos (a validar no playtest) — a regra de custo em si (pontos de saúde)
 já está fechada desde a parte 1 desta sessão. O Iaijutsu (traço do Bushidō) ficou com pendência
-aberta após a remoção da regra de troca de arma (parte 3).
+aberta após a remoção da regra de troca de arma (parte 3). Formatação dos 5 arquivos editados hoje
+corrigida na parte 4 (parágrafo único por linha).

@@ -9,18 +9,13 @@ atualizado-em: 2026-07-27
 
 # ⛩️ Mukashi
 
-**Japão feudal mitológico.** No arquipélago fictício de **Yamato**, samurais servem a
-dáimios, ninjas cruzam as sombras e a fronteira entre o mundo humano e o dos **Kami** e
-yokai é fina. Inspirado do período Heian ao século XV, com sincretismo xintoísta-budista
-e um atributo próprio do cenário: **KI**.
+**Japão feudal mitológico.** No arquipélago fictício de **Yamato**, samurais servem a dáimios, ninjas cruzam as sombras e a fronteira entre o mundo humano e o dos **Kami** e yokai é fina. Inspirado do período Heian ao século XV, com sincretismo xintoísta-budista e um atributo próprio do cenário: **KI**.
 
-Lore existente: o Império da Grande Paz, o arquipélago de Yamato, o panteão dos Kami e
-as raças (Tanuki — já com mecânica inicial —, Oni, Daitengu, Kitsune).
+Lore existente: o Império da Grande Paz, o arquipélago de Yamato, o panteão dos Kami e as raças (Tanuki — já com mecânica inicial —, Oni, Daitengu, Kitsune).
 
 ## Módulos utilizados
 
-Este cenário se apoia no [sistema-base](../../sistema-base/) e liga os módulos abaixo (o mundo
-**referencia**, não recria):
+Este cenário se apoia no [sistema-base](../../sistema-base/) e liga os módulos abaixo (o mundo **referencia**, não recria):
 
 | Módulo/coleção | Por quê |
 |----------------|---------|
@@ -42,17 +37,9 @@ Este cenário se apoia no [sistema-base](../../sistema-base/) e liga os módulos
 
 ## Estado da importação
 
-**Importado do Notion (24/07/2026):** a lore de mundo ([Yamato](lore/01-mundo-de-yamato.md),
-[Império da Grande Paz](lore/02-imperio-e-clas.md), [panteão dos Kami](lore/03-panteao-kami.md)),
-a capital [Myoko](locais/myoko.md) e as [raças jogáveis](criaturas/racas-jogaveis.md) (Humanos,
-Tanuki, Oni), com a mecânica racial adaptada às regras atuais (aptidões e o atributo KI).
+**Importado do Notion (24/07/2026):** a lore de mundo ([Yamato](lore/01-mundo-de-yamato.md), [Império da Grande Paz](lore/02-imperio-e-clas.md), [panteão dos Kami](lore/03-panteao-kami.md)), a capital [Myoko](locais/myoko.md) e as [raças jogáveis](criaturas/racas-jogaveis.md) (Humanos, Tanuki, Oni), com a mecânica racial adaptada às regras atuais (aptidões e o atributo KI).
 
-**Falta (curadoria do Daniel / campanha de 1º/ago):** completar o [Caminho da Corte](arquetipos-do.md)
-(único dō ainda esqueleto — Bushidō, Shinobi-dō, Yamabushi, Kyūdō e Onmyōdō já prontos); escrever o
-resto das habilidades mágicas (as 3 primeiras, do Onmyōdō, já redigidas — ver
-[habilidades-do.md](mecanicas-unicas/habilidades-do.md#onmyōdō)) seguindo o
-[custo da magia já decidido](mecanicas-unicas/magia.md) (pontos de vida); detalhar clãs, feudos e
-tribos de fronteira ([ganchos](lore/ganchos-e-a-desenvolver.md)); e o bestiário de yokai.
+**Falta (curadoria do Daniel / campanha de 1º/ago):** completar o [Caminho da Corte](arquetipos-do.md) (único dō ainda esqueleto — Bushidō, Shinobi-dō, Yamabushi, Kyūdō e Onmyōdō já prontos); escrever o resto das habilidades mágicas (as 3 primeiras, do Onmyōdō, já redigidas — ver [habilidades-do.md](mecanicas-unicas/habilidades-do.md#onmyōdō)) seguindo o [custo da magia já decidido](mecanicas-unicas/magia.md) (pontos de vida); detalhar clãs, feudos e tribos de fronteira ([ganchos](lore/ganchos-e-a-desenvolver.md)); e o bestiário de yokai.
 
-> As pontas soltas estão marcadas com `⚠️ A DEFINIR` nos próprios arquivos (não aparecem no manual
-> publicado, que mostra só a versão limpa).
+> As pontas soltas estão marcadas com `⚠️ A DEFINIR` nos próprios arquivos (não aparecem no manual publicado, que mostra só a versão limpa).
+
