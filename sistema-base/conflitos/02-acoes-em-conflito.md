@@ -89,9 +89,10 @@ Após realizar o primeiro ataque em seu turno (acertando ou não) com uma arma �
 
 Caso o personagem tente acertar o mesmo oponente duas vezes, seus ataques recebem **`+1d10 de desvantagem`** (acumulativo) até o fim do turno.
 
-> 💡 **Trocar de arma após o primeiro ataque**
->
-> Após realizar o primeiro ataque em seu turno, caso o personagem troque de arma por qualquer motivo, seus ataques seguintes recebem **`+1d10 de desvantagem`** (acumulativo) até o fim do turno.
+> ✅ **Removido em 27/07/2026 (Daniel):** existia aqui uma regra de desvantagem acumulativa por
+> trocar de arma após o primeiro ataque do turno — não fazia mais sentido e foi retirada. Ver
+> pendência aberta em `PENDENCIAS.md`: o traço Iaijutsu (Bushidō, Mukashi) tinha metade do efeito
+> apoiado nesta regra e precisa de revisão.
 
 ## Interagir com itens, aparatos, objetos e pessoas
 

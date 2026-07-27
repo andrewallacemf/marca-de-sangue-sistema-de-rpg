@@ -4,7 +4,7 @@ tipo: cenario
 cenario: mukashi
 status: rascunho
 tags: [japao-feudal, mitologia, kami, yokai, oriental]
-atualizado-em: 2026-07-19
+atualizado-em: 2026-07-27
 ---
 
 # ⛩️ Mukashi
@@ -47,9 +47,12 @@ Este cenário se apoia no [sistema-base](../../sistema-base/) e liga os módulos
 a capital [Myoko](locais/myoko.md) e as [raças jogáveis](criaturas/racas-jogaveis.md) (Humanos,
 Tanuki, Oni), com a mecânica racial adaptada às regras atuais (aptidões e o atributo KI).
 
-**Falta (curadoria do Daniel / campanha de 1º/ago):** completar os [dō](arquetipos-do.md); fechar
-o [custo da magia](mecanicas-unicas/magia.md) e escrever as habilidades mágicas; detalhar clãs,
-feudos e tribos de fronteira ([ganchos](lore/ganchos-e-a-desenvolver.md)); e o bestiário de yokai.
+**Falta (curadoria do Daniel / campanha de 1º/ago):** completar o [Caminho da Corte](arquetipos-do.md)
+(único dō ainda esqueleto — Bushidō, Shinobi-dō, Yamabushi, Kyūdō e Onmyōdō já prontos); escrever o
+resto das habilidades mágicas (as 3 primeiras, do Onmyōdō, já redigidas — ver
+[habilidades-do.md](mecanicas-unicas/habilidades-do.md#onmyōdō)) seguindo o
+[custo da magia já decidido](mecanicas-unicas/magia.md) (pontos de vida); detalhar clãs, feudos e
+tribos de fronteira ([ganchos](lore/ganchos-e-a-desenvolver.md)); e o bestiário de yokai.
 
 > As pontas soltas estão marcadas com `⚠️ A DEFINIR` nos próprios arquivos (não aparecem no manual
 > publicado, que mostra só a versão limpa).

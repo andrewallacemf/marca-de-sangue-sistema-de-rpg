@@ -5,7 +5,7 @@ cenario: modulo
 modulo: armas-de-fogo
 status: revisao
 tags: [modulo, armas, armas-de-fogo, polvora, municao, colecao-armas, equipamentos]
-atualizado-em: 2026-07-19
+atualizado-em: 2026-07-27
 ---
 
 # 🧩 Módulo: Armas de fogo
@@ -25,7 +25,7 @@ Catálogo das **armas de pólvora** e sua munição. Faz parte da **coleção `a
 | **Item** | **Tipo e Ações** | **Alc. ideal** | **Munição** | **Preço sugerido** | **Durabilidade** |
 | --- | --- | --- | --- | --- | --- |
 | Pistola simples | **`Leve`**<br>**`2 PA`** | **`2m a 15m`** | Bala de pólvora | **`220 moedas`** | **`20`** |
-| Espingarda, Arquebus, Handgonne | **`Média`**<br>**`4 PA`** | **`1m a 5m`** | Bala de pólvora (x2) | **`260 moedas`** | **`30`** |
+| Espingarda, Arquebus, Handgonne, Teppō, Tanegashima | **`Média`**<br>**`4 PA`** | **`1m a 5m`** | Bala de pólvora (x2) | **`260 moedas`** | **`30`** |
 | Rifle, Mosquete | **`Pesada`**<br>**`6 PA`** | **`3m a 20m`** | Bala de pólvora | **`340 moedas`** | **`40`** |
 
 ## Munição
@@ -33,3 +33,5 @@ Catálogo das **armas de pólvora** e sua munição. Faz parte da **coleção `a
 | **Item** | **Categoria** | **Dano** | **Preço sugerido** |
 | --- | --- | --- | --- |
 | Bala de pólvora | **`PROJ.`** | **`1d12`** | **`20 moedas`** |
+
+*Teppō (arcabuz de mecha, cenário [Mukashi](../../cenarios/mukashi/arsenal.md)) adicionado em 27/07/2026 na linha de arma média. ✅ Decidido em 27/07/2026: o alcance histórico do tanegashima era maior, mas fica nivelado às demais armas de pólvora médias do jogo (1m a 5m) por equilíbrio — não move para a linha pesada do rifle.*

@@ -5,7 +5,7 @@ cenario: modulo
 modulo: armas-exoticas
 status: revisao
 tags: [modulo, armas, armas-exoticas, colecao-armas, equipamentos]
-atualizado-em: 2026-07-19
+atualizado-em: 2026-07-27
 ---
 
 # 🧩 Módulo: Armas exóticas
@@ -30,3 +30,6 @@ incomuns (chicotes, correntes, kusarigama, redes, chakram, boomerangue etc.). Fa
 | Rede | **`Média`**<br>**`4 PA`** | **`LONG.`** **`AGAR.`** **`ARRE.`** | **`1m a 5m`** | **`0`** | **`4 moedas`** | **`10`** |
 | Kusarigama, Double-chained Kama | **`Média`**<br>**`4 PA`** | **`LONG.`** **`CORT.` `CONT.` `AGAR.` `ARRE.`** | **`3m a 4m`** | **`1d12` `CORT.` · `3d4` `CONT.`** | **`30 moedas`** | **`30`** |
 | Corrente de espinhos | **`Pesada`**<br>**`6 PA`** | **`LONG.`** **`CORT.`** **`AGAR.`** | **`3m a 4m`** | **`2d8`** | **`16 moedas`** | **`40`** |
+| Sasumata | **`Média`**<br>**`4 PA`** | **`LONG.`** **`CONT.` `AGAR.`** | **`2m`** | **`3d4`** | **`10 moedas`** | **`30`** |
+
+*💡 Sasumata adicionada em 27/07/2026 para o cenário [Mukashi](../../cenarios/mukashi/arsenal.md) — forquilha de captura da polícia feudal japonesa; alcance e preço são proposta a validar no playtest.*

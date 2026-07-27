@@ -213,10 +213,32 @@
         "ARRE"
       ],
       "versatil": false,
-      "acuidade": false,
+      "acuidade": true,
       "distancia": false,
       "municoes": [],
       "preco": "6 moedas",
+      "durabilidade": "20",
+      "modulo": "armas-brancas"
+    },
+    {
+      "nome": "Wakizashi",
+      "variantes": [
+        "Kodachi"
+      ],
+      "tamanho": "Leve",
+      "categoria": "Curta",
+      "custoPA": "2",
+      "alcance": "1m",
+      "dano": "1d8 CORT · 1d6 PERF",
+      "props": [
+        "CORT",
+        "PERF"
+      ],
+      "versatil": false,
+      "acuidade": true,
+      "distancia": false,
+      "municoes": [],
+      "preco": "10 moedas",
       "durabilidade": "20",
       "modulo": "armas-brancas"
     },
@@ -350,6 +372,26 @@
       "preco": "8 moedas",
       "durabilidade": "30",
       "modulo": "armas-brancas"
+    },
+    {
+      "nome": "Bô",
+      "variantes": [],
+      "tamanho": "Média",
+      "categoria": "Longa",
+      "custoPA": "4",
+      "alcance": "1m a 2m",
+      "dano": "3d4 (+1d4 a 2 mãos)",
+      "props": [
+        "CONT"
+      ],
+      "versatil": true,
+      "acuidade": false,
+      "distancia": false,
+      "municoes": [],
+      "preco": "6 moedas",
+      "durabilidade": "30",
+      "modulo": "armas-brancas",
+      "observacao": "bastão longo"
     },
     {
       "nome": "Picareta de mão",
@@ -502,7 +544,9 @@
     {
       "nome": "Martelo Grande",
       "variantes": [
-        "Martelo de batalha"
+        "Martelo de batalha",
+        "Tetsu-bō",
+        "Kanabō"
       ],
       "tamanho": "Pesada",
       "categoria": "Longa",
@@ -565,7 +609,9 @@
         "Mangual Atroz",
         "Maça Pesada",
         "Clava pesada",
-        "Esp. de duas lâminas"
+        "Esp. de duas lâminas",
+        "Naginata",
+        "Nagamaki"
       ],
       "tamanho": "Pesada",
       "categoria": "Longa",
@@ -586,7 +632,9 @@
     },
     {
       "nome": "Lança longa",
-      "variantes": [],
+      "variantes": [
+        "Yari"
+      ],
       "tamanho": "Pesada",
       "categoria": "Longa",
       "custoPA": "6",
@@ -609,7 +657,10 @@
       "variantes": [
         "montante",
         "Flamberge",
-        "Foice ceifadora"
+        "Foice ceifadora",
+        "Tachi",
+        "Nodachi",
+        "Ōdachi"
       ],
       "tamanho": "Pesada",
       "categoria": "Longa",
@@ -855,6 +906,26 @@
       "modulo": "armas-exoticas"
     },
     {
+      "nome": "Sasumata",
+      "variantes": [],
+      "tamanho": "Média",
+      "categoria": "Longa",
+      "custoPA": "4",
+      "alcance": "2m",
+      "dano": "3d4",
+      "props": [
+        "CONT",
+        "AGAR"
+      ],
+      "versatil": false,
+      "acuidade": false,
+      "distancia": false,
+      "municoes": [],
+      "preco": "10 moedas",
+      "durabilidade": "30",
+      "modulo": "armas-exoticas"
+    },
+    {
       "nome": "Funda",
       "variantes": [
         "Zarabatana"
@@ -982,7 +1053,9 @@
       "nome": "Espingarda",
       "variantes": [
         "Arquebus",
-        "Handgonne"
+        "Handgonne",
+        "Teppō",
+        "Tanegashima"
       ],
       "tamanho": "Média",
       "categoria": "",
