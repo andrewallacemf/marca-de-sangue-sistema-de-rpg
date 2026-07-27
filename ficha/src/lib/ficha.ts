@@ -269,22 +269,30 @@ export function statusMembro(s: SaudeMembro): string {
   return "";
 }
 
+/** Um ponto de dano num membro: enche o curável até 10; membro cheio converte
+ *  1 curável em permanente; invalidado ignora (aplicado = false). */
+export function aplicarDanoMembro(s: SaudeMembro): { saude: SaudeMembro; aplicado: boolean } {
+  if (s.dano + s.permanente < 10) return { saude: { ...s, dano: s.dano + 1 }, aplicado: true };
+  if (s.permanente < 10) {
+    return { saude: { dano: s.dano - 1, permanente: s.permanente + 1 }, aplicado: true };
+  }
+  return { saude: s, aplicado: false };
+}
+
 /** Aplica pontos de dano a um membro: preenche o curável até encher (10);
  *  com o membro cheio, cada ponto converte 1 curável em permanente; invalidado
  *  (10 permanentes) ignora. TODO ponto aplicado — inclusive a conversão — gera
  *  +1 fadiga (clamp 50), como manda o manual. Retorna nova ficha (imutável). */
 export function aplicarDano(f: Ficha, membro: MembroKey, pontos = 1): Ficha {
-  let { dano, permanente } = f.saude[membro];
+  let saudeMembro = f.saude[membro];
   let fadiga = f.fadiga;
   for (let i = 0; i < Math.max(0, Math.round(pontos)); i++) {
-    if (dano + permanente < 10) dano += 1;
-    else if (permanente < 10) {
-      dano -= 1;
-      permanente += 1;
-    } else break;
+    const r = aplicarDanoMembro(saudeMembro);
+    if (!r.aplicado) break;
+    saudeMembro = r.saude;
     fadiga = Math.min(50, fadiga + 1);
   }
-  return { ...f, saude: { ...f.saude, [membro]: { dano, permanente } }, fadiga };
+  return { ...f, saude: { ...f.saude, [membro]: saudeMembro }, fadiga };
 }
 
 /** Cura só o dano curável (piso 0). Nunca toca permanente nem devolve fadiga. */
@@ -438,6 +446,15 @@ export function migrarFicha(data: unknown): Ficha {
     const out = Array.isArray(arr) ? [...arr] : [];
     while (out.length < min) out.push(criar());
     return out;
+  };
+
+  // campos de identidade viram string SEMPRE (arquivo com nome numérico não
+  // pode derrubar quem chama .trim() adiante) — espelho do port da plataforma
+  f.info = {
+    nome: String(f.info?.nome ?? ""),
+    jogador: String(f.info?.jogador ?? ""),
+    cenario: String(f.info?.cenario ?? ""),
+    ultimaSessao: String(f.info?.ultimaSessao ?? ""),
   };
 
   const cards = Array.isArray(d.caracteristicas) ? (d.caracteristicas as unknown[]) : [];

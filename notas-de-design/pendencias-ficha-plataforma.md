@@ -102,16 +102,26 @@ pendências de **regra** (que ficam em [PENDENCIAS.md](../PENDENCIAS.md)).
 - [ ] **Tabela de referência rápida** (ações e custos de PA, alcances, modificadores) com busca —
       houve **muita parada** para procurar regra nas duas sessões.
 
-## 5. Gestor de batalha (futuro, front-only)
+## 5. Gestor de batalha
 
-- [ ] Carregar **vários `.mds.json`** numa tabela de combate para o **mestre** acompanhar PCs e
-      NPCs (salva gerando novo arquivo, sem histórico/undo — mesma lógica da ficha).
-- [ ] Colunas de acompanhamento: **dano por membro**, **PA**, **guarda levantada**, e — para
-      furtividade — **nível de alerta (0–5) por inimigo** e **nível de alarme do ambiente**.
-- [ ] **Aba/estado "memória"** da ficha (usos de habilidade gastos, marcações da rodada) que
-      persiste no JSON salvo, para o mestre acompanhar.
-- [ ] **Presets de minion** (fraco/médio/forte) para o mestre gerar inimigos rápido, com o
-      limiar de queda (10/20/30) já embutido.
+> ⭐ **v1 do gestor feita na PLATAFORMA (25/07/2026)** — rota `/batalhas` (decisão 011 do
+> repo da plataforma). Combatentes entram por personagem da conta ou por `.mds.json`
+> carregado direto (snapshot: a batalha não altera a ficha de origem).
+
+- [x] Carregar **vários `.mds.json`** numa tabela de combate para o **mestre** acompanhar PCs e
+      NPCs — **feito na plataforma** (import direto na batalha; snapshot persistido no banco).
+- [x] Colunas de acompanhamento: **dano por membro** (células v2, permanente protegido),
+      **PA gastos**, **guarda levantada**, **nível de alerta 0–5 por inimigo** e **alarme do
+      ambiente** — **feito na plataforma** (alerta/alarme marcados como proposta do playtest 2).
+- [x] **Estado "memória" da rodada** (PA gastos, reação usada, fadiga, anotações por
+      combatente; "Nova rodada" devolve PA + reação) — **feito na plataforma**. Usos de
+      habilidade por combatente ficam para uma iteração futura.
+- [x] **Presets de minion** (fraco/médio/forte, limiar 10/20/30 embutido) — **feito na
+      plataforma**; ⚠️ valores ainda são **proposta de playtest** (regra não fechada:
+      [PENDENCIAS.md](../PENDENCIAS.md), "Minions — tratamento único").
+- [ ] Iterações futuras: usos de habilidades na tabela, iniciativa/ordem de turno arrastável,
+      trilha de fadiga compacta no card (hoje é contador +/−, escolha de espaço), versão
+      front-only na ficha offline (se a mesa precisar sem internet).
 
 ## 6. Estética / aberto
 
