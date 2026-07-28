@@ -18,7 +18,7 @@ manual (39 armas com dano defasado, 9 itens faltando — corrigido em 24/07/2026
 |---------|---------|
 | [`limpeza.py`](limpeza.py) | A **limpeza oficial**: remove frontmatter, blocos de bastidor (`✅`, `💡 PROPOSTA`, `⚠️ A DEFINIR`, datas de decisão…), seção "Referências" e marcações internas. |
 | [`exportar_catalogo.py`](exportar_catalogo.py) | O **exportador**: lê as listas do manual e gera o `catalogo.json`. |
-| [`catalogo.json`](catalogo.json) | O **artefato do contrato**: armas, munições, proteções, habilidades (com progressão por nível), traços e propriedades de armas, em JSON estruturado. **Gerado — não edite à mão.** |
+| [`catalogo.json`](catalogo.json) | O **artefato do contrato**: armas, munições, proteções, habilidades (com progressão por nível), traços, propriedades de armas e os inimigos do kit de playtest (proposta), em JSON estruturado. **Gerado — não edite à mão.** |
 
 ## Consumidores
 
@@ -27,7 +27,7 @@ manual (39 armas com dano defasado, 9 itens faltando — corrigido em 24/07/2026
 | Manual web (`manual/gerar-conteudo.py`) | `limpeza.py` | importa `limpa_arquivo` e espelha o repo limpo no VitePress |
 | PDF de playtest (`playtest/geracao-pdf/gerar_manual_pdf.py`) | `limpeza.py` | mesma limpeza → PDF e site sempre idênticos |
 | Ficha interativa (`ficha/src/lib/catalogo.ts`) | `catalogo.json` | adaptador TypeScript importa o JSON no build |
-| Plataforma (`plataforma-rpg-marca-de-sangue`) | `catalogo.json` | seed do banco (`HabilidadeBase`, `TracoBase`, `EquipamentoBase`) — pode consumir a URL raw do GitHub |
+| Plataforma (`plataforma-rpg-marca-de-sangue`) | `catalogo.json` | seed do banco (`HabilidadeBase`, `TracoBase`, `EquipamentoBase` e a biblioteca padrão de inimigos) — pode consumir a URL raw do GitHub |
 
 ## O fluxo (quem alimenta quem)
 
@@ -122,6 +122,23 @@ lacuna vira pendência).
     "gatilho": "…",                 // opcional (aspectos): condição de uso
     "observacao": "…",              // opcional (maestrias: custo escalonado)
     "experimental": false
+  }],
+  "inimigos": [{                    // blocos do kit de playtest (1 item por TIPO)
+    "nome": "Sentinela",
+    "cenarioNumero": 2, "cenarioTitulo": "O Selo do Templo",
+    "contexto": "Mukashi · 30 exp · furto/infiltração",
+    "qtd": "3",                     // quantos entram no cenário (texto literal)
+    "tier": "medio",                // fraco | medio | forte | chefe | especial | ""
+    "queda": "20",                  // dano TOTAL p/ cair — só nos tiers fraco/medio/forte
+    "quedaTexto": "médio (20)",     // célula literal; "" = tier nunca anotado (A DEFINIR)
+    "entrada": "Patrulhas — Entrada, Sala dos Sinos e Jardim (uma cada)",
+    "pa": "10", "arma": "Naginata curta (média, perfurante)", "dano": "1d6",
+    "custoPA": "4", "alcance": "1 m",
+    "reducao": "",                  // redução de dano (armadura); "" = sem
+    "tatica": "…",
+    "proposta": true                // SEMPRE true: o pacote de minion (tiers 10/20/30)
+                                    // é proposta de playtest — regra não fechada
+                                    // (PENDENCIAS.md, "Minions — tratamento único")
   }]
 }
 ```

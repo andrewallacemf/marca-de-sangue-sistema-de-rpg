@@ -190,6 +190,8 @@
 
 **Iniciativa** — define: [conflitos/01-conflito-fisico.md](sistema-base/conflitos/01-conflito-fisico.md) (rolagem, soma dos dados, empates) · aparece: [02-acoes-em-conflito](sistema-base/conflitos/02-acoes-em-conflito.md) (atrasar turno na fila)
 
+**Inimigos (blocos do kit de playtest)** — define: [playtest/cenarios/inimigos-do-kit.md](playtest/cenarios/inimigos-do-kit.md) (tabelas consolidadas dos 14 tipos de inimigo dos 6 cenários — qtd, tier de queda ⚠️ proposta, entrada, PA, arma, dano, alcance, redução, tática; é a fonte da chave `inimigos` do `catalogo.json`) · aparece: [guia do narrador](playtest/cenarios/00-guia-do-narrador.md) (formato do bloco), [contrato/README.md](contrato/README.md) (schema da chave), kits de cenário 01–06
+
 **Inválido** → ver **Desabilitado** (termo aposentado em 11/07/2026; o estado de 10 de dano permanente é **invalidado**)
 
 **Item** — define: [listas/itens-base.md](sistema-base/listas/itens-base.md) (lista base) · aparece: [02-atributos](sistema-base/conceitos/02-atributos.md), [06-tracos](sistema-base/conceitos/06-tracos.md) (maestrias), [02-acoes-em-conflito](sistema-base/conflitos/02-acoes-em-conflito.md) (interagir com itens, 1–3 PA), [03-saude-e-protecao](sistema-base/conflitos/03-saude-e-protecao.md), [01-passo-a-passo](sistema-base/criacao-de-personagem/01-passo-a-passo.md), [equipamentos-base](sistema-base/listas/equipamentos-base.md), [protecoes-base](sistema-base/listas/protecoes-base.md)
@@ -224,6 +226,8 @@
 
 **Mestre** → ver **Narrador**
 
+**Minion** — ⚠️ proposta dos playtests 1 e 2, regra não fechada (ver PENDENCIAS.md, "Minions — tratamento único"): tiers de queda fraco **10** · médio **20** · forte **30** de dano total, sem fadiga, sem habilidades — define: [inimigos-do-kit](playtest/cenarios/inimigos-do-kit.md) (tabelas consolidadas, com o aviso dos tiers) · aparece: [guia do narrador](playtest/cenarios/00-guia-do-narrador.md) (blocos de leitura rápida, sem os tiers), kits de cenário 01–06, [playtests 1 e 2](notas-de-design/playtests/)
+
 **Modificadores inversos** — define: [conceitos/01-testes-e-contratestes.md](sistema-base/conceitos/01-testes-e-contratestes.md) (anulação de vantagens/desvantagens) · aparece: [00-indice](sistema-base/conceitos/00-indice.md)
 
 **Módulo** — define: [modulos/README.md](modulos/README.md) (**módulos de recursos** — acessórios do manual base, com informações de jogador e narrador separadas; mecânicas opcionais reutilizáveis pelos cenários — decisão de 11/07/2026; conteúdo fora do escopo deste índice) · aparece: [03-caracteristicas](sistema-base/conceitos/03-caracteristicas.md) (armas, armaduras, itens e ferramentas vêm de módulos usados pelos cenários), [modulos/colecoes](modulos/colecoes.md) (coleções de módulos de recursos)
@@ -240,7 +244,7 @@
 
 **Nível (de habilidade)** — define: [conceitos/05-habilidades.md](sistema-base/conceitos/05-habilidades.md) (comprar usos ou subir nível) · aparece: [06-tracos](sistema-base/conceitos/06-tracos.md) (traços não têm níveis), [variante fadiga](sistema-base/variantes/habilidades-por-fadiga/README.md) (🧪 evolução por nível, sem usos), [01-experiencia-e-evolucao](sistema-base/progressao/01-experiencia-e-evolucao.md) (fusão de níveis), [01-passo-a-passo](sistema-base/criacao-de-personagem/01-passo-a-passo.md), [habilidades-base](sistema-base/listas/habilidades-base.md), [habilidades-base-sociais](sistema-base/listas/habilidades-base-sociais.md) (Revigorar), [habilidades-base-fisicas](sistema-base/listas/habilidades-base-fisicas.md) (nota em Esmagar)
 
-**NPC** — define: [conflitos/01-conflito-fisico.md](sistema-base/conflitos/01-conflito-fisico.md) (personagem do narrador; iniciativa; fica aberto se o narrador esquecer o posicionamento sem indicação plausível) · aparece: [00-introducao](sistema-base/00-introducao.md), [habilidades-base-mentais](sistema-base/listas/habilidades-base-mentais.md) (Consumir)
+**NPC** — define: [conflitos/01-conflito-fisico.md](sistema-base/conflitos/01-conflito-fisico.md) (personagem do narrador; iniciativa; fica aberto se o narrador esquecer o posicionamento sem indicação plausível) · aparece: [00-introducao](sistema-base/00-introducao.md), [habilidades-base-mentais](sistema-base/listas/habilidades-base-mentais.md) (Consumir), [inimigos-do-kit (playtest)](playtest/cenarios/inimigos-do-kit.md) (blocos consolidados dos 6 cenários)
 
 ## O
 

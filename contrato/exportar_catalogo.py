@@ -45,6 +45,7 @@ FONTES_HABILIDADES = [
     ("sistema-base/listas/habilidades-base-sociais.md", False),
     ("sistema-base/listas/habilidades-experimentais-sociais.md", True),  # experimental
 ]
+FONTE_INIMIGOS = "playtest/cenarios/inimigos-do-kit.md"
 
 SIGLAS = ["CORT", "CONT", "PERF", "AGAR", "ARRE", "DEFL", "PROJ", "ACUI", "VERS", "DESA"]
 
@@ -563,6 +564,79 @@ def parse_habilidades(caminho: str, experimental: bool) -> tuple[list[dict], lis
 
 
 # ---------------------------------------------------------------------------
+# Inimigos (kit de playtest)
+# ---------------------------------------------------------------------------
+
+# Todos os itens saem com "proposta": true — o pacote de minion (tiers de queda
+# 10/20/30, sem fadiga, sem habilidades) é proposta dos playtests 1 e 2, regra
+# não fechada (PENDENCIAS.md, "Minions — tratamento único").
+TIERS_INIMIGO = {"fraco": "fraco", "médio": "medio", "medio": "medio",
+                 "forte": "forte", "chefe": "chefe", "especial": "especial"}
+
+
+def parse_inimigos(md: str) -> list[dict]:
+    inimigos = []
+    # tabelas de inimigo no arquivo INTEIRO: se uma seção for renomeada fora do
+    # padrão "## Cenário N — Título", a perda tem que gritar, não sumir
+    total_tabelas = sum(
+        1 for _, header, _ in tabelas(md)
+        if header and header[0] == "Inimigo" and "Queda" in header
+    )
+    tabelas_lidas = 0
+    for titulo, corpo in secoes(md, 2):
+        m = re.match(r"Cenário\s+(\d+)\s*—\s*(.+)$", titulo)
+        if not m:
+            continue
+        num, cenario_titulo = int(m.group(1)), m.group(2).strip()
+        # contexto do cenário: primeiro parágrafo antes da tabela (itálico)
+        pars = paragrafos(corpo.split("|", 1)[0])
+        contexto = pars[0] if pars else ""
+        for _, header, rows in tabelas(corpo):
+            if not (header and header[0] == "Inimigo" and "Queda" in header):
+                continue
+            tabelas_lidas += 1
+            for cells in rows:
+                if len(cells) < 11:
+                    aviso(f"inimigos: linha com {len(cells)} colunas ignorada: {cells[:1]}")
+                    continue
+                queda_txt = strip_md(cells[2])
+                queda_txt = "" if queda_txt == "—" else queda_txt
+                primeiro = queda_txt.split()[0].lower() if queda_txt else ""
+                tier = TIERS_INIMIGO.get(primeiro, "")
+                # número da queda só quando o tier é um limiar de dano TOTAL
+                # (chefe/especial usam regiões — o número teria outra semântica)
+                queda = numero(queda_txt) if tier in ("fraco", "medio", "forte") else ""
+                if not queda_txt:
+                    aviso(f"inimigos: '{strip_md(cells[0])}' (cenário {num}) sem tier "
+                          "de queda (lacuna A DEFINIR)")
+                inimigos.append({
+                    "nome": strip_md(cells[0]),
+                    "cenarioNumero": num,
+                    "cenarioTitulo": cenario_titulo,
+                    "contexto": contexto,
+                    "qtd": strip_md(cells[1]),
+                    "tier": tier,
+                    "queda": queda,
+                    "quedaTexto": queda_txt,
+                    "entrada": strip_md(cells[3]),
+                    "pa": numero(cells[4]),
+                    "arma": strip_md(cells[5]),
+                    "dano": tira_pontos_siglas(strip_md(cells[6])),
+                    "custoPA": strip_md(cells[7]),
+                    "alcance": strip_md(cells[8]),
+                    "reducao": "" if strip_md(cells[9]) == "—" else strip_md(cells[9]),
+                    "tatica": strip_md(cells[10]),
+                    "proposta": True,
+                })
+    if tabelas_lidas < total_tabelas:
+        aviso(f"inimigos: {total_tabelas - tabelas_lidas} tabela(s) de inimigo fora de "
+              "seção '## Cenário N — Título' foram descartadas (título renomeado?)")
+    if not inimigos:
+        aviso("inimigos: nenhuma linha extraída do kit (estrutura da tabela mudou?)")
+    return inimigos
+
+
+# ---------------------------------------------------------------------------
 # main
 # ---------------------------------------------------------------------------
 
@@ -590,9 +664,12 @@ def main() -> None:
         habilidades += habs
         tracos += tras
 
+    inimigos = parse_inimigos(le(FONTE_INIMIGOS))
+
     # sanidade: nomes duplicados
     for rotulo, lista in [("arma", armas), ("proteção", protecoes),
-                          ("habilidade", habilidades), ("traço", tracos)]:
+                          ("habilidade", habilidades), ("traço", tracos),
+                          ("inimigo", inimigos)]:
         vistos = set()
         for item in lista:
             if item["nome"] in vistos:
@@ -604,13 +681,14 @@ def main() -> None:
                      "— NÃO editar à mão. Contrato de conteúdo: ver contrato/README.md."),
         "fontes": ([FONTE_EQUIPAMENTOS, FONTE_ACOES, FONTE_TRACOS, FONTE_PROTECOES]
                    + FONTES_ARMAS_MELEE + FONTES_ARMAS_DIST
-                   + [c for c, _ in FONTES_HABILIDADES]),
+                   + [c for c, _ in FONTES_HABILIDADES] + [FONTE_INIMIGOS]),
         "propriedades": propriedades,
         "armas": armas,
         "municoes": municoes,
         "protecoes": protecoes,
         "habilidades": habilidades,
         "tracos": tracos,
+        "inimigos": inimigos,
     }
 
     SAIDA.write_text(json.dumps(catalogo, ensure_ascii=False, indent=2) + "\n",
@@ -618,7 +696,7 @@ def main() -> None:
     print(f"OK — catálogo exportado em {SAIDA}")
     print(f"  armas: {len(armas)} · munições: {len(municoes)} · proteções: {len(protecoes)}"
           f" · habilidades: {len(habilidades)} · traços: {len(tracos)}"
-          f" · propriedades: {len(propriedades)}")
+          f" · propriedades: {len(propriedades)} · inimigos: {len(inimigos)}")
     if AVISOS:
         print(f"  {len(AVISOS)} aviso(s) — ver acima.", file=sys.stderr)
 
