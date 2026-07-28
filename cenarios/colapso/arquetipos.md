@@ -4,7 +4,7 @@ tipo: cenario
 cenario: colapso
 status: rascunho
 tags: [colapso, arquetipos, papeis]
-atualizado-em: 2026-07-19
+atualizado-em: 2026-07-28
 ---
 
 # Arquétipos do Colapso — papéis do ermo
@@ -33,6 +33,12 @@ focado em veículos. São **opcionais e não exclusivos** — servem de ponto de
 às listas de [habilidades](mecanicas-unicas/habilidades-do-cenario.md),
 [traços](mecanicas-unicas/tracos-do-cenario.md) e
 [equipamentos de veículo](mecanicas-unicas/equipamentos-de-veiculo.md).
+
+> 🧠 **Ideias em brainstorming** para ampliar estes quatro papéis (itens, habilidades e traços
+> ainda **sem mecânica fechada**) estão no
+> [banco de ideias do Colapso](../../notas-de-design/banco-de-ideias-colapso.md); as recusadas,
+> em [descartadas](../../notas-de-design/banco-de-ideias-colapso-descartadas.md). Nada de lá vale
+> em mesa enquanto não for detalhado e trazido para as listas do cenário.
 
 ### Piloto
 Especialista em conduzir e manobrar.
