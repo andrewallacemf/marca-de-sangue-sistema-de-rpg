@@ -6,7 +6,8 @@
 — importável em https://andrewallacemf.github.io/marca-de-sangue-sistema-de-rpg/ficha/.
 
 > ⚠️ Nota de consistência: no material original, o irmão **mais velho** é chamado
-> **Tenaga** (tradicionalmente o yokai "braços longos") mas descrito com **pernas**
+> **Tenaga** (tradicionalmente o yokai — espírito/criatura sobrenatural do folclore
+> japonês — "braços longos") mas descrito com **pernas**
 > compridas; o **mais novo**, **Ashinaga** (tradicionalmente "pernas longas"), é descrito
 > com **braços** robustos. Mantido como está no original — confirmar com o Daniel se é
 > intencional (uma inversão de nomes proposital) ou troca a corrigir.
@@ -15,7 +16,8 @@
 
 Nasceram gêmeos num pequeno vilarejo ao sul de Okuta-kuni, com aparências extraordinárias:
 o mais velho (Tenaga) com pernas descomunalmente longas e fortes como as de um cavalo,
-mas braços finos e frágeis como um hashi; o mais novo (Ashinaga) com braços robustos e
+mas braços finos e frágeis como um *hashi* (hashi de comer, os pauzinhos japoneses); o
+mais novo (Ashinaga) com braços robustos e
 extensos como os de um urso, mas pernas secas e frágeis como os galhos da árvore Yohiro.
 
 Rejeitados pela aparência incomum, foram deixados numa vila vizinha de pescadores. Ali
@@ -27,8 +29,9 @@ pelas crianças também ajudou a que fossem recebidos de braços abertos.
 Batizados com os nomes dos yokais, cresceram unidos como um só ser: Tenaga tornou-se a
 base e o equilíbrio da dupla; Ashinaga, a força e a manipulação. Juntos desenvolveram uma
 técnica de pesca única — Ashinaga adentra rios profundos com suas pernas longas, enquanto
-Tenaga lança uma corrente com anzol (como um kusarigama, já que nenhuma vara resiste à sua
-força). Tornaram-se os melhores pescadores da vila.
+Tenaga lança uma corrente com anzol (como um *kusarigama* — arma japonesa de corrente e
+foice —, já que nenhuma vara resiste à sua força). Tornaram-se os melhores pescadores da
+vila.
 
 A paz foi quebrada numa noite em que a vila foi atacada por **Zaoh**, um soldado ambicioso
 em ascensão. Os aldeões expulsaram os invasores, mas o rio e as plantações foram

@@ -19,16 +19,16 @@ reaproveitado em uma sessão futura (outro gancho, outro NPC, outra ameaça).
 
 - **Planejado:** o grupo escolheria entre vampirismo, andar na água, Corredor (dobra PA de
   deslocamento) ou golpe surpresa.
-- **Aconteceu:** escolheram o omamori de velocidade.
+- **Aconteceu:** escolheram o omamori (amuleto de proteção japonês) de velocidade.
 - **Sobra reaproveitável:** as três habilidades não escolhidas (vampirismo, andar na água,
-  golpe surpresa) — podem aparecer em outro amuleto, outro yokai, ou como recompensa
-  futura.
+  golpe surpresa) — podem aparecer em outro amuleto, outro yokai (espírito/criatura
+  sobrenatural do folclore japonês), ou como recompensa futura.
 
 ## Sessão 2 (Ritual das Três Visões — divergência mais importante)
 
 - **Planejado** (rascunho, nunca jogado assim): seis frases de sorte distribuídas
-  livremente entre os personagens, incluindo referências diretas a Hamato (magatama
-  esverdeado) e a um "pescador" (presumivelmente Aramaki), mais um local genérico comum a
+  livremente entre os personagens, incluindo referências diretas a Hamato (magatama —
+  contas/joia curva tradicional japonesa — esverdeada) e a um "pescador" (presumivelmente Aramaki), mais um local genérico comum a
   todos: *"Nos subterrâneos da montanha nevada, se esconde o amor e o poder."*
 - **Aconteceu:** apenas **três personagens participaram** (Mizuki, Kichiro, Tenaga e
   Ashinaga) — Hamato optou por ficar de fora e Aramaki nem estava na sessão. Mizuki
@@ -43,7 +43,11 @@ reaproveitado em uma sessão futura (outro gancho, outro NPC, outra ameaça).
   - *"A neve não cobre o passado da caçadora, apenas o congela. Quando o portal dos seus
     sonhos se abrir, as vozes antigas cobrarão o sangue daqueles que a acolheram."*
     (pensada para Mizuki — tematicamente ainda muito relevante para a origem yuki-onna
-    dela; boa candidata a reaparecer como sonho ou visão futura, já que não foi usada).
+    ("mulher da neve", espírito do inverno do folclore japonês) dela. ⚠️ Atualização 27/07/2026: cotada para reaparecer como sonho dela, mas o Daniel
+    descartou sonhos/visões como veículo de revelação nesta mesa — ver
+    [`fio-narrativo.md`](fio-narrativo.md#princípio-de-narração-desta-mesa-registrado-27072026-a-pedido-do-daniel).
+    Segue reaproveitável, só que por outro caminho — ex.: como algo dito por um NPC, uma
+    inscrição encontrada, ou parte de uma conversa, não como visão da própria Mizuki).
   - *"A tempestade do Norte envenenará até o mais sagrado dos rios. Para proteger a chama
     da forja que te aquece, o pescador terá de fisgar o coração dos homens."* (pensada
     para Aramaki/Yazima Ayishia).

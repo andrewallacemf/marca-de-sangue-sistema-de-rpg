@@ -29,8 +29,8 @@ abdômen, na região do fígado. Sente vergonha da possível origem do pacto e d
 os pais impuseram a todos, mas também deseja de verdade cuidar do clã — o que o empurra a
 precisar provar seu valor, mesmo achando a história possivelmente inventada.
 
-Usa arco (possivelmente o caminho Kyūdō do cenário Mukashi) e também luta corpo a corpo;
-treinou concentração e mantras num monastério.
+Usa arco (possivelmente o caminho Kyūdō — arco tradicional japonês — do cenário Mukashi)
+e também luta corpo a corpo; treinou concentração e mantras num monastério.
 
 ## Relações
 
@@ -47,7 +47,8 @@ Provar-se digno de representar sua casa no ritual de sucessão, apesar da vergon
 ## Segredos do mestre (não revelar diretamente ao jogador)
 
 - O amuleto de **Mizuki** treme/se afasta quando aproximado do amuleto de Kichiro —
-  mesmo sinal que ocorre perto de yokai. Ainda não explicado; pode se relacionar à marca
+  mesmo sinal que ocorre perto de yokai (espíritos/criaturas sobrenaturais do folclore
+  japonês). Ainda não explicado; pode se relacionar à marca
   no abdômen e à história do Kappa.
 - Sorte recebida no Ritual das Três Visões (sessão 2, confirmada pela transcrição real):
   *"A luz atrai as feras. A inocência atrai a maldade."*

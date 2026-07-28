@@ -2,8 +2,9 @@
 
 Esta pasta **não é lore oficial do cenário Mukashi** nem parte do sistema Marca de Sangue.
 É a memória de jogo da mesa de Daniel: registros de fatos sobre personagens, lugares,
-ameaças e sessões da campanha **A Caça dos Yokais**, usada para consulta rápida durante
-o jogo (por pergunta a uma IA ou acesso direto) e para preparar as próximas sessões.
+ameaças e sessões da campanha **A Caça dos Yokais** (yokai = espírito/criatura
+sobrenatural do folclore japonês), usada para consulta rápida durante o jogo (por
+pergunta a uma IA ou acesso direto) e para preparar as próximas sessões.
 
 Fica dentro de `cenarios/mukashi/` só por proximidade temática (a campanha usa o cenário
 Mukashi). Não segue as convenções de `CONVENCOES.md` do sistema (frontmatter, `tipo`,
@@ -55,9 +56,10 @@ detalhar — não são erros, são apontamentos para o Daniel completar quando q
 | Manami Aysobi      | Mãe de Aramaki e Kenji                                       | [`manami-aysobi.md`](personagens/npcs/manami-aysobi.md)           |
 | Manami Kenji       | Irmão mais novo de Aramaki                                   | [`manami-kenji.md`](personagens/npcs/manami-kenji.md)             |
 | Yazima Ayishia     | Filha do ferreiro, paixão de Aramaki                         | [`yazima-ayishia.md`](personagens/npcs/yazima-ayishia.md)         |
-| Karasu Daoshi      | Tengu preso em forma de corvo (apelido de mesa: "cara azul") | [`karasu-daoshi.md`](personagens/npcs/karasu-daoshi.md)           |
+| Karasu Daoshi      | Tengu (espírito-corvo das montanhas) preso em forma de corvo (apelido de mesa: "cara azul") | [`karasu-daoshi.md`](personagens/npcs/karasu-daoshi.md) |
 | Kinjo              | Bebê protegido por Hamato                                    | [`kinjo.md`](personagens/npcs/kinjo.md)                           |
 | Senhor das Espadas | Vilão principal — lidera a guerra do Norte e caça yokai      | [`senhor-das-espadas.md`](personagens/npcs/senhor-das-espadas.md) |
+| Suzu               | Kitsune (raposa mágica do folclore japonês) recém-chegada; um véu mágico faz a vila toda sentir que sempre a conheceu | [`suzu.md`](personagens/npcs/suzu.md) |
 
 ## Estado atual (27/07/2026)
 

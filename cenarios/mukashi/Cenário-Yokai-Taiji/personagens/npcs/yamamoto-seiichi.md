@@ -18,14 +18,16 @@ Takao). É o responsável pela realização dos ritos aos kami na aldeia.
 - **Midori** — velho amigo; foi convencido por ela a aceitar **Mizuki** na aldeia apesar
   da resistência de muitos moradores.
 - **Karasu Daoshi** — bebiam saquê juntos na época em que poucos conseguiam encontrar
-  yokai; é quem envia o grupo até o cartógrafo (na floresta).
+  yokai (espíritos/criaturas sobrenaturais do folclore japonês); é quem envia o grupo até
+  o cartógrafo (na floresta).
 
 ## Moradia
 
 Vive em um santuário no sopé da montanha: casa de telhado alto com vigas decorativas,
-portal na frente, no estilo de um santuário japonês. O cômodo principal (daidokoro) tem
-uma lareira quadrada e aberta no centro (irori), com uma chaleira pendurada sobre ela. A
-fumaça sai pelas aberturas do telhado, escurecendo as vigas.
+portal na frente, no estilo de um santuário japonês. O cômodo principal (*daidokoro* —
+cozinha/sala principal da casa) tem uma lareira quadrada e aberta no centro (*irori* —
+fosso de fogo embutido no chão, tradicional das casas japonesas), com uma chaleira
+pendurada sobre ela. A fumaça sai pelas aberturas do telhado, escurecendo as vigas.
 
 ## Papel na trama
 

@@ -1,6 +1,7 @@
 # Mōryō
 
-**Tipo:** Yokai · **Status:** derrotados (grupo que prendia Karasu Daoshi)
+**Tipo:** Yokai (espírito/criatura sobrenatural do folclore japonês) · **Status:**
+derrotados (grupo que prendia Karasu Daoshi)
 
 ## Lore
 
@@ -34,7 +35,8 @@ de Karasu Daoshi, que os Mōryō mantinham preso.
 
 O grupo derrotou os Mōryō, libertando Karasu Daoshi. Ao levar os corpos das crianças até
 Karasu Daoshi, este exibiu a carta de Suzanoo e três globos de luz com colares apareceram;
-o grupo escolheu o globo branco — um **omamori de velocidade**. O corvo comentou ser
+o grupo escolheu o globo branco — um **omamori** (amuleto de proteção japonês) **de
+velocidade**. O corvo comentou ser
 estranho que os espíritos das crianças tenham se tornado yokai (ossos vermelhos, dentes
 verdes) — indício de que morreram por ação de um espírito mais forte e maligno.
 

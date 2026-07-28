@@ -1,7 +1,7 @@
 # Hamato
 
-**Jogador:** André · **Nome:** provisório, ⚠️ a definir · **Papel:** ronin, protetor do
-bebê **Kinjo**
+**Jogador:** André · **Nome:** provisório, ⚠️ a definir · **Papel:** ronin (samurai sem
+senhor), protetor do bebê **Kinjo**
 
 **Ficha mecânica (JSON, regras vigentes):** [`fichas-json/hamato.mds.json`](fichas-json/hamato.mds.json)
 — importável em https://andrewallacemf.github.io/marca-de-sangue-sistema-de-rpg/ficha/.
@@ -10,21 +10,25 @@ anotações no próprio arquivo.
 
 ## História
 
-É um **ronin**: seu mestre morreu num ataque ao palácio onde servia sem que ele
-conseguisse salvá-lo, e por essa falha de juramento carrega desgraça. Trata a criança que
-resgatou como seu novo "mestre" (shidoshi) — em parte a sério, em parte como piada
-recorrente de mesa, já que o "mestre" é um bebê.
+É um **ronin** (samurai que perdeu ou ficou sem seu senhor): seu mestre morreu num ataque
+ao palácio onde servia sem que ele conseguisse salvá-lo, e por essa falha de juramento
+carrega desgraça. Trata a criança que resgatou como seu novo "mestre" (*shidoshi* —
+instrutor/mestre) — em parte a sério, em parte como piada recorrente de mesa, já que o
+"mestre" é um bebê.
 
-Servia como samurai ao daimyō **Makoto Yoshikuni**, do clã Makoto (estandarte: garça).
-Durante um ataque do clã Taiha (brasão de folha de trevo), lutava no campo de batalha
-usando uma máscara de Tanuki, sufocado pela fumaça das casas incendiadas. Ao derrubar um
-samurai invasor, percebeu que os estandartes do próprio clã haviam recuado em desordem —
-o comandante das tropas estava caído, empalado por lanças.
+Servia como samurai (guerreiro da nobreza militar japonesa) ao daimyō (senhor feudal
+japonês) **Makoto Yoshikuni**, do clã Makoto (estandarte: garça). Durante um ataque do
+clã Taiha (brasão de folha de trevo), lutava no campo de batalha usando uma máscara de
+Tanuki (guaxinim/cão-guaxinim do folclore japonês, associado a metamorfose e travessura),
+sufocado pela fumaça das casas incendiadas. Ao derrubar um samurai invasor, percebeu que
+os estandartes do próprio clã haviam recuado em desordem — o comandante das tropas estava
+caído, empalado por lanças.
 
 Correu de volta ao castelo, agora desprotegido. Chegou ao salão principal a tempo de ver
 Yoshikuni gravemente ferido (um olho perfurado), arrastando-se com uma trouxa de pano nos
 braços. O daimyō empurrou a trouxa contra o peito de Hamato, depositando sobre ela um
-colar esverdeado em formato de magatama, e disse "Corra" com o último ar dos pulmões
+colar esverdeado em formato de magatama (joia curva tradicional japonesa), e disse
+"Corra" com o último ar dos pulmões
 antes de ser atravessado por uma lâmina. Hamato cogitou vingança por um instante, mas
 desistiu ao perceber que a trouxa — um bebê — chorava.
 
@@ -72,7 +76,8 @@ mestre.
 - **Sessão 1:** chega a Okuta-kuni carregando o bebê e um pergaminho; desmaia na porta de
   Mizuki. Talismãs se repelem. Acorda no festival de Suijin, sem as espadas. O chefe
   Yamamoto Seiichi pergunta o que houve. Pergunta a Karasu Daoshi se humanos podem ter
-  filhos com yokai; a resposta é "não é incomum".
+  filhos com yokai (espíritos/criaturas sobrenaturais do folclore japonês); a resposta é
+  "não é incomum".
 - **Sessão 2 (04/07/2026):** luta na ponte e no templo da ilha para resgatar o bebê,
   agora batizado **Kinjo**. Decepa as pernas de um bandido (que morre) e executa dois
   bandidos rendidos, um deles no meio de uma revelação interrompida sobre quem estaria

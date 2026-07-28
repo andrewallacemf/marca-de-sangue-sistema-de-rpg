@@ -4,10 +4,10 @@
 
 ## História
 
-Recebido por **Hamato** das mãos do daimyō moribundo Makoto Yoshikuni, junto com um
-colar/magatama esverdeado, durante a queda do castelo do clã Makoto. Hamato trata a
-criança como seu novo "mestre" (shidoshi), dando continuidade ao juramento que sente ter
-falhado. O nome "Kinjo" surgiu de uma brincadeira à mesa e foi confirmado pelo Daniel como
+Recebido por **Hamato** das mãos do daimyō (senhor feudal japonês) moribundo Makoto
+Yoshikuni, junto com um colar/magatama (joia curva tradicional japonesa) esverdeado,
+durante a queda do castelo do clã Makoto. Hamato trata a criança como seu novo "mestre"
+(*shidoshi* — instrutor/mestre), dando continuidade ao juramento que sente ter falhado. O nome "Kinjo" surgiu de uma brincadeira à mesa e foi confirmado pelo Daniel como
 nome oficial do personagem.
 
 Foi sequestrado por saqueadores desertores do Norte durante o ataque a Okuta-kuni (sessão

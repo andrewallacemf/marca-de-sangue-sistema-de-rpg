@@ -1,6 +1,7 @@
 # Espíritos Constritores
 
-**Tipo:** Yokai menor — reforço de encontro · **Status:** planejados para a Sessão 3
+**Tipo:** Yokai (espírito/criatura sobrenatural do folclore japonês) menor — reforço de
+encontro · **Status:** planejados para a Sessão 3
 (ainda não jogados) · **Aparecem em:** combate da caverna, convocados pela Yamamba (ver
 [`yamamba.md`](yamamba.md#habilidade-nova--raízes-da-montanha))
 

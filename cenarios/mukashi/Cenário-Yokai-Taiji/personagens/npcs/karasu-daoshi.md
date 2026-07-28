@@ -1,6 +1,7 @@
 # Karasu Daoshi (Tengu)
 
-**Papel:** Tengu das montanhas, preso em forma de corvo; posa de "cartógrafo da floresta"
+**Papel:** Tengu (espírito das montanhas com traços de ave e grande poder mágico, do
+folclore japonês) das montanhas, preso em forma de corvo; posa de "cartógrafo da floresta"
 
 > Apelido de mesa: os jogadores começaram a chamá-lo de **"cara azul"** por confusão com
 > a pronúncia do nome durante a sessão — é uma piada recorrente da mesa, não um nome que
@@ -9,13 +10,14 @@
 ## História
 
 Tengu que mora na floresta perto de Okuta-kuni, servindo antigamente a um mestre
-Daitengu — mas decidiu se isolar nas montanhas, cansado da guerra. Está preso em sua
-forma de corvo porque teve seu amuleto roubado. Aparece com frequência como um corvo
-comum antes de se revelar.
+**Daitengu** (um Tengu de hierarquia superior, "Grande Tengu") — mas decidiu se isolar
+nas montanhas, cansado da guerra. Está preso em sua forma de corvo porque teve seu
+amuleto roubado. Aparece com frequência como um corvo comum antes de se revelar.
 
 Velho amigo de **Yamamoto Seiichi** — bebiam saquê juntos na época em que poucos
-conseguiam encontrar yokai. Perante a aldeia, finge (ou de fato leva a vida como) o
-cartógrafo que vive na floresta, e é assim que Seiichi o apresenta ao grupo.
+conseguiam encontrar yokai (espíritos/criaturas sobrenaturais do folclore japonês).
+Perante a aldeia, finge (ou de fato leva a vida como) o cartógrafo que vive na floresta,
+e é assim que Seiichi o apresenta ao grupo.
 
 É quem entrega aos jogadores a carta assinada por **Suzanoo**, prometendo recompensas
 pela caça de yokais — os quais, por algum motivo ainda não revelado, estão ganhando
@@ -36,7 +38,7 @@ corporeidade e invadindo o mundo humano.
   "cartógrafo" que o grupo procurava.
 - Mostra a carta de Suzanoo e leva o grupo até os corpos das crianças que originaram os
   Mōryō derrotados; três globos de luz aparecem com colares dentro. O grupo escolhe o
-  globo branco: um **omamori de velocidade**.
+  globo branco: um **omamori** (amuleto de proteção japonês) **de velocidade**.
 - Revela que o uso do poder dos yokai (via amuletos) demanda sangue, e pede segredo
   sobre o decreto de Suzanoo — quem não o conhece não pode se beneficiar dele.
 - De volta à sua casa/cabana, procura seu próprio amuleto perdido nos baús, sem sucesso.

@@ -37,8 +37,8 @@ o bebê Kinjo e refugiando-se no templo da ilha (ver
 [`../locais/okuta-kuni.md`](../locais/okuta-kuni.md)). Desfecho real, confirmado pela
 transcrição da sessão:
 
-- Um guarda na ponte foi agarrado com uma kusarigama por Tenaga e Ashinaga, puxado para
-  dentro do lago (raso) e afogado.
+- Um guarda na ponte foi agarrado com uma kusarigama (arma japonesa de corrente e foice)
+  por Tenaga e Ashinaga, puxado para dentro do lago (raso) e afogado.
 - Dentro do templo, Hamato decepou as pernas de um bandido, que morreu em seguida.
 - Um segundo bandido se rendeu e foi executado por Hamato durante o interrogatório, no
   momento em que começava a revelar quem suspeitava estar por trás do ataque ao bebê — o

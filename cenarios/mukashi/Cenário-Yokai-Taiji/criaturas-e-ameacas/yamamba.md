@@ -1,6 +1,7 @@
 # Yamamba
 
-**Tipo:** Yokai — chefe de encontro · **Status:** planejada para a Sessão 3 (ainda não
+**Tipo:** Yokai (espírito/criatura sobrenatural do folclore japonês) — chefe de encontro ·
+**Status:** planejada para a Sessão 3 (ainda não
 jogada) · **Local:** caverna nas montanhas ao norte de Okuta-kuni (ver
 [`../locais/okuta-kuni.md`](../locais/okuta-kuni.md) e a visão de Mizuki em
 [`../sessoes/sessao-02.md`](../sessoes/sessao-02.md))
@@ -160,10 +161,15 @@ que estiver a 8m de alguém do grupo.
 
 **Desafios específicos por personagem** (a partir das fichas adaptadas):
 
-- **Mizuki** — não sente frio: imune à regra do "Frio da Montanha". Bom momento para o
-  [sonho/premonição dela](../sessoes/preparacao-sessao-03.md#1-parte-anterior-antes-de-partir-para-a-caverna)
-  ecoar de novo — sugestão: ao pisar na fenda ou avistar a boca da caverna pela primeira
-  vez, ela tem um lampejo do mesmo vulto na neve do sonho.
+- **Mizuki** — não sente frio: imune à regra do "Frio da Montanha". A "parte anterior" não
+  usa mais sonhos/visões (descartado pelo Daniel — ver
+  [`../fio-narrativo.md`](../fio-narrativo.md#princípio-de-narração-desta-mesa-registrado-27072026-a-pedido-do-daniel));
+  ela passa a sessão treinando com Karasu Daoshi (Cena 2) até ser chamada para a casa de
+  Midori (Cena 3), onde conhece Suzu pessoalmente pela primeira vez (ver
+  [`../sessoes/preparacao-sessao-03.md`](../sessoes/preparacao-sessao-03.md#cena-3--reencontro-na-casa-de-midori-todo-o-grupo)),
+  e é aí que o amuleto dela já dá o primeiro sinal de que algo não bate com a Kitsune
+  (raposa mágica do folclore japonês) escondida. Deixa o gancho plantado antes da subida,
+  sem precisar de eco na encosta.
 - **Hamato** — carrega **Kinjo** (o bebê) no colo: atravessar a fenda segurando-o com as
   duas mãos significa **não poder empunhar arma nesse turno** — decisão real a cada
   travessia. ⚠️ Se a divergência de saúde registrada em
@@ -178,7 +184,8 @@ que estiver a 8m de alguém do grupo.
   martelo se o grupo precisar abrir caminho.
 - **Tenaga e Ashinaga** — a mobilidade reduzida já estabelecida (ver
   [`sessao-02.md`](../sessoes/sessao-02.md)) torna a fenda particularmente dura sozinho —
-  mas a **Kusarigama** (arma `AGAR.`) pode virar uma "ponte" de corrente: agarrar um ponto
+  mas a **Kusarigama** (arma japonesa de corrente e foice; `AGAR.`) pode virar uma "ponte"
+  de corrente: agarrar um ponto
   fixo do outro lado da fenda e servir de corrimão para o grupo todo atravessar. **Burro
   de carga** (não gasta `PA` extra para deslocar um aliado agarrado) combina direto com
   isso se alguém escorregar e precisar ser puxado de volta.
@@ -235,8 +242,9 @@ zonas, pensadas para malha hexagonal ou quadriculada:
    alimentado por infiltração da montanha. **Terreno difícil** (dobra custo de
    deslocamento) para todos. **Fraqueza ambiental da Yamamba:** enquanto ela estiver
    dentro da poça, a **Pele da Montanha não funciona** (redutor de dano cai a 0) — a água
-   corta a ligação dela com a pedra da montanha, ecoando a natureza yuki-onna de Mizuki
-   (gelo/água) como o oposto elemental da Yamamba (terra/montanha). Ela evita a poça por
+   corta a ligação dela com a pedra da montanha, ecoando a natureza yuki-onna ("mulher da
+   neve", espírito do inverno do folclore japonês) de Mizuki (gelo/água) como o oposto
+   elemental da Yamamba (terra/montanha). Ela evita a poça por
    instinto, mas pode ser **empurrada** para lá (ação **Empurrar**, `1 PA`,
    `Físico` — ver
    [`../../../../sistema-base/listas/acoes-em-combate.md`](../../../../sistema-base/listas/acoes-em-combate.md)).
@@ -288,7 +296,7 @@ para o narrador ter na manga, não roteiro fechado:
   **Ataques à distância concentrados** para manter foco num só alvo sem a desvantagem de
   ataques múltiplos. É o gatilho natural, mecanicamente e narrativamente, para a subtrama
   da Onda Trovejante (ver
-  [`../sessoes/preparacao-sessao-03.md`](../sessoes/preparacao-sessao-03.md#2-treino-da-onda-trovejante-mizuki--karasu-daoshi)) —
+  [`../sessoes/preparacao-sessao-03.md`](../sessoes/preparacao-sessao-03.md#cena-2--treino-da-onda-trovejante-mizuki-tenaga-e-ashinaga--karasu-daoshi)) —
   bater o gatilho do feitiço logo depois de acertar um tiro concentrado, na saliência.
 - **Manami Aramaki** (se vier) — ficha ainda incompleta (sem arma registrada); **Otimista**
   e **Animar** o colocam bem como suporte social/de aptidões na retaguarda, reativando

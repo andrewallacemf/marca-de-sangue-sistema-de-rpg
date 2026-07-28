@@ -19,7 +19,8 @@ relembrar a mesa depois de um intervalo longo entre sessões.
 
 ## O que aconteceu
 
-Depois de escolher o omamori de velocidade e ouvir sobre o decreto de Suzanoo, o grupo
+Depois de escolher o omamori (amuleto de proteção japonês) de velocidade e ouvir sobre o
+decreto de Suzanoo, o grupo
 sobe numa torre de vigia perto da casa de Karasu Daoshi e avista, ao norte da vila, uma
 luz distante na cadeia de montanhas — possivelmente uma fogueira grande ou um
 acampamento. Decidem investigar depois e retornam a Okuta-kuni.
@@ -93,7 +94,8 @@ ferimentos no templo, descansando ali.
 
 No dia seguinte, o grupo se reúne com **Yamamoto Seiichi**, **Karasu Daoshi** e a família
 de **Kichiro Kawamura**, comendo à mesa. Karasu Daoshi explica que, para localizar os
-yokai da região, é preciso realizar o **Ritual das Três Visões**: até três pessoas podem
+yokai (espíritos/criaturas sobrenaturais do folclore japonês) da região, é preciso
+realizar o **Ritual das Três Visões**: até três pessoas podem
 participar, cada uma pagando um sacrifício (energia própria ou algo de valor pessoal) para
 enxergar o mundo espiritual através da fumaça de um incensário, guiado por um ritual
 conduzido por Yamamoto Seiichi (sacerdote).
@@ -112,7 +114,8 @@ esperar do lado de fora** e **Manami Aramaki não estava presente nesta sessão*
   No ventre está a promessa de espírito afogado, aguardando a hora da colheita."* Na
   mesa, isso gerou brincadeiras sobre quem "poderia estar grávida" na vila, mas o
   significado real (conhecimento do mestre) é outro: refere-se ao próprio **Kichiro**,
-  ao seu "contrato" com o Kappa e à marca em seu abdômen — ver
+  ao seu "contrato" com o Kappa (espírito das águas do folclore japonês) e à marca em seu
+  abdômen — ver
   [`../personagens/jogadores/kichiro-kawamura.md`](../personagens/jogadores/kichiro-kawamura.md).
 
 > ⚠️ Correção de registro: uma versão anterior deste arquivo (baseada só no rascunho do

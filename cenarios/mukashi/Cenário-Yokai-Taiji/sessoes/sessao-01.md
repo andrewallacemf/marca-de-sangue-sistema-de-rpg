@@ -14,12 +14,14 @@ família **Manami** (pescadores), que também foi quem primeiro viu destroços t
 correnteza na estação das chuvas: madeira com sinais de fogo, flechas quebradas e,
 ocasionalmente, corpos. Peregrinos religiosos trazem a explicação dos presságios: uma
 guerra no Norte, movida por um senhor das espadas ganancioso com milhares de lanças, cujo
-poder viria de uma naginata cravejada com uma gema arrancada de Ame-no-nuboko, a lança da
+poder viria de uma naginata (lança japonesa de lâmina curva) cravejada com uma gema
+arrancada de Ame-no-nuboko, a lança da
 criação. Esses peregrinos normalmente são recebidos pela família sacerdotal de **Kichiro
 Kawamura**.
 
 Os presságios se confirmam quando o guerreiro **Hamato** chega à aldeia, ferido e
-exausto, fugindo da guerra e carregando um bebê. Hamato é um **ronin**: seu mestre morreu
+exausto, fugindo da guerra e carregando um bebê. Hamato é um **ronin** (samurai sem
+senhor): seu mestre morreu
 num ataque ao palácio onde servia, sem que ele conseguisse salvá-lo, e em desgraça por
 essa falha de juramento a única coisa que conseguiu resgatar antes de fugir foi a criança
 — que ele passou a tratar, em parte a sério e em parte por humor de mesa, como seu novo
@@ -29,7 +31,8 @@ essa falha de juramento a única coisa que conseguiu resgatar antes de fugir foi
 reúne um grupo de aventureiros sedentos por provar seu valor — entre eles os irmãos
 **Tenaga e Ashinaga**, órfãos de aparência incomum adotados pelo chefe de uma vila de
 pescadores ao sul de Okuta-kuni, que viu neles um bom presságio por se parecerem com os
-yokai lendários. Os irmãos são amigos próximos do filho desse chefe, que está desaparecido
+yokai (espíritos/criaturas sobrenaturais do folclore japonês) lendários. Os irmãos são
+amigos próximos do filho desse chefe, que está desaparecido
 havia um tempo. O chefe Seiichi envia o grupo para mapear, junto a um cartógrafo que mora
 na floresta, os principais locais de onde ajuda poderia vir.
 
@@ -56,7 +59,7 @@ oferecendo recompensa pela derrota de yokais que estão saindo de controle.
 O corvo acompanha o grupo até os corpos das crianças que originaram os Mōryō derrotados.
 Ali, exibe novamente a carta de Suzanoo e três globos de luz aparecem, com colares
 visíveis dentro. O grupo escolhe o globo branco: um amuleto aparece no ar — um
-**omamori de velocidade**.
+**omamori** (amuleto de proteção japonês) **de velocidade**.
 
 Karasu Daoshi explica que os yokai concentram seu poder em amuletos, e que os amuletos que
 o grupo está recebendo existem por causa do **decreto de Suzanoo** — e pede segredo sobre
@@ -64,7 +67,9 @@ o decreto, já que quem não o conhece não pode usar de seus benefícios (ver
 [`../fio-narrativo.md`](../fio-narrativo.md)). Também é nesse momento que Hamato pergunta
 a Karasu Daoshi se já ouviu falar de humanos tendo filhos com yokai; o corvo responde que
 "não é incomum" — pergunta com peso especial dado o rumor de que Mizuki seria filha de uma
-yuki-onna. Kichiro, durante a conversa sobre o Tengu, se identifica como **sacerdote**.
+yuki-onna (espírito feminino do inverno do folclore japonês, "mulher da neve"). Kichiro,
+durante a conversa sobre o Tengu (espírito das montanhas com traços de ave do folclore
+japonês), se identifica como **sacerdote**.
 
 ## Nota sobre o rascunho de plano original
 

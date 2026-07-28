@@ -17,12 +17,17 @@ sonhos recorrentes que sugerem o contrário.
 Seu pai, Shigeru, morador de Okuta-kuni responsável pelas rondas e segurança da aldeia,
 desapareceu numa noite de inverno seguindo um rastro suspeito. Um ano depois, numa
 nevasca, retornou pálido e ferido, carregando um bebê recém-nascida de cabelos
-prateados: "Mizuki. Filha de uma yuki-onna. Minha filha. Cuide dela, okaa-san." Morreu
-em seguida, no chão da casa de sua mãe, **Midori**.
+prateados: "Mizuki. Filha de uma yuki-onna (espírito feminino do inverno do folclore
+japonês, "mulher da neve"). Minha filha. Cuide dela, *okaa-san* (mãe)." Morreu
+em seguida, no chão da casa de sua mãe, **Midori** — mas não antes de murmurar mais um
+punhado de palavras, quase incompreensíveis, que Midori nunca contou a ninguém: algo
+sobre vento, sobre um deus, sobre trovão. Guardou o resto para si por vinte anos, sem
+saber ao certo o que significava (ver "Onda Trovejante", abaixo).
 
 Midori criou Mizuki apesar da resistência de grande parte da aldeia, convencendo o chefe
 **Yamamoto Seiichi** (velho amigo) a aceitá-la. A aldeia, supersticiosa, teme que uma
-yokai entre humanos traga desgraça — e, coincidência ou não, os invernos ficaram mais
+yokai (espírito/criatura sobrenatural do folclore japonês) entre humanos traga
+desgraça — e, coincidência ou não, os invernos ficaram mais
 rigorosos desde a chegada de Mizuki. O frio não a afeta como afeta os outros moradores.
 
 A única pessoa além de Midori que sempre a tratou com amor e confiança é sua amiga de
@@ -51,6 +56,91 @@ colar/amuleto que "cresceu junto com ela".
 - Garantir paz e uma boa velhice para Midori.
 - Garantir uma vida plena e feliz para Minami.
 - Entender por que seu pai desapareceu e voltou, e se há verdade em sua origem yokai.
+
+## Onda Trovejante (Narukami) — magia herdada (mini-game da Sessão 3)
+
+Registrado 28/07/2026, a pedido do Daniel: o "amuleto que cresceu junto com ela" (ver
+História, acima) não é só ornamento — é o canal de uma magia herdada, ligada a
+**Narukami** (o Deus-Trovão do panteão xintoísta). Mizuki vem tentando invocá-la sem
+sucesso; a Sessão 3 é quando ela finalmente consegue, através de um mini-game de memória
+construído com Karasu Daoshi, Tenaga e Ashinaga (ver
+[`../../sessoes/preparacao-sessao-03.md`](../../sessoes/preparacao-sessao-03.md#cena-2--treino-da-onda-trovejante-mizuki-tenaga-e-ashinaga--karasu-daoshi)).
+
+### A invocação e o mini-game
+
+A magia só funciona conjurada com as palavras certas, na ordem certa — as mesmas palavras
+que Shigeru murmurou ao morrer, quase incompreensíveis, que só Midori guardou (ver
+"Segredos do mestre", abaixo). Ao longo da sessão, o grupo recupera **fragmentos** soltos
+da frase — nunca a ordem completa de uma vez:
+
+| Fragmento | Onde surge | Como surge |
+|---|---|---|
+| **"Vento"** | Cena 2 (treino, com Ashinaga no rio) | Mizuki murmura sem perceber, no esforço do teste; é Ashinaga quem repete a palavra de volta pra ela. |
+| **"Divino"** | Cena 2 (treino, orientação de Karasu Daoshi) | Escapa da boca dela enquanto Karasu Daoshi corrige sua postura/foco; ele reconhece o peso da palavra, mas não sabe o resto. |
+| **"Deus-Trovão"** | Cena 2 (treino, com Tenaga e a kusarigama) | No estalo da corrente cortando o ar, ela grita a palavra sem querer — Tenaga é quem nota. |
+| **"Narukami"** | Cena 3 (Midori, no eco da nevasca) | Midori finalmente conta a parte que guardou por vinte anos — o nome que Shigeru sussurrou antes de morrer. |
+
+**Ordem correta da invocação completa:** *"O vento divino do Deus-Trovão, Narukami!"* —
+**Vento → Divino → Deus-Trovão → Narukami**. Nenhum NPC sabe essa ordem; nem Midori, que
+só guardava o nome. **O narrador só revela a ordem certa no momento do gatilho, na Cena
+6** (ver [`../../criaturas-e-ameacas/yamamba.md`](../../criaturas-e-ameacas/yamamba.md) e
+a Cena 6 em
+[`../../sessoes/preparacao-sessao-03.md`](../../sessoes/preparacao-sessao-03.md#cena-6--combate-com-a-yamamba))
+— é o próprio estresse do combate, somado a todos os fragmentos já reunidos, que faz a
+frase "clicar" na cabeça de Mizuki.
+
+> 💡 Se o grupo pular ou perder algum fragmento (evitar a cena, não perceber a deixa,
+> etc.), o narrador pode improvisar uma forma alternativa de entregá-lo — o importante é
+> que o fragmento "Narukami" (o nome) só deve vir de Midori, nunca antes disso.
+
+### Ficha da habilidade (mecânica, formato Mukashi)
+
+Adaptado de uma magia de força trovejante em área para o sistema, seguindo o molde de
+[magia em Mukashi](../../../mecanicas-unicas/magia.md) — feitiço que usa o atributo
+`KI`, com custo de `PA` e de saúde.
+
+> ⚠️ **Nota de sistema:** a ficha JSON atual de Mizuki não tem campo para `KI` (o quinto
+> atributo de Mukashi ainda não foi incorporado ao schema/app de fichas — ver
+> [`../../../mecanicas-unicas/ki.md`](../../../mecanicas-unicas/ki.md)). Até isso ser
+> resolvido, sugestão de mesa: tratar o `KI` de Mizuki como igual ao `Mental` dela para
+> efeitos desta magia (⚠️ a confirmar com o Daniel).
+
+**Nome:** Onda Trovejante (Narukami) · **Atributo:** `KI` · **Custo de `PA`:** `6 PA` ·
+**Custo de saúde:** `4` (dano superficial no tronco, sede espiritual do `KI` — cura com
+descanso como qualquer dano superficial) · **Custo de compra:** não se aplica — magia
+herdada, desbloqueada narrativamente na Sessão 3, não comprada com `exp.`.
+
+**Alcance/área:** emana da própria Mizuki — atinge todas as criaturas num raio de até
+**4,5 metros** ao redor dela.
+
+**Efeito:** teste de `KI` de Mizuki contra o contrateste `Físico` de cada criatura na área
+(resistir a golpes e danos é justamente o domínio do atributo `Físico` — ver
+[`../../../../../sistema-base/conceitos/02-atributos.md`](../../../../../sistema-base/conceitos/02-atributos.md)).
+
+- **Se a criatura falhar:** sofre `2d8` de dano `CONT.` (contundente — a onda de força é
+  tratada como impacto concussivo, não corte nem perfuração) e é **empurrada 3 metros**
+  para longe de Mizuki.
+- **Se a criatura tiver sucesso:** sofre **metade do dano** (arredondado para baixo, regra
+  padrão do sistema) e **não é empurrada**.
+- **Objetos soltos** totalmente dentro da área são empurrados automaticamente 3 metros,
+  sem teste.
+- A magia emite um estrondo de trovão audível a até **90 metros** — dá pra ouvir do lado
+  de fora da caverna (gancho opcional para consequências futuras).
+
+> 💡 **Uso tático na Cena 6:** como a área pega todo mundo ao redor de Mizuki, inclusive
+> **Espíritos Constritores agarrando aliados**, o empurrão pode literalmente arrancar um
+> aliado da Constrição (ver
+> [`../../criaturas-e-ameacas/espiritos-constritores.md`](../../criaturas-e-ameacas/espiritos-constritores.md))
+> — vale destacar isso na narração do momento, é um baita clímax visual.
+
+**Progressão (para uso em sessões futuras, além do desbloqueio narrativo desta sessão):**
+
+1. `2d8` `CONT.`, raio de `4,5 m`, empurra `3 m`.
+2. `+1d8` de dano (`3d8` total).
+3. Raio aumenta para `6 m`.
+4. Empurra `4,5 m`.
+5. `+1d8` de dano (`4d8` total) **ou** raio de `9 m` (à escolha da conjuradora no momento
+   do uso).
 
 ## Segredos do mestre (não revelar diretamente ao jogador)
 
