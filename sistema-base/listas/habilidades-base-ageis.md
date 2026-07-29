@@ -23,7 +23,7 @@ Habilidades base do atributo **`Ágil`**. Parte da "Lista de habilidades base" d
 | Ataques à distância concentrados | **`1 PA`** | **`2 exp.`** |
 | Disparada | **`5 PA`** | **`2 exp.`** |
 | Golpe surpresa | **`1 PA`** + **`PA da arma`** | **`2 exp.`** |
-| Ocultar-se à vista | **`2 PA`** (a ação Esconder-se) | **`3 exp.`** *(💡 proposta)* |
+| Ocultar-se à vista | **`2 PA`** (a ação Esconder-se) | **`3 exp.`** *(📝 proposta)* |
 
 ## Alcance à distância
 
@@ -229,7 +229,7 @@ abaixo.
 
 **Atributo:** `Ágil` · **Custo de PA:** `2 PA` (a própria ação de [Esconder-se](../../modulos/furtividade/README.md#esconder-se)) · **Custo de compra:** `3 exp.`
 
-> 💡 **PROPOSTA (IA) — para o André revisar.** Habilidade criada a partir do gancho do módulo de
+> 📝 **PROPOSTA (IA) — para o André revisar.** Habilidade criada a partir do gancho do módulo de
 > furtividade (playtest 2): "esconder-se dentro do campo de visão de um inimigo". Números e
 > nome a validar na mesa.
 

@@ -20,7 +20,7 @@ mais ser usada até ser reparada. Golpes que **erram** não gastam durabilidade.
 > ✅ Decidido em 19/07/2026: a **regra** de perda de durabilidade das armas (−1 por golpe que
 > acerta; quebra em 0) foi definida pelo grupo.
 
-### Valores de durabilidade (💡 proposta para calibrar)
+### Valores de durabilidade (📝 proposta para calibrar)
 
 Durabilidade-base por **peso da arma** — calibrada contra a durabilidade das
 [proteções](protecoes-base.md#durabilidade-das-proteções) (armadura por peça: leve 10 / média 25 / pesada 50; escudos 6–25):
@@ -102,7 +102,7 @@ O dano de **qualquer arma** — tabelada ou não — é aferido cruzando o **tam
 
 > ✅ **Aumento de letalidade — playtest 2 (19/07/2026).** O grupo achou as armas pouco letais.
 > A escala **subiu um degrau**: o antigo dano **médio** virou o **leve** (decisão do André —
-> perfurante leve `1d6`, cortante leve `1d8`, contundente leve `2d4`). 💡 **Proposta da IA para
+> perfurante leve `1d6`, cortante leve `1d8`, contundente leve `2d4`). 📝 **Proposta da IA para
 > os demais degraus** (a validar): mantendo a progressão de cada tipo — cortante `1d8 → 1d12 → 2d8`,
 > perfurante `1d6 → 1d8 → 1d10`, contundente `2d4 → 3d4 → 4d4`.
 >

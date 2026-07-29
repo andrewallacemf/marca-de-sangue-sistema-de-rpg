@@ -16,7 +16,7 @@ manual (39 armas com dano defasado, 9 itens faltando — corrigido em 24/07/2026
 
 | Arquivo | O que é |
 |---------|---------|
-| [`limpeza.py`](limpeza.py) | A **limpeza oficial**: remove frontmatter, blocos de bastidor (`✅`, `💡 PROPOSTA`, `⚠️ A DEFINIR`, datas de decisão…), seção "Referências" e marcações internas. |
+| [`limpeza.py`](limpeza.py) | A **limpeza oficial**: remove frontmatter, blocos de bastidor (`✅`, `📝`, `🔧`, `⚠️ A DEFINIR`, datas de decisão…), blocos explícitos `<!-- bastidor:inicio -->…<!-- bastidor:fim -->`, seção "Referências" e marcações internas. **`💡` nunca é removido** — é dica de mesa pro jogador/mestre, não bastidor (ver [CONVENCOES.md §12](../CONVENCOES.md) para a tabela completa dos emojis). Páginas inteiras marcadas `publico: false` no frontmatter são filtradas por quem consome (`manual/gerar-conteudo.py`), antes mesmo de chamar a limpeza. |
 | [`exportar_catalogo.py`](exportar_catalogo.py) | O **exportador**: lê as listas do manual e gera o `catalogo.json`. |
 | [`catalogo.json`](catalogo.json) | O **artefato do contrato**: armas, munições, proteções, habilidades (com progressão por nível), traços, propriedades de armas e os inimigos do kit de playtest (proposta), em JSON estruturado. **Gerado — não edite à mão.** |
 

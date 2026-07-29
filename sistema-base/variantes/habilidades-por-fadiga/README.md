@@ -44,5 +44,5 @@ e as notas de design de 11/07/2026 (revisão das 14h58 e 15h44).
 - **Fora do `INDICE.md`:** por ser experimental, esta área **não** é indexada no índice
   remissivo canônico (evita duas definições concorrentes de "Fadiga"/"Habilidade"). Se a
   variante for promovida, aí sim entra no índice.
-- **Números marcados `💡 PROPOSTA`** são sugestões da IA para começar o playtest — a
+- **Números marcados `📝 PROPOSTA`** são sugestões da IA para começar o playtest — a
   definir/ajustar pelo grupo (ver [pendências](pendencias-e-testes.md)).

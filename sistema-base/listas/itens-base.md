@@ -9,7 +9,7 @@ atualizado-em: 2026-07-12
 
 # Lista base de Itens
 
-> 💡 PROPOSTA (IA) — revisão pendente: os preços abaixo são uma **sugestão da IA aguardando aprovação do grupo** (12/07/2026), calibrada pelos únicos valores que já existiam (Amuleto 1, Cantil 3, Bússola 8 moedas) e pela faixa das armas básicas (~6–16 moedas). Os três valores originais vieram do manual (estavam em "ouros", convertidos para **moedas** em 11/07/2026 — decisão B10: a moeda do sistema é "moedas"; "ouro" é coisa de cenário, ver [decisão](../../notas-de-design/decisoes/2026-07-11-terminologia-alcance-descanso.md)). Enquanto não aprovados, tratar como provisórios.
+> 📝 PROPOSTA (IA) — revisão pendente: os preços abaixo são uma **sugestão da IA aguardando aprovação do grupo** (12/07/2026), calibrada pelos únicos valores que já existiam (Amuleto 1, Cantil 3, Bússola 8 moedas) e pela faixa das armas básicas (~6–16 moedas). Os três valores originais vieram do manual (estavam em "ouros", convertidos para **moedas** em 11/07/2026 — decisão B10: a moeda do sistema é "moedas"; "ouro" é coisa de cenário, ver [decisão](../../notas-de-design/decisoes/2026-07-11-terminologia-alcance-descanso.md)). Enquanto não aprovados, tratar como provisórios.
 
 A categoria "itens" abrange todos os demais objetos que não são armas nem armaduras ou escudos. Itens possuem os mais diversos usos e características; cada item deve ser consultado de maneira individual para entender como interagir com ele.
 

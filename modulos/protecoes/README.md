@@ -20,7 +20,7 @@ coleção `armas`).
 
 ## Armaduras (por tipo)
 
-| **Tipo de armadura** | **Redutor Dano 🛡️** | **Redutor PA 🐢** | **Durab. (por peça)** 💡 | **Preço (por peça)** 💡 |
+| **Tipo de armadura** | **Redutor Dano 🛡️** | **Redutor PA 🐢** | **Durab. (por peça)** 📝 | **Preço (por peça)** 📝 |
 | --- | --- | --- | --- | --- |
 | Leve | **`-1`** | **`-1 PA`** | **`10`** | **`20 moedas`** |
 | Média | **`-2`** | **`-2 PA`** | **`25`** | **`60 moedas`** |
@@ -40,4 +40,4 @@ levantada**.
 | Escudo Grande | **`Média`**<br>**`3 PA`** | **`-2`** | **`-2 PA`** | **`20`** | **`20 moedas`** |
 | Escudo torre, Tater | **`Pesada`**<br>**`4 PA`** | **`-3`** | **`-3 PA`** | **`25`** | **`40 moedas`** |
 
-> 💡 Durabilidade e preço por peça são valores iniciais a calibrar no playtest.
+> 📝 Durabilidade e preço por peça são valores iniciais a calibrar no playtest.

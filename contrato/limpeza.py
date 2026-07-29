@@ -21,13 +21,19 @@ playtest/geracao-pdf/COMO-FUNCIONA.md.
 import re
 
 # ---------------------------------------------------------------------------
+# Dois símbolos, dois sentidos (separados em 27/07/2026 a pedido do Daniel —
+# antes 💡 fazia as duas coisas e vazava nota de bastidor pro site):
+#   💡 = DICA pro jogador/mestre — conteúdo final, sempre fica no site.
+#   📝 = NOTA DE BASTIDOR/CURADORIA — comentário de quem edita, sempre some.
+# Nunca use 💡 para nota de bastidor nem 📝 para dica de jogo.
+# ---------------------------------------------------------------------------
+
 # MARCADORES DE "BASTIDOR" — se um bloco de citação (>) contém qualquer um
 # destes, o bloco INTEIRO é removido. IMPORTANTE: a checagem é por BLOCO
 # (linhas > consecutivas), não por linha, porque citações multi-linha têm
 # linhas de continuação sem o marcador que, de outra forma, sobreviveriam.
-# ---------------------------------------------------------------------------
 BASTIDOR = [
-    "notas-de-design", "A DEFINIR", "PROPOSTA", "🧪",
+    "notas-de-design", "A DEFINIR", "PROPOSTA", "🧪", "📝",
     "Decidido em", "Aprovado em", "Aprovado pelo grupo", "aprovado pelo grupo",
     "aprovada pelo grupo", "Critério aprovado", "Revisado em",
     "Rebalanceamento de", "ver [decis", "decisões —", "Reação como recurso",
@@ -55,6 +61,12 @@ def limpa_arquivo(texto: str) -> str:
     texto = texto.lstrip("﻿")
     # frontmatter YAML — regex tolerante a espaços/linhas em branco antes do bloco.
     texto = re.sub(r"^\s*---\r?\n.*?\r?\n---\r?\n", "", texto, count=1, flags=re.DOTALL)
+    # bloco de bastidor explícito, para trechos maiores que uma citação (ex.: uma
+    # seção inteira de um README) — delimitado por comentário HTML, some do
+    # markdown final (o VitePress não renderiza comentário HTML de qualquer forma,
+    # mas aqui removemos o conteúdo entre os marcadores também, não só o comentário).
+    texto = re.sub(r"<!--\s*bastidor:inicio\s*-->.*?<!--\s*bastidor:fim\s*-->",
+                    "", texto, flags=re.DOTALL)
 
     linhas = texto.split("\n")
     out = []
@@ -75,8 +87,10 @@ def limpa_arquivo(texto: str) -> str:
                 out.append(_tira_inline(b))
             i = j
             continue
-        # nota de rodapé em itálico de bastidor
-        if s.startswith("*⚠️") or s.startswith("*💡 PROPOSTA"):
+        # nota de rodapé em itálico de bastidor — qualquer linha que comece com
+        # "*" seguido de um dos emojis de marcação de bastidor (⚠️/📝/🔧). NÃO
+        # inclui 💡 aqui — 💡 é dica de jogo, sempre fica.
+        if re.match(r"^\*\s*(⚠️|📝|🔧)", s):
             i += 1
             continue
         out.append(_tira_inline(linhas[i]))
@@ -95,7 +109,15 @@ def limpa_arquivo(texto: str) -> str:
 
 
 def _tira_inline(ln: str) -> str:
-    return ln.replace(" ⚠️", "").replace("⚠️", "").replace(" 🧪", "").replace("🧪", "")
+    # Emoji de marcação interna, removidos onde quer que apareçam numa linha que
+    # sobreviveu à limpeza (célula de tabela, item de lista, frase corrida…) —
+    # tira só o símbolo, mantém o texto ao redor (ex.: "Wakizashi, Kodachi 📝"
+    # numa tabela de arsenal vira "Wakizashi, Kodachi", sem o marcador de
+    # "linha nova, a validar" que só interessa a quem edita). NÃO inclui 💡 —
+    # dica de jogo fica visível, símbolo e tudo.
+    for e in ("⚠️", "🧪", "📝", "🔧"):
+        ln = ln.replace(f" {e}", "").replace(e, "")
+    return ln
 
 
 def verifica_limpeza(md: str, origem: str = "") -> list:
@@ -103,7 +125,7 @@ def verifica_limpeza(md: str, origem: str = "") -> list:
     Retorna a lista de linhas suspeitas (vazia = limpo). Também imprime aviso."""
     import sys
     gatilhos = ("notas-de-design", "A DEFINIR", "PROPOSTA", "Decidido em",
-                "Aprovado em", "✅", "🧪",
+                "Aprovado em", "✅", "🧪", "📝", "🔧", "bastidor:inicio", "bastidor:fim",
                 "titulo:", "atualizado-em:", "cenario:", "status:")
     achados = [l for l in md.split("\n") if any(k in l for k in gatilhos)]
     if achados:

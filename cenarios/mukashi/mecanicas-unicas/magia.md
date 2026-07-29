@@ -17,13 +17,13 @@ A magia em Mukashi é a **manipulação do sobrenatural** por meio do [KI](ki.md
 
 Ao conjurar um feitiço, o conjurador sofre **dano superficial em si mesmo** — no membro à sua escolha (tronco é o mais comum, como sede espiritual do KI) — seguindo exatamente as mesmas regras de [saúde e dano](../../../sistema-base/conflitos/03-saude-e-protecao.md) que qualquer outro personagem: o dano soma aos 10 espaços do membro escolhido, **gera fadiga** (1 ponto de fadiga por ponto de dano, como qualquer dano) e **cura com descanso** como dano superficial normal. Um feitiço puxado longe demais pode encher o membro (ferida profunda) ou, em uso repetido sem descanso, chegar a dano permanente — a magia em Mukashi tem um preço real e cumulativo, não é infinita.
 
-> 💡 A DEFINIR (Daniel): calibrar **quantos pontos de vida cada feitiço custa** por nível de progressão (proposta: escalar com a força do efeito, como o custo de `PA` das demais habilidades) — a validar no playtest.
+> 📝 A DEFINIR (Daniel): calibrar **quantos pontos de vida cada feitiço custa** por nível de progressão (proposta: escalar com a força do efeito, como o custo de `PA` das demais habilidades) — a validar no playtest.
 
 ## Lista de habilidades mágicas
 
 Duas trilhas: **habilidades de caminho** (exclusivas de um dō místico, ver [Onmyōdō](../arquetipos-do.md#onmyōdō--caminho-do-yin-yang)) e **feitiços gerais** (sem vínculo a um caminho — qualquer personagem com `KI` relevante pode comprar). Ambas seguem o mesmo molde: atributo **KI**, custo de `PA`, custo em pontos de saúde e progressão por nível.
 
-> 💡 Heurística de calibragem usada abaixo (proposta, a validar): **`4 PA` → `2` de saúde, `5 PA` → `3` de saúde** — mantém o custo de saúde proporcional ao peso da habilidade em `PA`, igual ao critério que já rege o custo de `PA` das habilidades em geral.
+> 📝 Heurística de calibragem usada abaixo (proposta, a validar): **`4 PA` → `2` de saúde, `5 PA` → `3` de saúde** — mantém o custo de saúde proporcional ao peso da habilidade em `PA`, igual ao critério que já rege o custo de `PA` das habilidades em geral.
 
 ### Feitiços gerais (sem caminho)
 
@@ -33,19 +33,19 @@ Primeiros cinco redigidos em 27/07/2026, a partir de um brainstorm do Daniel com
 
 | **Feitiço** | **Atributo** | **Custo de `PA`** | **Custo de saúde** | **Custo de compra** |
 | --- | --- | --- | --- | --- |
-| Sopro do Kamaitachi | `KI` | `4 PA` | `2` 💡 | `4 exp.` 💡 |
-| Fogo de Akiba | `KI` | `5 PA` | `3` 💡 | `4 exp.` |
-| Muralha de Nurikabe | `KI` | `4 PA` | `2` 💡 | `3 exp.` |
-| Grito do Tengu (Tengu-warai) | `KI` | `4 PA` | `2` 💡 | `3 exp.` |
-| Os Nove Selos (Kuji-in) | `KI` | `5 PA` | `3` 💡 | `4 exp.` |
+| Sopro do Kamaitachi | `KI` | `4 PA` | `2` 📝 | `4 exp.` 📝 |
+| Fogo de Akiba | `KI` | `5 PA` | `3` 📝 | `4 exp.` |
+| Muralha de Nurikabe | `KI` | `4 PA` | `2` 📝 | `3 exp.` |
+| Grito do Tengu (Tengu-warai) | `KI` | `4 PA` | `2` 📝 | `3 exp.` |
+| Os Nove Selos (Kuji-in) | `KI` | `5 PA` | `3` 📝 | `4 exp.` |
 
 #### Sopro do Kamaitachi
 
 > *O "vento de foice" — um vácuo cortante que passa antes que o alvo perceba o ataque.*
 
-**Atributo:** `KI` · **Custo de PA:** `4 PA` · **Custo de saúde:** `2` 💡 · **Custo de compra:** `4 exp.`
+**Atributo:** `KI` · **Custo de PA:** `4 PA` · **Custo de saúde:** `2` 📝 · **Custo de compra:** `4 exp.`
 
-**Descrição:** o conjurador manipula o ar em correntes cortantes que atingem o alvo à distância — teste de `KI` (conjurador) contra o contrateste de esquiva/defesa do alvo (normalmente `Ágil`) 💡. Causa dano cortante (`CORT.`, base `1d8`, a mesma escala do dano cortante leve) e **ignora o redutor de dano de armaduras leves** — o corte é súbito e passa pela proteção mais fina como se não estivesse lá.
+**Descrição:** o conjurador manipula o ar em correntes cortantes que atingem o alvo à distância — teste de `KI` (conjurador) contra o contrateste de esquiva/defesa do alvo (normalmente `Ágil`) 📝. Causa dano cortante (`CORT.`, base `1d8`, a mesma escala do dano cortante leve) e **ignora o redutor de dano de armaduras leves** — o corte é súbito e passa pela proteção mais fina como se não estivesse lá.
 
 > ⚠️ **Precedente novo, aprovado pelo Daniel em 27/07/2026:** nenhuma outra habilidade do sistema ignora o redutor de dano de uma armadura (as propriedades `ARRE.`/`DEFL.` ignoram apenas *desvantagem*, não redução de dano — ver [equipamentos-base.md](../../../sistema-base/listas/equipamentos-base.md#propriedades-das-armas)). Kamaitachi é a primeira habilidade "perfurante de armadura" do Mukashi — se o efeito for bem recebido no playtest, vale considerar se cabe em outras armas/habilidades também, ou se fica exclusivo dela.
 
@@ -62,7 +62,7 @@ Primeiros cinco redigidos em 27/07/2026, a partir de um brainstorm do Daniel com
 
 > *Chamas sobrenaturais que não se apagam com água — só com vontade.*
 
-**Atributo:** `KI` · **Custo de PA:** `5 PA` · **Custo de saúde:** `3` 💡 · **Custo de compra:** `4 exp.`
+**Atributo:** `KI` · **Custo de PA:** `5 PA` · **Custo de saúde:** `3` 📝 · **Custo de compra:** `4 exp.`
 
 **Descrição:** teste de `KI` (conjurador) contra teste `Ágil` do alvo — sucesso ateia fogo sobrenatural nele. No início de cada turno do alvo, ele sofre `1d4` de dano superficial (no mesmo membro atingido pelo ataque inicial) até gastar `2 PA` em seu turno para apagar as chamas.
 
@@ -79,7 +79,7 @@ Primeiros cinco redigidos em 27/07/2026, a partir de um brainstorm do Daniel com
 
 > *Uma parede que ninguém vê — até esbarrar nela.*
 
-**Atributo:** `KI` · **Custo de PA:** `4 PA` · **Custo de saúde:** `2` 💡 · **Custo de compra:** `3 exp.`
+**Atributo:** `KI` · **Custo de PA:** `4 PA` · **Custo de saúde:** `2` 📝 · **Custo de compra:** `3 exp.`
 
 **Descrição:** cria uma barreira invisível de **2 metros de largura**. Qualquer personagem que tente atravessar esse espaço precisa de sucesso num teste `Físico` contra o `KI` do conjurador; se falhar, o movimento é interrompido e o `PA` gasto na locomoção é perdido.
 
@@ -94,11 +94,15 @@ Primeiros cinco redigidos em 27/07/2026, a partir de um brainstorm do Daniel com
 
 > *Uma risada estrondosa ecoa pela mata — e ninguém sabe de onde ela vem.*
 
-**Atributo:** `KI` · **Custo de PA:** `4 PA` · **Custo de saúde:** `2` 💡 · **Custo de compra:** `3 exp.`
+**Atributo:** `KI` · **Custo de PA:** `4 PA` · **Custo de saúde:** `2` 📝 · **Custo de compra:** `3 exp.`
 
 **Descrição:** todos os inimigos num raio de **6 metros** que possam ouvir o grito fazem um teste `Mental`. Quem falhar sofre **Desvantagem** no próximo ataque que fizer (mesma lógica de efeito da [Confundir inimigo](../../../sistema-base/listas/habilidades-base-mentais.md#confundir-inimigo) — "Amedrontado" aqui é só o nome-sabor do efeito, não um status novo) **e** desce **1 posição** na ordem de iniciativa.
 
-> ⚠️ **Precedente novo, mantido a pedido do Daniel:** hoje só existe uma regra de atrasar posição na iniciativa, e ela é **auto-aplicada e voluntária** (o próprio personagem gasta `PA` pra descer na fila — [02-acoes-em-conflito.md](../../../sistema-base/conflitos/02-acoes-em-conflito.md#atrasar-turno)). Grito do Tengu é a primeira habilidade a **forçar** esse atraso num inimigo, sem ele gastar nada. Funciona bem pro conceito (assusta e desorganiza a fila do outro lado), mas é bom o grupo saber que é mecânica nova, não reaproveitada.
+> ✅ **Correção de 27/07/2026:** eu tinha marcado isso como "precedente novo" mais cedo na sessão,
+> por engano — na verdade já existe [Intimidação generalizada](../../../sistema-base/listas/habilidades-base-mentais.md#intimidação-generalizada)
+> (habilidade `Mental` do sistema-base), que já força vários oponentes a atrasar 1 posição na
+> iniciativa via teste. Grito do Tengu não inventa mecânica nova — só dá roupagem mágica (KI +
+> custo de saúde) pro mesmo efeito, empilhando com uma Desvantagem de ataque.
 
 **Requisitos de uso:** o alvo precisa conseguir **ouvir** o grito (não afeta surdos ou quem está longe/isolado do som).
 
@@ -113,7 +117,7 @@ Primeiros cinco redigidos em 27/07/2026, a partir de um brainstorm do Daniel com
 
 > *Nove gestos, nove mantras — e o corpo trava antes que a mente entenda por quê.*
 
-**Atributo:** `KI` · **Custo de PA:** `5 PA` · **Custo de saúde:** `3` 💡 · **Custo de compra:** `4 exp.`
+**Atributo:** `KI` · **Custo de PA:** `5 PA` · **Custo de saúde:** `3` 📝 · **Custo de compra:** `4 exp.`
 
 **Descrição:** o conjurador traça os nove selos no ar; todo inimigo **adjacente** ao ponto do selo sofre o choque espiritual da técnica e perde **`3 PA`** — mas só **no próximo turno dele** (respeitando o piso de `3 PA`).
 
@@ -132,5 +136,5 @@ Primeiros cinco redigidos em 27/07/2026, a partir de um brainstorm do Daniel com
 
 **Onmyōdō** já tem três: **Invocação de Shikigami**, **Encantamento de Selamento** e **Divinação de Direções e Datas** — ver a lista completa em [habilidades-do.md](habilidades-do.md#onmyōdō). Demais caminhos místicos, se ganharem feitiços próprios, entram aqui no mesmo formato.
 
-> ⚠️ A DEFINIR: os custos de `PA`/saúde/`exp.` de todos os feitiços acima (Onmyōdō e gerais) são 💡 proposta a validar no playtest (a regra de custo em si já está fechada). Ficou de fora por enquanto, a pedido do Daniel: a ideia de **Maldição de Inugami** (retirar aptidões do oponente) — introduziria uma categoria de efeito sem precedente no sistema (drenar o recurso de rerrolagem do adversário, não só `PA`) e ficou pra decidir com mais calma; e a **Arte da Ocultação/Tonkō-jutsu**, descartada por duplicar o que o [módulo Furtividade](../../../modulos/furtividade/README.md) já resolve.
+> ⚠️ A DEFINIR: os custos de `PA`/saúde/`exp.` de todos os feitiços acima (Onmyōdō e gerais) são 📝 proposta a validar no playtest (a regra de custo em si já está fechada). Ficou de fora por enquanto, a pedido do Daniel: a ideia de **Maldição de Inugami** (retirar aptidões do oponente) — introduziria uma categoria de efeito sem precedente no sistema (drenar o recurso de rerrolagem do adversário, não só `PA`) e ficou pra decidir com mais calma; e a **Arte da Ocultação/Tonkō-jutsu**, descartada por duplicar o que o [módulo Furtividade](../../../modulos/furtividade/README.md) já resolve.
 

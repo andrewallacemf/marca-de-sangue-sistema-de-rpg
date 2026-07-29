@@ -33,7 +33,7 @@ Cada vez que usa uma habilidade, o personagem paga:
 1. o **custo em `PA`** da habilidade (o mesmo das listas — não muda); **e**
 2. um **custo em fadiga** pelo esforço.
 
-> 💡 PROPOSTA (IA — a testar): **o custo de fadiga por uso é igual ao nível atual da
+> 📝 PROPOSTA (IA — a testar): **o custo de fadiga por uso é igual ao nível atual da
 > habilidade** (nível 1 = 1 de fadiga, nível 2 = 2, nível 3 = 3…). Assim, habilidades mais
 > fortes cansam mais e "quanto você aguenta usá-las" cai naturalmente conforme a fadiga
 > sobe. Alternativa considerada: custo fixo (ex.: 2 de fadiga por uso, independente do

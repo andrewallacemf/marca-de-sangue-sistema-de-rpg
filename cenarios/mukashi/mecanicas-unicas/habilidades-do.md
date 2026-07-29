@@ -24,7 +24,7 @@ Habilidades e traços **exclusivos** de um [dō](../arquetipos-do.md). Seguem o 
 
 | **Traço** | **Categoria** | **Custo de compra** |
 | --- | --- | --- |
-| Iaijutsu | Aspecto | `5 exp.` 💡 |
+| Iaijutsu | Aspecto | `5 exp.` 📝 |
 
 ### Resolução em Sete Sopros
 
@@ -80,7 +80,9 @@ Usada imediatamente após você abater um inimigo, o grito ecoa pelo campo: alia
 
 > *Saque e corte num só movimento — a lâmina resolve antes que o oponente perceba que havia uma luta.*
 
-**Categoria:** Aspecto · **Custo de compra:** `5 exp.` 💡 (proposta — a validar; comparável a outros aspectos fortes como Vigilante/Blindado/Protetor, `4 exp.` cada)
+**Categoria:** Aspecto · **Custo de compra:** `5 exp.`
+
+> 📝 Custo proposta — a validar; comparável a outros aspectos fortes como Vigilante/Blindado/Protetor, `4 exp.` cada.
 
 #### Descrição
 
@@ -99,25 +101,52 @@ Sacar uma arma que estava embainhada não custa `PA` (em vez dos `2 PA` normais 
 
 - Substitui o antigo dō avulso "Iaijutsu — Caminho do Corte Rápido": em vez de um caminho próprio, o saque-e-corte agora é este traço exclusivo do Bushidō (decisão de 27/07/2026).
 
+## Caminho da Corte
+
+### Resumo — traços de caminho
+
+| **Traço** | **Categoria** | **Custo de compra** |
+| --- | --- | --- |
+| Máscara Impassível | Aspecto | `5 exp.` 📝 |
+
+### Máscara Impassível (traço de caminho)
+
+> *No pátio imperial, o rosto nunca trai o que a mente pensa — a máscara de corte não racha nem diante do maior insulto.*
+
+**Categoria:** Aspecto · **Custo de compra:** `5 exp.`
+
+> 📝 Custo proposta — a validar; mesmo patamar do [Iaijutsu](#iaijutsu-traço-de-caminho), `5 exp.`.
+
+#### Descrição
+
+Ignora qualquer **Desvantagem** que esteja sofrendo por um efeito de intimidação, humilhação, provocação ou manipulação social — cobre, por exemplo, a Desvantagem de [Desorientar](../../../sistema-base/listas/habilidades-base-sociais.md#desorientar) ou de [Confundir inimigo](../../../sistema-base/listas/habilidades-base-mentais.md#confundir-inimigo) quando aplicada por um golpe de retórica, e qualquer efeito equivalente que o narrador conceda como Desvantagem de origem social.
+
+> 📝 Espelha a [Resolução em Sete Sopros](#resolução-em-sete-sopros) do Bushidō — mesma ideia (ignorar Desvantagem de um tipo específico de ataque), só que lá é uma **habilidade** (custa `PA`, uso limitado) cobrindo efeitos que perturbam a **mente**, e aqui é um **traço** (sem custo de `PA`, sempre ativo) cobrindo efeitos de **pressão social**. Cada caminho blinda o personagem daquilo que mais ameaça o seu papel.
+
+#### Requisitos de uso
+
+- Possuir ao menos **2 habilidades do caminho Caminho da Corte**.
+- Só cobre Desvantagem de origem social/retórica — não cobre Desvantagem de outras origens (terreno, postura de combate, efeitos físicos).
+
 ## Onmyōdō
 
 As três habilidades abaixo são **feitiços** no sentido de [magia.md](magia.md): usam o atributo `KI` e, além do custo de `PA`, cobram um **custo de saúde** — dano superficial que o conjurador sofre em si mesmo ao usá-las. São as primeiras habilidades mágicas redigidas para o Mukashi (a pendência "lista de habilidades mágicas" de `magia.md` passa a ter estas três como ponto de partida).
 
-> 💡 Todos os custos de `PA`, saúde e `exp.` abaixo são **proposta da IA** — o Daniel não deu números na descrição original, só os efeitos. A calibrar no playtest, como o resto da lista de habilidades.
+> 📝 Todos os custos de `PA`, saúde e `exp.` abaixo são **proposta da IA** — o Daniel não deu números na descrição original, só os efeitos. A calibrar no playtest, como o resto da lista de habilidades.
 
 ### Resumo — habilidades de caminho
 
 | **Habilidade** | **Atributo** | **Custo de `PA`** | **Custo de saúde** | **Custo de compra** |
 | --- | --- | --- | --- | --- |
-| Invocação de Shikigami | `KI` | `4 PA` | `2` (dano superficial) 💡 | `4 exp.` 💡 |
-| Encantamento de Selamento (Hifu) | `KI` | `4 PA` | `2` (dano superficial) 💡 | `3 exp.` 💡 |
-| Divinação de Direções e Datas (Hidori/Tenmon) | `KI` | — (fora de combate) | `1` (dano superficial) 💡 | `2 exp.` 💡 |
+| Invocação de Shikigami | `KI` | `4 PA` | `2` (dano superficial) 📝 | `4 exp.` 📝 |
+| Encantamento de Selamento (Hifu) | `KI` | `4 PA` | `2` (dano superficial) 📝 | `3 exp.` 📝 |
+| Divinação de Direções e Datas (Hidori/Tenmon) | `KI` | — (fora de combate) | `1` (dano superficial) 📝 | `2 exp.` 📝 |
 
 ### Invocação de Shikigami
 
 > *Um pedaço de papel dobrado, um sopro de KI — e o shikigami abre os olhos.*
 
-**Atributo:** `KI` · **Custo de PA:** `4 PA` · **Custo de saúde:** `2` (dano superficial) 💡 · **Custo de compra:** `4 exp.` 💡
+**Atributo:** `KI` · **Custo de PA:** `4 PA` · **Custo de saúde:** `2` (dano superficial) 📝 · **Custo de compra:** `4 exp.` 📝
 
 #### Descrição
 
@@ -140,7 +169,7 @@ O onmyōji anima um shikigami — um pequeno servo espiritual feito de papel dob
 
 > *Um ofuda colado na pele — e o que quer que se mova por dentro daquele corpo, para.*
 
-**Atributo:** `KI` · **Custo de PA:** `4 PA` · **Custo de saúde:** `2` (dano superficial) 💡 · **Custo de compra:** `3 exp.` 💡
+**Atributo:** `KI` · **Custo de PA:** `4 PA` · **Custo de saúde:** `2` (dano superficial) 📝 · **Custo de compra:** `3 exp.` 📝
 
 #### Descrição
 
@@ -161,7 +190,7 @@ O onmyōji cola um talismã de papel (*ofuda*) no alvo, selando parte de seus mo
 
 > *Antes da batalha, os astros já escolheram o vencedor — resta ao onmyōji lê-los.*
 
-**Atributo:** `KI` · **Custo de PA:** — (ritual fora de combate) · **Custo de saúde:** `1` (dano superficial) 💡 · **Custo de compra:** `2 exp.` 💡
+**Atributo:** `KI` · **Custo de PA:** — (ritual fora de combate) · **Custo de saúde:** `1` (dano superficial) 📝 · **Custo de compra:** `2 exp.` 📝
 
 #### Descrição
 

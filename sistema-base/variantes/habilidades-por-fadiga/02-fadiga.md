@@ -31,7 +31,7 @@ as penalidades foram recalibradas para um **limiar livre** seguido de perda grad
 
 ## Limiar e penalidades
 
-> 💡 PROPOSTA (IA — a testar):
+> 📝 PROPOSTA (IA — a testar):
 >
 > - **Limiar livre:** os **10 primeiros pontos** de fadiga **não** trazem penalidade.
 > - A partir daí, **a cada 5 pontos** de fadiga acumulada o personagem **perde 1 `PA`** por turno.

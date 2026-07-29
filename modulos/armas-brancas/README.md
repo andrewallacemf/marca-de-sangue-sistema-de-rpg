@@ -31,7 +31,7 @@ impacto, hastes, machados e foices. Faz parte da **coleção `armas`** (ver
 | Lança, Seta | **`Média`**<br>**`4 PA`** | **`LONG.`** **`PERF.` `ARRE.`** | **`2m`** | **`1d8`** | **`8 moedas`** | **`30`** |
 | Machadinha | **`Média`**<br>**`4 PA`** | **`CURT.`** **`CORT.` `ARRE.`** | **`1m`** / **`2m a 4m`** | **`1d12`** | **`6 moedas`** | **`30`** |
 | Tridente, Brandistock | **`Média`**<br>**`4 PA`** | **`LONG.`** **`PERF.` `VERS.`** | **`2m a 3m`** | **`1d8`** (+`1d4` a 2 mãos) | **`12 moedas`** | **`30`** |
-| Bastão médio, Martelo Médio | **`Média`**<br>**`4 PA`** | **`CURT.`** **`CONT.` `VERS.`** | **`1m`** | **`3d4`** (+`1d4` a 2 mãos) | **`8 moedas`** | **`30`** |
+| Bastão médio, Martelo Médio, Leque de Guerra | **`Média`**<br>**`4 PA`** | **`CURT.`** **`CONT.` `VERS.`** | **`1m`** | **`3d4`** (+`1d4` a 2 mãos) | **`8 moedas`** | **`30`** |
 | Bô (bastão longo) | **`Média`**<br>**`4 PA`** | **`LONG.`** **`CONT.` `VERS.`** | **`1m a 2m`** | **`3d4`** (+`1d4` a 2 mãos) | **`6 moedas`** | **`30`** |
 | Picareta de mão | **`Média`**<br>**`4 PA`** | **`CURT.`** **`PERF.` `VERS.`** | **`1m`** | **`1d8`** (+`1d4` a 2 mãos) | **`5 moedas`** | **`30`** |
 | Machado | **`Média`**<br>**`4 PA`** | **`CURT.`** **`CORT.` `VERS.` `ARRE.`** | **`1m`** / **`2m a 4m`** | **`1d12`** (+`1d4` a 2 mãos) | **`8 moedas`** | **`30`** |
@@ -49,6 +49,6 @@ impacto, hastes, machados e foices. Faz parte da **coleção `armas`** (ver
 
 *⚠️ A revisar: a **lança montada** (perfurante pesada) agora é `1d10` — conferir exceção como arma de carga. O grupo **"Mangual pesado… Esp. de duas lâminas"** tem nome contundente mas só lista `CORT.`/`PERF.` — alinhar as propriedades (se receber `CONT.`, ganha também `4d4`). ✅ Decidido em 27/07/2026: **Naginata/Nagamaki** (adicionadas para o cenário Mukashi) ficam só cortante/perfurante, sem opção contundente, independente do que for decidido para o resto do grupo.*
 
-*💡 Itens adicionados em 27/07/2026 para o cenário [Mukashi](../../cenarios/mukashi/arsenal.md) — preço sugerido a validar no playtest: **Wakizashi/Kodachi** (leve, com acuidade — peso mais leve que a família "Espada Curta" para diferenciar a lâmina companheira do samurai), **Bô** (média, com longo alcance — variante do "Bastão médio" para o bastão de ~2m usado com as duas mãos).*
+*📝 Itens adicionados em 27/07/2026 para o cenário [Mukashi](../../cenarios/mukashi/arsenal.md) — preço sugerido a validar no playtest: **Wakizashi/Kodachi** (leve, com acuidade — peso mais leve que a família "Espada Curta" para diferenciar a lâmina companheira do samurai), **Bô** (média, com longo alcance — variante do "Bastão médio" para o bastão de ~2m usado com as duas mãos). **Leque de Guerra** (*tessen*/*gunsen*) adicionado ao grupo "Bastão médio, Martelo Médio" — equipamento sugerido do [Caminho da Corte](../../cenarios/mukashi/arquetipos-do.md#caminho-da-corte--o-eminente-da-corte), sem linha própria por não ter peso/alcance diferente do bastão médio.*
 
 *🔧 Ajuste de 27/07/2026: o grupo **"Adaga, Kukri, Kunai"** ganhou a propriedade `ACUI.` — pedido pelo cenário [Mukashi](../../cenarios/mukashi/arquetipos-do.md) para o Tantō do caminho Shinobi-dō (arquétipo Ágil/Mental precisa de uma lâmina de acuidade para rerrolar ataques com Ágil), mas vale para qualquer cenário que use essas lâminas — faz sentido para adagas leves e precisas em geral.*

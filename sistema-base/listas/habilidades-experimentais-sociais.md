@@ -9,7 +9,7 @@ atualizado-em: 2026-07-12
 
 # `Experimental` Habilidades e traços sociais
 
-> 💡 Seção experimental — em teste.
+> 🧪 Seção experimental — em teste.
 
 Habilidades e traços voltados ao **conflito social** (malha de embate social, trilhas emocionais e campos da emoção). Como o embate social se resolve por testes de atributo **Social** ou **Mental**, esta lista reúne entradas dos dois atributos. Parte da "Lista de habilidades base" do manual base — ver o [índice de habilidades base](habilidades-base.md).
 

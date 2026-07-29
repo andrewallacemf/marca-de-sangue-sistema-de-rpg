@@ -28,12 +28,27 @@ SECOES = [
     ("cenarios", "Cenários"),
 ]
 
+RE_PUBLICO_FALSE = re.compile(r"^publico:\s*false\s*$", re.MULTILINE)
+
+
+def eh_bastidor(texto_bruto: str) -> bool:
+    """Página inteira marcada `publico: false` no frontmatter — fica de fora do
+    manual público (continua existindo e editável no repo, só não é publicada).
+    Convenção documentada em CONVENCOES.md."""
+    m = re.match(r"^\s*---\r?\n(.*?)\r?\n---\r?\n", texto_bruto, flags=re.DOTALL)
+    if not m:
+        return False
+    return bool(RE_PUBLICO_FALSE.search(m.group(1)))
+
+
 def incluir(p: Path) -> bool:
     if p.suffix != ".md":
         return False
     if any(part.startswith("_") for part in p.parts):   # _template-*, etc.
         return False
     if "variantes" in p.parts:      # experimental — fora do manual (como no PDF)
+        return False
+    if eh_bastidor(p.read_text(encoding="utf-8-sig")):
         return False
     return True
 

@@ -11,7 +11,10 @@ atualizado-em: 2026-07-27
 
 Os **dō** são os arquétipos do Mukashi. Cada um **dá nome e flavor** a um [arquétipo genérico](../../sistema-base/arquetipos/01-arquetipos-genericos.md) do núcleo (ou é próprio do mundo) e, opcionalmente, ajusta o atributo secundário para **[KI](mecanicas-unicas/ki.md)** quando há mística. Seguem a [estrutura de arquétipo](../../sistema-base/arquetipos/00-como-funcionam.md) (primário/secundário, sugestões, e **habilidades de caminho** com pré-requisito de ≥ 2 habilidades do caminho). Alguns dō também têm **traços de caminho** — o mesmo espírito das habilidades de caminho, mas aplicado a um traço (aspecto/técnica/maestria) em vez de uma habilidade; ver a lista completa em [habilidades-do.md](mecanicas-unicas/habilidades-do.md).
 
-> 🧭 **Esqueleto para o Daniel completar.** Abaixo estão os dō mapeados para os genéricos, como ponto de partida. **Bushidō, Shinobi-dō, Yamabushi, Kyūdō e Onmyōdō já estão completos**; falta só o **Caminho da Corte** — segue como esqueleto até a curadoria fina (sugestões definitivas, habilidades de caminho próprias e descrição de mundo).
+> 🧭 **Todos os 6 dō estão completos** (Bushidō, Shinobi-dō, Yamabushi, Kyūdō, Onmyōdō e Caminho
+> da Corte) — cada um com descrição de mundo, sugestões e, onde fizer sentido, habilidades/traços
+> de caminho próprios. Falta só a curadoria fina de quais são mais centrais para a campanha de
+> 1º/ago, e o resto do conteúdo listado em `PENDENCIAS.md` (bestiário, clãs, itens, etc.).
 
 ## Dō mapeados aos genéricos
 
@@ -22,7 +25,7 @@ Os **dō** são os arquétipos do Mukashi. Cada um **dá nome e flavor** a um [a
 | **Shinobi-dō** — Caminho da Sombra | Assassino | Shinobi; kunai/shuriken; usa [furtividade](../../modulos/furtividade/README.md). |
 | **Kyūdō** — Caminho do Arco | Atirador | Arqueiro yumi; foco e precisão. |
 | **Onmyōdō** — Caminho do Yin-Yang | Estrategista, secundário **KI** | Onmyōji; adivinhação, selamento de espíritos, [magia](mecanicas-unicas/magia.md). |
-| **Caminho da Corte** | Líder | Diplomata/cortesão; honra e intriga; usa [conflito social](../../modulos/conflito-social/README.md). |
+| **Caminho da Corte** — O Eminente da Corte | Líder | Cortesão/kugyō; poder suave, protocolo e arbitragem; usa [conflito social](../../modulos/conflito-social/README.md). |
 | **Yamabushi (Shugenja)** — Caminho da Montanha | Sem genérico único — ver bloco próprio | Asceta místico; bō, naginata, hora (búzio); associado aos tengu. |
 
 ## Bushidō — Caminho do Guerreiro
@@ -55,7 +58,7 @@ Os **dō** são os arquétipos do Mukashi. Cada um **dá nome e flavor** a um [a
 - **Maestrias:** armas cortantes — bate com o [Tantō](arsenal.md) (leve, `CORT.`/`PERF.`, agora também com `ACUI.`, ajustado nesta sessão para o build Ágil do caminho).
 - **Técnicas:** [Esconder-se](../../sistema-base/listas/tracos-base.md), [Realizar truques](../../sistema-base/listas/tracos-base.md) — a ação "Realizar truques" ainda não tem regra detalhada no sistema-base (fica a critério do narrador até ser escrita).
 - **Aspectos:** [Emboscador](../../sistema-base/listas/tracos-base.md#emboscador), [Espreitador](../../sistema-base/listas/tracos-base.md#espreitador) •, [Escorregadio](../../sistema-base/listas/tracos-base.md#escorregadio).
-- **Habilidades:** [Golpe surpresa](../../sistema-base/listas/habilidades-base-ageis.md#golpe-surpresa), [Ocultar-se à vista](../../sistema-base/listas/habilidades-base-ageis.md#ocultar-se-à-vista) *(ainda 💡 proposta a validar na mesa — ver `PENDENCIAS.md`)*.
+- **Habilidades:** [Golpe surpresa](../../sistema-base/listas/habilidades-base-ageis.md#golpe-surpresa), [Ocultar-se à vista](../../sistema-base/listas/habilidades-base-ageis.md#ocultar-se-à-vista).
 - **Equipamentos:** armas curtas ocultas — [Tantō/yoroidōshi](arsenal.md) — e ferramentas de escalada: `Corda (10m)` e `Gancho` ([itens-base.md](../../sistema-base/listas/itens-base.md)), o par que faz as vezes do *kaginawa* do folclore shinobi.
 - **Módulos:** usa o [módulo Furtividade](../../modulos/furtividade/README.md) (satisfaz a dependência • do aspecto Espreitador).
 
@@ -109,7 +112,43 @@ Os **dō** são os arquétipos do Mukashi. Cada um **dá nome e flavor** a um [a
 
 **Habilidades de caminho (≥ 2 do caminho):** [Invocação de Shikigami](mecanicas-unicas/habilidades-do.md#invocação-de-shikigami) (`KI`, cria um servo espiritual mensageiro/observador — ⚠️ combate depende do pacote de Minion, ainda em aberto), [Encantamento de Selamento](mecanicas-unicas/habilidades-do.md#encantamento-de-selamento-hifu) (`KI`, ofuda que aplica Desvantagem física/ágil no alvo) e [Divinação de Direções e Datas](mecanicas-unicas/habilidades-do.md#divinação-de-direções-e-datas-hidoritenmon) (`KI`, ritual fora de combate que dá aptidão extra a aliados antes de um conflito). As três são **feitiços** — além do `PA`, cobram custo de saúde do conjurador, seguindo a [regra de custo da magia](mecanicas-unicas/magia.md#custo-pontos-de-saúde).
 
-> 💡 Chamei as três de "habilidades de caminho" (exclusivas do Onmyōdō, ≥ 2 habilidades do caminho como pré-requisito) em vez de habilidades soltas — é a leitura que casa com o que `magia.md` já previa ("como habilidades de caminho de um dō místico"). Se o Daniel preferir deixá-las abertas a qualquer personagem com `KI`, é só tirar o pré-requisito.
+<!-- bastidor:inicio -->
+> 📝 Nota de curadoria: chamei as três de "habilidades de caminho" (exclusivas do Onmyōdō, ≥ 2 habilidades do caminho como pré-requisito) em vez de habilidades soltas — é a leitura que casa com o que `magia.md` já previa ("como habilidades de caminho de um dō místico"). Se o Daniel preferir deixá-las abertas a qualquer personagem com `KI`, é só tirar o pré-requisito.
+<!-- bastidor:fim -->
+
+## Caminho da Corte — O Eminente da Corte
+
+**Base:** Líder · **Primário:** Social · **Secundário:** Mental
+
+**Descrição:** o cortesão da corte de Myoko — o *kugyō* — não vence pela força, mas pelo protocolo: numa corte onde a forma e o cerimonial são indistinguíveis da substância política, sua relevância vem do poder suave, da legitimidade ancestral e da maestria cultural. Domina a poesia *waka*, a caligrafia (um reflexo do próprio caráter) e os precedentes históricos (*senrei*) — sabe exatamente como se portar, o que vestir e como falar em cada assembleia. É também o árbitro informal do império: resolve disputas de terra, medeia entre o alto clero e os guerreiros, e sabe o valor exato de cada presente — ou suborno — para cada ocasião. Muitos ainda estudam o *Onmyōdō* como parte da educação esperada de um cortesão (astronomia, calendários, datas auspiciosas), sem chegar a praticá-lo como os onmyōji de ofício.
+
+**Sugestões**
+
+- **Técnicas:** [Negociar](../../sistema-base/listas/tracos-base.md) (`Social` ou `Mental`), [Persuadir/Seduzir](../../sistema-base/listas/tracos-base.md) (`Social`), [Ponderar](../../sistema-base/listas/tracos-base.md) (`Mental`) e [Performar](../../sistema-base/listas/tracos-base.md) (`Social`, para as artes rituais e poéticas) — quatro técnicas em vez das duas de costume, porque o cortesão é definido por ser versátil em registros sociais diferentes (negociar, encantar, ponderar, performar).
+- **Aspectos:** [Apoiador](../../sistema-base/listas/tracos-base.md#apoiador) — usa as próprias aptidões para ajudar um aliado adjacente, o conselho estratégico do cortesão em ação.
+- **Habilidades sociais:** [Comandar](../../sistema-base/listas/habilidades-base-sociais.md#comandar) (transfere `PA` a um aliado), [Desorientar](../../sistema-base/listas/habilidades-base-sociais.md#desorientar) (um oponente perde até `10 PA` no próximo turno dele, no nível 5), [Revigorar](../../sistema-base/listas/habilidades-base-sociais.md#revigorar) (reativa uma habilidade de um aliado) e [Animar](../../sistema-base/listas/habilidades-base-sociais.md#animar) (recupera aptidões de um aliado adjacente).
+- **Habilidades mentais:** [Analisar fraquezas](../../sistema-base/listas/habilidades-base-mentais.md#analisar-fraquezas) (vê o dano do oponente em até 6 partes do corpo, no nível 6), [Confundir inimigo](../../sistema-base/listas/habilidades-base-mentais.md#confundir-inimigo) (Desvantagem em até 4 oponentes simultâneos, no nível 4) e [Intimidação generalizada](../../sistema-base/listas/habilidades-base-mentais.md#intimidação-generalizada) (atrasa a iniciativa de até 4 oponentes, no nível 4).
+- **Equipamentos:** tomo/pergaminhos e kit de caligrafia (itens interpretativos, sem equivalente no catálogo — mesmo tratamento do búzio do Yamabushi); roupas de seda como reforço de autoridade social (flavor de vestuário, não é uma peça de armadura); e um **Leque de Guerra** (*tessen*/*gunsen*) — aponta para a linha ["Bastão médio, Martelo Médio"](../../modulos/armas-brancas/README.md) (média, versátil), com o nome do leque adicionado 📝.
+- **Módulos:** usa o [módulo Conflito social](../../modulos/conflito-social/README.md) — as ações **Argumentar** e **Incentivar** são as ferramentas do cortesão na Malha de Embate Social.
+
+**Traços de caminho (≥ 2 do caminho):** [Máscara Impassível](mecanicas-unicas/habilidades-do.md#máscara-impassível-traço-de-caminho)
+(Aspecto, ignora Desvantagem de efeitos de intimidação, humilhação ou manipulação social — espelha
+a Resolução em Sete Sopros do Bushidō, só que para pressão social em vez de mental).
+
+<!-- bastidor:inicio -->
+> 📝 Nota de curadoria — duas correções em relação à proposta original: (1) "Desorientar" afeta
+> **um oponente por vez** (não vários simultâneos — quem afeta vários é a Confundir inimigo e a
+> Intimidação generalizada, ambas já incluídas acima); (2) não existe hoje uma regra de "`PA`
+> social imune a redutor de armadura" — `PA` é um recurso único, sem distinção por tipo de teste.
+> Na prática isso raramente pesa contra o cortesão, já que o build sugerido usa roupas, não
+> armadura pesada.
+
+> 📝 Nota de curadoria — a ideia de "ignorar a limitação de `exp.`" da proposta original virou,
+> aqui, uma lista ampla de sugestões (4 técnicas + 7 habilidades) em vez de uma mecânica nova — o
+> cortesão ainda compra tudo com `exp.` e progride nível a nível como qualquer personagem; a
+> lista só é mais generosa porque o conceito pede versatilidade. Avisa se a intenção era outra
+> (ex.: um desconto de `exp.` específico do caminho).
+<!-- bastidor:fim -->
 
 ## Modelo para completar cada dō
 
@@ -121,5 +160,6 @@ Sugestões — Maestrias: … · Técnicas: … · Aspectos: … · Habilidades:
 Habilidades de caminho (≥ 2 do caminho): <se houver>
 ```
 
-> ⚠️ A DEFINIR (Daniel): completar as sugestões e habilidades de caminho do **Caminho da Corte** (o único dō que ainda falta) e decidir quais dō são mais centrais para a campanha de 1º/ago.
+> ⚠️ A DEFINIR (Daniel): decidir quais dō são mais centrais para a campanha de 1º/ago; validar os
+> custos 📝 propostos nos traços/habilidades de caminho no playtest.
 

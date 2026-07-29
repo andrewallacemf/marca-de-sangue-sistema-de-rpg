@@ -34,4 +34,4 @@ Catálogo das **armas de pólvora** e sua munição. Faz parte da **coleção `a
 | --- | --- | --- | --- |
 | Bala de pólvora | **`PROJ.`** | **`1d12`** | **`20 moedas`** |
 
-*Teppō (arcabuz de mecha, cenário [Mukashi](../../cenarios/mukashi/arsenal.md)) adicionado em 27/07/2026 na linha de arma média. ✅ Decidido em 27/07/2026: o alcance histórico do tanegashima era maior, mas fica nivelado às demais armas de pólvora médias do jogo (1m a 5m) por equilíbrio — não move para a linha pesada do rifle.*
+*Teppō (arcabuz de mecha, cenário [Mukashi](../../cenarios/mukashi/arsenal.md)) entra na linha de arma média, com alcance 1m a 5m — nivelado às demais armas de pólvora médias do jogo, não na linha pesada do rifle.*

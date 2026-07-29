@@ -17,16 +17,19 @@ Um **Japão feudal mitológico** no arquipélago de **Yamato**: samurais leais a
 
 Do período Heian ao século XV; sincretismo xintoísta-budista; honra × dever × desejo; intriga entre clãs; o preço de invocar forças que não se controla. Referências: *jidaigeki*, mito e folclore japonês.
 
-## O que este cenário adiciona ao sistema-base
+## Mecânicas próprias de Mukashi
 
-- **Quinto atributo KI** — aptidão para manipular o sobrenatural (ver [mecanicas-unicas/ki.md](mecanicas-unicas/ki.md)).
-- **Magia** com roupagem de KI, construída sobre habilidades (ver [mecanicas-unicas/magia.md](mecanicas-unicas/magia.md)).
-- **Dō (caminhos)** temáticos — reskin dos [arquétipos genéricos](../../sistema-base/arquetipos/01-arquetipos-genericos.md) + próprios (ver [arquetipos-do.md](arquetipos-do.md)).
-- **Raças** de Yamato — Humanos, **Tanuki** e **Oni** já com efeito de raça; Daitengu e Kitsune em aberto (ver [criaturas/raças jogáveis](criaturas/racas-jogaveis.md)).
+- **KI** — o quinto atributo, a aptidão para manipular o sobrenatural (ver [KI](mecanicas-unicas/ki.md)).
+- **Magia** — feitiços com roupagem de KI, construídos sobre habilidades comuns (ver [Magia](mecanicas-unicas/magia.md)).
+- **Dō (caminhos)** — os arquétipos de personagem do cenário, de Bushidō a Onmyōdō (ver [Os caminhos](arquetipos-do.md)).
+- **Raças de Yamato** — Humanos, **Tanuki** e **Oni** já jogáveis; Daitengu e Kitsune em aberto (ver [Raças jogáveis](criaturas/racas-jogaveis.md)).
+- Personagens podem usar furtividade (infiltração, emboscada) e a intriga da corte (conflito social) como parte central do jogo, e têm à disposição um arsenal próprio de armas japonesas (ver [Arsenal](arsenal.md)).
 
-## O que muda em relação ao base
+<!-- bastidor:inicio -->
+## O que muda em relação ao base (nota de curadoria)
 
 - Usa os módulos [furtividade](../../modulos/furtividade/README.md) e [conflito-social](../../modulos/conflito-social/README.md), e as armas japonesas saem das famílias da coleção `armas` (ver [arsenal.md](arsenal.md)) — o cenário só **aponta** onde estão.
+<!-- bastidor:fim -->
 
 ## O mundo (lore)
 

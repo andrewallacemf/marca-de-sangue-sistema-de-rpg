@@ -187,7 +187,7 @@ Uma condição pode gerar **dois tipos de efeito, que podem coexistir** na mesma
 
 Situações comuns que costumam gerar esses modificadores:
 
-> 💡 PROPOSTA (IA) — lista inicial de exemplos, revisar:
+> 📝 PROPOSTA (IA) — lista inicial de exemplos, revisar:
 
 - Terreno difícil ou instável;
 - Escuridão ou visibilidade reduzida;
