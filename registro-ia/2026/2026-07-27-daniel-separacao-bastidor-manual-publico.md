@@ -30,6 +30,7 @@ arquivos-alterados:
   - sistema-base/variantes/habilidades-por-fadiga/01-habilidades.md
   - sistema-base/variantes/habilidades-por-fadiga/02-fadiga.md
   - sistema-base/variantes/habilidades-por-fadiga/README.md
+  - manual/gerar-conteudo.py
 ---
 
 # Sessão: separação bastidor × manual público
@@ -206,6 +207,37 @@ habilidades-do.md linha "Mais forte que Mão rápida", magia.md linha "Diferenç
 relação a Atordoar") continuam visíveis no site — são dica/explicação de regra, não bastidor.
 Rodei `contrato/exportar_catalogo.py` de novo: só os 8 avisos pré-existentes de sempre (maestrias
 de armadura sem efeito, inimigos dos cenários 3/4 sem tier de queda) — nenhum novo.
+
+## Parte 3 — ocultando "A Caça dos Yokais" (mesmo dia, continuação)
+
+O Daniel pediu: **"Também deixe oculto do site os arquivos de 'A Caça dos Yokais'."** É a pasta
+`cenarios/mukashi/Cenário-Yokai-Taiji/` — memória de mesa da campanha dele (fichas de PJ/NPC com
+segredos de mestre, sessões jogadas, material bruto) — o próprio `README.md` da pasta já diz que
+não é lore oficial nem conteúdo do sistema. Como fica dentro de `cenarios/mukashi/` só por
+proximidade temática, e os arquivos não têm frontmatter (não seguem `CONVENCOES.md`), o mecanismo
+`publico: false` por página não se aplicava — e conferindo o `manual/conteudo/` gerado, a pasta
+inteira (~33 arquivos: fichas de PJ, NPCs, sessões, segredos de mestre) **estava vazando pro site
+publicado**.
+
+Corrigido com uma exclusão por pasta em `manual/gerar-conteudo.py` — criei o conjunto
+`PASTAS_DE_MESA` (hoje só com `"Cenário-Yokai-Taiji"`) e um novo checo em `incluir()`: qualquer
+caminho com uma dessas pastas no meio fica de fora do manual, sem precisar tocar frontmatter em
+cada um dos ~33 arquivos (e sem precisar lembrar de repetir isso para cada sessão nova que o
+Daniel adicionar lá — a pasta inteira já sai por padrão). Reaproveita o mesmo padrão que já existia
+para excluir `variantes/`.
+
+**Verificação:** rodei o gerador de novo — o `sidebar.json` (navegação do site) não tem mais
+nenhuma entrada de Yokai-Taiji, e nenhum arquivo do sistema (fora da pasta) linka pra dentro dela,
+então não sobra link quebrado. Conferi o `verifica_limpeza` no resto do conteúdo gerado: segue só
+o mesmo 1 falso positivo de sempre (`modulos/index.md`).
+
+*Nota técnica: o ambiente onde rodei isso não conseguiu apagar os arquivos antigos já gerados
+dentro de `manual/conteudo/Cenário-Yokai-Taiji/` de uma rodada anterior (erro de permissão do
+sistema de arquivos, o mesmo tipo de trava que já vi antes com o `.git/index.lock`) — então essas
+cópias órfãs ainda aparecem se você olhar a pasta local. Isso é só uma sobra da minha máquina de
+trabalho, sem efeito real: `manual/conteudo/` está no `.gitignore` (nunca foi commitado) e o site
+de verdade é gerado do zero a cada deploy no GitHub Actions, que não tem esses arquivos velhos
+para começo de conversa.*
 
 ## Pendências criadas — atualização
 

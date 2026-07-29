@@ -41,12 +41,20 @@ def eh_bastidor(texto_bruto: str) -> bool:
     return bool(RE_PUBLICO_FALSE.search(m.group(1)))
 
 
+PASTAS_DE_MESA = {
+    "Cenário-Yokai-Taiji",  # memória de mesa da campanha do Daniel (A Caça dos Yokais) —
+                             # não é lore oficial nem conteúdo do sistema, ver seu README.md
+}
+
+
 def incluir(p: Path) -> bool:
     if p.suffix != ".md":
         return False
     if any(part.startswith("_") for part in p.parts):   # _template-*, etc.
         return False
     if "variantes" in p.parts:      # experimental — fora do manual (como no PDF)
+        return False
+    if any(part in PASTAS_DE_MESA for part in p.parts):  # memória de mesa, não conteúdo do sistema
         return False
     if eh_bastidor(p.read_text(encoding="utf-8-sig")):
         return False
