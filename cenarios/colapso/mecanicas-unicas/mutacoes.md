@@ -4,7 +4,7 @@ tipo: regra
 cenario: colapso
 status: rascunho
 tags: [colapso, mutacoes, radiacao, mecanica-unica]
-atualizado-em: 2026-07-24
+atualizado-em: 2026-07-29
 ---
 
 # Mutações
@@ -37,6 +37,14 @@ onde). Mutações adquiridas contam no total de 5.
 Onde há benefício e revés, a notação é "benefício; **contra:** revés". Entradas "👆/👇" repetem a
 mutação vizinha (quirk do sorteio original).
 
+> ✅ **Decidido em 29/07/2026 (Bianca):** nenhuma Cromática impõe `desvantagem` em um **teste de
+> atributo inteiro** — isso é peso de Púrpura, não de Cromática. Onde o revés atingia o atributo
+> todo (Teste Mental, Teste Ágil…), ele virou "**após rolar um Teste [Atributo], considere o valor
+> rolado −1**". `Vantagem` e `desvantagem` **continuam valendo** nas Cromáticas quando o efeito é
+> **estreito**: uma perícia ou uso específico (em geral com vantagem de um lado e desvantagem de
+> outro) ou uma **trilha do conflito social** — nesses casos a `desvantagem` pode inclusive vir
+> sozinha, sem ponto positivo.
+
 | # | Mutação | Custo de compra |
 |---|---------|-----------------|
 | 1 | Reação em cadeia (sorteia 1 mutação Púrpura) | não comprável |
@@ -61,13 +69,13 @@ mutação vizinha (quirk do sorteio original).
 | 20 | Bafo de onça (mau hálito forte e constante) | — |
 | 21 | Duas vozes (faz duas vozes ao mesmo tempo; a segunda não articula palavras) | — |
 | 22 | Adquire a mutação acima 👆 | — |
-| 23 | Adquire a mutação abaixo 👇 | — |
+| 23 | Marcha lenta (o corpo demora a engatar; após rolar um Teste durante uma reação, considere o valor rolado −1) | — |
 | 24 | Tomada (emite eletricidade para pequenos dispositivos; **contra:** come o dobro) | — |
 | 25 | Pele frágil (ao acordar, 1 superficial em membro aleatório) | — |
 | 26 | Olho de vidro (fica cego de um olho) | — |
 | 27 | Ranho (nariz entupido e escorrendo o tempo todo) | — |
 | 28 | Cálcio fosfórico (dentes/unhas brilham no escuro após luz; estiloso, inútil) | — |
-| 29 | Bússola (sempre sabe o norte; **contra:** ondas eletromagnéticas dão desvantagem em testes mentais) | — |
+| 29 | Bússola (sempre sabe o norte; **contra:** sob ondas eletromagnéticas, após rolar um Teste Mental, considere o valor rolado −1) | — |
 | 30 | Adquire a mutação acima 👆 | — |
 | 31 | Adquire a mutação abaixo 👇 | — |
 | 32 | Surto de adrenalina (ao levar 5+ de dano num turno: +3 PA no próximo turno; **contra:** +5 fadiga ao fim dele) | — |
@@ -80,19 +88,19 @@ mutação vizinha (quirk do sorteio original).
 | 39 | Wingsuit (plana ao saltar de altura; **contra:** +1 de dano no tronco) | — |
 | 40 | Constructo (a mão se funde ao que está carregando) | — |
 | 41 | Sangue ralo (toda cura recupera +1 superficial; **contra:** todo dano dá +1 superficial) | — |
-| 42 | Terceiro braço (membros p/ desmaiar viram 3; usar exige Teste Mental com desvantagem) | não comprável |
-| 43 | Terceira perna (membros p/ desmaiar viram 3; correr/saltar exige Teste Ágil com desvantagem) | não comprável |
+| 42 | Terceiro braço (membros p/ desmaiar viram 3; usar exige Teste Mental — após rolá-lo, considere o valor rolado −1) | não comprável |
+| 43 | Terceira perna (membros p/ desmaiar viram 3; correr/saltar exige Teste Ágil — após rolá-lo, considere o valor rolado −1) | não comprável |
 | 44 | Segunda cabeça (não desmaia/morre com uma cabeça perdida; **contra:** −2 PA permanentes) | não comprável |
 | 45 | Gêmeo parasita (não desmaia/morre com um tronco perdido; **contra:** desvantagem ao defender o tronco) | não comprável |
 | 46 | Estômago de aço (come carne mutante sem risco; **contra:** comida comum dá 1 superficial no tronco) | — |
 | 47 | Domador (vantagem para lidar com animais mutantes) | — |
-| 48 | Pele espelhada (desvantagem a quem ataca de perto; **contra:** desvantagem a quem ataca de longe) | 1 dano perm. no tronco |
+| 48 | Pele espelhada (desvantagem a quem ataca de perto; **contra:** desvantagem a quem ataca de longe ⚠️ ver nota abaixo) | 1 dano perm. no tronco |
 | 49 | Boneca de porcelana (vantagem contra cortante; desvantagem contra contundente) | 1 dano perm. no tronco |
 | 50 | Pele de seda (vantagem contra perfurante; desvantagem contra cortante) | 1 dano perm. no tronco |
 | 51 | Saco de pancada (vantagem contra contundente; desvantagem contra perfurante) | 1 dano perm. no tronco |
 | 52 | Lixo tóxico (golpe desarmado dá +1 dano radioativo; **contra:** +1 na dificuldade de resistir à radiação) | 1 dano perm. num braço |
 | 53 | Metabolismo lento (come menos; **contra:** cura passiva de superficial pela metade) | — |
-| 54 | Cola viva (vantagem para segurar/agarrar; **contra:** desvantagem em testes ágeis) | — |
+| 54 | Cola viva (vantagem para segurar/agarrar; **contra:** após rolar um Teste Ágil, considere o valor rolado −1) | — |
 | 55 | Calvície (perde todos os pelos) | — |
 | 56 | Silicone (seios crescem, independentemente do sexo) | — |
 | 57 | Sussurro psíquico (telepatia curta a até 5 m com mutantes; **contra:** 1 superficial na cabeça por uso) | 1 dano perm. na cabeça |
@@ -114,7 +122,7 @@ mutação vizinha (quirk do sorteio original).
 | 73 | Fotossíntese (vive de água e luz solar; **contra:** dobro de dano de fogo) | — |
 | 74 | Adquire a mutação acima 👆 | — |
 | 75 | Adquire a mutação abaixo 👇 | — |
-| 76 | Troca de pele (todo dano superficial −1; **contra:** desvantagem em testes ágeis) | — |
+| 76 | Troca de pele (todo dano superficial −1; **contra:** após rolar um Teste Ágil, considere o valor rolado −1) | — |
 | 77 | Pálpebra dupla (abre os olhos sob a água ou na tempestade de areia) | — |
 | 78 | Adquire a mutação acima 👆 | — |
 | 79 | Adquire a mutação abaixo 👇 | — |
@@ -148,14 +156,21 @@ Só revezes severos.
 |---|---------|
 | 1 | Câncer (5 de dano permanente em membro aleatório) |
 | 2 | Leucemia (dano superficial não se cura com o tempo, só com tratamento) |
-| 3 | Aberração (aparência que afasta; gasta o dobro de exp. para habilidade/aspecto **Social**) |
-| 4 | Ossos de vidro (gasta o dobro de exp. para habilidade/aspecto **Físico**) |
-| 5 | Corpo de lesma (movimentos lentos; gasta o dobro de exp. para habilidade/aspecto **Ágil**) |
-| 6 | Cabeça oca (gasta o dobro de exp. para habilidade/aspecto **Mental**) |
+| 3 | Aberração (aparência que afasta; gasta o dobro de exp. para habilidade/aspecto **Social** e realiza todo Teste Social com desvantagem) |
+| 4 | Ossos de vidro (gasta o dobro de exp. para habilidade/aspecto **Físico** e realiza todo Teste Físico com desvantagem) |
+| 5 | Corpo de lesma (movimentos lentos; gasta o dobro de exp. para habilidade/aspecto **Ágil** e realiza todo Teste Ágil com desvantagem) |
+| 6 | Cabeça oca (gasta o dobro de exp. para habilidade/aspecto **Mental** e realiza todo Teste Mental com desvantagem) |
 | 7 | Anemia (1 de dano permanente em **cada** membro) |
 | 8 | Sangue de barata (não toma mais dano de radiação; **em troca:** toma o dobro de dano normal) |
-| 9–12 | *(em branco no material original)* |
+| 9 | Amnésia (a radiação degenera o cérebro e você perde memórias; perca características, aptidões, maestrias e `PA`s, à sua escolha, que equivalham a **no mínimo 20 pontos de experiência** de qualquer tipo) |
+| 10 | Torpor (os reflexos morrem; realiza todos os testes de **[Reação](../../../sistema-base/conflitos/02-acoes-em-conflito.md#reação)** com desvantagem) |
+| 11–12 | *(em branco no material original)* |
 
-> ⚠️ A DEFINIR (Gabriel): completar Púrpuras 9–12; decidir como a mutação entra na
+> ⚠️ A DEFINIR (Gabriel): completar Púrpuras 11–12; decidir como a mutação entra na
 > [ficha](../../../ficha/README.md) (traço automático) e revisar as mutações "não comprável" que
 > alteram contagem de membros para desmaio.
+
+> ⚠️ A DEFINIR (Gabriel): **#48 Pele espelhada — o revés não é revés.** O texto penaliza o
+> atacante nos **dois** lados ("desvantagem a quem ataca de perto; **contra:** desvantagem a quem
+> ataca de longe"), então a mutação é benefício puro e o revés **continua indefinido**. Sugestão a
+> validar: quem ataca de longe teria **vantagem** (a pele reflete a luz e denuncia a posição).
