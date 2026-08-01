@@ -26,7 +26,8 @@ arquétipos e listas próprias de habilidades, traços e equipamentos.
 | Coleção [`armas`](../../modulos/colecoes.md) ([`armas-brancas`](../../modulos/armas-brancas/README.md), [`armas-exoticas`](../../modulos/armas-exoticas/README.md)) + improvisadas | Sucata e armas de rua (ver [arsenal](arsenal.md)). |
 | [`protecoes`](../../modulos/protecoes/README.md) | Coletes/sucata como flavor de armadura por tipo. |
 | [`furtividade`](../../modulos/furtividade/README.md) | Emboscadas e incursões (ex.: o [cenário-teste do vale](../../playtest/cenarios/06-colapso-vale-dos-atiradores.md)). |
-| **`veiculos`** e **`mutacoes`** | Por ora vivem em [`mecanicas-unicas/`](mecanicas-unicas/) (só o Colapso usa). **Candidatos a módulo** quando um segundo cenário precisar — regra "promova quando repetir" (Fase 2 da importação). |
+| [`veiculos`](../../modulos/veiculos/README.md) | **Extraído daqui em 01/08/2026.** O conflito veicular inteiro (ficha, malha de 10 m, ações, colisão, condições, equipamentos, habilidades e traços) virou módulo; a **sucata** ficou no cenário como insumo próprio — ver [veículos no Colapso](mecanicas-unicas/veiculos.md) e [sucata](mecanicas-unicas/sucata.md). |
+| **`mutacoes`** | Por ora vive em [`mecanicas-unicas/`](mecanicas-unicas/) (só o Colapso usa). **Candidato a módulo** quando um segundo cenário precisar — regra "promova quando repetir". |
 
 ## Estrutura
 
@@ -35,8 +36,8 @@ arquétipos e listas próprias de habilidades, traços e equipamentos.
 | [`00-visao-geral.md`](00-visao-geral.md) | Pitch, tom, o que adiciona/muda no base. |
 | [`arquetipos.md`](arquetipos.md) | Papéis do ermo + arquétipos de veículo (Piloto, Mecânico copiloto, Combatente, Invasor). |
 | [`arsenal.md`](arsenal.md) | Onde estão as armas do Colapso (fogo, sucata, improvisadas, montadas). |
-| [`mecanicas-unicas/veiculos.md`](mecanicas-unicas/veiculos.md) | Conflito de veículos (ações, colisão, condições, integridade, Aptidão Veicular, exp. de veículo). |
-| [`mecanicas-unicas/equipamentos-de-veiculo.md`](mecanicas-unicas/equipamentos-de-veiculo.md) | Catálogo de equipamentos ativos/passivos + fabricação. |
+| [`mecanicas-unicas/veiculos.md`](mecanicas-unicas/veiculos.md) | O que o Colapso muda no [módulo `veiculos`](../../modulos/veiculos/README.md) (a mecânica em si mora lá). |
+| [`mecanicas-unicas/sucata.md`](mecanicas-unicas/sucata.md) | A sucata: 3 tipos, Procurar sucata, conversão e o que cada reparo custa. |
 | [`mecanicas-unicas/radiacao.md`](mecanicas-unicas/radiacao.md) | Radiação, radiômetro, condições de ambiente e abrigo. |
 | [`mecanicas-unicas/mutacoes.md`](mecanicas-unicas/mutacoes.md) | Mutações Cromáticas (1d100) e Púrpuras (1d12). |
 | [`mecanicas-unicas/armas-de-fogo.md`](mecanicas-unicas/armas-de-fogo.md) | Confiabilidade das armas de fogo (5 níveis, tiro pela culatra). |
@@ -47,8 +48,9 @@ arquétipos e listas próprias de habilidades, traços e equipamentos.
 
 **Importado do Notion (24/07/2026), adaptado às regras atuais:** lore (o Colapso, clima e
 radiação, 13 comunidades, ~23 facções), 10 regiões em [locais](locais/README.md), e as mecânicas
-— [veículos](mecanicas-unicas/veiculos.md) (ações, colisão, condições, integridade),
-[equipamentos de veículo](mecanicas-unicas/equipamentos-de-veiculo.md),
+— veículos (promovidos ao [módulo `veiculos`](../../modulos/veiculos/README.md) em 01/08/2026;
+o que ficou aqui é a [sucata](mecanicas-unicas/sucata.md) e as
+[diferenças do cenário](mecanicas-unicas/veiculos.md)),
 [radiação/abrigo](mecanicas-unicas/radiacao.md), [mutações](mecanicas-unicas/mutacoes.md),
 [armas de fogo](mecanicas-unicas/armas-de-fogo.md) e as
 [listas de habilidades](mecanicas-unicas/habilidades-do-cenario.md) e

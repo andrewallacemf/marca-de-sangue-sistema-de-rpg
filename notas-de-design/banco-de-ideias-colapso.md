@@ -19,7 +19,7 @@ atualizado-em: 2026-07-28
 > [habilidades](../cenarios/colapso/mecanicas-unicas/habilidades-do-cenario.md),
 > [traços](../cenarios/colapso/mecanicas-unicas/tracos-do-cenario.md),
 > [itens](../cenarios/colapso/itens/README.md) ou
-> [equipamentos de veículo](../cenarios/colapso/mecanicas-unicas/equipamentos-de-veiculo.md),
+> [equipamentos de veículo](../modulos/veiculos/listas/lista-de-equipamentos.md),
 > ela **não existe no jogo**.
 
 **Ideias já propostas e recusadas** ficam em
@@ -39,9 +39,10 @@ Vieram da curadoria da Bianca em 28/07/2026 e valem para qualquer rodada futura 
 2. **Traço precisa ser aplicável e passivo.** Sem níveis, sem duração para rastrear, sem exigir que
    a mesa lembre qual debuff cada minion está carregando e por quantas rodadas.
 3. **Nada de quase-duplicata.** Se já existe algo parecido em
-   [habilidades](../cenarios/colapso/mecanicas-unicas/habilidades-do-cenario.md),
-   [traços](../cenarios/colapso/mecanicas-unicas/tracos-do-cenario.md),
-   [equipamentos](../cenarios/colapso/mecanicas-unicas/equipamentos-de-veiculo.md) ou no
+   [habilidades](../modulos/veiculos/listas/lista-de-habilidades.md),
+   [traços](../modulos/veiculos/listas/lista-de-tracos.md),
+   [equipamentos](../modulos/veiculos/listas/lista-de-equipamentos.md), nas
+   [listas do cenário](../cenarios/colapso/mecanicas-unicas/tracos-do-cenario.md) ou no
    [sistema-base](../sistema-base/listas/tracos-base.md), a ideia não entra.
 4. **Nada de "versão melhorada" de item existente.** Item premium que só faz o mesmo um pouco
    melhor (ex.: uma "caixa de sabotagem avançada") é ruído — o certo é **progredir a habilidade**
@@ -146,7 +147,7 @@ Vieram da curadoria da Bianca em 28/07/2026 e valem para qualquer rodada futura 
 | **Reparo em cadeia** | Repara várias partes na mesma ação. | `1 / 2 / 3` partes |
 | **Improvisar peça** | Repara gastando menos sucata que o exigido. | economiza `1 / 2 / 3` sucatas |
 | **Calibrar arma montada** | Dá bônus ao aliado que opera a arma montada. *(suporte.)* | `+1d4 / +1d6 / +1d8` |
-| **Blindar tripulante** | Gasta sucata para elevar a meia [cobertura](../cenarios/colapso/mecanicas-unicas/veiculos.md#cobertura-do-tripulante) de um ocupante a cobertura total por um turno. | `1 / 2 / 3` ocupantes |
+| **Blindar tripulante** | Gasta sucata para elevar a meia [cobertura](../modulos/veiculos/README.md#cobertura-do-tripulante) de um ocupante a cobertura total por um turno. | `1 / 2 / 3` ocupantes |
 
 ### Traços
 

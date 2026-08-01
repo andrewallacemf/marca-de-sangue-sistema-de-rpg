@@ -23,8 +23,11 @@ frágeis e facções rivais. Referências: *Mad Max*, wasteland, junkpunk.
 ## O que este cenário adiciona ao sistema-base
 
 - **Conflito de veículos** — perseguição e combate em alta velocidade, com dano ao veículo,
-  manobras, colisão, invasão e equipamentos ([veículos](mecanicas-unicas/veiculos.md) +
-  [equipamentos de veículo](mecanicas-unicas/equipamentos-de-veiculo.md)). Candidato a módulo.
+  manobras, colisão, invasão e equipamentos. A mecânica virou o
+  [módulo `veiculos`](../../modulos/veiculos/README.md) em 01/08/2026; o cenário usa o módulo
+  inteiro e acrescenta o que é seu (ver [veículos no Colapso](mecanicas-unicas/veiculos.md)).
+- **Sucata** — a matéria-prima do ermo, que dá forma às *peças de reposição* do módulo de veículos
+  e sustenta reparo e fabricação ([sucata](mecanicas-unicas/sucata.md)).
 - **Radiação, ambiente e abrigo** — radiômetro, dano radioativo, hipotermia/insolação e níveis de
   abrigo ([radiação](mecanicas-unicas/radiacao.md)).
 - **Mutações** (Cromática 1d100 e Púrpura 1d12) — ver [mutações](mecanicas-unicas/mutacoes.md).
@@ -32,7 +35,9 @@ frágeis e facções rivais. Referências: *Mad Max*, wasteland, junkpunk.
 - **Armas de fogo pouco confiáveis** — durabilidade em 5 níveis e tiro pela culatra
   ([armas de fogo](mecanicas-unicas/armas-de-fogo.md)).
 - **Listas próprias** — [habilidades](mecanicas-unicas/habilidades-do-cenario.md) e
-  [traços](mecanicas-unicas/tracos-do-cenario.md) do cenário, e **Aptidão Veicular**.
+  [traços](mecanicas-unicas/tracos-do-cenario.md) do cenário. O Colapso também **liga as duas
+  mecânicas opcionais** do módulo de veículos: a **Aptidão Veicular** e a **Experiência de
+  Veículos**.
 - **Arquétipos do ermo** e de veículo — ver [arquétipos](arquetipos.md).
 
 ## O mundo (lore)

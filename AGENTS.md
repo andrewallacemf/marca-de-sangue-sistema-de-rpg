@@ -59,6 +59,28 @@ arquivos.
     Nunca transcreva dados de regra para dentro de código (ficha/plataforma) — os
     consumidores leem o `contrato/catalogo.json` (ver `contrato/README.md`).
 
+## Ambiente das IAs — o que você consegue e o que não consegue fazer
+
+Nem toda IA deste projeto roda no mesmo lugar. Antes de prometer uma ação, **verifique**.
+
+**Claude no Cowork** (app de desktop da Anthropic) roda comandos em uma **máquina Linux
+descartável** (Ubuntu 22.04, com Python, Node e Git), separada do computador da pessoa, que
+enxerga a pasta do repositório por montagem — lê e escreve arquivos normalmente. Essa máquina
+**não tem acesso de rede ao GitHub** (o proxy responde 403). Consequência prática:
+
+| Etapa | Claude no Cowork |
+|---|:--:|
+| Ler e editar arquivos do repositório | ✅ |
+| `git status`, `git log`, `git diff`, `git add`, `git commit` | ✅ |
+| `git push` / `git pull` / `git fetch` | ❌ (rede bloqueada) |
+
+- Ao commitar, passe a identidade da pessoa explicitamente (a máquina Linux não herda a
+  configuração do GitHub Desktop): `git -c user.name="..." -c user.email="..." commit -m "..."`.
+- **O `push` é sempre da pessoa**, pelo GitHub Desktop (botão *Push origin*). Depois de commitar,
+  avise que falta esse clique — nunca dê a sincronização como concluída sem ele.
+- Verificado em 01/08/2026. Se você é outra IA (Codex, Cursor, Cline, Aider…), **teste o seu
+  próprio ambiente** em vez de assumir que vale o mesmo.
+
 ## Comandos Git proibidos
 
 Nunca execute (nem sugira a um leigo executar): `push --force` (qualquer variação),

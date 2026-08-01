@@ -10,8 +10,9 @@ atualizado-em: 2026-07-24
 # Lore — Colapso
 
 História, ambiente, povos e facções do mundo pós-Colapso. Quando um elemento tem efeito
-mecânico (radiação, mutações, veículos), a página de lore aponta para
-[`../mecanicas-unicas/`](../mecanicas-unicas/veiculos.md).
+mecânico (radiação, mutações, sucata), a página de lore aponta para
+[`../mecanicas-unicas/`](../mecanicas-unicas/sucata.md) — ou, no caso dos veículos, para o
+[módulo `veiculos`](../../../modulos/veiculos/README.md).
 
 | Página | Conteúdo |
 |--------|----------|

@@ -141,10 +141,12 @@ Ordem pensada nas campanhas que estão começando (Mukashi 1º/ago; Colapso a se
    habilidades ligados seguem nas listas do núcleo (podem migrar depois).
 2. ✅ **Coleção `armas`** — **feito (19/07):** `armas-brancas`, `armas-exoticas`, `arcos-e-bestas`,
    `armas-de-fogo` + `protecoes`. O núcleo ficou com o sistema.
-3. **`arquetipos`** (dō/caminhos) — estrutura definida na pendência de arquétipos; usada por
-   Mukashi primeiro.
-4. **Colapso**: `veiculos`, `mutacoes`, `armas-de-fogo` (Fase 2 da importação do Notion).
+3. ~~**`arquetipos`** (dō/caminhos) como módulo~~ — **descartado em 01/08/2026:** arquétipos não
+   viram módulo. Ficaram no `sistema-base/arquetipos/` (os genéricos) e dentro de cada cenário
+   (os dō do Mukashi, os papéis do Colapso). Ver [CONVENCOES.md](../CONVENCOES.md), seção 10.
+4. **Colapso**: ✅ `veiculos` — **feito (01/08)** · `mutacoes` · ✅ `armas-de-fogo` (19/07).
 5. ✅ **`conflito-social`** — **feito (19/07)**.
+6. ✅ **`magia`** — **feito (01/08)**, generalizado a partir do Mukashi.
 
 ---
 
@@ -158,7 +160,8 @@ Faseado, cada fase é um commit revisável. **Nenhum arquivo foi movido**; isto 
 - ✅ **Fase C — coleção `armas` + `protecoes`** (19/07): catálogos em módulos; núcleo mantém as
   regras; INDICE, `colecoes.md`, `modulos/README.md` e o comentário do `catalogo.ts` atualizados.
 - **Fase D — encaixar os mundos** (`cenarios/<mundo>/`) e promover as mecânicas-únicas a
-  módulos quando repetirem.
+  módulos quando repetirem. Em andamento: ✅ `magia` (do Mukashi) e ✅ `veiculos` (do Colapso),
+  ambos em 01/08/2026; falta `mutacoes`.
 - Cada mudança de lugar atualiza os links e o [INDICE.md](../INDICE.md) no mesmo commit
   (CONVENÇÕES §9).
 

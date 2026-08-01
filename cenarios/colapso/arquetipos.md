@@ -21,18 +21,24 @@ do núcleo (ou é próprio, quando usa uma mecânica do cenário como veículos/
 | **Sucateiro / Batedor** | Estrategista / Atirador | Improviso, ferramentas, armadilhas; sobrevive achando o que os outros descartam. |
 | **Bruto de Arena** | Baluarte | Tanque de sucata; armas contundentes/improvisadas, armadura de retalhos. |
 | **Olho de Chumbo** | Atirador | Franco-atirador com [arma de fogo](../../modulos/armas-de-fogo/README.md); domina a distância. |
-| **Piloto (Corredor da Areia)** | próprio (Duelista/Atirador ao volante) | Vive do [veículo](mecanicas-unicas/veiculos.md); combate em alta velocidade. |
+| **Piloto (Corredor da Areia)** | próprio (Duelista/Atirador ao volante) | Vive do [veículo](../../modulos/veiculos/README.md); combate em alta velocidade. |
 | **Mutante** | variável + [mutações](mecanicas-unicas/mutacoes.md) | Sobrevivente transformado pela radiação; o dom depende da mutação. |
 | **Médico de Estrada** | Curandeiro | Mantém o bando de pé com o que houver. |
 | **Chefe de Bando** | Líder | Comanda uma gangue; honra e medo em partes iguais. |
 
-## Arquétipos de veículo (importados)
+## Arquétipos de veículo
 
 Sugestões de habilidades, traços, equipamentos e aptidões para montar rápido um personagem
 focado em veículos. São **opcionais e não exclusivos** — servem de ponto de partida. Referem-se
-às listas de [habilidades](mecanicas-unicas/habilidades-do-cenario.md),
-[traços](mecanicas-unicas/tracos-do-cenario.md) e
-[equipamentos de veículo](mecanicas-unicas/equipamentos-de-veiculo.md).
+às listas do [módulo `veiculos`](../../modulos/veiculos/README.md) —
+[habilidades](../../modulos/veiculos/listas/lista-de-habilidades.md),
+[traços](../../modulos/veiculos/listas/lista-de-tracos.md) e
+[equipamentos](../../modulos/veiculos/listas/lista-de-equipamentos.md) — e aos
+[traços de sucata](mecanicas-unicas/tracos-do-cenario.md) do próprio cenário.
+
+> 🧭 Estes quatro papéis são **do Colapso, não do módulo**: por convenção do projeto, arquétipos só
+> existem no [sistema-base](../../sistema-base/arquetipos/00-como-funcionam.md) ou dentro de um
+> cenário — módulos nunca os trazem (ver [CONVENCOES.md](../../CONVENCOES.md), seção 10).
 
 > 🧠 **Ideias em brainstorming** para ampliar estes quatro papéis (itens, habilidades e traços
 > ainda **sem mecânica fechada**) estão no
@@ -50,8 +56,9 @@ Especialista em conduzir e manobrar.
 ### Mecânico copiloto
 Restaura e aprimora o veículo e auxilia o piloto.
 
-- **Habilidades:** Mecatrônica, Assumir direção, Autoescola, Co-piloto.
-- **Traços:** Catador, Cuidadoso, Lanternagem, Mão na roda.
+- **Habilidades:** Mecatrônica, Mecânica, Assumir direção, Autoescola, Co-piloto.
+- **Traços:** Cuidadoso, Lanternagem, Mão na roda (módulo) · **Catador**, **Serralheiro e
+  soldador** (do cenário — ver [sucata](mecanicas-unicas/sucata.md)).
 - **Itens:** Caixa de ferramentas.
 - **Aptidões:** 3 Mental · 2 Social · 1 Físico.
 

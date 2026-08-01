@@ -58,4 +58,19 @@ Frontmatter dos arquivos de módulo (ver [CONVENCOES.md](../CONVENCOES.md), seç
 | [`armas-de-fogo`](armas-de-fogo/README.md) | Armas de pólvora + balas. | coleção `armas` (esp. Colapso) | catálogo extraído em 19/07/2026 |
 | [`protecoes`](protecoes/README.md) | Armaduras (por tipo/peça) e escudos. | (módulo próprio) | catálogo extraído em 19/07/2026 |
 | [`magia`](magia/README.md) | Magias (habilidades com custo de ativação em fadiga/`PV`), traços de magia, e as mecânicas opcionais Aptidão Mágica e Experiência de Magia. | Mukashi (migrado em 01/08/2026 — KI virou o sabor do módulo) | 📝 rascunho, criado em 01/08/2026 |
-| *(próximos: veículos, mutações — Fase 2 da importação, do Colapso)* | | | |
+| [`veiculos`](veiculos/README.md) | Conflito veicular: ficha do veículo, malha de 10 m, ações, colisão, condições, integridade e reparo, equipamentos, e as mecânicas opcionais Aptidão Veicular e Experiência de Veículos. | Colapso (extraído do cenário em 01/08/2026 — a sucata ficou lá) | 📝 rascunho, criado em 01/08/2026 |
+| *(próximo: mutações — do Colapso)* | | | |
+
+## O que **não** entra num módulo
+
+- **Arquétipos.** Por convenção do projeto, arquétipos só existem no
+  [sistema-base](../sistema-base/arquetipos/00-como-funcionam.md) (os genéricos) ou dentro de um
+  **cenário**. Um módulo oferece as peças — habilidades, traços, equipamentos — e cada cenário
+  monta os próprios papéis com elas, dando nome e flavor ao seu mundo. Ver
+  [CONVENCOES.md](../CONVENCOES.md), seção 10.
+  > ✅ Decidido em 01/08/2026 (Daniel), ao extrair o módulo `veiculos` do Colapso.
+- **Recursos econômicos do mundo** (moedas, matérias-primas, materiais de reparo). O módulo declara
+  a **função** que o recurso cumpre; o cenário declara **o que ele é**. Exemplo: o módulo
+  [`veiculos`](veiculos/README.md#peças-de-reposição--o-insumo-de-reparo) fala em *peças de
+  reposição*; o Colapso preenche isso com
+  [sucata](../cenarios/colapso/mecanicas-unicas/sucata.md).

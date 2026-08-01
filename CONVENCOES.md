@@ -121,6 +121,15 @@ varrer o texto inteiro atrás de um termo.
   escreve só a própria diferença. Mecânica só vira módulo quando mais de um cenário a
   usa (ou vai usar).
 
+**Duas coisas que um módulo nunca contém:**
+
+1. **Arquétipos.** Arquétipos só existem no `sistema-base/arquetipos/` (os genéricos) ou dentro de
+   um cenário. O módulo oferece as peças (habilidades, traços, equipamentos); o cenário monta os
+   papéis com elas e lhes dá nome e flavor. *(Decidido em 01/08/2026.)*
+2. **Recursos econômicos do mundo** (moedas, matérias-primas, insumos de reparo). O módulo declara
+   a **função** que o recurso cumpre, de forma abstrata; o cenário declara **o que ele é**.
+   Ex.: o módulo `veiculos` fala em *peças de reposição*; o Colapso preenche com *sucata*.
+
 ## 11. Contrato de conteúdo (`contrato/`) — quem consome o sistema, consome de lá
 
 A ficha, o manual web, o PDF e a plataforma **não transcrevem** regras: eles consomem a
