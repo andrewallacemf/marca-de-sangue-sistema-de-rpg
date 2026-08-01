@@ -32,6 +32,8 @@ Cada vez que usa uma habilidade, o personagem paga **duas coisas**:
 
 **Ações comuns não custam fadiga.** Andar, atacar, levantar guarda e as demais [ações](../conflitos/02-acoes-em-conflito.md) gastam só `PA`. A fadiga é o preço do **extraordinário**.
 
+> **Magia é a exceção.** Numa mesa que use o [módulo Magia](../../modulos/magia/README.md#o-custo-de-uma-magia-pa--fadiga-ou-pa--pv), o **custo de ativação da magia substitui** este custo padrão de fadiga: a magia cobra `PA` + fadiga *ou* `PA` + `PV`, nunca os três.
+
 ## Utilizando Habilidades
 
 Habilidades podem ser utilizadas de diferentes formas, de acordo com cada situação. Não se esqueça de checar se:

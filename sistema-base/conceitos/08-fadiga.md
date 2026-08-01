@@ -33,6 +33,8 @@ O personagem acumula pontos de fadiga quando:
 - **Realiza uma reação** (incluindo o ataque de oportunidade) — a reação não custa `PA`, mas custa **pontos de fadiga iguais ao custo em [`PA`](07-pontos-de-acao.md) que a ação realizada teria** (1 fadiga por 1 `PA`; ver [Reação](../conflitos/02-acoes-em-conflito.md#reação));
 - **Gasta fadiga voluntariamente** para ganhar `PA` extras — os pontos gastos somam-se à sua fadiga acumulada (ver a seção seguinte).
 
+> **Exceção — magia.** O [módulo Magia](../../modulos/magia/README.md#o-custo-de-uma-magia-pa--fadiga-ou-pa--pv) é a única parte do sistema que foge da regra "todo dano gera fadiga": uma magia custa `PA` **+ fadiga** *ou* `PA` **+ `PV`**, nunca as duas coisas, e o `PV` pago como custo de ativação **não gera fadiga nenhuma**. Vale só para o custo da própria magia — o conjurador que **leva um golpe** acumula fadiga normalmente.
+
 ## Uso voluntário: fadiga vira `PA` extra
 
 No próprio turno, o personagem pode se esforçar além do limite e comprar pontos de ação com fadiga:

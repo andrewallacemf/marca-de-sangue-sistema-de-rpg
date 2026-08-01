@@ -25,9 +25,10 @@ próprio corpo ou na própria energia do conjurador, além do `PA`.
 
 Uma magia é uma habilidade com três diferenças em relação a uma habilidade comum:
 
-1. **Custo de ativação**, além do `PA` — pago em [fadiga](../../sistema-base/conceitos/08-fadiga.md)
-   ou em [pontos de vida](../../sistema-base/conflitos/03-saude-e-protecao.md#pontos-de-vida-e-dano)
-   (`PV`), nunca os dois ao mesmo tempo para a mesma magia (ver [Custo de ativação](#custo-de-ativação--três-tipos)).
+1. **Custo de ativação** — pago em [fadiga](../../sistema-base/conceitos/08-fadiga.md) **ou** em
+   [pontos de vida](../../sistema-base/conflitos/03-saude-e-protecao.md#pontos-de-vida-e-dano)
+   (`PV`), nunca os dois na mesma magia. Ele **substitui** o custo padrão de fadiga que toda
+   habilidade cobra — ver [O custo de uma magia](#o-custo-de-uma-magia-pa--fadiga-ou-pa--pv).
 2. **Atributo caso a caso** — cada magia declara o atributo do seu teste como qualquer habilidade
    (`Físico`, `Ágil`, `Mental` ou `Social`), de acordo com a natureza do efeito. **Não existe um
    atributo fixo para magia** — força bruta mística testa `Físico`, uma ilusão rápida testa `Ágil`,
@@ -42,13 +43,35 @@ Fora isso, magia segue **todas** as regras normais de habilidade: comprada uma v
 nível, combinável com aptidões e traços (mas não com outra magia ou habilidade), fila de resolução
 fora de combate pelo custo de `PA`, etc.
 
-> ⚠️ **O custo de ativação é somado ao custo normal de fadiga da habilidade.** Desde 01/08/2026,
-> **toda** habilidade custa `PA` + a mesma quantidade de fadiga (ver
-> [Habilidades](../../sistema-base/conceitos/05-habilidades.md#custo-de-uso-pa--fadiga)). Uma magia
-> de `4 PA` com custo de ativação `2` em `PV`, portanto, cobra: `4 PA` + 4 de fadiga (por ser
-> habilidade) + 2 de `PV` — que por sua vez geram mais 2 de fadiga. **Isso torna magia bem mais cara
-> do que era quando este módulo foi escrito**, e os custos das magias-exemplo precisam ser
-> recalibrados com isso em mente no playtest.
+## O custo de uma magia: `PA` + fadiga **ou** `PA` + `PV`
+
+Esta é a regra mais importante do módulo, e a que mais foge do padrão:
+
+> **Uma magia custa `PA` + fadiga, OU `PA` + `PV`. Nunca as três coisas juntas.**
+
+Uma [habilidade comum](../../sistema-base/conceitos/05-habilidades.md#custo-de-uso-pa--fadiga)
+custa `PA` + a mesma quantidade de fadiga. Numa magia, o **custo de ativação toma o lugar desse
+custo padrão de fadiga** — não se soma a ele. E, quando o custo de ativação é pago em `PV`, esse
+`PV` **não gera fadiga**, abrindo a única exceção do sistema à regra de que todo dano cansa.
+
+| Tipo de custo da magia | O conjurador paga | Gera fadiga? |
+|---|---|:--:|
+| **Fadiga** | `PA` + **X de fadiga** (o valor da magia, não o do `PA`) | é o próprio custo |
+| **`PV`** (dano curável ou vida máxima) | `PA` + **X de `PV`** | **Não** |
+
+> *Exemplo: uma magia de `4 PA` com custo de ativação `2`. Se o custo for em fadiga, ela cobra
+> `4 PA` + 2 de fadiga. Se for em `PV`, cobra `4 PA` + 2 de `PV` — e **nenhuma fadiga**. Para
+> comparação, uma habilidade comum de `4 PA` cobraria `4 PA` + 4 de fadiga.*
+
+> ✅ Decidido pelo Daniel em 01/08/2026, corrigindo o desenho anterior deste módulo. Sem esta
+> regra, uma magia acumularia `PA` + fadiga de habilidade + `PV` + a fadiga gerada pelo `PV` — quatro
+> custos pelo mesmo lançamento, o que tornava magia proibitiva.
+
+> 📝 **A consequência a vigiar:** pagar em `PV` pode sair **mais barato em fadiga** do que uma
+> habilidade comum de mesmo `PA`, já que zera a fadiga do lançamento. Um conjurador com muita vida
+> sobrando pode preferir queimar `PV` justamente para continuar com `PA` cheio. Isso é coerente com
+> a fantasia (o mago que se consome para não cansar), mas precisa de playtest — se virar a escolha
+> óbvia sempre, o ajuste é subir os custos em `PV` das magias.
 
 ## Custo de ativação — três tipos
 
@@ -65,16 +88,15 @@ Toda magia declara, junto com o custo de `PA`, **um** destes três tipos de cust
 > num membro já em ferida profunda. Proposta a validar: se na mesa isso se mostrar abusivo, a
 > alternativa é exigir que o membro escolhido já esteja em ferida profunda.
 
-**Todo dano gerado por magia segue a regra normal de [fadiga](../../sistema-base/conceitos/08-fadiga.md):
-cada ponto de dano já soma 1 ponto de fadiga automaticamente.** Não existe uma fadiga "extra" por
-cima disso — pagar `PV` numa magia **já** gera fadiga pelo caminho normal. Só o tipo **Fadiga**
-(acima) foge dessa regra, porque não envolve dano nenhum: ali a fadiga é o próprio custo, direto,
-sem dano no meio.
+**O `PV` gasto como custo de ativação de uma magia NÃO gera fadiga.** É a exceção deliberada à
+[regra geral](../../sistema-base/conceitos/08-fadiga.md#como-se-ganha-fadiga) de que todo ponto de
+dano recebido soma 1 de fadiga — e vale **só** para o custo de ativação. O conjurador que **leva um
+golpe** de um inimigo acumula fadiga normalmente, como todo mundo; magia não protege de nada.
 
-> ⚠️ **Cuidado com o efeito em cascata.** Como a [fadiga máxima acompanha o total de `PV`](../../sistema-base/conceitos/08-fadiga.md#fadiga-máxima),
-> uma magia que cobra **vida máxima** reduz também o quanto o conjurador aguenta de esforço — e
-> portanto quantas magias ele consegue lançar depois. Um mago que abusa do terceiro tipo de custo
-> encurta a própria carreira duas vezes. Isso é intencional, mas precisa ser medido no playtest.
+> ⚠️ **A vida máxima ainda cobra a longo prazo.** O terceiro tipo de custo não gera fadiga na hora,
+> mas como a [fadiga máxima acompanha o total de `PV`](../../sistema-base/conceitos/08-fadiga.md#fadiga-máxima),
+> **perder vida máxima reduz permanentemente o quanto o conjurador aguenta de esforço**. Um mago que
+> abusa desse custo não cansa mais rápido hoje — mas o teto dele desce para sempre.
 
 ### Qual membro é atingido
 
@@ -183,10 +205,14 @@ A [exceção do suporte](../../sistema-base/conceitos/05-habilidades.md#custo-de
 2. **Custo de `PA`** — mesma regra de qualquer habilidade: `1 PA` + `PA` da arma se for um ataque;
    `1 PA` utilidade rápida ou `4`–`5 PA` efeito forte se for efeito próprio.
 3. **Custo de ativação** — escolha um dos três tipos (fadiga / dano curável / vida máxima) e um
-   valor. Heurística de calibragem inicial (📝 proposta, a validar no playtest, herdada do Mukashi):
-   magia de `4 PA` → `2` de custo; magia de `5 PA` → `3` de custo — o mesmo valor numérico serve de
-   ponto de partida em qualquer um dos três tipos, e o **tipo** escolhido é o que define o quão
-   arriscada a magia é, não o número.
+   valor. Lembre que ele **substitui** o custo padrão de fadiga da habilidade, e que os tipos em
+   `PV` **não geram fadiga**. Heurística de calibragem inicial (📝 proposta, a validar no playtest,
+   herdada do Mukashi): magia de `4 PA` → `2` de custo; magia de `5 PA` → `3` de custo — o mesmo
+   valor numérico serve de ponto de partida em qualquer um dos três tipos, e o **tipo** escolhido é
+   o que define o quão arriscada a magia é, não o número.
+   > 📝 Compare sempre com o que uma **habilidade comum** de mesmo `PA` cobraria (fadiga igual ao
+   > `PA`). Se a sua magia estiver saindo mais barata que isso, ou o custo está baixo, ou o efeito
+   > precisa ser maior para justificar.
 4. **Custo de compra** — escada de `1` a `4 exp.`, igual habilidade comum.
 5. **Níveis** — 5 por padrão; decida se o nível melhora o efeito, reduz o custo de ativação, ou os
    dois (ver [Progressão](#progressão-níveis--efeito-custo-ou-os-dois)).

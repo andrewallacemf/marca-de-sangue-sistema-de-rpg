@@ -51,6 +51,8 @@ Perder vida máxima tem duas consequências além do óbvio: o membro **enche ma
 
 **Todo dano recebido gera [fadiga](../conceitos/08-fadiga.md):** cada ponto de dano sofrido (de qualquer tipo) adiciona **1 ponto de fadiga**. Mudar o status do membro (encher, virar profundo, perder máximo) **não** gera fadiga por si só — apenas os pontos de dano recebidos.
 
+> **Uma exceção:** o `PV` que um conjurador gasta **como custo de ativação de uma magia** não gera fadiga (ver [módulo Magia](../../modulos/magia/README.md#o-custo-de-uma-magia-pa--fadiga-ou-pa--pv)). Dano **recebido** de qualquer outra fonte, inclusive de uma magia lançada por outra pessoa, segue a regra normal.
+
 > 💡 **Falta de tratamento**
 >
 > Se o personagem passar um descanso sem tentar se tratar, ele **perde 1 ponto de vida máxima** no membro em ferida profunda. *Exemplo: Claus levou um corte que encheu o braço (ferida profunda). Sem tratamento, no dia seguinte o braço dele passa a ter 9 de máximo em vez de 10.*
