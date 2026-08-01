@@ -31,13 +31,26 @@ Regra consolidada nas reuniões de 11/07/2026 (ver [decisões — reuniões de m
 - **Redução de dano:** o **redutor de dano** da peça (Leve −1, Média −2, Pesada −3) é subtraído do **total do dano rolado** de cada golpe recebido **numa região que ela cobre**.
 - **Dano mínimo 1:** o redutor **nunca reduz o dano abaixo de 1** — se o ataque acertou, o alvo sofre no mínimo 1 ponto de dano, mesmo que a redução supere o dano rolado.
 - **Redutor de `PA` — permanente e cumulativo:** enquanto uma proteção está vestida, seu **redutor de `PA`** (Leve −1, Média −2, Pesada −3) é descontado do **total de `PA` do turno**, mesmo que o personagem não seja atacado. Os redutores de **todas as peças e escudos** vestidos **somam** (ex.: calça leve −1, peitoral leve −1, capacete médio −2 e escudo leve −1 = **−5 `PA`**). Respeitando sempre o **piso de 3 `PA`** por turno (ver [Pontos de ação](../conceitos/07-pontos-de-acao.md)).
+- **Sem maestria, o redutor de `PA` dobra.** O valor da tabela pressupõe treinamento. Quem veste uma peça de um tipo em que **não tem [maestria](tracos-base.md#maestrias-de-armadura--o-que-fazem)** paga o **dobro** do redutor de `PA` daquela peça — a conta é feita peça a peça, pelo tipo de cada uma.
 - **Ao remover ou destruir uma proteção**, o redutor de `PA` dela só deixa de ser aplicado **a partir do próximo turno** — não no mesmo turno.
 - **Durabilidade das proteções:** ver a regra completa em [Durabilidade das proteções](#durabilidade-das-proteções) — a peça só perde durabilidade quando **efetivamente absorve** um golpe.
 - **Registro na ficha:** a proteção é anotada **uma única vez** (nome, redução de dano e redutor de `PA`), junto com a **distribuição por locais** do corpo e a durabilidade individual de cada local.
 - **Espaços de proteção:** a ficha possui **três espaços de proteção** (ex.: superior, inferior e escudo).
 - **Sem empilhamento:** não é possível empilhar armaduras no mesmo local — **vale a de maior proteção**.
 
+**Redutor de `PA` por tipo, com e sem maestria:**
+
+| Tipo da peça | Redutor de dano | Redutor de `PA` **com** maestria | Redutor de `PA` **sem** maestria |
+|---|:--:|:--:|:--:|
+| **Leve** | −1 | **−1 `PA`** | −2 `PA` |
+| **Média** | −2 | **−2 `PA`** | −4 `PA` |
+| **Pesada** | −3 | **−3 `PA`** | −6 `PA` |
+
 > ✅ Revisado em 12/07/2026 (rebalanceamento de PA): redutor de `PA` por tipo e cumulativo por peça; penalidade permanente que sai no próximo turno ao remover/destruir a proteção (ver [decisões — rebalanceamento de PA](../../notas-de-design/decisoes/2026-07-12-rebalanceamento-pa-analise.md)). O dano mínimo 1 e a redução por região seguem de 11/07/2026.
+
+> ✅ Decidido em 01/08/2026 (Daniel e André): a coluna **sem maestria** resolveu a pendência das
+> [maestrias de armadura](tracos-base.md#maestrias-de-armadura--o-que-fazem), que estavam
+> compráveis mas não faziam nada.
 
 ## Durabilidade das proteções
 

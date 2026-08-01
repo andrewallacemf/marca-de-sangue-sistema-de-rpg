@@ -60,10 +60,29 @@ Técnicas são traços que **apenas anulam a desvantagem natural** dos testes da
 **Maestria em ataque desarmado:** permite realizar **ataque mirado sem desvantagem**,
 valendo **apenas para ataques desarmados** (ex.: soco). Viabiliza builds de lutador.
 
-> ⚠️ A DEFINIR: o **efeito das maestrias de armadura** (leve/média/pesada) não está
-> definido em lugar nenhum do manual — as três estão na tabela de custos, mas nenhuma
-> regra diz o que dominam ou destravam (as maestrias de arma ativam a propriedade
-> correspondente; armadura não tem propriedade). Definir o efeito ou removê-las da lista.
+### Maestrias de armadura — o que fazem
+
+Vestir uma armadura é fácil; **lutar** com ela é que exige treino. Por isso as armaduras cobram um
+**redutor de `PA`** de quem as usa (ver [Proteções](protecoes-base.md)) — e a maestria é o que faz
+esse peso deixar de atrapalhar.
+
+> **Sem a maestria correspondente, o redutor de `PA` da armadura é DOBRADO.**
+> Com a maestria, vale o valor normal da tabela.
+
+Vale por **tipo** — leve, média ou pesada —, e a conta é feita **por peça**: um personagem com
+Maestria em armaduras leves vestindo um peitoral pesado paga o dobro pelo peitoral, mesmo que o
+resto do conjunto seja leve.
+
+> *Exemplo: um peitoral médio custa `−2 PA`. Quem tem Maestria em armaduras médias paga os `−2`.
+> Quem não tem paga **`−4 PA`** — e provavelmente vai preferir uma armadura mais leve até treinar.*
+
+O [piso de `3 PA`](../conceitos/07-pontos-de-acao.md) continua valendo: nem a penalidade dobrada
+derruba um personagem abaixo disso.
+
+> ✅ Decidido em 01/08/2026 (Daniel e André). Considerou-se o caminho inverso — a maestria
+> **reduzir pela metade** a penalidade —, mas dobrar é mais fácil na mesa e evita meios quebrados
+> em valores ímpares. Se algum tipo se mostrar desbalanceado no playtest, a relação pode deixar de
+> ser exatamente o dobro para aquele tipo.
 
 ## Aspectos base
 
@@ -408,7 +427,15 @@ Pode desferir um ataque de oportunidade a distância (exceção à regra geral d
 
 #### Requisitos de uso
 
-- Estar usando uma arma de arremesso (já equipada).
+- Estar com uma **arma à distância já equipada** — tanto uma arma de arremesso (**`ARRE.`**) quanto
+  uma arma de munição (**`PROJ.`**: arcos, bestas, armas de fogo). No caso das de munição, é preciso
+  ter munição disponível.
+
+> ✅ Ampliado em 01/08/2026 (Daniel e André): o requisito antes exigia **só** arma de arremesso
+> `ARRE.`, o que deixava o aspecto **inutilizável por arqueiros** — e o
+> [arquétipo Atirador](../arquetipos/01-arquetipos-genericos.md) recomenda o Vigilante justamente
+> para o ataque de oportunidade à distância. Como estava escrito, o arquétipo sugeria um aspecto que
+> ele próprio não conseguia usar.
 - Não ter usado seu ataque de oportunidade nesta rodada.
 
 ### Burro de carga
@@ -433,7 +460,7 @@ Não gasta PA extra para deslocar um aliado que esteja agarrado.
 
 #### Descrição
 
-Eleva o teto do **uso voluntário de [fadiga](../conceitos/08-fadiga.md#uso-voluntario-fadiga-vira-pa-extra)**: você pode comprar `PA` extra com fadiga até o **`PA` base inteiro** (em vez de só metade dele).
+Eleva o teto do **uso voluntário de [fadiga](../conceitos/08-fadiga.md#uso-voluntário-fadiga-vira-pa-extra)**: você pode comprar `PA` extra com fadiga até o **`PA` base inteiro** (em vez de só metade dele).
 
 #### Requisitos de uso
 

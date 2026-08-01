@@ -9,23 +9,36 @@ atualizado-em: 2026-07-12
 
 # Habilidades
 
-Habilidades são ações consumíveis que garantem grandes vantagens em situações específicas ou permitem que você realize ações especiais sem penalidade.
+Habilidades são ações especiais que garantem grandes vantagens em situações específicas ou permitem que você realize ações que, de outro modo, sofreriam penalidade.
 
-> 🧪 Existe uma mecânica alternativa em avaliação que altera esta regra — ver [variante habilidades e fadiga](../variantes/habilidades-por-fadiga/README.md).
+**Habilidade não se gasta: cansa.** Você compra a habilidade **uma vez** e pode usá-la quantas vezes quiser — desde que tenha [pontos de ação](07-pontos-de-acao.md) (**`PA`**) e aguente a [fadiga](08-fadiga.md). O que limita o uso não é um contador de usos: é o próprio corpo do personagem.
 
-Você pode utilizar quantas habilidades quiser em seu turno, desde que tenha usos da habilidade e [pontos de ação](07-pontos-de-acao.md) (**`PA`**) suficientes.
+> ✅ Decidido em 01/08/2026 (Daniel e André): a mecânica de **usos comprados** foi substituída pelo modelo de **nível + fadiga**, que estava em teste como variante desde 12/07/2026. A antiga regra de usos (e a fusão de habilidades) **não vale mais**.
 
-Mas pense bem antes de usar uma habilidade: não ter sucesso no uso de uma habilidade não evita que ela seja gasta! Uma habilidade que resultou em uma falha ainda assim gasta seus pontos de ação e o uso da habilidade. Essa habilidade gasta pode fazer falta mais para frente! Mas se o personagem for interrompido ou impedido, não conseguindo sequer tentar realizar a ação da habilidade, o uso da habilidade não é gasto.
+Mas pense bem antes de usar uma habilidade: **não ter sucesso não devolve o custo.** Uma habilidade que falhou ainda assim gastou seus pontos de ação e a fadiga do uso. Só quando o personagem é **interrompido ou impedido** antes de tentar — não chegando a executar — é que nada é gasto.
 
-Você pode comprar usos (acumulativos) ou aumentar o nível de um uso de habilidade pagando o custo de **`exp.`** indicado, consultando a “Lista de habilidades base” na seção “Recursos básicos do sistema” e a lista de habilidades específicas do cenário escolhido.
+Você **compra a habilidade** pagando o custo de **`exp.`** indicado e paga **`exp.`** novamente para **subir o nível** dela, consultando a “Lista de habilidades base” na seção “Recursos básicos do sistema” e a lista de habilidades específicas do cenário escolhido. O **nível determina a força** da habilidade — é o degrau da “Progressão” descrita em cada entrada das listas.
+
+## Custo de uso: `PA` + fadiga
+
+Cada vez que usa uma habilidade, o personagem paga **duas coisas**:
+
+1. o **custo em `PA`** da habilidade (o indicado nas listas); **e**
+2. **o mesmo valor em [fadiga](08-fadiga.md)** — a relação é **1 para 1**.
+
+> *Exemplo: uma habilidade de `3 PA` custa **`3 PA` e 3 pontos de fadiga**. Um personagem com `10 PA` pode usá-la três vezes no turno, mas terá acumulado 9 pontos de fadiga fazendo isso.*
+
+> 📝 A relação 1:1 é **proposta a validar no playtest**. Se alguma habilidade se mostrar cansativa demais para o efeito que entrega, o ajuste é dar a ela um custo de fadiga próprio, menor que o `PA` — a estrutura já permite.
+
+**Ações comuns não custam fadiga.** Andar, atacar, levantar guarda e as demais [ações](../conflitos/02-acoes-em-conflito.md) gastam só `PA`. A fadiga é o preço do **extraordinário**.
 
 ## Utilizando Habilidades
 
 Habilidades podem ser utilizadas de diferentes formas, de acordo com cada situação. Não se esqueça de checar se:
 
-1. seu personagem tem usos disponíveis da habilidade;
-2. se há pontos de ação suficientes para que a habilidade seja utilizada e;
-3. se os requisitos de uso descritos na habilidade estão cumpridos. Há habilidades, por exemplo, que só podem ser utilizadas se o personagem estiver portando um escudo.
+1. há **pontos de ação** suficientes para que a habilidade seja utilizada;
+2. o personagem aguenta a **fadiga** que ela vai gerar (nada impede de usá-la e cair — mas é escolha sua);
+3. os requisitos de uso descritos na habilidade estão cumpridos. Há habilidades, por exemplo, que só podem ser utilizadas se o personagem estiver portando um escudo.
 
 > 💡 Habilidades podem ser combinadas com aptidões e traços, mas não com outras habilidades.
 
@@ -35,9 +48,9 @@ Habilidades podem ser utilizadas de diferentes formas, de acordo com cada situa�
 
 Dentro de uma batalha, o jogador pode utilizar quantas habilidades quiser, gastando o número de ações necessárias para cada habilidade.
 
-> Ex.: *Kenji, o espadachim, possui **`10 PA`** em seu turno. Em sua vez, ele decide utilizar a habilidade “encontrão”, gastando **`2 PA`** e utilizando um de seus 3 usos dessa habilidade para empurrar o inimigo em direção a um penhasco, gasta mais dois pontos de ação para andar dois espaços em direção ao inimigo e então utiliza mais **`2 PA`** para mais um uso da habilidade “encontrão” para empurrar o inimigo novamente, o fazendo cair do penhasco, sobrando **`4 PA`** para continuar andando ou fazer outra coisa.*
+> Ex.: *Kenji, o espadachim, possui **`10 PA`** em seu turno. Ele usa a habilidade “Encontrão” (**`2 PA`**) para empurrar o inimigo em direção a um penhasco, gasta mais dois pontos de ação para andar dois espaços, e usa “Encontrão” de novo (**`2 PA`**), fazendo o inimigo cair. Sobraram **`4 PA`**.*
 
-> *No próximo turno Kenji terá mais **`10 PA`** para jogar, mas os usos da habilidade “encontrão” utilizados permanecem desativados até que Kenji tenha um descanso longo.*
+> *Kenji acumulou **4 pontos de fadiga** nesses dois usos (2 + 2). No próximo turno ele terá `10 PA` de novo e poderá usar “Encontrão” outras tantas vezes — mas a fadiga não zera entre turnos: ela vai somando até o [descanso](09-descanso.md), e quando passar de 10 começa a comer os `PA` dele.*
 
 ### Habilidades fora de combate
 
@@ -51,11 +64,13 @@ Para habilidades que custam a mesma quantidade de pontos de ação, o jogador qu
 
 Após a execução de cada habilidade da fila, se houver necessidade de jogar os dados, os envolvidos podem escolher utilizar [aptidões](04-aptidoes.md) para rerrolar os dados, seguindo a regra geral (o narrador anuncia o resultado antes de narrar os efeitos). Se mais de um personagem usar aptidões na mesma disputa e houver empate, vale a cadeia de [desempate](04-aptidoes.md#aptidões-e-desempate): vence quem usou mais aptidões; quantidades iguais, vale o padrão (o contrateste vence).
 
-## Recuperando Habilidades
+## Recuperando o fôlego
 
-Habilidades podem ser recuperadas em um **[descanso longo](09-descanso.md#descanso-longo)** (o descanso curto não recupera usos de habilidades) ou por outras definições indicadas pelo narrador.
+Não existem "usos" a recuperar: o que se recupera é a **[fadiga](08-fadiga.md)**. **Qualquer descanso — curto ou longo — zera a fadiga acumulada** e devolve ao personagem toda a sua capacidade de usar habilidades.
 
-### Recuperando habilidades em combate
+**Não existe fusão de habilidades.** Comprar a mesma habilidade duas vezes não faz sentido: a força vem do **nível**. Se você quer que uma habilidade fique mais forte, suba o nível dela.
+
+### Recuperando características em combate
 
 Existem habilidades para recuperar características suas e de outros personagens, assim como existem habilidades para descartá-las. O narrador também pode decretar outras formas de recuperar características durante um combate.
 

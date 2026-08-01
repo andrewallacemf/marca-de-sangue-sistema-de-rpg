@@ -17,13 +17,13 @@ atualizado-em: 2026-07-12
 
 Um descanso longo exige **pelo menos 8 horas**, incluindo **sono**. Ao completá-lo, o personagem:
 
-- **Reseta as características gastáveis** — recupera todas as [aptidões](04-aptidoes.md) consumidas e todos os usos de [habilidades](05-habilidades.md) gastos;
+- **Reseta as características gastáveis** — recupera todas as [aptidões](04-aptidoes.md) consumidas. As [habilidades](05-habilidades.md) não têm usos a recuperar: o que as libera de novo é a fadiga zerada;
 - **Recupera mais vida** que o descanso curto — por padrão, **`1d6`** pontos de dano superficial (ver [Saúde e Proteção — Cura](../conflitos/03-saude-e-protecao.md#cura));
 - **Recupera toda a fadiga** (ver [abaixo](#fadiga-qualquer-descanso-recupera-tudo)).
 
 ## Descanso curto
 
-O descanso curto dura **cerca de 1 hora**. Nele o personagem pode fazer **1 rolagem para reduzir o dano sofrido** (ver [Saúde e Proteção — Cura](../conflitos/03-saude-e-protecao.md#cura)) e também **recupera toda a fadiga**. Além disso, recupera **1 [aptidão](04-aptidoes.md) de cada tipo** (uma por atributo). Os **usos de [habilidades](05-habilidades.md)**, porém, só voltam no **descanso longo**.
+O descanso curto dura **cerca de 1 hora**. Nele o personagem pode fazer **1 rolagem para reduzir o dano sofrido** (ver [Saúde e Proteção — Cura](../conflitos/03-saude-e-protecao.md#cura)) e também **recupera toda a fadiga** — o que, na prática, devolve o acesso pleno às [habilidades](05-habilidades.md). Além disso, recupera **1 [aptidão](04-aptidoes.md) de cada tipo** (uma por atributo); as demais aptidões só voltam no **descanso longo**.
 
 > ✅ Decidido em 12/07/2026: duração de ~1 hora e 1 rolagem de cura/tratamento (ver [decisões — lote 2](../../notas-de-design/decisoes/2026-07-12-decisoes-de-regra-lote-2.md), item 7).
 

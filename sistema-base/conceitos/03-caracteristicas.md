@@ -27,14 +27,18 @@ O registro oficial das características do personagem é feito na [ficha de pers
 
 ## Utilizando Características
 
-As habilidades e aptidões que um jogador pode usar estão limitadas pela quantidade de usos que ele adquiriu durante os momentos de “compra e fusão”. Isso pode acontecer no início ou final da sessão, momentos de descanso ou outras situações indicadas pelo narrador que permitam que os personagens dos jogadores ajustem e atualizem suas características.
+As características se compram e se ajustam nos **momentos de compra** — início ou fim da sessão, descansos, ou outras situações indicadas pelo narrador. O que limita o uso delas em jogo depende do tipo:
 
-Para utilizar essas características de uso limitado, o jogador deve indicar a habilidade que usará e realizar o teste (ou contrateste) aplicando as modificações impostas pela característica. Aptidões seguem um fluxo próprio: são gastas depois que o narrador anuncia o resultado, para rerrolar o dado do teste ou do contrateste (ver [Aptidões](04-aptidoes.md)).
+- **Habilidades** não se gastam: uma vez compradas, valem para sempre. O que limita é o [`PA`](07-pontos-de-acao.md) do turno e a [fadiga](08-fadiga.md) que cada uso acumula.
+- **Aptidões** são **consumíveis**: cada uma some ao ser usada e só volta no [descanso](09-descanso.md).
+- **Traços** são passivos e nunca se gastam.
 
-Após utilizar a característica, ela não poderá ser utilizada novamente até que se recupere o uso em um **descanso** — ver [Descanso](09-descanso.md) para o que cada tipo recupera — ou outra situação indicada pelo narrador.
+Para usar uma habilidade, o jogador indica qual usará e realiza o teste (ou contrateste) aplicando as modificações da característica. Aptidões seguem um fluxo próprio: são gastas **depois** que o narrador anuncia o resultado, para rerrolar o dado do teste ou do contrateste (ver [Aptidões](04-aptidoes.md)).
 
-> 💡 **Registrando o uso na ficha**
-> Para consumir um uso, basta marcar a habilidade ou aptidão utilizada no campo “utilizado” da ficha, que permanecerá dessa forma até o momento de descanso, onde as marcações podem ser apagadas, recuperando o uso da característica de uso limitado.
+> 💡 **Registrando na ficha**
+> Aptidão gasta se marca no campo “utilizado” e a marcação some no descanso. Habilidade não tem o que marcar — o que se acompanha é a **barra de fadiga**, num lugar só, mesmo com muitas habilidades. Na mesa, a dica é marcar a fadiga atual com um dado sobre a ficha, em vez de apagar e reescrever a cada turno.
+
+> ✅ Atualizado em 01/08/2026: as habilidades deixaram de ser características de uso limitado (ver [Habilidades](05-habilidades.md)).
 
 Já os traços, uma vez adquiridos, são considerados características de uso ilimitado. Os efeitos dos traços estão sempre ativos, mesmo que o jogador não lembre que os tem, cabe ao jogador e ao narrador agirem de forma justa e aplicarem o traço sempre que necessário.
 

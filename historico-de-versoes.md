@@ -14,6 +14,46 @@ atualizado-em: 2026-07-11
 
 ---
 
+## v1.2.0 — 01/08/2026 — oponentes, fadiga como combustível e módulos
+
+A maior mudança de regra desde a importação: mexe no **motor** do sistema (habilidades,
+fadiga e dano), não só em conteúdo. Decisões de Daniel e André.
+
+> ⚠️ **Nada disto foi testado em mesa ainda.** Em especial, a mecânica de habilidades ×
+> fadiga foi promovida **sem** o playtest que a própria variante pedia.
+
+### Adições
+
+- **Seção `oponentes/`** — "oponente" como termo guarda-chuva, dividido em **personagem do
+  narrador** (ficha completa) e **ameaça** (bloco simplificado). Inclui o guia de criação de
+  ameaças (membros, regra do dado de local, ataques como arma × habilidade) e a escala de
+  **Nível de Ameaça**, ancorada em `15 × N` de `exp.` investida.
+- **17 ações complexas descritas** — 15 estavam vazias e **Derrubar** não tinha entrada.
+- **Maestrias de armadura ganharam efeito** — sem a maestria do tipo, o redutor de `PA` da
+  peça **dobra**. Antes eram compráveis e não faziam nada.
+- **Módulo `magia`** e **módulo `veiculos`**, extraídos de Mukashi e Colapso.
+
+### Mudanças
+
+- **Habilidades não têm mais "usos".** Compradas uma vez, evoluem por **nível**; a **fusão de
+  características deixou de existir**. Cada uso custa `PA` **+ a mesma quantidade de fadiga**.
+- **Fadiga reestruturada.** O máximo deixou de ser fixo (50) e passou a ser **igual ao total de
+  `PV`** (60 no padrão). A penalidade passou de `−1 PA` a cada 5 (a partir de 10) para
+  **`−1 PA` a cada 10** — o teto caiu de −8 para −5 `PA`.
+- **Dano permanente virou perda de vida máxima.** Deixou de ser um terceiro status do espaço de
+  dano: um golpe em membro já em ferida profunda **reduz a vida máxima dele em 1**, para sempre.
+  "Invalidado" passou a significar vida máxima zerada. Como a fadiga máxima acompanha os `PV`,
+  um corpo castigado também cansa antes.
+- **Aspecto Vigilante** passou a aceitar armas de munição (`PROJ.`), não só de arremesso —
+  o arquétipo Atirador recomendava um aspecto que ele próprio não conseguia usar.
+
+### Removido
+
+- A pasta `variantes/habilidades-por-fadiga/` deixou de ser variante e virou **arquivo
+  histórico**; suas extensões opcionais A e B **não** foram promovidas.
+
+---
+
 ## v1.1.0b — consolidação do manual
 
 Micro-revisão sobre a 1.1.0a: consolidação do manual básico unificado para jogadores.

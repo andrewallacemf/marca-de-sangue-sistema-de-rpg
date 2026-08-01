@@ -12,11 +12,14 @@ que é específico de um mundo (Colapso, Mukashi, Gaéria…) mora em `../cenari
 | `00-introducao.md` | O que é o sistema, o que preciso para jogar, como começar. |
 | `conceitos/` | Fundamentos: testes e contratestes, atributos, características, pontos de ação, fadiga. |
 | `conflitos/` | Conflito físico, ações em combate, saúde e proteção, conflito social. |
+| `oponentes/` | Quem se opõe aos jogadores: personagem do narrador × **ameaça**, como criar uma, e o **Nível de Ameaça**. |
+| `arquetipos/` | Caminhos de build genéricos (opcionais). |
 | `criacao-de-personagem/` | Passo a passo de criação e fichas. |
 | `progressao/` | Experiência e evolução. |
 | `listas/` | As listas base: aptidões, habilidades, traços, ações, equipamentos, proteções e itens. |
 | `itens/` | Páginas individuais de itens (quando um item merecer página própria). |
 | `criaturas/` | Criaturas genéricas (bestiário base). |
+| `variantes/` | Regras alternativas em avaliação (e o histórico das já promovidas). |
 
 ## Regra de ouro do sistema-base
 

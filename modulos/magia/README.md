@@ -38,9 +38,17 @@ Uma magia é uma habilidade com três diferenças em relação a uma habilidade 
    [Experiência de Magia](#experiência-de-magia-opcional) — que mudam como a magia é testada e
    comprada, mas **o módulo funciona inteiro sem nenhuma das duas**.
 
-Fora isso, magia segue **todas** as regras normais de habilidade: usos recuperados em descanso
-longo, combinável com aptidões e traços (mas não com outra habilidade), fila de resolução fora de
-combate pelo custo de `PA`, etc.
+Fora isso, magia segue **todas** as regras normais de habilidade: comprada uma vez e evoluída por
+nível, combinável com aptidões e traços (mas não com outra magia ou habilidade), fila de resolução
+fora de combate pelo custo de `PA`, etc.
+
+> ⚠️ **O custo de ativação é somado ao custo normal de fadiga da habilidade.** Desde 01/08/2026,
+> **toda** habilidade custa `PA` + a mesma quantidade de fadiga (ver
+> [Habilidades](../../sistema-base/conceitos/05-habilidades.md#custo-de-uso-pa--fadiga)). Uma magia
+> de `4 PA` com custo de ativação `2` em `PV`, portanto, cobra: `4 PA` + 4 de fadiga (por ser
+> habilidade) + 2 de `PV` — que por sua vez geram mais 2 de fadiga. **Isso torna magia bem mais cara
+> do que era quando este módulo foi escrito**, e os custos das magias-exemplo precisam ser
+> recalibrados com isso em mente no playtest.
 
 ## Custo de ativação — três tipos
 
@@ -50,25 +58,31 @@ Toda magia declara, junto com o custo de `PA`, **um** destes três tipos de cust
 |---|---|---|---|
 | **Fadiga** | O conjurador recebe X pontos de [fadiga](../../sistema-base/conceitos/08-fadiga.md) diretamente — **sem** perder `PV`. | Some no próximo descanso (como toda fadiga). | Magias leves, utilitárias, de baixo risco. |
 | **Dano (curável)** | O conjurador sofre X pontos de dano em si mesmo — **superficial** ou **profundo**, à escolha de quem desenha a magia — seguindo à risca as [regras normais de dano](../../sistema-base/conflitos/03-saude-e-protecao.md#pontos-de-vida-e-dano). | Superficial: sozinho, no descanso. Profundo: precisa de tratamento. | Magias de efeito moderado a forte. |
-| **Dano permanente** | O conjurador sofre X pontos de **dano permanente** em si mesmo — marcado diretamente como permanente, **sem** passar pela progressão normal superficial→profundo→permanente (é sacrifício deliberado da própria força vital, não ferimento de combate). | **Nunca**, por meios convencionais. | Magias extremas — grande poder, grande risco. Reservar para efeitos que justifiquem o preço. |
+| **Vida máxima** | O conjurador **perde X pontos de vida máxima** num membro à sua escolha — o [dano permanente](../../sistema-base/conflitos/03-saude-e-protecao.md#dano-permanente-perda-de-vida-máxima) do sistema, cobrado **direto**, sem precisar que o membro esteja cheio antes (é sacrifício deliberado da própria força vital, não ferimento de combate). | **Nunca**, por meios convencionais. | Magias extremas — grande poder, grande risco. Reservar para efeitos que justifiquem o preço. |
 
-> 📝 A exceção de marcar dano permanente diretamente (sem preencher o membro primeiro) é regra
-> nova deste módulo — não existe em nenhuma outra parte do sistema. Proposta a validar: se um
-> playtest mostrar que isso é confuso na mesa, a alternativa é exigir que o membro já esteja cheio
-> de dano profundo antes de permitir custo permanente ali.
+> 📝 A exceção de cobrar vida máxima **direto**, sem o membro precisar estar cheio antes, é regra
+> nova deste módulo — no sistema, perder vida máxima é sempre a consequência de continuar apanhando
+> num membro já em ferida profunda. Proposta a validar: se na mesa isso se mostrar abusivo, a
+> alternativa é exigir que o membro escolhido já esteja em ferida profunda.
 
 **Todo dano gerado por magia segue a regra normal de [fadiga](../../sistema-base/conceitos/08-fadiga.md):
-cada ponto de dano (superficial, profundo ou permanente) já soma 1 ponto de fadiga automaticamente.**
-Não existe uma fadiga "extra" por cima disso — pagar `PV` numa magia **já** gera fadiga pelo
-caminho normal. Só o tipo **Fadiga** (acima) foge dessa regra, porque não envolve dano nenhum: ali
-a fadiga é o próprio custo, direto, sem dano no meio.
+cada ponto de dano já soma 1 ponto de fadiga automaticamente.** Não existe uma fadiga "extra" por
+cima disso — pagar `PV` numa magia **já** gera fadiga pelo caminho normal. Só o tipo **Fadiga**
+(acima) foge dessa regra, porque não envolve dano nenhum: ali a fadiga é o próprio custo, direto,
+sem dano no meio.
+
+> ⚠️ **Cuidado com o efeito em cascata.** Como a [fadiga máxima acompanha o total de `PV`](../../sistema-base/conceitos/08-fadiga.md#fadiga-máxima),
+> uma magia que cobra **vida máxima** reduz também o quanto o conjurador aguenta de esforço — e
+> portanto quantas magias ele consegue lançar depois. Um mago que abusa do terceiro tipo de custo
+> encurta a própria carreira duas vezes. Isso é intencional, mas precisa ser medido no playtest.
 
 ### Qual membro é atingido
 
 Quem conjura escolhe **em qual membro** o custo de ativação (fadiga não se aplica, é abstrata) é
 registrado — o tronco é o mais comum, como sede simbólica da energia do conjurador, mas a escolha
 é livre. Fora isso, nenhuma regra nova: se o custo acumulado encher um membro, ele fica com ferida
-profunda; se acumular permanente até o teto, fica invalidado — exatamente como qualquer outro dano.
+profunda; se a vida máxima daquele membro chegar a zero, ele fica invalidado — exatamente como
+qualquer outro dano.
 
 ## Progressão (níveis) — efeito, custo, ou os dois
 
@@ -83,13 +97,13 @@ caso, qual usar (ou os dois):
   [Resolução em Sete Sopros](../../cenarios/mukashi/mecanicas-unicas/habilidades-do.md#resolução-em-sete-sopros)
   (Bushidō, Mukashi) reduz o custo de `PA` a cada nível (`3→2→1`). Este módulo estende a mesma
   lógica para o custo de ativação — inclusive **trocando de tipo** conforme melhora (ex.: começa em
-  dano permanente e termina em dano superficial, à medida que o conjurador ganha destreza e
+  vida máxima e termina em dano superficial, à medida que o conjurador ganha destreza e
   recursos para controlar o efeito).
 - **Os dois juntos** — efeito melhora **e** custo de ativação cai. É o mais raro/caro em `exp.`,
   reservar para poucas magias muito especiais.
 
 > Exemplo do segundo modelo: [Pacto da Última Gota](listas/lista-de-magias.md#pacto-da-última-gota)
-> começa custando `4` de dano **permanente** no nível 1 e termina custando dano **profundo** no
+> começa custando `4` de **vida máxima** no nível 1 e termina custando dano **profundo** no
 > nível 5 — o mesmo efeito continua poderoso, mas cada vez menos autodestrutivo à medida que o
 > conjurador domina a técnica.
 
@@ -168,7 +182,7 @@ A [exceção do suporte](../../sistema-base/conceitos/05-habilidades.md#custo-de
    `Ágil`, mente = `Mental`, compulsão social = `Social`).
 2. **Custo de `PA`** — mesma regra de qualquer habilidade: `1 PA` + `PA` da arma se for um ataque;
    `1 PA` utilidade rápida ou `4`–`5 PA` efeito forte se for efeito próprio.
-3. **Custo de ativação** — escolha um dos três tipos (fadiga / dano curável / dano permanente) e um
+3. **Custo de ativação** — escolha um dos três tipos (fadiga / dano curável / vida máxima) e um
    valor. Heurística de calibragem inicial (📝 proposta, a validar no playtest, herdada do Mukashi):
    magia de `4 PA` → `2` de custo; magia de `5 PA` → `3` de custo — o mesmo valor numérico serve de
    ponto de partida em qualquer um dos três tipos, e o **tipo** escolhido é o que define o quão

@@ -69,30 +69,33 @@ Ao completar **arcos pessoais** do personagem, recomenda-se recompensar o jogado
 
 Para adquirir uma característica é necessário comprá-la com pontos de experiência em momentos de compra (Início ou final da sessão, descansos longos ou outras situações determinadas pelo narrador).
 
-Ao comprar Aptidões ou Habilidades, gastam-se pontos de experiência para adquirir apenas um uso dela, uma vez utilizada, é necessário um descanso (ou outra situação do narrador) para recuperar o uso.
+Cada tipo de característica se compra de um jeito:
 
-> 💡 **Comprando a mesma Habilidade ou Aptidão mais de uma vez**
-> Uma mesma característica pode ser adquirida mais de uma vez, representando assim, quantas vezes você consegue usá-la antes de precisar descansar.
+- **Habilidades** — você compra a habilidade **uma vez** e pode usá-la sempre que quiser, desde que tenha `PA` e aguente a [fadiga](../conceitos/08-fadiga.md) (cada uso custa fadiga igual ao `PA` da habilidade). Gastar `exp.` de novo na mesma habilidade **sobe o nível** dela, tornando o efeito mais forte — nunca compra "mais um uso".
+- **Aptidões** — são **consumíveis**: cada aptidão comprada é uma rerrolagem que você tem até o descanso devolvê-la. Comprar de novo aumenta quantas você tem, pelo [custo escalonado](../listas/aptidoes-base.md).
+- **Traços** — não são gastáveis: o efeito permanece ativo enquanto os requisitos estiverem em vigor.
 
-Comprar Traços, diferente de Aptidões e Habilidades, não garante apenas um uso, o efeito do traço permanece ativo enquanto os requisitos necessários estiverem em vigor.
+> ✅ Decidido em 01/08/2026: as **habilidades deixaram de ser compradas por "usos"**. Antes, cada compra dava um uso avulso, recuperado no descanso longo; agora a habilidade é permanente e o limite é a fadiga.
 
 ### Requisitos das características
 
 Em Marca de Sangue, as habilidades têm pré-requisitos para serem usadas. Você não conseguirá motivar seus companheiros com um Brado de Guerra se eles não puderem te ouvir. As exigências das características estão descritas no Manual base do jogador, na descrição de cada habilidade.
 
-### Fundindo características
+### Subindo o nível de uma habilidade
 
-Para adquirir as características mais básicas do jogo, basta gastar pontos de experiência. Contudo, para aumentar o nível das suas características, é necessário fundir níveis mais fracos em uma Característica mais forte. Na vida real, antes de saber como tecer um cachecol, é muito provável que primeiro você precise aprender a manusear a linha e a agulha. Antes de construir uma carroça, você precisa passar pelo básico da carpintaria.
+Para adquirir uma habilidade, basta gastar pontos de experiência. Para deixá-la **mais forte**, gaste `exp.` novamente e **suba o nível** dela. Cada entrada das [listas de habilidades](../listas/habilidades-base.md) traz a sua **Progressão**: o que muda a cada nível alcançado.
 
-Uma característica pode ser melhorada para que seus efeitos sejam intensificados. Se você tem dois usos da habilidade “Corte profundo”, que transforma até 2 pontos de dano superficial de uma arma cortante em dano profundo, você pode optar por melhorar essa habilidade fundindo os usos da habilidade básica para obter “corte profundo aprimorado”, que transforma até 4 pontos de dano superficial de uma arma cortante em dano profundo.
+Na vida real, antes de saber tecer um cachecol é provável que você precise primeiro aprender a manusear a linha e a agulha. Aqui vale o mesmo: o nível 3 de uma habilidade pressupõe que você passou pelos níveis 1 e 2.
 
-Fundir características não consome experiência, mas é necessário cuidado nessa escolha, uma vez fundidas, será necessário gastar **`1 exp.`** para separar características fundidas.
+> *Exemplo: “Corte profundo” transforma até 2 pontos de dano superficial de uma arma cortante em dano profundo. Subindo o nível dela, o mesmo golpe passa a transformar 4.*
+
+> ⚠️ **A fusão de características não existe mais.** Até 01/08/2026, subir o nível exigia **fundir** dois usos de uma mesma habilidade, e separá-las custava `1 exp.` Como as habilidades deixaram de ser compradas por usos, não há o que fundir: a força vem do nível, comprado diretamente.
 
 ### Flexibilidade vs Poder
 
-Cabe ao jogador, sempre durante seu descanso, decidir se vai fundir ou não suas habilidades. Manter um grande número de ações possíveis ou poucas ações poderosas são ambas estratégias válidas.
+O dilema mudou de lugar, mas continua existindo. Antes era "muitos usos fracos ou poucos usos fortes"; agora é **largura contra profundidade**: gastar `exp.` em muitas habilidades diferentes de nível baixo, ou concentrar em poucas habilidades de nível alto. As duas estratégias são válidas — e a **fadiga** é o que arbitra, porque uma habilidade cara cansa mais a cada uso.
 
-No entanto, atenção: esse dilema vale para as habilidades. Aptidões não são limitadas a uma por ação — você pode gastar quantas aptidões do atributo correspondente quiser para rerrolar o dado de um mesmo teste ou contrateste (ver [Aptidões](../conceitos/04-aptidoes.md)).
+Atenção: esse dilema vale para as habilidades. Aptidões não são limitadas a uma por ação — você pode gastar quantas aptidões do atributo correspondente quiser para rerrolar o dado de um mesmo teste ou contrateste (ver [Aptidões](../conceitos/04-aptidoes.md)).
 
 ## Comprando pontos de ação
 

@@ -78,8 +78,8 @@ custo de ativação de magia em cada cena de conflito. Não afeta fadiga vinda d
 #### Descrição
 
 Uma vez por [descanso longo](../../../sistema-base/conceitos/09-descanso.md#descanso-longo), ao
-pagar um custo de ativação em dano **permanente**, o jogador pode tratar **1** desses pontos como
-dano **profundo** em vez de permanente.
+pagar um custo de ativação em **vida máxima**, o jogador pode converter **1** desses pontos em
+dano **profundo** — o membro perde 1 de máximo a menos.
 
 > 📝 Custo alto de propósito — mitigar parte do risco do tier mais extremo de magia (ver
 > [Custo de ativação](../README.md#custo-de-ativação--três-tipos)) sem eliminá-lo por completo.
@@ -87,5 +87,5 @@ dano **profundo** em vez de permanente.
 #### Requisitos de uso
 
 - Só entra em jogo quando o personagem tem ao menos uma magia com custo de ativação em dano
-  permanente (ex.: [Pacto da Última Gota](lista-de-magias.md#pacto-da-última-gota)) — sem isso, o
+  vida máxima (ex.: [Pacto da Última Gota](lista-de-magias.md#pacto-da-última-gota)) — sem isso, o
   traço fica sem efeito prático, como qualquer traço sem requisito atendido.

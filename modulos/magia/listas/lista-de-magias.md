@@ -24,7 +24,7 @@ prontas para usar quanto como referência de calibragem para criar magias novas.
 | **Magia** | **Atributo** | **Custo de `PA`** | **Custo de ativação (nível 1 → 5)** | **Custo de compra** |
 | --- | --- | --- | --- | --- |
 | [Punho da Montanha](#punho-da-montanha) | `Físico` | `1 PA` + arma/desarmado | `2` superficial (fixo) | `2 exp.` |
-| [Pacto da Última Gota](#pacto-da-última-gota) | `Físico` | `5 PA` | `4→3→2→1` permanente → `4` profundo | `4 exp.` |
+| [Pacto da Última Gota](#pacto-da-última-gota) | `Físico` | `5 PA` | `4→3→2→1` vida máx. → `4` profundo | `4 exp.` |
 | [Passo Entre Sopros](#passo-entre-sopros) | `Ágil` | `1 PA` | `2` fadiga (fixo) | `2 exp.` |
 | [Véu da Presa Rápida](#véu-da-presa-rápida) | `Ágil` | `4 PA` | `3→2→1→1` superficial → `1` fadiga | `3 exp.` |
 | [Sussurro na Nuca](#sussurro-na-nuca) | `Mental` | `4 PA` | `2` superficial (fixo) | `3 exp.` |
@@ -60,7 +60,7 @@ sobrenatural. Ao acertar um ataque corpo a corpo, soma dano extra ao golpe.
 
 > *Um pedaço de si mesmo, para sempre, em troca de um instante de força que nenhum músculo alcança.*
 
-**Atributo:** `Físico` · **Custo de PA:** `5 PA` · **Custo de ativação:** nível 1 a 4 = `4→3→2→1` de dano **permanente**; nível 5 = `4` dano **profundo** · **Custo de compra:** `4 exp.`
+**Atributo:** `Físico` · **Custo de PA:** `5 PA` · **Custo de ativação:** nível 1 a 4 = `4→3→2→1` de **vida máxima**; nível 5 = `4` de dano **profundo** · **Custo de compra:** `4 exp.`
 
 #### Descrição
 
@@ -70,7 +70,7 @@ extra e ignora toda a redução de dano de armadura do alvo.
 
 > 📝 É a magia-exemplo do módulo para o modelo "custo de ativação cai (e troca de tipo) por nível" —
 > ver [Progressão](../README.md#progressão-níveis--efeito-custo-ou-os-dois). No nível 5 o efeito
-> continua o mesmo, mas o conjurador já não paga com dano permanente — domina a técnica o
+> continua o mesmo, mas o conjurador já não paga com vida máxima — domina a técnica o
 > suficiente para que o preço vire uma ferida grave, porém tratável.
 
 #### Requisitos de uso
@@ -82,11 +82,11 @@ extra e ignora toda a redução de dano de armadura do alvo.
 
 #### Progressão
 
-1. Custo `4` de dano permanente.
-2. Custo `3` de dano permanente.
-3. Custo `2` de dano permanente.
-4. Custo `1` de dano permanente.
-5. Custo `4` de dano profundo (sai do permanente).
+1. Custo `4` de vida máxima.
+2. Custo `3` de vida máxima.
+3. Custo `2` de vida máxima.
+4. Custo `1` de vida máxima.
+5. Custo `4` de dano profundo (para de cobrar vida máxima).
 
 ## Passo Entre Sopros
 
@@ -230,7 +230,7 @@ Todo inimigo num raio que possa ouvir o grito faz um teste de `Mental`. Quem fal
 
 > 📝 Exemplo do modelo "custo melhora de tier dentro do curável" — começa em dano profundo (preço
 > alto, precisa tratamento) e passa a superficial a partir do nível 3, sem nunca chegar a
-> permanente. Contraste com [Pacto da Última Gota](#pacto-da-última-gota), que começa em permanente.
+> vida máxima. Contraste com [Pacto da Última Gota](#pacto-da-última-gota), que começa cobrando vida máxima.
 
 #### Requisitos de uso
 

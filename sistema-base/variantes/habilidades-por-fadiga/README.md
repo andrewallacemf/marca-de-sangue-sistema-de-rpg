@@ -1,48 +1,58 @@
 ---
-titulo: "Variante experimental — Habilidades por nível e fadiga"
+titulo: "Variante fadiga — promovida ao núcleo (arquivo histórico)"
 tipo: regra
 cenario: base
-status: rascunho
-tags: [variante, experimental, habilidades, fadiga]
-atualizado-em: 2026-07-12
+status: estavel
+publico: false
+tags: [variante, historico, habilidades, fadiga, promovida]
+atualizado-em: 2026-08-01
 ---
 
-# 🧪 Variante experimental — Habilidades por nível e fadiga
+# 🗃️ Variante "habilidades por fadiga" — promovida ao núcleo
 
-> **ISTO NÃO É REGRA VIGENTE.** É uma **versão alternativa em avaliação**, mantida separada
-> do sistema-base canônico para **playtest**. Enquanto não for promovida pelo grupo, o que
-> vale nas mesas é o sistema-base normal ([Habilidades](../../conceitos/05-habilidades.md) e
-> [Fadiga](../../conceitos/08-fadiga.md)). Depois do teste, o grupo **promove ou descarta**.
+> ✅ **Esta variante deixou de ser variante em 01/08/2026** (decisão de Daniel e André). O
+> conteúdo dela virou **regra oficial** do sistema-base. Esta pasta permanece apenas como
+> **registro histórico** do desenho e das alternativas consideradas — **não consulte estes
+> arquivos para jogar.**
 
-## O que é esta variante
+## Onde a regra mora agora
 
-Uma reescrita da relação **habilidades × fadiga**: em vez de comprar "usos" de habilidade,
-a habilidade evolui por **nível** e **cada uso consome fadiga**. A fadiga vira o critério
-que define **quanto** você consegue usar suas habilidades num confronto.
+| O que era | Onde está |
+|---|---|
+| Habilidades por nível, sem usos, sem fusão | [conceitos/05-habilidades.md](../../conceitos/05-habilidades.md) |
+| Custo de uso em `PA` + fadiga | [conceitos/05-habilidades.md](../../conceitos/05-habilidades.md#custo-de-uso-pa--fadiga) |
+| Fadiga reestruturada (máximo, limiar, penalidades) | [conceitos/08-fadiga.md](../../conceitos/08-fadiga.md) |
+| Descanso recuperando fadiga em vez de usos | [conceitos/09-descanso.md](../../conceitos/09-descanso.md) |
 
-Origem da proposta: [notas de design de 11/07/2026](../../../notas-de-design/decisoes/2026-07-11-aptidoes-e-cartas.md)
-e as notas de design de 11/07/2026 (revisão das 14h58 e 15h44).
+## O que mudou entre a proposta e o que foi adotado
 
-## Como se relaciona com o sistema-base
+A variante **não** foi promovida tal como estava escrita. Três diferenças:
 
-- Quando a mesa optar por testar esta variante, ela **substitui** as regras de
-  **Habilidades** e **Fadiga** do base; **todo o resto do sistema-base continua valendo**
-  sem mudança (atributos, testes/contratestes, conflito, criação de personagem, etc.).
-- **Aptidões ficam de fora** da variante (ver [03-impactos-nas-demais-mecanicas.md](03-impactos-nas-demais-mecanicas.md)).
+1. **Custo de fadiga por uso.** A proposta era **igual ao nível** da habilidade (nível 1 = 1
+   de fadiga, nível 2 = 2…). Foi adotado **igual ao `PA` da habilidade**, relação **1:1** —
+   mais simples de lembrar na mesa e já escalado pelo peso da ação.
+2. **Limiar e passo da penalidade.** A proposta era limiar livre de 10 e depois **−1 `PA` a
+   cada 5**. Foi adotado **−1 `PA` a cada 10**, sem limiar separado — a primeira faixa de 10
+   já funciona como o limiar livre.
+3. **Fadiga máxima.** A proposta mantinha um número fixo (40 ou 50). Foi adotada a **fadiga
+   máxima igual ao total de pontos de vida** do personagem (60 no padrão), o que fez a mesma
+   regra servir para personagens e para [ameaças](../../oponentes/00-oponentes.md) de
+   qualquer tamanho.
 
-## Índice da variante
+O que a variante propunha e **foi mantido sem mudança**: habilidade comprada uma vez e
+evoluída por nível, o fim dos usos avulsos, o fim da fusão de habilidades, as aptidões
+permanecendo fora da fadiga, e qualquer descanso zerando a fadiga.
 
-1. [Visão geral e o que muda](00-visao-geral.md)
-2. [Habilidades por nível](01-habilidades.md)
-3. [Fadiga (reestruturada)](02-fadiga.md)
-4. [Impactos nas demais mecânicas](03-impactos-nas-demais-mecanicas.md) — PA, aptidões, características, descanso
-5. [Extensões opcionais](04-extensoes-opcionais.md) — dois tipos de fadiga; fadiga em contratestes
-6. [Pendências e roteiro de teste](pendencias-e-testes.md)
+## As extensões opcionais
 
-## Observações do projeto
+As sub-ideias de [04-extensoes-opcionais.md](04-extensoes-opcionais.md) (extensões A e B)
+**não** foram promovidas. Continuam disponíveis como ideias, caso o grupo queira retomá-las.
 
-- **Fora do `INDICE.md`:** por ser experimental, esta área **não** é indexada no índice
-  remissivo canônico (evita duas definições concorrentes de "Fadiga"/"Habilidade"). Se a
-  variante for promovida, aí sim entra no índice.
-- **Números marcados `📝 PROPOSTA`** são sugestões da IA para começar o playtest — a
-  definir/ajustar pelo grupo (ver [pendências](pendencias-e-testes.md)).
+## Arquivos desta pasta
+
+- [00-visao-geral.md](00-visao-geral.md) — a motivação original e a tabela de comparação
+- [01-habilidades.md](01-habilidades.md) — o desenho das habilidades por nível
+- [02-fadiga.md](02-fadiga.md) — o desenho da fadiga (números superados pela decisão)
+- [03-impactos-nas-demais-mecanicas.md](03-impactos-nas-demais-mecanicas.md) — a análise de impacto
+- [04-extensoes-opcionais.md](04-extensoes-opcionais.md) — extensões não promovidas
+- [pendencias-e-testes.md](pendencias-e-testes.md) — o roteiro de teste que orientou a decisão
