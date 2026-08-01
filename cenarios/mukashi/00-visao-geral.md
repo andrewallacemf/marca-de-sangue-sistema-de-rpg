@@ -4,7 +4,7 @@ tipo: cenario
 cenario: mukashi
 status: rascunho
 tags: [mukashi, visao-geral, japao-feudal, kami, ki]
-atualizado-em: 2026-07-19
+atualizado-em: 2026-08-01
 ---
 
 # Mukashi — Visão geral
@@ -19,8 +19,8 @@ Do período Heian ao século XV; sincretismo xintoísta-budista; honra × dever 
 
 ## Mecânicas próprias de Mukashi
 
-- **KI** — o quinto atributo, a aptidão para manipular o sobrenatural (ver [KI](mecanicas-unicas/ki.md)).
-- **Magia** — feitiços com roupagem de KI, construídos sobre habilidades comuns (ver [Magia](mecanicas-unicas/magia.md)).
+- **KI** — a energia sobrenatural do mundo, o nome que Mukashi dá à magia do sistema (ver [KI](mecanicas-unicas/ki.md)).
+- **Magia** — magias com roupagem de KI, construídas sobre habilidades comuns (ver [Magia](mecanicas-unicas/magia.md)).
 - **Dō (caminhos)** — os arquétipos de personagem do cenário, de Bushidō a Onmyōdō (ver [Os caminhos](arquetipos-do.md)).
 - **Raças de Yamato** — Humanos, **Tanuki** e **Oni** já jogáveis; Daitengu e Kitsune em aberto (ver [Raças jogáveis](criaturas/racas-jogaveis.md)).
 - Personagens podem usar furtividade (infiltração, emboscada) e a intriga da corte (conflito social) como parte central do jogo, e têm à disposição um arsenal próprio de armas japonesas (ver [Arsenal](arsenal.md)).

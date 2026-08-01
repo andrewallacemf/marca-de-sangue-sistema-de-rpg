@@ -4,7 +4,7 @@ tipo: cenario
 cenario: mukashi
 status: rascunho
 tags: [mukashi, lore, kami, mitologia, panteao]
-atualizado-em: 2026-07-24
+atualizado-em: 2026-08-01
 ---
 
 # O panteão dos Kami
@@ -13,7 +13,7 @@ Cada montanha de Yamato, cada rio e cada bosque são, por si só, sagrados. A na
 
 Enquanto o elemento da natureza estiver vivo, o **Kami** que o guarda permanece no plano terreno. Quanto mais importante o elemento para a ordem do mundo, mais forte é o espírito. Assim, o mundo é regido por grandes Kami que representam o **Sol**, a **Lua**, o **Fogo** e o **Mar**.
 
-> Os Kami têm peso mecânico via o atributo [KI](../mecanicas-unicas/ki.md) e a [magia](../mecanicas-unicas/magia.md): bênçãos, selos e invocações se apoiam neles.
+> Os Kami têm peso mecânico via o [KI](../mecanicas-unicas/ki.md) e a [magia](../mecanicas-unicas/magia.md): bênçãos, selos e invocações se apoiam neles.
 
 ## A Vida e a Morte
 

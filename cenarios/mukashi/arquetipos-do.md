@@ -4,12 +4,12 @@ tipo: cenario
 cenario: mukashi
 status: rascunho
 tags: [mukashi, arquetipos, do, caminhos]
-atualizado-em: 2026-07-27
+atualizado-em: 2026-08-01
 ---
 
 # Dō — os caminhos do Mukashi
 
-Os **dō** são os arquétipos do Mukashi. Cada um **dá nome e flavor** a um [arquétipo genérico](../../sistema-base/arquetipos/01-arquetipos-genericos.md) do núcleo (ou é próprio do mundo) e, opcionalmente, ajusta o atributo secundário para **[KI](mecanicas-unicas/ki.md)** quando há mística. Seguem a [estrutura de arquétipo](../../sistema-base/arquetipos/00-como-funcionam.md) (primário/secundário, sugestões, e **habilidades de caminho** com pré-requisito de ≥ 2 habilidades do caminho). Alguns dō também têm **traços de caminho** — o mesmo espírito das habilidades de caminho, mas aplicado a um traço (aspecto/técnica/maestria) em vez de uma habilidade; ver a lista completa em [habilidades-do.md](mecanicas-unicas/habilidades-do.md).
+Os **dō** são os arquétipos do Mukashi. Cada um **dá nome e flavor** a um [arquétipo genérico](../../sistema-base/arquetipos/01-arquetipos-genericos.md) do núcleo (ou é próprio do mundo). Os dō místicos (Onmyōdō, Yamabushi) usam magia com roupagem de **[KI](mecanicas-unicas/ki.md)**, mas testam os 4 atributos normais como qualquer dō — desde a migração pro [módulo de Magia](mecanicas-unicas/magia.md) (01/08/2026), `KI` não é mais um atributo secundário próprio. Seguem a [estrutura de arquétipo](../../sistema-base/arquetipos/00-como-funcionam.md) (primário/secundário, sugestões, e **habilidades de caminho** com pré-requisito de ≥ 2 habilidades do caminho). Alguns dō também têm **traços de caminho** — o mesmo espírito das habilidades de caminho, mas aplicado a um traço (aspecto/técnica/maestria) em vez de uma habilidade; ver a lista completa em [habilidades-do.md](mecanicas-unicas/habilidades-do.md).
 
 > 🧭 **Todos os 6 dō estão completos** (Bushidō, Shinobi-dō, Yamabushi, Kyūdō, Onmyōdō e Caminho
 > da Corte) — cada um com descrição de mundo, sugestões e, onde fizer sentido, habilidades/traços
@@ -24,7 +24,7 @@ Os **dō** são os arquétipos do Mukashi. Cada um **dá nome e flavor** a um [a
 | **Sōhei** — Caminho do Bastão/Naginata | Baluarte / Guerreiro | Monge-guerreiro; naginata, bastão; segura a linha. |
 | **Shinobi-dō** — Caminho da Sombra | Assassino | Shinobi; kunai/shuriken; usa [furtividade](../../modulos/furtividade/README.md). |
 | **Kyūdō** — Caminho do Arco | Atirador | Arqueiro yumi; foco e precisão. |
-| **Onmyōdō** — Caminho do Yin-Yang | Estrategista, secundário **KI** | Onmyōji; adivinhação, selamento de espíritos, [magia](mecanicas-unicas/magia.md). |
+| **Onmyōdō** — Caminho do Yin-Yang | Estrategista, secundário **Social** | Onmyōji; adivinhação, selamento de espíritos, [magia](mecanicas-unicas/magia.md) com roupagem de KI. |
 | **Caminho da Corte** — O Eminente da Corte | Líder | Cortesão/kugyō; poder suave, protocolo e arbitragem; usa [conflito social](../../modulos/conflito-social/README.md). |
 | **Yamabushi (Shugenja)** — Caminho da Montanha | Sem genérico único — ver bloco próprio | Asceta místico; bō, naginata, hora (búzio); associado aos tengu. |
 
@@ -66,7 +66,12 @@ Os **dō** são os arquétipos do Mukashi. Cada um **dá nome e flavor** a um [a
 
 ## Yamabushi (Shugenja) — Caminho da Montanha
 
-**Base:** sem genérico único (mistura provação física e mística) · **Primário:** Físico · **Secundário:** [KI](mecanicas-unicas/ki.md)
+**Base:** sem genérico único (mistura provação física e mística) · **Primário:** Físico · **Secundário:** Mental
+
+> 📝 Secundário ajustado de `KI` para `Mental` em 01/08/2026 — desde a migração pro
+> [módulo de Magia](mecanicas-unicas/magia.md), `KI` não é mais um atributo testável (ver
+> [KI](mecanicas-unicas/ki.md)). `Mental` mantém o espírito original (disciplina, resistência à
+> provação) e é o atributo que mais aparece nas magias/habilidades místicas em geral.
 
 **Descrição:** Yamabushi — "aqueles que dormem nas montanhas" — são ascetas que se afastam do mundo humano em busca de poder através de provações rigorosas: jejuns, meditação sob quedas d'água geladas, jornadas por trilhas impossíveis. A disciplina que seguem, o *Shugendō*, mistura xintoísmo, budismo esotérico e rituais de manipulação do sobrenatural — e é fama que aprenderam suas técnicas com os próprios tengu, os espíritos-corvo que habitam os picos (ver [Daitengu](criaturas/racas-jogaveis.md#outras-raças-a-desenvolver), uma das raças de Yamato ainda a desenvolver). Diferente do [Sōhei](#sōhei---caminho-do-bastãonaginata), que defende um templo em comunidade, o yamabushi caminha sozinho — sua força vem da provação, não da fileira de batalha.
 
@@ -99,7 +104,12 @@ Os **dō** são os arquétipos do Mukashi. Cada um **dá nome e flavor** a um [a
 
 ## Onmyōdō — Caminho do Yin-Yang
 
-**Base:** Estrategista · **Primário:** Mental · **Secundário:** [KI](mecanicas-unicas/ki.md)
+**Base:** Estrategista · **Primário:** Mental · **Secundário:** Social
+
+> 📝 Secundário ajustado de `KI` para `Social` em 01/08/2026 — desde a migração pro
+> [módulo de Magia](mecanicas-unicas/magia.md), `KI` não é mais um atributo testável (ver
+> [KI](mecanicas-unicas/ki.md)). `Social` casa com o papel do onmyōji na corte (o *Onmyō-ryō* era
+> um escritório da corte, não um posto isolado) e evita repetir o `Mental` do primário.
 
 **Descrição:** O onmyōdō — "caminho do yin-yang" — é o ofício do místico intelectual e burocrata: o onmyōji lê o equilíbrio entre as forças opostas do mundo para adivinhar, selar espíritos e proteger contra influências malignas. Historicamente ligado ao *Onmyō-ryō*, o Escritório de Adivinação da corte, o onmyōji não vence pela lâmina, mas pela estratégia sobrenatural: sabe o dia certo para partir, o selo certo para conter um espírito e a pergunta certa para desmontar o plano do inimigo antes que ele se revele.
 
@@ -110,7 +120,7 @@ Os **dō** são os arquétipos do Mukashi. Cada um **dá nome e flavor** a um [a
 - **Habilidades:** [Analisar fraquezas](../../sistema-base/listas/habilidades-base-mentais.md#analisar-fraquezas) e [Confundir inimigo](../../sistema-base/listas/habilidades-base-mentais.md#confundir-inimigo) — as mesmas do Estrategista genérico — no lugar de "Criar armadilha", que não tem apelo místico; o onmyōji troca a armadilha física pelas três habilidades de caminho abaixo.
 - **Equipamentos:** ofuda (talismãs de papel) e outros itens rituais — flavor por enquanto, sem equivalente no catálogo (mesmo tratamento dado ao búzio do Yamabushi).
 
-**Habilidades de caminho (≥ 2 do caminho):** [Invocação de Shikigami](mecanicas-unicas/habilidades-do.md#invocação-de-shikigami) (`KI`, cria um servo espiritual mensageiro/observador — ⚠️ combate depende do pacote de Minion, ainda em aberto), [Encantamento de Selamento](mecanicas-unicas/habilidades-do.md#encantamento-de-selamento-hifu) (`KI`, ofuda que aplica Desvantagem física/ágil no alvo) e [Divinação de Direções e Datas](mecanicas-unicas/habilidades-do.md#divinação-de-direções-e-datas-hidoritenmon) (`KI`, ritual fora de combate que dá aptidão extra a aliados antes de um conflito). As três são **feitiços** — além do `PA`, cobram custo de saúde do conjurador, seguindo a [regra de custo da magia](mecanicas-unicas/magia.md#custo-pontos-de-saúde).
+**Habilidades de caminho (≥ 2 do caminho):** [Invocação de Shikigami](mecanicas-unicas/habilidades-do.md#invocação-de-shikigami) (`Mental`, cria um servo espiritual mensageiro/observador — ⚠️ combate depende do pacote de Minion, ainda em aberto), [Encantamento de Selamento](mecanicas-unicas/habilidades-do.md#encantamento-de-selamento-hifu) (`Mental`, ofuda que aplica Desvantagem física/ágil no alvo) e [Divinação de Direções e Datas](mecanicas-unicas/habilidades-do.md#divinação-de-direções-e-datas-hidoritenmon) (`Mental`, ritual fora de combate que dá aptidão extra a aliados antes de um conflito). As três são **magias** com roupagem de KI — além do `PA`, cobram custo de ativação do conjurador, seguindo a [regra do módulo de Magia](../../modulos/magia/README.md#custo-de-ativação--três-tipos).
 
 <!-- bastidor:inicio -->
 > 📝 Nota de curadoria: chamei as três de "habilidades de caminho" (exclusivas do Onmyōdō, ≥ 2 habilidades do caminho como pré-requisito) em vez de habilidades soltas — é a leitura que casa com o que `magia.md` já previa ("como habilidades de caminho de um dō místico"). Se o Daniel preferir deixá-las abertas a qualquer personagem com `KI`, é só tirar o pré-requisito.

@@ -52,15 +52,21 @@ versão antiga e foi corrigida. Ver
 - **Página Aptidões (vigente):** usa quantas quiser; recuperação em **descanso longo**.
 - **Página Traços (variante, descartada):** aptidões aplicáveis **uma vez por dia**.
 
-## 4. Custo da magia (camada fantasia)
+## 4. Custo da magia (camada fantasia) — ✅ DECIDIDO em 01/08/2026 (generalizado)
 
-Três direções coexistem no material:
+Três direções coexistiam no material:
 
 - Mágicas = habilidades que custam **saúde** (Feitiços e Mágicas / diretriz de design).
 - Magia conjurada com **sangue alheio**, com contrateste Mental (página órfã "Habilidades do Cenário").
 - Magias custam **fadiga** (hipótese do Daniel; feitiços-como-traços).
 
-Decidir a direção antes de converter o catálogo de magias (hoje rascunho derivado de D&D 5e).
+**Decisão: as duas primeiras direções (saúde/`PV`) e a hipótese de fadiga do Daniel não competem
+mais — o [módulo Magia](../modulos/magia/README.md) unificou as três num único sistema com 3 tipos
+de custo de ativação por magia (fadiga direta / dano curável / dano permanente), decidido caso a
+caso por magia, não por cenário.** A direção "sangue alheio" (contrateste Mental) não foi
+incorporada — nenhuma magia hoje é conjurada com sangue de terceiros; fica descartada a menos que
+alguém retome a ideia. Falta ainda converter o catálogo de magias derivado de D&D 5e (Gaéria) pro
+novo módulo — ver `PENDENCIAS.md`.
 
 ## 5. Fadiga — mecânica base indefinida — ✅ DECIDIDO em 11/07/2026
 

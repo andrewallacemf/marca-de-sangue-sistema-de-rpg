@@ -4,7 +4,7 @@ tipo: regra
 cenario: base
 status: estavel
 tags: [atributos, fisico, agil, mental, social]
-atualizado-em: 2026-07-11
+atualizado-em: 2026-08-01
 ---
 
 # Atributos
@@ -31,4 +31,10 @@ O atributo **Social** compreende o uso da conversa, da linguagem corporal, da co
 
 ## Atributos específicos
 
-Em determinados cenários, pode haver ainda um quinto atributo, que possui características específicas a depender de qual história está sendo contada. Em Mukashi, por exemplo, que é um cenário oriental onde existe o conceito de magia, esse quinto atributo é o KI, que indica aptidão para a manipulação das forças sobrenaturais. Preencha esse espaço com o que for mais interessante para sua campanha.
+Em determinados cenários, pode haver ainda um quinto atributo, que possui características específicas a depender de qual história está sendo contada. Preencha esse espaço com o que for mais interessante para sua campanha.
+
+> 📝 Até 01/08/2026, o exemplo aqui era o `KI` do Mukashi (magia como quinto atributo). O Mukashi
+> migrou para o [módulo de Magia](../../modulos/magia/README.md), que **não** usa um quinto
+> atributo — cada magia testa um dos 4 atributos base. Um quinto atributo cenário-específico
+> continua sendo um recurso válido do núcleo para quem quiser essa abordagem; só não é mais o caso
+> do Mukashi.

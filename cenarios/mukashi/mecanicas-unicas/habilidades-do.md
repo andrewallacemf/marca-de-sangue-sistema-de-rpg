@@ -4,7 +4,7 @@ tipo: regra
 cenario: mukashi
 status: rascunho
 tags: [mukashi, habilidades, tracos, arquetipos, do, caminhos]
-atualizado-em: 2026-07-27
+atualizado-em: 2026-08-01
 ---
 
 # Habilidades e traços de caminho (dō)
@@ -130,23 +130,23 @@ Ignora qualquer **Desvantagem** que esteja sofrendo por um efeito de intimidaç�
 
 ## Onmyōdō
 
-As três habilidades abaixo são **feitiços** no sentido de [magia.md](magia.md): usam o atributo `KI` e, além do custo de `PA`, cobram um **custo de saúde** — dano superficial que o conjurador sofre em si mesmo ao usá-las. São as primeiras habilidades mágicas redigidas para o Mukashi (a pendência "lista de habilidades mágicas" de `magia.md` passa a ter estas três como ponto de partida).
+As três habilidades abaixo são **magias** no sentido do [módulo de Magia](../../../modulos/magia/README.md) (ver também [magia.md](magia.md)): testam o atributo `Mental` e, além do custo de `PA`, cobram um **custo de ativação** — dano superficial que o conjurador sofre em si mesmo ao usá-las. São as primeiras magias redigidas para o Mukashi (a pendência "lista de magias" de `magia.md` passa a ter estas três como ponto de partida).
 
-> 📝 Todos os custos de `PA`, saúde e `exp.` abaixo são **proposta da IA** — o Daniel não deu números na descrição original, só os efeitos. A calibrar no playtest, como o resto da lista de habilidades.
+> 📝 Todos os custos de `PA`, ativação e `exp.` abaixo são **proposta da IA** — o Daniel não deu números na descrição original, só os efeitos. A calibrar no playtest, como o resto da lista de habilidades. Atributo ajustado de `KI` para `Mental` em 01/08/2026 — ver [KI](ki.md).
 
 ### Resumo — habilidades de caminho
 
-| **Habilidade** | **Atributo** | **Custo de `PA`** | **Custo de saúde** | **Custo de compra** |
+| **Habilidade** | **Atributo** | **Custo de `PA`** | **Custo de ativação** | **Custo de compra** |
 | --- | --- | --- | --- | --- |
-| Invocação de Shikigami | `KI` | `4 PA` | `2` (dano superficial) 📝 | `4 exp.` 📝 |
-| Encantamento de Selamento (Hifu) | `KI` | `4 PA` | `2` (dano superficial) 📝 | `3 exp.` 📝 |
-| Divinação de Direções e Datas (Hidori/Tenmon) | `KI` | — (fora de combate) | `1` (dano superficial) 📝 | `2 exp.` 📝 |
+| Invocação de Shikigami | `Mental` | `4 PA` | `2` (dano superficial) 📝 | `4 exp.` 📝 |
+| Encantamento de Selamento (Hifu) | `Mental` | `4 PA` | `2` (dano superficial) 📝 | `3 exp.` 📝 |
+| Divinação de Direções e Datas (Hidori/Tenmon) | `Mental` | — (fora de combate) | `1` (dano superficial) 📝 | `2 exp.` 📝 |
 
 ### Invocação de Shikigami
 
 > *Um pedaço de papel dobrado, um sopro de KI — e o shikigami abre os olhos.*
 
-**Atributo:** `KI` · **Custo de PA:** `4 PA` · **Custo de saúde:** `2` (dano superficial) 📝 · **Custo de compra:** `4 exp.` 📝
+**Atributo:** `Mental` · **Custo de PA:** `4 PA` · **Custo de ativação:** `2` (dano superficial) 📝 · **Custo de compra:** `4 exp.` 📝
 
 #### Descrição
 
@@ -169,11 +169,11 @@ O onmyōji anima um shikigami — um pequeno servo espiritual feito de papel dob
 
 > *Um ofuda colado na pele — e o que quer que se mova por dentro daquele corpo, para.*
 
-**Atributo:** `KI` · **Custo de PA:** `4 PA` · **Custo de saúde:** `2` (dano superficial) 📝 · **Custo de compra:** `3 exp.` 📝
+**Atributo:** `Mental` · **Custo de PA:** `4 PA` · **Custo de ativação:** `2` (dano superficial) 📝 · **Custo de compra:** `3 exp.` 📝
 
 #### Descrição
 
-O onmyōji cola um talismã de papel (*ofuda*) no alvo, selando parte de seus movimentos com um comando espiritual. É um teste de `KI` (onmyōji) contra `Mental` (alvo): sucesso aplica **Desvantagem** nos próximos testes Físicos/Ágeis do alvo até o fim do turno seguinte dele — mesma lógica de efeito de [Confundir inimigo](../../../sistema-base/listas/habilidades-base-mentais.md#confundir-inimigo), mas fisicamente colado ao corpo, não uma ilusão mental. Contra entidades espirituais (yokai possuindo um corpo, espíritos manifestos), o narrador pode tratar um sucesso como início de **exorcismo** — efeito narrativo, a detalhar quando o bestiário de yokai existir.
+O onmyōji cola um talismã de papel (*ofuda*) no alvo, selando parte de seus movimentos com um comando espiritual. É um teste de `Mental` (onmyōji) contra `Mental` (alvo): sucesso aplica **Desvantagem** nos próximos testes Físicos/Ágeis do alvo até o fim do turno seguinte dele — mesma lógica de efeito de [Confundir inimigo](../../../sistema-base/listas/habilidades-base-mentais.md#confundir-inimigo), mas fisicamente colado ao corpo, não uma ilusão mental. Contra entidades espirituais (yokai possuindo um corpo, espíritos manifestos), o narrador pode tratar um sucesso como início de **exorcismo** — efeito narrativo, a detalhar quando o bestiário de yokai existir.
 
 #### Requisitos de uso
 
@@ -190,7 +190,7 @@ O onmyōji cola um talismã de papel (*ofuda*) no alvo, selando parte de seus mo
 
 > *Antes da batalha, os astros já escolheram o vencedor — resta ao onmyōji lê-los.*
 
-**Atributo:** `KI` · **Custo de PA:** — (ritual fora de combate) · **Custo de saúde:** `1` (dano superficial) 📝 · **Custo de compra:** `2 exp.` 📝
+**Atributo:** `Mental` · **Custo de PA:** — (ritual fora de combate) · **Custo de ativação:** `1` (dano superficial) 📝 · **Custo de compra:** `2 exp.` 📝
 
 #### Descrição
 

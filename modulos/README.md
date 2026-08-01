@@ -57,4 +57,5 @@ Frontmatter dos arquivos de módulo (ver [CONVENCOES.md](../CONVENCOES.md), seç
 | [`arcos-e-bestas`](arcos-e-bestas/README.md) | Arcos, bestas, lançadores simples + munição de flecha/pedra/dardo. | coleção `armas` | catálogo extraído em 19/07/2026 |
 | [`armas-de-fogo`](armas-de-fogo/README.md) | Armas de pólvora + balas. | coleção `armas` (esp. Colapso) | catálogo extraído em 19/07/2026 |
 | [`protecoes`](protecoes/README.md) | Armaduras (por tipo/peça) e escudos. | (módulo próprio) | catálogo extraído em 19/07/2026 |
+| [`magia`](magia/README.md) | Magias (habilidades com custo de ativação em fadiga/`PV`), traços de magia, e as mecânicas opcionais Aptidão Mágica e Experiência de Magia. | Mukashi (migrado em 01/08/2026 — KI virou o sabor do módulo) | 📝 rascunho, criado em 01/08/2026 |
 | *(próximos: veículos, mutações — Fase 2 da importação, do Colapso)* | | | |
