@@ -2544,6 +2544,15 @@
       "experimental": false
     },
     {
+      "nome": "Pele de ferro",
+      "categoria": "Aspecto",
+      "atributo": "",
+      "valorCompra": "4",
+      "efeito": "O personagem ignora o dano mínimo de 1: quando o resultado final de um ataque acertado seria 1, ele sofre 0 de dano.",
+      "requisitos": "Sem requisitos.",
+      "experimental": false
+    },
+    {
       "nome": "Mão rápida",
       "categoria": "Aspecto",
       "atributo": "",

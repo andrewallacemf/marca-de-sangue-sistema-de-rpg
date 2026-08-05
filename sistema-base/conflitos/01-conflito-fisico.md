@@ -4,7 +4,7 @@ tipo: regra
 cenario: base
 status: estavel
 tags: [conflito, combate, iniciativa, malha, posicionamento]
-atualizado-em: 2026-07-12
+atualizado-em: 2026-08-05
 ---
 
 # Conflito físico
@@ -17,16 +17,25 @@ Um conflito acaba quando um dos adversários (ou conjunto de adversários) se re
 
 Os conflitos funcionam em um sistema de turnos. Chamamos de “**turno**” o período de tempo que compreende as ações de um único personagem. Já uma “**rodada**” é o período que compreende os turnos de todos os personagens envolvidos no conflito.
 
-Cada vez que um conflito se inicia, tanto personagens de jogadores como NPCs precisam definir sua **INICIATIVA**, ou seja, a sequência em que farão suas ações.
+Cada vez que um conflito se inicia, tanto **personagens de jogadores (PJs)**, **personagens do narrador (PNs)** como **ameaças** precisam definir sua **INICIATIVA**, ou seja, a sequência em que farão suas ações.
 
 Para isso, jogadores e narrador jogam **`1d10`**. Um jogador pode gastar **aptidões de qualquer atributo para rerrolar** o dado de iniciativa (vale o melhor resultado, como qualquer rerrolagem). Os personagens são ordenados do **maior para o menor** resultado.
 
 ### Empates em iniciativa
 
-- **Jogador antes de NPC:** empatando com um NPC/inimigo, **o jogador sempre age primeiro**.
-- **Entre jogadores (ou entre NPCs):** fica à frente quem tem **mais aptidões do atributo Ágil**.
-- **Persistindo o empate:** fica à frente quem tem **mais aptidões do atributo Mental**.
-- **Ainda empatados:** rolam **`1d10`** até sair valor diferente; o maior fica à frente.
+- **PJ antes de PN antes de ameaça:** empatando, um **PJ sempre age antes de um PN**, e um **PN sempre antes de uma ameaça** — independentemente do valor rolado.
+- **Dentro da mesma categoria:** fica à frente quem tem **mais aptidões no total** (somando os três atributos: Ágil + Mental + Social).
+- **Persistindo o empate:** rolam **`1d10`** até sair valor diferente; o maior fica à frente.
+
+> ✅ Decidido em 05/08/2026: empate resolvido por **categoria (PJ → PN → ameaça)** e depois **aptidões totais** (antes era "jogador > NPC, depois Ágil, depois Mental"). Ver [notas-de-design/decisoes/2026-08-05-pendencias-plataforma-5-11.md](../../notas-de-design/decisoes/2026-08-05-pendencias-plataforma-5-11.md).
+
+### Subir na ordem gastando fadiga
+
+Ao definir a iniciativa — antes do primeiro turno da rodada — um **PJ pode gastar fadiga para subir na ordem de ação**. O custo cresce a cada posição: a primeira posição acima custa **1 fadiga**, a segunda custa **2** (3 no total), a terceira custa **3** (6 no total), e assim por diante. Só **PJs** podem usar essa regra; PNs e ameaças não.
+
+> 💡 **Na mesa:** o gasto é cumulativo — subir duas posições custa `1 + 2 = 3` fadiga, e a fadiga é marcada normalmente na ficha.
+
+> ✅ Decidido em 05/08/2026. Ver [notas-de-design/decisoes/2026-08-05-pendencias-plataforma-5-11.md](../../notas-de-design/decisoes/2026-08-05-pendencias-plataforma-5-11.md).
 
 > ✅ Playtest 1 (18/07/2026): desempate revisado para **jogador > NPC → mais aptidões Ágil → mais aptidões Mental** (antes era "quem rolou mais dados"), e a rerrolagem de iniciativa segue a regra geral de aptidão (vale o melhor). Ver [relatório do playtest 1](../../notas-de-design/playtests/2026-07-18-playtest-cenario-1.md).
 

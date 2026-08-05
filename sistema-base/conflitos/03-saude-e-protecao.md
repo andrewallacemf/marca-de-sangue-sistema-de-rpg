@@ -23,12 +23,14 @@ O personagem escolhe como reage (ver
   não sofre dano.
 - **Segurar ou defender — atributo `Físico`.** Se o contrateste vencer, o personagem sofre metade
   do dano rolado, arredondada para baixo. Em seguida, aplica o maior redutor de proteção que cobre
-  a região atingida. Se o ataque acertou, o resultado final não pode ser menor que 1.
+  a região atingida. Se o ataque acertou, o resultado final não pode ser menor que 1 — a única
+  exceção é o traço [Pele de Ferro](../listas/tracos-base.md#pele-de-ferro), que permite o resultado 0.
 - **Defender com escudo e guarda levantada.** Se o contrateste vencer, o escudo absorve todo o
   golpe e perde 1 de [durabilidade](../listas/protecoes-base.md#durabilidade-das-proteções).
 
 Se o contrateste falhar, o ataque causa o dano integral. Depois da rolagem, aplica-se o maior
-redutor de proteção que cobre a região atingida, respeitando o dano mínimo de 1.
+redutor de proteção que cobre a região atingida, respeitando o dano mínimo de 1 (a menos que o
+alvo tenha [Pele de Ferro](../listas/tracos-base.md#pele-de-ferro)).
 
 Mirar na **cabeça ou no tronco** impõe `desvantagem` ao teste de acerto. Mirar nos braços ou nas
 pernas não concede vantagem por si só. Armaduras, habilidades e a ação

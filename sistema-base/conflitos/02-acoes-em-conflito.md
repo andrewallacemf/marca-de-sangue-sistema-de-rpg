@@ -55,7 +55,7 @@ Ao criar seu personagem, você deve escolher qual é a mão hábil dele. O perso
 
 ### Ataque com mão inábil
 
-Um jogador pode realizar um ataque com a mão inábil, porém, recebe uma **`desvantagem`** e só pode causar metade do dano (arredondado para baixo). É possível transformar uma mão inábil em mão hábil comprando o traço específico.
+Um jogador pode realizar um ataque com a mão inábil, porém, recebe uma **`desvantagem`** e só pode causar metade do dano (arredondado para baixo). A metade é aplicada **antes** de qualquer redutor de proteção. É possível transformar uma mão inábil em mão hábil comprando o traço específico.
 
 ### Ataque de oportunidade
 

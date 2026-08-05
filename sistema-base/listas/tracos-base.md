@@ -468,6 +468,20 @@ Eleva o teto do **uso voluntário de [fadiga](../conceitos/08-fadiga.md#uso-volu
 
 > ✅ Playtest 1 (18/07/2026): traço criado para permitir gastar mais fadiga por turno, já que o teto padrão caiu para metade do `PA` base.
 
+### Pele de ferro
+
+**Custo de compra:** `4 exp.`
+
+#### Descrição
+
+O personagem ignora o **dano mínimo de 1**: quando o resultado final de um ataque acertado seria `1`, ele sofre `0` de dano.
+
+#### Requisitos de uso
+
+- Sem requisitos.
+
+> ✅ Decidido em 05/08/2026: exceção ao piso de dano de 1 (ver [03-saude-e-protecao.md](../conflitos/03-saude-e-protecao.md)).
+
 ### Mão rápida
 
 **Custo de compra:** `2 exp.`
