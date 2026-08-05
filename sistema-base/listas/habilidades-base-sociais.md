@@ -4,7 +4,7 @@ tipo: regra
 cenario: base
 status: revisao
 tags: [habilidades, social, suporte]
-atualizado-em: 2026-07-12
+atualizado-em: 2026-08-04
 ---
 
 # Habilidades base — Social
@@ -137,7 +137,7 @@ Transfere pontos de ação do seu próximo turno para um aliado.
 
 ### Descrição
 
-Realiza um teste de cura de dano superficial em um aliado adjacente.
+Realiza um teste de cura de dano curável em um aliado adjacente.
 
 Se falhar neste teste de cura, o aliado não recebe dano adicional.
 
@@ -147,15 +147,15 @@ Se falhar neste teste de cura, o aliado não recebe dano adicional.
 
 ### Progressão
 
-1. Rola 1d4 de cura de dano superficial.
-2. Rola 1d6 de cura de dano superficial.
-3. Rola 1d8 de cura de dano superficial.
-4. Rola 1d10 de cura de dano superficial.
-5. Rola 1d12 de cura de dano superficial.
+1. Rola 1d4 de cura de dano curável.
+2. Rola 1d6 de cura de dano curável.
+3. Rola 1d8 de cura de dano curável.
+4. Rola 1d10 de cura de dano curável.
+5. Rola 1d12 de cura de dano curável.
 
 ### Observações
 
-- Pode distribuir a cura de dano superficial entre os membros do aliado como quiser.
+- Pode distribuir a cura entre os membros do aliado como quiser.
 
 ## Grito de alerta
 
@@ -222,11 +222,11 @@ Realiza um teste social para retornar um aliado inconsciente à consciência e r
 
 ### Progressão
 
-1. Trata/cura 1 ponto de dano profundo/superficial.
-2. Trata/cura 2 pontos de dano profundo/superficial.
-3. Trata/cura 3 pontos de dano profundo/superficial.
-4. Trata/cura 4 pontos de dano profundo/superficial.
-5. Trata/cura 5 pontos de dano profundo/superficial.
+1. Recupera 1 ponto de dano curável.
+2. Recupera 2 pontos de dano curável.
+3. Recupera 3 pontos de dano curável.
+4. Recupera 4 pontos de dano curável.
+5. Recupera 5 pontos de dano curável.
 
 ### Observações
 
@@ -238,7 +238,8 @@ Realiza um teste social para retornar um aliado inconsciente à consciência e r
 
 ### Descrição
 
-Realiza um teste de tratamento de dano profundo em um aliado adjacente.
+Realiza um teste de tratamento intensivo em um aliado adjacente. O tratamento recupera dano
+curável e nunca recupera vida máxima.
 
 Se falhar neste teste de tratamento, o aliado não recebe dano adicional.
 
@@ -248,14 +249,13 @@ Se falhar neste teste de tratamento, o aliado não recebe dano adicional.
 
 ### Progressão
 
-1. Rola 1d4 de tratamento de dano profundo.
-2. Rola 2d4 de tratamento de dano profundo.
-3. Rola 3d4 de tratamento de dano profundo.
-4. Rola 3d6 de tratamento de dano profundo.
+1. Recupera 1d4 de dano curável.
+2. Recupera 2d4 de dano curável.
+3. Recupera 3d4 de dano curável.
+4. Recupera 3d6 de dano curável.
 
 ### Observações
 
-- Pode distribuir o tratamento de dano profundo entre os membros do aliado como quiser.
-- Os danos profundos tratados tornam-se danos superficiais.
-- Não é possível usar pontos de tratamento para curar danos superficiais.
+- Pode distribuir o tratamento entre os membros do aliado como quiser.
+- Dano permanente não pode ser recuperado por esta habilidade.
 - Pontos de tratamento sobressalentes são perdidos.

@@ -18,6 +18,9 @@ Documentação do **Marca de Sangue**, um sistema de RPG de mesa, dividida em:
   `catalogo.json` (armas, proteções, habilidades, traços) consumido pela ficha, pelo site
   e pela plataforma. Leia `contrato/README.md` antes de mexer em listas ou consumidores.
 - `registro-ia/` — diário de bordo das sessões com IA (ver protocolo abaixo).
+- `documentacao/manual-da-plataforma/` — arquitetura e processo editorial do manual oficial
+  hospedado na plataforma. **Leia todos os documentos dessa pasta antes de qualquer tarefa
+  que crie, altere, sincronize ou publique conteúdo do manual da plataforma.**
 - `INDICE.md` — índice remissivo: cada conceito e onde aparece. **Consulte antes de
   procurar por grep às cegas; atualize a cada edição.**
 - `PENDENCIAS.md` — lista viva do que falta definir no sistema.
@@ -58,6 +61,10 @@ arquivos.
     Regenere o catálogo no mesmo commit:** `python contrato/exportar_catalogo.py`.
     Nunca transcreva dados de regra para dentro de código (ficha/plataforma) — os
     consumidores leem o `contrato/catalogo.json` (ver `contrato/README.md`).
+13. **O manual da plataforma exige curadoria editorial.** Nunca espelhe automaticamente
+    arquivos do repositório nem considere que remover frontmatter e blocos de bastidor basta
+    para publicar. Siga `documentacao/manual-da-plataforma/`, apresente a proposta de redação
+    e aguarde confirmação antes de oficializar alterações na plataforma.
 
 ## Ambiente das IAs — o que você consegue e o que não consegue fazer
 

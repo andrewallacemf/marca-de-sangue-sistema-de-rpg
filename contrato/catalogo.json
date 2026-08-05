@@ -1585,35 +1585,35 @@
       "atributo": "Mental",
       "custoPA": "4 PA",
       "valorCompra": "3",
-      "efeito": "Realiza um teste de cura de dano superficial em si. Se falhar neste teste de cura, não recebe dano adicional.",
+      "efeito": "Realiza um teste de cura de dano curável em si. Se falhar neste teste de cura, não recebe dano adicional.",
       "requisitos": "Não estar desabilitado.",
       "niveis": [
-        "Rola 1d4 de cura de dano superficial.",
-        "Rola 1d6 de cura de dano superficial.",
-        "Rola 1d8 de cura de dano superficial.",
-        "Rola 1d10 de cura de dano superficial.",
-        "Rola 1d12 de cura de dano superficial."
+        "Rola 1d4 de cura de dano curável.",
+        "Rola 1d6 de cura de dano curável.",
+        "Rola 1d8 de cura de dano curável.",
+        "Rola 1d10 de cura de dano curável.",
+        "Rola 1d12 de cura de dano curável."
       ],
       "experimental": false,
       "fonte": "sistema-base/listas/habilidades-base-mentais.md",
-      "observacoes": "A cura de dano superficial deve ser focada em um apenas membro.; Pontos de cura sobressalentes são perdidos."
+      "observacoes": "A cura deve ser focada em apenas um membro.; Pontos de cura sobressalentes são perdidos."
     },
     {
       "nome": "Auto tratamento",
       "atributo": "Mental",
       "custoPA": "5 PA",
       "valorCompra": "4",
-      "efeito": "Realiza um teste de tratamento de dano profundo em si. Se falhar neste teste de tratamento, não recebe dano adicional.",
+      "efeito": "Realiza um teste de tratamento intensivo em si. O tratamento recupera dano curável e nunca recupera vida máxima. Se falhar neste teste de tratamento, não recebe dano adicional.",
       "requisitos": "Não estar desabilitado.",
       "niveis": [
-        "Rola 1d4 de tratamento de dano profundo.",
-        "Rola 2d4 de tratamento de dano profundo.",
-        "Rola 3d4 de tratamento de dano profundo.",
-        "Rola 3d6 de tratamento de dano profundo."
+        "Recupera 1d4 de dano curável.",
+        "Recupera 2d4 de dano curável.",
+        "Recupera 3d4 de dano curável.",
+        "Recupera 3d6 de dano curável."
       ],
       "experimental": false,
       "fonte": "sistema-base/listas/habilidades-base-mentais.md",
-      "observacoes": "O tratamento de dano profundo deve ser focado em apenas um membro.; Os danos profundos tratados tornam-se danos superficiais.; Pontos de tratamento sobressalentes são perdidos.; Não é possível usar pontos de tratamento para curar danos superficiais."
+      "observacoes": "O tratamento deve ser focado em apenas um membro.; Pontos de tratamento sobressalentes são perdidos.; Dano permanente não pode ser recuperado por esta habilidade."
     },
     {
       "nome": "Confundir inimigo",
@@ -1812,18 +1812,18 @@
       "atributo": "Social",
       "custoPA": "4 PA",
       "valorCompra": "3",
-      "efeito": "Realiza um teste de cura de dano superficial em um aliado adjacente. Se falhar neste teste de cura, o aliado não recebe dano adicional.",
+      "efeito": "Realiza um teste de cura de dano curável em um aliado adjacente. Se falhar neste teste de cura, o aliado não recebe dano adicional.",
       "requisitos": "Não estar desabilitado.",
       "niveis": [
-        "Rola 1d4 de cura de dano superficial.",
-        "Rola 1d6 de cura de dano superficial.",
-        "Rola 1d8 de cura de dano superficial.",
-        "Rola 1d10 de cura de dano superficial.",
-        "Rola 1d12 de cura de dano superficial."
+        "Rola 1d4 de cura de dano curável.",
+        "Rola 1d6 de cura de dano curável.",
+        "Rola 1d8 de cura de dano curável.",
+        "Rola 1d10 de cura de dano curável.",
+        "Rola 1d12 de cura de dano curável."
       ],
       "experimental": false,
       "fonte": "sistema-base/listas/habilidades-base-sociais.md",
-      "observacoes": "Pode distribuir a cura de dano superficial entre os membros do aliado como quiser."
+      "observacoes": "Pode distribuir a cura entre os membros do aliado como quiser."
     },
     {
       "nome": "Grito de alerta",
@@ -1870,11 +1870,11 @@
       "efeito": "Realiza um teste social para retornar um aliado inconsciente à consciência e realiza um tratamento automático.",
       "requisitos": "O aliado alvo precisa estar inconsciente.",
       "niveis": [
-        "Trata/cura 1 ponto de dano profundo/superficial.",
-        "Trata/cura 2 pontos de dano profundo/superficial.",
-        "Trata/cura 3 pontos de dano profundo/superficial.",
-        "Trata/cura 4 pontos de dano profundo/superficial.",
-        "Trata/cura 5 pontos de dano profundo/superficial."
+        "Recupera 1 ponto de dano curável.",
+        "Recupera 2 pontos de dano curável.",
+        "Recupera 3 pontos de dano curável.",
+        "Recupera 4 pontos de dano curável.",
+        "Recupera 5 pontos de dano curável."
       ],
       "experimental": false,
       "fonte": "sistema-base/listas/habilidades-base-sociais.md",
@@ -1885,17 +1885,17 @@
       "atributo": "Social",
       "custoPA": "5 PA",
       "valorCompra": "4",
-      "efeito": "Realiza um teste de tratamento de dano profundo em um aliado adjacente. Se falhar neste teste de tratamento, o aliado não recebe dano adicional.",
+      "efeito": "Realiza um teste de tratamento intensivo em um aliado adjacente. O tratamento recupera dano curável e nunca recupera vida máxima. Se falhar neste teste de tratamento, o aliado não recebe dano adicional.",
       "requisitos": "Não estar desabilitado.",
       "niveis": [
-        "Rola 1d4 de tratamento de dano profundo.",
-        "Rola 2d4 de tratamento de dano profundo.",
-        "Rola 3d4 de tratamento de dano profundo.",
-        "Rola 3d6 de tratamento de dano profundo."
+        "Recupera 1d4 de dano curável.",
+        "Recupera 2d4 de dano curável.",
+        "Recupera 3d4 de dano curável.",
+        "Recupera 3d6 de dano curável."
       ],
       "experimental": false,
       "fonte": "sistema-base/listas/habilidades-base-sociais.md",
-      "observacoes": "Pode distribuir o tratamento de dano profundo entre os membros do aliado como quiser.; Os danos profundos tratados tornam-se danos superficiais.; Não é possível usar pontos de tratamento para curar danos superficiais.; Pontos de tratamento sobressalentes são perdidos."
+      "observacoes": "Pode distribuir o tratamento entre os membros do aliado como quiser.; Dano permanente não pode ser recuperado por esta habilidade.; Pontos de tratamento sobressalentes são perdidos."
     },
     {
       "nome": "Meditação",
@@ -2421,7 +2421,7 @@
       "atributo": "",
       "valorCompra": "4",
       "efeito": "Pode desferir um ataque de oportunidade a distância (exceção à regra geral de que ataques à distância não fazem ataque de oportunidade — ver Engajamento).",
-      "requisitos": "Estar usando uma arma de arremesso (já equipada).; Não ter usado seu ataque de oportunidade nesta rodada.",
+      "requisitos": "Estar com uma arma à distância já equipada — tanto uma arma de arremesso (ARRE.) quanto uma arma de munição (PROJ.: arcos, bestas, armas de fogo). No caso das de munição, é preciso ter munição disponível.; Não ter usado seu ataque de oportunidade nesta rodada.",
       "experimental": false,
       "gatilho": "Se um oponente sair do seu alcance ideal."
     },

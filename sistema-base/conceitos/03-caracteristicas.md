@@ -13,11 +13,9 @@ Um personagem criado no sistema Marca de Sangue é definido pelo seu conjunto de
 
 No sistema Marca de Sangue, a evolução de um personagem é marcada por quais (e quantas) características o jogador comprou. Para isso, o narrador deve recompensar ações inteligentes ou vitórias em combates com **pontos de experiência (`exp.`)**, que podem ser usados pelos jogadores para “comprar” uma Habilidade, Aptidão ou Traço.
 
-Ao ser usada uma habilidade é gasta. Para que esteja disponível para o uso novamente, é preciso que o personagem tenha um **descanso longo**, ou outra situação a ser definida pelo narrador.
+Habilidades não são gastas quando utilizadas. Cada habilidade é adquirida uma única vez, evolui do nível 1 ao 5 e pode ser usada sempre que o personagem pagar seu custo em `PA` e fadiga. Aptidões continuam sendo recursos gastáveis e seguem suas próprias regras de recuperação.
 
-Uma mesma habilidade ou aptidão pode ser comprada mais de uma vez para que possa ser utilizada mais vezes durante um dia.
-
-Se um jogador tiver duas habilidades iguais, pode optar por fundi-las tendo como resultado uma habilidade ainda mais forte.
+Não é permitido manter habilidades duplicadas na mesma ficha. Para tornar uma habilidade mais forte, aumente diretamente o nível dela; não existe fusão de habilidades.
 
 Além das características básicas disponíveis no manual de regras básicas, outras características, assim como as armas, armaduras, itens e ferramentas, são definidas com base em **[módulos](../../modulos/README.md)** específicos utilizados pelos cenários.
 

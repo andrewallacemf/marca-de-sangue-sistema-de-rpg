@@ -85,8 +85,8 @@ Toda magia declara, junto com o custo de `PA`, **um** destes três tipos de cust
 
 > 📝 A exceção de cobrar vida máxima **direto**, sem o membro precisar estar cheio antes, é regra
 > nova deste módulo — no sistema, perder vida máxima é sempre a consequência de continuar apanhando
-> num membro já em ferida profunda. Proposta a validar: se na mesa isso se mostrar abusivo, a
-> alternativa é exigir que o membro escolhido já esteja em ferida profunda.
+> num membro já incapacitado. Proposta a validar: se na mesa isso se mostrar abusivo, a
+> alternativa é exigir que o membro escolhido já esteja incapacitado.
 
 **O `PV` gasto como custo de ativação de uma magia NÃO gera fadiga.** É a exceção deliberada à
 [regra geral](../../sistema-base/conceitos/08-fadiga.md#como-se-ganha-fadiga) de que todo ponto de
@@ -119,7 +119,7 @@ caso, qual usar (ou os dois):
   [Resolução em Sete Sopros](../../cenarios/mukashi/mecanicas-unicas/habilidades-do.md#resolução-em-sete-sopros)
   (Bushidō, Mukashi) reduz o custo de `PA` a cada nível (`3→2→1`). Este módulo estende a mesma
   lógica para o custo de ativação — inclusive **trocando de tipo** conforme melhora (ex.: começa em
-  vida máxima e termina em dano superficial, à medida que o conjurador ganha destreza e
+  vida máxima e termina em dano curável, à medida que o conjurador ganha destreza e
   recursos para controlar o efeito).
 - **Os dois juntos** — efeito melhora **e** custo de ativação cai. É o mais raro/caro em `exp.`,
   reservar para poucas magias muito especiais.

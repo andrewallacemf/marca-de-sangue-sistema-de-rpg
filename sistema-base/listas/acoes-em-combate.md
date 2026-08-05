@@ -4,7 +4,7 @@ tipo: regra
 cenario: base
 status: revisao
 tags: [acoes, combate, pontos-de-acao]
-atualizado-em: 2026-07-12
+atualizado-em: 2026-08-04
 ---
 
 # Lista de ações disponíveis em combate
@@ -68,7 +68,7 @@ atualizado-em: 2026-07-12
 | Intimidar | `Social` | **`1 PA`** | por ação (seguindo a regra de fala em batalha) |
 | Persuadir/Seduzir | `Social` | **`1 PA`** | por ação (seguindo a regra de fala em batalha) |
 | Performar | `Social` | **`1 PA`** | por ação |
-| Tratar/Curar | `Social` | **`2 PA`** | por ação |
+| Tratar/Curar | `Social` ou `Mental` | **`4 PA`** | por ação |
 | Negociar | `Social` | **`1 PA`** | por ação (seguindo a regra de fala em batalha) |
 
 \*Outros tipos de ação não previstos neste manual podem ter seu custo definido pelo narrador com base nas ações já definidas.
@@ -415,10 +415,11 @@ Pode saltar:
 
 #### Uso padrão
 
-Cuidar de um ferido — em você mesmo ou em outro. Segue as regras de [Cura](../conflitos/03-saude-e-protecao.md#cura):
+Cuidar de um ferido — em você mesmo ou em outro — custa **`4 PA`** e segue as regras de [Cura](../conflitos/03-saude-e-protecao.md#cura):
 
-- **Cura desajeitada** (dano superficial, sem descanso e sem médico): teste contra contrateste do narrador. No sucesso, cura **`1d4`**; na falha, **acrescenta 1 ponto** de dano superficial no local.
-- **Tratamento improvisado** (dano profundo): **uma vez por dia** por paciente, rola-se `1d10` contra contrateste do narrador. No sucesso, **`1d4`** pontos de dano profundo viram superficial; na falha, o membro **perde 1 de vida máxima**.
+- Faça um teste `Social` ou `Mental` contra o contrateste do narrador.
+- No sucesso, recupere **`1d4`** pontos de dano curável.
+- Na falha, o membro tratado sofre **1 ponto de dano**.
 - **Desvantagem** sem material de curativo, ou tratando a si mesmo com o braço hábil desabilitado.
 - Tratar **não** recupera fadiga: para isso só o [descanso](../conceitos/09-descanso.md).
 
@@ -426,9 +427,8 @@ Cuidar de um ferido — em você mesmo ou em outro. Segue as regras de [Cura](..
 
 - Ignora a **desvantagem por falta de material** — você improvisa com pano e água.
 
-> 📝 A técnica de Tratar/Curar custa `3 exp.`, contra `1 exp.` da maioria. O grupo pode querer que
-> ela entregue mais do que anular uma desvantagem — por exemplo, remover o risco de piorar o
-> paciente na falha. Fica para a revisão.
+> ✅ Custo e efeito consolidados em 04/08/2026: a ação comum custa `4 PA`; a técnica remove a
+> desvantagem por falta de material, mas não reduz esse custo.
 
 #### Requisitos de uso
 

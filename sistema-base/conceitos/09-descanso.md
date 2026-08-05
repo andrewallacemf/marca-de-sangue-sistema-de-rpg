@@ -4,7 +4,7 @@ tipo: regra
 cenario: base
 status: revisao
 tags: [descanso, recuperacao, fadiga]
-atualizado-em: 2026-07-12
+atualizado-em: 2026-08-04
 ---
 
 # Descanso
@@ -18,7 +18,7 @@ atualizado-em: 2026-07-12
 Um descanso longo exige **pelo menos 8 horas**, incluindo **sono**. Ao completá-lo, o personagem:
 
 - **Reseta as características gastáveis** — recupera todas as [aptidões](04-aptidoes.md) consumidas. As [habilidades](05-habilidades.md) não têm usos a recuperar: o que as libera de novo é a fadiga zerada;
-- **Recupera mais vida** que o descanso curto — por padrão, **`1d6`** pontos de dano superficial (ver [Saúde e Proteção — Cura](../conflitos/03-saude-e-protecao.md#cura));
+- **Recupera mais vida** que o descanso curto — por padrão, **`1d6`** pontos de dano curável (ver [Saúde e Proteção — Cura](../conflitos/03-saude-e-protecao.md#cura));
 - **Recupera toda a fadiga** (ver [abaixo](#fadiga-qualquer-descanso-recupera-tudo)).
 
 ## Descanso curto

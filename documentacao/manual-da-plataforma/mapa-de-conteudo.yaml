@@ -1,0 +1,1116 @@
+versao_do_mapa: 1
+
+publicacao:
+  ultima_publicacao: null
+  repositorio_origem: null
+  plataforma_destino: null
+  historico: documentacao/manual-da-plataforma/historico-de-publicacoes.yaml
+
+estados_permitidos:
+  - planejada
+  - mapeada
+  - em_curadoria
+  - aguardando_aprovacao
+  - publicada
+  - desatualizada
+
+paginas:
+  - id: manual.indice
+    titulo: Manual do Marca de Sangue
+    rota: /manual
+    publico: geral
+    tipo: indice
+    estado: planejada
+    ordem: 10
+    objetivo: Apresentar os percursos do Jogador e do Narrador e dar acesso aos índices principais.
+    fontes:
+      - sistema-base/00-introducao.md
+      - modulos/README.md
+      - cenarios/colapso/README.md
+      - cenarios/mukashi/README.md
+    depende_de: []
+    relacionados:
+      - jogador.comece-aqui
+      - narrador.comece-aqui
+      - manual.glossario
+      - manual.busca
+    observacoes_internas:
+      - Redação original para a plataforma; as fontes servem apenas para resumo e terminologia.
+
+  - id: manual.glossario
+    titulo: Glossário
+    rota: /manual/glossario
+    publico: geral
+    tipo: ferramenta
+    estado: mapeada
+    ordem: 900
+    objetivo: Definir termos e siglas e conduzir o leitor à explicação canônica.
+    fontes:
+      - INDICE.md
+      - sistema-base/conceitos/00-indice.md
+    depende_de: []
+    relacionados:
+      - manual.busca
+      - jogador.regras-basicas
+    observacoes_internas:
+      - O INDICE.md é remissivo e contém histórico; não pode ser publicado por cópia.
+
+  - id: manual.busca
+    titulo: Busca
+    rota: /manual/busca
+    publico: geral
+    tipo: ferramenta
+    estado: planejada
+    ordem: 910
+    objetivo: Encontrar páginas, seções, regras e recursos por termo.
+    fontes: []
+    depende_de:
+      - manual.indice
+    relacionados:
+      - manual.glossario
+    observacoes_internas:
+      - A fonte será o índice de conteúdo gerado pelas páginas aprovadas, não os arquivos brutos.
+
+  - id: jogador.comece-aqui
+    titulo: Comece aqui
+    rota: /manual/jogador/comece-aqui
+    publico: jogador
+    tipo: indice
+    estado: mapeada
+    ordem: 10
+    objetivo: Oferecer percursos curtos para aprender a jogar, criar personagem e consultar regras.
+    fontes:
+      - sistema-base/00-introducao.md
+      - sistema-base/criacao-de-personagem/01-passo-a-passo.md
+      - sistema-base/criacao-de-personagem/02-fichas.md
+    depende_de: []
+    relacionados:
+      - jogador.regras-basicas
+      - jogador.criacao-de-personagem
+      - jogador.recursos.indice
+    observacoes_internas:
+      - Precisa ser reescrita como página de orientação, não como resumo completo das regras.
+
+  - id: jogador.regras-basicas
+    titulo: Regras básicas
+    rota: /manual/jogador/regras-basicas
+    publico: jogador
+    tipo: regra
+    estado: aguardando_aprovacao
+    ordem: 20
+    objetivo: Explicar o núcleo do jogo em uma sequência baseada em dependências de conhecimento.
+    fontes:
+      - sistema-base/00-introducao.md
+      - sistema-base/conceitos/01-testes-e-contratestes.md
+      - sistema-base/conceitos/02-atributos.md
+      - sistema-base/conceitos/03-caracteristicas.md
+      - sistema-base/conceitos/04-aptidoes.md
+      - sistema-base/conceitos/05-habilidades.md
+      - sistema-base/conceitos/06-tracos.md
+      - sistema-base/conceitos/07-pontos-de-acao.md
+      - sistema-base/conceitos/08-fadiga.md
+      - sistema-base/conceitos/09-descanso.md
+      - sistema-base/conflitos/01-conflito-fisico.md
+      - sistema-base/conflitos/02-acoes-em-conflito.md
+      - sistema-base/conflitos/03-saude-e-protecao.md
+      - sistema-base/progressao/01-experiencia-e-evolucao.md
+    depende_de: []
+    relacionados:
+      - jogador.criacao-de-personagem
+      - jogador.recursos.indice
+      - jogador.saude-e-recuperacao
+      - jogador.recursos.protecoes
+      - narrador.testes-e-arbitragem
+      - narrador.cenas-e-conflitos
+    observacoes_internas:
+      - O índice de conceitos ainda contém uma afirmação superada sobre habilidades e fadiga.
+      - A plataforma ainda trata o modelo antigo de usos como regras vigentes; reconciliar antes da publicação.
+      - A proposta das três primeiras seções está em propostas/2026-08-04-regras-basicas-fundamentos.md.
+      - A proposta de Características, Aptidões e Traços está em propostas/2026-08-04-caracteristicas-aptidoes-tracos.md.
+      - Traços duplicados foram proibidos; a plataforma bloqueia novas duplicatas e preserva fichas antigas ou importadas até um saneamento explicitamente aprovado.
+      - A proposta de Pontos de Ação, Fadiga e Habilidades está em propostas/2026-08-04-pontos-de-acao-fadiga-habilidades.md.
+      - A proposta de Saúde e proteção está em propostas/2026-08-04-saude-e-protecao.md.
+    secoes:
+      - id: jogador.regras-basicas.introducao
+        ancora: como-funciona-o-jogo
+        fontes:
+          - sistema-base/00-introducao.md
+        depende_de: []
+      - id: jogador.regras-basicas.testes
+        ancora: testes-e-contratestes
+        fontes:
+          - sistema-base/conceitos/01-testes-e-contratestes.md
+        depende_de:
+          - jogador.regras-basicas.introducao
+      - id: jogador.regras-basicas.atributos
+        ancora: atributos
+        fontes:
+          - sistema-base/conceitos/02-atributos.md
+        depende_de:
+          - jogador.regras-basicas.testes
+      - id: jogador.regras-basicas.caracteristicas
+        ancora: caracteristicas
+        fontes:
+          - sistema-base/conceitos/03-caracteristicas.md
+          - sistema-base/progressao/01-experiencia-e-evolucao.md
+        depende_de:
+          - jogador.regras-basicas.atributos
+      - id: jogador.regras-basicas.aptidoes
+        ancora: aptidoes
+        fontes:
+          - sistema-base/conceitos/04-aptidoes.md
+        depende_de:
+          - jogador.regras-basicas.caracteristicas
+      - id: jogador.regras-basicas.tracos
+        ancora: tracos
+        fontes:
+          - sistema-base/conceitos/06-tracos.md
+          - sistema-base/criacao-de-personagem/01-passo-a-passo.md
+        depende_de:
+          - jogador.regras-basicas.caracteristicas
+      - id: jogador.regras-basicas.habilidades
+        ancora: habilidades
+        fontes:
+          - sistema-base/conceitos/05-habilidades.md
+        depende_de:
+          - jogador.regras-basicas.caracteristicas
+          - jogador.regras-basicas.pontos-de-acao
+          - jogador.regras-basicas.fadiga
+      - id: jogador.regras-basicas.pontos-de-acao
+        ancora: pontos-de-acao
+        fontes:
+          - sistema-base/conceitos/07-pontos-de-acao.md
+        depende_de:
+          - jogador.regras-basicas.caracteristicas
+      - id: jogador.regras-basicas.fadiga
+        ancora: fadiga
+        fontes:
+          - sistema-base/conceitos/08-fadiga.md
+        depende_de:
+          - jogador.regras-basicas.pontos-de-acao
+      - id: jogador.regras-basicas.cenas-e-turnos
+        ancora: cenas-rodadas-e-turnos
+        fontes:
+          - sistema-base/conflitos/01-conflito-fisico.md
+        depende_de:
+          - jogador.regras-basicas.testes
+          - jogador.regras-basicas.pontos-de-acao
+      - id: jogador.regras-basicas.acoes-e-reacoes
+        ancora: acoes-movimento-e-reacoes
+        fontes:
+          - sistema-base/conflitos/02-acoes-em-conflito.md
+        depende_de:
+          - jogador.regras-basicas.cenas-e-turnos
+          - jogador.regras-basicas.fadiga
+      - id: jogador.regras-basicas.ataques-dano-e-protecao
+        ancora: ataques-dano-e-protecao
+        fontes:
+          - sistema-base/conflitos/01-conflito-fisico.md
+          - sistema-base/conflitos/03-saude-e-protecao.md
+        depende_de:
+          - jogador.regras-basicas.testes
+          - jogador.regras-basicas.acoes-e-reacoes
+      - id: jogador.regras-basicas.descanso
+        ancora: descanso-e-recuperacao
+        fontes:
+          - sistema-base/conceitos/09-descanso.md
+        depende_de:
+          - jogador.regras-basicas.aptidoes
+          - jogador.regras-basicas.fadiga
+          - jogador.saude-e-recuperacao
+      - id: jogador.regras-basicas.progressao
+        ancora: experiencia-e-progressao
+        fontes:
+          - sistema-base/progressao/01-experiencia-e-evolucao.md
+        depende_de:
+          - jogador.regras-basicas.caracteristicas
+
+  - id: jogador.saude-e-recuperacao
+    titulo: Saúde e recuperação
+    rota: /manual/jogador/saude-e-recuperacao
+    publico: jogador
+    tipo: regra
+    estado: aguardando_aprovacao
+    ordem: 21
+    objetivo: Explicar pontos de vida, dano, estados dos membros, morte, defesa, cura e sua relação com fadiga.
+    fontes:
+      - sistema-base/conflitos/03-saude-e-protecao.md
+      - sistema-base/conceitos/09-descanso.md
+      - sistema-base/listas/acoes-em-combate.md
+      - sistema-base/listas/habilidades-base-mentais.md
+      - sistema-base/listas/habilidades-base-sociais.md
+    depende_de:
+      - jogador.regras-basicas.testes
+      - jogador.regras-basicas.acoes-e-reacoes
+      - jogador.regras-basicas.fadiga
+    relacionados:
+      - jogador.regras-basicas
+      - jogador.recursos.protecoes
+      - jogador.recursos.habilidades
+    observacoes_internas:
+      - A proposta aprovada está em propostas/2026-08-04-saude-e-protecao.md.
+      - A ação de descanso da ficha ainda deve ser reconciliada com descanso curto e longo no próximo lote.
+    secoes:
+      - id: jogador.saude-e-recuperacao.corpo
+        ancora: corpo-e-pontos-de-vida
+        fontes:
+          - sistema-base/conflitos/03-saude-e-protecao.md
+        depende_de: []
+      - id: jogador.saude-e-recuperacao.dano
+        ancora: aplicando-dano
+        fontes:
+          - sistema-base/conflitos/03-saude-e-protecao.md
+        depende_de:
+          - jogador.saude-e-recuperacao.corpo
+      - id: jogador.saude-e-recuperacao.estados
+        ancora: estados-dos-membros
+        fontes:
+          - sistema-base/conflitos/03-saude-e-protecao.md
+        depende_de:
+          - jogador.saude-e-recuperacao.dano
+      - id: jogador.saude-e-recuperacao.defesa
+        ancora: defesa-e-esquiva
+        fontes:
+          - sistema-base/conflitos/03-saude-e-protecao.md
+        depende_de:
+          - jogador.regras-basicas.testes
+          - jogador.saude-e-recuperacao.estados
+      - id: jogador.saude-e-recuperacao.cura
+        ancora: cura
+        fontes:
+          - sistema-base/conflitos/03-saude-e-protecao.md
+          - sistema-base/conceitos/09-descanso.md
+          - sistema-base/listas/acoes-em-combate.md
+        depende_de:
+          - jogador.saude-e-recuperacao.dano
+      - id: jogador.saude-e-recuperacao.fadiga
+        ancora: dano-e-fadiga
+        fontes:
+          - sistema-base/conflitos/03-saude-e-protecao.md
+          - sistema-base/conceitos/08-fadiga.md
+        depende_de:
+          - jogador.saude-e-recuperacao.dano
+          - jogador.regras-basicas.fadiga
+
+  - id: jogador.criacao-de-personagem
+    titulo: Criação de personagem
+    rota: /manual/jogador/criacao-de-personagem
+    publico: jogador
+    tipo: regra
+    estado: mapeada
+    ordem: 30
+    objetivo: Conduzir a criação completa de uma personagem usando as regras e recursos oficiais.
+    fontes:
+      - sistema-base/criacao-de-personagem/01-passo-a-passo.md
+      - sistema-base/criacao-de-personagem/02-fichas.md
+      - sistema-base/arquetipos/00-como-funcionam.md
+      - sistema-base/arquetipos/01-arquetipos-genericos.md
+    depende_de:
+      - jogador.regras-basicas.testes
+      - jogador.regras-basicas.caracteristicas
+      - jogador.regras-basicas.progressao
+    relacionados:
+      - jogador.recursos.aptidoes
+      - jogador.recursos.habilidades
+      - jogador.recursos.tracos
+      - jogador.recursos.arquetipos
+      - jogador.recursos.equipamentos
+    observacoes_internas:
+      - Reconciliar o passo de habilidades com o modelo oficial sem usos por nível.
+      - Cenários podem acrescentar etapas; apresentar apenas extensões que possuam regra definida.
+
+  - id: jogador.recursos.indice
+    titulo: Recursos
+    rota: /manual/jogador/recursos
+    publico: jogador
+    tipo: indice
+    estado: planejada
+    ordem: 40
+    objetivo: Dar acesso às opções de personagem e aos catálogos de consulta.
+    fontes:
+      - contrato/catalogo.json
+      - sistema-base/listas/aptidoes-base.md
+      - sistema-base/listas/habilidades-base.md
+      - sistema-base/listas/tracos-base.md
+      - sistema-base/listas/equipamentos-base.md
+    depende_de:
+      - jogador.regras-basicas.caracteristicas
+    relacionados:
+      - jogador.recursos.aptidoes
+      - jogador.recursos.habilidades
+      - jogador.recursos.tracos
+      - jogador.recursos.arquetipos
+      - jogador.recursos.acoes
+      - jogador.recursos.equipamentos
+      - jogador.recursos.protecoes
+    observacoes_internas:
+      - Redação e agrupamento originais para a plataforma.
+
+  - id: jogador.recursos.aptidoes
+    titulo: Aptidões
+    rota: /manual/jogador/recursos/aptidoes
+    publico: jogador
+    tipo: recurso
+    estado: mapeada
+    ordem: 41
+    objetivo: Consultar aptidões, custos e funcionamento.
+    fontes:
+      - sistema-base/conceitos/04-aptidoes.md
+      - sistema-base/listas/aptidoes-base.md
+    depende_de:
+      - jogador.regras-basicas.aptidoes
+    relacionados:
+      - jogador.criacao-de-personagem
+      - jogador.recursos.habilidades
+    observacoes_internas: []
+
+  - id: jogador.recursos.habilidades
+    titulo: Habilidades
+    rota: /manual/jogador/recursos/habilidades
+    publico: jogador
+    tipo: recurso
+    estado: mapeada
+    ordem: 42
+    objetivo: Buscar e filtrar habilidades por atributo, custo, nível, origem e requisitos.
+    fontes:
+      - contrato/catalogo.json
+      - sistema-base/conceitos/05-habilidades.md
+      - sistema-base/listas/habilidades-base.md
+      - sistema-base/listas/habilidades-base-gerais.md
+      - sistema-base/listas/habilidades-base-fisicas.md
+      - sistema-base/listas/habilidades-base-ageis.md
+      - sistema-base/listas/habilidades-base-mentais.md
+      - sistema-base/listas/habilidades-base-sociais.md
+    depende_de:
+      - jogador.regras-basicas.habilidades
+      - jogador.regras-basicas.pontos-de-acao
+      - jogador.regras-basicas.fadiga
+    relacionados:
+      - jogador.criacao-de-personagem
+      - jogador.recursos.aptidoes
+      - jogador.recursos.tracos
+      - modulo.magia.jogador
+    observacoes_internas:
+      - Não incluir a lista experimental social sem decisão explícita.
+      - Validar catálogo e plataforma contra o modelo oficial de nível atual e fadiga.
+
+  - id: jogador.recursos.tracos
+    titulo: Traços
+    rota: /manual/jogador/recursos/tracos
+    publico: jogador
+    tipo: recurso
+    estado: mapeada
+    ordem: 43
+    objetivo: Buscar e filtrar traços por categoria, custo, origem e requisitos.
+    fontes:
+      - contrato/catalogo.json
+      - sistema-base/conceitos/06-tracos.md
+      - sistema-base/listas/tracos-base.md
+    depende_de:
+      - jogador.regras-basicas.tracos
+    relacionados:
+      - jogador.criacao-de-personagem
+      - jogador.recursos.habilidades
+    observacoes_internas: []
+
+  - id: jogador.recursos.arquetipos
+    titulo: Arquétipos
+    rota: /manual/jogador/recursos/arquetipos
+    publico: jogador
+    tipo: recurso
+    estado: mapeada
+    ordem: 44
+    objetivo: Explicar arquétipos e apresentar as opções genéricas e de cenário.
+    fontes:
+      - sistema-base/arquetipos/00-como-funcionam.md
+      - sistema-base/arquetipos/01-arquetipos-genericos.md
+      - cenarios/colapso/arquetipos.md
+      - cenarios/mukashi/arquetipos-do.md
+    depende_de:
+      - jogador.regras-basicas.caracteristicas
+      - jogador.regras-basicas.progressao
+    relacionados:
+      - jogador.criacao-de-personagem
+      - cenario.colapso.jogador
+      - cenario.mukashi.jogador
+    observacoes_internas:
+      - Separar catálogo genérico de opções específicas de cenário sem duplicar suas descrições.
+
+  - id: jogador.recursos.acoes
+    titulo: Ações
+    rota: /manual/jogador/recursos/acoes
+    publico: jogador
+    tipo: recurso
+    estado: mapeada
+    ordem: 45
+    objetivo: Consultar ações, custos, testes, limites e efeitos durante cenas e conflitos.
+    fontes:
+      - sistema-base/conflitos/02-acoes-em-conflito.md
+      - sistema-base/listas/acoes-em-combate.md
+    depende_de:
+      - jogador.regras-basicas.acoes-e-reacoes
+    relacionados:
+      - jogador.recursos.habilidades
+      - narrador.cenas-e-conflitos
+    observacoes_internas:
+      - Algumas entradas foram redigidas como proposta; conferir se existe uma formulação operacional única.
+
+  - id: jogador.recursos.equipamentos
+    titulo: Equipamentos
+    rota: /manual/jogador/recursos/equipamentos
+    publico: jogador
+    tipo: recurso
+    estado: mapeada
+    ordem: 46
+    objetivo: Explicar equipamentos e consultar armas, munições e itens por origem e propriedade.
+    fontes:
+      - contrato/catalogo.json
+      - sistema-base/listas/equipamentos-base.md
+      - sistema-base/listas/itens-base.md
+      - modulos/armas-brancas/README.md
+      - modulos/armas-exoticas/README.md
+      - modulos/arcos-e-bestas/README.md
+      - modulos/armas-de-fogo/README.md
+    depende_de:
+      - jogador.regras-basicas.acoes-e-reacoes
+    relacionados:
+      - jogador.recursos.protecoes
+      - modulo.armas-brancas.jogador
+      - modulo.armas-exoticas.jogador
+      - modulo.arcos-e-bestas.jogador
+      - modulo.armas-de-fogo.jogador
+    observacoes_internas:
+      - Resolver divergências de propriedades e valores antes de oficializar entradas afetadas.
+
+  - id: jogador.recursos.protecoes
+    titulo: Proteções
+    rota: /manual/jogador/recursos/protecoes
+    publico: jogador
+    tipo: recurso
+    estado: aguardando_aprovacao
+    ordem: 47
+    objetivo: Explicar e consultar armaduras, peças, escudos, redução e durabilidade.
+    fontes:
+      - contrato/catalogo.json
+      - sistema-base/listas/protecoes-base.md
+      - modulos/protecoes/README.md
+    depende_de:
+      - jogador.saude-e-recuperacao
+    relacionados:
+      - jogador.recursos.equipamentos
+      - modulo.protecoes.jogador
+    observacoes_internas:
+      - Validar valores iniciais ainda marcados para calibração antes de publicar como catálogo oficial.
+      - A regra de funcionamento, sem o catálogo integral, foi implementada conforme propostas/2026-08-04-saude-e-protecao.md.
+
+  - id: narrador.comece-aqui
+    titulo: Manual do Narrador
+    rota: /manual/narrador/comece-aqui
+    publico: narrador
+    tipo: indice
+    estado: planejada
+    ordem: 10
+    objetivo: Apresentar o papel do narrador e orientar os primeiros percursos de leitura.
+    fontes:
+      - playtest/cenarios/00-guia-do-narrador.md
+      - sistema-base/oponentes/00-oponentes.md
+    depende_de:
+      - jogador.regras-basicas
+    relacionados:
+      - narrador.conducao-do-jogo
+      - narrador.testes-e-arbitragem
+      - narrador.cenas-e-conflitos
+      - narrador.oponentes
+    observacoes_internas:
+      - As fontes atuais não formam uma introdução completa; exige redação original aprovada.
+
+  - id: narrador.conducao-do-jogo
+    titulo: Condução do jogo
+    rota: /manual/narrador/conducao-do-jogo
+    publico: narrador
+    tipo: regra
+    estado: planejada
+    ordem: 20
+    objetivo: Orientar preparação, descrição, ritmo, decisões e comunicação durante uma sessão.
+    fontes:
+      - playtest/cenarios/00-guia-do-narrador.md
+    depende_de:
+      - jogador.regras-basicas
+    relacionados:
+      - narrador.testes-e-arbitragem
+      - narrador.cenas-e-conflitos
+    observacoes_internas:
+      - Fonte insuficiente para uma página completa; não inventar princípios sem aprovação.
+
+  - id: narrador.testes-e-arbitragem
+    titulo: Testes e arbitragem
+    rota: /manual/narrador/testes-e-arbitragem
+    publico: narrador
+    tipo: regra
+    estado: planejada
+    ordem: 30
+    objetivo: Orientar quando pedir testes, escolher modificadores, resolver dúvidas e comunicar consequências.
+    fontes:
+      - sistema-base/conceitos/01-testes-e-contratestes.md
+      - playtest/cenarios/00-guia-do-narrador.md
+    depende_de:
+      - jogador.regras-basicas.testes
+    relacionados:
+      - narrador.conducao-do-jogo
+      - narrador.cenas-e-conflitos
+    observacoes_internas:
+      - Separar regra compartilhada de orientação nova para narradores.
+
+  - id: narrador.cenas-e-conflitos
+    titulo: Cenas e conflitos
+    rota: /manual/narrador/cenas-e-conflitos
+    publico: narrador
+    tipo: regra
+    estado: mapeada
+    ordem: 40
+    objetivo: Preparar e conduzir cenas, iniciativa, ambientes, adversários e encerramento de conflitos.
+    fontes:
+      - sistema-base/conflitos/01-conflito-fisico.md
+      - sistema-base/conflitos/02-acoes-em-conflito.md
+      - playtest/cenarios/00-guia-do-narrador.md
+    depende_de:
+      - jogador.regras-basicas.cenas-e-turnos
+      - jogador.regras-basicas.acoes-e-reacoes
+    relacionados:
+      - narrador.testes-e-arbitragem
+      - narrador.oponentes
+      - modulo.conflito-social.narrador
+      - modulo.furtividade.narrador
+    observacoes_internas:
+      - O material atual explica principalmente o procedimento do jogador; criar orientação sem duplicar a regra.
+
+  - id: narrador.oponentes
+    titulo: Oponentes e ameaças
+    rota: /manual/narrador/oponentes
+    publico: narrador
+    tipo: regra
+    estado: mapeada
+    ordem: 50
+    objetivo: Escolher, criar e conduzir oponentes em diferentes níveis de ameaça.
+    fontes:
+      - sistema-base/oponentes/00-oponentes.md
+      - sistema-base/oponentes/01-criando-uma-ameaca.md
+      - sistema-base/oponentes/02-nivel-de-ameaca.md
+      - playtest/cenarios/inimigos-do-kit.md
+      - contrato/catalogo.json
+    depende_de:
+      - jogador.regras-basicas.testes
+      - jogador.regras-basicas.cenas-e-turnos
+      - jogador.saude-e-recuperacao
+      - jogador.regras-basicas.fadiga
+    relacionados:
+      - narrador.cenas-e-conflitos
+      - cenario.colapso.narrador
+      - cenario.mukashi.narrador
+    observacoes_internas:
+      - A nomenclatura de ameaça ainda aparece como provisória no repositório.
+      - Reconciliar o modelo de fadiga de ameaças e os blocos do kit antes da publicação.
+
+  - id: narrador.recompensas-e-progressao
+    titulo: Recompensas e progressão
+    rota: /manual/narrador/recompensas-e-progressao
+    publico: narrador
+    tipo: regra
+    estado: planejada
+    ordem: 60
+    objetivo: Orientar concessão de experiência e ritmo de desenvolvimento das personagens.
+    fontes:
+      - sistema-base/progressao/01-experiencia-e-evolucao.md
+    depende_de:
+      - jogador.regras-basicas.progressao
+    relacionados:
+      - narrador.conducao-do-jogo
+      - jogador.criacao-de-personagem
+    observacoes_internas:
+      - A fonte atual explica gasto de experiência, mas não oferece orientação suficiente sobre concessão.
+
+  - id: jogador.modulos.indice
+    titulo: Módulos
+    rota: /manual/jogador/modulos
+    publico: jogador
+    tipo: indice
+    estado: mapeada
+    ordem: 60
+    objetivo: Apresentar módulos disponíveis e seus recursos para jogadores.
+    fontes:
+      - modulos/README.md
+      - modulos/colecoes.md
+    depende_de:
+      - jogador.regras-basicas
+    relacionados:
+      - narrador.modulos.indice
+    observacoes_internas:
+      - Remover estados, datas de extração e roadmap; reescrever descrições como apresentação pública.
+
+  - id: narrador.modulos.indice
+    titulo: Módulos para narradores
+    rota: /manual/narrador/modulos
+    publico: narrador
+    tipo: indice
+    estado: planejada
+    ordem: 70
+    objetivo: Ajudar o narrador a escolher, combinar e conduzir módulos.
+    fontes:
+      - modulos/README.md
+      - modulos/colecoes.md
+    depende_de:
+      - narrador.conducao-do-jogo
+    relacionados:
+      - jogador.modulos.indice
+    observacoes_internas:
+      - Não há orientação geral suficiente sobre escolha e combinação; exige curadoria e possível conteúdo novo aprovado.
+
+  - id: modulo.furtividade.jogador
+    titulo: Furtividade
+    rota: /manual/modulos/furtividade
+    publico: jogador
+    tipo: modulo
+    estado: mapeada
+    ordem: 10
+    objetivo: Explicar visão, alerta, alarme, esconder-se e emboscadas para jogadores.
+    fontes:
+      - modulos/furtividade/README.md
+    depende_de:
+      - jogador.regras-basicas.testes
+      - jogador.regras-basicas.acoes-e-reacoes
+    relacionados:
+      - modulo.furtividade.narrador
+      - cenario.mukashi.jogador
+      - cenario.colapso.jogador
+    observacoes_internas:
+      - Separar parâmetros de preparação e exemplos de playtest para o Manual do Narrador.
+
+  - id: modulo.furtividade.narrador
+    titulo: Conduzindo furtividade
+    rota: /manual/narrador/modulos/furtividade
+    publico: narrador
+    tipo: modulo
+    estado: mapeada
+    ordem: 10
+    objetivo: Preparar áreas, campos de visão, níveis de alerta e consequências de furtividade.
+    fontes:
+      - modulos/furtividade/README.md
+      - playtest/cenarios/02-mukashi-selo-do-templo.md
+      - playtest/cenarios/06-colapso-vale-dos-atiradores.md
+    depende_de:
+      - modulo.furtividade.jogador
+      - narrador.cenas-e-conflitos
+    relacionados:
+      - cenario.mukashi.narrador
+      - cenario.colapso.narrador
+    observacoes_internas:
+      - Cenários de playtest são fontes de aprendizado, não conteúdo publicável por cópia.
+
+  - id: modulo.conflito-social.jogador
+    titulo: Conflito social
+    rota: /manual/modulos/conflito-social
+    publico: jogador
+    tipo: modulo
+    estado: mapeada
+    ordem: 20
+    objetivo: Explicar malha de embate, trilhas emocionais, campos e ações sociais.
+    fontes:
+      - modulos/conflito-social/README.md
+      - sistema-base/listas/habilidades-experimentais-sociais.md
+    depende_de:
+      - jogador.regras-basicas.testes
+      - jogador.regras-basicas.pontos-de-acao
+    relacionados:
+      - modulo.conflito-social.narrador
+      - cenario.mukashi.jogador
+    observacoes_internas:
+      - Não publicar habilidades experimentais como oficiais sem decisão explícita.
+
+  - id: modulo.conflito-social.narrador
+    titulo: Conduzindo conflitos sociais
+    rota: /manual/narrador/modulos/conflito-social
+    publico: narrador
+    tipo: modulo
+    estado: planejada
+    ordem: 20
+    objetivo: Preparar objetivos, emoções, resistência e encerramento de embates sociais.
+    fontes:
+      - modulos/conflito-social/README.md
+    depende_de:
+      - modulo.conflito-social.jogador
+      - narrador.testes-e-arbitragem
+    relacionados:
+      - cenario.mukashi.narrador
+    observacoes_internas:
+      - A fonte concentra regra compartilhada; falta orientação específica suficiente para narradores.
+
+  - id: modulo.armas-brancas.jogador
+    titulo: Armas brancas
+    rota: /manual/modulos/armas-brancas
+    publico: jogador
+    tipo: modulo
+    estado: mapeada
+    ordem: 30
+    objetivo: Apresentar famílias, propriedades e catálogo de armas brancas.
+    fontes:
+      - modulos/armas-brancas/README.md
+      - sistema-base/listas/equipamentos-base.md
+      - contrato/catalogo.json
+    depende_de:
+      - jogador.recursos.equipamentos
+    relacionados:
+      - cenario.mukashi.jogador
+      - cenario.colapso.jogador
+    observacoes_internas:
+      - Resolver a divergência registrada para lança montada e grupo de mangual pesado antes de publicar essas entradas.
+
+  - id: modulo.armas-exoticas.jogador
+    titulo: Armas exóticas
+    rota: /manual/modulos/armas-exoticas
+    publico: jogador
+    tipo: modulo
+    estado: mapeada
+    ordem: 40
+    objetivo: Apresentar armas flexíveis, de agarre e de arremesso especial.
+    fontes:
+      - modulos/armas-exoticas/README.md
+      - sistema-base/listas/equipamentos-base.md
+      - contrato/catalogo.json
+    depende_de:
+      - jogador.recursos.equipamentos
+    relacionados:
+      - cenario.mukashi.jogador
+    observacoes_internas:
+      - Conferir valores propostos para itens introduzidos por Mukashi.
+
+  - id: modulo.arcos-e-bestas.jogador
+    titulo: Arcos e bestas
+    rota: /manual/modulos/arcos-e-bestas
+    publico: jogador
+    tipo: modulo
+    estado: mapeada
+    ordem: 50
+    objetivo: Apresentar armas de projétil simples, munições, alcance e dano.
+    fontes:
+      - modulos/arcos-e-bestas/README.md
+      - sistema-base/listas/equipamentos-base.md
+      - contrato/catalogo.json
+    depende_de:
+      - jogador.recursos.equipamentos
+    relacionados:
+      - cenario.mukashi.jogador
+    observacoes_internas: []
+
+  - id: modulo.armas-de-fogo.jogador
+    titulo: Armas de fogo
+    rota: /manual/modulos/armas-de-fogo
+    publico: jogador
+    tipo: modulo
+    estado: mapeada
+    ordem: 60
+    objetivo: Apresentar armas de pólvora, munições e sua relação com regras de cenário.
+    fontes:
+      - modulos/armas-de-fogo/README.md
+      - sistema-base/listas/equipamentos-base.md
+      - contrato/catalogo.json
+    depende_de:
+      - jogador.recursos.equipamentos
+    relacionados:
+      - cenario.colapso.jogador
+    observacoes_internas:
+      - Decidir e explicar sem duplicação como a confiabilidade exclusiva do Colapso altera o módulo.
+
+  - id: modulo.protecoes.jogador
+    titulo: Proteções
+    rota: /manual/modulos/protecoes
+    publico: jogador
+    tipo: modulo
+    estado: mapeada
+    ordem: 70
+    objetivo: Apresentar o catálogo modular de armaduras e escudos.
+    fontes:
+      - modulos/protecoes/README.md
+      - sistema-base/listas/protecoes-base.md
+      - contrato/catalogo.json
+    depende_de:
+      - jogador.recursos.protecoes
+    relacionados:
+      - cenario.mukashi.jogador
+      - cenario.colapso.jogador
+    observacoes_internas:
+      - Não expor notas de calibração de preço e durabilidade.
+
+  - id: modulo.magia.jogador
+    titulo: Magia
+    rota: /manual/modulos/magia
+    publico: jogador
+    tipo: modulo
+    estado: mapeada
+    ordem: 80
+    objetivo: Explicar magia, custos de ativação, aptidão, experiência e recursos mágicos.
+    fontes:
+      - modulos/magia/README.md
+      - modulos/magia/listas/lista-de-magias.md
+      - modulos/magia/listas/lista-de-tracos.md
+    depende_de:
+      - jogador.regras-basicas.habilidades
+      - jogador.regras-basicas.fadiga
+      - jogador.saude-e-recuperacao
+    relacionados:
+      - modulo.magia.narrador
+      - cenario.mukashi.jogador
+    observacoes_internas:
+      - Custos e listas contêm propostas ainda não resolvidas; apresentar conflitos para decisão antes da publicação.
+
+  - id: modulo.magia.narrador
+    titulo: Conduzindo magia
+    rota: /manual/narrador/modulos/magia
+    publico: narrador
+    tipo: modulo
+    estado: planejada
+    ordem: 80
+    objetivo: Orientar disponibilidade, criação e consequências da magia em um cenário.
+    fontes:
+      - modulos/magia/README.md
+      - cenarios/mukashi/mecanicas-unicas/magia.md
+    depende_de:
+      - modulo.magia.jogador
+      - narrador.testes-e-arbitragem
+    relacionados:
+      - cenario.mukashi.narrador
+    observacoes_internas:
+      - Separar regra do módulo de decisões exclusivas de Mukashi.
+
+  - id: modulo.veiculos.jogador
+    titulo: Veículos
+    rota: /manual/modulos/veiculos
+    publico: jogador
+    tipo: modulo
+    estado: mapeada
+    ordem: 90
+    objetivo: Explicar ficha, movimento, ações, colisão, integridade, reparo e recursos de veículos.
+    fontes:
+      - modulos/veiculos/README.md
+      - modulos/veiculos/listas/lista-de-veiculos.md
+      - modulos/veiculos/listas/lista-de-equipamentos.md
+      - modulos/veiculos/listas/lista-de-habilidades.md
+      - modulos/veiculos/listas/lista-de-tracos.md
+    depende_de:
+      - jogador.regras-basicas.cenas-e-turnos
+      - jogador.regras-basicas.acoes-e-reacoes
+      - jogador.saude-e-recuperacao
+    relacionados:
+      - modulo.veiculos.narrador
+      - cenario.colapso.jogador
+    observacoes_internas:
+      - Integridade, equipamentos e listas contêm números ou divergências ainda indicados para decisão.
+
+  - id: modulo.veiculos.narrador
+    titulo: Conduzindo veículos
+    rota: /manual/narrador/modulos/veiculos
+    publico: narrador
+    tipo: modulo
+    estado: mapeada
+    ordem: 90
+    objetivo: Preparar perseguições, conflitos veiculares, obstáculos, reparos e economia de recursos.
+    fontes:
+      - modulos/veiculos/README.md
+      - modulos/veiculos/listas/lista-de-veiculos.md
+      - cenarios/colapso/mecanicas-unicas/veiculos.md
+      - playtest/cenarios/03-colapso-ferro-velho.md
+    depende_de:
+      - modulo.veiculos.jogador
+      - narrador.cenas-e-conflitos
+    relacionados:
+      - cenario.colapso.narrador
+    observacoes_internas:
+      - Playtest e Colapso são fontes de aplicação; não copiar conteúdo exclusivo para a regra genérica.
+
+  - id: jogador.cenarios.indice
+    titulo: Cenários
+    rota: /manual/jogador/cenarios
+    publico: jogador
+    tipo: indice
+    estado: mapeada
+    ordem: 70
+    objetivo: Apresentar os cenários disponíveis e ajudar jogadores a escolher seu contexto de jogo.
+    fontes:
+      - cenarios/colapso/README.md
+      - cenarios/mukashi/README.md
+    depende_de:
+      - jogador.regras-basicas
+    relacionados:
+      - cenario.colapso.jogador
+      - cenario.mukashi.jogador
+      - narrador.cenarios.indice
+    observacoes_internas:
+      - Não listar cenários compostos apenas por esqueletos.
+
+  - id: narrador.cenarios.indice
+    titulo: Cenários para narradores
+    rota: /manual/narrador/cenarios
+    publico: narrador
+    tipo: indice
+    estado: planejada
+    ordem: 80
+    objetivo: Apresentar materiais de preparação e condução disponíveis para cada cenário.
+    fontes:
+      - cenarios/colapso/README.md
+      - cenarios/mukashi/README.md
+    depende_de:
+      - narrador.comece-aqui
+    relacionados:
+      - cenario.colapso.narrador
+      - cenario.mukashi.narrador
+    observacoes_internas: []
+
+  - id: cenario.mukashi.jogador
+    titulo: Mukashi
+    rota: /manual/cenarios/mukashi
+    publico: jogador
+    tipo: cenario
+    estado: mapeada
+    ordem: 10
+    objetivo: Apresentar Yamato, seus temas, caminhos, povos, magia, arsenal e módulos aos jogadores.
+    fontes:
+      - cenarios/mukashi/README.md
+      - cenarios/mukashi/00-visao-geral.md
+      - cenarios/mukashi/arquetipos-do.md
+      - cenarios/mukashi/arsenal.md
+      - cenarios/mukashi/criaturas/racas-jogaveis.md
+      - cenarios/mukashi/locais/myoko.md
+      - cenarios/mukashi/lore/01-mundo-de-yamato.md
+      - cenarios/mukashi/lore/02-imperio-e-clas.md
+      - cenarios/mukashi/lore/03-panteao-kami.md
+      - cenarios/mukashi/mecanicas-unicas/ki.md
+      - cenarios/mukashi/mecanicas-unicas/magia.md
+      - cenarios/mukashi/mecanicas-unicas/habilidades-do.md
+    depende_de:
+      - jogador.regras-basicas
+      - modulo.furtividade.jogador
+      - modulo.conflito-social.jogador
+      - modulo.armas-brancas.jogador
+      - modulo.armas-exoticas.jogador
+      - modulo.protecoes.jogador
+      - modulo.magia.jogador
+    relacionados:
+      - cenario.mukashi.narrador
+      - jogador.recursos.arquetipos
+    observacoes_internas:
+      - Separar lacunas, notas de curadoria e conteúdo que revele segredos.
+      - Não incorporar a campanha particular Cenário-Yokai-Taiji.
+      - Algumas raças, caminhos e magias ainda possuem efeitos ou custos sem decisão final.
+
+  - id: cenario.mukashi.narrador
+    titulo: Narrando Mukashi
+    rota: /manual/narrador/cenarios/mukashi
+    publico: narrador
+    tipo: cenario
+    estado: planejada
+    ordem: 10
+    objetivo: Orientar conflitos, segredos, ameaças, locais e uso dos módulos em campanhas de Mukashi.
+    fontes:
+      - cenarios/mukashi/README.md
+      - cenarios/mukashi/lore/ganchos-e-a-desenvolver.md
+      - cenarios/mukashi/criaturas/README.md
+      - cenarios/mukashi/locais/README.md
+      - cenarios/mukashi/mecanicas-unicas/magia.md
+      - playtest/cenarios/02-mukashi-selo-do-templo.md
+    depende_de:
+      - cenario.mukashi.jogador
+      - narrador.cenas-e-conflitos
+    relacionados:
+      - modulo.furtividade.narrador
+      - modulo.conflito-social.narrador
+      - modulo.magia.narrador
+    observacoes_internas:
+      - Fontes atuais são insuficientes para um manual completo do narrador.
+      - Ganchos e playtest servem para curadoria, não devem ser publicados diretamente.
+
+  - id: cenario.colapso.jogador
+    titulo: Colapso
+    rota: /manual/cenarios/colapso
+    publico: jogador
+    tipo: cenario
+    estado: mapeada
+    ordem: 20
+    objetivo: Apresentar o mundo destruído, comunidades, facções, arquétipos, mutações e recursos aos jogadores.
+    fontes:
+      - cenarios/colapso/README.md
+      - cenarios/colapso/00-visao-geral.md
+      - cenarios/colapso/arquetipos.md
+      - cenarios/colapso/arsenal.md
+      - cenarios/colapso/locais/README.md
+      - cenarios/colapso/lore/01-o-colapso.md
+      - cenarios/colapso/lore/02-clima-e-radiacao.md
+      - cenarios/colapso/lore/03-comunidades.md
+      - cenarios/colapso/lore/04-faccoes.md
+      - cenarios/colapso/mecanicas-unicas/armas-de-fogo.md
+      - cenarios/colapso/mecanicas-unicas/habilidades-do-cenario.md
+      - cenarios/colapso/mecanicas-unicas/mutacoes.md
+      - cenarios/colapso/mecanicas-unicas/radiacao.md
+      - cenarios/colapso/mecanicas-unicas/sucata.md
+      - cenarios/colapso/mecanicas-unicas/tracos-do-cenario.md
+      - cenarios/colapso/mecanicas-unicas/veiculos.md
+    depende_de:
+      - jogador.regras-basicas
+      - modulo.furtividade.jogador
+      - modulo.armas-brancas.jogador
+      - modulo.armas-exoticas.jogador
+      - modulo.armas-de-fogo.jogador
+      - modulo.protecoes.jogador
+      - modulo.veiculos.jogador
+    relacionados:
+      - cenario.colapso.narrador
+      - jogador.recursos.arquetipos
+    observacoes_internas:
+      - Separar estado de importação, pendências de bestiário e divergências numéricas.
+      - Armas de fogo, mutações, veículos e sucata possuem decisões ainda registradas como abertas.
+
+  - id: cenario.colapso.narrador
+    titulo: Narrando Colapso
+    rota: /manual/narrador/cenarios/colapso
+    publico: narrador
+    tipo: cenario
+    estado: mapeada
+    ordem: 20
+    objetivo: Orientar sobrevivência, facções, radiação, ameaças e conflitos veiculares em Colapso.
+    fontes:
+      - cenarios/colapso/README.md
+      - cenarios/colapso/criaturas/README.md
+      - cenarios/colapso/itens/README.md
+      - cenarios/colapso/locais/README.md
+      - cenarios/colapso/lore/ganchos-e-a-desenvolver.md
+      - cenarios/colapso/mecanicas-unicas/mutacoes.md
+      - cenarios/colapso/mecanicas-unicas/radiacao.md
+      - cenarios/colapso/mecanicas-unicas/sucata.md
+      - cenarios/colapso/mecanicas-unicas/veiculos.md
+      - playtest/cenarios/03-colapso-ferro-velho.md
+      - playtest/cenarios/06-colapso-vale-dos-atiradores.md
+    depende_de:
+      - cenario.colapso.jogador
+      - narrador.cenas-e-conflitos
+    relacionados:
+      - modulo.furtividade.narrador
+      - modulo.veiculos.narrador
+    observacoes_internas:
+      - Bestiário e algumas ferramentas de condução ainda não possuem conteúdo suficiente.
+      - Playtests são fontes de aprendizado, não aventuras oficiais do cenário.
+
+exclusoes_iniciais:
+  - padrao: sistema-base/variantes/**
+    motivo: Histórico e alternativas não integram a regra oficial publicada.
+  - padrao: cenarios/mukashi/Cenário-Yokai-Taiji/**
+    motivo: Campanha particular, não conteúdo oficial do cenário.
+  - padrao: cenarios/_template-cenario/**
+    motivo: Templates de trabalho.
+  - padrao: modulos/_template-modulo/**
+    motivo: Templates de trabalho.
+  - padrao: notas-de-design/**
+    motivo: Bastidor; pode ser consultado para interpretar decisões, nunca publicado por cópia.
+  - padrao: registro-ia/**
+    motivo: Histórico de trabalho com IA.
+  - padrao: playtest/**
+    motivo: Material de teste; pode informar curadoria de narrador quando mapeado explicitamente.
+  - padrao: PENDENCIAS.md
+    motivo: Controle interno de lacunas e decisões.

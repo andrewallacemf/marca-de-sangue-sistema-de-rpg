@@ -4,7 +4,7 @@ tipo: regra
 cenario: base
 status: revisao
 tags: [protecoes, armaduras, escudos]
-atualizado-em: 2026-07-12
+atualizado-em: 2026-08-04
 ---
 
 # Lista base de Proteções (Armaduras e escudos)
@@ -36,7 +36,8 @@ Regra consolidada nas reuniões de 11/07/2026 (ver [decisões — reuniões de m
 - **Durabilidade das proteções:** ver a regra completa em [Durabilidade das proteções](#durabilidade-das-proteções) — a peça só perde durabilidade quando **efetivamente absorve** um golpe.
 - **Registro na ficha:** a proteção é anotada **uma única vez** (nome, redução de dano e redutor de `PA`), junto com a **distribuição por locais** do corpo e a durabilidade individual de cada local.
 - **Espaços de proteção:** a ficha possui **três espaços de proteção** (ex.: superior, inferior e escudo).
-- **Sem empilhamento:** não é possível empilhar armaduras no mesmo local — **vale a de maior proteção**.
+- **Sem empilhamento:** redutores de dano que cobrem o mesmo local não se somam —
+  **aplique somente o maior redutor**. Os redutores de `PA` continuam cumulativos.
 
 **Redutor de `PA` por tipo, com e sem maestria:**
 

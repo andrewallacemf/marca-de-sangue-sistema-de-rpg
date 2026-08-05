@@ -36,7 +36,7 @@ prontas para usar quanto como referência de calibragem para criar magias novas.
 
 > *O punho acerta como pedra que desaba — não é força de músculo, é peso de montanha.*
 
-**Atributo:** `Físico` · **Custo de PA:** `1 PA` + `PA` da arma (ou desarmado) · **Custo de ativação:** `2` dano superficial (fixo em todos os níveis) · **Custo de compra:** `2 exp.`
+**Atributo:** `Físico` · **Custo de PA:** `1 PA` + `PA` da arma (ou desarmado) · **Custo de ativação:** `2` dano curável (fixo em todos os níveis) · **Custo de compra:** `2 exp.`
 
 #### Descrição
 
@@ -86,7 +86,7 @@ extra e ignora toda a redução de dano de armadura do alvo.
 2. Custo `3` de vida máxima.
 3. Custo `2` de vida máxima.
 4. Custo `1` de vida máxima.
-5. Custo `4` de dano profundo (para de cobrar vida máxima).
+5. Custo `4` de dano curável (para de cobrar vida máxima).
 
 ## Passo Entre Sopros
 
@@ -117,7 +117,7 @@ comum (poças, entulho baixo — não paredes ou obstáculos sólidos).
 
 > *Os olhos do inimigo ainda estão processando o primeiro movimento quando o segundo já aconteceu.*
 
-**Atributo:** `Ágil` · **Custo de PA:** `4 PA` · **Custo de ativação:** nível 1 a 4 = `3→2→1→1` dano superficial; nível 5 = `1` de fadiga · **Custo de compra:** `3 exp.`
+**Atributo:** `Ágil` · **Custo de PA:** `4 PA` · **Custo de ativação:** nível 1 a 4 = `3→2→1→1` dano curável; nível 5 = `1` de fadiga · **Custo de compra:** `3 exp.`
 
 #### Descrição
 
@@ -134,17 +134,17 @@ que ele fizer ganha `vantagem`.
 
 #### Progressão
 
-1. Custo `3` de dano superficial.
-2. Custo `2` de dano superficial.
-3. Custo `1` de dano superficial.
-4. Custo `1` de dano superficial; o efeito dura também o turno seguinte (2 turnos completos).
+1. Custo `3` de dano curável.
+2. Custo `2` de dano curável.
+3. Custo `1` de dano curável.
+4. Custo `1` de dano curável; o efeito dura também o turno seguinte (2 turnos completos).
 5. Custo `1` de fadiga (sai do dano); efeito dura 2 turnos completos.
 
 ## Sussurro na Nuca
 
 > *A dúvida entra como um sussurro, baixo demais para ter certeza se veio de fora ou de dentro.*
 
-**Atributo:** `Mental` · **Custo de PA:** `4 PA` · **Custo de ativação:** `2` dano superficial (fixo em todos os níveis) · **Custo de compra:** `3 exp.`
+**Atributo:** `Mental` · **Custo de PA:** `4 PA` · **Custo de ativação:** `2` dano curável (fixo em todos os níveis) · **Custo de compra:** `3 exp.`
 
 #### Descrição
 
@@ -196,7 +196,7 @@ específica ela é.
 
 > *Não é mentira — é a verdade que o outro já queria acreditar, só precisando de um empurrão.*
 
-**Atributo:** `Social` · **Custo de PA:** `4 PA` · **Custo de ativação:** `2` dano superficial (fixo em todos os níveis) · **Custo de compra:** `2 exp.`
+**Atributo:** `Social` · **Custo de PA:** `4 PA` · **Custo de ativação:** `2` dano curável (fixo em todos os níveis) · **Custo de compra:** `2 exp.`
 
 #### Descrição
 
@@ -221,16 +221,16 @@ interesses do alvo, apenas inclina a balança a favor do pedido.
 
 > *Um grito só, mas todo mundo ao redor sente o peso dele nos próprios joelhos.*
 
-**Atributo:** `Social` · **Custo de PA:** `5 PA` · **Custo de ativação:** nível 1–2 = `3→2` dano profundo; nível 3–5 = `3→2→1` dano superficial · **Custo de compra:** `4 exp.`
+**Atributo:** `Social` · **Custo de PA:** `5 PA` · **Custo de ativação:** `3→2→3→2→1` dano curável 📝 · **Custo de compra:** `4 exp.`
 
 #### Descrição
 
 Todo inimigo num raio que possa ouvir o grito faz um teste de `Mental`. Quem falhar sofre
 **Desvantagem** no próximo teste que fizer.
 
-> 📝 Exemplo do modelo "custo melhora de tier dentro do curável" — começa em dano profundo (preço
-> alto, precisa tratamento) e passa a superficial a partir do nível 3, sem nunca chegar a
-> vida máxima. Contraste com [Pacto da Última Gota](#pacto-da-última-gota), que começa cobrando vida máxima.
+> 📝 A progressão de custo precisa ser recalibrada após a retirada do dano profundo: os valores
+> foram preservados para revisão, mas o salto do nível 2 para o 3 não representa melhoria.
+> Contraste com [Pacto da Última Gota](#pacto-da-última-gota), que começa cobrando vida máxima.
 
 #### Requisitos de uso
 
@@ -238,8 +238,8 @@ Todo inimigo num raio que possa ouvir o grito faz um teste de `Mental`. Quem fal
 
 #### Progressão
 
-1. Custo `3` de dano profundo. Raio de `6` metros.
-2. Custo `2` de dano profundo. Raio de `6` metros.
-3. Custo `3` de dano superficial. Raio de `9` metros.
-4. Custo `2` de dano superficial. Raio de `9` metros.
-5. Custo `1` de dano superficial. Raio de `12` metros.
+1. Custo `3` de dano curável. Raio de `6` metros.
+2. Custo `2` de dano curável. Raio de `6` metros.
+3. Custo `3` de dano curável. Raio de `9` metros.
+4. Custo `2` de dano curável. Raio de `9` metros.
+5. Custo `1` de dano curável. Raio de `12` metros.

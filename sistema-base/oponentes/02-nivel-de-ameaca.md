@@ -49,7 +49,7 @@ experiência.
 ## O que é "desafio moderado"
 
 Um encontro moderado é aquele em que **o grupo vence, mas paga por isso**: sai com fadiga
-acumulada, aptidões gastas e provavelmente algum membro em ferida profunda. Não é um encontro que
+acumulada, aptidões gastas e provavelmente algum membro incapacitado. Não é um encontro que
 o grupo possa perder — é um encontro que **cobra recursos** e faz o próximo doer mais.
 
 Para calibrar em outra direção:

@@ -28,9 +28,9 @@ caso, e as opcionais [Aptidão Mágica](../../../modulos/magia/README.md#aptidã
 > adotada pela Gaéria para a camada de fantasia) — resolveu, para o Mukashi, a pendência "custo da
 > magia: saúde × sangue × fadiga" antes mesmo do módulo existir. Em 01/08/2026 essa decisão virou
 > parte do [módulo de Magia](../../../modulos/magia/README.md#custo-de-ativação--três-tipos): toda
-> magia abaixo usa o tipo **dano curável (superficial)**, seguindo as regras normais de
+> magia abaixo usa o tipo **dano curável**, seguindo as regras normais de
 > [saúde e dano](../../../sistema-base/conflitos/03-saude-e-protecao.md) — gera fadiga automaticamente
-> (1 ponto por ponto de dano) e cura com descanso, como qualquer dano superficial.
+> (1 ponto por ponto de dano) e pode ser recuperado com descanso.
 
 O conjurador escolhe o membro que recebe o custo — o tronco é o mais comum, como sede simbólica do
 KI, mas a escolha é livre.
@@ -72,7 +72,7 @@ impede de atrelar alguma a um caminho específico mais pra frente, se fizer sent
 
 > *O "vento de foice" — um vácuo cortante que passa antes que o alvo perceba o ataque.*
 
-**Atributo:** `Ágil` · **Custo de PA:** `4 PA` · **Custo de ativação:** `2` dano superficial 📝 · **Custo de compra:** `4 exp.`
+**Atributo:** `Ágil` · **Custo de PA:** `4 PA` · **Custo de ativação:** `2` dano curável 📝 · **Custo de compra:** `4 exp.`
 
 **Descrição:** o conjurador manipula o ar em correntes cortantes que atingem o alvo à distância — teste de `Ágil` (conjurador) contra o contrateste de esquiva/defesa do alvo (normalmente `Ágil` também). Causa dano cortante (`CORT.`, base `1d8`, a mesma escala do dano cortante leve) e **ignora o redutor de dano de armaduras leves** — o corte é súbito e passa pela proteção mais fina como se não estivesse lá.
 
@@ -91,9 +91,9 @@ impede de atrelar alguma a um caminho específico mais pra frente, se fizer sent
 
 > *Chamas sobrenaturais que não se apagam com água — só com vontade.*
 
-**Atributo:** `Físico` · **Custo de PA:** `5 PA` · **Custo de ativação:** `3` dano superficial 📝 · **Custo de compra:** `4 exp.`
+**Atributo:** `Físico` · **Custo de PA:** `5 PA` · **Custo de ativação:** `3` dano curável 📝 · **Custo de compra:** `4 exp.`
 
-**Descrição:** teste de `Físico` (conjurador) contra teste `Ágil` do alvo — sucesso ateia fogo sobrenatural nele. No início de cada turno do alvo, ele sofre `1d4` de dano superficial (no mesmo membro atingido pelo ataque inicial) até gastar `2 PA` em seu turno para apagar as chamas.
+**Descrição:** teste de `Físico` (conjurador) contra teste `Ágil` do alvo — sucesso ateia fogo sobrenatural nele. No início de cada turno do alvo, ele sofre `1d4` de dano curável (no mesmo membro atingido pelo ataque inicial) até gastar `2 PA` em seu turno para apagar as chamas.
 
 **Requisitos de uso:** ataque à distância ou corpo a corpo, à escolha do conjurador.
 
@@ -108,7 +108,7 @@ impede de atrelar alguma a um caminho específico mais pra frente, se fizer sent
 
 > *Uma parede que ninguém vê — até esbarrar nela.*
 
-**Atributo:** `Ágil` · **Custo de PA:** `4 PA` · **Custo de ativação:** `2` dano superficial 📝 · **Custo de compra:** `3 exp.`
+**Atributo:** `Ágil` · **Custo de PA:** `4 PA` · **Custo de ativação:** `2` dano curável 📝 · **Custo de compra:** `3 exp.`
 
 **Descrição:** cria uma barreira invisível de **2 metros de largura**. Qualquer personagem que tente atravessar esse espaço precisa de sucesso num teste `Físico` contra o `Ágil` do conjurador; se falhar, o movimento é interrompido e o `PA` gasto na locomoção é perdido.
 
@@ -123,7 +123,7 @@ impede de atrelar alguma a um caminho específico mais pra frente, se fizer sent
 
 > *Uma risada estrondosa ecoa pela mata — e ninguém sabe de onde ela vem.*
 
-**Atributo:** `Social` · **Custo de PA:** `4 PA` · **Custo de ativação:** `2` dano superficial 📝 · **Custo de compra:** `3 exp.`
+**Atributo:** `Social` · **Custo de PA:** `4 PA` · **Custo de ativação:** `2` dano curável 📝 · **Custo de compra:** `3 exp.`
 
 **Descrição:** todos os inimigos num raio de **6 metros** que possam ouvir o grito fazem um teste `Mental`. Quem falhar sofre **Desvantagem** no próximo ataque que fizer (mesma lógica de efeito da [Confundir inimigo](../../../sistema-base/listas/habilidades-base-mentais.md#confundir-inimigo) — "Amedrontado" aqui é só o nome-sabor do efeito, não um status novo) **e** desce **1 posição** na ordem de iniciativa.
 
@@ -148,7 +148,7 @@ impede de atrelar alguma a um caminho específico mais pra frente, se fizer sent
 
 > *Nove gestos, nove mantras — e o corpo trava antes que a mente entenda por quê.*
 
-**Atributo:** `Físico` · **Custo de PA:** `5 PA` · **Custo de ativação:** `3` dano superficial 📝 · **Custo de compra:** `4 exp.`
+**Atributo:** `Físico` · **Custo de PA:** `5 PA` · **Custo de ativação:** `3` dano curável 📝 · **Custo de compra:** `4 exp.`
 
 **Descrição:** o conjurador traça os nove selos no ar; todo inimigo **adjacente** ao ponto do selo sofre o choque espiritual da técnica e perde **`3 PA`** — mas só **no próximo turno dele** (respeitando o piso de `3 PA`).
 

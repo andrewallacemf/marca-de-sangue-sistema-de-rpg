@@ -37,7 +37,7 @@ Os pontos **não** se reduzem por outros meios.
 Além das condições do [núcleo](../../../sistema-base/conflitos/03-saude-e-protecao.md), o ermo
 traz:
 
-- **Hipotermia** — 1 de dano superficial em membro aleatório a cada início de turno (fora de
+- **Hipotermia** — 1 de dano curável em membro aleatório a cada início de turno (fora de
   batalha, a critério do Narrador). Sai perto de fogo, ao sol, com roupas quentes, calor humano
   ou remédios.
 - **Insolação** — ao adquirir, recebe **10 pontos de fadiga** e passa a ter **desvantagem em

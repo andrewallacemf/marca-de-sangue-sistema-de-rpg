@@ -71,8 +71,8 @@ Vale insistir, porque é fácil confundir "simplificado" com "mais fraco":
 - Ameaça **pode ter mais vida, mais `PA` e mais habilidades** que um personagem jogador.
 - Ameaça **pode ser o clímax da campanha**. Não existe uma categoria separada de "chefe": o que
   varia é o [Nível de Ameaça](02-nivel-de-ameaca.md), que é uma escala contínua.
-- Ameaça **sofre dano exatamente como todo mundo**: por membro, com ferida profunda e perda de
-  vida máxima.
+- Ameaça **sofre dano exatamente como todo mundo**: por membro, com dano curável, incapacitação e
+  perda de vida máxima.
 
 ## Nesta seção
 

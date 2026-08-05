@@ -4,7 +4,7 @@ tipo: regra
 cenario: base
 status: revisao
 tags: [habilidades, mental, combate]
-atualizado-em: 2026-07-12
+atualizado-em: 2026-08-04
 ---
 
 # Habilidades base — Mental
@@ -53,7 +53,7 @@ Vê quanto dano o oponente recebeu em partes do corpo a escolha do jogador.
 
 ### Descrição
 
-Realiza um teste de cura de dano superficial em si.
+Realiza um teste de cura de dano curável em si.
 
 Se falhar neste teste de cura, não recebe dano adicional.
 
@@ -63,15 +63,15 @@ Se falhar neste teste de cura, não recebe dano adicional.
 
 ### Progressão
 
-1. Rola 1d4 de cura de dano superficial.
-2. Rola 1d6 de cura de dano superficial.
-3. Rola 1d8 de cura de dano superficial.
-4. Rola 1d10 de cura de dano superficial.
-5. Rola 1d12 de cura de dano superficial.
+1. Rola 1d4 de cura de dano curável.
+2. Rola 1d6 de cura de dano curável.
+3. Rola 1d8 de cura de dano curável.
+4. Rola 1d10 de cura de dano curável.
+5. Rola 1d12 de cura de dano curável.
 
 ### Observações
 
-- A cura de dano superficial deve ser focada em um apenas membro.
+- A cura deve ser focada em apenas um membro.
 - Pontos de cura sobressalentes são perdidos.
 
 ## Auto tratamento
@@ -80,7 +80,8 @@ Se falhar neste teste de cura, não recebe dano adicional.
 
 ### Descrição
 
-Realiza um teste de tratamento de dano profundo em si.
+Realiza um teste de tratamento intensivo em si. O tratamento recupera dano curável e nunca
+recupera vida máxima.
 
 Se falhar neste teste de tratamento, não recebe dano adicional.
 
@@ -90,17 +91,16 @@ Se falhar neste teste de tratamento, não recebe dano adicional.
 
 ### Progressão
 
-1. Rola 1d4 de tratamento de dano profundo.
-2. Rola 2d4 de tratamento de dano profundo.
-3. Rola 3d4 de tratamento de dano profundo.
-4. Rola 3d6 de tratamento de dano profundo.
+1. Recupera 1d4 de dano curável.
+2. Recupera 2d4 de dano curável.
+3. Recupera 3d4 de dano curável.
+4. Recupera 3d6 de dano curável.
 
 ### Observações
 
-- O tratamento de dano profundo deve ser focado em apenas um membro.
-- Os danos profundos tratados tornam-se danos superficiais.
+- O tratamento deve ser focado em apenas um membro.
 - Pontos de tratamento sobressalentes são perdidos.
-- Não é possível usar pontos de tratamento para curar danos superficiais.
+- Dano permanente não pode ser recuperado por esta habilidade.
 
 ## Confundir inimigo
 

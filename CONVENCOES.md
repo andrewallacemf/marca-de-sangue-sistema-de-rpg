@@ -130,54 +130,48 @@ varrer o texto inteiro atrás de um termo.
    a **função** que o recurso cumpre, de forma abstrata; o cenário declara **o que ele é**.
    Ex.: o módulo `veiculos` fala em *peças de reposição*; o Colapso preenche com *sucata*.
 
-## 11. Contrato de conteúdo (`contrato/`) — quem consome o sistema, consome de lá
+## 11. Contrato de conteúdo (`contrato/`)
 
-A ficha, o manual web, o PDF e a plataforma **não transcrevem** regras: eles consomem a
-versão limpa e estruturada gerada em [`contrato/`](contrato/README.md). Consequência
-prática: **ao editar uma lista** (`sistema-base/listas/` ou módulo de armas/proteções),
-rode `python contrato/exportar_catalogo.py` e inclua o `contrato/catalogo.json`
-atualizado **no mesmo commit**. O parser do exportador depende dos formatos padrões das
-tabelas e seções (cabeçalhos das tabelas dos módulos, seções `### Descrição` /
-`### Requisitos de uso` / `### Progressão` das habilidades) — mudou a estrutura, atualize
-o exportador junto.
+O `contrato/catalogo.json` é a fonte estruturada para armas, proteções, habilidades, traços e
+outros recursos consumidos pela ficha e pela plataforma. Consequência prática: **ao editar uma
+lista** (`sistema-base/listas/` ou módulo de armas/proteções), rode
+`python contrato/exportar_catalogo.py` e inclua o catálogo atualizado no mesmo commit.
 
-## 12. Separando bastidor de conteúdo público (o que os jogadores veem)
+O parser depende dos formatos padrões das tabelas e seções. Se a estrutura de uma lista mudar,
+o exportador deve ser atualizado junto. Consumidores não devem transcrever manualmente esses
+dados para o código.
 
-O [manual web](manual/README.md) publica **automaticamente** `sistema-base/`, `modulos/` e
-`cenarios/` a cada push em `main` — é a versão "livro de RPG" do sistema, para jogadores. Nem
-tudo que escrevemos nessas três pastas é para o jogador ler, então existem duas formas de manter
-algo **fora do manual público** sem tirá-lo do repositório:
+Essa regra vale para **dados estruturados**. Ela não autoriza gerar o texto do manual da
+plataforma pela cópia ou concatenação automática do conteúdo do repositório.
 
-- **Marcação já existente (frase/bloco)**: qualquer citação (`>`) ou rodapé em itálico começando
-  com `⚠️`, `📝` ou `🔧`, ou contendo palavras como "Decidido em"/"Aprovado em"/"A DEFINIR", já
-  some sozinha — é a mesma marcação que já usamos para pendências e propostas. **`💡` é o único
-  emoji de marcação que fica visível** — é dica de mesa pro jogador/mestre, não bastidor (ver a
-  tabela abaixo).
-- **Bloco de bastidor explícito**: para um trecho maior (uma seção inteira, sem virar uma citação
-  gigante), envolva com `<!-- bastidor:inicio -->` e `<!-- bastidor:fim -->` — tudo entre os dois
-  marcadores some do manual público. Exemplo: a seção "Estado da importação" de um README de
-  cenário (que é status de curadoria, não lore).
-- **Página inteira de bastidor**: adicione `publico: false` no frontmatter (ver seção 3). Use
-  para páginas que são guias de criação para quem monta o cenário, não conteúdo para o jogador
-  final — ex.: um "pitch e o que muda no base" endereçado a quem vai popular o cenário, não a
-  quem vai jogá-lo.
+## 12. Bastidor e manual oficial da plataforma
 
-Nos três casos, o conteúdo **continua no repositório, editável normalmente** — só não aparece no
-site publicado. A limpeza roda em `contrato/limpeza.py` (também usada pelo PDF e pela ficha) e é
-aplicada pelo gerador do manual (`manual/gerar-conteudo.py`) a cada deploy — nunca precisa lembrar
-de "gerar a versão limpa" manualmente.
+As marcações abaixo organizam o trabalho dentro do repositório:
 
-**Os emojis de marcação, e o que cada um significa** (não confundir — separados em 27/07/2026):
+| Emoji | Significado |
+|:--:|---|
+| `💡` | Dica de uso na mesa para jogador ou narrador. |
+| `📝` | Nota de bastidor ou curadoria para a equipe. |
+| `⚠️` | Pendência ou ponto em aberto (`A DEFINIR`). |
+| `🧪` | Mecânica experimental ou em teste. |
+| `🔧` | Registro de ajuste ou correção pontual. |
+| `✅` | Decisão aprovada e seu contexto histórico. |
 
-| Emoji | Significado | Aparece no site? |
-|:--:|---|:--:|
-| `💡` | **Dica** de mesa pro jogador/mestre (ex.: "💡 Na mesa: use tokens para marcar…") | ✅ Sim |
-| `📝` | **Nota de bastidor/curadoria** — comentário de quem edita pro resto do grupo (ex.: "📝 Nota: troquei X por Y porque…") | ❌ Não |
-| `⚠️` | Pendência/ponto em aberto (`A DEFINIR`) | ❌ Não |
-| `🧪` | Mecânica em teste/experimental | ❌ Não |
-| `🔧` | Ajuste/correção pontual feita numa data | ❌ Não |
-| `✅` | Decisão já aprovada pelo grupo (registro de quando/por quem) | ❌ Não |
+Blocos `<!-- bastidor:inicio -->` até `<!-- bastidor:fim -->` e páginas com
+`publico: false` continuam úteis para organizar materiais internos. Entretanto, essas marcações
+**não são uma garantia de publicação segura**. O site antigo deixou passar informações internas
+e também publicou textos cuja estrutura não funcionava como manual.
 
-**Regra prática:** se a frase é *para o jogador usar na mesa*, use `💡`. Se é *sobre o processo
-de criação do conteúdo* (por que essa escolha, o que falta, uma proposta a validar), use `📝` —
-nunca `💡`.
+O manual oficial hospedado na plataforma segue
+[`documentacao/manual-da-plataforma/`](documentacao/manual-da-plataforma/README.md):
+
+1. o conteúdo de origem é analisado;
+2. as informações adequadas são selecionadas;
+3. o texto é reorganizado e, quando necessário, reescrito;
+4. jogador e narrador recebem páginas próprias;
+5. a proposta é apresentada às pessoas responsáveis;
+6. a publicação só é oficializada depois da confirmação.
+
+Remover frontmatter, datas, emojis ou blocos de bastidor **não basta** para transformar um
+arquivo de trabalho em página pública. O gerador e a limpeza do site antigo podem auxiliar em
+diagnósticos, mas não são a fonte editorial do manual da plataforma.

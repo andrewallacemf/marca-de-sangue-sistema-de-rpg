@@ -13,7 +13,7 @@ Durante um conflito, os personagens podem gastar pontos de ação para realizar 
 
 ## Ataque
 
-Em seu turno, o jogador pode realizar quantos ataques quiser, gastando o número de pontos referente à arma, podendo usar habilidades e aptidões (consumindo seus respectivos usos) e aplicando traços cabíveis no ato:
+Em seu turno, o jogador pode realizar quantos ataques quiser, gastando o número de pontos referente à arma, podendo usar habilidades (pagando seu custo em `PA` e fadiga), gastar aptidões disponíveis e aplicar traços cabíveis no ato:
 
 - **Ataque desarmado: `1 PA`** por ataque
 - **Ataque com arma leve: `2 PA`** por ataque
@@ -120,15 +120,15 @@ Os jogadores que estão recebendo a mensagem só podem responder em seus turnos 
 
 ## Usar habilidades
 
-O jogador pode usar habilidades para aumentar suas possibilidades de ações em combate. Elas podem se aliar às armas, armaduras e itens do personagem para trazer grandes vantagens. Mas fique atento que as habilidades usam um número próprio de pontos de ação e tem requisitos para que possam ser usadas. Seu personagem não poderia, por exemplo, usar uma habilidade relacionada à visão estando vendado. Todos os requisitos estão na descrição da habilidade.
+O jogador pode usar habilidades para aumentar suas possibilidades de ações em combate. Elas podem se aliar às armas, armaduras e itens do personagem para trazer grandes vantagens. Cada uso paga o custo próprio de pontos de ação e acumula a mesma quantidade de fadiga, salvo quando a descrição trouxer um custo específico. Os requisitos também precisam ser cumpridos: seu personagem não poderia, por exemplo, usar uma habilidade relacionada à visão estando vendado.
 
-Uma vez utilizada, a habilidade fica indisponível até que uma situação permita que você recupere sua capacidade de utilizá-la. Isso pode ocorrer, por exemplo, ao realizar um descanso ou ao ser alvo de alguma habilidade de recuperação.
+Habilidades não possuem contador de usos. Uma habilidade adquirida continua disponível enquanto o personagem puder pagar seus custos e cumprir seus requisitos. A fadiga acumulada permanece até um descanso curto ou longo.
 
 **Atenção:** Usar uma habilidade não significa sucesso automático, a não ser que isso esteja escrito na descrição da habilidade. Na maioria das situações, ainda é preciso fazer **teste** e **contrateste**.
 
 > 💡 **Registrando os usos na ficha**
 >
-> Ao utilizar uma habilidade descrita na ficha, você deverá **riscar os espaços correspondentes aos seus usos**. Ao recuperar suas habilidades, apague as marcações. **Os espaços sem marcação passam a estar disponíveis.**
+> Na ficha, registre o nível atual da habilidade e acompanhe seus usos pela trilha geral de fadiga. Não há espaços individuais de uso para riscar ou recuperar.
 
 ## Movimentação
 

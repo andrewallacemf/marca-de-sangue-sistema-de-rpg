@@ -55,9 +55,9 @@ mutação vizinha (quirk do sorteio original).
 | 6 | Focinho (nariz vira focinho de animal, à escolha do Mestre) | — |
 | 7 | Ruminante (vomita e sente impulso de comer de novo; resiste com Teste Mental) | — |
 | 8 | Ouriçase (pelos ficam pontudos com medo/intimidação; incomoda, não machuca) | — |
-| 9 | Tubaronia (antecipa chuva/tempestade/vento solar; **contra:** 1 dano superficial na cabeça 1×/dia) | — |
+| 9 | Tubaronia (antecipa chuva/tempestade/vento solar; **contra:** 1 dano curável na cabeça 1×/dia) | — |
 | 10 | Pombo-correio (sempre sabe se já passou por um lugar) | — |
-| 11 | Autofagia (consome 2 de dano profundo num membro para curar 1 superficial/profundo em outro; não inutiliza membro) | — |
+| 11 | Autofagia (sofre 2 de dano curável num membro para recuperar 1 de dano curável em outro; não incapacita o membro usado como custo) | — |
 | 12 | Baba de cupim (repara/cola coisas com a saliva; **contra:** desvantagem na trilha social da Atração) | — |
 | 13 | Mimetismo (reproduz vozes/sons; **contra:** perde o controle e repete involuntariamente por horas) | — |
 | 14 | Olhos de águia (vê longe com detalhe; **contra:** dificuldade de perto) | — |
@@ -122,7 +122,7 @@ mutação vizinha (quirk do sorteio original).
 | 73 | Fotossíntese (vive de água e luz solar; **contra:** dobro de dano de fogo) | — |
 | 74 | Adquire a mutação acima 👆 | — |
 | 75 | Adquire a mutação abaixo 👇 | — |
-| 76 | Troca de pele (todo dano superficial −1; **contra:** após rolar um Teste Ágil, considere o valor rolado −1) | — |
+| 76 | Troca de pele (todo dano recebido −1, respeitando o mínimo de 1; **contra:** após rolar um Teste Ágil, considere o valor rolado −1) | — |
 | 77 | Pálpebra dupla (abre os olhos sob a água ou na tempestade de areia) | — |
 | 78 | Adquire a mutação acima 👆 | — |
 | 79 | Adquire a mutação abaixo 👇 | — |
@@ -155,7 +155,7 @@ Só revezes severos.
 | # | Mutação |
 |---|---------|
 | 1 | Câncer (5 de dano permanente em membro aleatório) |
-| 2 | Leucemia (dano superficial não se cura com o tempo, só com tratamento) |
+| 2 | Leucemia (dano curável não se recupera com descanso, somente com cura ou tratamento) |
 | 3 | Aberração (aparência que afasta; gasta o dobro de exp. para habilidade/aspecto **Social** e realiza todo Teste Social com desvantagem) |
 | 4 | Ossos de vidro (gasta o dobro de exp. para habilidade/aspecto **Físico** e realiza todo Teste Físico com desvantagem) |
 | 5 | Corpo de lesma (movimentos lentos; gasta o dobro de exp. para habilidade/aspecto **Ágil** e realiza todo Teste Ágil com desvantagem) |

@@ -11,7 +11,7 @@ atualizado-em: 2026-08-01
 
 Atributos são características fundamentais que definem as capacidades físicas, mentais e sociais dos personagens. Eles podem influenciar o desempenho dos personagens em diversas situações, como combates, testes de habilidade, interações sociais e resolução de desafios. Cada atributo representa um conjunto específico de aspectos usados em conjunto com outros elementos do sistema, como habilidades e equipamentos, para calcular o sucesso ou o fracasso em ações realizadas durante o jogo.
 
-No sistema Marca de Sangue, os atributos se dividem em 4 categorias: Físico, Ágil, Mental e Social. Ao conseguir experiência durante os jogos, é possível comprar [características](03-caracteristicas.md) pertencentes a uma dessas categorias. Isso não quer dizer que, ao fazer esse investimento, o personagem sempre terá mais facilidade em testes daquela categoria — utilizar uma característica é uma decisão ativa do jogador, já que habilidades e aptidões possuem usos limitados.
+No sistema Marca de Sangue, os atributos se dividem em 4 categorias: Físico, Ágil, Mental e Social. Ao conseguir experiência durante os jogos, é possível comprar [características](03-caracteristicas.md) pertencentes a essas categorias. Isso não quer dizer que o personagem sempre terá mais facilidade em todo teste da categoria: aplicar uma característica é uma decisão ativa. Habilidades consomem `PA` e fadiga; aptidões são recursos gastáveis usados para rerrolar dados.
 
 ## Atributo Físico
 

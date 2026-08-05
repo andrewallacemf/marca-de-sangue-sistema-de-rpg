@@ -87,7 +87,8 @@ Para adquirir uma habilidade, basta gastar pontos de experiência. Para deixá-l
 
 Na vida real, antes de saber tecer um cachecol é provável que você precise primeiro aprender a manusear a linha e a agulha. Aqui vale o mesmo: o nível 3 de uma habilidade pressupõe que você passou pelos níveis 1 e 2.
 
-> *Exemplo: “Corte profundo” transforma até 2 pontos de dano superficial de uma arma cortante em dano profundo. Subindo o nível dela, o mesmo golpe passa a transformar 4.*
+> *Exemplo: no nível 1, Auto cura recupera `1d4` de dano curável. No nível 2, passa a recuperar
+> `1d6`.*
 
 > ⚠️ **A fusão de características não existe mais.** Até 01/08/2026, subir o nível exigia **fundir** dois usos de uma mesma habilidade, e separá-las custava `1 exp.` Como as habilidades deixaram de ser compradas por usos, não há o que fundir: a força vem do nível, comprado diretamente.
 

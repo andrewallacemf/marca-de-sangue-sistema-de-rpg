@@ -64,8 +64,8 @@ Cada membro tem a **sua própria vida máxima**, e ela não precisa ser 10. Um d
 tronco e 15 numa asa; um rato pode ter 3 em tudo.
 
 O dano funciona **exatamente como no personagem** (ver [Saúde e Proteção](../conflitos/03-saude-e-protecao.md)):
-enche o membro → **ferida profunda / incapacitado** → continuar batendo ali → **perde vida máxima**
-→ zerando, **invalidado**. As mesmas regras de morte também valem: membro vital invalidado, ou dois
+enche o membro → **incapacitado** → continuar batendo ali → **perde vida máxima** → zerando,
+**invalidado**. As mesmas regras de morte também valem: membro vital invalidado, ou dois
 periféricos.
 
 ## 3. Fadiga e queda

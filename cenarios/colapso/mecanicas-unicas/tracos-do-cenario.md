@@ -41,7 +41,7 @@ Ligados ao clima e à [radiação](radiacao.md) do Colapso.
 | Traço | Atrib. | `exp.` | Efeito |
 |-------|--------|:--:|------|
 | **Cartucho expandido** | Ágil | `Jogador` 10 | Até 2 disparos de projétil ou arremesso leve no mesmo turno gastando 1 munição. |
-| **Felino** | Ágil | `Jogador` 5 | Reduz 2 de dano superficial de queda (mínimo 1). |
+| **Felino** | Ágil | `Jogador` 5 | Reduz 2 de dano de queda (mínimo 1). |
 | **Saque rápido** | Ágil | `Jogador` 4 | Gasta só 1 `PA` para trocar entre duas armas de projétil ou arremesso leve. |
 
 > 📝 Os três traços gerais **não têm nada de junkpunk** — funcionariam em qualquer mesa. São

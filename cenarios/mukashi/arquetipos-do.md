@@ -79,7 +79,7 @@ Os **dō** são os arquétipos do Mukashi. Cada um **dá nome e flavor** a um [a
 
 - **Maestrias:** armas contundentes (para o [Bô](arsenal.md), bastão longo) e armas cortantes/perfurantes (para a [Naginata](arsenal.md)) — mesmas armas do Sōhei, mas o estilo do yamabushi é solitário, não de linha de frente.
 - **Aspectos:** [Resistente](../../sistema-base/listas/tracos-base.md#resistente), [Fôlego de ferro](../../sistema-base/listas/tracos-base.md#fôlego-de-ferro) — resistir à provação é o cerne do caminho.
-- **Habilidades:** [Auto cura](../../sistema-base/listas/habilidades-base-mentais.md#auto-cura) e [Recompor](../../sistema-base/listas/habilidades-base-mentais.md#recompor) — e há uma sinergia direta com a regra de [custo da magia](mecanicas-unicas/magia.md): como conjurar fere o próprio corpo (dano superficial), o yamabushi que também tem Auto cura consegue tratar o preço da própria magia em campo.
+- **Habilidades:** [Auto cura](../../sistema-base/listas/habilidades-base-mentais.md#auto-cura) e [Recompor](../../sistema-base/listas/habilidades-base-mentais.md#recompor) — e há uma sinergia direta com a regra de [custo da magia](mecanicas-unicas/magia.md): como conjurar fere o próprio corpo (dano curável), o yamabushi que também tem Auto cura consegue tratar o preço da própria magia em campo.
 - **Equipamentos:** [Bô e Naginata](arsenal.md) e um búzio ritual (*hora*) — aponta para `Instrumento musical` em [itens-base.md](../../sistema-base/listas/itens-base.md#instrumento-musical) (12 moedas; sem efeito mecânico próprio ainda, é flavor de ritual/sinalização).
 
 **Habilidades de caminho (≥ 2 do caminho):** nenhuma por enquanto.
