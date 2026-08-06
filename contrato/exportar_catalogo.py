@@ -496,10 +496,25 @@ def parse_tracos(md: str) -> tuple[list[dict], dict[str, str]]:
                     traco["gatilho"] = det["gatilho"]
                 tracos.append(traco)
 
-    # aspectos com seção de detalhe mas fora da tabela
+    # aspectos com seção de detalhe mas fora da tabela de custos: quando a
+    # própria seção declara o custo ("**Custo de compra:** N"), saem mesmo
+    # assim (ex.: Pele de ferro — custo documentado na seção, tabela vazia)
     na_tabela = {t["nome"] for t in tracos if t["categoria"] == "Aspecto"}
     for nome, det in detalhes.items():
-        if nome not in na_tabela:
+        if nome not in na_tabela and det["custo"]:
+            traco = {
+                "nome": nome,
+                "categoria": "Aspecto",
+                "atributo": "",
+                "valorCompra": det["custo"],
+                "efeito": det["efeito"],
+                "requisitos": det["requisitos"],
+                "experimental": False,
+            }
+            if det["gatilho"]:
+                traco["gatilho"] = det["gatilho"]
+            tracos.append(traco)
+        elif nome not in na_tabela:
             aviso(f"traços: aspecto '{nome}' tem seção de detalhe mas não está na tabela de custos")
 
     return tracos, maestria_por_sigla
@@ -573,6 +588,51 @@ def parse_habilidades(caminho: str, experimental: bool) -> tuple[list[dict], lis
 TIERS_INIMIGO = {"fraco": "fraco", "médio": "medio", "medio": "medio",
                  "forte": "forte", "chefe": "chefe", "especial": "especial"}
 
+# Palavras reconhecidas na coluna "Red. dano" (ver inimigos-do-kit.md): o que
+# vier entre o número e o parêntese diz onde a redução vale. Tudo é normalizado
+# para as chaves de membro que a plataforma usa (MembroKey: tronco, cabeca,
+# bracoE, bracoD, pernaE, pernaD).
+MEMBROS_INIMIGO: dict[str, list[str]] = {
+    "cabeca": ["cabeca"], "cabeça": ["cabeca"],
+    "tronco": ["tronco"],
+    "braco esquerdo": ["bracoE"], "braco direito": ["bracoD"],
+    "bracos": ["bracoE", "bracoD"], "braços": ["bracoE", "bracoD"],
+    "perna esquerda": ["pernaE"], "perna direita": ["pernaD"],
+    "pernas": ["pernaE", "pernaD"],
+}
+
+
+def reducao_regioes(celula: str) -> list[str]:
+    """Regiões cobertas pela redução de uma célula 'Red. dano'.
+
+    Lista vazia = a redução vale em qualquer golpe. Formato canônico:
+    '−N <regiões> (descrição)'. Sem número (ex.: 'cobertura própria') = caso
+    especial do narrador, sem redução automática. Palavra fora do glossário
+    entre o número e o parêntese dispara aviso (o consumidor não interpreta).
+    """
+    antes_parentese = celula.split("(", 1)[0].strip()
+    m = re.search(r"^(?:−|-)\s*\d+", antes_parentese)
+    if not m:
+        return []  # sem número: sem redução automática
+    resto = antes_parentese[m.end():].strip()
+    if not resto:
+        return []  # sem região declarada: vale em qualquer golpe
+    regioes: list[str] = []
+    desconhecidas: list[str] = []
+    for palavra in re.split(r"[;,\s]+", resto):
+        chaves = MEMBROS_INIMIGO.get(palavra.lower()) if palavra else None
+        if chaves is None:
+            if palavra:
+                desconhecidas.append(palavra)
+            continue
+        for chave in chaves:
+            if chave not in regioes:
+                regioes.append(chave)
+    if desconhecidas:
+        aviso(f"inimigos: palavra(s) de região não reconhecida(s) na coluna "
+              f"'Red. dano' = '{celula}' (palavras: {', '.join(desconhecidas)})")
+    return regioes
+
 
 def parse_inimigos(md: str) -> list[dict]:
     inimigos = []
@@ -628,6 +688,11 @@ def parse_inimigos(md: str) -> list[dict]:
                     "tatica": strip_md(cells[10]),
                     "proposta": True,
                 })
+                # regiões cobertas: só entram no JSON quando a célula declara
+                # (campo ausente = vale em qualquer golpe — consumidor tolera)
+                regioes = reducao_regioes(strip_md(cells[9]))
+                if regioes:
+                    inimigos[-1]["reducaoRegioes"] = regioes
     if tabelas_lidas < total_tabelas:
         aviso(f"inimigos: {total_tabelas - tabelas_lidas} tabela(s) de inimigo fora de "
               "seção '## Cenário N — Título' foram descartadas (título renomeado?)")

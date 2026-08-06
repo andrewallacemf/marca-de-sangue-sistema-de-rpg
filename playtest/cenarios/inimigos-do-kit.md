@@ -24,6 +24,14 @@ incapacitados (10 de dano profundo) ou pelo limiar do tier.
 > "Minions — tratamento único"). Os inimigos dos cenários 3 e 4 nunca tiveram tier
 > anotado no kit; a coluna Queda deles fica vazia até a mesa definir.
 
+> **Formato da coluna "Red. dano"** (lido pelo exportador do contrato):
+> `—` = sem redução · `−N` = redução N em qualquer golpe (o parêntese só descreve
+> a peça, não restringe) · `−N <regiões>` = redução N **só nas regiões listadas**
+> antes do parêntese (palavras reconhecidas: tronco, cabeça, braços, pernas —
+> com lado quando for o caso) · texto sem número (ex.: "cobertura própria") =
+> caso especial do narrador, sem redução automática. A regra de "armadura reduz
+> dano só na região que cobre" vale igual para inimigos (`00-guia-do-narrador.md`).
+
 ## Cenário 1 — A Brecha na Muralha
 
 *Medieval · 15 exp · defesa da brecha*

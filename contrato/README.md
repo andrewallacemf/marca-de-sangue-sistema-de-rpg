@@ -135,6 +135,10 @@ lacuna vira pendência).
     "pa": "10", "arma": "Naginata curta (média, perfurante)", "dano": "1d6",
     "custoPA": "4", "alcance": "1 m",
     "reducao": "",                  // redução de dano (armadura); "" = sem
+    "reducaoRegioes": ["tronco"],   // OPCIONAL: membros cobertos (cabeca, tronco,
+                                    // bracoE/D, pernaE/D). Ausente ou [] = vale em
+                                    // qualquer golpe. Só quando a célula declara
+                                    // "−N <regiões> (…)" — ver inimigos-do-kit.md
     "tatica": "…",
     "proposta": true                // SEMPRE true: o pacote de minion (tiers 10/20/30)
                                     // é proposta de playtest — regra não fechada
