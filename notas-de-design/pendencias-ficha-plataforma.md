@@ -192,7 +192,7 @@ pendências de **regra** (que ficam em [PENDENCIAS.md](../PENDENCIAS.md)).
 > Mapeamento completo em
 > [2026-08-07-mapeamento-ux-plataforma.md](2026-08-07-mapeamento-ux-plataforma.md). Itens em
 > ordem de prioridade; **itens 1, 2, 3 e 4 implementados em 07/08** (commits `25fbdba`,
-> `596f326`, `b0614f9` e `‑‑pending‑‑` na plataforma, decisões 035, 036, 037 e 038); demais
+> `596f326`, `b0614f9` e `bd3c763` na plataforma, decisões 035, 036, 037 e 038); demais
 > itens ainda não trabalhados.
 
 - [x] **⭐ Arma/Proteção: criar e editar em modal com catálogo** — **feito na plataforma**
