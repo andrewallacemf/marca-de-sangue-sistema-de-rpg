@@ -187,6 +187,40 @@ pendências de **regra** (que ficam em [PENDENCIAS.md](../PENDENCIAS.md)).
       upload/preview via Supabase Storage (bucket `character-avatars`, envs na Vercel). A
       **ficha offline** segue sem imagem (decisão: não inflar o `.mds.json`).
 
+## 7. Mapeamento de UX (07/08/2026)
+
+> Mapeamento completo em
+> [2026-08-07-mapeamento-ux-plataforma.md](2026-08-07-mapeamento-ux-plataforma.md). Itens em
+> ordem de prioridade; nada foi implementado ainda.
+
+- [ ] **⭐ Arma/Proteção: criar e editar em modal com catálogo** (moldado no
+      `CharacteristicCatalogDialog` das habilidades: busca no catálogo → preenche tudo em 1
+      passo, com botão "personalizada"). Hoje o botão cria um card em branco e o
+      `<details>` "Editar detalhes da arma" fica escondido — o recurso mais usado da mesa é o
+      pior fluxo. Impacto alto, esforço médio.
+- [ ] **Moeda: simplificar o híbrido** — quantidade é input inline com stepper, mas "Adicionar
+      quantidade / Definir valor / Renomear" abrem modal para o que o input já faz. Deixar
+      inline ou unificar num único fluxo.
+- [ ] **Migrar AlertDialog → Dialog nos formulários** (curar/dano, descanso, editor e catálogo
+      de habilidade, moeda, avatar): `AlertDialog` é semântica de confirmação; o `Dialog` já
+      existe e só é usado em 2 lugares. Refactor barato, pré-requisito do item de armas.
+- [ ] **Confirmação em remoções da ficha** (arma/escudo/proteção/item/moeda, excluir
+      habilidade/traço) e em **encerrar batalha** (irreversível, hoje sem confirmação);
+      unificar verbos "Excluir" × "Remover" sem critério.
+- [ ] **Navegação**: link "Inimigos" no header (hoje `/inimigos` é órfã — só alcançável pelo
+      board da batalha); destaque do menu por prefixo (`/campanhas/[id]` etc. sem item ativo);
+      menu mobile no manual público (a nav some < `sm`); metadata consistente (" | " em todo
+      lugar).
+- [ ] **`beforeunload` + indicador de save visível na ficha**: fechar/recarregar dentro do
+      debounce de 700ms perde a última digitação sem aviso; o status atual é `sr-only`.
+- [ ] **Glossário de botões** (verbo + capitalização + reticências) e empty state único (hoje 3
+      estilos); "Excluir campanha"/"Sair da campanha" em `outline` (único destrutivo fora do
+      vermelho); "Criando..." ASCII.
+- [ ] **Focus trap no menu mobile** (`authenticated-header.tsx` tem `role="dialog"` manual sem
+      foco inicial); `tabs.tsx` é primitivo morto (0 imports) — candidato a remoção.
+- [ ] **Renomear campanha/batalha na lista** e tirar o nome do personagem do `<details>`
+      escondido da `secao-identidade` (hoje é o único lugar onde se renomeia).
+
 ---
 
 ## Origem
