@@ -2,7 +2,7 @@
 titulo: Proposta — Recursos do narrador (inimigos como recursos, não navegação)
 tipo: design
 cenario: base
-status: proposta-v2
+status: fase-A-concluida
 tags: [plataforma, inimigos, recursos, campanha, manual, compartilhamento]
 atualizado-em: 2026-08-07
 ---
@@ -256,6 +256,17 @@ model CampanhaInimigo {                  // visibilidade POR CAMPANHA (narrador)
 - **Fase E — Visibilidade por campanha**: `CampanhaInimigo` + seletor no narrador + leitura
   do membro (níveis; campo a campo depois).
 - **Fase F — Evolução**: NPCs/itens/mapas na área de recursos; co-narração (se um dia).
+
+### Fase A — ✅ implementada em 07/08/2026
+
+Implementada na plataforma (commit a seguir):
+
+- Migration `inimigo_origem_campanha`: `Inimigo.origemCampanhaId String?` (+ FK `Campanha` `onDelete: SetNull`, index).
+- Router: `createMinion` aceita `origemCampanhaId` opcional (valida narrador); novo `createFromBase` (copia de `InimigoBase` — semântica de snapshot); `list.meus` retorna `origemCampanhaId`.
+- Rota `/recursos`: componente `RecursosNarrador` (migrado de `InimigoBiblioteca`, rota `/inimigos` extinta); form extraído em `InimigoBlocoForm` compartilhado. Entrada no `UserMenu` ("Recursos do narrador", ícone `Layers`).
+- Seção `CampanhaInimigos` na campanha: chip "Desta campanha"/"Todos"; criar com `origemCampanhaId`; "Adicionar do catálogo" (copia de padrão); "Adicionar à batalha" (preset para AMEAÇA sem queda).
+- Link do board: "gerenciar recursos" → `/recursos`.
+- DECISIONS.md: decisão 039.
 
 ## 8. Decisões — respostas do André (07/08) e status
 

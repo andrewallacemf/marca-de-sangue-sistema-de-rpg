@@ -224,12 +224,14 @@ pendências de **regra** (que ficam em [PENDENCIAS.md](../PENDENCIAS.md)).
       recursos do narrador ficam dentro da campanha/manuais; ver o item "Recursos do
       narrador" abaixo.)*
 - [ ] **⭐ Recursos do narrador** (ex-"Inimigos"): redesign da área como recursos do
-      narrador — 3 camadas (canônico contrato / do narrador / uso na campanha), visibilidade
-      por campanha (padrão escondido), compartilhamento por e-mail (notificação + pendente +
-      aceitar/recusar) e por link (gerenciável), rota `/recursos`, filtro "Desta campanha"
-      com `origemCampanhaId` e criaturas genéricas do sistema base. Proposta completa em
+      narrador — 3 camadas (canônico contrato / do narrador / uso na campanha). **Fase A
+      implementada na plataforma em 07/08** — rota `/recursos` (UserMenu, `RecursosNarrador`
+      + `InimigoBlocoForm` compartilhado), secao `CampanhaInimigos` na campanha (filtro
+      "Desta campanha", criar com `origemCampanhaId`, adicionar do catalogo, adicionar a
+      batalha), link do board -> `/recursos`, decisao 039. Proposta em
       [2026-08-07-proposta-recursos-do-narrador.md](2026-08-07-proposta-recursos-do-narrador.md)
-      (status `proposta-v2`, decisões do André validadas em 07/08). — **não iniciado**.
+      (status `fase-A-concluida`). Fases B-F pendentes: origem/seed, compartilhamento por
+      link, notificacoes/e-mail, visibilidade por campanha, evolucao.
 - [ ] **`beforeunload` + indicador de save visível na ficha**: fechar/recarregar dentro do
       debounce de 700ms perde a última digitação sem aviso; o status atual é `sr-only`.
 - [ ] **Glossário de botões** (verbo + capitalização + reticências) e empty state único (hoje 3
