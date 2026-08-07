@@ -2,7 +2,7 @@
 titulo: Proposta — Recursos do narrador (inimigos como recursos, não navegação)
 tipo: design
 cenario: base
-status: fase-C-concluida
+status: fase-D-concluida
 tags: [plataforma, inimigos, recursos, campanha, manual, compartilhamento]
 atualizado-em: 2026-08-07
 ---
@@ -285,6 +285,15 @@ Implementada na plataforma (commit a seguir):
 - Router: `shareLink` (gera slug do nome ou manual), `deactivateLink` (desativa sem apagar), `getShared` (busca por slug ativo, publico), `copyShared` (copia para o usuario logado, bloqueia proprio).
 - UI: `ShareDialog` (gerar/copiar/desativar/reativar link em cada recurso) + pagina `/recursos/compartilhado/[slug]` (`SharedInimigo`).
 - DECISIONS.md: decisão 041.
+
+### Fase D — ✅ implementada em 07/08/2026
+
+Implementada na plataforma (commit a seguir):
+
+- Migration: `Notificacao` (tipo, dados Json, lidaEm) + `Compartilhamento` (status PENDENTE|ACEITO|RECUSADO, emailAlvo, alvoId) + `CompartilhamentoStatus`.
+- Router `notificacaoRouter`: `shareByEmail`, `responderCompartilhamento` (aceita copia + notifica; recusa notifica), `listarNotificacoes`, `marcarLida`, `contarNaoLidas`.
+- UI: `NotificationBell` (sino com contador + dropdown de notificacoes no header); `ShareDialog` com aba de e-mail.
+- DECISIONS.md: decisão 042.
 
 ## 8. Decisões — respostas do André (07/08) e status
 
