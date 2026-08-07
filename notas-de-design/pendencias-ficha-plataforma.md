@@ -191,8 +191,8 @@ pendências de **regra** (que ficam em [PENDENCIAS.md](../PENDENCIAS.md)).
 
 > Mapeamento completo em
 > [2026-08-07-mapeamento-ux-plataforma.md](2026-08-07-mapeamento-ux-plataforma.md). Itens em
-> ordem de prioridade; **item 1 implementado em 07/08** (commit `25fbdba` na plataforma,
-> decisão 035); demais itens ainda não trabalhados.
+> ordem de prioridade; **itens 1 e 2 implementados em 07/08** (commits `25fbdba` e
+> `596f326` na plataforma, decisões 035 e 036); demais itens ainda não trabalhados.
 
 - [x] **⭐ Arma/Proteção: criar e editar em modal com catálogo** — **feito na plataforma**
       (07/08): `EquipmentCatalogDialog` (busca no catálogo → preenche tudo em 1 passo, com
@@ -201,9 +201,11 @@ pendências de **regra** (que ficam em [PENDENCIAS.md](../PENDENCIAS.md)).
       o `<details>` escondido saiu dos cards (entrada ⋯/editar abre o modal). Nota: os novos
       diálogos usam `AlertDialog` (consistência com o molde) — a migração para `Dialog` do
       item 3 passa a valer também para eles.
-- [ ] **Moeda: simplificar o híbrido** — quantidade é input inline com stepper, mas "Adicionar
-      quantidade / Definir valor / Renomear" abrem modal para o que o input já faz. Deixar
-      inline ou unificar num único fluxo.
+- [x] **Moeda: simplificar o híbrido** — **feito na plataforma** (07/08): quantidade
+      é só inline (input + stepper); "Adicionar quantidade / Definir valor" saíram do menu
+      ⋯ (o input já fazia); renomear agora é inline (título vira campo ao clicar no lápis;
+      Enter/blur confirmam, Escape cancela). O `AlertDialog` saiu do card de moeda — a
+      migração para `Dialog` (item 3) perde a moeda da lista.
 - [ ] **Migrar AlertDialog → Dialog nos formulários** (curar/dano, descanso, editor e catálogo
       de habilidade, moeda, avatar): `AlertDialog` é semântica de confirmação; o `Dialog` já
       existe e só é usado em 2 lugares. Refactor barato, pré-requisito do item de armas.
