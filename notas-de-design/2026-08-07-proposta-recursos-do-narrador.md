@@ -2,7 +2,7 @@
 titulo: Proposta — Recursos do narrador (inimigos como recursos, não navegação)
 tipo: design
 cenario: base
-status: fase-B-concluida
+status: fase-C-concluida
 tags: [plataforma, inimigos, recursos, campanha, manual, compartilhamento]
 atualizado-em: 2026-08-07
 ---
@@ -276,6 +276,15 @@ Implementada em ambos os repos:
 - Plataforma: migration `inimigo_base_origem` (enum `InimigoOrigem`, `origem` default CENARIO, `cenarioNumero`/`cenarioTitulo` nullable); seed + router + UI adaptados para `origem` (grupos Sistema base/Cenário em recursos-narrador, batalha-board e campanha-inimigos).
 - Manual: `/manual/narrador/bestiario` — modulo `bestiario.ts` lê do banco (server component público, regra 009); agrupado por origem. Card "Manual do Narrador" em `/manual` com link.
 - DECISIONS.md: decisão 040.
+
+### Fase C — ✅ implementada em 07/08/2026
+
+Implementada na plataforma (commit a seguir):
+
+- Migration: `slugCompartilhamento @unique`, `linkAtivo`, `compartilhadoEm` em `Inimigo`.
+- Router: `shareLink` (gera slug do nome ou manual), `deactivateLink` (desativa sem apagar), `getShared` (busca por slug ativo, publico), `copyShared` (copia para o usuario logado, bloqueia proprio).
+- UI: `ShareDialog` (gerar/copiar/desativar/reativar link em cada recurso) + pagina `/recursos/compartilhado/[slug]` (`SharedInimigo`).
+- DECISIONS.md: decisão 041.
 
 ## 8. Decisões — respostas do André (07/08) e status
 
