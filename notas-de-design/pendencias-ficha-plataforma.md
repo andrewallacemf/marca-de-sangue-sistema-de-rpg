@@ -31,14 +31,15 @@ pendências de **regra** (que ficam em [PENDENCIAS.md](../PENDENCIAS.md)).
       Traços) — **feito na plataforma** (ficha pós-redesign, validada em 05/08): `ficha-tabs`
       com 4 abas no mobile/tablet (Saúde · Equipado · Habilidades e Traços · Itens) e 2 abas
       consolidadas no desktop.
-- [ ] **Ícones/caracteres antes dos rótulos** (biblioteca de ícones ou caractere especial) para
-      identificar seções e tipos "de relance" — **(parcial na plataforma)**: Saúde, Fadiga,
-      Habilidades, Traços, Dinheiro e Carga já têm ícone; faltam "Equipado nas mãos", "Equipado
-      no corpo", "Itens carregados" e rótulos legíveis das siglas de propriedade (chips "ARRE",
-      "CORT"...). Em andamento 07/08.
-- [ ] **Busca rápida** dentro da ficha (habilidades, armas, ações) — **(parcial na plataforma)**:
-      habilidades, traços e itens já têm busca (CollectionToolbar); faltam armas e proteções. Em
-      andamento 07/08.
+- [x] **Ícones/caracteres antes dos rótulos** (biblioteca de ícones ou caractere especial) para
+      identificar seções e tipos "de relance" — **feito na plataforma** (07/08): Saúde, Fadiga,
+      Habilidades, Traços, Dinheiro, Carga, "Equipado nas mãos" (Hand), "Equipado no corpo"
+      (Shield) e "Itens carregados" (Backpack) têm ícone; os chips de propriedade das armas
+      mostram o rótulo por extenso ("Acuidade") com a sigla no `title` (decisão 030 da
+      plataforma).
+- [x] **Busca rápida** dentro da ficha (habilidades, armas, ações) — **feito na plataforma**
+      (07/08): habilidades, traços, itens, armas e escudos e proteções têm busca
+      (CollectionToolbar; armas e proteções em modo só-busca — decisão 030 da plataforma).
 
 ## 2. Densidade e leitura
 
@@ -66,10 +67,12 @@ pendências de **regra** (que ficam em [PENDENCIAS.md](../PENDENCIAS.md)).
       sobre [`contrato/catalogo.json`](../contrato/README.md), gerado das listas. A correção
       trouxe a ficha de volta ao manual atual (39 armas com dano defasado, 3 habilidades e
       6 traços que faltavam, efeito de `PROJ.` atualizado).
-- [ ] **Expor a propriedade `ACUI.` (Acuidade) na ficha** — o manual e o catálogo já a têm;
-      a grade de propriedades da ficha tem só as 7 colunas antigas (ARRE/AGAR/CORT/CONT/
-      DEFL/PERF/PROJ). Decidir como mostrar (coluna nova? badge?) — **(em andamento 07/08)**:
-      `ACUI` entra em `PROP_KEYS` do modelo + mapeamento no autopreenchimento + chip na UI.
+- [x] **Expor a propriedade `ACUI.` (Acuidade) na ficha** — o manual e o catálogo já a têm;
+      a grade de propriedades da ficha tinha só as 7 colunas antigas (ARRE/AGAR/CORT/CONT/
+      DEFL/PERF/PROJ) — **feito na plataforma** (07/08, decisão 030): `ACUI` entrou em
+      `PROP_KEYS` do modelo, o autopreenchimento lê `propAcuidade` do catálogo e a UI mostra o
+      chip "Acuidade" nas armas leves e precisas. A ficha offline do playtest segue com a
+      grade de 7 (legado).
 - [ ] **Usar as `municoes` do catálogo** nas armas à distância (dano vem da munição; o
       contrato já traz a lista compatível por arma + a tabela de munições com dano/preço) —
       conecta com o item de **contador de munição** da seção 3. **(parcial)**: o stepper de
