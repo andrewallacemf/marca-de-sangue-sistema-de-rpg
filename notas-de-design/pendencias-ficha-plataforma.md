@@ -192,8 +192,10 @@ pendências de **regra** (que ficam em [PENDENCIAS.md](../PENDENCIAS.md)).
 > Mapeamento completo em
 > [2026-08-07-mapeamento-ux-plataforma.md](2026-08-07-mapeamento-ux-plataforma.md). Itens em
 > ordem de prioridade; **itens 1, 2, 3 e 4 implementados em 07/08** (commits `25fbdba`,
-> `596f326`, `b0614f9` e `bd3c763` na plataforma, decisões 035, 036, 037 e 038); demais
-> itens ainda não trabalhados.
+> `596f326`, `b0614f9` e `bd3c763` na plataforma, decisões 035, 036, 037 e 038). O item
+> "Recursos do narrador" (ex-inimigos) foi implementado em 07/08 (fases A-F, decisões
+> 039-044). Demais itens (navegação, beforeunload, glossário, focus trap, renomear) ainda
+> não trabalhados.
 
 - [x] **⭐ Arma/Proteção: criar e editar em modal com catálogo** — **feito na plataforma**
       (07/08): `EquipmentCatalogDialog` (busca no catálogo → preenche tudo em 1 passo, com

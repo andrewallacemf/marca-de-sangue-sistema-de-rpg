@@ -2,7 +2,7 @@
 titulo: Mapeamento de UX da plataforma
 tipo: ux
 cenario: base
-status: rascunho
+status: estavel
 tags: [ux, plataforma, backlog]
 atualizado-em: 2026-08-07
 ---
