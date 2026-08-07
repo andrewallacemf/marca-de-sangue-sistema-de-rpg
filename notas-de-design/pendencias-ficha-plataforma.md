@@ -191,13 +191,16 @@ pendências de **regra** (que ficam em [PENDENCIAS.md](../PENDENCIAS.md)).
 
 > Mapeamento completo em
 > [2026-08-07-mapeamento-ux-plataforma.md](2026-08-07-mapeamento-ux-plataforma.md). Itens em
-> ordem de prioridade; nada foi implementado ainda.
+> ordem de prioridade; **item 1 implementado em 07/08** (commit `25fbdba` na plataforma,
+> decisão 035); demais itens ainda não trabalhados.
 
-- [ ] **⭐ Arma/Proteção: criar e editar em modal com catálogo** (moldado no
-      `CharacteristicCatalogDialog` das habilidades: busca no catálogo → preenche tudo em 1
-      passo, com botão "personalizada"). Hoje o botão cria um card em branco e o
-      `<details>` "Editar detalhes da arma" fica escondido — o recurso mais usado da mesa é o
-      pior fluxo. Impacto alto, esforço médio.
+- [x] **⭐ Arma/Proteção: criar e editar em modal com catálogo** — **feito na plataforma**
+      (07/08): `EquipmentCatalogDialog` (busca no catálogo → preenche tudo em 1 passo, com
+      botão "Criar personalizada") e `EquipmentEditorDialog` (edição completa em modal, nome
+      do catálogo preenche junto), moldados no `CharacteristicCatalogDialog` das habilidades;
+      o `<details>` escondido saiu dos cards (entrada ⋯/editar abre o modal). Nota: os novos
+      diálogos usam `AlertDialog` (consistência com o molde) — a migração para `Dialog` do
+      item 3 passa a valer também para eles.
 - [ ] **Moeda: simplificar o híbrido** — quantidade é input inline com stepper, mas "Adicionar
       quantidade / Definir valor / Renomear" abrem modal para o que o input já faz. Deixar
       inline ou unificar num único fluxo.
