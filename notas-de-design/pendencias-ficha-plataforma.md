@@ -95,11 +95,14 @@ pendências de **regra** (que ficam em [PENDENCIAS.md](../PENDENCIAS.md)).
 
 ## 3b. Saúde e descanso (pós-rodada 2 do modelo v2, 24/07)
 
-- [ ] **Descanso curto × longo** — hoje o botão Descanso é um reset único (fadiga + aptidões).
+- [x] **Descanso curto × longo** — hoje o botão Descanso é um reset único (fadiga + aptidões).
       A regra ([09-descanso.md](../sistema-base/conceitos/09-descanso.md)) distingue:
       longo = tudo + cura 1d6 de curável; curto = fadiga + 1 aptidão por atributo + 1
       rolagem de cura. Exigiria UI de rolagem/entrada do d6. **(sem usos de habilidade — a
       mudança de regra de 01/08 tirou os usos)**. Recomendado: diálogo com os dois tipos.
+      — **feito na plataforma (07/08, decisão 031)**: diálogo com os dois tipos; o dado do
+      curto ficou **1d4** (decisão do André, registrada no 09-descanso.md); longo 1d6 (1d8
+      com o traço Dorminhoco); rolagem com as faces do tipo ou valor manual + membro.
 - [ ] **Falta de tratamento e tratamento improvisado** — automatizar "1 profundo vira
       permanente por descanso sem tratamento" e a rolagem de tratamento (1d10 vs contrateste)
       exigiria separar *profundo* de *superficial* dentro do curável (possível **v3** do modelo
