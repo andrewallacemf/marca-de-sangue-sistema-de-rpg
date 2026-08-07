@@ -46,6 +46,7 @@ FONTES_HABILIDADES = [
     ("sistema-base/listas/habilidades-experimentais-sociais.md", True),  # experimental
 ]
 FONTE_INIMIGOS = "playtest/cenarios/inimigos-do-kit.md"
+FONTE_CRIATURAS_BASE = "sistema-base/criaturas/criaturas-genericas.md"
 
 SIGLAS = ["CORT", "CONT", "PERF", "AGAR", "ARRE", "DEFL", "PROJ", "ACUI", "VERS", "DESA"]
 
@@ -671,6 +672,7 @@ def parse_inimigos(md: str) -> list[dict]:
                           "de queda (lacuna A DEFINIR)")
                 inimigos.append({
                     "nome": strip_md(cells[0]),
+                    "origem": "CENARIO",
                     "cenarioNumero": num,
                     "cenarioTitulo": cenario_titulo,
                     "contexto": contexto,
@@ -699,6 +701,51 @@ def parse_inimigos(md: str) -> list[dict]:
     if not inimigos:
         aviso("inimigos: nenhuma linha extraída do kit (estrutura da tabela mudou?)")
     return inimigos
+
+
+def parse_criaturas_base(md: str) -> list[dict]:
+    """Extrai os blocos genéricos do sistema base (sem cenário — origem: SISTEMA_BASE)."""
+    criaturas = []
+    for _, header, rows in tabelas(md):
+        if not (header and header[0] == "Inimigo" and "Queda" in header):
+            continue
+        for cells in rows:
+            if len(cells) < 11:
+                aviso(f"criaturas base: linha com {len(cells)} colunas ignorada: {cells[:1]}")
+                continue
+            queda_txt = strip_md(cells[2])
+            queda_txt = "" if queda_txt == "—" else queda_txt
+            primeiro = queda_txt.split()[0].lower() if queda_txt else ""
+            tier = TIERS_INIMIGO.get(primeiro, "")
+            queda = numero(queda_txt) if tier in ("fraco", "medio", "forte") else ""
+            if not queda_txt:
+                aviso(f"criaturas base: '{strip_md(cells[0])}' sem tier de queda")
+            criaturas.append({
+                "nome": strip_md(cells[0]),
+                "origem": "SISTEMA_BASE",
+                "cenarioNumero": None,
+                "cenarioTitulo": None,
+                "contexto": "",
+                "qtd": strip_md(cells[1]),
+                "tier": tier,
+                "queda": queda,
+                "quedaTexto": queda_txt,
+                "entrada": strip_md(cells[3]),
+                "pa": numero(cells[4]),
+                "arma": strip_md(cells[5]),
+                "dano": tira_pontos_siglas(strip_md(cells[6])),
+                "custoPA": strip_md(cells[7]),
+                "alcance": strip_md(cells[8]),
+                "reducao": "" if strip_md(cells[9]) == "—" else strip_md(cells[9]),
+                "tatica": strip_md(cells[10]),
+                "proposta": True,
+            })
+            regioes = reducao_regioes(strip_md(cells[9]))
+            if regioes:
+                criaturas[-1]["reducaoRegioes"] = regioes
+    if not criaturas:
+        aviso("criaturas base: nenhuma linha extraída (tabela ou formato mudou?)")
+    return criaturas
 
 
 # ---------------------------------------------------------------------------
@@ -730,6 +777,8 @@ def main() -> None:
         tracos += tras
 
     inimigos = parse_inimigos(le(FONTE_INIMIGOS))
+    criaturas_base = parse_criaturas_base(le(FONTE_CRIATURAS_BASE))
+    inimigos += criaturas_base
 
     # sanidade: nomes duplicados
     for rotulo, lista in [("arma", armas), ("proteção", protecoes),
@@ -746,7 +795,8 @@ def main() -> None:
                      "— NÃO editar à mão. Contrato de conteúdo: ver contrato/README.md."),
         "fontes": ([FONTE_EQUIPAMENTOS, FONTE_ACOES, FONTE_TRACOS, FONTE_PROTECOES]
                    + FONTES_ARMAS_MELEE + FONTES_ARMAS_DIST
-                   + [c for c, _ in FONTES_HABILIDADES] + [FONTE_INIMIGOS]),
+                   + [c for c, _ in FONTES_HABILIDADES]
+                   + [FONTE_INIMIGOS, FONTE_CRIATURAS_BASE]),
         "propriedades": propriedades,
         "armas": armas,
         "municoes": municoes,

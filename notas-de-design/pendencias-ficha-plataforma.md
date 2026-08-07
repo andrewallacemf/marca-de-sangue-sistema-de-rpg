@@ -228,10 +228,14 @@ pendências de **regra** (que ficam em [PENDENCIAS.md](../PENDENCIAS.md)).
       implementada na plataforma em 07/08** — rota `/recursos` (UserMenu, `RecursosNarrador`
       + `InimigoBlocoForm` compartilhado), secao `CampanhaInimigos` na campanha (filtro
       "Desta campanha", criar com `origemCampanhaId`, adicionar do catalogo, adicionar a
-      batalha), link do board -> `/recursos`, decisao 039. Proposta em
+      batalha), link do board -> `/recursos`, decisao 039. **Fase B implementada em
+      07/08** — `InimigoBase.origem` (SISTEMA_BASE|CENARIO), `cenarioNumero/cenarioTitulo`
+      nullable, criaturas genericas em `sistema-base/criaturas/` (6 criaturas, Anexo A),
+      `exportar_catalogo.py` multisource, bestiario no manual (`/manual/narrador/bestiario`),
+      catalogo de 14 para 20 inimigos, decisao 040. Proposta em
       [2026-08-07-proposta-recursos-do-narrador.md](2026-08-07-proposta-recursos-do-narrador.md)
-      (status `fase-A-concluida`). Fases B-F pendentes: origem/seed, compartilhamento por
-      link, notificacoes/e-mail, visibilidade por campanha, evolucao.
+      (status `fase-B-concluida`). Fases C-F pendentes: compartilhamento por link,
+      notificacoes/e-mail, visibilidade por campanha, evolucao.
 - [ ] **`beforeunload` + indicador de save visível na ficha**: fechar/recarregar dentro do
       debounce de 700ms perde a última digitação sem aviso; o status atual é `sr-only`.
 - [ ] **Glossário de botões** (verbo + capitalização + reticências) e empty state único (hoje 3

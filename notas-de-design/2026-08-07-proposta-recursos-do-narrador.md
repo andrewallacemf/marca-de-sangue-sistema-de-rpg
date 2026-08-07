@@ -2,7 +2,7 @@
 titulo: Proposta — Recursos do narrador (inimigos como recursos, não navegação)
 tipo: design
 cenario: base
-status: fase-A-concluida
+status: fase-B-concluida
 tags: [plataforma, inimigos, recursos, campanha, manual, compartilhamento]
 atualizado-em: 2026-08-07
 ---
@@ -267,6 +267,15 @@ Implementada na plataforma (commit a seguir):
 - Seção `CampanhaInimigos` na campanha: chip "Desta campanha"/"Todos"; criar com `origemCampanhaId`; "Adicionar do catálogo" (copia de padrão); "Adicionar à batalha" (preset para AMEAÇA sem queda).
 - Link do board: "gerenciar recursos" → `/recursos`.
 - DECISIONS.md: decisão 039.
+
+### Fase B — ✅ implementada em 07/08/2026
+
+Implementada em ambos os repos:
+
+- Sistema: `sistema-base/criaturas/criaturas-genericas.md` (6 criaturas no formato de tabela do kit, Anexo A); `exportar_catalogo.py` multisource (`FONTE_CRIATURAS_BASE`, `parse_criaturas_base`, campo `origem`). Catalogo: 14 → 20 inimigos.
+- Plataforma: migration `inimigo_base_origem` (enum `InimigoOrigem`, `origem` default CENARIO, `cenarioNumero`/`cenarioTitulo` nullable); seed + router + UI adaptados para `origem` (grupos Sistema base/Cenário em recursos-narrador, batalha-board e campanha-inimigos).
+- Manual: `/manual/narrador/bestiario` — modulo `bestiario.ts` lê do banco (server component público, regra 009); agrupado por origem. Card "Manual do Narrador" em `/manual` com link.
+- DECISIONS.md: decisão 040.
 
 ## 8. Decisões — respostas do André (07/08) e status
 
