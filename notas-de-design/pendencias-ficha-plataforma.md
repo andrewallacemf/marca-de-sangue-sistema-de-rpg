@@ -191,9 +191,9 @@ pendências de **regra** (que ficam em [PENDENCIAS.md](../PENDENCIAS.md)).
 
 > Mapeamento completo em
 > [2026-08-07-mapeamento-ux-plataforma.md](2026-08-07-mapeamento-ux-plataforma.md). Itens em
-> ordem de prioridade; **itens 1, 2 e 3 implementados em 07/08** (commits `25fbdba`,
-> `596f326` e `b0614f9` na plataforma, decisões 035, 036 e 037); demais itens ainda não
-> trabalhados.
+> ordem de prioridade; **itens 1, 2, 3 e 4 implementados em 07/08** (commits `25fbdba`,
+> `596f326`, `b0614f9` e `‑‑pending‑‑` na plataforma, decisões 035, 036, 037 e 038); demais
+> itens ainda não trabalhados.
 
 - [x] **⭐ Arma/Proteção: criar e editar em modal com catálogo** — **feito na plataforma**
       (07/08): `EquipmentCatalogDialog` (busca no catálogo → preenche tudo em 1 passo, com
@@ -210,9 +210,14 @@ pendências de **regra** (que ficam em [PENDENCIAS.md](../PENDENCIAS.md)).
       equipamento e o recorte de avatar migraram para `Dialog` (maior, sem o chrome de
       alerta); `AlertDialog` ficou só nas confirmações de verdade (troca de mão, reset de
       fadiga, ações destrutivas, encerrar batalha etc. — decisão 037 da plataforma).
-- [ ] **Confirmação em remoções da ficha** (arma/escudo/proteção/item/moeda, excluir
+- [x] **Confirmação em remoções da ficha** (arma/escudo/proteção/item/moeda, excluir
       habilidade/traço) e em **encerrar batalha** (irreversível, hoje sem confirmação);
-      unificar verbos "Excluir" × "Remover" sem critério.
+      unificar verbos "Excluir" × "Remover" sem critério. — **feito na plataforma** (07/08):
+      `ConfirmDialog` compartilhado (`AlertDialog` com título pergunta + botão destrutivo,
+      decisão 038) em todos os cards da ficha e no encerrar batalha. Verbos unificados com
+      critério: **"Remover"** = edição da ficha (arma, escudo, proteção, item, moeda,
+      habilidade, traço — nada é destruído, dá para recriar); **"Excluir"** = destruição de
+      entidade (personagem, campanha, batalha, inimigo — já confirmados).
 - [ ] **Navegação**: link "Inimigos" no header (hoje `/inimigos` é órfã — só alcançável pelo
       board da batalha); destaque do menu por prefixo (`/campanhas/[id]` etc. sem item ativo);
       menu mobile no manual público (a nav some < `sm`); metadata consistente (" | " em todo
