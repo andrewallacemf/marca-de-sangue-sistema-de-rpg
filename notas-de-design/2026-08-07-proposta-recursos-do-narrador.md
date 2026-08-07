@@ -2,7 +2,7 @@
 titulo: Proposta — Recursos do narrador (inimigos como recursos, não navegação)
 tipo: design
 cenario: base
-status: fase-E-concluida
+status: fase-F-concluida
 tags: [plataforma, inimigos, recursos, campanha, manual, compartilhamento]
 atualizado-em: 2026-08-07
 ---
@@ -303,6 +303,16 @@ Implementada na plataforma (commit a seguir):
 - Router: `campanha.salvarVisibilidade` (upsert, narrador, valida que o inimigo existe) + `campanha.listarVisibilidade`.
 - UI: seletor de visibilidade em cada recurso no `CampanhaInimigos`.
 - DECISIONS.md: decisão 043.
+
+### Fase F — ✅ implementada em 07/08/2026
+
+Implementada na plataforma (commit a seguir):
+
+- Filtros de tipo na area de recursos: chips "Todos" | "Ameaças" | "PNs".
+- Card "Em breve": "Itens personalizados · Mapas táticos".
+- Co-narração permanece como "se um dia" (fora do escopo imediato).
+- DECISIONS.md: decisão 044.
+- Proposta 100% implementada: todas as fases A–F concluídas.
 
 ## 8. Decisões — respostas do André (07/08) e status
 
