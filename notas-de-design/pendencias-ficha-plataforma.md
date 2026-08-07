@@ -127,12 +127,20 @@ pendências de **regra** (que ficam em [PENDENCIAS.md](../PENDENCIAS.md)).
       (base + módulos + cenários, versão limpa como o PDF, gerado do repo via VitePress); a ficha
       vive em **`/ficha/`**. Botão **Manual** na ficha e **Abrir a ficha** no manual ligam os dois.
       Republica sozinho a cada push (ver `manual/README.md` e `registro-ia/2026/2026-07-24-…`).
-- [ ] **Manual consultável dentro da própria ficha** (drawer/painel lateral) para ler a regra sem
-      trocar de página — evolução do portal (hoje o link abre o manual em `/`). Recomendado:
-      drawer lateral com iframe do `/manual` na plataforma (observação: o **Manual do Narrador**
-      em si é trabalho de conteúdo, não de UI). **BLOQUEADO (07/08)**: o André está
-      reestruturando o manual DENTRO da plataforma (frente paralela); o drawer deve conectar-se
-      a esse manual, não ao repo irmão — retomar depois que a reestruturação terminar.
+- [x] **Manual consultável dentro da própria ficha** (drawer/painel lateral) para ler a regra sem
+      trocar de página — evolução do portal (hoje o link abre o manual em `/`). **feito na
+      plataforma (07/08, decisão 033)**: drawer lateral com iframe do `/manual` da plataforma
+      (observação: o **Manual do Narrador** em si é trabalho de conteúdo, não de UI). O item
+      **Manual** do menu ⋯ da ficha abre o painel (botão "Abrir em nova aba" no header).
+      - [ ] **REVISÃO pós-reestruturação (bloqueada)**: quando a reestruturação do manual
+        dentro da plataforma terminar, verificar que (a) o iframe do drawer carrega o manual
+        novo sem quebrar, (b) o link "Abrir em nova aba" aponta para rota existente, (c) a
+        tabela de referência (decisão 032) ganha os links novos (ex.: alcances, manual de
+        armas) no `src/content/manual/referencia.ts`. Desbloquear assim que o manual novo
+        estiver no ar.
+      - **⚠️ Indicação de processo**: Toda alteração no manual da plataforma (nova rota,
+        renome de âncora, reestruturação de página) deve checar que o drawer da ficha
+        (`ManualDrawer`) continua funcionando — se o manual quebrar, é nele que aparece.
 - [x] **Tabela de referência rápida** (ações e custos de PA, alcances, modificadores) com busca —
       houve **muita parada** para procurar regra nas duas sessões. **(base pronta)**: os custos
       já são dados estruturados na engine da plataforma (`CUSTO_PA_POR_ACAO`, `dados.ts`) —
