@@ -223,19 +223,17 @@ pendências de **regra** (que ficam em [PENDENCIAS.md](../PENDENCIAS.md)).
       lugar). *(Link "Inimigos" no header foi **cancelado** em 07/08 — decisão do André:
       recursos do narrador ficam dentro da campanha/manuais; ver o item "Recursos do
       narrador" abaixo.)*
-- [ ] **⭐ Recursos do narrador** (ex-"Inimigos"): redesign da área como recursos do
-      narrador — 3 camadas (canônico contrato / do narrador / uso na campanha). **Fase A
-      implementada na plataforma em 07/08** — rota `/recursos` (UserMenu, `RecursosNarrador`
-      + `InimigoBlocoForm` compartilhado), secao `CampanhaInimigos` na campanha (filtro
-      "Desta campanha", criar com `origemCampanhaId`, adicionar do catalogo, adicionar a
-      batalha), link do board -> `/recursos`, decisao 039. **Fase B implementada em
-      07/08** — `InimigoBase.origem` (SISTEMA_BASE|CENARIO), `cenarioNumero/cenarioTitulo`
-      nullable, criaturas genericas em `sistema-base/criaturas/` (6 criaturas, Anexo A),
-      `exportar_catalogo.py` multisource, bestiario no manual (`/manual/narrador/bestiario`),
-      catalogo de 14 para 20 inimigos, decisao 040. Proposta em
-      [2026-08-07-proposta-recursos-do-narrador.md](2026-08-07-proposta-recursos-do-narrador.md)
-      (status `fase-B-concluida`). Fases C-F pendentes: compartilhamento por link,
-      notificacoes/e-mail, visibilidade por campanha, evolucao.
+- [x] **⭐ Recursos do narrador** (ex-"Inimigos"): redesign completo da área como recursos do
+      narrador — 3 camadas (canônico contrato / do narrador / uso na campanha). **Todas as 6
+      fases implementadas na plataforma em 07/08**:
+      - Fase A: `/recursos` (UserMenu), `CampanhaInimigos`, `origemCampanhaId`, `InimigoBlocoForm`
+      - Fase B: `InimigoBase.origem` (SISTEMA_BASE|CENARIO), 6 criaturas genéricas, bestiário no manual
+      - Fase C: compartilhamento por link (`slugCompartilhamento`, `SharedInimigo`, `ShareDialog`)
+      - Fase D: notificações + e-mail (`Notificacao`, `Compartilhamento`, `NotificationBell`)
+      - Fase E: visibilidade por campanha (`CampanhaInimigo`, seletor narrador + visão do membro)
+      - Fase F: filtros de tipo + "Em breve" itens/mapas
+      Proposta em [2026-08-07-proposta-recursos-do-narrador.md](2026-08-07-proposta-recursos-do-narrador.md)
+      (status `fase-F-concluida` — 100% implementada). Decisões 039-044.
 - [ ] **`beforeunload` + indicador de save visível na ficha**: fechar/recarregar dentro do
       debounce de 700ms perde a última digitação sem aviso; o status atual é `sr-only`.
 - [ ] **Glossário de botões** (verbo + capitalização + reticências) e empty state único (hoje 3
