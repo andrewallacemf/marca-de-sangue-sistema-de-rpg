@@ -130,11 +130,18 @@ pendências de **regra** (que ficam em [PENDENCIAS.md](../PENDENCIAS.md)).
 - [ ] **Manual consultável dentro da própria ficha** (drawer/painel lateral) para ler a regra sem
       trocar de página — evolução do portal (hoje o link abre o manual em `/`). Recomendado:
       drawer lateral com iframe do `/manual` na plataforma (observação: o **Manual do Narrador**
-      em si é trabalho de conteúdo, não de UI). Adiado para depois do lote atual.
-- [ ] **Tabela de referência rápida** (ações e custos de PA, alcances, modificadores) com busca —
+      em si é trabalho de conteúdo, não de UI). **BLOQUEADO (07/08)**: o André está
+      reestruturando o manual DENTRO da plataforma (frente paralela); o drawer deve conectar-se
+      a esse manual, não ao repo irmão — retomar depois que a reestruturação terminar.
+- [x] **Tabela de referência rápida** (ações e custos de PA, alcances, modificadores) com busca —
       houve **muita parada** para procurar regra nas duas sessões. **(base pronta)**: os custos
       já são dados estruturados na engine da plataforma (`CUSTO_PA_POR_ACAO`, `dados.ts`) —
-      página `/manual/referencia` data-driven. Adiado para depois do lote atual.
+      página `/manual/referencia` data-driven. **feito na plataforma (07/08, decisão 032)**:
+      `/manual/referencia` com 4 grupos (Ações e custos de PA, Limites do turno, Dados e
+      modificadores, Cura por descanso), tudo derivado da engine, com busca e contador; links
+      só para âncoras já publicadas no manual da plataforma. Os **alcances** ficam de fora até o
+      manual de armas existir na plataforma (os links de regra entram no mesmo arquivo quando
+      ele existir).
 
 ## 5. Gestor de batalha
 
