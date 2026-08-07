@@ -218,10 +218,18 @@ pendências de **regra** (que ficam em [PENDENCIAS.md](../PENDENCIAS.md)).
       critério: **"Remover"** = edição da ficha (arma, escudo, proteção, item, moeda,
       habilidade, traço — nada é destruído, dá para recriar); **"Excluir"** = destruição de
       entidade (personagem, campanha, batalha, inimigo — já confirmados).
-- [ ] **Navegação**: link "Inimigos" no header (hoje `/inimigos` é órfã — só alcançável pelo
-      board da batalha); destaque do menu por prefixo (`/campanhas/[id]` etc. sem item ativo);
+- [ ] **Navegação**: destaque do menu por prefixo (`/campanhas/[id]` etc. sem item ativo);
       menu mobile no manual público (a nav some < `sm`); metadata consistente (" | " em todo
-      lugar).
+      lugar). *(Link "Inimigos" no header foi **cancelado** em 07/08 — decisão do André:
+      recursos do narrador ficam dentro da campanha/manuais; ver o item "Recursos do
+      narrador" abaixo.)*
+- [ ] **⭐ Recursos do narrador** (ex-"Inimigos"): redesign da área como recursos do
+      narrador — 3 camadas (canônico contrato / do narrador / uso na campanha), visibilidade
+      por campanha (padrão escondido), compartilhamento por e-mail (notificação + pendente +
+      aceitar/recusar) e por link (gerenciável), rota `/recursos`, filtro "Desta campanha"
+      com `origemCampanhaId` e criaturas genéricas do sistema base. Proposta completa em
+      [2026-08-07-proposta-recursos-do-narrador.md](2026-08-07-proposta-recursos-do-narrador.md)
+      (status `proposta-v2`, decisões do André validadas em 07/08). — **não iniciado**.
 - [ ] **`beforeunload` + indicador de save visível na ficha**: fechar/recarregar dentro do
       debounce de 700ms perde a última digitação sem aviso; o status atual é `sr-only`.
 - [ ] **Glossário de botões** (verbo + capitalização + reticências) e empty state único (hoje 3
