@@ -73,11 +73,14 @@ pendências de **regra** (que ficam em [PENDENCIAS.md](../PENDENCIAS.md)).
       `PROP_KEYS` do modelo, o autopreenchimento lê `propAcuidade` do catálogo e a UI mostra o
       chip "Acuidade" nas armas leves e precisas. A ficha offline do playtest segue com a
       grade de 7 (legado).
-- [ ] **Usar as `municoes` do catálogo** nas armas à distância (dano vem da munição; o
+- [x] **Usar as `municoes` do catálogo** nas armas à distância (dano vem da munição; o
       contrato já traz a lista compatível por arma + a tabela de munições com dano/preço) —
-      conecta com o item de **contador de munição** da seção 3. **(parcial)**: o stepper de
-      munição e o débito automático no disparo existem (decisão 028 da plataforma); falta o
-      dano por munição (flecha madeira × ferro) e sugerir as munições do catálogo como itens.
+      conecta com o item de **contador de munição** da seção 3. **feito na plataforma
+      (07/08, decisão 034)**: o stepper e o débito automático no disparo existem desde a
+      decisão 028; agora o card da arma PROJ. oferece o **tipo de munição do catálogo**
+      (flecha madeira 1d6 × ferro 1d10, bala 1d12, pedras 1d4−1, dardo 1d4) e preenche o
+      campo Dano no formato que o painel de dano da batalha interpreta ("Flecha ponta de
+      ferro 1d10"); botão "Adicionar à mochila" sugere a munição como item do inventário.
 
 ## 3. Marcadores de combate (jogador)
 
