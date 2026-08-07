@@ -191,24 +191,25 @@ pendências de **regra** (que ficam em [PENDENCIAS.md](../PENDENCIAS.md)).
 
 > Mapeamento completo em
 > [2026-08-07-mapeamento-ux-plataforma.md](2026-08-07-mapeamento-ux-plataforma.md). Itens em
-> ordem de prioridade; **itens 1 e 2 implementados em 07/08** (commits `25fbdba` e
-> `596f326` na plataforma, decisões 035 e 036); demais itens ainda não trabalhados.
+> ordem de prioridade; **itens 1, 2 e 3 implementados em 07/08** (commits `25fbdba`,
+> `596f326` e `b0614f9` na plataforma, decisões 035, 036 e 037); demais itens ainda não
+> trabalhados.
 
 - [x] **⭐ Arma/Proteção: criar e editar em modal com catálogo** — **feito na plataforma**
       (07/08): `EquipmentCatalogDialog` (busca no catálogo → preenche tudo em 1 passo, com
       botão "Criar personalizada") e `EquipmentEditorDialog` (edição completa em modal, nome
       do catálogo preenche junto), moldados no `CharacteristicCatalogDialog` das habilidades;
-      o `<details>` escondido saiu dos cards (entrada ⋯/editar abre o modal). Nota: os novos
-      diálogos usam `AlertDialog` (consistência com o molde) — a migração para `Dialog` do
-      item 3 passa a valer também para eles.
+      o `<details>` escondido saiu dos cards (entrada ⋯/editar abre o modal). Os dois diálogos
+      novos já usam `Dialog` (decisão 037).
 - [x] **Moeda: simplificar o híbrido** — **feito na plataforma** (07/08): quantidade
       é só inline (input + stepper); "Adicionar quantidade / Definir valor" saíram do menu
       ⋯ (o input já fazia); renomear agora é inline (título vira campo ao clicar no lápis;
-      Enter/blur confirmam, Escape cancela). O `AlertDialog` saiu do card de moeda — a
-      migração para `Dialog` (item 3) perde a moeda da lista.
-- [ ] **Migrar AlertDialog → Dialog nos formulários** (curar/dano, descanso, editor e catálogo
-      de habilidade, moeda, avatar): `AlertDialog` é semântica de confirmação; o `Dialog` já
-      existe e só é usado em 2 lugares. Refactor barato, pré-requisito do item de armas.
+      Enter/blur confirmam, Escape cancela). O `AlertDialog` saiu do card de moeda.
+- [x] **Migrar AlertDialog → Dialog nos formulários** — **feito na plataforma** (07/08):
+      curar/aplicar dano, descanso, editor e catálogo de habilidade, catálogo e editor de
+      equipamento e o recorte de avatar migraram para `Dialog` (maior, sem o chrome de
+      alerta); `AlertDialog` ficou só nas confirmações de verdade (troca de mão, reset de
+      fadiga, ações destrutivas, encerrar batalha etc. — decisão 037 da plataforma).
 - [ ] **Confirmação em remoções da ficha** (arma/escudo/proteção/item/moeda, excluir
       habilidade/traço) e em **encerrar batalha** (irreversível, hoje sem confirmação);
       unificar verbos "Excluir" × "Remover" sem critério.
