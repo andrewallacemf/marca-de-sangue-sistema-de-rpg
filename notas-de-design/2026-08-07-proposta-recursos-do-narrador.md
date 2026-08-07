@@ -2,7 +2,7 @@
 titulo: Proposta — Recursos do narrador (inimigos como recursos, não navegação)
 tipo: design
 cenario: base
-status: fase-D-concluida
+status: fase-E-concluida
 tags: [plataforma, inimigos, recursos, campanha, manual, compartilhamento]
 atualizado-em: 2026-08-07
 ---
@@ -294,6 +294,15 @@ Implementada na plataforma (commit a seguir):
 - Router `notificacaoRouter`: `shareByEmail`, `responderCompartilhamento` (aceita copia + notifica; recusa notifica), `listarNotificacoes`, `marcarLida`, `contarNaoLidas`.
 - UI: `NotificationBell` (sino com contador + dropdown de notificacoes no header); `ShareDialog` com aba de e-mail.
 - DECISIONS.md: decisão 042.
+
+### Fase E — ✅ implementada em 07/08/2026
+
+Implementada na plataforma (commit a seguir):
+
+- Migration: `VisibilidadeInimigo` (ESCONDIDO|BLOCO|TATICA|TUDO) + `CampanhaInimigo` (campanhaId FK + inimigoId sem FK — hibrido Inimigo/InimigoBase).
+- Router: `campanha.salvarVisibilidade` (upsert, narrador, valida que o inimigo existe) + `campanha.listarVisibilidade`.
+- UI: seletor de visibilidade em cada recurso no `CampanhaInimigos`.
+- DECISIONS.md: decisão 043.
 
 ## 8. Decisões — respostas do André (07/08) e status
 
