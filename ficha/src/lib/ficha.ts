@@ -1,15 +1,22 @@
 /* Modelo de dados da ficha + fábricas. Centralizado para App e seções usarem.
 
-   SINCRONIZAÇÃO: as funções de saúde/fórmulas deste arquivo têm um port fiel em
-   `plataforma-rpg-marca-de-sangue/src/lib/game-engine/` (mds-model.ts + formulas.ts,
-   mesmos nomes e semântica — os testes automatizados vivem lá). Qualquer mudança
-   aqui deve ser replicada lá, e vice-versa. */
+   SINCRONIZAÇÃO: a FONTE das funções de saúde/fórmulas é o game-engine da
+   plataforma — `plataforma-rpg-marca-de-sangue/src/lib/game-engine/`
+   (mds-model.ts + formulas.ts, mesmos nomes e semântica; os testes
+   automatizados vivem lá). A direção do espelhamento é plataforma → ficha:
+   qualquer mudança de regra é feita lá primeiro e espelhada aqui. */
 
 import { HABILIDADES_NIVEIS } from "./catalogo-niveis";
 
 // v2 (24/07/2026): saúde por membro virou {dano, permanente} — dano permanente
-// nunca sai por cura. Load aceita v0 (array de células), v1 (escalar 0–20) e v2.
-export const SCHEMA_VERSION = 2;
+// nunca sai por cura. v3 (01/08/2026): fim do modo "vigente" (usos por nível);
+// habilidade evolui por nível e custa PA + fadiga 1:1; o envelope exportado não
+// carrega mais `rulesVersion`. A detecção de formato no load é sempre pela FORMA
+// do dado (nunca pelo schemaVersion): fichas antigas com usosPorNivel/niveis/
+// rulesVersion continuam abrindo normalmente.
+export const SCHEMA_VERSION = 3;
+/** Mantido apenas para reconhecer fichas antigas no load. A regra pública atual
+ *  é sempre a antiga `alternativa` (nível + fadiga). */
 export type RulesVersion = "vigente" | "alternativa";
 
 /** Saúde de um membro: dano curável e dano permanente separados.
@@ -51,11 +58,11 @@ export type CaracteristicaCard = {
   custoPA: string; // texto livre (usado por traços; "—" quando não há)
   custoPANum: string; // habilidade: parte numérica do custo de PA de ativação
   custoPAArma: boolean; // habilidade: soma também o PA da arma equipada
-  custoFadiga: string; // habilidade (regras alternativas): custo de fadiga; vazio = 1:1 com o PA
-  usosPorNivel: number[]; // regras vigentes: quantos usos em cada nível (5 posições)
-  usosGastosPorNivel: number[]; // regras vigentes: quantos usos já consumidos em cada nível
+  custoFadiga: string; // habilidade: custo de fadiga; vazio = 1:1 com o PA
+  usosPorNivel: number[]; // LEGADO (regra abolida em 01/08/2026) — só para abrir fichas antigas
+  usosGastosPorNivel: number[]; // LEGADO — idem
   niveisDesc: string[]; // descrição do que muda em cada nível (progressão), 5 posições
-  nivel: number; // regras alternativas: nível único da habilidade (1–5)
+  nivel: number; // nível único da habilidade (1–5)
 };
 
 export type ItemEquip = {
@@ -123,18 +130,14 @@ export function custoPAComprado(base: string): number {
 
 /** EXP investida em uma característica.
  *  - Traço: custo único (valorCompra).
- *  - Habilidade (vigente): custo base × Σ (usos no nível × nível) — subir de nível custa o base
- *    multiplicado pelo nível; ter vários usos multiplica.
- *  - Habilidade (alternativa): custo base × (n·(n+1)/2) — soma-se o custo de cada degrau até o nível.
- *  valorCompra guarda o **custo base (nível 1)**. */
-export function custoCard(c: CaracteristicaCard, rv: RulesVersion): number {
+ *  - Habilidade: custo base × (n·(n+1)/2) — soma-se o custo de cada degrau até o nível.
+ *  valorCompra guarda o **custo base (nível 1)**. O parâmetro da versão só
+ *  existe para reduzir churn de assinaturas; usos deixaram de fazer parte da regra. */
+export function custoCard(c: CaracteristicaCard, rv?: RulesVersion): number {
+  void rv;
   if (!c.nome.trim()) return 0;
   const base = parseNum(c.valorCompra);
   if (c.tipo !== "Habilidade") return base;
-  if (rv === "vigente") {
-    const soma = c.usosPorNivel.reduce((s, usos, i) => s + (usos || 0) * (i + 1), 0);
-    return base * soma;
-  }
   const n = Math.max(0, Math.min(5, Math.round(c.nivel || 0)));
   return base * ((n * (n + 1)) / 2);
 }
@@ -144,7 +147,7 @@ export function custoPAEfetivo(c: CaracteristicaCard, paArma: number): number {
   return parseNum(c.custoPANum) + (c.custoPAArma ? paArma : 0);
 }
 
-/** Custo de fadiga de uma habilidade (regras alternativas): o indicado, ou 1:1 com o PA efetivo. */
+/** Custo de fadiga de uma habilidade: o indicado, ou 1:1 com o PA efetivo. */
 export function custoFadigaEfetivo(c: CaracteristicaCard, paArma: number): number {
   const f = c.custoFadiga.trim();
   return f ? parseNum(f) : custoPAEfetivo(c, paArma);
@@ -169,7 +172,7 @@ export function ehMaestria(c: CaracteristicaCard): boolean {
   return c.tipo === "Traço" && /^\s*maestria/i.test(c.nome.trim());
 }
 
-export function expUsada(f: Ficha, rv: RulesVersion): number {
+export function expUsada(f: Ficha, rv?: RulesVersion): number {
   // aptidões: custo escalonado por atributo — T aptidões de um tipo custam 1+2+…+T
   const apt = APT_KEYS.reduce((s, k) => s + triangular(parseNum(f.aptidoes[k].total)), 0);
   // maestrias: escalonadas pela quantidade total (1ª=1, 2ª=2…); demais características somam custoCard
@@ -193,15 +196,19 @@ export function qtdTracosComp(f: Ficha): number {
   return f.caracteristicas.filter((c) => c.tipo === "Traço" && c.nome.trim()).length;
 }
 
-/** Penalidade de PA pela fadiga acumulada (−1 a cada 5 a partir de 10; 50 = inconsciente). */
-export function penalidadeFadigaNum(fadiga: number, rv: RulesVersion): number {
-  if (fadiga >= 50) return 0; // inconsciente — tratado à parte
-  if (rv === "vigente") return fadiga >= 10 ? Math.floor((fadiga - 10) / 5) + 1 : 0;
-  return fadiga > 10 ? Math.floor((fadiga - 11) / 5) + 1 : 0;
+/** Penalidade oficial: −1 PA por faixa completa de 10 pontos de fadiga. */
+export function penalidadeFadigaNum(fadiga: number, rv?: RulesVersion): number {
+  void rv;
+  return Math.floor(Math.max(0, fadiga) / 10);
 }
 
-export function inconsciente(f: Ficha): boolean {
-  return f.fadiga >= 50;
+/** Fadiga máxima = vida máxima atual do corpo (permanentes reduzem). */
+export function fadigaMaxima(f: Pick<Ficha, "saude">): number {
+  return vidaMaximaDaSaude(f.saude);
+}
+
+export function inconsciente(f: Pick<Ficha, "fadiga" | "saude">): boolean {
+  return f.fadiga >= fadigaMaxima(f);
 }
 
 /** Redutor de PA das armaduras: soma os redutores de PA das proteções equipadas
@@ -212,7 +219,7 @@ export function redArmaduraComp(f: Ficha): number {
     .reduce((s, p) => s + Math.abs(parseNum(p.redPA)), 0);
 }
 
-export function paTotalComp(f: Ficha, rv: RulesVersion): number {
+export function paTotalComp(f: Ficha, rv?: RulesVersion): number {
   if (inconsciente(f)) return 0;
   const base = parseNum(f.pa.base);
   const outros = parseNum(f.pa.outros);
@@ -237,6 +244,12 @@ export function fmtPeso(n: number): string {
 }
 
 /* ─── Saúde por membro (modelo v2: dano curável × permanente) ─────────────── */
+
+/** Vida máxima atual do corpo: cada permanente ocupa definitivamente uma das
+ *  dez casas do membro. A fadiga máxima usa exatamente este valor. */
+export function vidaMaximaDaSaude(saude: Record<MembroKey, SaudeMembro>): number {
+  return MEMBROS.reduce((total, m) => total + Math.max(0, 10 - saude[m.key].permanente), 0);
+}
 
 /** Converte o dano acumulado do schema v1 (escalar 0–20) para o par v2. */
 export function saudeDeEscalar(d: number): SaudeMembro {
@@ -282,7 +295,8 @@ export function aplicarDanoMembro(s: SaudeMembro): { saude: SaudeMembro; aplicad
 /** Aplica pontos de dano a um membro: preenche o curável até encher (10);
  *  com o membro cheio, cada ponto converte 1 curável em permanente; invalidado
  *  (10 permanentes) ignora. TODO ponto aplicado — inclusive a conversão — gera
- *  +1 fadiga (clamp 50), como manda o manual. Retorna nova ficha (imutável). */
+ *  +1 fadiga (clamp na vida máxima da saúde resultante), como manda o manual.
+ *  Retorna nova ficha (imutável). */
 export function aplicarDano(f: Ficha, membro: MembroKey, pontos = 1): Ficha {
   let saudeMembro = f.saude[membro];
   let fadiga = f.fadiga;
@@ -290,9 +304,10 @@ export function aplicarDano(f: Ficha, membro: MembroKey, pontos = 1): Ficha {
     const r = aplicarDanoMembro(saudeMembro);
     if (!r.aplicado) break;
     saudeMembro = r.saude;
-    fadiga = Math.min(50, fadiga + 1);
+    fadiga += 1;
   }
-  return { ...f, saude: { ...f.saude, [membro]: saudeMembro }, fadiga };
+  const saude = { ...f.saude, [membro]: saudeMembro };
+  return { ...f, saude, fadiga: Math.min(vidaMaximaDaSaude(saude), fadiga) };
 }
 
 /** Cura só o dano curável (piso 0). Nunca toca permanente nem devolve fadiga. */
@@ -317,9 +332,10 @@ export function resetarPermanentes(f: Ficha): Ficha {
   return { ...f, saude };
 }
 
-/** PV restante = 60 − Σ espaços ocupados (10 por membro). */
+/** PV restante = vida máxima atual − dano curável (equivale a 60 − Σ espaços
+ *  ocupados, com o máximo derivado do corpo em vez de fixo). */
 export function pvRestante(f: Ficha): number {
-  return 60 - MEMBROS.reduce((s, m) => s + totalMembro(f.saude[m.key]), 0);
+  return vidaMaximaDaSaude(f.saude) - MEMBROS.reduce((s, m) => s + f.saude[m.key].dano, 0);
 }
 
 /** Redutor de dano por membro: soma o red. dano das proteções equipadas (com nome)
@@ -421,8 +437,8 @@ export function fichaVazia(): Ficha {
 
 export const LS_KEY = "marca-de-sangue-ficha:v1";
 
-/** Descanso: recupera tudo o que um descanso recupera —
- *  zera a fadiga, devolve todos os usos de aptidões e todos os usos de habilidades. */
+/** Descanso: zera a fadiga e devolve todos os usos de aptidões.
+ *  (Também zera o campo legado usosGastosPorNivel de fichas antigas.) */
 export function descansar(f: Ficha): Ficha {
   const aptidoes = { ...f.aptidoes };
   for (const k of APT_KEYS) aptidoes[k] = { ...aptidoes[k], usado: "" };
@@ -456,6 +472,7 @@ export function migrarFicha(data: unknown): Ficha {
     cenario: String(f.info?.cenario ?? ""),
     ultimaSessao: String(f.info?.ultimaSessao ?? ""),
   };
+  f.fadiga = Math.max(0, Math.round(Number(d.fadiga) || 0));
 
   const cards = Array.isArray(d.caracteristicas) ? (d.caracteristicas as unknown[]) : [];
   f.caracteristicas = cards.map((raw) => {
@@ -489,7 +506,13 @@ export function migrarFicha(data: unknown): Ficha {
       const prog = HABILIDADES_NIVEIS[c.nome.trim()];
       if (prog) c.niveisDesc = [0, 1, 2, 3, 4].map((k) => prog[k] ?? "");
     }
-    if (typeof c.nivel !== "number") c.nivel = 1;
+    // ficha antiga (usos por nível) sem nível salvo: assume o maior nível com usos
+    const maiorNivelLegado = c.usosPorNivel.reduce(
+      (maior, usos, indice) => (Number(usos) > 0 ? indice + 1 : maior),
+      0
+    );
+    if (typeof rawObj.nivel !== "number") c.nivel = Math.max(1, maiorNivelLegado);
+    c.nivel = Math.max(1, Math.min(5, Math.round(Number(c.nivel) || 1)));
     delete c.niveis;
     return c;
   });
@@ -558,6 +581,8 @@ export function migrarFicha(data: unknown): Ficha {
     }
   }
   f.saude = saude;
+  // fadiga nunca passa do máximo atual do corpo (permanentes reduzem)
+  f.fadiga = Math.min(vidaMaximaDaSaude(saude), f.fadiga);
 
   // remove grade de habilidades legada (agora derivada dos cards)
   delete (f as Record<string, unknown>).habilidades;

@@ -39,6 +39,7 @@ import {
   curarDano,
   removerPermanente,
   expUsada,
+  fadigaMaxima,
   fichaVazia,
   inconsciente,
   LS_KEY,
@@ -57,18 +58,15 @@ import {
   redArmaduraComp,
   SCHEMA_VERSION,
   type Ficha,
-  type RulesVersion,
   type TotalUsado,
 } from "@/lib/ficha";
 import { PROP_INFO } from "@/lib/catalogo";
 
 /* ============================ Componentes auxiliares ============================ */
 
-function penalidadeFadiga(f: number, rv: RulesVersion): string {
-  if (f >= 50) return "inconsciente";
-  let p = 0;
-  if (rv === "vigente") p = f >= 10 ? Math.floor((f - 10) / 5) + 1 : 0;
-  else p = f > 10 ? Math.floor((f - 11) / 5) + 1 : 0;
+function penalidadeFadiga(f: Ficha): string {
+  if (inconsciente(f)) return "inconsciente";
+  const p = penalidadeFadigaNum(f.fadiga);
   return p > 0 ? `−${p} PA` : "sem penalidade";
 }
 
@@ -153,13 +151,12 @@ function TotalUsadoRow({
 /* ============================ App ============================ */
 
 export default function App() {
-  const [rulesVersion, setRulesVersion] = useState<RulesVersion>("vigente");
   const [ficha, setFicha] = useState<Ficha>(() => {
     try {
       const raw = localStorage.getItem(LS_KEY);
       if (raw) {
         const parsed = JSON.parse(raw);
-        if (parsed?.rulesVersion) setTimeout(() => setRulesVersion(parsed.rulesVersion), 0);
+        // `rulesVersion` de saves antigos é ignorado — a regra atual é única
         if (parsed?.data) return migrarFicha(parsed.data);
       }
     } catch {
@@ -174,12 +171,12 @@ export default function App() {
     try {
       localStorage.setItem(
         LS_KEY,
-        JSON.stringify({ app: "marca-de-sangue-ficha", schemaVersion: SCHEMA_VERSION, rulesVersion, data: ficha })
+        JSON.stringify({ app: "marca-de-sangue-ficha", schemaVersion: SCHEMA_VERSION, data: ficha })
       );
     } catch {
       /* ignora */
     }
-  }, [ficha, rulesVersion]);
+  }, [ficha]);
 
   function update<K extends keyof Ficha>(key: K, value: Ficha[K]) {
     setFicha((f) => ({ ...f, [key]: value }));
@@ -191,7 +188,6 @@ export default function App() {
     const payload = {
       app: "marca-de-sangue-ficha",
       schemaVersion: SCHEMA_VERSION,
-      rulesVersion,
       salvoEm: new Date().toISOString(),
       data: ficha,
     };
@@ -212,9 +208,7 @@ export default function App() {
     reader.onload = () => {
       try {
         const parsed = JSON.parse(String(reader.result));
-        if (parsed?.rulesVersion === "alternativa" || parsed?.rulesVersion === "vigente") {
-          setRulesVersion(parsed.rulesVersion);
-        }
+        // arquivos antigos podem trazer `rulesVersion` — a leitura tolera e ignora
         if (parsed?.data) setFicha(migrarFicha(parsed.data));
       } catch {
         alert("Não consegui ler esse arquivo de ficha.");
@@ -231,11 +225,7 @@ export default function App() {
   }
 
   function descanso() {
-    if (
-      confirm(
-        "Descanso: recupera todas as aptidões, devolve todos os usos de habilidades e zera a fadiga. Continuar?"
-      )
-    ) {
+    if (confirm("Descanso: recupera todas as aptidões e zera a fadiga. Continuar?")) {
       setFicha((f) => descansar(f));
     }
   }
@@ -243,12 +233,13 @@ export default function App() {
   const habCards = ficha.caracteristicas.filter((c) => c.tipo === "Habilidade" && c.nome.trim());
 
   // valores calculados automaticamente (campos travados)
-  const expUsadaCalc = expUsada(ficha, rulesVersion);
+  const expUsadaCalc = expUsada(ficha);
   const expTotalNum = parseNum(ficha.exp.baseTotal);
   const expExcedida = expTotalNum > 0 && expUsadaCalc > expTotalNum;
-  const paTotalCalc = paTotalComp(ficha, rulesVersion);
+  const paTotalCalc = paTotalComp(ficha);
   const redArmaduraCalc = redArmaduraComp(ficha);
-  const redFadigaCalc = penalidadeFadigaNum(ficha.fadiga, rulesVersion);
+  const redFadigaCalc = penalidadeFadigaNum(ficha.fadiga);
+  const fadigaMax = fadigaMaxima(ficha);
   const inconsc = inconsciente(ficha);
 
   // maestrias que o personagem possui (por traço comprado), para indicar nas armas
@@ -261,7 +252,10 @@ export default function App() {
   };
   const paArma = paArmaPrincipal(ficha);
   const usarFadiga = (qtd: number) =>
-    setFicha((f) => ({ ...f, fadiga: Math.min(50, f.fadiga + Math.max(0, Math.round(qtd))) }));
+    setFicha((f) => ({
+      ...f,
+      fadiga: Math.min(fadigaMaxima(f), f.fadiga + Math.max(0, Math.round(qtd))),
+    }));
   const adicionarAoInventario = (nome: string) => {
     if (!nome.trim()) return;
     setFicha((f) => ({
@@ -273,9 +267,7 @@ export default function App() {
   const printHeader = (
     <div className="print-header col-full">
       <span className="ph-nome">{ficha.info.nome || "Personagem sem nome"}</span>
-      <span className="ph-marca">
-        Marca de Sangue · Ficha {rulesVersion === "vigente" ? "(regras vigentes)" : "(regras alternativas)"}
-      </span>
+      <span className="ph-marca">Marca de Sangue · Ficha</span>
     </div>
   );
 
@@ -286,20 +278,6 @@ export default function App() {
           <span className="mr-1 text-sm font-semibold tracking-wide text-primary">
             Marca de Sangue <span className="text-muted-foreground">· Ficha</span>
           </span>
-          <div className="ml-2 flex items-center gap-1 rounded-md border p-0.5">
-            {(["vigente", "alternativa"] as RulesVersion[]).map((v) => (
-              <button
-                key={v}
-                onClick={() => setRulesVersion(v)}
-                className={cn(
-                  "rounded px-2 py-1 text-xs font-medium",
-                  rulesVersion === v ? "bg-primary text-primary-foreground" : "hover:bg-secondary"
-                )}
-              >
-                {v === "vigente" ? "Regras vigentes" : "Regras alternativas"}
-              </button>
-            ))}
-          </div>
           <div className="ml-auto flex flex-wrap items-center gap-1.5">
             <Button variant="outline" size="sm" asChild title="Abrir o manual do sistema">
               <a href="https://andrewallacemf.github.io/marca-de-sangue-sistema-de-rpg/" target="_self">
@@ -319,7 +297,7 @@ export default function App() {
             <Button size="sm" onClick={salvar}>
               <Save className="h-3.5 w-3.5" /> Salvar
             </Button>
-            <Button variant="outline" size="sm" onClick={descanso} title="Recupera aptidões, usos de habilidades e zera a fadiga">
+            <Button variant="outline" size="sm" onClick={descanso} title="Recupera as aptidões e zera a fadiga">
               <BedDouble className="h-3.5 w-3.5" /> Descanso
             </Button>
             <Button variant={a4 ? "default" : "outline"} size="sm" onClick={() => setA4((s) => !s)}>
@@ -357,16 +335,15 @@ export default function App() {
                   <li><strong>Salvar</strong> — baixa um arquivo <code>.mds.json</code>: esse arquivo <em>é</em> o seu personagem. Guarde-o (Drive, pen-drive…).</li>
                   <li><strong>Carregar</strong> — abre um <code>.mds.json</code> salvo antes, para continuar de onde parou.</li>
                   <li><strong>Nova</strong> — começa uma ficha em branco.</li>
-                  <li><strong>Descanso</strong> — recupera aptidões e usos de habilidade e zera a fadiga.</li>
+                  <li><strong>Descanso</strong> — recupera as aptidões e zera a fadiga.</li>
                   <li><strong>A4 / Imprimir</strong> — visão e impressão em papel.</li>
-                  <li><strong>Regras vigentes × alternativas</strong> — troca o conjunto de regras. Use <strong>vigentes</strong>, salvo combinação do grupo.</li>
                 </ul>
               </div>
               <div>
                 <p className="font-semibold">Durante o jogo</p>
                 <ul className="ml-4 list-disc space-y-1">
                   <li>Marque o <strong>dano</strong> clicando nos quadradinhos de cada membro; a <strong>fadiga</strong> acompanha o dano.</li>
-                  <li>Risque as <strong>aptidões</strong> e os <strong>usos de habilidade</strong> conforme gasta; o <strong>Descanso</strong> devolve.</li>
+                  <li>Risque as <strong>aptidões</strong> conforme gasta; usar <strong>habilidade</strong> soma fadiga (botão “Usar” no card); o <strong>Descanso</strong> recupera.</li>
                   <li>Escreva armas e itens no campo próprio — ao escolher do catálogo, o dano/PA vêm preenchidos.</li>
                 </ul>
               </div>
@@ -485,7 +462,7 @@ export default function App() {
                   <Computed
                     value={inconsc ? "inconsc." : redFadigaCalc ? `−${redFadigaCalc}` : "0"}
                     alerta={inconsc}
-                    title="penalidade automática pela fadiga acumulada (−1 a cada 5 a partir de 10)"
+                    title="penalidade automática pela fadiga acumulada (−1 PA a cada 10 de fadiga)"
                   />
                 </Field>
                 <Field label="Red. carga">
@@ -511,9 +488,7 @@ export default function App() {
                 <CardTitle className="flex items-center gap-1.5">
                   <Swords className="h-4 w-4" /> Habilidades — referência rápida
                   <span className="ml-2 text-[11px] font-normal normal-case text-muted-foreground">
-                    {rulesVersion === "vigente"
-                      ? "resumo automático dos cards (usos por nível)"
-                      : "resumo automático dos cards (nível)"}
+                    resumo automático dos cards (nível)
                   </span>
                 </CardTitle>
               </CardHeader>
@@ -539,20 +514,6 @@ export default function App() {
                         <span className="flex-1 truncate text-sm">{h.nome}</span>
                         <div className="flex w-40 justify-between px-1">
                           {[0, 1, 2, 3, 4].map((ni) => {
-                            if (rulesVersion === "vigente") {
-                              const u = h.usosPorNivel[ni] || 0;
-                              return (
-                                <span
-                                  key={ni}
-                                  className={cn(
-                                    "w-6 text-center text-sm",
-                                    u ? "font-semibold text-primary" : "text-muted-foreground/40"
-                                  )}
-                                >
-                                  {u || "·"}
-                                </span>
-                              );
-                            }
                             const on = h.nivel === ni + 1;
                             return (
                               <span
@@ -670,9 +631,7 @@ export default function App() {
                 <CardTitle className="flex items-center gap-1.5">
                   <BatteryLow className="h-4 w-4" /> Fadiga
                   <span className="ml-2 text-[11px] font-normal normal-case text-muted-foreground">
-                    {rulesVersion === "alternativa"
-                      ? "livre até 10; −1 PA a cada 5 acima; 50 = inconsciente"
-                      : "−1 PA a cada 5 a partir de 10; 50 = inconsciente"}
+                    −1 PA a cada 10; máximo = total de PV (permanentes reduzem); no máximo = inconsciente
                   </span>
                 </CardTitle>
               </CardHeader>
@@ -680,31 +639,40 @@ export default function App() {
                 <div className="mb-3 flex items-baseline gap-3">
                   <span className="text-3xl font-bold leading-none text-primary">{ficha.fadiga}</span>
                   <span className="text-sm text-muted-foreground">
-                    / 50 · {penalidadeFadiga(ficha.fadiga, rulesVersion)}
+                    / {fadigaMax} · {penalidadeFadiga(ficha)}
                   </span>
                   <span className="no-print ml-auto text-[11px] text-muted-foreground">
                     zera no “Descanso” (topo)
                   </span>
                 </div>
-                {/* 5 fileiras de 10, separação a cada 5 e rótulo no fim da fileira */}
+                {/* 6 fileiras de 10 (60 casas), separação a cada 5 e rótulo no fim da fileira;
+                    casas acima do máximo atual (permanentes reduzem) ficam riscadas/desabilitadas */}
                 <div className="flex flex-col gap-1">
-                  {[0, 1, 2, 3, 4].map((linha) => (
+                  {[0, 1, 2, 3, 4, 5].map((linha) => (
                     <div key={linha} className="flex items-center gap-1">
                       {Array.from({ length: 10 }, (_, k) => linha * 10 + k + 1).map((n) => {
                         const filled = n <= ficha.fadiga;
+                        const indisponivel = n > fadigaMax;
                         return (
                           <button
                             key={n}
                             type="button"
+                            disabled={indisponivel}
                             onClick={() => update("fadiga", ficha.fadiga === n ? n - 1 : n)}
-                            title={`${n}`}
+                            title={indisponivel ? `${n} — acima do máximo atual (${fadigaMax})` : `${n}`}
                             className={cn(
-                              "h-5 w-5 shrink-0 rounded-[3px] text-[8px] leading-none",
+                              "flex h-5 w-5 shrink-0 items-center justify-center rounded-[3px] text-[8px] leading-none",
                               n % 5 === 0 && n % 10 !== 0 && "mr-1.5",
-                              filled ? "bg-primary text-primary-foreground" : "bg-transparent hover:bg-secondary",
+                              indisponivel
+                                ? "cursor-not-allowed border-dashed text-muted-foreground/50 opacity-40"
+                                : filled
+                                  ? "bg-primary text-primary-foreground"
+                                  : "bg-transparent hover:bg-secondary",
                               "border border-input"
                             )}
-                          />
+                          >
+                            {indisponivel ? "✕" : ""}
+                          </button>
                         );
                       })}
                       <span className="ml-0.5 w-5 text-right font-mono text-[9px] text-muted-foreground">
@@ -754,7 +722,6 @@ export default function App() {
             <CaracteristicasSection
               itens={ficha.caracteristicas}
               setItens={(v) => update("caracteristicas", v)}
-              rulesVersion={rulesVersion}
               paArma={paArma}
               onUsarFadiga={usarFadiga}
             />
@@ -784,7 +751,7 @@ export default function App() {
           </div>
 
           <p className="no-print mt-4 text-center text-[11px] text-muted-foreground">
-            Marca de Sangue — ficha v0.16 ({rulesVersion === "vigente" ? "regras vigentes" : "regras alternativas"}).
+            Marca de Sangue — ficha v0.17.
             Os dados ficam só no seu navegador; use “Salvar” para baixar um arquivo e “Carregar” para retomá-lo.
           </p>
         </div>
