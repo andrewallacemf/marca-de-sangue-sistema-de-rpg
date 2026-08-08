@@ -19,10 +19,9 @@ Formato do bloco (o mesmo do [guia do narrador](00-guia-do-narrador.md)): **PA**
 **arma (dano)** e **tática**. NPC comum é derrotado quando tronco ou cabeça ficam
 incapacitados (10 de dano profundo) ou pelo limiar do tier.
 
-> ⚠️ A DEFINIR: os tiers de queda (fraco = 10 · médio = 20 · forte = 30) são **proposta
+> ⚠️ Os tiers de queda (fraco = 10 · médio = 20 · forte = 30) são **proposta
 > dos playtests 1 e 2** — a regra de minion não está fechada (ver `PENDENCIAS.md`,
-> "Minions — tratamento único"). Os inimigos dos cenários 3 e 4 nunca tiveram tier
-> anotado no kit; a coluna Queda deles fica vazia até a mesa definir.
+> "Minions — tratamento único").
 
 > **Formato da coluna "Red. dano"** (lido pelo exportador do contrato):
 > `—` = sem redução · `−N` = redução N em qualquer golpe (o parêntese só descreve
@@ -56,8 +55,8 @@ incapacitados (10 de dano profundo) ou pelo limiar do tier.
 
 | Inimigo | Qtd | Queda | Entrada | PA | Arma | Dano | PA arma | Alcance | Red. dano | Tática |
 |---------|-----|-------|---------|----|------|------|---------|---------|-----------|--------|
-| Ferrasca | 4 | — | Largada (atrás do grupo) | 10 | Cano de ferro (improvisada média, contundente) | 3 | 4 | 1 m | — | Perseguem em bloco; o mais rápido tenta agarrar quem ficou para trás. |
-| Atirador Ferrasca | 1 | — | Retaguarda | 10 | Besta leve (média) | virote 1d4 | 4 | 7–10 m | — | Fica para trás e atira em quem está na retaguarda. |
+| Ferrasca | 4 | médio (20) | Largada (atrás do grupo) | 10 | Cano de ferro (improvisada média, contundente) | 3 | 4 | 1 m | — | Perseguem em bloco; o mais rápido tenta agarrar quem ficou para trás. |
+| Atirador Ferrasca | 1 | fraco (10) | Retaguarda | 10 | Besta leve (média) | virote 1d4 | 4 | 7–10 m | — | Fica para trás e atira em quem está na retaguarda. |
 
 ## Cenário 4 — A Escolta da Chama
 
@@ -65,9 +64,9 @@ incapacitados (10 de dano profundo) ou pelo limiar do tier.
 
 | Inimigo | Qtd | Queda | Entrada | PA | Arma | Dano | PA arma | Alcance | Red. dano | Tática |
 |---------|-----|-------|---------|----|------|------|---------|---------|-----------|--------|
-| Bandido | 5 | — | Onda 1 (estrada: 3) e onda 2 (ponte: 2) | 10 | Espada curta (média, cortante) | 1d8 | 4 | 1 m | — | Onda 1 ataca antes da ponte; onda 2 segura o gargalo da ponte. |
-| Arqueiro | 1 | — | Onda 2 (ponte) | 10 | Arco composto (média) | flecha 1d4 | 4 | 7–10 m | — | Atira no Arauto de longe, ignorando a linha de frente. |
-| Chefe de bando | 1 | — | Onda 3 (perto do santuário) | 10 | Machado de batalha (pesada, cortante) | 1d12 | 6 | 1–2 m | −2 (peitoral médio) | Tenta agarrar/derrubar o Arauto. |
+| Bandido | 5 | médio (20) | Onda 1 (estrada: 3) e onda 2 (ponte: 2) | 10 | Espada curta (média, cortante) | 1d8 | 4 | 1 m | — | Onda 1 ataca antes da ponte; onda 2 segura o gargalo da ponte. |
+| Arqueiro | 1 | fraco (10) | Onda 2 (ponte) | 10 | Arco composto (média) | flecha 1d4 | 4 | 7–10 m | — | Atira no Arauto de longe, ignorando a linha de frente. |
+| Chefe de bando | 1 | forte (30) | Onda 3 (perto do santuário) | 10 | Machado de batalha (pesada, cortante) | 1d12 | 6 | 1–2 m | −2 (peitoral médio) | Tenta agarrar/derrubar o Arauto. |
 
 ## Cenário 5 — O Coração do Colosso
 
