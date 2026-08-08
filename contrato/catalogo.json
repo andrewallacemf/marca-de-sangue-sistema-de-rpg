@@ -15,7 +15,12 @@
     "sistema-base/listas/habilidades-base-sociais.md",
     "sistema-base/listas/habilidades-experimentais-sociais.md",
     "playtest/cenarios/inimigos-do-kit.md",
-    "sistema-base/criaturas/criaturas-genericas.md"
+    "sistema-base/criaturas/criaturas-genericas.md",
+    "modulos/magia/listas/lista-de-magias.md",
+    "modulos/veiculos/listas/lista-de-veiculos.md",
+    "modulos/veiculos/listas/lista-de-equipamentos.md",
+    "modulos/veiculos/listas/lista-de-habilidades.md",
+    "modulos/veiculos/listas/lista-de-tracos.md"
   ],
   "propriedades": {
     "CORT": {
@@ -3086,5 +3091,734 @@
       "tatica": "Ataca das sombras; na primeira rolagem de iniciativa surpreendida, +1d4 de dano no primeiro golpe",
       "proposta": true
     }
-  ]
+  ],
+  "magias": [
+    {
+      "nome": "Punho da Montanha",
+      "atributo": "Físico",
+      "custoPA": "1 PA + PA da arma (ou desarmado)",
+      "custoAtivacao": "2 dano curável (fixo em todos os níveis)",
+      "tipoCusto": "dano curável",
+      "valorCompra": "2",
+      "efeito": "O conjurador imbui o próprio golpe (desarmado ou com arma contundente/cortante) com força sobrenatural. Ao acertar um ataque corpo a corpo, soma dano extra ao golpe.",
+      "requisitos": "Ativada antes de um ataque corpo a corpo declarado — o custo de ativação é pago mesmo se o ataque errar (mesma regra de qualquer habilidade).",
+      "niveis": [
+        "+1d6 de dano extra.",
+        "+1d8 de dano extra.",
+        "+1d10 de dano extra.",
+        "+1d10 de dano extra; ignora metade do redutor de armadura do alvo (arredondado para baixo).",
+        "+1d12 de dano extra; ignora todo o redutor de armadura leve do alvo."
+      ],
+      "proposta": true
+    },
+    {
+      "nome": "Pacto da Última Gota",
+      "atributo": "Físico",
+      "custoPA": "5 PA",
+      "custoAtivacao": "nível 1 a 4 = 4→3→2→1 de vida máxima; nível 5 = 4 de dano profundo",
+      "tipoCusto": "vida máxima",
+      "valorCompra": "4",
+      "efeito": "O conjurador queima parte da própria força vital, de forma irreversível, para desferir um golpe muito além do que o corpo comum aguenta. No próximo ataque corpo a corpo, causa +4d10 de dano extra e ignora toda a redução de dano de armadura do alvo.",
+      "requisitos": "Ativada antes de um ataque corpo a corpo declarado — o custo de ativação é pago mesmo se o ataque errar.; O jogador escolhe o membro que recebe o dano; recomenda-se avisar a mesa antes de comprar esta magia, dado o preço.",
+      "niveis": [
+        "Custo 4 de vida máxima.",
+        "Custo 3 de vida máxima.",
+        "Custo 2 de vida máxima.",
+        "Custo 1 de vida máxima.",
+        "Custo 4 de dano curável (para de cobrar vida máxima)."
+      ],
+      "proposta": true
+    },
+    {
+      "nome": "Passo Entre Sopros",
+      "atributo": "Ágil",
+      "custoPA": "1 PA",
+      "custoAtivacao": "2 de fadiga (fixo em todos os níveis)",
+      "tipoCusto": "fadiga",
+      "valorCompra": "2",
+      "efeito": "O conjurador se desloca instantaneamente até a distância indicada, numa linha reta que ele consiga visualizar. O deslocamento não provoca ataque de oportunidade e ignora terreno difícil comum (poças, entulho baixo — não paredes ou obstáculos sólidos).",
+      "requisitos": "Precisa conseguir ver o ponto de destino.",
+      "niveis": [
+        "Até 3 metros.",
+        "Até 5 metros.",
+        "Até 7 metros.",
+        "Até 9 metros.",
+        "Até 12 metros; uma vez por descanso, pode atravessar um obstáculo fino (uma porta fechada, uma parede de madeira comum) no trajeto."
+      ],
+      "proposta": true
+    },
+    {
+      "nome": "Véu da Presa Rápida",
+      "atributo": "Ágil",
+      "custoPA": "4 PA",
+      "custoAtivacao": "nível 1 a 4 = 3→2→1→1 dano curável; nível 5 = 1 de fadiga",
+      "tipoCusto": "dano curável",
+      "valorCompra": "3",
+      "efeito": "Até o fim do próximo turno do conjurador, todo contrateste de esquiva que ele fizer ganha vantagem.",
+      "requisitos": "Ativada no próprio turno do conjurador, antes de qualquer ataque sofrido.",
+      "niveis": [
+        "Custo 3 de dano curável.",
+        "Custo 2 de dano curável.",
+        "Custo 1 de dano curável.",
+        "Custo 1 de dano curável; o efeito dura também o turno seguinte (2 turnos completos).",
+        "Custo 1 de fadiga (sai do dano); efeito dura 2 turnos completos."
+      ],
+      "proposta": true
+    },
+    {
+      "nome": "Sussurro na Nuca",
+      "atributo": "Mental",
+      "custoPA": "4 PA",
+      "custoAtivacao": "2 dano curável (fixo em todos os níveis)",
+      "tipoCusto": "dano curável",
+      "valorCompra": "3",
+      "efeito": "Teste de Mental (conjurador) contra Mental (alvo). Sucesso aplica Desvantagem no próximo teste do alvo — mesma lógica de efeito de Confundir inimigo, com roupagem de sussurro mágico em vez de manipulação comum.",
+      "requisitos": "O alvo precisa estar a até 10 metros e conseguir, em tese, ouvir (não precisa ouvir de fato — o efeito é mais sutil que som real).",
+      "niveis": [
+        "Desvantagem no próximo teste do alvo.",
+        "Desvantagem nos próximos 2 testes do alvo.",
+        "Desvantagem nos próximos 2 testes; também retira 1 PA do alvo no próximo turno dele.",
+        "Desvantagem nos próximos 3 testes do alvo.",
+        "Desvantagem nos próximos 3 testes; o efeito também atinge um segundo alvo adjacente ao primeiro."
+      ],
+      "proposta": true
+    },
+    {
+      "nome": "Memória Roubada",
+      "atributo": "Mental",
+      "custoPA": "1 PA",
+      "custoAtivacao": "1 de fadiga (fixo em todos os níveis)",
+      "tipoCusto": "fadiga",
+      "valorCompra": "1",
+      "efeito": "Tocando um alvo disposto (ou a si mesmo), o conjurador acessa uma lembrança perdida ou um detalhe esquecido relevante para a cena atual. Cabe ao narrador definir se a informação existe e quão específica ela é.",
+      "requisitos": "Contato físico com o alvo (ou uso em si mesmo).; Nível 1: só funciona em alvo disposto ou inconsciente.",
+      "niveis": [
+        "Funciona em alvo disposto ou inconsciente.",
+        "Funciona também em alvo relutante, com um teste Mental contestado.",
+        "Recupera lembranças mais antigas ou vagas, que o próprio alvo já tinha esquecido por completo.",
+        "Uma vez por cena, pode \"emprestar\" o uso de uma técnica que o alvo (disposto) possui, testando no lugar dele por uma ação.",
+        "O empréstimo de técnica (nível 4) dura até o fim da sessão, não só uma ação."
+      ],
+      "proposta": true
+    },
+    {
+      "nome": "Voz que Convence",
+      "atributo": "Social",
+      "custoPA": "4 PA",
+      "custoAtivacao": "2 dano curável (fixo em todos os níveis)",
+      "tipoCusto": "dano curável",
+      "valorCompra": "2",
+      "efeito": "Teste de Social (conjurador) contra Mental (alvo). Sucesso faz o alvo tratar um pedido razoável do conjurador com boa vontade extra por uma cena — não força uma ação contra os próprios interesses do alvo, apenas inclina a balança a favor do pedido.",
+      "requisitos": "O alvo precisa conseguir ouvir e entender o conjurador.; Não funciona contra um pedido que o alvo considere claramente prejudicial a si mesmo.",
+      "niveis": [
+        "Boa vontade extra por uma cena.",
+        "A boa vontade se estende à próxima cena também.",
+        "Funciona mesmo se o pedido for moderadamente inconveniente ao alvo (não prejudicial).",
+        "Atinge até 2 alvos ao mesmo tempo, com um único teste.",
+        "Atinge até 3 alvos."
+      ],
+      "proposta": true
+    },
+    {
+      "nome": "Grito que Ajoelha",
+      "atributo": "Social",
+      "custoPA": "5 PA",
+      "custoAtivacao": "3→2→3→2→1 dano curável",
+      "tipoCusto": "dano curável",
+      "valorCompra": "4",
+      "efeito": "Todo inimigo num raio que possa ouvir o grito faz um teste de Mental. Quem falhar sofre Desvantagem no próximo teste que fizer.",
+      "requisitos": "Os alvos precisam conseguir ouvir o grito.",
+      "niveis": [
+        "Custo 3 de dano curável. Raio de 6 metros.",
+        "Custo 2 de dano curável. Raio de 6 metros.",
+        "Custo 3 de dano curável. Raio de 9 metros.",
+        "Custo 2 de dano curável. Raio de 9 metros.",
+        "Custo 1 de dano curável. Raio de 12 metros."
+      ],
+      "proposta": true
+    }
+  ],
+  "veiculos": {
+    "categorias": [
+      {
+        "nome": "Sem motor",
+        "exemplos": "Bicicleta, carroça, reboque, charrete",
+        "velocidadeMax": "20 m/t",
+        "motor": "",
+        "integridadePorParte": "5",
+        "ocupantes": "1–2",
+        "slotsEquipamento": "1",
+        "combustivel": "",
+        "proposta": true
+      },
+      {
+        "nome": "A",
+        "exemplos": "Moto, triciclo, buggy",
+        "velocidadeMax": "80 m/t",
+        "motor": "10",
+        "integridadePorParte": "8",
+        "ocupantes": "1–2",
+        "slotsEquipamento": "2",
+        "combustivel": "4",
+        "proposta": true
+      },
+      {
+        "nome": "B",
+        "exemplos": "Carro de passeio, picape leve",
+        "velocidadeMax": "70 m/t",
+        "motor": "15",
+        "integridadePorParte": "12",
+        "ocupantes": "4",
+        "slotsEquipamento": "3",
+        "combustivel": "6",
+        "proposta": true
+      },
+      {
+        "nome": "C",
+        "exemplos": "Van, 4×4, picape pesada",
+        "velocidadeMax": "60 m/t",
+        "motor": "20",
+        "integridadePorParte": "16",
+        "ocupantes": "6",
+        "slotsEquipamento": "4",
+        "combustivel": "8",
+        "proposta": true
+      },
+      {
+        "nome": "D",
+        "exemplos": "Caminhão, ônibus",
+        "velocidadeMax": "50 m/t",
+        "motor": "25",
+        "integridadePorParte": "20",
+        "ocupantes": "8",
+        "slotsEquipamento": "6",
+        "combustivel": "12",
+        "proposta": true
+      },
+      {
+        "nome": "E",
+        "exemplos": "Carreta, blindado, máquina de guerra",
+        "velocidadeMax": "40 m/t",
+        "motor": "30",
+        "integridadePorParte": "25",
+        "ocupantes": "10",
+        "slotsEquipamento": "8",
+        "combustivel": "16",
+        "proposta": true
+      }
+    ],
+    "partes": [
+      {
+        "nome": "Frente",
+        "descricao": "Capô, para-choque dianteiro, grade",
+        "observacao": "A parte atingida numa colisão frontal",
+        "proposta": true
+      },
+      {
+        "nome": "Traseira",
+        "descricao": "Porta-malas, para-choque traseiro, caçamba",
+        "observacao": "Onde costuma ficar o bagageiro",
+        "proposta": true
+      },
+      {
+        "nome": "Lateral esquerda",
+        "descricao": "Portas e chapas do lado esquerdo",
+        "observacao": "",
+        "proposta": true
+      },
+      {
+        "nome": "Lateral direita",
+        "descricao": "Portas e chapas do lado direito",
+        "observacao": "",
+        "proposta": true
+      },
+      {
+        "nome": "Rodagem",
+        "descricao": "Pneus, rodas, eixos, suspensão",
+        "observacao": "Alvo da condição Pneu furado e da habilidade Furar pneu",
+        "proposta": true
+      },
+      {
+        "nome": "Motor",
+        "descricao": "O coração da máquina",
+        "observacao": "Não se repara sem peças comuns; ao zerar, o excedente vai aos ocupantes",
+        "proposta": true
+      }
+    ],
+    "equipamentos": [
+      {
+        "nome": "Âncora",
+        "tipo": "ativo",
+        "atributo": "Físico",
+        "durabilidade": "5",
+        "paUso": "2 (lançar/recolher) + 1 por −10 m/t",
+        "instalar": "8 PA",
+        "cobertura": "Não",
+        "efeito": "Freia 10 m/t por PA (Teste Físico). Requer ≥1 braço; se não recolher no turno, Teste Ágil (a falha para o veículo).",
+        "proposta": true,
+        "fabricacao": {
+          "pecasComuns": "10",
+          "pecasEspecializadas": "",
+          "testes": "Físico · Ágil"
+        }
+      },
+      {
+        "nome": "Aparato para invasão",
+        "tipo": "ativo",
+        "atributo": "Ágil",
+        "durabilidade": "5",
+        "paUso": "3",
+        "instalar": "8 PA",
+        "cobertura": "Não",
+        "efeito": "Invasão/Embarque em movimento sem risco de queda na falha; +alcance (até 20 m / 2 espaços). Não pode ser operado pelo piloto.",
+        "proposta": true,
+        "fabricacao": {
+          "pecasComuns": "8",
+          "pecasEspecializadas": "",
+          "testes": "Ágil · Social"
+        }
+      },
+      {
+        "nome": "Buzina",
+        "tipo": "ativo",
+        "atributo": "Social",
+        "durabilidade": "5",
+        "paUso": "2",
+        "instalar": "5 PA",
+        "cobertura": "Sim",
+        "efeito": "Força um Teste Social no piloto adversário; se ele falhar, −10 m/t.",
+        "proposta": true,
+        "fabricacao": {
+          "pecasComuns": "",
+          "pecasEspecializadas": "2",
+          "testes": "Social · Mental"
+        }
+      },
+      {
+        "nome": "Gancho",
+        "tipo": "ativo",
+        "atributo": "Mental",
+        "durabilidade": "5",
+        "paUso": "4 (atirar) / 1 (recolher)",
+        "instalar": "12 PA",
+        "cobertura": "Sim",
+        "efeito": "Prende-se a veículo ou objeto (alcance 30 m); parado, guincha veículos de categoria ≤.",
+        "proposta": true,
+        "fabricacao": {
+          "pecasComuns": "6",
+          "pecasEspecializadas": "",
+          "testes": "Mental · Físico"
+        }
+      },
+      {
+        "nome": "Suporte para arma montada",
+        "tipo": "ativo",
+        "atributo": "Ágil",
+        "durabilidade": "5",
+        "paUso": "3 + PA da arma",
+        "instalar": "10 PA",
+        "cobertura": "Não",
+        "efeito": "+30 m de alcance para projétil ou arremesso leve.",
+        "proposta": true,
+        "fabricacao": {
+          "pecasComuns": "7",
+          "pecasEspecializadas": "",
+          "testes": "Físico"
+        }
+      },
+      {
+        "nome": "Suspensão hidráulica",
+        "tipo": "ativo",
+        "atributo": "Ágil",
+        "durabilidade": "5",
+        "paUso": "5",
+        "instalar": "10 PA",
+        "cobertura": "Sim",
+        "efeito": "Salta 1 espaço para evitar obstáculo (requer deslocamento ≥2 espaços depois).",
+        "proposta": true,
+        "fabricacao": {
+          "pecasComuns": "4",
+          "pecasEspecializadas": "3",
+          "testes": "Físico · Mental"
+        }
+      },
+      {
+        "nome": "Bagageiro",
+        "tipo": "passivo",
+        "atributo": "",
+        "durabilidade": "5",
+        "paUso": "",
+        "instalar": "6 PA",
+        "cobertura": "Sim",
+        "efeito": "Carrega o dobro de um armazenamento comum.",
+        "proposta": true,
+        "fabricacao": {
+          "pecasComuns": "5",
+          "pecasEspecializadas": "",
+          "testes": "Físico"
+        }
+      },
+      {
+        "nome": "Escudos",
+        "tipo": "passivo",
+        "atributo": "",
+        "durabilidade": "10 (não conserta)",
+        "paUso": "",
+        "instalar": "5 PA",
+        "cobertura": "Sim",
+        "efeito": "Absorve dano em qualquer parte; ao zerar, o excedente vai a parte aleatória. Também concede meia cobertura a quem opera um posto exposto (suporte de arma montada, âncora etc.).",
+        "proposta": true,
+        "fabricacao": {
+          "pecasComuns": "5",
+          "pecasEspecializadas": "",
+          "testes": "Mental"
+        }
+      },
+      {
+        "nome": "Escudos para motor",
+        "tipo": "passivo",
+        "atributo": "",
+        "durabilidade": "5 (não conserta)",
+        "paUso": "",
+        "instalar": "5 PA",
+        "cobertura": "Sim",
+        "efeito": "Absorve dano no motor vindo de ataques e de colisões que você causa.",
+        "proposta": true,
+        "fabricacao": {
+          "pecasComuns": "5",
+          "pecasEspecializadas": "",
+          "testes": "Mental"
+        }
+      },
+      {
+        "nome": "Espinhos",
+        "tipo": "passivo",
+        "atributo": "",
+        "durabilidade": "5 (não conserta)",
+        "paUso": "",
+        "instalar": "7 PA",
+        "cobertura": "Sim",
+        "efeito": "Ao colidir ou entrar no mesmo espaço, causa 2 de dano em local aleatório do outro veículo.",
+        "proposta": true,
+        "fabricacao": {
+          "pecasComuns": "5",
+          "pecasEspecializadas": "",
+          "testes": "Social"
+        }
+      },
+      {
+        "nome": "Estrepes",
+        "tipo": "passivo",
+        "atributo": "",
+        "durabilidade": "3 (não conserta)",
+        "paUso": "",
+        "instalar": "— (4 PA para arremessar)",
+        "cobertura": "Sim",
+        "efeito": "Linha de 3 espaços; quem passa por cima ganha Pneu furado. Arremessa até 2 espaços.",
+        "proposta": true,
+        "fabricacao": {
+          "pecasComuns": "3",
+          "pecasEspecializadas": "",
+          "testes": "Físico"
+        }
+      },
+      {
+        "nome": "Exaustor",
+        "tipo": "passivo",
+        "atributo": "",
+        "durabilidade": "5",
+        "paUso": "",
+        "instalar": "11 PA",
+        "cobertura": "Sim",
+        "efeito": "Hélices que sopram e repelem fumaça: o veículo ignora a condição Cortina de fumaça enquanto o exaustor estiver íntegro. Um cenário com fenômenos de ar próprios (tempestade de areia, névoa tóxica) pode estender o efeito a eles.",
+        "proposta": true,
+        "fabricacao": {
+          "pecasComuns": "4",
+          "pecasEspecializadas": "2",
+          "testes": "Mental · Ágil"
+        }
+      },
+      {
+        "nome": "Caixa de ferramentas",
+        "tipo": "apoio",
+        "atributo": "",
+        "durabilidade": "5",
+        "paUso": "",
+        "instalar": "",
+        "cobertura": "",
+        "efeito": "Reduz 1 PA nas ações Instalar equipamento e Remover equipamento com cuidado.",
+        "proposta": true,
+        "fabricacao": {
+          "pecasComuns": "4",
+          "pecasEspecializadas": "",
+          "testes": "Mental"
+        }
+      },
+      {
+        "nome": "Caixa de sabotagem",
+        "tipo": "apoio",
+        "atributo": "",
+        "durabilidade": "5",
+        "paUso": "",
+        "instalar": "",
+        "cobertura": "",
+        "efeito": "Reduz 1 PA na habilidade Sabotar.",
+        "proposta": true,
+        "fabricacao": {
+          "pecasComuns": "2",
+          "pecasEspecializadas": "1",
+          "testes": "Mental · Social"
+        }
+      }
+    ],
+    "habilidades": [
+      {
+        "nome": "Atropelar",
+        "atributo": "Ágil",
+        "custoPA": "2 PA + 2 de dano ao próprio motor",
+        "valorCompra": "3",
+        "efeito": "Sacrifica integridade do motor por dano extra (descuidado) ao colidir. Requer veículo em movimento.",
+        "niveis": "+2 / +4 / +6 / +8 / +10 de dano adicional.",
+        "proposta": true
+      },
+      {
+        "nome": "Invasor",
+        "atributo": "Ágil",
+        "custoPA": "1 PA",
+        "valorCompra": "4",
+        "efeito": "Aumenta o sucesso de invasão e embarque em movimento. Requer nenhum membro desabilitado.",
+        "niveis": "+1d4 / +1d6 / +1d8 ao teste.",
+        "proposta": true
+      },
+      {
+        "nome": "Piloto de fuga",
+        "atributo": "Ágil",
+        "custoPA": "1 PA",
+        "valorCompra": "1",
+        "efeito": "Reduz o PA de aceleração quando o veículo está parado. Requer estar parado e ter ≥1 de combustível.",
+        "niveis": "−2 / −4 / −6 / −8 / −10 PA.",
+        "proposta": true
+      },
+      {
+        "nome": "Turbo",
+        "atributo": "Ágil",
+        "custoPA": "1 PA",
+        "valorCompra": "2",
+        "efeito": "Reduz o PA de aceleração em movimento.",
+        "niveis": "−2 / −4 / −6 / −8 / −10 PA.",
+        "proposta": true
+      },
+      {
+        "nome": "Atirador de elite",
+        "atributo": "Físico",
+        "custoPA": "PA da arma + 2 PA",
+        "valorCompra": "4",
+        "efeito": "Aumenta o acerto contra alvo em movimento. Requer arma de arremesso (leve) ou projétil.",
+        "niveis": "+1d4 / +1d6 / +1d8 ao teste.",
+        "proposta": true
+      },
+      {
+        "nome": "Atirador montado",
+        "atributo": "Físico",
+        "custoPA": "1 PA",
+        "valorCompra": "3",
+        "efeito": "Reduz o PA para atirar a partir de um veículo em movimento.",
+        "niveis": "−2 / −3 / −4 PA.",
+        "proposta": true
+      },
+      {
+        "nome": "Drift",
+        "atributo": "Físico",
+        "custoPA": "1 PA",
+        "valorCompra": "2",
+        "efeito": "Reduz o PA de manobra em movimento.",
+        "niveis": "−2 / −4 / −6 / −8 / −10 PA.",
+        "proposta": true
+      },
+      {
+        "nome": "Furar pneu",
+        "atributo": "Físico",
+        "custoPA": "PA da arma + PA variável",
+        "valorCompra": "3",
+        "efeito": "Ataque mirado à Rodagem: causa metade do dano da arma (arredondado para cima) e aplica Pneu furado. Requer arma cortante ou perfurante.",
+        "niveis": "+3 / +2 / +1 PA.",
+        "proposta": true
+      },
+      {
+        "nome": "Golpe extravagante",
+        "atributo": "Físico",
+        "custoPA": "PA da arma + 2 PA",
+        "valorCompra": "4",
+        "efeito": "Ataque corpo a corpo a um passageiro; além do dano ao alvo, causa dano descuidado ao veículo.",
+        "niveis": "2 / 4 / 6 de dano ao veículo.",
+        "proposta": true
+      },
+      {
+        "nome": "Autoescola",
+        "atributo": "Mental",
+        "custoPA": "3 PA",
+        "valorCompra": "4",
+        "efeito": "Acelera ou freia sem estar no assento do piloto (Teste Mental). Requer estar no mesmo veículo.",
+        "niveis": "até 20 / 30 / 40 m/t.",
+        "proposta": true,
+        "observacao": "O veículo não se move na rodada, só muda o velocímetro."
+      },
+      {
+        "nome": "Desmanchador",
+        "atributo": "Mental",
+        "custoPA": "PA da arma + 2 PA",
+        "valorCompra": "4",
+        "efeito": "Ataque mirado a qualquer parte, com dano extra ao motor.",
+        "niveis": "2 / 4 / 6 / 8 / 10 ao motor.",
+        "proposta": true,
+        "observacao": "Não vale em ataque descuidado."
+      },
+      {
+        "nome": "Mecânica",
+        "atributo": "Mental",
+        "custoPA": "3 PA",
+        "valorCompra": "2",
+        "efeito": "Substitui a ação Reparo especializado: remove efeitos negativos do motor com Teste Mental, consumindo 1 peça especializada por efeito (em vez das 2 da ação normal).",
+        "niveis": "remove 1 / 2 / 3 efeitos.",
+        "proposta": true
+      },
+      {
+        "nome": "Mecatrônica",
+        "atributo": "Mental",
+        "custoPA": "4 PA",
+        "valorCompra": "3",
+        "efeito": "Substitui a ação Reparar integridade (Teste Mental).",
+        "niveis": "dado 1d6 / 1d8 / 1d10 — o excedente pode ir a outra parte.",
+        "proposta": true,
+        "observacao": "No motor, continua exigindo peças comuns, como a ação normal."
+      },
+      {
+        "nome": "Retrovisor",
+        "atributo": "Mental",
+        "custoPA": "1 PA",
+        "valorCompra": "2",
+        "efeito": "Reduz o PA da marcha à ré. Requer estar parado ou de ré.",
+        "niveis": "−2 / −4 / −6 / −8 / −10 PA.",
+        "proposta": true
+      },
+      {
+        "nome": "Assumir direção",
+        "atributo": "Social",
+        "custoPA": "4 / 3 / 2 PA por nível",
+        "valorCompra": "4",
+        "efeito": "Toma o volante; o veículo perde 10 m/t. Havendo resistência, Teste Físico ou Ágil.",
+        "niveis": "",
+        "proposta": true
+      },
+      {
+        "nome": "Atenção difusa",
+        "atributo": "Social",
+        "custoPA": "2 PA + PA da arma",
+        "valorCompra": "4",
+        "efeito": "Aumenta o acerto de arma corpo a corpo a partir de veículo em movimento.",
+        "niveis": "+1d4 / +1d6 / +1d8.",
+        "proposta": true
+      },
+      {
+        "nome": "Carburador furado",
+        "atributo": "Social",
+        "custoPA": "4 PA (consome 2 de combustível)",
+        "valorCompra": "4",
+        "efeito": "Solta uma Cortina de fumaça triangular atrás do veículo. Requer acesso ao acelerador.",
+        "niveis": "cone de 3×5 / 5×7 / 7×9 espaços.",
+        "proposta": true
+      },
+      {
+        "nome": "Co-piloto",
+        "atributo": "Social",
+        "custoPA": "2 PA + (PA doados ÷ 2)",
+        "valorCompra": "3",
+        "efeito": "Transfere PA a alguém no mesmo veículo.",
+        "niveis": "até 2 / 4 / 6 / 8 / 10 PA.",
+        "proposta": true,
+        "observacao": "Os PA não usados se perdem; não se doa PA gerado por fadiga."
+      },
+      {
+        "nome": "Sabotar",
+        "atributo": "Social",
+        "custoPA": "4 / 3 / 2 PA por nível",
+        "valorCompra": "4",
+        "efeito": "Teste Social; o sucesso aplica uma condição de veículo a um veículo cujos mecanismos você acessa.",
+        "niveis": "",
+        "proposta": true
+      }
+    ],
+    "tracos": [
+      {
+        "nome": "Baliza",
+        "atributo": "Mental",
+        "valorCompra": "3",
+        "efeito": "Estaciona no mesmo espaço de obstáculos fixos ou construções, e fica protegido de dano enquanto desocupado. Requer veículo parado.",
+        "proposta": true
+      },
+      {
+        "nome": "Câmbio automático",
+        "atributo": "Físico",
+        "valorCompra": "3",
+        "efeito": "Dirige mesmo com uma perna inexistente ou inabilitada.",
+        "proposta": true
+      },
+      {
+        "nome": "Controle de embreagem",
+        "atributo": "Ágil",
+        "valorCompra": "8",
+        "efeito": "Ignora terreno difícil.",
+        "proposta": true
+      },
+      {
+        "nome": "Cuidadoso",
+        "atributo": "Físico",
+        "valorCompra": "5",
+        "efeito": "Arrancar equipamento sem quebrá-lo e mantendo-o no veículo. Requer ≥1 braço.",
+        "proposta": true
+      },
+      {
+        "nome": "Direção defensiva",
+        "atributo": "Físico",
+        "valorCompra": "2",
+        "efeito": "Sucesso automático em ocupar com cuidado. Requer ser o piloto.",
+        "proposta": true
+      },
+      {
+        "nome": "Elemento surpresa",
+        "atributo": "Social",
+        "valorCompra": "7",
+        "efeito": "Ganha 3 Guardas Levantadas ao fim de um turno de invasão ou embarque bem-sucedido.",
+        "proposta": true
+      },
+      {
+        "nome": "Lanternagem",
+        "atributo": "Mental",
+        "valorCompra": "5",
+        "efeito": "Sucesso em Reparar integridade ou Mecatrônica recupera +1 ponto no local; o excedente vai a outra parte.",
+        "proposta": true
+      },
+      {
+        "nome": "Manobrista",
+        "atributo": "Ágil",
+        "valorCompra": "3",
+        "efeito": "Elimina o Teste Ágil para pilotar em espaço até metade ocupado por obstáculo. Requer ≥1 braço.",
+        "proposta": true
+      },
+      {
+        "nome": "Mão na roda",
+        "atributo": "Mental",
+        "valorCompra": "6",
+        "efeito": "Anula as desvantagens de reparar e instalar em veículo em movimento. Requer ≥1 braço.",
+        "proposta": true
+      },
+      {
+        "nome": "Pitstop",
+        "atributo": "Mental",
+        "valorCompra": "3",
+        "efeito": "Reduz pela metade o combustível gasto em viagens fora de batalha.",
+        "proposta": true
+      }
+    ]
+  }
 }

@@ -18,7 +18,7 @@ manual (39 armas com dano defasado, 9 itens faltando — corrigido em 24/07/2026
 |---------|---------|
 | [`limpeza.py`](limpeza.py) | A **limpeza oficial**: remove frontmatter, blocos de bastidor (`✅`, `📝`, `🔧`, `⚠️ A DEFINIR`, datas de decisão…), blocos explícitos `<!-- bastidor:inicio -->…<!-- bastidor:fim -->`, seção "Referências" e marcações internas. **`💡` nunca é removido** — é dica de mesa pro jogador/mestre, não bastidor (ver [CONVENCOES.md §12](../CONVENCOES.md) para a tabela completa dos emojis). Páginas inteiras marcadas `publico: false` no frontmatter são filtradas por quem consome (`manual/gerar-conteudo.py`), antes mesmo de chamar a limpeza. |
 | [`exportar_catalogo.py`](exportar_catalogo.py) | O **exportador**: lê as listas do manual e gera o `catalogo.json`. |
-| [`catalogo.json`](catalogo.json) | O **artefato do contrato**: armas, munições, proteções, habilidades (com progressão por nível), traços, propriedades de armas e os inimigos do kit de playtest (proposta), em JSON estruturado. **Gerado — não edite à mão.** |
+| [`catalogo.json`](catalogo.json) | O **artefato do contrato**: armas, munições, proteções, habilidades (com progressão por nível), traços, propriedades de armas, os inimigos do kit de playtest (proposta) e, desde 08/08/2026, magias e veículos (ambos proposta), em JSON estruturado. **Gerado — não edite à mão.** |
 
 ## Consumidores
 
@@ -28,6 +28,43 @@ manual (39 armas com dano defasado, 9 itens faltando — corrigido em 24/07/2026
 | PDF de playtest (`playtest/geracao-pdf/gerar_manual_pdf.py`) | `limpeza.py` | mesma limpeza → PDF e site sempre idênticos |
 | Ficha interativa (`ficha/src/lib/catalogo.ts`) | `catalogo.json` | adaptador TypeScript importa o JSON no build |
 | Plataforma (`plataforma-rpg-marca-de-sangue`) | `catalogo.json` | seed do banco (`HabilidadeBase`, `TracoBase`, `EquipamentoBase` e a biblioteca padrão de inimigos) — pode consumir a URL raw do GitHub |
+
+## Consumidores da regra (não só dos dados)
+
+O `catalogo.json` cobre os **dados** (listas). Mas dois consumidores dependem do
+**texto das regras** — fórmulas, custos, encadeamentos — e uma mudança de regra os
+afeta mesmo quando nenhuma lista muda:
+
+| Consumidor | O que consome | Consequência de uma mudança de regra |
+|------------|---------------|--------------------------------------|
+| **Engine da plataforma** (`plataforma-rpg-marca-de-sangue`, `src/lib/game-engine/`) | O **texto** das regras, implementado como funções puras (fadiga, custos de `PA`, descanso, saúde…) | Toda mudança de regra que a plataforma executa exige o **passo 3** do checklist abaixo — aviso no backlog dela, **no mesmo commit** |
+| **Ficha offline** (`ficha/`) | O texto das regras + o `catalogo.json` | Atualizada em **08/08/2026** para as regras de 01/08 (fadiga máx = `PV`, penalidade em passo 10, sem modo de usos). Qualquer mudança de regra futura deve **atualizá-la** OU **registrar a defasagem explicitamente** no [PENDENCIAS.md](../PENDENCIAS.md) |
+
+## Quando a REGRA muda (checklist de mudança de regra)
+
+Regenerar o catálogo não basta: em 01/08/2026 a mudança de fadiga saiu sem aviso
+para a plataforma, que ficou executando a regra antiga. Sempre que uma **regra**
+mudar, siga o encadeamento:
+
+1. **Edite a regra** em `sistema-base/`/`modulos/` e atualize o `INDICE.md` e o
+   `PENDENCIAS.md` (protocolo de análise de impacto do [AGENTS.md](../AGENTS.md)).
+2. **Mexeu em lista?** Regenere o `contrato/catalogo.json` **no mesmo commit**
+   (regra 12 do AGENTS.md).
+3. **AVISO OBRIGATÓRIO NO MESMO COMMIT:** acrescente uma linha em
+   [notas-de-design/pendencias-ficha-plataforma.md](../notas-de-design/pendencias-ficha-plataforma.md)
+   marcando a **plataforma como afetada** pela mudança. *Esta é a correção da falha
+   de 01/08, quando a mudança de fadiga não avisou a plataforma.*
+4. **A plataforma implementa** (seed/engine/migration/testes/manual — o manual passa
+   por curadoria editorial, regra 13 do AGENTS.md) e **fecha o aviso citando a
+   decisão dela** (`docs/DECISIONS.md` de lá).
+5. **Ficha offline** (`ficha/`): atualize-a OU registre a defasagem explicitamente.
+6. **Manual web**: regenera sozinho no deploy — nada a fazer.
+7. **PDFs**: só antes de playtest (pendência de regeração já anotada no
+   `PENDENCIAS.md`).
+
+**Rastreabilidade bidirecional (regra):** o item de backlog daqui cita a decisão da
+plataforma que o fechou, e a decisão de lá cita o item daqui. Já era praticado —
+agora é regra.
 
 ## O fluxo (quem alimenta quem)
 
@@ -143,9 +180,81 @@ lacuna vira pendência).
     "proposta": true                // SEMPRE true: o pacote de minion (tiers 10/20/30)
                                     // é proposta de playtest — regra não fechada
                                     // (PENDENCIAS.md, "Minions — tratamento único")
-  }]
+  }],
+  "magias": [{                      // módulo Magia
+    "nome": "Punho da Montanha", "atributo": "Físico",
+    "custoPA": "1 PA + PA da arma (ou desarmado)",  // texto literal do manual
+    "custoAtivacao": "2 dano curável (fixo em todos os níveis)",  // texto literal
+    "tipoCusto": "dano curável",    // fadiga | dano curável | vida máxima — o tipo
+                                    // cobrado no NÍVEL 1 (primeiro tipo citado no
+                                    // texto; magias que trocam de tipo em níveis
+                                    // altos mantêm o texto completo em custoAtivacao)
+    "valorCompra": "2",             // custo de compra em exp (nível base)
+    "efeito": "…", "requisitos": "…; …",
+    "niveis": ["…", "…"],          // seção Progressão (índice 0 = nível 1)
+    "proposta": true                // SEMPRE true: os custos de PA, ativação e exp.
+                                    // da lista são proposta, a validar no playtest
+  }],
+  "veiculos": {                     // módulo Veículos — TUDO com "proposta": true
+                                    // (números do material Alpha do Colapso, ainda
+                                    // não validados em playtest)
+    "categorias": [{                // moldes de veículo (tabela de categorias)
+      "nome": "B", "exemplos": "Carro de passeio, picape leve",
+      "velocidadeMax": "70 m/t", "motor": "15",       // "" = sem motor
+      "integridadePorParte": "12", "ocupantes": "4",
+      "slotsEquipamento": "3", "combustivel": "6",    // "" = não usa combustível
+      "proposta": true
+    }],
+    "partes": [{                    // as cinco partes + o motor
+      "nome": "Rodagem", "descricao": "Pneus, rodas, eixos, suspensão",
+      "observacao": "…", "proposta": true
+    }],
+    "equipamentos": [{
+      "nome": "Âncora",
+      "tipo": "ativo",              // ativo | passivo | apoio (item carregado)
+      "atributo": "Físico",         // só ativos (atributo do teste de uso)
+      "durabilidade": "5",          // literal — passivos podem vir "10 (não conserta)"
+      "paUso": "2 (lançar/recolher) + 1 por −10 m/t",  // só ativos
+      "instalar": "8 PA",           // "" nos itens de apoio (não se instalam)
+      "cobertura": "Não",           // Sim | Não — operar mantém a meia cobertura?
+      "efeito": "…",
+      "fabricacao": {               // linha da tabela de fabricação (casada por nome)
+        "pecasComuns": "10", "pecasEspecializadas": "", "testes": "Físico · Ágil"
+      },
+      "proposta": true
+    }],
+    "habilidades": [{               // formato em bullets no manual
+      "nome": "Atropelar", "atributo": "Ágil",
+      "custoPA": "2 PA + 2 de dano ao próprio motor",  // texto literal
+      "valorCompra": "3", "efeito": "…",
+      "niveis": "+2 / +4 / +6 / +8 / +10 de dano adicional.",  // TEXTO único, não
+                                    // lista (formato compacto dos bullets);
+                                    // "" = sem progressão declarada (custo por nível)
+      "observacao": "…",            // opcional (parêntese em itálico do bullet)
+      "proposta": true
+    }],
+    "tracos": [{
+      "nome": "Baliza", "atributo": "Mental", "valorCompra": "3",
+      "efeito": "…", "proposta": true
+    }]
+  }
 }
 ```
+
+### Fontes por chave
+
+A lista completa (na ordem de leitura) está na chave `fontes` do próprio JSON.
+
+| Chave | Fonte(s) no repositório |
+|-------|-------------------------|
+| `propriedades` | `sistema-base/listas/equipamentos-base.md` (nomes das maestrias: `tracos-base.md`) |
+| `armas`, `municoes` | `sistema-base/listas/equipamentos-base.md` + `acoes-em-combate.md` (desarmado/improvisadas); módulos `armas-brancas`, `armas-exoticas`, `arcos-e-bestas`, `armas-de-fogo` |
+| `protecoes` | `modulos/protecoes/README.md` |
+| `habilidades` | `sistema-base/listas/habilidades-base-*.md` + `habilidades-experimentais-sociais.md` |
+| `tracos` | `sistema-base/listas/tracos-base.md` (+ traços das listas de habilidades) |
+| `inimigos` | `playtest/cenarios/inimigos-do-kit.md` + `sistema-base/criaturas/criaturas-genericas.md` |
+| `magias` | `modulos/magia/listas/lista-de-magias.md` |
+| `veiculos` | `modulos/veiculos/listas/` — `lista-de-veiculos.md` (categorias e partes), `lista-de-equipamentos.md`, `lista-de-habilidades.md`, `lista-de-tracos.md` |
 
 ## Regras do contrato
 

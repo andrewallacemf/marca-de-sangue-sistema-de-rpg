@@ -4,9 +4,11 @@
 Exportador do catálogo estruturado — parte do CONTRATO DE CONTEÚDO (ver README.md).
 
 Lê as listas do manual (sistema-base/listas/ + módulos da coleção `armas` +
-modulos/protecoes/) e emite `contrato/catalogo.json` com armas, munições,
-proteções, habilidades (com progressão por nível), traços e o glossário de
-propriedades de armas.
+modulos/protecoes/ + modulos/magia/ + modulos/veiculos/) e emite
+`contrato/catalogo.json` com armas, munições, proteções, habilidades (com
+progressão por nível), traços, o glossário de propriedades de armas, os
+inimigos do kit de playtest (proposta), as magias do módulo Magia (proposta)
+e as listas do módulo Veículos (proposta).
 
 Princípio: EXTRAÇÃO LITERAL. Os textos vêm do manual como estão (limpos de
 bastidor pela limpeza oficial). Nada é resumido nem inventado; lacunas do
@@ -47,6 +49,13 @@ FONTES_HABILIDADES = [
 ]
 FONTE_INIMIGOS = "playtest/cenarios/inimigos-do-kit.md"
 FONTE_CRIATURAS_BASE = "sistema-base/criaturas/criaturas-genericas.md"
+FONTE_MAGIAS = "modulos/magia/listas/lista-de-magias.md"
+FONTE_VEICULOS_LISTA = "modulos/veiculos/listas/lista-de-veiculos.md"
+FONTE_VEICULOS_EQUIPAMENTOS = "modulos/veiculos/listas/lista-de-equipamentos.md"
+FONTE_VEICULOS_HABILIDADES = "modulos/veiculos/listas/lista-de-habilidades.md"
+FONTE_VEICULOS_TRACOS = "modulos/veiculos/listas/lista-de-tracos.md"
+FONTES_VEICULOS = [FONTE_VEICULOS_LISTA, FONTE_VEICULOS_EQUIPAMENTOS,
+                   FONTE_VEICULOS_HABILIDADES, FONTE_VEICULOS_TRACOS]
 
 SIGLAS = ["CORT", "CONT", "PERF", "AGAR", "ARRE", "DEFL", "PROJ", "ACUI", "VERS", "DESA"]
 
@@ -580,6 +589,298 @@ def parse_habilidades(caminho: str, experimental: bool) -> tuple[list[dict], lis
 
 
 # ---------------------------------------------------------------------------
+# Magias (módulo Magia)
+# ---------------------------------------------------------------------------
+
+# Como o META_RE das habilidades, mas com grupo PRÓPRIO para o
+# "**Custo de ativação:**" — no META_RE original o grupo do custo de PA
+# engoliria o custo de ativação inteiro. As subseções das magias usam
+# títulos de nível 4 (####), não 3 — ver lista-de-magias.md.
+META_RE_MAGIA = re.compile(
+    r"\*\*Atributo:\*\*\s*`?([^·`]+?)`?\s*·\s*"
+    r"\*\*Custo de PA:\*\*\s*(.+?)\s*·\s*"
+    r"\*\*Custo de ativação:\*\*\s*(.+?)\s*·\s*"
+    r"\*\*Custo de compra:\*\*\s*(.+)$", re.M)
+
+# Tipos de custo de ativação do módulo (ver modulos/magia/README.md).
+TIPOS_CUSTO_ATIVACAO = ["fadiga", "dano curável", "vida máxima"]
+
+
+def tipo_custo_ativacao(texto: str) -> str:
+    """Tipo do custo de ativação = o PRIMEIRO tipo citado no texto (o tipo
+    cobrado no nível 1 — magias como Véu da Presa Rápida trocam de tipo em
+    níveis altos, e o texto literal completo fica em custoAtivacao)."""
+    t = texto.lower()
+    achados = [(t.find(tipo), tipo) for tipo in TIPOS_CUSTO_ATIVACAO if tipo in t]
+    return min(achados)[1] if achados else ""
+
+
+def parse_magias(caminho: str) -> list[dict]:
+    """Mesma mecânica de parse_habilidades, com os dois ajustes acima.
+
+    Todos os itens saem com "proposta": true — o próprio arquivo avisa que os
+    custos de PA, ativação e exp. são proposta, a validar no playtest.
+    """
+    md = le(caminho)
+    magias = []
+    for titulo, corpo in secoes(md, 2):
+        m = META_RE_MAGIA.search(corpo)
+        if not m:
+            continue  # "Resumo", introduções etc.
+        custo_ativacao = strip_md(m.group(3))
+        tipo = tipo_custo_ativacao(custo_ativacao)
+        if not tipo:
+            aviso(f"magias: '{titulo}' com custo de ativação de tipo não "
+                  f"reconhecido: '{custo_ativacao}'")
+        subs = {t: c for t, c in secoes(corpo, 4)}
+        efeito = " ".join(paragrafos(subs.get("Descrição", "")))
+        niveis = numerados(subs.get("Progressão", ""))
+        if not efeito:
+            aviso(f"magias: '{titulo}' sem seção Descrição")
+        if not niveis:
+            aviso(f"magias: '{titulo}' sem seção Progressão")
+        magias.append({
+            "nome": titulo,
+            "atributo": strip_md(m.group(1)),
+            "custoPA": tira_pontos_siglas(strip_md(m.group(2))),
+            "custoAtivacao": custo_ativacao,
+            "tipoCusto": tipo,
+            "valorCompra": numero(m.group(4)),
+            "efeito": efeito,
+            "requisitos": "; ".join(bullets(subs.get("Requisitos de uso", ""))),
+            "niveis": niveis,
+            "proposta": True,
+        })
+    if not magias:
+        aviso("magias: nenhuma magia extraída (estrutura do arquivo mudou?)")
+    return magias
+
+
+# ---------------------------------------------------------------------------
+# Veículos (módulo Veículos)
+# ---------------------------------------------------------------------------
+
+# TUDO sai com "proposta": true — os números vêm do material Alpha do Colapso
+# e ainda não foram validados em playtest (avisos nos próprios arquivos e no
+# PENDENCIAS.md).
+
+def sem_travessao(cell: str) -> str:
+    """Célula '—' (não se aplica) vira string vazia; o resto sai literal."""
+    txt = strip_md(cell)
+    return "" if txt == "—" else txt
+
+
+def parse_veiculos_categorias_partes(md: str) -> tuple[list[dict], list[dict]]:
+    """lista-de-veiculos.md: tabela de categorias + tabela das partes."""
+    categorias, partes = [], []
+    for _, header, rows in tabelas(md):
+        if header and header[0] == "Categoria" and "Motor" in header:
+            for cells in rows:
+                if len(cells) < 8:
+                    aviso(f"veículos: linha de categoria com {len(cells)} "
+                          f"colunas ignorada: {cells[:1]}")
+                    continue
+                categorias.append({
+                    "nome": strip_md(cells[0]),
+                    "exemplos": strip_md(cells[1]),
+                    "velocidadeMax": strip_md(cells[2]),
+                    "motor": sem_travessao(cells[3]),
+                    "integridadePorParte": strip_md(cells[4]),
+                    "ocupantes": strip_md(cells[5]),
+                    "slotsEquipamento": strip_md(cells[6]),
+                    "combustivel": sem_travessao(cells[7]),
+                    "proposta": True,
+                })
+        elif header and header[0] == "Parte":
+            for cells in rows:
+                if len(cells) < 3:
+                    aviso(f"veículos: linha de parte com {len(cells)} "
+                          f"colunas ignorada: {cells[:1]}")
+                    continue
+                partes.append({
+                    "nome": strip_md(cells[0]),
+                    "descricao": strip_md(cells[1]),
+                    "observacao": strip_md(cells[2]),
+                    "proposta": True,
+                })
+    if not categorias:
+        aviso("veículos: nenhuma categoria extraída (estrutura da tabela mudou?)")
+    if not partes:
+        aviso("veículos: nenhuma parte extraída (estrutura da tabela mudou?)")
+    return categorias, partes
+
+
+def parse_veiculos_equipamentos(md: str) -> list[dict]:
+    """lista-de-equipamentos.md: ativos, passivos, itens de apoio + fabricação.
+
+    A tabela de fabricação é mesclada por nome em cada equipamento/item
+    (campo "fabricacao"); linha de fabricação sem item correspondente avisa.
+    """
+    equipamentos: list[dict] = []
+    fabricacao: dict[str, dict] = {}
+    for _, header, rows in tabelas(md):
+        if header and header[0] == "Equipamento" and "Atrib." in header:  # ativos
+            for cells in rows:
+                if len(cells) < 7:
+                    aviso(f"veículos: linha de equipamento ativo com {len(cells)} "
+                          f"colunas ignorada: {cells[:1]}")
+                    continue
+                equipamentos.append({
+                    "nome": strip_md(cells[0]),
+                    "tipo": "ativo",
+                    "atributo": strip_md(cells[1]),
+                    "durabilidade": strip_md(cells[2]),
+                    "paUso": strip_md(cells[3]),
+                    "instalar": sem_travessao(cells[4]),
+                    "cobertura": strip_md(cells[5]),
+                    "efeito": strip_md(cells[6]),
+                    "proposta": True,
+                })
+        elif header and header[0] == "Equipamento" and "Integridade" in header:  # passivos
+            for cells in rows:
+                if len(cells) < 5:
+                    aviso(f"veículos: linha de equipamento passivo com {len(cells)} "
+                          f"colunas ignorada: {cells[:1]}")
+                    continue
+                equipamentos.append({
+                    "nome": strip_md(cells[0]),
+                    "tipo": "passivo",
+                    "atributo": "",
+                    "durabilidade": strip_md(cells[1]),
+                    "paUso": "",
+                    "instalar": sem_travessao(cells[2]),
+                    "cobertura": strip_md(cells[3]),
+                    "efeito": strip_md(cells[4]),
+                    "proposta": True,
+                })
+        elif header and header[0] == "Item" and "Peças comuns" in header:  # fabricação
+            for cells in rows:
+                if len(cells) < 4:
+                    aviso(f"veículos: linha de fabricação com {len(cells)} "
+                          f"colunas ignorada: {cells[:1]}")
+                    continue
+                fabricacao[strip_md(cells[0])] = {
+                    "pecasComuns": sem_travessao(cells[1]),
+                    "pecasEspecializadas": sem_travessao(cells[2]),
+                    "testes": strip_md(cells[3]),
+                }
+        elif header and header[0] == "Item" and "Durab." in header:  # itens de apoio
+            for cells in rows:
+                if len(cells) < 3:
+                    aviso(f"veículos: linha de item de apoio com {len(cells)} "
+                          f"colunas ignorada: {cells[:1]}")
+                    continue
+                equipamentos.append({
+                    "nome": strip_md(cells[0]),
+                    "tipo": "apoio",
+                    "atributo": "",
+                    "durabilidade": strip_md(cells[1]),
+                    "paUso": "",
+                    "instalar": "",
+                    "cobertura": "",
+                    "efeito": strip_md(cells[2]),
+                    "proposta": True,
+                })
+    for eq in equipamentos:
+        fab = fabricacao.pop(eq["nome"], None)
+        if fab is not None:
+            eq["fabricacao"] = fab
+    for nome in fabricacao:
+        aviso(f"veículos: fabricação de '{nome}' sem equipamento/item correspondente")
+    if not equipamentos:
+        aviso("veículos: nenhum equipamento extraído (estrutura das tabelas mudou?)")
+    return equipamentos
+
+
+# Formato dos bullets de lista-de-habilidades.md (veículos):
+#   - **Nome** `Atrib` `Veículo` — compra **N exp.**; **custo**. Efeito.
+#     Níveis: **… / …** sufixo. *(observação opcional)*
+HAB_VEICULO_RE = re.compile(
+    r"^\*\*(.+?)\*\*\s+"              # 1: nome
+    r"`([^`]+)`\s+`Veículo`\s+—\s+"   # 2: atributo (a tag Veículo é fixa)
+    r"compra\s+\*\*(.+?)\*\*;\s+"     # 3: custo de compra
+    r"\*\*(.+?)\*\*([^.]*)\.\s*"      # 4+5: custo de uso (+ resto fora do negrito)
+    r"(.*)$")                         # 6: efeito [+ Níveis] [+ observação]
+
+
+def bullets_brutos(txt: str) -> list[str]:
+    """Como bullets(), mas preservando o markdown (o parser precisa de ** e `)."""
+    itens, atual = [], None
+    for l in txt.split("\n"):
+        if re.match(r"^\s*-\s+", l):
+            if atual is not None:
+                itens.append(atual)
+            atual = re.sub(r"^\s*-\s+", "", l)
+        elif atual is not None and l.strip() and not l.lstrip().startswith("#"):
+            atual += " " + l.strip()  # continuação de item multi-linha
+        else:
+            if atual is not None:
+                itens.append(atual)
+                atual = None
+    if atual is not None:
+        itens.append(atual)
+    return [re.sub(r"\s+", " ", i).strip() for i in itens if i.strip()]
+
+
+def parse_veiculos_habilidades(md: str) -> list[dict]:
+    """lista-de-habilidades.md (veículos) — formato em BULLETS, não em seções."""
+    habilidades = []
+    for bruto in bullets_brutos(md):
+        m = HAB_VEICULO_RE.match(bruto)
+        if not m:
+            aviso("veículos: bullet de habilidade fora do formato, ignorado: "
+                  f"'{strip_md(bruto)[:60]}…'")
+            continue
+        resto = m.group(6)
+        observacao = ""
+        m_obs = re.search(r"\*\((.+?)\)\*\s*$", resto)  # itálico final = observação
+        if m_obs:
+            observacao = strip_md(m_obs.group(1))
+            resto = resto[:m_obs.start()]
+        efeito, niveis = resto, ""
+        if "Níveis:" in resto:
+            efeito, niveis = resto.split("Níveis:", 1)
+        hab = {
+            "nome": strip_md(m.group(1)),
+            "atributo": strip_md(m.group(2)),
+            "custoPA": strip_md(m.group(4) + m.group(5)),
+            "valorCompra": numero(m.group(3)),
+            "efeito": strip_md(efeito),
+            "niveis": strip_md(niveis),  # texto único ("+2 / +4 / …"), não lista
+            "proposta": True,
+        }
+        if observacao:
+            hab["observacao"] = observacao
+        habilidades.append(hab)
+    if not habilidades:
+        aviso("veículos: nenhuma habilidade extraída (formato dos bullets mudou?)")
+    return habilidades
+
+
+def parse_veiculos_tracos(md: str) -> list[dict]:
+    """lista-de-tracos.md (veículos): tabela única Traço/Atrib./exp./Efeito."""
+    tracos = []
+    for _, header, rows in tabelas(md):
+        if not (header and header[0] == "Traço" and "exp." in header):
+            continue
+        for cells in rows:
+            if len(cells) < 4:
+                aviso(f"veículos: linha de traço com {len(cells)} "
+                      f"colunas ignorada: {cells[:1]}")
+                continue
+            tracos.append({
+                "nome": strip_md(cells[0]),
+                "atributo": strip_md(cells[1]),
+                "valorCompra": numero(cells[2]),
+                "efeito": strip_md(cells[3]),
+                "proposta": True,
+            })
+    if not tracos:
+        aviso("veículos: nenhum traço extraído (estrutura da tabela mudou?)")
+    return tracos
+
+
+# ---------------------------------------------------------------------------
 # Inimigos (kit de playtest)
 # ---------------------------------------------------------------------------
 
@@ -780,10 +1081,26 @@ def main() -> None:
     criaturas_base = parse_criaturas_base(le(FONTE_CRIATURAS_BASE))
     inimigos += criaturas_base
 
+    magias = parse_magias(FONTE_MAGIAS)
+
+    veic_categorias, veic_partes = parse_veiculos_categorias_partes(le(FONTE_VEICULOS_LISTA))
+    veiculos = {
+        "categorias": veic_categorias,
+        "partes": veic_partes,
+        "equipamentos": parse_veiculos_equipamentos(le(FONTE_VEICULOS_EQUIPAMENTOS)),
+        "habilidades": parse_veiculos_habilidades(le(FONTE_VEICULOS_HABILIDADES)),
+        "tracos": parse_veiculos_tracos(le(FONTE_VEICULOS_TRACOS)),
+    }
+
     # sanidade: nomes duplicados
     for rotulo, lista in [("arma", armas), ("proteção", protecoes),
                           ("habilidade", habilidades), ("traço", tracos),
-                          ("inimigo", inimigos)]:
+                          ("inimigo", inimigos), ("magia", magias),
+                          ("categoria de veículo", veiculos["categorias"]),
+                          ("parte de veículo", veiculos["partes"]),
+                          ("equipamento de veículo", veiculos["equipamentos"]),
+                          ("habilidade de veículo", veiculos["habilidades"]),
+                          ("traço de veículo", veiculos["tracos"])]:
         vistos = set()
         for item in lista:
             if item["nome"] in vistos:
@@ -796,7 +1113,8 @@ def main() -> None:
         "fontes": ([FONTE_EQUIPAMENTOS, FONTE_ACOES, FONTE_TRACOS, FONTE_PROTECOES]
                    + FONTES_ARMAS_MELEE + FONTES_ARMAS_DIST
                    + [c for c, _ in FONTES_HABILIDADES]
-                   + [FONTE_INIMIGOS, FONTE_CRIATURAS_BASE]),
+                   + [FONTE_INIMIGOS, FONTE_CRIATURAS_BASE]
+                   + [FONTE_MAGIAS] + FONTES_VEICULOS),
         "propriedades": propriedades,
         "armas": armas,
         "municoes": municoes,
@@ -804,6 +1122,8 @@ def main() -> None:
         "habilidades": habilidades,
         "tracos": tracos,
         "inimigos": inimigos,
+        "magias": magias,
+        "veiculos": veiculos,
     }
 
     SAIDA.write_text(json.dumps(catalogo, ensure_ascii=False, indent=2) + "\n",
@@ -812,6 +1132,11 @@ def main() -> None:
     print(f"  armas: {len(armas)} · munições: {len(municoes)} · proteções: {len(protecoes)}"
           f" · habilidades: {len(habilidades)} · traços: {len(tracos)}"
           f" · propriedades: {len(propriedades)} · inimigos: {len(inimigos)}")
+    print(f"  magias: {len(magias)} · veículos: {len(veiculos['categorias'])} categorias"
+          f" · {len(veiculos['partes'])} partes"
+          f" · {len(veiculos['equipamentos'])} equipamentos"
+          f" · {len(veiculos['habilidades'])} habilidades"
+          f" · {len(veiculos['tracos'])} traços")
     if AVISOS:
         print(f"  {len(AVISOS)} aviso(s) — ver acima.", file=sys.stderr)
 
