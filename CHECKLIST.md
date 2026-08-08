@@ -17,9 +17,11 @@ DEPOIS
  5. [ ] REGISTRO   usou IA? confira/crie o arquivo em registro-ia/ANO/
  6. [ ] PENDÊNCIAS ficou algo "A DEFINIR"? confira se entrou no PENDENCIAS.md
  7. [ ] ÍNDICE     mexeu em conceito/regra? confira se o INDICE.md foi atualizado
- 8. [ ] COMMIT     frase curta em português do que você fez → Commit to main
- 9. [ ] PUSH       Push origin
-10. [ ] AVISO      no grupo: "terminei X, já subi"
+ 8. [ ] IRMÃO      mudou regra que a plataforma executa? confira a linha de aviso
+                   no backlog (contrato/README.md)
+ 9. [ ] COMMIT     frase curta em português do que você fez → Commit to main
+10. [ ] PUSH       Push origin
+11. [ ] AVISO      no grupo: "terminei X, já subi"
 ```
 
 **Deu erro, conflito ou algo sumiu?** Não tente adivinhar: [conflitos](manuais/06-conflitos.md) ·

@@ -65,6 +65,9 @@ arquivos.
     arquivos do repositório nem considere que remover frontmatter e blocos de bastidor basta
     para publicar. Siga `documentacao/manual-da-plataforma/`, apresente a proposta de redação
     e aguarde confirmação antes de oficializar alterações na plataforma.
+14. **Mudou mecânica que a plataforma executa?** Siga o **checklist de mudança de regra**
+    do `contrato/README.md`; o passo do aviso no backlog da plataforma
+    (`notas-de-design/pendencias-ficha-plataforma.md`) é obrigatório **NO MESMO commit**.
 
 ## Ambiente das IAs — o que você consegue e o que não consegue fazer
 
