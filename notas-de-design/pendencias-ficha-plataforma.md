@@ -4,7 +4,7 @@ tipo: mecanica
 cenario: base
 status: rascunho
 tags: [pendencias, ficha, plataforma, ux, backlog]
-atualizado-em: 2026-08-07
+atualizado-em: 2026-08-08
 ---
 
 # Pendências de ficha e plataforma (UX / produto)
@@ -173,13 +173,17 @@ pendências de **regra** (que ficam em [PENDENCIAS.md](../PENDENCIAS.md)).
       [PENDENCIAS.md](../PENDENCIAS.md), "Minions — tratamento único").
 - [x] **Trilha de fadiga compacta no card da batalha** — **feito na plataforma** (25/07): card
       com fadiga + tooltip da faixa.
-- [ ] **Usos de habilidades na tabela** — **obsoleta**: a revisão de regra de 01/08/2026
-      **removeu os usos de habilidade** (limitada por fadiga na regra alternativa). Manter
-      aberta só se as usos voltarem à regra vigente.
+- [ ] **Mesa debita PA + fadiga ao usar habilidade** (substitui o item obsoleto "Usos de
+      habilidades na tabela" — a regra de 01/08/2026 removeu os usos): proposta detalhada em
+      [2026-08-08-proposta-mesa-debita-pa-fadiga.md](2026-08-08-proposta-mesa-debita-pa-fadiga.md),
+      a validar antes de implementar na plataforma.
 - [ ] **Iniciativa/ordem de turno arrastável** — **adiado (decisão)**: a ordem segue por
       botões cima/baixo + custo de fadiga (decisão da mesa), que é o comportamento intencional.
 - [ ] **Versão front-only "offline" na ficha de playtest** — **mantido como legado**: a ficha
       offline segue sem servidor (GitHub Pages); a plataforma é o destino. Sem prazo.
+      **Atualizada em 08/08/2026 para as regras de 01/08** (fadiga máx = total de PV,
+      penalidade em passo de 10, sem modo de usos de habilidade) — o round-trip do
+      `.mds.json` com a plataforma voltou a valer.
 
 ## 6. Estética / aberto
 
@@ -245,6 +249,19 @@ pendências de **regra** (que ficam em [PENDENCIAS.md](../PENDENCIAS.md)).
       foco inicial); `tabs.tsx` é primitivo morto (0 imports) — candidato a remoção.
 - [ ] **Renomear campanha/batalha na lista** e tirar o nome do personagem do `<details>`
       escondido da `secao-identidade` (hoje é o único lugar onde se renomeia).
+
+## 8. Avisos de mudança vindos da plataforma (direção inversa)
+
+> Espelho do protocolo de mudança de regra do [contrato/README.md](../contrato/README.md):
+> quando a **plataforma** muda um comportamento que quem usa ou testa o sistema precisa
+> conhecer, a decisão de lá ganha uma linha aqui.
+
+- **Decisão 046 da plataforma (07/08/2026)** — compartilhamento de inimigo **por e-mail
+  passou a exigir conta cadastrada**: e-mail sem conta não cria mais convite pendente
+  (o erro avisa na hora quem convida).
+- **Decisão 048 da plataforma (07/08/2026)** — os níveis de visibilidade de inimigo
+  entregam dados distintos ao membro: **TUDO** passou a liberar **queda + redução**;
+  membros **deixaram de ver a redução** em BLOCO/TATICA.
 
 ---
 
