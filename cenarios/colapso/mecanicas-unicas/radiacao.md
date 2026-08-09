@@ -4,7 +4,7 @@ tipo: regra
 cenario: colapso
 status: rascunho
 tags: [colapso, radiacao, radiometro, abrigo, condicoes, mecanica-unica]
-atualizado-em: 2026-07-24
+atualizado-em: 2026-08-09
 ---
 
 # Radiação, ambiente e abrigo
@@ -56,7 +56,7 @@ e a proteção do veículo contra as intempéries:
 | **Desabrigado** | Veículos são danificados pelas intempéries. Ao descansar, recupera **1 PV a menos** e sofre **2 de dano radioativo** em membro aleatório. |
 | **Abrigo improvisado** | Veículos podem ser danificados; pode haver dano radioativo ao descansar (varia com contexto e rolagem do Narrador). |
 | **Meio abrigo** | Veículos protegidos; sem risco de dano radioativo ao descansar. |
-| **Abrigo fechado** | Veículos protegidos; sem risco radioativo. Descansar recupera **+1 PV superficial** num membro à escolha; reparar um veículo recupera **+1 ponto** numa parte à escolha. |
+| **Abrigo fechado** | Veículos protegidos; sem risco radioativo. Descansar recupera **+1 PV de dano curável** num membro à escolha; reparar um veículo recupera **+1 ponto** numa parte à escolha. |
 
 > ⚠️ A DEFINIR (Gabriel): régua fina de exposição por região/clima (quanto dano/quantos testes por
 > tempo em cada área) e tratamento (antídotos, tecnologia pré-Colapso). O material trazia o

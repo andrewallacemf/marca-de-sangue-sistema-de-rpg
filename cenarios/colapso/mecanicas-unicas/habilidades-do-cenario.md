@@ -4,7 +4,7 @@ tipo: regra
 cenario: colapso
 status: rascunho
 tags: [colapso, habilidades, listas, mecanica-unica]
-atualizado-em: 2026-08-01
+atualizado-em: 2026-08-09
 ---
 
 # Habilidades do cenário
@@ -26,10 +26,23 @@ custo de `PA`, requisitos e progressão por nível.
 
 ## Social
 
-- **Bolsa de sangue** `Social` — compra **5 exp.**; **4 PA**. Transfere `PV`: 1 profundo no doador
-  vira 1 superficial no receptor (ou 2 profundos viram 1 profundo). Não deixa nenhum membro abaixo
-  de 1 `PV`; gera fadiga normalmente; não recupera dano permanente. Níveis: doa até **2 / 4 / 6**
-  profundos.
+- **Bolsa de sangue** `Social` — compra **5 exp.**; **4 PA**. Transfere `PV`: 1 de dano curável no
+  doador vira 1 de dano curável recuperado no receptor 🔧. Não deixa nenhum membro abaixo de 1 `PV`;
+  gera fadiga normalmente; não recupera dano permanente. Níveis: doa até **2 / 4 / 6** pontos 🔧.
+
+> 🔧 **A RECALIBRAR (Gabriel) — resíduo do modelo antigo de dano.** Até 04/08/2026 o sistema
+> tinha três faixas: **superficial → profundo → permanente**. A [decisão de
+> 04/08](../../../sistema-base/conflitos/03-saude-e-protecao.md#pontos-de-vida-e-dano) aposentou a
+> faixa intermediária: agora só existem **dano curável** e **dano permanente**. Em 09/08/2026 a
+> nomenclatura foi normalizada em todo o Colapso, mas onde o texto usava *profundo* como **degrau de
+> gravidade** a troca de palavra não basta — o valor precisa ser redefinido, porque a escada que dava
+> sentido ao número não existe mais. Os pontos marcados com 🔧 são esses.
+>
+> A **Bolsa de sangue** é o caso mais afetado: a habilidade inteira era construída sobre a escada
+> (1 profundo do doador virava 1 superficial no receptor — a transfusão *melhorava* a gravidade; e
+> 2 profundos podiam virar 1 profundo). Com uma faixa só, a conversão perdeu o sentido e a
+> habilidade virou uma transferência 1:1 crua. Redefinir a taxa (1:1 mesmo? 2:1? doador sofre a
+> mais?), o que significam os níveis **2 / 4 / 6** e se ela ainda vale os `5 exp.`.
 
 > 📝 Estas duas habilidades **não têm nada de junkpunk** — um estilhaçamento de projétil e uma
 > transfusão de emergência funcionariam em qualquer mesa. São candidatas a subir para as
