@@ -4,7 +4,7 @@ tipo: regra
 cenario: colapso
 status: rascunho
 tags: [colapso, tracos, sucata, radiacao, listas, mecanica-unica]
-atualizado-em: 2026-08-01
+atualizado-em: 2026-08-09
 ---
 
 # Traços do cenário
@@ -49,8 +49,22 @@ Ligados ao clima e à [radiação](radiacao.md) do Colapso.
 > numa revisão futura; por ora ficam aqui, onde foram escritos. Ver
 > [PENDENCIAS.md](../../../PENDENCIAS.md).
 
+> 🔧 **A RECALIBRAR (Gabriel) — resíduo do modelo antigo de dano.** Até 04/08/2026 o sistema
+> tinha três faixas: **superficial → profundo → permanente**. A [decisão de
+> 04/08](../../../sistema-base/conflitos/03-saude-e-protecao.md#pontos-de-vida-e-dano) aposentou a
+> faixa intermediária: agora só existem **dano curável** e **dano permanente**. Em 09/08/2026 a
+> nomenclatura foi normalizada em todo o Colapso, mas onde o texto usava *profundo* como **degrau de
+> gravidade** a troca de palavra não basta — o valor precisa ser redefinido, porque a escada que dava
+> sentido ao número não existe mais. Os pontos marcados com 🔧 são esses.
+>
+> Aqui o 🔧 está na versão Alpha da **Pele de chumbo**, que convertia dano permanente em *profundo*
+> — ou seja, o traço não anulava o dano, só o rebaixava um degrau. Como a versão que prevaleceu é a
+> do material principal, isto só vira problema se a variante Alpha for retomada na revisão: nesse
+> caso, decidir para o que o permanente é rebaixado agora que só há dano curável.
+
 > ⚠️ A DEFINIR (Gabriel): o material Alpha trazia versões divergentes de alguns traços (ex.:
-> **Catador** como "1d10 de vantagem", **Pele de chumbo** convertendo dano permanente em profundo,
+> **Catador** como "1d10 de vantagem", **Pele de chumbo** convertendo dano permanente em
+> profundo 🔧 (termo aposentado — ver a nota acima),
 > **Camelo** a `3 exp.`). Prevaleceu a versão do material principal; conferir na revisão.
 > **Olho de gato** aparecia como traço no material antigo, mas é uma
 > [Mutação Cromática](mutacoes.md#mutações-cromáticas-1d100) — fica lá.

@@ -4,7 +4,7 @@ tipo: regra
 cenario: colapso
 status: rascunho
 tags: [colapso, mutacoes, radiacao, mecanica-unica]
-atualizado-em: 2026-07-29
+atualizado-em: 2026-08-09
 ---
 
 # Mutações
@@ -48,19 +48,19 @@ mutação vizinha (quirk do sorteio original).
 | # | Mutação | Custo de compra |
 |---|---------|-----------------|
 | 1 | Reação em cadeia (sorteia 1 mutação Púrpura) | não comprável |
-| 2 | Olho de gato (enxerga 3 blocos no escuro; **contra:** andar em ambiente claro fica difícil) | 1 dano perm. na cabeça |
+| 2 | Olho de gato (enxerga 3 blocos no escuro; **contra:** desvantagem em [Investigar/Observar](../../../sistema-base/listas/acoes-em-combate.md#investigarobservar) durante o dia) | 1 dano perm. na cabeça |
 | 3 | Músculos de borracha (área de acerto de armas +1 bloco; **contra:** −1 PA no próximo turno se não se moveu no anterior) | — |
 | 4 | Bico (boca vira bico de ave, à escolha do Mestre) | — |
-| 5 | Guelras (respira sob a água por curtos períodos; **contra:** perde o fôlego fácil na superfície) | — |
-| 6 | Focinho (nariz vira focinho de animal, à escolha do Mestre) | — |
-| 7 | Ruminante (vomita e sente impulso de comer de novo; resiste com Teste Mental) | — |
-| 8 | Ouriçase (pelos ficam pontudos com medo/intimidação; incomoda, não machuca) | — |
+| 5 | Guelras (respira sob a água sem precisar de testes por até 1 rodada; **contra:** pela falta de fôlego fora da água, o [teto de deslocamento](../../../sistema-base/conceitos/07-pontos-de-acao.md) em terra cai 1 `PA` por turno) | — |
+| 6 | Focinho (nariz vira focinho de animal, à escolha do narrador) | — |
+| 7 | Ruminante (vomita e sente impulso de comer de novo; resiste com Teste Mental — **cosmética**, sem efeito prático em jogo) | — |
+| 8 | Ouriçase (pelos ficam pontudos com medo/intimidação; incomoda, não machuca — **cosmética**) | — |
 | 9 | Tubaronia (antecipa chuva/tempestade/vento solar; **contra:** 1 dano curável na cabeça 1×/dia) | — |
 | 10 | Pombo-correio (sempre sabe se já passou por um lugar) | — |
-| 11 | Autofagia (sofre 2 de dano curável num membro para recuperar 1 de dano curável em outro; não incapacita o membro usado como custo) | — |
+| 11 | Autofagia (sofre 2 de dano curável em um membro para recuperar 1 de dano curável em outro; a fadiga é aplicada normalmente. Se o uso fosse incapacitar um membro, só consegue realizar a ação passando em um Teste Mental — do contrário, não consegue. Em conflito, custa **5 `PA`**) | — |
 | 12 | Baba de cupim (repara/cola coisas com a saliva; **contra:** desvantagem na trilha social da Atração) | — |
 | 13 | Mimetismo (reproduz vozes/sons; **contra:** perde o controle e repete involuntariamente por horas) | — |
-| 14 | Olhos de águia (vê longe com detalhe; **contra:** dificuldade de perto) | — |
+| 14 | Olhos de águia (vê longe com detalhe; **contra:** desvantagem em [Investigar/Observar](../../../sistema-base/listas/acoes-em-combate.md#investigarobservar) para enxergar algo a 5 m ou menos) | — |
 | 15 | Megafone (voz amplificada; vantagem em intimidar, desvantagem em persuadir) | — |
 | 16 | Tônico capilar (pelos crescem centenas de vezes mais rápido) | — |
 | 17 | Presas (ataque desarmado com a cabeça; **contra:** +1 de dano ao ser atingido na cabeça) | — |
@@ -70,8 +70,8 @@ mutação vizinha (quirk do sorteio original).
 | 21 | Duas vozes (faz duas vozes ao mesmo tempo; a segunda não articula palavras) | — |
 | 22 | Adquire a mutação acima 👆 | — |
 | 23 | Marcha lenta (o corpo demora a engatar; após rolar um Teste durante uma reação, considere o valor rolado −1) | — |
-| 24 | Tomada (emite eletricidade para pequenos dispositivos; **contra:** come o dobro) | — |
-| 25 | Pele frágil (ao acordar, 1 superficial em membro aleatório) | — |
+| 24 | Tomada (emite eletricidade para pequenos dispositivos; **contra:** come o dobro de comida) | — |
+| 25 | Pele frágil (ao acordar, 1 de dano curável em membro aleatório) | — |
 | 26 | Olho de vidro (fica cego de um olho) | — |
 | 27 | Ranho (nariz entupido e escorrendo o tempo todo) | — |
 | 28 | Cálcio fosfórico (dentes/unhas brilham no escuro após luz; estiloso, inútil) | — |
@@ -80,30 +80,30 @@ mutação vizinha (quirk do sorteio original).
 | 31 | Adquire a mutação abaixo 👇 | — |
 | 32 | Surto de adrenalina (ao levar 5+ de dano num turno: +3 PA no próximo turno; **contra:** +5 fadiga ao fim dele) | — |
 | 33 | Translucidez (pele translúcida em ambientes iluminados) | — |
-| 34 | Radioterapia (dano cromático cura 1 superficial/profundo em outro membro; **contra:** +1 na dificuldade de resistir a mutação cromática) | — |
+| 34 | Radioterapia (a cada 2 de dano cromático recebido num mesmo momento, pode curar 1 de dano curável em outro membro; **contra:** +1 na dificuldade de resistir a mutação cromática) | — |
 | 35 | Garras (dano desarmado +1; **contra:** +1 PA e desvantagem em tarefas de finesse) | — |
 | 36 | Adquire a mutação acima 👆 | — |
 | 37 | Adquire a mutação abaixo 👇 | — |
 | 38 | Feromônios (atrai animais do sexo oposto, menos humanos) | — |
-| 39 | Wingsuit (plana ao saltar de altura; **contra:** +1 de dano no tronco) | — |
-| 40 | Constructo (a mão se funde ao que está carregando) | — |
-| 41 | Sangue ralo (toda cura recupera +1 superficial; **contra:** todo dano dá +1 superficial) | — |
-| 42 | Terceiro braço (membros p/ desmaiar viram 3; usar exige Teste Mental — após rolá-lo, considere o valor rolado −1) | não comprável |
-| 43 | Terceira perna (membros p/ desmaiar viram 3; correr/saltar exige Teste Ágil — após rolá-lo, considere o valor rolado −1) | não comprável |
-| 44 | Segunda cabeça (não desmaia/morre com uma cabeça perdida; **contra:** −2 PA permanentes) | não comprável |
-| 45 | Gêmeo parasita (não desmaia/morre com um tronco perdido; **contra:** desvantagem ao defender o tronco) | não comprável |
-| 46 | Estômago de aço (come carne mutante sem risco; **contra:** comida comum dá 1 superficial no tronco) | — |
+| 39 | Wingsuit (plana ao saltar de altura; **contra:** recebe 1 de dano permanente no tronco ao adquirir a mutação) | — |
+| 40 | Constructo (a mão se funde temporariamente ao que está carregando; a cada 15 minutos de jogo pode fazer um Teste Ágil para soltar) | — |
+| 41 | Sangue ralo (toda cura recupera +1 de dano curável; **contra:** todo dano dá +1 de dano curável) | — |
+| 42 | Terceiro braço (ganha um **braço a mais de verdade**: barra de vida própria de 10 `PV` e número próprio na rolagem de localização do [ataque descuidado](../../../sistema-base/conflitos/02-acoes-em-conflito.md#ataque-descuidado) 🔧; passa a precisar de 3 membros perdidos para desmaiar; usar exige Teste Mental — após rolá-lo, considere o valor rolado −1) | não comprável |
+| 43 | Terceira perna (ganha uma **perna a mais de verdade**: barra de vida própria de 10 `PV` e número próprio na rolagem de localização do [ataque descuidado](../../../sistema-base/conflitos/02-acoes-em-conflito.md#ataque-descuidado) 🔧; passa a precisar de 3 membros perdidos para desmaiar; correr/saltar exige Teste Ágil — após rolá-lo, considere o valor rolado −1) | não comprável |
+| 44 | Segunda cabeça (ganha uma **cabeça a mais de verdade**: barra de vida própria de 10 `PV` e número próprio na rolagem de localização do [ataque descuidado](../../../sistema-base/conflitos/02-acoes-em-conflito.md#ataque-descuidado) 🔧; não desmaia nem morre ao perder uma das cabeças; **contra:** −2 `PA` permanentes) | não comprável |
+| 45 | Gêmeo parasita (ganha um **tronco a mais de verdade**: barra de vida própria de 10 `PV` e número próprio na rolagem de localização do [ataque descuidado](../../../sistema-base/conflitos/02-acoes-em-conflito.md#ataque-descuidado) 🔧; não desmaia nem morre ao perder um dos troncos; **contra:** desvantagem ao defender o tronco) | não comprável |
+| 46 | Estômago de aço (come carne mutante sem risco; **contra:** comida comum dá 1 de dano curável no tronco) | — |
 | 47 | Domador (vantagem para lidar com animais mutantes) | — |
-| 48 | Pele espelhada (desvantagem a quem ataca de perto; **contra:** desvantagem a quem ataca de longe ⚠️ ver nota abaixo) | 1 dano perm. no tronco |
-| 49 | Boneca de porcelana (vantagem contra cortante; desvantagem contra contundente) | 1 dano perm. no tronco |
-| 50 | Pele de seda (vantagem contra perfurante; desvantagem contra cortante) | 1 dano perm. no tronco |
+| 48 | Pele espelhada (vantagem para esquivar de ataques corpo a corpo; **contra:** desvantagem para esquivar de ataques a distância — projétil ou arremesso) | 1 dano perm. no tronco |
+| 49 | Boneca de porcelana (vantagem para resistir a ataques cortantes; desvantagem para resistir a ataques contundentes) | 1 dano perm. no tronco |
+| 50 | Pele de seda (vantagem para resistir a ataques perfurantes; desvantagem para resistir a ataques cortantes) | 1 dano perm. no tronco |
 | 51 | Saco de pancada (vantagem contra contundente; desvantagem contra perfurante) | 1 dano perm. no tronco |
 | 52 | Lixo tóxico (golpe desarmado dá +1 dano radioativo; **contra:** +1 na dificuldade de resistir à radiação) | 1 dano perm. num braço |
-| 53 | Metabolismo lento (come menos; **contra:** cura passiva de superficial pela metade) | — |
+| 53 | Metabolismo lento (come menos; **contra:** cura passiva de dano curável pela metade) | — |
 | 54 | Cola viva (vantagem para segurar/agarrar; **contra:** após rolar um Teste Ágil, considere o valor rolado −1) | — |
 | 55 | Calvície (perde todos os pelos) | — |
 | 56 | Silicone (seios crescem, independentemente do sexo) | — |
-| 57 | Sussurro psíquico (telepatia curta a até 5 m com mutantes; **contra:** 1 superficial na cabeça por uso) | 1 dano perm. na cabeça |
+| 57 | Sussurro psíquico (telepatia curta a até 5 m com mutantes; **contra:** 1 de dano curável na cabeça por uso) | 1 dano perm. na cabeça |
 | 58 | Adquire a mutação acima 👆 | — |
 | 59 | Adquire a mutação abaixo 👇 | — |
 | 60 | Cauda (cauda de animal, à escolha do Mestre) | — |
@@ -126,7 +126,7 @@ mutação vizinha (quirk do sorteio original).
 | 77 | Pálpebra dupla (abre os olhos sob a água ou na tempestade de areia) | — |
 | 78 | Adquire a mutação acima 👆 | — |
 | 79 | Adquire a mutação abaixo 👇 | — |
-| 80 | Porco-espinho (2 dano perm. num membro; golpe desarmado com ele dá +2 superficial) | — |
+| 80 | Porco-espinho (2 dano perm. num membro; golpe desarmado com ele dá +2 de dano curável) | — |
 | 81 | Pele de rã (manchas coloridas sem efeito prático) | — |
 | 82 | Adquire a mutação acima 👆 | — |
 | 83 | Adquire a mutação abaixo 👇 | — |
@@ -166,11 +166,23 @@ Só revezes severos.
 | 10 | Torpor (os reflexos morrem; realiza todos os testes de **[Reação](../../../sistema-base/conflitos/02-acoes-em-conflito.md#reação)** com desvantagem) |
 | 11–12 | *(em branco no material original)* |
 
-> ⚠️ A DEFINIR (Gabriel): completar Púrpuras 11–12; decidir como a mutação entra na
-> [ficha](../../../ficha/README.md) (traço automático) e revisar as mutações "não comprável" que
-> alteram contagem de membros para desmaio.
+> ⚠️ A DEFINIR (Gabriel): completar Púrpuras 11–12 e decidir como a mutação entra na
+> [ficha](../../../ficha/README.md) (traço automático).
 
-> ⚠️ A DEFINIR (Gabriel): **#48 Pele espelhada — o revés não é revés.** O texto penaliza o
-> atacante nos **dois** lados ("desvantagem a quem ataca de perto; **contra:** desvantagem a quem
-> ataca de longe"), então a mutação é benefício puro e o revés **continua indefinido**. Sugestão a
-> validar: quem ataca de longe teria **vantagem** (a pele reflete a luz e denuncia a posição).
+> 🔧 **A DEFINIR (Gabriel): o dado do ataque descuidado não cobre 7 membros.** As mutações **#42
+> Terceiro braço, #43 Terceira perna, #44 Segunda cabeça e #45 Gêmeo parasita** passaram a conceder
+> um **membro de verdade** (10 `PV` próprios e número próprio na localização do golpe). Só que o
+> [ataque descuidado](../../../sistema-base/conflitos/02-acoes-em-conflito.md#ataque-descuidado)
+> localiza o acerto com **`1d6`**, um número para cada um dos seis membros padrão — com um sétimo
+> membro o dado não fecha. Decidir a solução: trocar por `1d8` rerrolando 7–8 que não existam, usar
+> `1d6` e um dado de desempate, ou o membro extra herdar o número do membro gêmeo (ex.: o terceiro
+> braço divide o número com um dos braços, e um segundo dado decide qual dos dois). Vale também
+> para a fadiga máxima e a vida total, que somam a vida máxima de todos os membros.
+
+> ✅ **Resolvido em 09/08/2026 — nomenclatura de dano.** As faixas *superficial → profundo* foram
+> aposentadas em 04/08 (ver [saúde e proteção](../../../sistema-base/conflitos/03-saude-e-protecao.md#pontos-de-vida-e-dano));
+> esta tabela foi normalizada para **dano curável**. A **#34 Radioterapia**, que usava *profundo*
+> como degrau de gravidade, foi recalibrada: cura 1 de dano curável a cada 2 de dano cromático
+> recebido num mesmo momento. Os 🔧 restantes do Colapso estão em
+> [habilidades do cenário](habilidades-do-cenario.md) (Bolsa de sangue) e em
+> [traços do cenário](tracos-do-cenario.md) (Pele de chumbo, versão Alpha).

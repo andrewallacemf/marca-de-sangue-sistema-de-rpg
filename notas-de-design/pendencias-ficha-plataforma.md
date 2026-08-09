@@ -120,6 +120,22 @@ pendências de **regra** (que ficam em [PENDENCIAS.md](../PENDENCIAS.md)).
       sozinho; cópias locais (ex.: `Marca-de-Sangue-Ficha.html`) precisam ser trocadas —
       **operacional, sem código**: substituir as cópias locais pela versão publicada.
 
+- [ ] **⚠️ AVISO DE MUDANÇA DE REGRA (09/08/2026) — o modelo de 6 membros deixou de ser universal.**
+      As mutações **#42 Terceiro braço, #43 Terceira perna, #44 Segunda cabeça e #45 Gêmeo parasita**
+      do [Colapso](../cenarios/colapso/mecanicas-unicas/mutacoes.md) passaram a conceder um **membro
+      adicional de verdade**, com barra de vida própria de 10 `PV` e número próprio na localização do
+      [ataque descuidado](../sistema-base/conflitos/02-acoes-em-conflito.md#ataque-descuidado).
+      Isso colide com três premissas do produto: o **schema de saúde com seis membros fixos**, a
+      **fadiga máxima** (soma da vida máxima dos membros) e a **rolagem `1d6`** de localização.
+      **Ainda não exige implementação** — o cenário está em `rascunho` e a solução do dado está em
+      aberto (ver [PENDENCIAS.md](../PENDENCIAS.md)) —, mas o schema precisa saber que o número de
+      membros vai virar variável antes de o Colapso entrar na plataforma. Decidir junto com a equipe
+      de lá se o schema já nasce com membros dinâmicos ou se o Colapso fica fora até a v3 da saúde.
+- [ ] **Nomenclatura de dano no Colapso normalizada (09/08/2026)** — o cenário ainda usava
+      *superficial*/*profundo*; foi todo convertido para **dano curável**, alinhando com a decisão de
+      04/08. Nada a implementar; registrado para quem for importar o conteúdo do Colapso não estranhar
+      o diff.
+
 ## 4. Apoio de regras dentro do produto
 
 - [x] **⭐ Tutorial de uso da ficha** (pedido do Daniel, 19/07) — **feito (19/07):** (a) botão
