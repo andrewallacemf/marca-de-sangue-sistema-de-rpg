@@ -173,10 +173,14 @@ pendências de **regra** (que ficam em [PENDENCIAS.md](../PENDENCIAS.md)).
       [PENDENCIAS.md](../PENDENCIAS.md), "Minions — tratamento único").
 - [x] **Trilha de fadiga compacta no card da batalha** — **feito na plataforma** (25/07): card
       com fadiga + tooltip da faixa.
-- [ ] **Mesa debita PA + fadiga ao usar habilidade** (substitui o item obsoleto "Usos de
-      habilidades na tabela" — a regra de 01/08/2026 removeu os usos): proposta detalhada em
-      [2026-08-08-proposta-mesa-debita-pa-fadiga.md](2026-08-08-proposta-mesa-debita-pa-fadiga.md),
-      a validar antes de implementar na plataforma.
+- [x] **Mesa debita PA + fadiga ao usar habilidade** (substitui o item obsoleto "Usos de
+      habilidades na tabela" — a regra de 01/08/2026 removeu os usos) — **feito na
+      plataforma (08/08/2026, decisão 052 de lá, Fases A–D)**: botão "Usar" no card do
+      narrador com custo declarado, débito condicional no servidor (o `WHERE` decide o
+      saldo, padrão das decisões 025–028) e fim da sincronização de usos mesa↔ficha.
+      Proposta em [2026-08-08-proposta-mesa-debita-pa-fadiga.md](2026-08-08-proposta-mesa-debita-pa-fadiga.md)
+      (`fase-D-concluida`). ⚠️ A relação 1:1 PA/fadiga segue aberta no grupo — se mudar,
+      a engine de lá acompanha pelo checklist de mudança de regra do `contrato/README.md`.
 - [ ] **Iniciativa/ordem de turno arrastável** — **adiado (decisão)**: a ordem segue por
       botões cima/baixo + custo de fadiga (decisão da mesa), que é o comportamento intencional.
 - [ ] **Versão front-only "offline" na ficha de playtest** — **mantido como legado**: a ficha
@@ -262,6 +266,10 @@ pendências de **regra** (que ficam em [PENDENCIAS.md](../PENDENCIAS.md)).
 - **Decisão 048 da plataforma (07/08/2026)** — os níveis de visibilidade de inimigo
   entregam dados distintos ao membro: **TUDO** passou a liberar **queda + redução**;
   membros **deixaram de ver a redução** em BLOCO/TATICA.
+- **Decisão 052 da plataforma (08/08/2026)** — a mesa agora debita **PA + fadiga
+  automaticamente ao usar habilidade** (botão "Usar" no card do narrador; sem saldo
+  bloqueia). O modelo de "usos" deixou de existir também na mesa: a sincronização de
+  usos mesa↔ficha foi removida (o round-trip com perda não existe mais).
 
 ---
 

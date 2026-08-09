@@ -2,7 +2,7 @@
 titulo: Proposta — Mesa debita PA + fadiga ao usar habilidade (fim do modelo de usos na mesa)
 tipo: design
 cenario: base
-status: proposta
+status: fase-D-concluida
 tags: [plataforma, mesa, batalha, habilidades, fadiga, pa]
 atualizado-em: 2026-08-08
 ---
@@ -11,8 +11,11 @@ atualizado-em: 2026-08-08
 
 > Proposta estruturada em 08/08/2026, no formato da
 > [proposta de Recursos do Narrador](2026-08-07-proposta-recursos-do-narrador.md).
-> **Nada aqui está implementado** — e há um bloqueio de regra declarado na seção 4:
-> a relação 1:1 entre `PA` e fadiga ainda não foi validada em mesa.
+> **Implementada na plataforma no mesmo dia** (Fases A–D, commit `6d69632`,
+> decisão 052 de lá). A relação 1:1 entre `PA` e fadiga (bloqueio declarado na
+> seção 4) segue aberta no grupo — a implementação assume o 1:1 e a fórmula do
+> débito muda junto se o número mudar. Desvios da implementação em relação ao
+> texto original estão anotados na seção 5.
 
 ## 1. Problema
 
@@ -121,8 +124,12 @@ que a regra manda cobrar.
 
 ## 4. A validar com o grupo/Daniel — bloqueio de regra
 
-> ⚠️ **Esta proposta NÃO deve ser implementada antes da validação em mesa da relação
-> 1:1 entre `PA` e fadiga.**
+> ⚠️ ~~**Esta proposta NÃO deve ser implementada antes da validação em mesa da
+> relação 1:1 entre `PA` e fadiga.**~~ **Atualização (08/08/2026):** o André
+> autorizou a implementação com o 1:1 vigente — Fases A–D implementadas na
+> plataforma (decisão 052 de lá). A validação abaixo segue valendo: se o grupo
+> mudar a relação, a fórmula do débito muda junto (checklist de mudança de
+> regra do `contrato/README.md`).
 
 - A relação 1:1 está explicitamente marcada para validação no
   [PENDENCIAS.md](../PENDENCIAS.md) (seção "Criadas pela reestruturação de 01/08/2026",
@@ -144,13 +151,16 @@ que a regra manda cobrar.
 
 ## 5. Decisões do André × a validar
 
+Resolvidas na implementação de 08/08/2026 (commit `6d69632`, decisão 052 da
+plataforma), exceto a 5:
+
 | # | Pergunta | Tipo | Status |
 |---|---|---|---|
-| 1 | O botão "Usar" aparece também na visão do jogador (que já edita o próprio estado) ou só para o narrador? | Produto (André) | Em aberto |
-| 2 | Sem saldo: **bloquear** o uso (como o `PA` do ataque, decisão 025) ou **avisar e deixar passar** (como munição, decisão 028)? Sugestão: bloquear — é gasto de recurso próprio, o mesmo caso do ataque | Produto (André) | Em aberto |
-| 3 | O uso de habilidade vira cartão próprio no log da batalha ou linha discreta? | Produto (André) | Em aberto |
-| 4 | Ordem canônica `PA` × fadiga dentro da transação (a fadiga deste uso muda o limite deste turno?) | Regra (grupo) | Em aberto — fechar na fase B |
-| 5 | Relação 1:1 `PA`/fadiga | Regra (grupo/Daniel, **bloqueia tudo**) | Aguardando playtest — ver seção 4 |
+| 1 | O botão "Usar" aparece também na visão do jogador (que já edita o próprio estado) ou só para o narrador? | Produto (André) | **Resolvido: só o narrador** — botão escondido do jogador; a mutation passa por `assertCombatenteEditavel`. |
+| 2 | Sem saldo: **bloquear** o uso (como o `PA` do ataque, decisão 025) ou **avisar e deixar passar** (como munição, decisão 028)? Sugestão: bloquear — é gasto de recurso próprio, o mesmo caso do ataque | Produto (André) | **Resolvido: bloqueia** (BAD_REQUEST), como o ataque. |
+| 3 | O uso de habilidade vira cartão próprio no log da batalha ou linha discreta? | Produto (André) | **Resolvido: nenhum cartão** — o efeito é a mudança de estado no card/ficha. Desvio da fase B original, registrado na decisão 052. |
+| 4 | Ordem canônica `PA` × fadiga dentro da transação (a fadiga deste uso muda o limite deste turno?) | Regra (grupo) | **Resolvido na implementação**: o limite de `PA` do turno é calculado com a fadiga PRÉVIA; ordem de débito `PA` → fadiga, sob advisory lock. |
+| 5 | Relação 1:1 `PA`/fadiga | Regra (grupo/Daniel, **bloqueava tudo**) | **Em aberto** — ver seção 4; a implementação assume o 1:1. |
 
 ## 6. O que NÃO muda
 
@@ -169,28 +179,14 @@ que a regra manda cobrar.
 
 ## Prompt de continuidade
 
-Para retomar este trabalho em uma sessão futura:
+Para retomar este trabalho em uma sessão futura (a implementação terminou; o
+que pode voltar é a VALIDAÇÃO da relação 1:1 — seção 4):
 
 ```
-Trabalhe na plataforma (pasta irmã plataforma-rpg-marca-de-sangue). Leia antes:
-- notas-de-design/2026-08-08-proposta-mesa-debita-pa-fadiga.md (este arquivo, repo do sistema)
-- docs/DECISIONS.md da plataforma, decisões 021 e 025–028
-- PENDENCIAS.md do repo do sistema, seção "Criadas pela reestruturação de 01/08/2026"
-  (itens "Relação 1:1 entre PA e fadiga" e "A fadiga ficou MENOS punitiva")
-
-PRÉ-CONDIÇÃO: confirme com o André se a relação 1:1 PA/fadiga foi validada em mesa.
-- Se NÃO foi validada: não implemente nada; no máximo refine a proposta.
-- Se foi validada COM mudança (custos próprios de fadiga): atualize a fase B desta
-  proposta antes de codar (a fórmula do débito muda junto).
-- Se foi validada mantendo o 1:1: implemente a fase A (botão "usar habilidade" no card
-  da mesa com custo PA + fadiga via custoPAEfetivo/custoFadigaEfetivo), depois a fase B
-  (mutation batalha.usarHabilidade com débito condicional no servidor — WHERE decide o
-  saldo, mesma transação, padrão das decisões 025–028), depois C (remoção da
-  sincronização de usos em estado-combate.ts e routers/batalha.ts, com migração do Json
-  combatente.habilidades das cenas existentes) e D (limpeza dos vestígios; as colunas
-  usosPorNivel/usosGastosPorNivel FICAM como importação histórica — decisão 021).
-Cada fase fecha com os critérios de pronto da proposta, testes (cobertura 100%
-obrigatória) e entrada nova no DECISIONS.md da plataforma. Ao terminar, atualize o
-status no frontmatter deste arquivo (proposta → fase-X-concluida) e resolva as
-perguntas em aberto da seção 5 com o André.
+As Fases A–D foram implementadas na plataforma em 08/08/2026 (commit 6d69632,
+decisão 052 de lá). O único ponto vivo é a relação 1:1 PA/fadiga (pergunta 5):
+se o playtest mudar o número, atualize a fórmula do débito em
+src/lib/pa-mesa.ts (debitaFadiga) e a validação de custo em
+batalha.usarHabilidade, pelo checklist de mudança de regra do
+contrato/README.md — e registre adendo na decisão 052 da plataforma.
 ```
