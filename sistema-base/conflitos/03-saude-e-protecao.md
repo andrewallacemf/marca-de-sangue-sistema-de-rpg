@@ -4,7 +4,7 @@ tipo: regra
 cenario: base
 status: estavel
 tags: [saude, dano, cura, defesa, vida]
-atualizado-em: 2026-08-04
+atualizado-em: 2026-08-09
 ---
 
 # Saúde e Proteção
@@ -118,9 +118,10 @@ máxima deve ser marcada de forma permanente, indicando que aquele espaço deixo
 Cura recupera somente **dano curável**. Ela nunca remove dano permanente nem a fadiga que o dano
 gerou.
 
-Durante um [descanso longo](../conceitos/09-descanso.md#descanso-longo), o personagem recupera
-**`1d6` pontos de dano curável**. Os pontos podem ser aplicados a um membro ferido, sem ultrapassar
-a vida máxima atual dele.
+Durante um [descanso](../conceitos/09-descanso.md), o personagem faz uma rolagem de cura:
+`1d4` no descanso curto e `1d6` no descanso longo. O resultado forma um total de pontos que o
+jogador distribui livremente entre um ou mais membros com dano curável. A distribuição não pode
+remover dano permanente nem recuperar mais dano do que cada membro possui.
 
 ### Cura improvisada
 

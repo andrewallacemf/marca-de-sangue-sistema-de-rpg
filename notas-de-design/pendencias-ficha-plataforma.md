@@ -106,6 +106,15 @@ pendências de **regra** (que ficam em [PENDENCIAS.md](../PENDENCIAS.md)).
       — **feito na plataforma (07/08, decisão 031)**: diálogo com os dois tipos; o dado do
       curto ficou **1d4** (decisão do André, registrada no 09-descanso.md); longo 1d6 (1d8
       com o traço Dorminhoco); rolagem com as faces do tipo ou valor manual + membro.
+- [ ] **Distribuir a cura do descanso entre vários membros** — correção aprovada em 09/08.
+      A rolagem produz um total que o jogador divide livremente entre os membros; o diálogo
+      atual aplica o valor inteiro a um único membro. Ajustar a UI para alocação múltipla,
+      impedir que a soma ultrapasse o resultado e preservar dano permanente. Origem:
+      [decisão de distribuição da cura](decisoes/2026-08-09-distribuicao-cura-descanso.md).
+- [ ] **Condições e efeitos temporários na plataforma** — projetar somente depois de fechar a
+      regra geral no `PENDENCIAS.md`. A estrutura deve representar origem, efeito, duração e
+      gatilho de encerramento (incluindo descanso curto/longo). Não zerar automaticamente o
+      campo genérico “Outros” de `PA`: ele também contém ajustes sem duração conhecida.
 - [ ] **Falta de tratamento e tratamento improvisado** — automatizar "1 profundo vira
       permanente por descanso sem tratamento" e a rolagem de tratamento (1d10 vs contrateste)
       exigiria separar *profundo* de *superficial* dentro do curável (possível **v3** do modelo

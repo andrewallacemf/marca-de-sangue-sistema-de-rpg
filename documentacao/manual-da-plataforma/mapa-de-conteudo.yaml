@@ -249,7 +249,8 @@ paginas:
       - jogador.recursos.habilidades
     observacoes_internas:
       - A proposta aprovada está em propostas/2026-08-04-saude-e-protecao.md.
-      - A ação de descanso da ficha ainda deve ser reconciliada com descanso curto e longo no próximo lote.
+      - A curadoria de descanso está em propostas/2026-08-09-descanso-e-recuperacao.md.
+      - A ficha distingue os dois descansos, mas ainda aplica toda a cura a um único membro; a correção está no backlog da plataforma.
     secoes:
       - id: jogador.saude-e-recuperacao.corpo
         ancora: corpo-e-pontos-de-vida
@@ -283,6 +284,22 @@ paginas:
           - sistema-base/listas/acoes-em-combate.md
         depende_de:
           - jogador.saude-e-recuperacao.dano
+      - id: jogador.saude-e-recuperacao.descanso
+        ancora: descanso-e-recuperacao
+        fontes:
+          - sistema-base/conceitos/09-descanso.md
+          - sistema-base/conflitos/03-saude-e-protecao.md
+          - sistema-base/listas/tracos-base.md
+        depende_de:
+          - jogador.saude-e-recuperacao.cura
+          - jogador.regras-basicas.aptidoes
+          - jogador.regras-basicas.fadiga
+      - id: jogador.saude-e-recuperacao.distribuicao
+        ancora: distribuindo-a-cura
+        fontes:
+          - sistema-base/conceitos/09-descanso.md
+        depende_de:
+          - jogador.saude-e-recuperacao.descanso
       - id: jogador.saude-e-recuperacao.fadiga
         ancora: dano-e-fadiga
         fontes:

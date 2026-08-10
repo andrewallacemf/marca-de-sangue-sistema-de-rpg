@@ -4,7 +4,7 @@ tipo: regra
 cenario: base
 status: revisao
 tags: [tracos, tecnicas, maestrias, aspectos, requisitos]
-atualizado-em: 2026-07-11
+atualizado-em: 2026-08-09
 ---
 
 # Traços
@@ -13,7 +13,7 @@ Traços são características passivas e não consumíveis que podem ter efeito 
 
 Tanto dentro quanto fora de batalha, basta observar os efeitos do traço e aplicá-los durante as situações propícias. **Os efeitos dos traços não são consumíveis e, portanto, não necessitam de recuperação.**
 
-Note que os traços também diferem das [aptidões](04-aptidoes.md). Traços se aplicam sempre que for cabível (de forma passiva), enquanto as aptidões são consumidas a cada uso (de forma ativa): pode-se usar quantas estiverem disponíveis e a recuperação acontece em um descanso longo.
+Note que os traços também diferem das [aptidões](04-aptidoes.md). Traços se aplicam sempre que for cabível (de forma passiva), enquanto as aptidões são consumidas a cada uso (de forma ativa): pode-se usar quantas estiverem disponíveis. Um [descanso curto](09-descanso.md#descanso-curto) recupera 1 aptidão de cada atributo; um [descanso longo](09-descanso.md#descanso-longo) recupera todas.
 
 **Traços não possuem níveis** e o mesmo traço não pode ser adquirido mais de uma vez. Níveis são característica das [habilidades](05-habilidades.md). A progressão entre traços acontece por **requisitos**: um traço mais avançado pode exigir a posse de outro traço (como uma técnica). "Traços encadeados" não são níveis — são apenas traços ligados por requisito, e o requisito determina se o traço está **ativo**, não impede a compra (veja abaixo).
 

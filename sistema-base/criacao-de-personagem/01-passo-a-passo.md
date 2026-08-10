@@ -4,7 +4,7 @@ tipo: regra
 cenario: base
 status: revisao
 tags: [criacao, personagem, ficha, passo-a-passo]
-atualizado-em: 2026-07-17
+atualizado-em: 2026-08-09
 ---
 
 # Criando um personagem (passo a passo)
@@ -68,7 +68,7 @@ Os traços podem ser comprados nas listas de traços na seção “Recursos bás
 
 ### 3.2 Compre Habilidades
 
-Em seguida, compre habilidades. Habilidades são características acionáveis e consumíveis que garantem grandes vantagens ou possibilitam realizar ações incomuns. Habilidades recuperam seus usos a cada descanso longo.
+Em seguida, compre habilidades. Habilidades são características acionáveis que garantem grandes vantagens ou possibilitam realizar ações incomuns. Elas não possuem usos: cada ativação consome `PA` e fadiga conforme a regra da própria habilidade.
 
 Atente-se ao valor de experiência necessário para comprar cada habilidade, para obtê-la em um nível maior, é necessário gastar o mesmo valor de compra repetidas vezes, até alcançar o nível pretendido.
 
@@ -79,7 +79,7 @@ Atente-se ao valor de experiência necessário para comprar cada habilidade, par
 
 Por último, compre aptidões. Aptidões representam rerrolagens que você pode consumir em ações de determinado atributo — ao gastar uma aptidão, você rerrola o dado do teste ou do contrateste depois de saber o resultado —, sendo a forma mais versátil de aumentar suas chances de obter sucesso em praticamente qualquer tarefa.
 
-Atente-se ao atributo de cada habilidade e traço que comprou e adquira aptidões destes atributos, pois podem ser consumidas em conjunto com habilidades ou traços para potencializá-los. Aptidões recuperam seus usos a cada descanso longo.
+Atente-se ao atributo de cada habilidade e traço que comprou e adquira aptidões destes atributos, pois podem ser consumidas em conjunto com habilidades ou traços para potencializá-los. Um descanso curto recupera 1 aptidão de cada atributo; um descanso longo recupera todas as aptidões gastas.
 
 ## 4. Compre equipamentos
 

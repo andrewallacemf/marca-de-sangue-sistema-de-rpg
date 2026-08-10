@@ -42,6 +42,8 @@ Leia estes documentos na ordem:
   — oficialização do modelo de habilidades por nível e fadiga.
 - [Saúde e proteção](propostas/2026-08-04-saude-e-protecao.md) — simplificação dos
   tipos de dano, estados dos membros, cura, defesa e sobreposição de proteções.
+- [Descanso e recuperação](propostas/2026-08-09-descanso-e-recuperacao.md) — diferenças entre
+  descanso curto e longo, recursos recuperados e distribuição da cura entre membros.
 
 ## Regra para IAs
 
