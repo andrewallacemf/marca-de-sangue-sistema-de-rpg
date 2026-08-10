@@ -46,6 +46,8 @@ Leia estes documentos na ordem:
   descanso curto e longo, recursos recuperados e distribuição da cura entre membros.
 - [Experiência e progressão](propostas/2026-08-09-experiencia-e-progressao.md) — separação entre
   gastos do jogador, recompensas do narrador e custos oficiais de evolução.
+- [Criação de personagem](propostas/2026-08-10-criacao-de-personagem.md) — fluxo online principal,
+  fichas imprimíveis alternativas, valores iniciais e revisão final.
 
 ## Regra para IAs
 

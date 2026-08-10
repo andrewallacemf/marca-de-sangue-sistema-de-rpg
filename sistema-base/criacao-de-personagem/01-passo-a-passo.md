@@ -1,98 +1,92 @@
-﻿---
+---
 titulo: Criando um personagem (passo a passo)
 tipo: regra
 cenario: base
 status: revisao
 tags: [criacao, personagem, ficha, passo-a-passo]
-atualizado-em: 2026-08-09
+atualizado-em: 2026-08-10
 ---
 
 # Criando um personagem (passo a passo)
 
-## 1. Reúna seus materiais
+## 1. Defina o conceito
 
-A primeira coisa a se fazer para montar seu personagem é baixar os recursos para anotar as informações do seu personagem. Podendo ser:
+Comece com uma ideia curta sobre quem é a personagem e como você pretende interpretá-la. Pense em sua motivação, em seu papel no grupo e no tipo de atividade em que ela deve se destacar. Se a mesa já escolheu um cenário ou campanha, use esse contexto para orientar o conceito.
 
-- Ficha de informações base (ou ficha específica do cenário), baixe em [Fichas base](02-fichas.md).
-- Ficha de habilidades e traços, baixe em [Fichas base](02-fichas.md).
-- Opcional: Fichas complementares do cenário, encontre a seção “recursos do cenário” dentro do manual específico. Exemplos são:
-    - “recursos do cenário” do Mukashi (Cenário oriental medieval) `em breve`
-    - “recursos do cenário” do Colapso (Cenário pós apocalíptico Junkpunk) `em breve`
+O conceito ajuda a escolher características e equipamentos, mas não cria restrições mecânicas por si só.
 
-## 2. Preencha a ficha base
+## 2. Prepare a ficha
 
-Preencha os principais campos da ficha base com as informações do seu personagem.
+A forma principal de criar e manter uma personagem é pela plataforma do Marca de Sangue. Ao iniciar uma ficha, informe:
 
-### 2.1 Informações
+- **nome da personagem**, obrigatório;
+- se ela é uma personagem do jogador ou do narrador;
+- cenário e campanha, quando existirem;
+- uma imagem, opcional.
 
-Utilize os campos indicados para preencher o nome do seu personagem, o cenário do jogo e identificar o dono da ficha com o seu nome. Anote também sua **mão hábil** (direita ou esquerda) — ataques com a mão inábil sofrem penalidade (ver [Ações em conflito](../conflitos/02-acoes-em-conflito.md)).
+Quem preferir jogar com fichas impressas pode usar a [ficha completa](../../assets/fichas/ficha-completa-v1-0.pdf) ou combinar a [ficha de informações base](../../assets/fichas/ficha-de-informacoes-base-v1-0.pdf) com a [ficha de habilidades e traços](../../assets/fichas/ficha-de-habilidades-e-tracos-v1-0.pdf). Um cenário pode oferecer fichas complementares próprias.
 
-### 2.2 Anote seus valores de partida
+## 3. Anote os valores iniciais
 
-- **Pontos de ação (`PA`):** todo personagem começa com **`10 PA`** por turno (ver [Pontos de ação](../conceitos/07-pontos-de-acao.md)).
-- **Pontos de vida (`PV`):** todo personagem tem **`60 PV`** no total — **`10` em cada membro** (cabeça, tronco, braço direito, braço esquerdo, perna direita, perna esquerda) (ver [Saúde e Proteção](../conflitos/03-saude-e-protecao.md)).
+Uma personagem padrão de início de campanha começa com:
 
-### 2.3 Anote seus pontos de experiência iniciais
+- **10 pontos de ação (`PA`)** por turno;
+- **10 pontos de vida (`PV`) em cada membro**: cabeça, tronco, braço direito, braço esquerdo, perna direita e perna esquerda, somando 60 `PV`;
+- **15 pontos de experiência (`exp.`)** totais e nenhuma experiência usada.
 
-Utilize o campo “Experiência base - Total/usada” para anotar os pontos de experiência total do seu personagem e os pontos já utilizados na compra de características, respectivamente.
+Anote também a mão hábil da personagem, direita ou esquerda. Ataques com a mão inábil sofrem a penalidade descrita em [Ações em conflito](../conflitos/02-acoes-em-conflito.md).
 
-Abaixo dos contadores de experiência, você pode usar os contadores de características para manter o controle sobre a quantidade total de aptidões, habilidades, traços e outras características compradas.
+O cenário ou o narrador pode definir valores iniciais diferentes para acompanhar a proposta da campanha.
 
-**Montando personagens de início de campanha**
+## 4. Escolha um arquétipo, se quiser
 
-Um personagem em início de campanha começa com `15 pontos de experiência` para comprar características. O cenário de jogo pode acrescentar ou retirar pontos de experiência para personagens iniciais, bem como implementar outros tipos de experiência.
+Um [arquétipo](../arquetipos/00-como-funcionam.md) é um caminho de construção sugerido. Ele indica atributos e características que combinam com um estilo de jogo, mas não é obrigatório, não concede características gratuitamente e não impede escolhas fora do caminho.
 
-**Evoluindo o personagem**
+Você pode seguir um [arquétipo genérico](../arquetipos/01-arquetipos-genericos.md), usar um arquétipo oferecido pelo cenário, misturar referências ou montar a personagem sem arquétipo.
 
-No início ou final de cada sessão, durante um descanso longo ou em outro momento autorizado pelo narrador, você pode gastar seus pontos de experiência para comprar novas características. Um descanso curto não abre um momento de compra por si só.
+## 5. Compre características
 
-> 💡 Há um segundo espaço para anotar outro tipo de experiência, caso o cenário necessite.
+Use a experiência inicial para comprar traços, habilidades e aptidões. A ordem de compra é livre. Antes de gastar, planeje o conjunto para verificar custos, requisitos e quais atributos aparecem com mais frequência nas ações da personagem.
 
-## 3. Escolha características
+### 5.1 Traços
 
-Praticamente tudo o que define o seu personagem se baseia na compra de características, elas definirão o que o seu personagem pode ou não fazer, além de sua facilidade na realização de praticamente qualquer atividade possível.
+Traços são efeitos passivos. Cada traço custa o valor indicado em sua entrada e não pode ser comprado mais de uma vez. É possível adquiri-lo sem cumprir seus requisitos, mas o efeito permanece inativo até que todos sejam atendidos.
 
-**Arquétipos**
+### 5.2 Habilidades
 
-Arquétipos são conjuntos de características padronizadas de referência para construção rápida de personagens baseados em conceitos específicos. Como funcionam e a estrutura de um arquétipo: ver [Arquétipos — como funcionam](../arquetipos/00-como-funcionam.md).
+Habilidades são ações especiais que consomem `PA` e fadiga quando usadas. O nível 1 custa o valor-base indicado; cada nível seguinte custa novamente esse mesmo valor. O total investido é o custo-base multiplicado pelo nível atual. Não existem usos comprados nem fusão de habilidades iguais.
 
-Opcionalmente, você pode escolher um **[arquétipo genérico](../arquetipos/01-arquetipos-genericos.md)** deste manual base (Guerreiro, Baluarte, Duelista, Atirador, Assassino, Estrategista, Curandeiro, Líder) ou um **arquétipo do cenário** escolhido (ex.: os *dō* do Mukashi) — todos são apenas sugestões de caminho, não obrigatórios.
+### 5.3 Aptidões
 
-### 3.1 Compre Traços
+Aptidões permitem rerrolar testes e contratestes relacionados a um atributo. O custo cresce separadamente em cada atributo: a primeira custa `1 exp.`, a segunda `2 exp.`, a terceira `3 exp.` e assim por diante.
 
-Recomendamos iniciar comprando traços. Traços são características de efeito passivo, aplicadas sempre que possível, respeitando os requisitos de condição. Geralmente traços são as características mais caras para se adquirir e servem como uma base guia para combinar com efeitos de habilidades e aptidões.
+Escolha aptidões dos atributos que a personagem deve usar com maior frequência. Um descanso curto recupera uma aptidão de cada atributo; um descanso longo recupera todas as aptidões gastas.
 
-Não é possível comprar o mesmo traço duas vezes, pois seus efeitos não acumulam.
+Ao terminar, a experiência usada não pode ultrapassar a experiência total da personagem. Consulte [Experiência e evolução](../progressao/01-experiencia-e-evolucao.md) para os custos completos.
 
-Os traços podem ser comprados nas listas de traços na seção “Recursos básicos do sistema” ou nos traços específicos do cenário escolhido.
+## 6. Escolha os equipamentos
 
-### 3.2 Compre Habilidades
+As regras do cenário e as orientações do narrador têm prioridade sobre qualquer conjunto genérico de equipamentos iniciais.
 
-Em seguida, compre habilidades. Habilidades são características acionáveis que garantem grandes vantagens ou possibilitam realizar ações incomuns. Elas não possuem usos: cada ativação consome `PA` e fadiga conforme a regra da própria habilidade.
+Quando a mesa não definir outro método, use como referência:
 
-Atente-se ao valor de experiência necessário para comprar cada habilidade. O nível 1 custa o valor-base indicado; cada nível seguinte custa novamente esse mesmo valor. Portanto, o total investido é o valor-base multiplicado pelo nível atual. Não existem usos comprados nem fusão de habilidades iguais.
+- duas armas simples à escolha;
+- a armadura mais básica disponível no cenário;
+- opcionalmente, troque uma das armas pela armadura do nível seguinte;
+- uma mochila;
+- roupas simples;
+- três outros itens à escolha.
 
-### 3.3 Compre Aptidões
+Se o narrador preferir que cada pessoa compre seus equipamentos, a referência inicial é `100 moedas`. O cenário pode usar outra moeda, outro valor ou um método próprio.
 
-Por último, compre aptidões. Aptidões representam rerrolagens que você pode consumir em ações de determinado atributo — ao gastar uma aptidão, você rerrola o dado do teste ou do contrateste depois de saber o resultado —, sendo a forma mais versátil de aumentar suas chances de obter sucesso em praticamente qualquer tarefa.
+## 7. Revise a personagem
 
-Atente-se ao atributo de cada habilidade e traço que comprou e adquira aptidões destes atributos, pois podem ser consumidas em conjunto com habilidades ou traços para potencializá-los. Um descanso curto recupera 1 aptidão de cada atributo; um descanso longo recupera todas as aptidões gastas.
+Antes de jogar, confira:
 
-## 4. Compre equipamentos
+- identidade, cenário, campanha e mão hábil;
+- `PA`, vida de cada membro e experiência total;
+- custo e requisitos das características;
+- níveis das habilidades e quantidade de aptidões por atributo;
+- equipamentos, proteções e itens carregados.
 
-Na maioria dos cenários, os personagens iniciam uma campanha com algum equipamento.
-
-> 💡 **Equipamentos iniciais recomendados:**
->
-> - 2 armas simples à escolha do jogador;
-> - A armadura mais básica do cenário;
->     1. Opcionalmente, o jogador pode trocar uma das armas pela armadura de nível seguinte.
-> - 1 Mochila;
-> - Roupas simples;
-> - Mais 3 itens à escolha do jogador.
-
-Opcionalmente, o narrador pode indicar um valor inicial de dinheiro que os jogadores podem gastar para comprar seus equipamentos iniciais, para este caso, recomendamos iniciar com `100 moedas`.
-
-Diferentes cenários podem necessitar de diferentes métodos de compra de equipamento inicial, consulte as recomendações específicas do cenário do jogo para mais informações.
-
-> ⚠️ A DEFINIR: como cenários adicionam passos (espécies, classes) à criação — ver [notas-de-design/variantes-pendentes.md](../../notas-de-design/variantes-pendentes.md) (item 7).
+Personagens do narrador podem usar a mesma base. O narrador pode ajustar seus valores e recursos conforme a função que terão na história.

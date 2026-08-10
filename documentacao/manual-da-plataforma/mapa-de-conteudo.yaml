@@ -316,7 +316,7 @@ paginas:
     rota: /manual/jogador/criacao-de-personagem
     publico: jogador
     tipo: regra
-    estado: mapeada
+    estado: em_curadoria
     ordem: 30
     objetivo: Conduzir a criação completa de uma personagem usando as regras e recursos oficiais.
     fontes:
@@ -335,7 +335,8 @@ paginas:
       - jogador.recursos.arquetipos
       - jogador.recursos.equipamentos
     observacoes_internas:
-      - Reconciliar o passo de habilidades com o modelo oficial sem usos por nível.
+      - Curadoria aprovada em 10/08/2026; priorizar a plataforma e manter PDFs como alternativa.
+      - Arquétipos completos pertencem à página de recursos; a criação explica apenas seu uso opcional.
       - Cenários podem acrescentar etapas; apresentar apenas extensões que possuam regra definida.
 
   - id: jogador.recursos.indice
