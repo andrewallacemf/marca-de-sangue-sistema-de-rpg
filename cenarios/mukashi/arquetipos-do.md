@@ -4,12 +4,12 @@ tipo: cenario
 cenario: mukashi
 status: rascunho
 tags: [mukashi, arquetipos, do, caminhos]
-atualizado-em: 2026-08-01
+atualizado-em: 2026-08-10
 ---
 
 # Dō — os caminhos do Mukashi
 
-Os **dō** são os arquétipos do Mukashi. Cada um **dá nome e flavor** a um [arquétipo genérico](../../sistema-base/arquetipos/01-arquetipos-genericos.md) do núcleo (ou é próprio do mundo). Os dō místicos (Onmyōdō, Yamabushi) usam magia com roupagem de **[KI](mecanicas-unicas/ki.md)**, mas testam os 4 atributos normais como qualquer dō — desde a migração pro [módulo de Magia](mecanicas-unicas/magia.md) (01/08/2026), `KI` não é mais um atributo secundário próprio. Seguem a [estrutura de arquétipo](../../sistema-base/arquetipos/00-como-funcionam.md) (primário/secundário, sugestões, e **habilidades de caminho** com pré-requisito de ≥ 2 habilidades do caminho). Alguns dō também têm **traços de caminho** — o mesmo espírito das habilidades de caminho, mas aplicado a um traço (aspecto/técnica/maestria) em vez de uma habilidade; ver a lista completa em [habilidades-do.md](mecanicas-unicas/habilidades-do.md).
+Os **dō** são os arquétipos do Mukashi. Cada um interpreta uma combinação da [matriz de arquétipos genéricos](../../sistema-base/arquetipos/01-arquetipos-genericos.md) com a cultura, os equipamentos e as mecânicas de Yamato. Os dō místicos (Onmyōdō, Yamabushi) usam magia com roupagem de **[KI](mecanicas-unicas/ki.md)**, mas testam os 4 atributos normais como qualquer dō — desde a migração pro [módulo de Magia](mecanicas-unicas/magia.md) (01/08/2026), `KI` não é mais um atributo secundário próprio. Seguem a [estrutura de arquétipo](../../sistema-base/arquetipos/00-como-funcionam.md) (primário/secundário, sugestões, e **habilidades de caminho** com pré-requisito de ≥ 2 habilidades do caminho). Alguns dō também têm **traços de caminho** — o mesmo espírito das habilidades de caminho, mas aplicado a um traço (aspecto/técnica/maestria) em vez de uma habilidade; ver a lista completa em [habilidades-do.md](mecanicas-unicas/habilidades-do.md).
 
 > 🧭 **Todos os 6 dō estão completos** (Bushidō, Shinobi-dō, Yamabushi, Kyūdō, Onmyōdō e Caminho
 > da Corte) — cada um com descrição de mundo, sugestões e, onde fizer sentido, habilidades/traços
@@ -18,19 +18,19 @@ Os **dō** são os arquétipos do Mukashi. Cada um **dá nome e flavor** a um [a
 
 ## Dō mapeados aos genéricos
 
-| Dō (Mukashi) | Base (genérico) | Flavor / ajuste |
+| Dō (Mukashi) | Base universal | Flavor / ajuste |
 |---|---|---|
-| **Bushidō** — Caminho do Guerreiro | Guerreiro | Samurai; katana (versátil), armadura média (ō-yoroi). |
-| **Sōhei** — Caminho do Bastão/Naginata | Baluarte / Guerreiro | Monge-guerreiro; naginata, bastão; segura a linha. |
-| **Shinobi-dō** — Caminho da Sombra | Assassino | Shinobi; kunai/shuriken; usa [furtividade](../../modulos/furtividade/README.md). |
-| **Kyūdō** — Caminho do Arco | Atirador | Arqueiro yumi; foco e precisão. |
-| **Onmyōdō** — Caminho do Yin-Yang | Estrategista, secundário **Social** | Onmyōji; adivinhação, selamento de espíritos, [magia](mecanicas-unicas/magia.md) com roupagem de KI. |
-| **Caminho da Corte** — O Eminente da Corte | Líder | Cortesão/kugyō; poder suave, protocolo e arbitragem; usa [conflito social](../../modulos/conflito-social/README.md). |
-| **Yamabushi (Shugenja)** — Caminho da Montanha | Sem genérico único — ver bloco próprio | Asceta místico; bō, naginata, hora (búzio); associado aos tengu. |
+| **Bushidō** — Caminho do Guerreiro | Ímpeto (`Físico → Ágil`) | Samurai; katana (versátil), armadura média (ō-yoroi). |
+| **Sōhei** — Caminho do Bastão/Naginata | Tenacidade ou Ímpeto (`Físico → Mental/Ágil`) | Monge-guerreiro; naginata, bastão; segura a linha. |
+| **Shinobi-dō** — Caminho da Sombra | Precisão (`Ágil → Mental`) | Shinobi; kunai/shuriken; usa [furtividade](../../modulos/furtividade/README.md). |
+| **Kyūdō** — Caminho do Arco | Precisão (`Ágil → Mental`) | Arqueiro yumi; foco e precisão. |
+| **Onmyōdō** — Caminho do Yin-Yang | Perspicácia (`Mental → Social`) | Onmyōji; adivinhação, selamento de espíritos, [magia](mecanicas-unicas/magia.md) com roupagem de KI. |
+| **Caminho da Corte** — O Eminente da Corte | Eloquência (`Social → Mental`) | Cortesão/kugyō; poder suave, protocolo e arbitragem; usa [conflito social](../../modulos/conflito-social/README.md). |
+| **Yamabushi (Shugenja)** — Caminho da Montanha | Tenacidade (`Físico → Mental`) | Asceta místico; bō, naginata, hora (búzio); associado aos tengu. |
 
 ## Bushidō — Caminho do Guerreiro
 
-**Base:** Guerreiro · **Primário:** Físico · **Secundário:** Ágil
+**Base:** Ímpeto · **Primário:** Físico · **Secundário:** Ágil
 
 **Descrição:** Bushidō — o "caminho do guerreiro" — não é só uma forma de lutar: é um código que busca a mente limpa e o pensamento simples, agindo sempre no presente e pronto para o sacrifício final em nome do dever. Mas nem todo bushi é samurai: samurai (de *saburau*, "aquele que serve") nasceu como título de nobres a serviço de um senhor; *bushi* é o termo genérico para qualquer guerreiro profissional de Yamato — da elite samurai aos ashigaru, a infantaria de origem simples que compõe o grosso dos exércitos.
 
@@ -38,7 +38,7 @@ Os **dō** são os arquétipos do Mukashi. Cada um **dá nome e flavor** a um [a
 
 - **Maestrias:** armas versáteis, armas cortantes, armaduras médias — batem com a [Katana](arsenal.md) (média, `VERS.`, `CORT.`/`PERF.`) e a ō-yoroi (armadura média).
 - **Aspectos:** [Resistente](../../sistema-base/listas/tracos-base.md#resistente), [Lépido](../../sistema-base/listas/tracos-base.md#lépido), [Fôlego de ferro](../../sistema-base/listas/tracos-base.md#fôlego-de-ferro).
-- **Habilidades:** [Investida](../../sistema-base/listas/habilidades-base-fisicas.md#investida), [Ataques múltiplos & médios](../../sistema-base/listas/habilidades-base-fisicas.md#ataques-múltiplos--médios), [Desarmar pesado](../../sistema-base/listas/habilidades-base-fisicas.md#desarmar-pesado) — no lugar do "Quebrar guarda" do Guerreiro genérico, que exige arma contundente (a Katana é cortante/perfurante); desarmar o oponente num duelo também é mais fiel ao samurai.
+- **Habilidades:** [Investida](../../sistema-base/listas/habilidades-base-fisicas.md#investida), [Ataques múltiplos & médios](../../sistema-base/listas/habilidades-base-fisicas.md#ataques-múltiplos--médios), [Desarmar pesado](../../sistema-base/listas/habilidades-base-fisicas.md#desarmar-pesado) — o caminho preserva o avanço do Ímpeto e acrescenta escolhas próprias para o duelo com katana.
 - **Variante opcional** (bushi de duas mãos, com Tachi/Nodachi pesada): considerar os aspectos [Firme](../../sistema-base/listas/tracos-base.md#firme) / [Firme aprimorado](../../sistema-base/listas/tracos-base.md#firme-aprimorado).
 
 **Habilidades de caminho (≥ 2 do caminho):** [Resolução em Sete Sopros](mecanicas-unicas/habilidades-do.md#resolução-em-sete-sopros) (Mental, ignora Desvantagem de efeitos que perturbam a mente) e [Kachidoki — Grito de Vitória](mecanicas-unicas/habilidades-do.md#kachidoki-grito-de-vitória) (Social, recupera fadiga de aliados ao abater um inimigo).
@@ -49,7 +49,7 @@ Os **dō** são os arquétipos do Mukashi. Cada um **dá nome e flavor** a um [a
 
 ## Shinobi-dō — Caminho da Sombra
 
-**Base:** Assassino · **Primário:** Ágil · **Secundário:** Mental
+**Base:** Precisão · **Primário:** Ágil · **Secundário:** Mental
 
 **Descrição:** O *shinobi* (ou *shinobi no mono*) não é um espião qualquer (*kanja*): é um infiltrador e agente de inteligência militar, especializado em entrar onde ninguém deveria — províncias, vilas, castelos — e sair com os segredos mais profundos do coração e da mente de um comandante inimigo. Os manuais de guerra da escola *Natori-Ryū* descrevem o ofício: disfarçar-se de mercador, fazendeiro ou monge; nadar, correr e escalar muros com ferramentas como o *kaginawa*; agir de noite e sumir antes do amanhecer; ler sinais secretos deixados no terreno. Nunca houve consenso sobre quem podia ser shinobi — para alguns, só um *bushi* de verdade; para outros, um *chūgen* de baixa classe, ou até um vulgar rasca que a bravura em campo podia elevar a samurai. O que une todos é o preceito de Sun Tzu: toda guerra se vence pelo engano.
 
@@ -66,7 +66,7 @@ Os **dō** são os arquétipos do Mukashi. Cada um **dá nome e flavor** a um [a
 
 ## Yamabushi (Shugenja) — Caminho da Montanha
 
-**Base:** sem genérico único (mistura provação física e mística) · **Primário:** Físico · **Secundário:** Mental
+**Base:** Tenacidade · **Primário:** Físico · **Secundário:** Mental
 
 > 📝 Secundário ajustado de `KI` para `Mental` em 01/08/2026 — desde a migração pro
 > [módulo de Magia](mecanicas-unicas/magia.md), `KI` não é mais um atributo testável (ver
@@ -86,7 +86,7 @@ Os **dō** são os arquétipos do Mukashi. Cada um **dá nome e flavor** a um [a
 
 ## Kyūdō — Caminho do Arco
 
-**Base:** Atirador · **Primário:** Ágil · **Secundário:** Mental
+**Base:** Precisão · **Primário:** Ágil · **Secundário:** Mental
 
 **Descrição:** Kyūdō é o "caminho do arco" — a proeza técnica da arquearia clássica somada à disciplina mental de "caçar o esquecimento" no meio do combate. Historicamente, seus praticantes eram samurais de elite que dominavam o arco a cavalo ou a pé, usando-o para tomar a iniciativa tática logo no início do confronto, sobretudo em campo aberto — diferente do combatente que espera o inimigo se aproximar, o kyūdōka decide a distância e o momento.
 
@@ -96,15 +96,14 @@ Os **dō** são os arquétipos do Mukashi. Cada um **dá nome e flavor** a um [a
 - **Técnicas:** [Investigar/Observar](../../sistema-base/listas/tracos-base.md) — localizar alvos camuflados e avaliar o terreno antes de se posicionar.
 - **Aspectos:** [Vigilante](../../sistema-base/listas/tracos-base.md#vigilante) (ataque de oportunidade à distância — exceção à regra geral) e [Lépido](../../sistema-base/listas/tracos-base.md#lépido) (recuar 1 metro após acertar, mantendo o *maai*, a distância de segurança).
 
-  > ⚠️ **Inconsistência encontrada no sistema-base (não é problema do Mukashi):** o Vigilante é a sugestão padrão do Atirador genérico para ataque de oportunidade à distância, mas seu requisito de uso pede **arma de arremesso (`ARRE.`) já equipada** — e o Yumi usa munição (`PROJ.`), não é uma arma de arremesso. Do jeito que a regra está escrita hoje, o Vigilante **não funciona** com um arco. Reportado em `PENDENCIAS.md` para o grupo decidir se o requisito deveria aceitar também armas à distância com munição.
-- **Habilidades:** [Alcance à distância](../../sistema-base/listas/habilidades-base-ageis.md#alcance-à-distância), [Ataques à distância concentrados](../../sistema-base/listas/habilidades-base-ageis.md#ataques-à-distância-concentrados), [Analisar fraquezas](../../sistema-base/listas/habilidades-base-mentais.md#analisar-fraquezas) — as três batem exatamente com as sugestões do Atirador genérico, sem precisar trocar nada.
+- **Habilidades:** [Alcance à distância](../../sistema-base/listas/habilidades-base-ageis.md#alcance-à-distância), [Ataques à distância concentrados](../../sistema-base/listas/habilidades-base-ageis.md#ataques-à-distância-concentrados), [Analisar fraquezas](../../sistema-base/listas/habilidades-base-mentais.md#analisar-fraquezas) — o caminho aprofunda o controle de distância e a leitura do alvo sugeridos por Precisão.
 - **Equipamentos:** [Yumi — Arco longo](arsenal.md) (pesada, `6 PA`, alcance 8m a 12m; o Arco composto/médio é a opção mais barata em `PA`, com alcance menor) com flecha ponta de ferro; armadura leve ou média. Flavor: um kabuto (peça de cabeça leve/média, como a ō-yoroi do Bushidō) sem as abas laterais (*fukigaeshi*) ou dobradiças que atrapalhariam a corda do arco; e luvas de arqueiro (*yugake*), item puramente narrativo — sem equivalente nem efeito mecânico no catálogo hoje.
 
 **Habilidades de caminho (≥ 2 do caminho):** nenhuma por enquanto.
 
 ## Onmyōdō — Caminho do Yin-Yang
 
-**Base:** Estrategista · **Primário:** Mental · **Secundário:** Social
+**Base:** Perspicácia · **Primário:** Mental · **Secundário:** Social
 
 > 📝 Secundário ajustado de `KI` para `Social` em 01/08/2026 — desde a migração pro
 > [módulo de Magia](mecanicas-unicas/magia.md), `KI` não é mais um atributo testável (ver
@@ -115,9 +114,9 @@ Os **dō** são os arquétipos do Mukashi. Cada um **dá nome e flavor** a um [a
 
 **Sugestões**
 
-- **Técnicas:** [Investigar/Observar](../../sistema-base/listas/tracos-base.md) (treino em astronomia e meteorologia, para ler sinais no ambiente) e [Ponderar](../../sistema-base/listas/tracos-base.md) — as duas mesmas técnicas do Estrategista genérico, sem troca.
-- **Aspectos:** [Apoiador](../../sistema-base/listas/tracos-base.md#apoiador) no lugar do Alerta do Estrategista genérico — o onmyōji ajuda aliados adjacentes com aptidões `Mental`, representando os pequenos rituais de apoio em grupo, mais fiel ao papel de conselheiro do que o Alerta (que é sobre reagir a ameaças).
-- **Habilidades:** [Analisar fraquezas](../../sistema-base/listas/habilidades-base-mentais.md#analisar-fraquezas) e [Confundir inimigo](../../sistema-base/listas/habilidades-base-mentais.md#confundir-inimigo) — as mesmas do Estrategista genérico — no lugar de "Criar armadilha", que não tem apelo místico; o onmyōji troca a armadilha física pelas três habilidades de caminho abaixo.
+- **Técnicas:** [Investigar/Observar](../../sistema-base/listas/tracos-base.md) (treino em astronomia e meteorologia, para ler sinais no ambiente) e [Ponderar](../../sistema-base/listas/tracos-base.md).
+- **Aspectos:** [Apoiador](../../sistema-base/listas/tracos-base.md#apoiador) — o onmyōji ajuda aliados adjacentes com aptidões `Mental`, representando os pequenos rituais de apoio em grupo.
+- **Habilidades:** [Analisar fraquezas](../../sistema-base/listas/habilidades-base-mentais.md#analisar-fraquezas) e [Confundir inimigo](../../sistema-base/listas/habilidades-base-mentais.md#confundir-inimigo) aprofundam a leitura de pessoas e situações do arquétipo Perspicácia; as três habilidades de caminho abaixo substituem a ênfase em armadilhas físicas.
 - **Equipamentos:** ofuda (talismãs de papel) e outros itens rituais — flavor por enquanto, sem equivalente no catálogo (mesmo tratamento dado ao búzio do Yamabushi).
 
 **Habilidades de caminho (≥ 2 do caminho):** [Invocação de Shikigami](mecanicas-unicas/habilidades-do.md#invocação-de-shikigami) (`Mental`, cria um servo espiritual mensageiro/observador — ⚠️ combate depende do pacote de Minion, ainda em aberto), [Encantamento de Selamento](mecanicas-unicas/habilidades-do.md#encantamento-de-selamento-hifu) (`Mental`, ofuda que aplica Desvantagem física/ágil no alvo) e [Divinação de Direções e Datas](mecanicas-unicas/habilidades-do.md#divinação-de-direções-e-datas-hidoritenmon) (`Mental`, ritual fora de combate que dá aptidão extra a aliados antes de um conflito). As três são **magias** com roupagem de KI — além do `PA`, cobram custo de ativação do conjurador, seguindo a [regra do módulo de Magia](../../modulos/magia/README.md#custo-de-ativação--três-tipos).
@@ -128,7 +127,7 @@ Os **dō** são os arquétipos do Mukashi. Cada um **dá nome e flavor** a um [a
 
 ## Caminho da Corte — O Eminente da Corte
 
-**Base:** Líder · **Primário:** Social · **Secundário:** Mental
+**Base:** Eloquência · **Primário:** Social · **Secundário:** Mental
 
 **Descrição:** o cortesão da corte de Myoko — o *kugyō* — não vence pela força, mas pelo protocolo: numa corte onde a forma e o cerimonial são indistinguíveis da substância política, sua relevância vem do poder suave, da legitimidade ancestral e da maestria cultural. Domina a poesia *waka*, a caligrafia (um reflexo do próprio caráter) e os precedentes históricos (*senrei*) — sabe exatamente como se portar, o que vestir e como falar em cada assembleia. É também o árbitro informal do império: resolve disputas de terra, medeia entre o alto clero e os guerreiros, e sabe o valor exato de cada presente — ou suborno — para cada ocasião. Muitos ainda estudam o *Onmyōdō* como parte da educação esperada de um cortesão (astronomia, calendários, datas auspiciosas), sem chegar a praticá-lo como os onmyōji de ofício.
 

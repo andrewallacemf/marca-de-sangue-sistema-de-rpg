@@ -438,14 +438,12 @@ paginas:
     rota: /manual/jogador/recursos/arquetipos
     publico: jogador
     tipo: recurso
-    estado: mapeada
+    estado: aguardando_aprovacao
     ordem: 44
-    objetivo: Explicar arquétipos e apresentar as opções genéricas e de cenário.
+    objetivo: Explicar a matriz universal e apresentar as 12 fichas genéricas formadas por atributo principal e secundário.
     fontes:
       - sistema-base/arquetipos/00-como-funcionam.md
       - sistema-base/arquetipos/01-arquetipos-genericos.md
-      - cenarios/colapso/arquetipos.md
-      - cenarios/mukashi/arquetipos-do.md
     depende_de:
       - jogador.regras-basicas.caracteristicas
       - jogador.regras-basicas.progressao
@@ -454,7 +452,8 @@ paginas:
       - cenario.colapso.jogador
       - cenario.mukashi.jogador
     observacoes_internas:
-      - Separar catálogo genérico de opções específicas de cenário sem duplicar suas descrições.
+      - Curadoria aprovada em 10/08/2026; profissões e papéis antigos viram exemplos, não arquétipos-base.
+      - Arquétipos de cenário permanecem nas páginas dos próprios cenários e referenciam a matriz sem duplicar as fichas.
 
   - id: jogador.recursos.acoes
     titulo: Ações

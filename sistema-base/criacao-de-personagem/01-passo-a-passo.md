@@ -40,9 +40,9 @@ O cenário ou o narrador pode definir valores iniciais diferentes para acompanha
 
 ## 4. Escolha um arquétipo, se quiser
 
-Um [arquétipo](../arquetipos/00-como-funcionam.md) é um caminho de construção sugerido. Ele indica atributos e características que combinam com um estilo de jogo, mas não é obrigatório, não concede características gratuitamente e não impede escolhas fora do caminho.
+Um [arquétipo](../arquetipos/00-como-funcionam.md) é uma orientação de construção baseada em um atributo principal e outro secundário. Ele indica aptidões e características que combinam com uma forma de agir, mas não é obrigatório, não concede características gratuitamente e não impede escolhas fora do caminho.
 
-Você pode seguir um [arquétipo genérico](../arquetipos/01-arquetipos-genericos.md), usar um arquétipo oferecido pelo cenário, misturar referências ou montar a personagem sem arquétipo.
+Os [12 arquétipos genéricos](../arquetipos/01-arquetipos-genericos.md) cobrem todas as combinações ordenadas entre os quatro atributos do sistema-base. Você pode seguir uma de suas fichas iniciais, usar uma interpretação oferecida pelo cenário, misturar referências ou montar a personagem sem arquétipo.
 
 ## 5. Compre características
 

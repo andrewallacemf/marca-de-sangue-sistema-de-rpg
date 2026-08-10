@@ -48,6 +48,8 @@ Leia estes documentos na ordem:
   gastos do jogador, recompensas do narrador e custos oficiais de evolução.
 - [Criação de personagem](propostas/2026-08-10-criacao-de-personagem.md) — fluxo online principal,
   fichas imprimíveis alternativas, valores iniciais e revisão final.
+- [Arquétipos genéricos](propostas/2026-08-10-arquetipos-genericos.md) — matriz das 12 combinações
+  ordenadas entre atributo principal e secundário, com fichas iniciais de `15 exp.`.
 
 ## Regra para IAs
 

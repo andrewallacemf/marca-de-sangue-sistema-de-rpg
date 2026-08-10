@@ -3,62 +3,82 @@ titulo: Arquétipos — como funcionam
 tipo: regra
 cenario: base
 status: revisao
-tags: [arquetipos, caminhos, criacao-de-personagem, build]
-atualizado-em: 2026-07-19
+tags: [arquetipos, caminhos, criacao-de-personagem, build, atributos]
+atualizado-em: 2026-08-10
 ---
 
 # Arquétipos — como funcionam
 
-Um **arquétipo** é um **caminho de construção sugerido** para um personagem: um atalho curado
-que diz "se você quer jogar *assim*, foque nestes atributos e considere estes traços,
-habilidades e maestrias". Ele serve para duas coisas:
+Um **arquétipo** é uma orientação opcional para construir uma personagem a partir de dois
+[atributos](../conceitos/02-atributos.md): um **principal**, que representa sua forma preferida de
+agir, e um **secundário**, que mostra como ela sustenta ou complementa essa abordagem.
 
-- **Ajudar quem não quer montar do zero** — em vez de encarar todas as listas, o jogador parte
-  de um esqueleto pronto e ajusta.
-- **Estabelecer um terreno comum** — ninguém é obrigado a ter a mesma referência do que é um
-  "ninja" ou um "guerreiro"; o arquétipo descreve o conceito para a mesa toda partir do mesmo
-  ponto.
+Arquétipos não são profissões, classes nem papéis obrigatórios no grupo. Eles descrevem formas
+universais de agir, capazes de representar personagens de qualquer cenário. A mesma combinação
+pode servir a uma guerreira medieval, um explorador espacial, uma criatura fantástica ou um rato
+que protege sua comunidade.
 
-> ⚠️ **Arquétipo não é obrigatório e não trava nada.** É só orientação. Você pode ignorá-lo,
-> misturar dois, ou seguir um à risca — a criação de personagem por
-> [experiência](../progressao/01-experiencia-e-evolucao.md) continua livre.
+> **Arquétipos são opcionais.** Você pode seguir uma ficha sugerida, trocar qualquer escolha,
+> misturar referências ou criar a personagem sem arquétipo. Nenhuma característica é concedida
+> gratuitamente, e todas as compras continuam obedecendo aos custos e requisitos normais.
 
-## Estrutura de um arquétipo
+## A matriz dos atributos
 
-Todo arquétipo (genérico ou de cenário) é descrito com os mesmos campos:
+O sistema-base possui quatro atributos: `Físico`, `Ágil`, `Mental` e `Social`. Como o atributo
+secundário deve ser diferente do principal, existem **12 combinações ordenadas**.
 
-- **Nome** e uma **descrição** curta do conceito (o que é, como joga).
-- **Atributo primário** e **atributo secundário** — onde concentrar as aptidões e o foco dos
-  testes. O primário é o carro-chefe; o secundário apoia.
-- **Sugestões**, agrupadas por categoria:
-  - **Maestrias** (armas/armaduras);
-  - **Técnicas** (anulam desvantagem natural das atividades-chave do caminho);
-  - **Aspectos** (traços passivos que reforçam o estilo);
-  - **Habilidades** (as ações que definem o caminho na prática).
-- *(Opcional)* **Habilidades de caminho** — ver abaixo.
+A ordem faz diferença. `Físico → Mental` descreve alguém que resolve primeiro pelo corpo e usa
+disciplina ou percepção como apoio. `Mental → Físico` descreve alguém que decide primeiro pela
+mente e usa preparo corporal para executar ou resistir.
 
-## Habilidades de caminho (opcional)
+As 12 combinações formam os [arquétipos genéricos](01-arquetipos-genericos.md) do núcleo. Se um
+cenário acrescentar outro atributo, ele pode criar combinações próprias sem alterar esta matriz.
 
-Um arquétipo pode ter **habilidades próprias do caminho**, que exigem, como **pré-requisito**,
-o personagem **já possuir pelo menos 2 habilidades daquele caminho**. É uma forma de
-**recompensar quem segue o arquétipo**: quanto mais fundo no caminho, mais se abre. Mecanicamente
-é um [requisito de habilidade](../conceitos/05-habilidades.md) — "possuir ≥ 2 habilidades do
-caminho X" — como qualquer outro requisito de uso.
+## Como ler uma ficha de arquétipo
 
-## Genéricos (núcleo) × de cenário
+Cada arquétipo apresenta:
 
-- Os **arquétipos genéricos** (sem tema) vivem aqui, no núcleo:
-  [arquétipos genéricos](01-arquetipos-genericos.md). São papéis universais (guerreiro, atirador,
-  suporte…), servem a qualquer mundo.
-- Cada **cenário** pode **adicionar os seus** (ex.: os *dō*/caminhos do Mukashi) e/ou dar
-  **nome e flavor** a um genérico (um "Caminho do Guerreiro" genérico vira "Bushidō" no Mukashi).
-  O cenário **referencia** esta estrutura e só descreve a diferença — não recria o conceito.
+- **nome conceitual**, sem profissão ou ambientação obrigatória;
+- **atributo principal** e **atributo secundário**;
+- **identidade**, explicando sua forma de enfrentar problemas;
+- **aptidões iniciais sugeridas**;
+- **núcleo característico**, com habilidades e traços que completam uma ficha inicial;
+- **possibilidades de interpretação**, que são exemplos, não restrições.
 
-## Como criar um arquétipo novo
+## Ficha inicial sugerida
 
-1. Defina o **conceito** e a **descrição** curta.
-2. Escolha **atributo primário e secundário**.
-3. Liste **sugestões** (maestrias, técnicas, aspectos, habilidades) que compõem o estilo.
-4. *(Se quiser)* crie **habilidades de caminho** com o pré-requisito de ≥ 2 habilidades do caminho.
-5. Genérico → adicione em [01-arquetipos-genericos.md](01-arquetipos-genericos.md). De cenário →
-   em `cenarios/<mundo>/` (ou no módulo temático), referenciando esta estrutura.
+As fichas dos arquétipos usam os `15 exp.` de uma personagem inicial da seguinte forma:
+
+| Escolha | Custo |
+|---|---:|
+| 3 aptidões do atributo principal | `6 exp.` (`1 + 2 + 3`) |
+| 2 aptidões do atributo secundário | `3 exp.` (`1 + 2`) |
+| Núcleo característico do arquétipo | `6 exp.` |
+| **Total** | **`15 exp.`** |
+
+Essa distribuição torna visível qual atributo é principal sem transformar a sugestão em
+obrigação. O jogador pode substituir qualquer parte do núcleo, reduzir a quantidade de aptidões
+ou guardar experiência, desde que o total usado não ultrapasse a experiência disponível.
+
+## Arquétipos de cenário
+
+Um cenário pode reinterpretar uma combinação com sua cultura, tecnologia, equipamentos e
+módulos. Ele referencia o arquétipo universal e descreve apenas o que acrescenta ou altera.
+
+Por exemplo, dois caminhos diferentes podem usar `Ágil → Mental` e partir do arquétipo
+**Precisão**, mesmo que um represente uma arqueira e outro uma operadora de drones. O cenário
+define a expressão do conceito; a matriz define a base mecânica.
+
+Arquétipos de cenário também podem oferecer sugestões próprias e habilidades ou traços de
+caminho. Quando uma opção exigir características do caminho, seu requisito deve ser informado na
+entrada correspondente.
+
+## Criando um arquétipo de cenário
+
+1. Escolha a combinação ordenada de atributo principal e secundário.
+2. Referencie o arquétipo genérico correspondente.
+3. Explique como esse conceito aparece no cenário.
+4. Liste somente sugestões, equipamentos ou regras que diferenciem o caminho local.
+5. Se houver características exclusivas, registre seus custos e requisitos nas listas do cenário.
+
+O cenário não copia a ficha genérica inteira. Ele cria uma interpretação sobre a base existente.
