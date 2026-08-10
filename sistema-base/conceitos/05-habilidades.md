@@ -3,8 +3,8 @@ titulo: Habilidades
 tipo: regra
 cenario: base
 status: revisao
-tags: [habilidades, pa, usos, recuperacao]
-atualizado-em: 2026-07-12
+tags: [habilidades, pa, fadiga, niveis]
+atualizado-em: 2026-08-10
 ---
 
 # Habilidades
@@ -102,7 +102,8 @@ Este guia orienta o grupo (e outras mesas) a criar habilidades equilibradas. Tod
 
 ### Níveis (progressão)
 
-- O padrão são **5 níveis**; o efeito cresce a cada nível comprado.
+- Cada habilidade possui a quantidade de níveis definida em sua própria entrada; não existe um limite geral fixo.
+- O efeito cresce a cada nível comprado, seguindo a progressão descrita na habilidade.
 - Use **menos níveis** quando o topo do efeito já é muito forte, ou quando o próprio limite do jogo (ex.: o **piso de 3 `PA`**, os **6 membros** do corpo) impõe um teto natural.
 
 > ✅ Critério aprovado pelo grupo em 12/07/2026 (ver [notas-de-design/decisoes/2026-07-12-rebalanceamento-habilidades.md](../../notas-de-design/decisoes/2026-07-12-rebalanceamento-habilidades.md)).

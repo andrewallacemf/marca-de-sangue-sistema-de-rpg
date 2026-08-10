@@ -54,6 +54,10 @@ Leia estes documentos na ordem:
   e revisão das ações complexas em três blocos.
 - [Aptidões](propostas/2026-08-10-aptidoes.md) — reservas por atributo, saldo disponível, custo
   escalonado e relação com trilhas opcionais de módulos.
+- [Habilidades](propostas/2026-08-10-habilidades.md) — catálogo pesquisável das 38 habilidades
+  básicas, progressões variáveis, custos e exclusão das entradas experimentais.
+- [Traços](propostas/2026-08-10-tracos.md) — catálogo das 14 Técnicas, 11 Maestrias e 25
+  Aspectos oficiais, com custos, gatilhos, requisitos e exclusão das entradas experimentais.
 
 ## Regra para IAs
 

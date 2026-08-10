@@ -252,8 +252,8 @@ Habilidades são ações especiais que oferecem vantagens em situações especí
 realizar ações que, de outro modo, sofreriam penalidades.
 
 Uma habilidade é adquirida uma única vez e evolui por **nível**. O nível atual determina qual
-degrau da progressão descrita na habilidade a personagem alcançou. O padrão é uma progressão de
-cinco níveis, embora uma habilidade possa estabelecer um limite menor.
+degrau da progressão descrita na habilidade a personagem alcançou. Cada habilidade define quantos
+níveis possui; não existe um limite geral fixo.
 
 Não existem pacotes de usos nem fusão de habilidades iguais. Para fortalecer uma habilidade, a
 personagem aumenta seu nível em vez de adquiri-la novamente.
@@ -300,3 +300,9 @@ descanso zera toda a fadiga acumulada.
 A redação, a ordem Pontos de Ação → Fadiga → Habilidades e o tratamento da versão antiga apenas
 como dado legado foram aprovados. A ficha, a batalha, a persistência e a importação passaram a
 usar o modelo oficial; os campos antigos foram preservados somente para compatibilidade.
+
+### Adendo de 10/08/2026
+
+A frase que descrevia cinco níveis como padrão caiu após a auditoria do catálogo: cada habilidade
+define sua própria quantidade de níveis, hoje entre três e nove. A referência detalhada e a
+redação substituta estão em `propostas/2026-08-10-habilidades.md`.

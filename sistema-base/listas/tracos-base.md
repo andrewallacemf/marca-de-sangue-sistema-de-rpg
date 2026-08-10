@@ -117,6 +117,7 @@ derruba um personagem abaixo disso.
 | Zeloso | **`4 exp.`** |
 | Reforçado | **`4 exp.`** |
 | Guarda firme | **`4 exp.`** |
+| Pele de ferro | **`4 exp.`** |
 
 Aspectos são traços que afetam a forma como o personagem responde a determinadas situações. Comprar aspectos permite que o personagem realize ações ou ignore regras em determinadas situações.
 
@@ -356,7 +357,7 @@ Se obtiver sucesso no teste, é acertado pelo golpe e recebe o dano, seus reduto
 
 #### Condição de uso (gatilho)
 
-- Ser acertado por um ataque.
+- Um aliado adjacente ser acertado por um ataque.
 
 #### Requisitos de uso
 

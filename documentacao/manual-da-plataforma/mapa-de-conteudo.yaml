@@ -393,7 +393,7 @@ paginas:
     rota: /manual/jogador/recursos/habilidades
     publico: jogador
     tipo: recurso
-    estado: mapeada
+    estado: publicada
     ordem: 42
     objetivo: Buscar e filtrar habilidades por atributo, custo, nível, origem e requisitos.
     fontes:
@@ -416,16 +416,18 @@ paginas:
       - modulo.magia.jogador
     observacoes_internas:
       - Não incluir a lista experimental social sem decisão explícita.
-      - Validar catálogo e plataforma contra o modelo oficial de nível atual e fadiga.
+      - A proposta editorial está em propostas/2026-08-10-habilidades.md.
+      - A plataforma foi reconciliada com níveis e custos variáveis sob a decisão 063.
+      - A página pública foi implementada sob a decisão 064 da plataforma.
 
   - id: jogador.recursos.tracos
     titulo: Traços
     rota: /manual/jogador/recursos/tracos
     publico: jogador
     tipo: recurso
-    estado: mapeada
+    estado: publicada
     ordem: 43
-    objetivo: Buscar e filtrar traços por categoria, custo, origem e requisitos.
+    objetivo: Buscar e filtrar traços oficiais por categoria, atributo, forma de compra, custo e requisitos.
     fontes:
       - contrato/catalogo.json
       - sistema-base/conceitos/06-tracos.md
@@ -435,7 +437,11 @@ paginas:
     relacionados:
       - jogador.criacao-de-personagem
       - jogador.recursos.habilidades
-    observacoes_internas: []
+    observacoes_internas:
+      - A proposta editorial está em propostas/2026-08-10-tracos.md.
+      - Publicar somente os 50 traços oficiais; os 9 Aspectos experimentais permanecem fora.
+      - Aprovada em 10/08/2026 e implementada sob a decisão 065 da plataforma.
+      - Pele de ferro, os efeitos das maestrias de armadura e o gatilho de Protetor foram corrigidos na fonte e no contrato.
 
   - id: jogador.recursos.arquetipos
     titulo: Arquétipos

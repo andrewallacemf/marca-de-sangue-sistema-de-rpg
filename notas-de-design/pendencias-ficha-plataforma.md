@@ -67,6 +67,10 @@ pendências de **regra** (que ficam em [PENDENCIAS.md](../PENDENCIAS.md)).
       sobre [`contrato/catalogo.json`](../contrato/README.md), gerado das listas. A correção
       trouxe a ficha de volta ao manual atual (39 armas com dano defasado, 3 habilidades e
       6 traços que faltavam, efeito de `PROJ.` atualizado).
+- [x] **Publicar Traços no manual oficial da plataforma** — **feito em 10/08/2026,
+      decisão 065 da plataforma**: 50 entradas oficiais, busca e filtros; nove experimentais
+      excluídas. A fonte e o contrato também receberam `Pele de ferro` na tabela, o efeito das
+      maestrias de armadura e o gatilho corrigido de `Protetor`.
 - [x] **Expor a propriedade `ACUI.` (Acuidade) na ficha** — o manual e o catálogo já a têm;
       a grade de propriedades da ficha tinha só as 7 colunas antigas (ARRE/AGAR/CORT/CONT/
       DEFL/PERF/PROJ) — **feito na plataforma** (07/08, decisão 030): `ACUI` entrou em
@@ -187,6 +191,16 @@ pendências de **regra** (que ficam em [PENDENCIAS.md](../PENDENCIAS.md)).
       persistido; o editor identifica o segundo campo como aptidões gastas. Implementação:
       decisão 062 do `docs/DECISIONS.md` da plataforma. Aptidões de módulos continuam exigindo
       suporte próprio quando seus módulos forem publicados.
+
+- [x] **Compatibilizar habilidades com a progressão canônica variável** — a plataforma deixou de
+      truncar níveis no quinto degrau, calcula experiência como custo-base × nível, lê custos de
+      ativação definidos em cada nível e mantém `Reparar` fora da batalha. Fichas antigas ligadas
+      ao catálogo são corrigidas na leitura, sem migration. Implementação: decisão 063 do
+      `docs/DECISIONS.md` da plataforma.
+
+- [x] **Publicar a página consultável de Habilidades** — proposta aprovada e implementada na
+      plataforma sob a decisão 064. Escopo: 38 habilidades básicas, sem a lista social
+      experimental; busca, filtros, âncoras e progressão integral de cada entrada.
 
 - [x] **⭐ Tutorial de uso da ficha** (pedido do Daniel, 19/07) — **feito (19/07):** (a) botão
       **"Como usar"** no topo da ficha abre um painel com o básico (salvar/carregar `.mds.json`,

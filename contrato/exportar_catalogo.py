@@ -414,12 +414,21 @@ def parse_tracos(md: str) -> tuple[list[dict], dict[str, str]]:
     tracos: list[dict] = []
     maestria_por_sigla: dict[str, str] = {}
 
-    # Efeito geral das maestrias (frase literal do manual) e o parágrafo do desarmado.
+    # Efeitos gerais das maestrias e o parágrafo do desarmado.
     texto = re.sub(r"\n(?![-#|>\n])", " ", md)
     frase_maestria = ("As propriedades só produzem efeito se o personagem tiver a "
                       "maestria correspondente.")
     m = re.search(r"\*\*Maestria em ataque desarmado:\*\*\s*(.+?)(?=\n|$)", texto)
     efeito_desarmado = strip_md(m.group(1)) if m else ""
+    m = re.search(
+        r"> \*\*Sem a maestria correspondente, (.+?)\*\*\s*\n"
+        r"> (Com a maestria, .+?)(?=\n|$)",
+        md,
+    )
+    efeito_maestria_armadura = (
+        strip_md(f"Sem a maestria correspondente, {m.group(1)} {m.group(2)}")
+        if m else ""
+    )
 
     # Detalhes dos aspectos (seções ### sob "## Lista de Aspectos")
     detalhes: dict[str, dict] = {}
@@ -467,9 +476,9 @@ def parse_tracos(md: str) -> tuple[list[dict], dict[str, str]]:
                     if sig.group(1) == "DESA" and efeito_desarmado:
                         efeito = efeito_desarmado
                 elif "armadura" in nome.lower():
-                    # O manual não define o efeito das maestrias de armadura.
-                    efeito = ""
-                    aviso(f"traços: '{nome}' sem efeito definido no manual (lacuna A DEFINIR)")
+                    efeito = efeito_maestria_armadura
+                    if not efeito:
+                        aviso(f"traços: '{nome}' sem efeito definido no manual")
                 traco = {
                     "nome": nome,
                     "categoria": "Maestria",

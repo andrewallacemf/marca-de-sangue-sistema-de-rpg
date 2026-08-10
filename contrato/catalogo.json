@@ -2316,7 +2316,7 @@
       "categoria": "Maestria",
       "atributo": "",
       "valorCompra": "1",
-      "efeito": "",
+      "efeito": "Sem a maestria correspondente, o redutor de PA da armadura é DOBRADO. Com a maestria, vale o valor normal da tabela.",
       "requisitos": "",
       "observacao": "Custo escalonado: a 1ª maestria custa 1 exp., a 2ª custa 2 exp., a 3ª custa 3 exp., e assim por diante (conta o total de maestrias).",
       "experimental": false
@@ -2326,7 +2326,7 @@
       "categoria": "Maestria",
       "atributo": "",
       "valorCompra": "1",
-      "efeito": "",
+      "efeito": "Sem a maestria correspondente, o redutor de PA da armadura é DOBRADO. Com a maestria, vale o valor normal da tabela.",
       "requisitos": "",
       "observacao": "Custo escalonado: a 1ª maestria custa 1 exp., a 2ª custa 2 exp., a 3ª custa 3 exp., e assim por diante (conta o total de maestrias).",
       "experimental": false
@@ -2336,7 +2336,7 @@
       "categoria": "Maestria",
       "atributo": "",
       "valorCompra": "1",
-      "efeito": "",
+      "efeito": "Sem a maestria correspondente, o redutor de PA da armadura é DOBRADO. Com a maestria, vale o valor normal da tabela.",
       "requisitos": "",
       "observacao": "Custo escalonado: a 1ª maestria custa 1 exp., a 2ª custa 2 exp., a 3ª custa 3 exp., e assim por diante (conta o total de maestrias).",
       "experimental": false
@@ -2409,7 +2409,7 @@
       "efeito": "Pode realizar um teste para desviar o dano que um aliado adjacente receberia para você. Se obtiver sucesso no teste, é acertado pelo golpe e recebe o dano, seus redutores de dano são aplicados.",
       "requisitos": "Estar a 1 metro de um aliado que está sendo atacado.; Estar usando escudo.",
       "experimental": false,
-      "gatilho": "Ser acertado por um ataque."
+      "gatilho": "Um aliado adjacente ser acertado por um ataque."
     },
     {
       "nome": "Blindado",
