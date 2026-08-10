@@ -67,8 +67,8 @@ pendências de **regra** (que ficam em [PENDENCIAS.md](../PENDENCIAS.md)).
       oficializados na [decisão de equipamentos e valores](decisoes/2026-08-10-equipamentos-itens-e-valores.md).
       O contrato ganhou `itens`; a plataforma deve aceitar `ITEM`, manter Proteções em página
       própria e não misturar itens gerais nos seletores de armas/proteções — **feito em
-      10/08/2026, decisão 066 da plataforma**. A migration e o seed de produção permanecem como
-      pendência operacional no repo da plataforma.
+      10/08/2026, decisão 066 da plataforma**. Migration e seed também concluídos em produção na
+      mesma data.
 
 - [x] **⭐ Catálogo gerado do manual** (24/07) — **feito:** os dados de autopreenchimento da
       ficha deixaram de ser transcritos à mão; `ficha/src/lib/catalogo.ts` agora é adaptador

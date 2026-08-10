@@ -46,3 +46,10 @@ exceção de carga que ainda não existe no sistema.
 ## Confirmação
 
 Aprovada por André em 10/08/2026.
+
+## Adendo de execução — 10/08/2026
+
+A decisão 066 da plataforma foi publicada depois da aplicação da migration do tipo `ITEM` e da
+execução do seed em produção. A verificação confirmou 37 itens gerais, 100 equipamentos no total
+e 9 propriedades. Este adendo substitui apenas o estado operacional pendente descrito acima; as
+decisões de regra permanecem inalteradas.
