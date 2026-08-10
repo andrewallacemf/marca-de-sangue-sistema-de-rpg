@@ -3,9 +3,9 @@ titulo: "Armas brancas"
 tipo: mecanica
 cenario: modulo
 modulo: armas-brancas
-status: revisao
+status: aprovado
 tags: [modulo, armas, armas-brancas, colecao-armas, equipamentos]
-atualizado-em: 2026-07-27
+atualizado-em: 2026-08-10
 ---
 
 # 🧩 Módulo: Armas brancas
@@ -19,7 +19,7 @@ impacto, hastes, machados e foices. Faz parte da **coleção `armas`** (ver
 > [sistema-base — equipamentos](../../sistema-base/listas/equipamentos-base.md). Este módulo só
 > traz a **lista de itens**.
 
-| **Item** | **Peso / Ações** | **Categoria / Propriedades** | **Alc. ideal** | **Dano** | **Preço suger.** | **Durabilidade** |
+| **Item** | **Peso / Ações** | **Categoria / Propriedades** | **Alc. ideal** | **Dano** | **Preço** | **Durabilidade** |
 | --- | --- | --- | --- | --- | --- | --- |
 | Manoplas com cravos, Adaga de soco, Rapieira | **`Leve`**<br>**`2 PA`** | **`CURT.`** **`PERF.`** | **`1m`** | **`1d6`** | **`6 moedas`** | **`20`** |
 | Faca, Foice de mão | **`Leve`**<br>**`2 PA`** | **`CURT.`** **`CORT.` `PERF.`** | **`1m`** | **`1d8` `CORT.` · `1d6` `PERF.`** | **`3 moedas`** | **`20`** |
@@ -42,13 +42,12 @@ impacto, hastes, machados e foices. Faz parte da **coleção `armas`** (ver
 | Picareta | **`Pesada`**<br>**`6 PA`** | **`CURT.`** **`PERF.`** | **`1m`** | **`1d10`** | **`6 moedas`** | **`40`** |
 | Martelo Grande, Martelo de batalha, Tetsu-bō, Kanabō | **`Pesada`**<br>**`6 PA`** | **`LONG.`** **`CONT.`** | **`1m a 2m`** | **`4d4`** | **`14 moedas`** | **`40`** |
 | Alabarda | **`Pesada`**<br>**`6 PA`** | **`LONG.`** **`PERF.`** | **`2m a 3m`** | **`1d10`** | **`16 moedas`** | **`40`** |
-| Lança montada (necessário os traços "Montaria" e "Justa") ⚠️ | **`Pesada`**<br>**`6 PA`** | **`LONG.`** **`PERF.`** | **`3m`** | **`1d10`** | **`9 moedas`** | **`40`** |
-| Mangual pesado, Mangual Atroz, Maça Pesada, Clava pesada, Esp. de duas lâminas, Naginata, Nagamaki | **`Pesada`**<br>**`6 PA`** | **`LONG.`** **`CORT.`** **`PERF.`** | **`2m`** | **`2d8` `CORT.` · `1d10` `PERF.`** | **`14 moedas`** | **`40`** |
+| Lança montada (necessário os traços "Montaria" e "Justa") | **`Pesada`**<br>**`6 PA`** | **`LONG.`** **`PERF.`** | **`3m`** | **`1d10`** | **`9 moedas`** | **`40`** |
+| Mangual pesado, Mangual Atroz, Maça Pesada, Clava pesada | **`Pesada`**<br>**`6 PA`** | **`LONG.`** **`CONT.`** | **`2m`** | **`4d4`** | **`14 moedas`** | **`40`** |
+| Esp. de duas lâminas, Naginata, Nagamaki | **`Pesada`**<br>**`6 PA`** | **`LONG.`** **`CORT.`** **`PERF.`** | **`2m`** | **`2d8` `CORT.` · `1d10` `PERF.`** | **`14 moedas`** | **`40`** |
 | Lança longa, Yari | **`Pesada`**<br>**`6 PA`** | **`LONG.`** **`PERF.`** **`ARRE.`** | **`2m`** / **`2m a 3m`** | **`1d10`** | **`10 moedas`** | **`40`** |
 | Espada Larga, montante, Flamberge, Foice ceifadora, Tachi, Nodachi, Ōdachi | **`Pesada`**<br>**`6 PA`** | **`LONG.`** **`CORT.`** **`PERF.`** | **`2m`** | **`2d8` `CORT.` · `1d10` `PERF.`** | **`12 moedas`** | **`40`** |
 
-*⚠️ A revisar: a **lança montada** (perfurante pesada) agora é `1d10` — conferir exceção como arma de carga. O grupo **"Mangual pesado… Esp. de duas lâminas"** tem nome contundente mas só lista `CORT.`/`PERF.` — alinhar as propriedades (se receber `CONT.`, ganha também `4d4`). ✅ Decidido em 27/07/2026: **Naginata/Nagamaki** (adicionadas para o cenário Mukashi) ficam só cortante/perfurante, sem opção contundente, independente do que for decidido para o resto do grupo.*
-
-*📝 Itens adicionados em 27/07/2026 para o cenário [Mukashi](../../cenarios/mukashi/arsenal.md) — preço sugerido a validar no playtest: **Wakizashi/Kodachi** (leve, com acuidade — peso mais leve que a família "Espada Curta" para diferenciar a lâmina companheira do samurai), **Bô** (média, com longo alcance — variante do "Bastão médio" para o bastão de ~2m usado com as duas mãos). **Leque de Guerra** (*tessen*/*gunsen*) adicionado ao grupo "Bastão médio, Martelo Médio" — equipamento sugerido do [Caminho da Corte](../../cenarios/mukashi/arquetipos-do.md#caminho-da-corte--o-eminente-da-corte), sem linha própria por não ter peso/alcance diferente do bastão médio.*
+*Itens adicionados em 27/07/2026 para o cenário [Mukashi](../../cenarios/mukashi/arsenal.md): **Wakizashi/Kodachi** (leve, com acuidade — peso mais leve que a família "Espada Curta" para diferenciar a lâmina companheira do samurai), **Bô** (média, com longo alcance — variante do "Bastão médio" para o bastão de ~2m usado com as duas mãos). **Leque de Guerra** (*tessen*/*gunsen*) integra o grupo "Bastão médio, Martelo Médio" por não ter peso ou alcance diferente do bastão médio.*
 
 *🔧 Ajuste de 27/07/2026: o grupo **"Adaga, Kukri, Kunai"** ganhou a propriedade `ACUI.` — pedido pelo cenário [Mukashi](../../cenarios/mukashi/arquetipos-do.md) para o Tantō do caminho Shinobi-dō (arquétipo Ágil/Mental precisa de uma lâmina de acuidade para rerrolar ataques com Ágil), mas vale para qualquer cenário que use essas lâminas — faz sentido para adagas leves e precisas em geral.*

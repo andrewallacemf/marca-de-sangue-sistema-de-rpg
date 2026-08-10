@@ -2,9 +2,9 @@
 titulo: Lista base de Proteções (Armaduras e escudos)
 tipo: regra
 cenario: base
-status: revisao
+status: aprovado
 tags: [protecoes, armaduras, escudos]
-atualizado-em: 2026-08-04
+atualizado-em: 2026-08-10
 ---
 
 # Lista base de Proteções (Armaduras e escudos)
@@ -68,8 +68,8 @@ golpe**, mas só quando a proteção **efetivamente absorve** o dano:
   a proteção).
 - Golpes numa região que a peça **não cobre** (sem redutor a aplicar) **não** gastam durabilidade.
 
-> ✅ Decidido em 19/07/2026: a **regra** de perda de durabilidade de armaduras e escudos (−1 só
-> quando o redutor se aplica; por região; quebra em 0) foi definida pelo grupo. Os **valores** por
-> peça seguem como proposta a calibrar no playtest.
+> ✅ Decidido em 19/07/2026: a perda de durabilidade de armaduras e escudos é −1 quando o
+> redutor se aplica, controlada por região, e a proteção quebra em 0. Os valores por peça foram
+> oficializados em 10/08/2026.
 
 > 💡 **Traços e habilidades que afetam a durabilidade:** [Zeloso](tracos-base.md#zeloso) (desgasta metade), [Reforçado](tracos-base.md#reforçado) (proteção +50%), [Guarda firme](tracos-base.md#guarda-firme) (defender não desgasta), [Reparar](habilidades-base-mentais.md#reparar) (recupera durabilidade) e [Golpe destruidor](habilidades-base-fisicas.md#golpe-destruidor) (força perda extra no alvo).

@@ -500,13 +500,12 @@ paginas:
     rota: /manual/jogador/recursos/equipamentos
     publico: jogador
     tipo: recurso
-    estado: mapeada
+    estado: publicada
     ordem: 46
-    objetivo: Explicar equipamentos e consultar armas, munições e itens por origem e propriedade.
+    objetivo: Consultar armas, munições, tamanhos, preços e propriedades oficiais.
     fontes:
       - contrato/catalogo.json
       - sistema-base/listas/equipamentos-base.md
-      - sistema-base/listas/itens-base.md
       - modulos/armas-brancas/README.md
       - modulos/armas-exoticas/README.md
       - modulos/arcos-e-bestas/README.md
@@ -520,15 +519,35 @@ paginas:
       - modulo.arcos-e-bestas.jogador
       - modulo.armas-de-fogo.jogador
     observacoes_internas:
-      - Resolver divergências de propriedades e valores antes de oficializar entradas afetadas.
+      - Valores, danos, durabilidade e separação das armas pesadas aprovados em 10/08/2026.
+      - Implementação publicada pela decisão 066 do docs/DECISIONS.md da plataforma.
+
+  - id: jogador.recursos.itens
+    titulo: Itens
+    rota: /manual/jogador/recursos/itens
+    publico: jogador
+    tipo: recurso
+    estado: publicada
+    ordem: 47
+    objetivo: Consultar os itens gerais e seus preços oficiais sem misturá-los a armas e proteções.
+    fontes:
+      - contrato/catalogo.json
+      - sistema-base/listas/itens-base.md
+    depende_de:
+      - jogador.recursos.equipamentos
+    relacionados:
+      - jogador.recursos.protecoes
+    observacoes_internas:
+      - Os 37 itens gerais entraram no contrato por decisão aprovada em 10/08/2026.
+      - Implementação publicada pela decisão 066 do docs/DECISIONS.md da plataforma.
 
   - id: jogador.recursos.protecoes
     titulo: Proteções
     rota: /manual/jogador/recursos/protecoes
     publico: jogador
     tipo: recurso
-    estado: aguardando_aprovacao
-    ordem: 47
+    estado: publicada
+    ordem: 48
     objetivo: Explicar e consultar armaduras, peças, escudos, redução e durabilidade.
     fontes:
       - contrato/catalogo.json
@@ -540,8 +559,8 @@ paginas:
       - jogador.recursos.equipamentos
       - modulo.protecoes.jogador
     observacoes_internas:
-      - Validar valores iniciais ainda marcados para calibração antes de publicar como catálogo oficial.
       - A regra de funcionamento, sem o catálogo integral, foi implementada conforme propostas/2026-08-04-saude-e-protecao.md.
+      - Valores e durabilidade aprovados em 10/08/2026; catálogo integral publicado pela decisão 066 da plataforma.
 
   - id: narrador.comece-aqui
     titulo: Manual do Narrador

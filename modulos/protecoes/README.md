@@ -3,9 +3,9 @@ titulo: "Proteções (armaduras e escudos)"
 tipo: mecanica
 cenario: modulo
 modulo: protecoes
-status: revisao
+status: aprovado
 tags: [modulo, protecoes, armaduras, escudos, equipamentos]
-atualizado-em: 2026-07-19
+atualizado-em: 2026-08-10
 ---
 
 # 🧩 Módulo: Proteções (armaduras e escudos)
@@ -20,7 +20,7 @@ coleção `armas`).
 
 ## Armaduras (por tipo)
 
-| **Tipo de armadura** | **Redutor Dano 🛡️** | **Redutor PA 🐢** | **Durab. (por peça)** 📝 | **Preço (por peça)** 📝 |
+| **Tipo de armadura** | **Redutor Dano 🛡️** | **Redutor PA 🐢** | **Durab. (por peça)** | **Preço (por peça)** |
 | --- | --- | --- | --- | --- |
 | Leve | **`-1`** | **`-1 PA`** | **`10`** | **`20 moedas`** |
 | Média | **`-2`** | **`-2 PA`** | **`25`** | **`60 moedas`** |
@@ -32,12 +32,10 @@ O **`PA` de uso** é o custo para **levantar guarda** com o escudo; o **redutor 
 penalidade permanente por **portá-lo**; o **redutor de dano** vale **ao defender com a guarda
 levantada**.
 
-| **Item** | **Tipo e Ações** | **Redutor Dano 🛡️** | **Redutor PA 🐢** | **Durab.** | **Preço sugerido** |
+| **Item** | **Tipo e Ações** | **Redutor Dano 🛡️** | **Redutor PA 🐢** | **Durab.** | **Preço** |
 | --- | --- | --- | --- | --- | --- |
 | Broquel | **`Leve`**<br>**`2 PA`** | **`-1`** | **`-1 PA`** | **`6`** | **`5 moedas`** |
 | Escudo pequeno | **`Leve`**<br>**`2 PA`** | **`-1`** | **`-1 PA`** | **`10`** | **`8 moedas`** |
 | Escudo médio, Cestus, Áspide | **`Média`**<br>**`3 PA`** | **`-2`** | **`-2 PA`** | **`15`** | **`14 moedas`** |
 | Escudo Grande | **`Média`**<br>**`3 PA`** | **`-2`** | **`-2 PA`** | **`20`** | **`20 moedas`** |
 | Escudo torre, Tater | **`Pesada`**<br>**`4 PA`** | **`-3`** | **`-3 PA`** | **`25`** | **`40 moedas`** |
-
-> 📝 Durabilidade e preço por peça são valores iniciais a calibrar no playtest.

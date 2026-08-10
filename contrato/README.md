@@ -18,7 +18,7 @@ manual (39 armas com dano defasado, 9 itens faltando — corrigido em 24/07/2026
 |---------|---------|
 | [`limpeza.py`](limpeza.py) | A **limpeza oficial**: remove frontmatter, blocos de bastidor (`✅`, `📝`, `🔧`, `⚠️ A DEFINIR`, datas de decisão…), blocos explícitos `<!-- bastidor:inicio -->…<!-- bastidor:fim -->`, seção "Referências" e marcações internas. **`💡` nunca é removido** — é dica de mesa pro jogador/mestre, não bastidor (ver [CONVENCOES.md §12](../CONVENCOES.md) para a tabela completa dos emojis). Páginas inteiras marcadas `publico: false` no frontmatter são filtradas por quem consome (`manual/gerar-conteudo.py`), antes mesmo de chamar a limpeza. |
 | [`exportar_catalogo.py`](exportar_catalogo.py) | O **exportador**: lê as listas do manual e gera o `catalogo.json`. |
-| [`catalogo.json`](catalogo.json) | O **artefato do contrato**: armas, munições, proteções, habilidades (com progressão por nível), traços, propriedades de armas, os inimigos do kit de playtest (proposta) e, desde 08/08/2026, magias e veículos (ambos proposta), em JSON estruturado. **Gerado — não edite à mão.** |
+| [`catalogo.json`](catalogo.json) | O **artefato do contrato**: armas, munições, proteções, itens gerais, habilidades (com progressão por nível), traços, propriedades de armas, os inimigos do kit de playtest (proposta) e, desde 08/08/2026, magias e veículos (ambos proposta), em JSON estruturado. **Gerado — não edite à mão.** |
 
 ## Consumidores
 
@@ -139,6 +139,10 @@ lacuna vira pendência).
     "tipo": "Leve", "redDano": "-1", "redPA": "-1", "durabilidade": "10",
     "paUso": "2",                   // só escudos: PA para levantar guarda
     "preco": "20 moedas", "modulo": "protecoes"
+  }],
+  "itens": [{
+    "nome": "Corda (10m)", "observacao": "",
+    "preco": "2 moedas", "modulo": "sistema-base"
   }],
   "habilidades": [{
     "nome": "Atordoar", "atributo": "Físico",

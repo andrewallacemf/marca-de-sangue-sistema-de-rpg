@@ -2,6 +2,7 @@
   "$comment": "GERADO por contrato/exportar_catalogo.py a partir das listas do manual — NÃO editar à mão. Contrato de conteúdo: ver contrato/README.md.",
   "fontes": [
     "sistema-base/listas/equipamentos-base.md",
+    "sistema-base/listas/itens-base.md",
     "sistema-base/listas/acoes-em-combate.md",
     "sistema-base/listas/tracos-base.md",
     "modulos/protecoes/README.md",
@@ -616,8 +617,27 @@
       "variantes": [
         "Mangual Atroz",
         "Maça Pesada",
-        "Clava pesada",
-        "Esp. de duas lâminas",
+        "Clava pesada"
+      ],
+      "tamanho": "Pesada",
+      "categoria": "Longa",
+      "custoPA": "6",
+      "alcance": "2m",
+      "dano": "4d4",
+      "props": [
+        "CONT"
+      ],
+      "versatil": false,
+      "acuidade": false,
+      "distancia": false,
+      "municoes": [],
+      "preco": "14 moedas",
+      "durabilidade": "40",
+      "modulo": "armas-brancas"
+    },
+    {
+      "nome": "Esp. de duas lâminas",
+      "variantes": [
         "Naginata",
         "Nagamaki"
       ],
@@ -1243,6 +1263,230 @@
       "paUso": "4",
       "preco": "40 moedas",
       "modulo": "protecoes"
+    }
+  ],
+  "itens": [
+    {
+      "nome": "Tomo",
+      "observacao": "",
+      "preco": "15 moedas",
+      "modulo": "sistema-base"
+    },
+    {
+      "nome": "Kit de costura",
+      "observacao": "",
+      "preco": "5 moedas",
+      "modulo": "sistema-base"
+    },
+    {
+      "nome": "Kit de primeiros socorros",
+      "observacao": "",
+      "preco": "10 moedas",
+      "modulo": "sistema-base"
+    },
+    {
+      "nome": "Ração de viagem",
+      "observacao": "",
+      "preco": "1 moeda",
+      "modulo": "sistema-base"
+    },
+    {
+      "nome": "Pergaminho",
+      "observacao": "",
+      "preco": "2 moedas",
+      "modulo": "sistema-base"
+    },
+    {
+      "nome": "Bússola",
+      "observacao": "",
+      "preco": "8 moedas",
+      "modulo": "sistema-base"
+    },
+    {
+      "nome": "Roupas simples",
+      "observacao": "",
+      "preco": "2 moedas",
+      "modulo": "sistema-base"
+    },
+    {
+      "nome": "Corda (10m)",
+      "observacao": "",
+      "preco": "2 moedas",
+      "modulo": "sistema-base"
+    },
+    {
+      "nome": "Escadas",
+      "observacao": "",
+      "preco": "3 moedas",
+      "modulo": "sistema-base"
+    },
+    {
+      "nome": "Fósforos",
+      "observacao": "",
+      "preco": "1 moeda",
+      "modulo": "sistema-base"
+    },
+    {
+      "nome": "Saco de dormir",
+      "observacao": "",
+      "preco": "3 moedas",
+      "modulo": "sistema-base"
+    },
+    {
+      "nome": "Amuleto",
+      "observacao": "",
+      "preco": "1 moeda",
+      "modulo": "sistema-base"
+    },
+    {
+      "nome": "Ferramenta de arrombamento",
+      "observacao": "",
+      "preco": "15 moedas",
+      "modulo": "sistema-base"
+    },
+    {
+      "nome": "Pé de cabra",
+      "observacao": "",
+      "preco": "4 moedas",
+      "modulo": "sistema-base"
+    },
+    {
+      "nome": "Pá",
+      "observacao": "",
+      "preco": "3 moedas",
+      "modulo": "sistema-base"
+    },
+    {
+      "nome": "Roupas Nobres",
+      "observacao": "",
+      "preco": "25 moedas",
+      "modulo": "sistema-base"
+    },
+    {
+      "nome": "Cantil",
+      "observacao": "",
+      "preco": "3 moedas",
+      "modulo": "sistema-base"
+    },
+    {
+      "nome": "Kit de cozinha",
+      "observacao": "",
+      "preco": "5 moedas",
+      "modulo": "sistema-base"
+    },
+    {
+      "nome": "Ampulheta",
+      "observacao": "",
+      "preco": "15 moedas",
+      "modulo": "sistema-base"
+    },
+    {
+      "nome": "Gancho",
+      "observacao": "",
+      "preco": "2 moedas",
+      "modulo": "sistema-base"
+    },
+    {
+      "nome": "Tocha",
+      "observacao": "",
+      "preco": "1 moeda",
+      "modulo": "sistema-base"
+    },
+    {
+      "nome": "Lanterna",
+      "observacao": "",
+      "preco": "10 moedas",
+      "modulo": "sistema-base"
+    },
+    {
+      "nome": "Saco para moedas",
+      "observacao": "",
+      "preco": "1 moeda",
+      "modulo": "sistema-base"
+    },
+    {
+      "nome": "Cadeado",
+      "observacao": "",
+      "preco": "5 moedas",
+      "modulo": "sistema-base"
+    },
+    {
+      "nome": "Capa",
+      "observacao": "",
+      "preco": "3 moedas",
+      "modulo": "sistema-base"
+    },
+    {
+      "nome": "Roupas de viajante",
+      "observacao": "",
+      "preco": "5 moedas",
+      "modulo": "sistema-base"
+    },
+    {
+      "nome": "Ferramentas de alquimia",
+      "observacao": "",
+      "preco": "25 moedas",
+      "modulo": "sistema-base"
+    },
+    {
+      "nome": "Balde",
+      "observacao": "",
+      "preco": "1 moeda",
+      "modulo": "sistema-base"
+    },
+    {
+      "nome": "Roupas de Inverno",
+      "observacao": "",
+      "preco": "8 moedas",
+      "modulo": "sistema-base"
+    },
+    {
+      "nome": "Aljava",
+      "observacao": "",
+      "preco": "2 moedas",
+      "modulo": "sistema-base"
+    },
+    {
+      "nome": "Instrumento musical",
+      "observacao": "",
+      "preco": "12 moedas",
+      "modulo": "sistema-base"
+    },
+    {
+      "nome": "Mochila",
+      "observacao": "",
+      "preco": "4 moedas",
+      "modulo": "sistema-base"
+    },
+    {
+      "nome": "Pena e Tinta",
+      "observacao": "",
+      "preco": "2 moedas",
+      "modulo": "sistema-base"
+    },
+    {
+      "nome": "Coldre",
+      "observacao": "",
+      "preco": "2 moedas",
+      "modulo": "sistema-base"
+    },
+    {
+      "nome": "Frasco",
+      "observacao": "",
+      "preco": "1 moeda",
+      "modulo": "sistema-base"
+    },
+    {
+      "nome": "Barraca",
+      "observacao": "",
+      "preco": "10 moedas",
+      "modulo": "sistema-base"
+    },
+    {
+      "nome": "Relógio solar",
+      "observacao": "",
+      "preco": "10 moedas",
+      "modulo": "sistema-base"
     }
   ],
   "habilidades": [

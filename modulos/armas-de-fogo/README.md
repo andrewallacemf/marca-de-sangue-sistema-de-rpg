@@ -3,9 +3,9 @@ titulo: "Armas de fogo"
 tipo: mecanica
 cenario: modulo
 modulo: armas-de-fogo
-status: revisao
+status: aprovado
 tags: [modulo, armas, armas-de-fogo, polvora, municao, colecao-armas, equipamentos]
-atualizado-em: 2026-07-27
+atualizado-em: 2026-08-10
 ---
 
 # 🧩 Módulo: Armas de fogo
@@ -22,7 +22,7 @@ Catálogo das **armas de pólvora** e sua munição. Faz parte da **coleção `a
 
 ## Armas
 
-| **Item** | **Tipo e Ações** | **Alc. ideal** | **Munição** | **Preço sugerido** | **Durabilidade** |
+| **Item** | **Tipo e Ações** | **Alc. ideal** | **Munição** | **Preço** | **Durabilidade** |
 | --- | --- | --- | --- | --- | --- |
 | Pistola simples | **`Leve`**<br>**`2 PA`** | **`2m a 15m`** | Bala de pólvora | **`220 moedas`** | **`20`** |
 | Espingarda, Arquebus, Handgonne, Teppō, Tanegashima | **`Média`**<br>**`4 PA`** | **`1m a 5m`** | Bala de pólvora (x2) | **`260 moedas`** | **`30`** |
@@ -30,7 +30,7 @@ Catálogo das **armas de pólvora** e sua munição. Faz parte da **coleção `a
 
 ## Munição
 
-| **Item** | **Categoria** | **Dano** | **Preço sugerido** |
+| **Item** | **Categoria** | **Dano** | **Preço** |
 | --- | --- | --- | --- |
 | Bala de pólvora | **`PROJ.`** | **`1d12`** | **`20 moedas`** |
 

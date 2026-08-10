@@ -4,7 +4,7 @@ tipo: regra
 cenario: base
 status: revisao
 tags: [equipamentos, armas, municoes]
-atualizado-em: 2026-07-12
+atualizado-em: 2026-08-10
 ---
 
 # Lista de equipamentos base
@@ -20,7 +20,7 @@ mais ser usada até ser reparada. Golpes que **erram** não gastam durabilidade.
 > ✅ Decidido em 19/07/2026: a **regra** de perda de durabilidade das armas (−1 por golpe que
 > acerta; quebra em 0) foi definida pelo grupo.
 
-### Valores de durabilidade (📝 proposta para calibrar)
+### Valores de durabilidade
 
 Durabilidade-base por **peso da arma** — calibrada contra a durabilidade das
 [proteções](protecoes-base.md#durabilidade-das-proteções) (armadura por peça: leve 10 / média 25 / pesada 50; escudos 6–25):
@@ -31,7 +31,7 @@ Durabilidade-base por **peso da arma** — calibrada contra a durabilidade das
 | **Média** | **`30`** |
 | **Pesada** | **`40`** |
 
-**Lógica da calibragem:** a **armadura** é o objeto mais resistente (10/25/50), mas só perde
+**Referência de uso:** a **armadura** é o objeto mais resistente (10/25/50), mas só perde
 durabilidade quando **absorve** um golpe; a **arma** fica no meio (20/30/40) e perde a cada
 **golpe que acerta** (desgasta mais rápido — lâmina cega, cabo racha); o **escudo** é o mais
 sacrificial (6–25) e perde a cada bloqueio. Assim, na prática, **espada precisa de manutenção
@@ -49,9 +49,6 @@ antes da armadura**, o que é coerente e realista.
   sobrepor com regra própria (encravamento/superaquecimento).
 - **Armas de haste flexível** (chicote, corrente, kusarigama): não lascam como uma lâmina — o
   narrador pode ignorar/dobrar o desgaste conforme a cena.
-
-> ⚠️ A DEFINIR: **aprovar/ajustar** estes valores no playtest (a *regra* de perda já está fechada;
-> os *números* acima são proposta).
 
 > 💡 **Traços e habilidades que afetam a durabilidade:** [Zeloso](tracos-base.md#zeloso) (desgasta metade), [Reforçado](tracos-base.md#reforçado) (proteção +50%), [Guarda firme](tracos-base.md#guarda-firme) (defender não desgasta), [Reparar](habilidades-base-mentais.md#reparar) (recupera durabilidade) e [Golpe destruidor](habilidades-base-fisicas.md#golpe-destruidor) (força perda extra no alvo).
 
@@ -100,11 +97,10 @@ O dano de **qualquer arma** — tabelada ou não — é aferido cruzando o **tam
 | **Média** | `1d12` | `1d8` | `3d4` |
 | **Pesada** | `2d8` | `1d10` | `4d4` |
 
-> ✅ **Aumento de letalidade — playtest 2 (19/07/2026).** O grupo achou as armas pouco letais.
-> A escala **subiu um degrau**: o antigo dano **médio** virou o **leve** (decisão do André —
-> perfurante leve `1d6`, cortante leve `1d8`, contundente leve `2d4`). 📝 **Proposta da IA para
-> os demais degraus** (a validar): mantendo a progressão de cada tipo — cortante `1d8 → 1d12 → 2d8`,
-> perfurante `1d6 → 1d8 → 1d10`, contundente `2d4 → 3d4 → 4d4`.
+> ✅ **Aumento de letalidade — playtest 2 (19/07/2026), escala completa oficializada em
+> 10/08/2026.** O grupo achou as armas pouco letais e a escala subiu um degrau. A progressão
+> oficial é: cortante `1d8 → 1d12 → 2d8`, perfurante `1d6 → 1d8 → 1d10` e contundente
+> `2d4 → 3d4 → 4d4`.
 >
 > Médias/altas aproximadas: cortante 4,5 / 6,5 / 9 · perfurante 3,5 / 4,5 / 5,5 · contundente 5 / 7,5 / 10.
 
@@ -113,7 +109,8 @@ O dano de **qualquer arma** — tabelada ou não — é aferido cruzando o **tam
 - **Ataque desarmado** = `1d4`. **Armas improvisadas** (usadas em corpo a corpo): leve `1d6−1`, média `1d8−1`, pesada `1d10−1`.
 - **Arremesso de objeto improvisado** (arremessar algo que não é arma de arremesso, ou pela habilidade "Arremesso improvisado"): objeto **leve = `1d6−1`**, **médio = `1d8−1`**, **pesado = `1d10−1`** (mesmo dano de uma arma improvisada), sempre **com desvantagem** por ser impróprio. **Arremessar uma arma de verdade** sem a propriedade `ARRE.` usa o **dano normal da arma**, também com desvantagem. *(Dano subido em 19/07/2026, junto com o aumento de letalidade.)*
 
-> ✅ Decidido em 12/07/2026 (ver [decisões — dano das armas](../../notas-de-design/decisoes/2026-07-12-dano-variavel-armas.md)). Os danos das tabelas nos **módulos de armas** foram gerados por esta matriz — **em revisão** arma por arma.
+> ✅ Decidido em 12/07/2026 e oficializado integralmente em 10/08/2026. Os danos das tabelas nos
+> **módulos de armas** são derivados desta matriz.
 
 ## Catálogo de armas e proteções (nos módulos)
 

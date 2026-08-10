@@ -3,9 +3,9 @@ titulo: "Arcos e bestas"
 tipo: mecanica
 cenario: modulo
 modulo: arcos-e-bestas
-status: revisao
+status: aprovado
 tags: [modulo, armas, arcos, bestas, municao, colecao-armas, equipamentos]
-atualizado-em: 2026-07-19
+atualizado-em: 2026-08-10
 ---
 
 # 🧩 Módulo: Arcos e bestas
@@ -21,7 +21,7 @@ zarabatana), com a **munição** que elas usam. Faz parte da **coleção `armas`
 
 ## Armas
 
-| **Item** | **Tipo e Ações** | **Alc. ideal** | **Munição** | **Preço sugerido** | **Durabilidade** |
+| **Item** | **Tipo e Ações** | **Alc. ideal** | **Munição** | **Preço** | **Durabilidade** |
 | --- | --- | --- | --- | --- | --- |
 | Funda / Zarabatana | **`Leve`**<br>**`2 PA`** | **`4m a 7m`** | Pedras / Dardo | **`5 moedas`** | **`20`** |
 | Arco curto, Besta de mão | **`Leve`**<br>**`2 PA`** | **`6m a 9m`** | Flecha ponta de madeira | **`20 moedas`** | **`20`** |
@@ -33,7 +33,7 @@ zarabatana), com a **munição** que elas usam. Faz parte da **coleção `armas`
 
 > Projéteis = 1 dado. Valores aumentados em 19/07/2026 (playtest 2).
 
-| **Item** | **Categoria** | **Dano** | **Preço sugerido** |
+| **Item** | **Categoria** | **Dano** | **Preço** |
 | --- | --- | --- | --- |
 | Pedras | **`PROJ.`** | **`1d4−1`** | **`grátis`** (improvisado) |
 | Dardo | **`PROJ.`** | **`1d4`** | **`1 moeda`** |

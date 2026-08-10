@@ -5,7 +5,7 @@ Exportador do catálogo estruturado — parte do CONTRATO DE CONTEÚDO (ver READ
 
 Lê as listas do manual (sistema-base/listas/ + módulos da coleção `armas` +
 modulos/protecoes/ + modulos/magia/ + modulos/veiculos/) e emite
-`contrato/catalogo.json` com armas, munições, proteções, habilidades (com
+`contrato/catalogo.json` com armas, munições, proteções, itens gerais, habilidades (com
 progressão por nível), traços, o glossário de propriedades de armas, os
 inimigos do kit de playtest (proposta), as magias do módulo Magia (proposta)
 e as listas do módulo Veículos (proposta).
@@ -38,6 +38,7 @@ FONTES_ARMAS_MELEE = ["modulos/armas-brancas/README.md", "modulos/armas-exoticas
 FONTES_ARMAS_DIST = ["modulos/arcos-e-bestas/README.md", "modulos/armas-de-fogo/README.md"]
 FONTE_PROTECOES = "modulos/protecoes/README.md"
 FONTE_EQUIPAMENTOS = "sistema-base/listas/equipamentos-base.md"
+FONTE_ITENS = "sistema-base/listas/itens-base.md"
 FONTE_ACOES = "sistema-base/listas/acoes-em-combate.md"
 FONTE_TRACOS = "sistema-base/listas/tracos-base.md"
 FONTES_HABILIDADES = [
@@ -378,6 +379,29 @@ def parse_protecoes(md: str) -> list[dict]:
                     "modulo": "protecoes",
                 })
     return protecoes
+
+
+def parse_itens(md: str) -> list[dict]:
+    """Itens gerais do sistema-base: nome, observação e preço literal."""
+    itens = []
+    for _secao, header, rows in tabelas(md):
+        if not header or header[0] != "Item" or not any("Preço" in h for h in header):
+            continue
+        if any("Categoria" in h or "Peso" in h or "Tipo" in h for h in header):
+            continue
+        for cells in rows:
+            if len(cells) < 3:
+                aviso(f"itens-base: linha com {len(cells)} colunas ignorada: {cells[:1]}")
+                continue
+            itens.append({
+                "nome": strip_md(cells[0]),
+                "observacao": strip_md(cells[1]),
+                "preco": strip_md(cells[2]),
+                "modulo": "sistema-base",
+            })
+    if not itens:
+        aviso("itens-base: nenhum item geral extraído (tabela ou formato mudou?)")
+    return itens
 
 
 # ---------------------------------------------------------------------------
@@ -1077,6 +1101,7 @@ def main() -> None:
         municoes += m
 
     protecoes = parse_protecoes(le(FONTE_PROTECOES))
+    itens = parse_itens(le(FONTE_ITENS))
     tracos, maestria_por_sigla = parse_tracos(le(FONTE_TRACOS))
     propriedades = parse_propriedades(md_equip, maestria_por_sigla)
 
@@ -1102,7 +1127,7 @@ def main() -> None:
     }
 
     # sanidade: nomes duplicados
-    for rotulo, lista in [("arma", armas), ("proteção", protecoes),
+    for rotulo, lista in [("arma", armas), ("proteção", protecoes), ("item", itens),
                           ("habilidade", habilidades), ("traço", tracos),
                           ("inimigo", inimigos), ("magia", magias),
                           ("categoria de veículo", veiculos["categorias"]),
@@ -1119,7 +1144,7 @@ def main() -> None:
     catalogo = {
         "$comment": ("GERADO por contrato/exportar_catalogo.py a partir das listas do manual "
                      "— NÃO editar à mão. Contrato de conteúdo: ver contrato/README.md."),
-        "fontes": ([FONTE_EQUIPAMENTOS, FONTE_ACOES, FONTE_TRACOS, FONTE_PROTECOES]
+        "fontes": ([FONTE_EQUIPAMENTOS, FONTE_ITENS, FONTE_ACOES, FONTE_TRACOS, FONTE_PROTECOES]
                    + FONTES_ARMAS_MELEE + FONTES_ARMAS_DIST
                    + [c for c, _ in FONTES_HABILIDADES]
                    + [FONTE_INIMIGOS, FONTE_CRIATURAS_BASE]
@@ -1128,6 +1153,7 @@ def main() -> None:
         "armas": armas,
         "municoes": municoes,
         "protecoes": protecoes,
+        "itens": itens,
         "habilidades": habilidades,
         "tracos": tracos,
         "inimigos": inimigos,
@@ -1139,6 +1165,7 @@ def main() -> None:
                      encoding="utf-8", newline="\n")
     print(f"OK — catálogo exportado em {SAIDA}")
     print(f"  armas: {len(armas)} · munições: {len(municoes)} · proteções: {len(protecoes)}"
+          f" · itens: {len(itens)}"
           f" · habilidades: {len(habilidades)} · traços: {len(tracos)}"
           f" · propriedades: {len(propriedades)} · inimigos: {len(inimigos)}")
     print(f"  magias: {len(magias)} · veículos: {len(veiculos['categorias'])} categorias"

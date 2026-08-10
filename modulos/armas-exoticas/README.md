@@ -3,9 +3,9 @@ titulo: "Armas exóticas"
 tipo: mecanica
 cenario: modulo
 modulo: armas-exoticas
-status: revisao
+status: aprovado
 tags: [modulo, armas, armas-exoticas, colecao-armas, equipamentos]
-atualizado-em: 2026-07-27
+atualizado-em: 2026-08-10
 ---
 
 # 🧩 Módulo: Armas exóticas
@@ -17,7 +17,7 @@ incomuns (chicotes, correntes, kusarigama, redes, chakram, boomerangue etc.). Fa
 > **Usa o sistema do núcleo.** Dano, propriedades, alcance e durabilidade em
 > [sistema-base — equipamentos](../../sistema-base/listas/equipamentos-base.md). Aqui só a lista.
 
-| **Item** | **Peso / Ações** | **Categoria / Propriedades** | **Alc. ideal** | **Dano** | **Preço suger.** | **Durabilidade** |
+| **Item** | **Peso / Ações** | **Categoria / Propriedades** | **Alc. ideal** | **Dano** | **Preço** | **Durabilidade** |
 | --- | --- | --- | --- | --- | --- | --- |
 | Tekkokagi | **`Leve`**<br>**`2 PA`** | **`CURT.`** **`PERF.`** | **`1m`** | **`1d6`** | **`6 moedas`** | **`20`** |
 | Shuriken | **`Leve`**<br>**`2 PA`** | **`CURT.`** **`PERF.` `ARRE.`** | **`2m a 5m`** | **`1d6`** | **`4 moedas`** | **`20`** |
@@ -32,4 +32,4 @@ incomuns (chicotes, correntes, kusarigama, redes, chakram, boomerangue etc.). Fa
 | Corrente de espinhos | **`Pesada`**<br>**`6 PA`** | **`LONG.`** **`CORT.`** **`AGAR.`** | **`3m a 4m`** | **`2d8`** | **`16 moedas`** | **`40`** |
 | Sasumata | **`Média`**<br>**`4 PA`** | **`LONG.`** **`CONT.` `AGAR.`** | **`2m`** | **`3d4`** | **`10 moedas`** | **`30`** |
 
-*📝 Sasumata adicionada em 27/07/2026 para o cenário [Mukashi](../../cenarios/mukashi/arsenal.md) — forquilha de captura da polícia feudal japonesa; alcance e preço são proposta a validar no playtest.*
+*Sasumata adicionada em 27/07/2026 para o cenário [Mukashi](../../cenarios/mukashi/arsenal.md) como forquilha de captura da polícia feudal japonesa.*
