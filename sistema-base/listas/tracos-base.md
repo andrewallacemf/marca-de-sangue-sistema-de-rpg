@@ -4,7 +4,7 @@ tipo: regra
 cenario: base
 status: revisao
 tags: [tracos, tecnicas, maestrias, aspectos]
-atualizado-em: 2026-07-24
+atualizado-em: 2026-08-10
 ---
 
 # Lista de Traços base
@@ -29,7 +29,7 @@ Técnicas são traços que **apenas anulam a desvantagem natural** dos testes da
 | Técnica em **Investigar/Observar** | `Mental` | **`1 exp.`** |
 | Técnica em **Ponderar** | `Mental` | **`1 exp.`** |
 | Técnica em **Intimidar** | `Social` | **`1 exp.`** |
-| Técnica em **Persuadir/Seduzir** | `Social` | **`1 exp.`** |
+| Técnica em **Persuadir** | `Social` | **`1 exp.`** |
 | Técnica em **Performar** | `Social` | **`1 exp.`** |
 | Técnica em **Tratar/Curar** | `Social` ou `Mental` | **`3 exp.`** |
 | Técnica em **Negociar** | `Social` ou `Mental` | **`3 exp.`** |
@@ -189,11 +189,12 @@ Defende ataques à distância com **`+1d10 de vantagem`**.
 
 #### Descrição
 
-Pode dobrar seu movimento ao correr em linha reta.
+Depois de percorrer pelo menos 5 metros em linha reta no mesmo turno, sua próxima ação
+**Correr** na mesma direção avança até **10 metros** em vez de 5, mantendo o custo de `3 PA`.
 
 #### Condição de uso (gatilho)
 
-- Gastar pelo menos 5 PA de movimento em linha reta.
+- Já ter percorrido pelo menos 5 metros em linha reta no turno.
 
 #### Requisitos de uso
 
@@ -444,7 +445,8 @@ Pode desferir um ataque de oportunidade a distância (exceção à regra geral d
 
 #### Descrição
 
-Não gasta PA extra para deslocar um aliado que esteja agarrado.
+Ao carregar um aliado voluntário, usa o custo normal de deslocamento em vez dos **`2 PA` por
+metro** exigidos para arrastar uma criatura agarrada.
 
 #### Condição de uso (gatilho)
 

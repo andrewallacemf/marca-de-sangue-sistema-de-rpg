@@ -51,7 +51,7 @@ mutação vizinha (quirk do sorteio original).
 | 2 | Olho de gato (enxerga 3 blocos no escuro; **contra:** desvantagem em [Investigar/Observar](../../../sistema-base/listas/acoes-em-combate.md#investigarobservar) durante o dia) | 1 dano perm. na cabeça |
 | 3 | Músculos de borracha (área de acerto de armas +1 bloco; **contra:** −1 PA no próximo turno se não se moveu no anterior) | — |
 | 4 | Bico (boca vira bico de ave, à escolha do Mestre) | — |
-| 5 | Guelras (respira sob a água sem precisar de testes por até 1 rodada; **contra:** pela falta de fôlego fora da água, o [teto de deslocamento](../../../sistema-base/conceitos/07-pontos-de-acao.md) em terra cai 1 `PA` por turno) | — |
+| 5 | Guelras (a primeira rodada submersa não consome o [limite normal de fôlego](../../../sistema-base/listas/acoes-em-combate.md#fôlego-e-afogamento); depois dela, começa a contagem baseada em Ágil; **contra:** pela falta de fôlego fora da água, o [teto de deslocamento](../../../sistema-base/conceitos/07-pontos-de-acao.md) em terra cai 1 `PA` por turno) | — |
 | 6 | Focinho (nariz vira focinho de animal, à escolha do narrador) | — |
 | 7 | Ruminante (vomita e sente impulso de comer de novo; resiste com Teste Mental — **cosmética**, sem efeito prático em jogo) | — |
 | 8 | Ouriçase (pelos ficam pontudos com medo/intimidação; incomoda, não machuca — **cosmética**) | — |

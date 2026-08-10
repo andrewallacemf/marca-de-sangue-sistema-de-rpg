@@ -105,7 +105,7 @@ importa.
 - Confundir inimigo — nível 3 (9) — desvantagem na defesa de até 3 inimigos
 - Intimidação generalizada — nível 2 (6) — atrasa o turno de até 2 inimigos
 - Maestria em armaduras leves (1) · Maestria em armas cortantes (1)
-- Técnica em Persuadir/Seduzir (1)
+- Técnica em Persuadir (1)
 - Aptidão Social ×18 (18) · Aptidão Mental ×4 (4)
 
 **Fadiga por uso:** Grito de alerta = **4** · Confundir = **4** · Intimidação = **4** ·

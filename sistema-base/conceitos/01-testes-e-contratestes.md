@@ -3,8 +3,8 @@ titulo: Testes e Contratestes
 tipo: regra
 cenario: base
 status: revisao
-tags: [testes, contratestes, vantagens, desvantagens, dados, desempate, ambiente, terreno, elevacao]
-atualizado-em: 2026-07-12
+tags: [testes, contratestes, vantagens, desvantagens, dados, desempate, tentativas, ambiente, terreno, elevacao]
+atualizado-em: 2026-08-10
 ---
 
 # Testes e Contratestes
@@ -60,6 +60,39 @@ Em caso de acontecimentos imprevistos em que a própria natureza tem a iniciativ
 ## Modificadores de testes e contratestes
 
 Ao realizar um teste ou contrateste, seu personagem pode receber **`vantagens`** e **`desvantagens`** de acordo com as armas, armaduras, habilidades, posicionamento e, principalmente, contexto. Esses modificadores alteram as probabilidades de sucesso e falha e **são extremamente importantes para elaboração das estratégias em conflitos e combate.**
+
+## Tentativas repetidas
+
+Quando uma tentativa falha e alguém repete **a mesma tarefa**, nas mesmas condições e buscando
+exatamente o mesmo resultado, o novo teste recebe **`+1d10 de desvantagem` acumulativa** por
+tentativa anterior que falhou:
+
+- primeira tentativa: teste normal;
+- segunda tentativa: `+1d10 de desvantagem`;
+- terceira tentativa: `+2d10 de desvantagem`;
+- e assim por diante.
+
+A penalidade pertence à **tarefa**, não ao personagem. Se outra pessoa apenas tenta superar a
+mesma falha para obter o mesmo resultado, ela herda o acúmulo. O narrador decide se as tentativas
+fazem parte da mesma sequência, considerando objetivo, abordagem e condições.
+
+O acúmulo termina quando a tarefa é concluída ou quando há uma mudança relevante de abordagem,
+ferramentas, informações, condições ou objetivo. Apenas esperar e repetir a tentativa exatamente
+da mesma forma não reinicia a sequência. Uma falha também pode alterar a situação ou tornar uma
+nova tentativa impossível; essa consequência continua a critério do narrador.
+
+Objetivos individuais não compartilham o acúmulo. Se várias pessoas precisam saltar a mesma
+ravina, cada uma tenta levar o próprio corpo ao outro lado e começa sua sequência sem penalidade.
+Se todas tentam abrir a mesma fechadura ou encontrar a mesma passagem secreta, perseguem um único
+resultado e compartilham as desvantagens acumuladas.
+
+Ajuda oferecida antes da rolagem integra a mesma tentativa. Uma nova rolagem sequencial de outro
+personagem é uma tentativa repetida.
+
+**Exceção — ataques:** testes de ataque não usam esta regra. Eles seguem somente as
+[penalidades próprias de ataques consecutivos](../conflitos/02-acoes-em-conflito.md#ataques-consecutivos),
+sem acumular uma segunda penalidade pela regra geral. Outras regras específicas podem declarar
+suas próprias exceções.
 
 ## Vantagens e Desvantagens
 

@@ -1351,7 +1351,7 @@
       "atributo": "Físico",
       "custoPA": "5 PA",
       "valorCompra": "2",
-      "efeito": "Agarra o oponente e causa dano a ele. Em seu turno, pode gastar 4 PA para causar dano novamente ao oponente enquanto tiver PA suficiente para realizar a ação. O oponente pode gastar 2 PA para realizar um teste físico para tentar se soltar em seu turno, se falhar, pode tentar novamente enquanto ainda tiver PA para realizar a ação.",
+      "efeito": "Agarra o oponente e causa dano a ele. Em seu turno, pode gastar 4 PA para causar dano novamente ao oponente enquanto tiver PA suficiente para realizar a ação. O oponente pode gastar 2 PA para realizar um teste físico para tentar se soltar em seu turno. Se falhar, pode tentar novamente enquanto tiver PA, acumulando a desvantagem da regra de Tentativas repetidas.",
       "requisitos": "Não estar usando armas.; Não ter nenhum braço desabilitado.",
       "niveis": [
         "Causa 1 ponto de dano.",
@@ -2206,7 +2206,7 @@
       "experimental": false
     },
     {
-      "nome": "Técnica em Persuadir/Seduzir",
+      "nome": "Técnica em Persuadir",
       "categoria": "Técnica",
       "atributo": "Social",
       "valorCompra": "1",
@@ -2485,10 +2485,10 @@
       "categoria": "Aspecto",
       "atributo": "",
       "valorCompra": "4",
-      "efeito": "Pode dobrar seu movimento ao correr em linha reta.",
+      "efeito": "Depois de percorrer pelo menos 5 metros em linha reta no mesmo turno, sua próxima ação Correr na mesma direção avança até 10 metros em vez de 5, mantendo o custo de 3 PA.",
       "requisitos": "Não possuir nenhuma perna desabilitada.; Não mudar a direção do movimento.; Não estar utilizando armas ou armaduras pesadas.",
       "experimental": false,
-      "gatilho": "Gastar pelo menos 5 PA de movimento em linha reta."
+      "gatilho": "Já ter percorrido pelo menos 5 metros em linha reta no turno."
     },
     {
       "nome": "Dorminhoco",
@@ -2535,7 +2535,7 @@
       "categoria": "Aspecto",
       "atributo": "",
       "valorCompra": "6",
-      "efeito": "Não gasta PA extra para deslocar um aliado que esteja agarrado.",
+      "efeito": "Ao carregar um aliado voluntário, usa o custo normal de deslocamento em vez dos 2 PA por metro exigidos para arrastar uma criatura agarrada.",
       "requisitos": "",
       "experimental": false,
       "gatilho": "O aliado só pode ser carregado de forma voluntária."

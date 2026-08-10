@@ -70,7 +70,7 @@ mirando o NPC) cria a tensão certa. Empurrar inimigos da ponte deve ser uma jog
 - **Armas:** Sabre (Média · versátil · longo alcance · dano 1d8 CORT · 1d6 PERF (+1d4 a 2 mãos) · 4 PA · alc. 1–2 m)
 - **Proteção:** Peitoral leve (R.PA -1, R.Dano -1) · Escudo pequeno (leve · guarda 2 PA) (R.PA -1, R.Dano -1)
 - **Maestrias:** Maestria em armaduras leves, Maestria em armas cortantes
-- **Traços:** Apoiador, Técnica em Persuadir/Seduzir
+- **Traços:** Apoiador, Técnica em Persuadir
 - **Habilidades:** Grito de alerta (nível 3), Brado de guerra (nível 3), Comandar (nível 4), Confundir inimigo (nível 3), Intimidação generalizada (nível 2)
 - **Aptidões (custo escalonado):** Mental ×3, Social ×5
 

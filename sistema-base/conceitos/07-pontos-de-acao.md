@@ -4,7 +4,7 @@ tipo: regra
 cenario: base
 status: estavel
 tags: [pontos-de-acao, pa, turno, movimento]
-atualizado-em: 2026-07-12
+atualizado-em: 2026-08-10
 ---
 
 # Pontos de ação
@@ -17,7 +17,12 @@ Para ver a lista de ações básicas disponíveis e a lista de habilidades bási
 
 > 💡 No começo de uma campanha, **recomenda-se que cada personagem comece com `10 PA`.**
 
-Todo personagem só pode gastar até **`7 PA` em locomoção por turno** (ou seja, andar no máximo 7 metros). Para elevar esse limite é necessário adquirir habilidade específica para isso (o aspecto **[Corredor](../listas/tracos-base.md#corredor)** dobra o teto). Se o deslocamento é maior por conta de habilidade ou traço, ele **não** é contabilizado no limite, porque o custo foi gasto na habilidade e não diretamente em deslocamento.
+Todo personagem só pode gastar até **`7 PA` em locomoção por turno**. Pelo movimento normal, isso
+equivale a andar no máximo 7 metros; ações como **[Correr](../listas/acoes-em-combate.md#correr)**
+podem fazer os mesmos `PA` renderem mais distância. Para elevar o limite de `PA` é necessário
+adquirir um recurso específico — o aspecto **[Corredor](../listas/tracos-base.md#corredor)** dobra
+o teto. Se o deslocamento é maior por conta de habilidade ou traço, ele **não** é contabilizado no
+limite, porque o custo foi gasto na habilidade e não diretamente em deslocamento.
 
 - **`PA` gasto diretamente para mover** é o que conta para o teto; quantos **espaços** isso rende varia (terreno difícil consome mais `PA` por espaço; traços/habilidades podem render mais espaços).
 - **[Fadiga](08-fadiga.md) não eleva o teto:** comprar `PA` extra com fadiga não permite ultrapassar os `7 PA` de locomoção.

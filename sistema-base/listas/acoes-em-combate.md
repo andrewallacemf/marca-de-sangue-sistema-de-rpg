@@ -4,7 +4,7 @@ tipo: regra
 cenario: base
 status: revisao
 tags: [acoes, combate, pontos-de-acao]
-atualizado-em: 2026-08-04
+atualizado-em: 2026-08-10
 ---
 
 # Lista de ações disponíveis em combate
@@ -59,26 +59,28 @@ atualizado-em: 2026-08-04
 | Derrubar | `Físico` | **`3 PA`** | Por tentativa |
 | Levantar | `Físico` | **`2 PA`** | Por ação |
 | Saltar | `Ágil` | **`1 PA`** | por metro |
-| Correr | `Ágil` | **`1 PA`** | a cada 2 metros em linha reta |
+| Correr | `Ágil` | **`3 PA`** | até 5 metros em linha reta |
 | Nadar | `Ágil` | **`1 PA`** | por metro |
-| Realizar Truques | `Ágil` | **`1 PA`** | por ação |
-| Esconder-se | `Ágil` | **`1 PA`** | Por ação |
+| Realizar Truques | `Ágil` ou `Social` | **`1 PA`** | por ação |
+| Esconder-se | `Ágil` | **`2 PA`** | por ação |
 | Investigar/Observar | `Mental` | **`1 PA`** | por ação |
 | Ponderar | `Mental` | **`1 PA`** | por ação |
 | Intimidar | `Social` | **`1 PA`** | por ação (seguindo a regra de fala em batalha) |
-| Persuadir/Seduzir | `Social` | **`1 PA`** | por ação (seguindo a regra de fala em batalha) |
+| Persuadir | `Social` | **`1 PA`** | por ação (seguindo a regra de fala em batalha) |
 | Performar | `Social` | **`1 PA`** | por ação |
 | Tratar/Curar | `Social` ou `Mental` | **`4 PA`** | por ação |
-| Negociar | `Social` | **`1 PA`** | por ação (seguindo a regra de fala em batalha) |
+| Negociar | `Social` ou `Mental` | **`1 PA`** | por ação (seguindo a regra de fala em batalha) |
 
 \*Outros tipos de ação não previstos neste manual podem ter seu custo definido pelo narrador com base nas ações já definidas.
 
 ## Ações complexas (em ordem alfabética)
 
-> 📝 **Proposta da IA, 01/08/2026 — a revisar pelo grupo.** Até esta data, 15 das 16 entradas
-> abaixo eram modelos vazios e "Derrubar" não tinha entrada nenhuma; só "Saltar" estava escrita. As
-> descrições foram redigidas a pedido do Daniel, seguindo o formato e a lógica de Saltar. **Nenhuma
-> foi testada em mesa.**
+> 📝 **Curadoria iniciada em 10/08/2026.** As regras transversais da página foram aprovadas:
+> Esconder-se custa `2 PA`, Negociar pode usar Social ou Mental e toda Técnica apenas anula a
+> desvantagem natural da atividade. Saltar e Tratar/Curar possuem decisões próprias. As quatro
+> manobras físicas, Correr, Esconder-se, Investigar/Observar, Levantar, Nadar, Ponderar, Intimidar,
+> Negociar, Performar, Persuadir e Realizar Truques foram aprovados em 10/08/2026. Com isso, todas
+> as descrições deste bloco estão fechadas para a curadoria editorial da página pública.
 >
 > Duas regras de desenho guiaram todas elas:
 >
@@ -93,17 +95,23 @@ atualizado-em: 2026-08-04
 
 #### Uso padrão
 
-Prender o corpo do oponente. **Teste Físico** contra contrateste **Físico ou Ágil** do alvo (escolha dele).
+Prender o corpo do oponente custa **`1 PA`**. Faça um **Teste Físico** contra contrateste
+**Físico ou Ágil** do alvo, à escolha dele.
 
-- No sucesso, o alvo fica **agarrado**: não pode se mover e sofre **desvantagem** em toda ação que dependa de mover o corpo livremente.
-- **Manter o agarrão custa `1 PA` por turno.** Quem agarra também fica preso à cena: só pode se deslocar arrastando o alvo, a `2 PA` por metro.
-- **Escapar** é uma ação do alvo: contrateste **Físico ou Ágil** contra o Físico de quem agarra.
+- No sucesso, o alvo fica **agarrado**: não pode se afastar voluntariamente de quem o segura.
+- Um dos braços de quem agarra fica ocupado enquanto o efeito durar.
+- A partir do turno seguinte, **manter o agarrão custa `1 PA` no início de cada turno** de quem
+  agarra. Se o custo não for pago, o agarrão termina. Soltar voluntariamente não custa `PA`.
+- Quem agarra pode arrastar o alvo por **`2 PA` por metro**.
+- **Escapar custa `2 PA` por tentativa** e exige novo contrateste **Físico ou Ágil** contra o
+  Físico de quem agarra. Falhas sucessivas seguem a regra de
+  **[Tentativas repetidas](../conceitos/01-testes-e-contratestes.md#tentativas-repetidas)**.
 - Agarrar alvo de **porte maior** que o seu impõe **desvantagem**.
 - Com uma arma de agarrar (**`AGAR.`**), a ação usa a arma em vez das mãos e segue o alcance dela.
 
 #### Uso com a técnica
 
-- Ignora a **desvantagem por porte maior** (um degrau de porte).
+- Anula a **desvantagem natural** desta ação, quando houver. A Técnica não concede vantagem.
 
 #### Requisitos de uso
 
@@ -115,16 +123,23 @@ Prender o corpo do oponente. **Teste Físico** contra contrateste **Físico ou �
 
 #### Uso padrão
 
-Lançar **um objeto ou uma criatura** — não confundir com atacar usando arma de arremesso, que é um [ataque](#ações-básicas) normal.
+Lançar **um objeto ou uma criatura** custa **`1 PA` a cada 3 metros** de distância pretendida.
+O custo é escolhido antes do teste.
 
-- Alcance: **3 metros por `PA`** investido.
-- **Objeto:** se for arremessado contra alguém, é um ataque com **arma improvisada** (ver [Equipamentos](equipamentos-base.md)).
-- **Criatura:** só pode ser arremessada se estiver **agarrada** por você. Ela sofre **`1d6` de dano** e cai no chão (precisa da ação **Levantar**).
-- Arremessar peso acima do que você carrega confortavelmente impõe **desvantagem**; o narrador arbitra o limite.
+- Arremessar um objeto contra alguém é um ataque com **arma improvisada** (ver
+  [Equipamentos](equipamentos-base.md)); use o custo e o dano desse ataque, sem cobrar também o
+  custo desta ação.
+- Uma criatura só pode ser arremessada se estiver **agarrada** por você. Faça um **Teste Físico**
+  contra contrateste **Físico** dela.
+- No sucesso, o agarrão termina, a criatura é deslocada até a distância paga e fica **caída**.
+- A ação não causa dano automaticamente. Colisões com paredes, criaturas, precipícios ou outros
+  perigos aplicam as consequências próprias do obstáculo ou terreno.
+- Peso ou porte excessivo pode impor **desvantagem** ou impossibilitar a ação, a critério do
+  narrador.
 
 #### Uso com a técnica
 
-- Ignora a **desvantagem por peso** do que é arremessado.
+- Anula a **desvantagem natural** desta ação, quando houver. A Técnica não concede vantagem.
 
 #### Requisitos de uso
 
@@ -136,12 +151,16 @@ Lançar **um objeto ou uma criatura** — não confundir com atacar usando arma 
 
 #### Uso padrão
 
-Deslocar-se **em linha reta**, mais rápido do que o passo normal: **`1 PA` a cada 2 metros**, em vez de `1 PA` por metro.
+Deslocar-se mais rápido do que o passo normal custa **`3 PA`** e permite avançar **até 5 metros
+em linha reta**.
 
-- Exige **linha reta**: qualquer mudança de direção encerra a corrida, e retomá-la é uma nova ação.
-- Vale o **teto de deslocamento** do personagem (7 dos 10 `PA`).
-- Correr **não permite atacar no mesmo movimento** — o ataque encerra a corrida.
-- Em terreno difícil ou instável, o narrador pode exigir **Teste Ágil**; a falha derruba o personagem.
+- Você pode percorrer menos de 5 metros, mas o deslocamento não utilizado é perdido.
+- Não é possível mudar de direção durante a ação. Uma nova ação Correr pode seguir outra direção.
+- Os `3 PA` contam para o **teto de PA de locomoção** do personagem.
+- Correr provoca ataques de oportunidade como qualquer deslocamento. É possível agir antes ou
+  depois da corrida.
+- Correr não pode ser usado em **terreno difícil**; use o movimento normal. Terreno apenas
+  instável pode exigir **Teste Ágil**; a falha deixa o personagem caído.
 
 #### Requisitos de uso
 
@@ -153,15 +172,17 @@ Deslocar-se **em linha reta**, mais rápido do que o passo normal: **`1 PA` a ca
 
 #### Uso padrão
 
-Levar o oponente ao chão. **Teste Físico** contra contrateste **Físico ou Ágil** do alvo.
+Levar o oponente ao chão custa **`3 PA`**. Faça um **Teste Físico** contra contrateste **Físico ou
+Ágil** do alvo.
 
-- No sucesso, o alvo fica **caído**: sofre **desvantagem** para atacar, ataques corpo a corpo contra ele ganham **vantagem**, e ele precisa gastar a ação **Levantar** (`2 PA`) para ficar de pé.
+- No sucesso, o alvo fica **caído**: sofre **desvantagem** para atacar, ataques contra ele ganham
+  **vantagem**, e ele precisa gastar a ação **Levantar** (`2 PA`) para ficar de pé.
 - Derrubar alvo de **porte maior** impõe **desvantagem**.
-- Um alvo **agarrado** por você é derrubado **sem teste**.
+- Um alvo **agarrado** por você ainda realiza o contrateste, mas só pode usar **Físico**.
 
 #### Requisitos de uso
 
-- Nenhuma **perna** desabilitada (é preciso ter base para aplicar força).
+- Conseguir alcançar o alvo e aplicar força com pelo menos um braço ou uma perna não desabilitada.
 
 ### Empurrar
 
@@ -169,19 +190,20 @@ Levar o oponente ao chão. **Teste Físico** contra contrateste **Físico ou Ág
 
 #### Uso padrão
 
-Deslocar o oponente para longe sem derrubá-lo. **Teste Físico** contra contrateste **Físico ou Ágil**.
+Deslocar o oponente para longe sem derrubá-lo custa **`1 PA`**. Faça um **Teste Físico** contra
+contrateste **Físico ou Ágil**.
 
-- No sucesso, o alvo recua **1 metro**, mais **1 metro por 2 pontos** de diferença no resultado.
+- No sucesso, o alvo recua **1 metro**.
 - O empurrão pode tirar o alvo do seu **alcance ideal**, quebrando o engajamento — e pode jogá-lo em um precipício, fogueira ou armadilha, com as consequências do terreno.
 - Empurrar alvo de **porte maior** impõe **desvantagem**.
 
 #### Uso com a técnica
 
-- Ignora a **desvantagem por porte maior** (um degrau de porte).
+- Anula a **desvantagem natural** desta ação, quando houver. A Técnica não concede vantagem.
 
 #### Requisitos de uso
 
-- Pelo menos **um braço** não desabilitado.
+- Conseguir fazer contato com o alvo e aplicar força.
 
 ### Esconder-se
 
@@ -189,18 +211,34 @@ Deslocar o oponente para longe sem derrubá-lo. **Teste Físico** contra contrat
 
 #### Uso padrão
 
-Sair do campo de percepção de quem procura. **Teste Ágil** contra contrateste **Mental** de quem poderia notar.
+Sair da percepção dos oponentes custa **`2 PA`**.
 
-- Exige **cobertura, escuridão ou distração** — não se esconde em campo aberto e iluminado.
-- Manter-se escondido enquanto se move custa a ação de novo a cada deslocamento.
-- Atacar, falar alto ou abrir uma porta **revela** o personagem.
-- Armadura **pesada** impõe **desvantagem**.
+- A ação só pode ser usada fora do campo de visão dos oponentes. Habilidades como
+  **[Ocultar-se à vista](habilidades-base-ageis.md#ocultar-se-à-vista)** podem criar exceções.
+- Faça um **Teste Ágil** e guarde o resultado como sua **qualidade de furtividade**.
+- Quando houver possibilidade de detecção, somente o observador faz um **Teste Mental**. Se o
+  resultado for maior que a qualidade de furtividade, ele descobre o personagem; se for igual ou
+  menor, o personagem continua escondido.
+- Um novo uso de Esconder-se substitui a qualidade anterior pelo novo resultado, mesmo que ele
+  seja menor.
+- Se a tentativa anterior falhou e a ação for repetida com o mesmo objetivo e nas mesmas
+  condições, aplique a regra de
+  **[Tentativas repetidas](../conceitos/01-testes-e-contratestes.md#tentativas-repetidas)**.
+- Esconder-se no meio do nada ou atrás de meia cobertura impõe **desvantagem natural**. Cobertura
+  completa não impõe essa desvantagem.
+- Mover-se dentro de cobertura ou fora do campo de visão não exige novo pagamento nem nova
+  rolagem.
+- O personagem deixa de estar escondido quando é descoberto ou realiza uma ação que claramente o
+  exponha. O narrador deve avisar antes que uma ação pretendida revele o personagem.
+- Barulho, iluminação, armadura e mudanças de cobertura podem modificar os testes conforme a
+  situação.
 
-> 🧩 Mesas que usam o [módulo Furtividade](../../modulos/furtividade/README.md) trocam esta ação pela regra completa de lá (campo de visão, nível de alerta e alarme).
+> 🧩 O [módulo Furtividade](../../modulos/furtividade/README.md) expande esta ação com formatos e
+> alcances de campo de visão, níveis de alerta, alarme do ambiente e emboscadas.
 
 #### Uso com a técnica
 
-- Ignora a **desvantagem por armadura pesada**.
+- Anula a **desvantagem natural** desta ação, quando houver. A Técnica não concede vantagem.
 
 #### Requisitos de uso
 
@@ -212,20 +250,44 @@ Sair do campo de percepção de quem procura. **Teste Ágil** contra contrateste
 
 #### Uso padrão
 
-Dobrar alguém pelo medo. **Teste Social** contra contrateste **Social ou Mental** do alvo.
+Pressionar um alvo com uma ameaça, exigência ou demonstração de perigo compreensível. Em turnos
+estruturados, custa **`1 PA`**, afeta **um alvo** e inclui até quatro palavras; mensagens maiores
+pagam os `PA` adicionais da **[regra de fala em batalha](../conflitos/02-acoes-em-conflito.md#falar-em-combate)**.
 
-- Segue a **regra de fala em batalha**: o alvo precisa **ouvir e entender** você.
-- No sucesso, o alvo recua, hesita ou entrega o que foi exigido — o narrador define o alcance conforme o que está em jogo. **Intimidação não controla o alvo**: só o assusta.
-- Contra alvo **em vantagem numérica evidente** ou que não tenha nada a perder, há **desvantagem**.
-- Um alvo já intimidado na mesma cena resiste com **vantagem** — a ameaça perde efeito na repetição.
+- O alvo precisa perceber a intimidação. Só precisa compreender o idioma quando a exigência
+  depender de palavras; uma ameaça física evidente pode ser transmitida sem fala.
+- Faça **Teste Social** contra contrateste **Social ou Mental**, escolhido pelo alvo. Antes da
+  rolagem, o narrador esclarece o que ele pode plausivelmente conceder naquela situação.
+- No sucesso, o alvo pode recuar, hesitar, entregar algo, revelar uma informação que conhece,
+  abandonar uma ação ou aceitar outra concessão coerente com a ameaça.
+- Intimidar não controla a mente, não cria lealdade, não altera convicções profundas e não obriga
+  alguém a fazer algo evidentemente pior do que enfrentar a ameaça.
+- Um personagem de jogador nunca perde o controle de suas decisões. Seu jogador interpreta como o
+  medo ou a pressão se manifesta dentro dos limites estabelecidos pelo resultado.
+- Se o alvo não puder sentir medo, não compreender o perigo ou realmente não tiver nada a perder,
+  a ação pode ser impossível.
+- Vantagem numérica, proteção, distância segura, histórico entre os envolvidos e credibilidade da
+  ameaça podem gerar modificadores circunstanciais.
+- Na falha, o alvo não concede o exigido e reage conforme a cena. Repetir a mesma ameaça para obter
+  a mesma concessão segue **[Tentativas repetidas](../conceitos/01-testes-e-contratestes.md#tentativas-repetidas)**.
+  Uma ameaça realmente nova, uma mudança concreta de poder ou uma exigência diferente pode iniciar
+  outra sequência.
+- O sucesso cobre somente a concessão definida antes do teste; novas exigências são resolvidas
+  separadamente.
+- A ação comum não atrasa turnos nem afeta vários alvos. Esses efeitos pertencem a
+  **[Urro de Intimidação](habilidades-base-mentais.md#urro-de-intimidação)** e
+  **[Intimidação generalizada](habilidades-base-mentais.md#intimidação-generalizada)**.
+- Interações longas podem usar o módulo **[Conflito Social](../../modulos/conflito-social/README.md)**;
+  esta ação cobre pressão imediata.
 
 #### Uso com a técnica
 
-- Ignora a **desvantagem por vantagem numérica** do lado do alvo.
+- Anula a **desvantagem natural** desta ação, quando houver. A Técnica não remove modificadores
+  circunstanciais nem concede vantagem.
 
 #### Requisitos de uso
 
-- Poder se comunicar (voz, gesto ou presença) e ser percebido pelo alvo.
+- Conseguir transmitir a ameaça e ser percebido pelo alvo.
 
 ### Investigar/Observar
 
@@ -233,20 +295,34 @@ Dobrar alguém pelo medo. **Teste Social** contra contrateste **Social ou Mental
 
 #### Uso padrão
 
-Procurar o que não está à vista. **Teste Mental** contra a dificuldade do narrador (ou contrateste de quem escondeu).
+Examinar deliberadamente uma pessoa, objeto, local ou evidência. Em turnos estruturados, cada uso
+custa **`1 PA`** e exige que o jogador indique o que examina e o que procura descobrir.
 
-- Cobre buscar pistas, notar emboscadas, examinar um corpo, ler uma sala.
-- Em combate, revela um detalhe por uso — não a cena inteira.
-- **Desvantagem** em escuridão, fumaça ou multidão.
-- O narrador **sempre diz alguma coisa**, mesmo na falha: informação incompleta ou enganosa é melhor que silêncio.
+- **Observar** identifica fatos sensoriais externos. **Investigar** examina deliberadamente
+  evidências e relações entre elas.
+- Contra algo escondido, compare o **teste Mental** à qualidade usada para escondê-lo. Nos demais
+  casos, o narrador define a dificuldade natural.
+- Em conflito, cada uso revela no máximo **um detalhe relevante**.
+- Informação indispensável ao avanço da história não fica bloqueada pelo teste. O sucesso pode
+  fornecê-la antes, com mais precisão, segurança ou contexto.
+- Uma falha nunca apresenta informação falsa como verdadeira. Ela pode não revelar nada novo,
+  entregar informação incompleta ou expor o personagem a uma consequência previamente sinalizada.
+- Repetir a busca com o mesmo objetivo e nas mesmas condições segue a regra de
+  **[Tentativas repetidas](../conceitos/01-testes-e-contratestes.md#tentativas-repetidas)**, mesmo
+  quando outro personagem assume a tarefa. Uma mudança relevante de ferramenta, fonte, posição,
+  sentido, evidência ou objetivo pode iniciar uma nova sequência.
+- Escuridão, fumaça, distância, ruído e multidão podem impor modificadores circunstanciais.
+- Perceber passivamente alguém escondido não custa `PA`; Investigar/Observar representa uma busca
+  deliberada.
 
 #### Uso com a técnica
 
-- Ignora a **desvantagem por condições ruins de visibilidade**.
+- Anula a **desvantagem natural** desta ação, quando houver. A Técnica não remove modificadores
+  circunstanciais nem concede vantagem.
 
 #### Requisitos de uso
 
-- Ter o sentido correspondente disponível (não estar cego, para observar).
+- Ter disponível o sentido empregado na busca.
 
 ### Levantar
 
@@ -254,15 +330,26 @@ Procurar o que não está à vista. **Teste Mental** contra a dificuldade do nar
 
 #### Uso padrão
 
-Sair da condição **caído** e voltar a ficar de pé. **Não exige teste** — custa `2 PA` e pronto.
+Sair da condição **caído** e voltar a ficar de pé. **Não exige teste** e custa **`2 PA`**.
 
-- Levantar **estando engajado** com um oponente permite a ele um [ataque de oportunidade](../conflitos/02-acoes-em-conflito.md), se ele tiver a reação disponível.
-- Com **uma perna desabilitada**, o custo dobra para **`4 PA`**. Com as duas, não é possível levantar sem ajuda.
-- Um aliado pode levantar você gastando os `PA` no lugar.
+- A condição caído termina imediatamente depois do pagamento.
+- Levantar **estando engajado** permite que um oponente faça um
+  **[ataque de oportunidade](../conflitos/02-acoes-em-conflito.md)**, se ainda tiver sua reação.
+  O ataque ocorre depois que o personagem fica de pé e, por isso, não recebe automaticamente a
+  vantagem contra alvos caídos. Se o ataque o derrubar novamente, ele volta a ficar caído; dano
+  comum não desfaz a ação concluída.
+- Com **uma perna desabilitada**, o custo sobe para **`4 PA`**. Com as duas pernas desabilitadas,
+  não é possível levantar sem ajuda.
+- Um aliado adjacente, consciente e com pelo menos um braço disponível pode pagar o custo no lugar
+  do personagem caído: **`2 PA`** se as pernas estiverem funcionais ou **`4 PA`** se uma ou ambas
+  estiverem desabilitadas. A ajuda não exige teste nem consome `PA` do personagem caído.
+- Se houver ataque de oportunidade, o alvo é o personagem que se levantou, não quem o ajudou.
+- Como a ação não exige teste, a regra de Tentativas repetidas não se aplica.
 
 #### Requisitos de uso
 
-- Não estar **agarrado** nem **inconsciente**.
+- Estar caído e consciente.
+- Não estar **agarrado** nem imobilizado.
 
 ### Nadar
 
@@ -270,19 +357,41 @@ Sair da condição **caído** e voltar a ficar de pé. **Não exige teste** — 
 
 #### Uso padrão
 
-Deslocar-se na água: **`1 PA` por metro**, como andar.
+Deslocar-se em água funda custa **`1 PA` por metro** em condições calmas e conta normalmente para
+o teto de `PA` de locomoção. Água rasa, na qual o personagem ainda consegue caminhar, usa as regras
+de movimento e **terreno difícil**, não a ação Nadar.
 
-- Em **água agitada, correnteza ou com carga pesada**, exige **Teste Ágil** por turno; a falha significa não avançar e começar a se afogar.
-- **Armadura pesada e carga alta impõem desvantagem** — e o narrador pode simplesmente decretar que quem veste placas afunda.
-- Personagem que se afoga começa a receber dano por turno, a critério do narrador.
+- Água calma e sem pressão pode dispensar teste. Correnteza, ondas, combate, pouca visibilidade ou
+  outra ameaça exigem **Teste Ágil** por turno contra a dificuldade natural.
+- Antes do teste, o narrador informa a consequência da falha: não avançar, ser deslocado pela
+  correnteza, ficar submerso ou outro resultado coerente com o perigo.
+- Repetir a tentativa de atravessar ou vencer a mesma condição segue
+  **[Tentativas repetidas](../conceitos/01-testes-e-contratestes.md#tentativas-repetidas)**. Um novo
+  perigo ou uma mudança relevante na água inicia outra sequência.
+- Armadura pesada, carga elevada, membros desabilitados e condições da água podem impor
+  desvantagens circunstanciais. Se a carga tornar a flutuação fisicamente impossível, o personagem
+  precisa abandonar peso, receber apoio ou alcançar uma superfície antes de nadar. O narrador deve
+  avisar isso antes da entrada voluntária na água.
+- Um personagem agarrado ou imobilizado precisa escapar antes de nadar.
+
+#### Fôlego e afogamento
+
+- Ao ficar submerso ou incapaz de manter as vias respiratórias fora da água, o personagem prende a
+  respiração por um número de rodadas igual ao seu valor **Ágil**, com mínimo de uma rodada.
+- Passado esse limite, sofre **`1d4` de dano curável no tronco** ao final de cada turno sem ar. Esse
+  dano ignora armadura e gera fadiga normalmente.
+- Voltar a respirar interrompe o dano e reinicia o limite de fôlego.
+- Personagens que respiram debaixo d'água não usam essa contagem enquanto o efeito estiver ativo.
 
 #### Uso com a técnica
 
-- Ignora a **desvantagem por carga e armadura** ao nadar.
+- Anula a **desvantagem natural** desta ação, quando houver. A Técnica não remove desvantagens
+  circunstanciais nem concede vantagem.
 
 #### Requisitos de uso
 
 - Pelo menos **um braço e uma perna** não desabilitados.
+- Não estar agarrado nem imobilizado.
 
 ### Negociar
 
@@ -290,22 +399,46 @@ Deslocar-se na água: **`1 PA` por metro**, como andar.
 
 #### Uso padrão
 
-Chegar a um acordo em que os dois lados cedem. **Teste Social ou Mental** contra contrateste do interlocutor.
+Propor uma troca concreta. Em turnos estruturados, custa **`1 PA`** e inclui até quatro palavras;
+mensagens maiores pagam os `PA` adicionais da
+**[regra de fala em batalha](../conflitos/02-acoes-em-conflito.md#falar-em-combate)**.
 
-- Segue a **regra de fala em batalha**.
-- Diferente de **Persuadir**, a negociação pressupõe **troca**: você precisa ter algo a oferecer. Sem moeda de troca, use Persuadir ou Intimidar.
-- No sucesso, o acordo sai — mas o narrador define **o preço**, que nunca é zero.
-- **Desvantagem** se você já quebrou um acordo com aquele interlocutor.
-
-> 🧩 Mesas que usam o [módulo Conflito Social](../../modulos/conflito-social/README.md) resolvem negociações longas por lá; esta ação cobre a troca rápida.
+- Quem inicia escolhe **Social** para usar carisma, leitura do interlocutor e confiança, ou
+  **Mental** para usar cálculo, estratégia, conhecimento técnico e avaliação de valor. O
+  interlocutor escolhe **Social ou Mental** para o contrateste.
+- A oferta pode envolver dinheiro, objetos, serviços, informação, segurança, acesso, favores ou
+  compromissos futuros. Sem algo que o interlocutor considere valioso, use **Persuadir** ou
+  **Intimidar**, conforme a abordagem.
+- Antes da rolagem, declare o que deseja, o que oferece e as condições da troca. O narrador informa
+  se o acordo é possível e se o interlocutor tem autoridade para aceitá-lo. Proposta impossível ou
+  sem valor para o outro lado não gera teste.
+- No sucesso, o interlocutor aceita os termos declarados. O narrador não acrescenta depois um preço
+  que não fazia parte da negociação. Se os termos ainda precisarem ser ajustados, apresente a
+  contraproposta antes da rolagem ou use uma interação longa.
+- Na falha, a proposta é recusada. O interlocutor pode encerrar a conversa ou fazer uma
+  contraproposta coerente, mas o personagem não perde automaticamente o que ofereceu.
+- Acordos quebrados, reputação, urgência, escassez, monopólio e relações de poder podem gerar
+  modificadores circunstanciais.
+- Repetir os mesmos termos depois de uma falha segue
+  **[Tentativas repetidas](../conceitos/01-testes-e-contratestes.md#tentativas-repetidas)**. Melhorar
+  materialmente a oferta, reduzir a exigência ou alterar as circunstâncias pode iniciar outra
+  sequência.
+- O acordo não é magicamente obrigatório. Quebrá-lo produz consequências narrativas e pode
+  prejudicar negociações futuras.
+- Personagens de jogadores não são obrigados por um teste a aceitar uma negociação. Negociações
+  entre jogadores são decididas pelos envolvidos.
+- Negociações extensas, com vários interesses ou rodadas de concessões, usam o módulo
+  **[Conflito Social](../../modulos/conflito-social/README.md)**.
 
 #### Uso com a técnica
 
-- Ignora a **desvantagem por histórico de acordo quebrado**.
+- Anula a **desvantagem natural** desta ação, quando houver. A Técnica não remove modificadores
+  circunstanciais nem concede vantagem.
 
 #### Requisitos de uso
 
-- Poder se comunicar, e ter **algo concreto a oferecer**.
+- Conseguir se comunicar com o interlocutor.
+- Ter **algo concreto e relevante a oferecer**.
 
 ### Performar
 
@@ -313,39 +446,94 @@ Chegar a um acordo em que os dois lados cedem. **Teste Social ou Mental** contra
 
 #### Uso padrão
 
-Cantar, tocar, atuar, discursar. **Teste Social** contra a dificuldade do narrador.
+Realizar uma manifestação breve e perceptível, como cantar, tocar, atuar, discursar, dançar ou
+declamar. Em turnos estruturados, custa **`1 PA`**. Apresentações longas exigem tempo narrativo; se
+forem sustentadas em turnos, pague o custo novamente a cada turno.
 
-- Serve para **distrair** (o alvo faz contrateste Mental para não olhar), ganhar acesso a um lugar, acalmar um animal ou uma multidão, ou simplesmente ganhar a noite.
-- **Desvantagem** sem o instrumento ou material adequado à performance.
-- Em combate, performar é caro em atenção: quem performa **não pode atacar** no mesmo turno.
+- Antes da rolagem, declare o tipo de performance, quem pretende afetar e o resultado imediato
+  desejado.
+- Quando apenas a qualidade estiver em dúvida, faça **Teste Social** contra a dificuldade natural.
+  Quem resistir deliberadamente a uma distração faz **contrateste Mental**.
+- Em conflito, a ação comum pode distrair **um alvo** até o início do próximo turno de quem
+  performou. A atenção direta do alvo fica quebrada, o que pode satisfazer o requisito de distração
+  de **[Ocultar-se à vista](habilidades-base-ageis.md#ocultar-se-à-vista)**, mas não concede
+  automaticamente vantagem, desvantagem, dano ou perda de ações.
+- Para manter a distração, use Performar novamente. Uma falha posterior encerra o efeito.
+- Fora de conflito, o sucesso pode entreter, impressionar, chamar atenção, transmitir um sinal ou
+  melhorar a receptividade do público.
+- Performar não concede automaticamente acesso a lugares, não convence alguém a contrariar seus
+  interesses e não controla animais ou multidões. Esses resultados podem exigir **Persuadir**,
+  **Negociar**, outro teste ou o módulo **Conflito Social**.
+- Personagens de jogadores mantêm controle sobre suas decisões e sobre como reagem à apresentação.
+- Se a forma escolhida exigir instrumento, figurino ou material indispensável, a ausência do
+  recurso pode tornar a apresentação impossível. Material improvisado, inadequado ou de baixa
+  qualidade pode impor modificador circunstancial.
+- Repetir uma performance falha para obter o mesmo efeito sobre o mesmo público segue
+  **[Tentativas repetidas](../conceitos/01-testes-e-contratestes.md#tentativas-repetidas)**. Trocar
+  apenas a música ou as palavras não reinicia a sequência; uma mudança relevante de público, meio,
+  preparação, contexto ou objetivo pode reiniciá-la.
+- Performances faladas ou cantadas seguem a
+  **[regra de fala em batalha](../conflitos/02-acoes-em-conflito.md#falar-em-combate)**. Formas
+  instrumentais, gestuais ou corporais não consomem palavras.
+- Performar não impede atacar no mesmo turno; cada ação paga normalmente seu custo de `PA`.
+- Apresentações prolongadas ou disputas de público podem usar o módulo
+  **[Conflito Social](../../modulos/conflito-social/README.md)**.
 
 #### Uso com a técnica
 
-- Ignora a **desvantagem por falta de instrumento** — você improvisa com o que houver.
+- Anula a **desvantagem natural** desta ação, quando houver. A Técnica não remove modificadores
+  circunstanciais nem concede vantagem.
 
 #### Requisitos de uso
 
 - Ter público capaz de perceber a performance.
+- Possuir os recursos indispensáveis à forma escolhida.
 
-### Persuadir/Seduzir
+### Persuadir
 
 **Atributo:** `Social` · **Custo da técnica:** `1 exp.`
 
 #### Uso padrão
 
-Convencer pela empatia, pelo argumento ou pelo charme. **Teste Social** contra contrateste **Social ou Mental**.
+Convencer um interlocutor pela empatia, pelo argumento ou pelo charme. Em turnos estruturados,
+custa **`1 PA`**, afeta um alvo e inclui até quatro palavras; mensagens maiores pagam os `PA`
+adicionais da **[regra de fala em batalha](../conflitos/02-acoes-em-conflito.md#falar-em-combate)**.
 
-- Segue a **regra de fala em batalha**.
-- Funciona quando o que se pede **não contraria frontalmente** os interesses ou valores do alvo. Para o que contraria, é preciso Negociar (com troca) ou Intimidar (com medo).
-- **Desvantagem** se o alvo for hostil, estiver ferido por você, ou tiver motivo concreto para desconfiar.
+- Declare o pedido, argumento ou afirmação que deseja tornar convincente. O alvo precisa perceber e
+  compreender a mensagem.
+- Faça **Teste Social** contra contrateste **Social ou Mental**, escolhido pelo alvo. Antes da
+  rolagem, o narrador informa se o pedido é possível e qual concessão pode ser obtida.
+- Persuadir funciona quando o pedido é compatível com os interesses, valores, segurança ou
+  disposição do alvo. Se depender de troca, use **Negociar**; se depender de medo, use
+  **Intimidar**.
+- Um argumento plausível pode convencer alguém sobre uma afirmação incerta. A ação não torna uma
+  mentira evidente verdadeira nem apaga provas conhecidas pelo alvo.
+- No sucesso, o alvo aceita o pedido delimitado antes do teste ou considera plausível a afirmação
+  apresentada. O sucesso não cria lealdade, amizade, atração, confiança permanente nem controle
+  mental.
+- Na falha, o alvo não é convencido. Hostilidade ou outra consequência só ocorre se tiver sido
+  apresentada como risco antes da rolagem.
+- Hostilidade, desconfiança, conflitos anteriores, ter sido ferido pelo personagem e
+  incompatibilidade cultural podem gerar modificadores circunstanciais.
+- Repetir o mesmo argumento pelo mesmo resultado segue
+  **[Tentativas repetidas](../conceitos/01-testes-e-contratestes.md#tentativas-repetidas)**. Reformular
+  as palavras não reinicia a sequência; nova evidência, novo interesse relevante, mudança de
+  circunstâncias ou pedido materialmente diferente pode reiniciá-la.
+- Personagens de jogadores nunca são obrigados por esta ação a tomar decisões. Conversas entre
+  jogadores são resolvidas pelos envolvidos.
+- Sedução, flerte ou charme podem ser abordagens narrativas de Persuadir, mas não criam atração,
+  determinam romance ou afeto, nem substituem consentimento ou obrigam intimidade.
+- Tentativas prolongadas de mudar uma posição importante podem usar o módulo
+  **[Conflito Social](../../modulos/conflito-social/README.md)**.
 
 #### Uso com a técnica
 
-- Ignora a **desvantagem por hostilidade prévia** do alvo.
+- Anula a **desvantagem natural** desta ação, quando houver. A Técnica não remove modificadores
+  circunstanciais nem concede vantagem.
 
 #### Requisitos de uso
 
-- Poder se comunicar e ser percebido pelo alvo.
+- Conseguir transmitir uma mensagem que o alvo perceba e compreenda.
 
 ### Ponderar
 
@@ -353,15 +541,36 @@ Convencer pela empatia, pelo argumento ou pelo charme. **Teste Social** contra c
 
 #### Uso padrão
 
-Parar e pensar: lembrar de um conhecimento, deduzir uma conclusão, entender como algo funciona. **Teste Mental** contra a dificuldade do narrador.
+Usar conhecimentos, memórias e evidências que o personagem já possui para avaliar uma pergunta ou
+deduzir uma conclusão. Em turnos estruturados, custa **`1 PA`**; fora deles, o custo não precisa ser
+contabilizado.
 
-- Cobre saber de história, reconhecer um brasão, decifrar um mecanismo, prever o que o inimigo vai fazer.
-- Em combate, uma ponderação bem-sucedida rende **uma informação útil e acionável** — não um plano inteiro.
-- **Desvantagem** sob pressão extrema (sangrando, em queda, com o tronco incapacitado).
+- O jogador formula a pergunta ou conclusão que deseja avaliar. Ponderar não procura algo novo no
+  ambiente; para isso, use **[Investigar/Observar](#investigarobservar)**.
+- Informações que o personagem já conhece claramente podem ser recordadas sem custo nem teste.
+  Quando houver incerteza, faça **Teste Mental** contra a dificuldade natural.
+- No sucesso, o narrador fornece **uma informação ou dedução verdadeira, útil e acionável**. A
+  resposta pode indicar probabilidades ou a interpretação mais plausível, mas não garante decisões
+  futuras de outra pessoa.
+- Na falha, o personagem não chega a uma conclusão segura. O narrador não apresenta uma conclusão
+  falsa como verdadeira.
+- Informação essencial à história não fica bloqueada. O sucesso pode oferecer contexto adicional,
+  antecipação, precisão ou uma forma mais segura de agir.
+- Ponderar não revela o que seria impossível deduzir com os dados disponíveis nem valores mecânicos
+  exatos, como o dano de cada membro de um inimigo. Essa função pertence à habilidade
+  **[Analisar fraquezas](habilidades-base-mentais.md#analisar-fraquezas)**.
+- Em conflito, cada uso fornece no máximo **uma informação ou dedução relevante**.
+- Repetir a mesma pergunta sem novas evidências segue
+  **[Tentativas repetidas](../conceitos/01-testes-e-contratestes.md#tentativas-repetidas)**, inclusive
+  quando outro personagem assume a tarefa. Nova evidência, nova fonte ou uma reformulação material
+  da pergunta pode iniciar outra sequência.
+- Pressão, distração e condições mentais podem impor modificadores circunstanciais. Uma penalidade
+  já aplicada por cabeça ou tronco desabilitado não se repete pelo mesmo motivo.
 
 #### Uso com a técnica
 
-- Ignora a **desvantagem por pressão**.
+- Anula a **desvantagem natural** desta ação, quando houver. A Técnica não remove modificadores
+  circunstanciais nem concede vantagem.
 
 #### Requisitos de uso
 
@@ -373,19 +582,41 @@ Parar e pensar: lembrar de um conhecimento, deduzir uma conclusão, entender com
 
 #### Uso padrão
 
-Prestidigitação, batedor de carteira, jogo de cartas marcado, fingir um gesto para enganar. **Teste Ágil** (se a graça está na mão) **ou Social** (se está na lábia), contra contrateste **Mental** de quem observa.
+Executar uma manipulação breve, como esconder um objeto pequeno, bater carteira, trapacear em um
+jogo, fingir um gesto ou desviar a atenção de uma ação específica. Em turnos estruturados, custa
+**`1 PA`**. Antes do teste, declare o truque, seu objetivo e o que pretende esconder ou fazer
+parecer verdadeiro.
 
-- No sucesso, o truque passa despercebido. Na falha, **o alvo percebe** — e sabe que você tentou.
-- **Desvantagem** se o alvo estiver especificamente atento a você.
-- Em combate, um truque bem-sucedido pode conceder **vantagem no próximo ataque** contra aquele alvo, uma vez por conflito.
+- Use **Ágil** quando o truque depender de destreza manual ou prestidigitação. Use **Social** quando
+  depender de blefe, expressão corporal, gesto falso ou desvio de atenção.
+- Faça o teste contra o **contrateste Mental de cada observador relevante**. O resultado é
+  individual: alguns observadores podem ser enganados enquanto outros percebem o truque.
+- No sucesso contra um observador, a manipulação produz seu efeito imediato e plausível e permanece
+  despercebida por ele. A ação não realiza algo fisicamente impossível.
+- Na falha, o observador percebe a tentativa de manipulação e compreende suficientemente o que o
+  personagem tentou fazer. O narrador informa antes da rolagem qualquer consequência previsível
+  de ser descoberto.
+- Um observador que esteja examinando ativamente o personagem pode impor **desvantagem
+  circunstancial**. A Técnica não remove essa penalidade.
+- Repetir o mesmo truque contra o mesmo observador para obter o mesmo resultado segue
+  **[Tentativas repetidas](../conceitos/01-testes-e-contratestes.md#tentativas-repetidas)**. Trocar
+  apenas palavras, mãos ou pequenos gestos não reinicia a sequência; uma mudança relevante de
+  método, objetivo, alvo ou circunstância pode reiniciá-la.
+- Realizar Truques pode esconder uma manipulação ou um objeto específico, mas não esconde o próprio
+  personagem. A ação também não controla decisões, cria vínculos ou crenças duradouras, nem
+  substitui **Persuadir**, **Negociar**, **Performar** ou **Esconder-se**.
+- Em combate, a ação não concede automaticamente vantagem no ataque nem outro modificador. Efeitos
+  de controle ou bônus pertencem às circunstâncias e às habilidades específicas.
 
 #### Uso com a técnica
 
-- Ignora a **desvantagem por alvo atento**.
+- Anula a **desvantagem natural** desta ação, quando houver. A Técnica não remove modificadores
+  circunstanciais nem concede vantagem.
 
 #### Requisitos de uso
 
-- Pelo menos **um braço** não desabilitado (para truques manuais).
+- Truques manuais exigem pelo menos **uma mão utilizável**.
+- Truques verbais exigem que o observador possa receber a comunicação.
 
 ### Saltar
 

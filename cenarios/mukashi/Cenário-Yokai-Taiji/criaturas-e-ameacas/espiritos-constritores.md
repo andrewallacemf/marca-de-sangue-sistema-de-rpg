@@ -43,10 +43,11 @@ real para correr até a estátua/gaiola em vez de só focar dano na Yamamba.
 
 **Para o alvo agarrado:**
 
-- Gasta **2 PA** no próprio turno para um teste `Físico` e tentar se soltar (pode repetir
-  enquanto tiver PA).
-- Andar enquanto agarrado é **terreno difícil** (dobra custo de deslocamento) **com
-  desvantagem** no teste de movimento — mesma regra da Esmagar.
+- Gasta **2 PA** no próprio turno para um teste `Físico` e tentar se soltar. Pode repetir enquanto
+  tiver PA, acumulando a desvantagem de
+  **[Tentativas repetidas](../../../../sistema-base/conceitos/01-testes-e-contratestes.md#tentativas-repetidas)**.
+- Como exceção à imobilização normal da condição **agarrado**, a Constrição permite que o alvo
+  ande. O movimento custa **`2 PA` por metro** e exige teste com **desvantagem**, como em Esmagar.
 - Um aliado pode gastar uma ação para atacar diretamente o Espírito Constritor que
   prende o companheiro (8 PV somem rápido).
 

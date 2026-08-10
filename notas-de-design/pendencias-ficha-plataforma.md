@@ -4,7 +4,7 @@ tipo: mecanica
 cenario: base
 status: rascunho
 tags: [pendencias, ficha, plataforma, ux, backlog]
-atualizado-em: 2026-08-08
+atualizado-em: 2026-08-10
 ---
 
 # Pendências de ficha e plataforma (UX / produto)
@@ -146,6 +146,47 @@ pendências de **regra** (que ficam em [PENDENCIAS.md](../PENDENCIAS.md)).
       o diff.
 
 ## 4. Apoio de regras dentro do produto
+
+- [x] **Publicar a página de Ações no manual da plataforma** — a estrutura e as decisões
+      transversais foram aprovadas em 10/08: Esconder-se custa `2 PA`, Negociar usa Social ou
+      Mental e Técnicas anulam desvantagem natural. A rota
+      `/manual/jogador/recursos/acoes` foi implementada localmente na plataforma com as 17 ações,
+      navegação por âncoras e a regra compartilhada de Tentativas repetidas; falta integrar e
+      publicar a mudança. Não ampliar a engine para ações sem avaliar separadamente quais efeitos
+      precisam de automação.
+      Origem: [decisão de curadoria](decisoes/2026-08-10-curadoria-acoes.md). Implementação:
+      decisão 061 do `docs/DECISIONS.md` da plataforma.
+      As manobras físicas foram aprovadas em 10/08; a próxima importação do catálogo também deve
+      atualizar a descrição estruturada de **Burro de carga**.
+      Correr foi aprovado como ação de `3 PA` por até 5 metros em linha reta; Maratonista também
+      teve sua descrição estruturada esclarecida e deve entrar na próxima importação do catálogo.
+      Esconder-se também foi aprovado com qualidade de furtividade guardada; a implementação futura
+      deve manter uma única definição no núcleo e deixar alerta/alarme para o módulo Furtividade.
+      A regra geral de Tentativas repetidas foi aprovada em 10/08 e deve entrar na página pública
+      de Testes; não há automação genérica de rolagens a alterar na engine atual.
+      Investigar/Observar, Levantar e Nadar também foram aprovadas. A página pública deve explicar
+      a distinção entre percepção passiva e busca deliberada, a ordem do ataque de oportunidade ao
+      levantar e as regras de fôlego e afogamento. Guelras, de Colapso, passou a conceder uma rodada
+      submersa antes do limite normal. Não há automação de natação ou afogamento na engine atual.
+      Ponderar foi aprovado distinguindo recordação gratuita, dedução, busca de evidências e a
+      revelação mecânica específica de Analisar fraquezas.
+      Intimidar também foi aprovado com concessão delimitada antes do teste, agência preservada para
+      personagens de jogadores e sem duplicar os efeitos das habilidades de atraso de turno.
+      Negociar foi aprovado com escolha entre Social e Mental, termos prévios e sem preço arbitrário
+      acrescentado depois do sucesso.
+      Performar foi aprovado com distração de um alvo sem bônus implícitos e sem proibir ataques no
+      mesmo turno; a página deve vinculá-lo a Ocultar-se à vista.
+      Persuadir/Seduzir foi renomeado para Persuadir em ação, técnica, arquétipos e fichas de
+      playtest; a próxima importação deve substituir o nome estruturado no catálogo.
+      Realizar Truques foi aprovado usando Ágil ou Social contra o Mental de cada observador; não
+      concede vantagem automática no próximo ataque e sua Técnica remove só a desvantagem natural.
+
+- [x] **Publicar Aptidões e apresentar o saldo disponível na ficha** — página aprovada com as
+      quatro reservas básicas, custo escalonado, exemplos, recuperação e separação das trilhas de
+      módulos. O resumo da ficha agora mostra `disponíveis/total`, calculado sem alterar o formato
+      persistido; o editor identifica o segundo campo como aptidões gastas. Implementação:
+      decisão 062 do `docs/DECISIONS.md` da plataforma. Aptidões de módulos continuam exigindo
+      suporte próprio quando seus módulos forem publicados.
 
 - [x] **⭐ Tutorial de uso da ficha** (pedido do Daniel, 19/07) — **feito (19/07):** (a) botão
       **"Como usar"** no topo da ficha abre um painel com o básico (salvar/carregar `.mds.json`,

@@ -115,7 +115,7 @@ desestabilizar adversários.
 
 - **Aptidões:** 3 Mentais e 2 Sociais.
 - **Núcleo (`6 exp.`):** Analisar fraquezas (`1 exp.`), Confundir inimigo (`3 exp.`), Técnica em
-  Investigar/Observar (`1 exp.`) e Técnica em Persuadir/Seduzir (`1 exp.`).
+  Investigar/Observar (`1 exp.`) e Técnica em Persuadir (`1 exp.`).
 - **Pode representar:** uma conselheira, um pesquisador de comportamento, uma inteligência
   artificial analítica ou alguém que enxerga relações que os demais ignoram.
 
@@ -148,7 +148,7 @@ coordenação e pressão social.
 
 - **Aptidões:** 3 Sociais e 2 Mentais.
 - **Núcleo (`6 exp.`):** Comandar (`2 exp.`), Confundir inimigo (`3 exp.`) e Técnica em
-  Persuadir/Seduzir (`1 exp.`).
+  Persuadir (`1 exp.`).
 - **Pode representar:** uma negociadora, um porta-voz, uma consciência coletiva ou alguém que
   organiza o grupo explicando o que precisa ser feito.
 

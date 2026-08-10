@@ -50,6 +50,10 @@ Leia estes documentos na ordem:
   fichas imprimíveis alternativas, valores iniciais e revisão final.
 - [Arquétipos genéricos](propostas/2026-08-10-arquetipos-genericos.md) — matriz das 12 combinações
   ordenadas entre atributo principal e secundário, com fichas iniciais de `15 exp.`.
+- [Ações](propostas/2026-08-10-acoes.md) — estrutura da página consultável, decisões transversais
+  e revisão das ações complexas em três blocos.
+- [Aptidões](propostas/2026-08-10-aptidoes.md) — reservas por atributo, saldo disponível, custo
+  escalonado e relação com trilhas opcionais de módulos.
 
 ## Regra para IAs
 

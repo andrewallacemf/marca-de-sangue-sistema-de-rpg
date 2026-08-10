@@ -4,7 +4,7 @@ tipo: regra
 cenario: base
 status: estavel
 tags: [conflito, combate, acoes, ataque, pontos-de-acao, reacao, fadiga]
-atualizado-em: 2026-07-12
+atualizado-em: 2026-08-10
 ---
 
 # Ações possíveis em um conflito
@@ -74,6 +74,10 @@ Este ataque conta como um ataque descuidado e não possui vantagens ou desvantag
 Habilidades ou ações mais complexas não podem ser feitas como ataque de oportunidade. Para isso é necessário que em seu turno o personagem ative um gatilho, ou seja, que gaste pontos de ação.
 
 ### Ataques consecutivos
+
+As regras abaixo substituem a regra geral de
+[Tentativas repetidas](../conceitos/01-testes-e-contratestes.md#tentativas-repetidas) para testes
+de ataque. Um ataque nunca acumula as duas penalidades ao mesmo tempo.
 
 Enquanto seu personagem ainda tiver pontos de ação disponíveis em seu turno, você pode usá-los para realizar novos ataques. Porém, penalidades podem ser aplicadas em determinadas situações.
 

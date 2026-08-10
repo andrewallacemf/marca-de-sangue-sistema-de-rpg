@@ -5,7 +5,7 @@ cenario: modulo
 modulo: furtividade
 status: revisao
 tags: [furtividade, esconder-se, alerta, alarme, percepcao, visao, emboscada, modulo]
-atualizado-em: 2026-07-19
+atualizado-em: 2026-08-10
 ---
 
 # 🧩 Módulo: Furtividade
@@ -50,36 +50,24 @@ ou por outro sentido que o narrador julgue cabível).
 
 ## Esconder-se
 
-**Esconder-se** é uma ação que coloca o personagem em **status escondido**.
-
-- **Custo:** **`2 PA`**.
-- **Pré-requisito:** só pode ser usada estando **fora do campo de visão de todos os inimigos**.
-  *(Uma habilidade específica pode permitir tentar se esconder mesmo dentro do campo de visão de
-  um inimigo — ver [Ganchos](#ganchos-habilidades-e-traços).)*
-- Ao se esconder, você rola o **dado de furtividade** (teste `Ágil` de esconder-se) e **guarda o
-  valor obtido**. Esse número é a **qualidade** do seu esconderijo (veja abaixo).
+Este módulo usa a ação-base **[Esconder-se](../../sistema-base/listas/acoes-em-combate.md#esconder-se)**,
+incluindo seu custo de `2 PA`, pré-requisito, desvantagem natural e qualidade de furtividade
+guardada. As regras abaixo detalham como campo de visão, iluminação, alerta e alarme interagem com
+ela.
 
 ### Desvantagem natural ao se esconder
 
-Ao rolar o seu dado de furtividade, aplica-se a **desvantagem natural** conforme onde você se
-esconde (desde que você **não esteja sendo visto** por nenhum oponente no momento):
-
-- **No meio do nada** ou atrás de **meia cobertura** → rola **com desvantagem natural**.
-- Atrás de **cobertura completa** → rola **sem desvantagem natural**.
-
-A **[Técnica em Esconder-se](../../sistema-base/listas/tracos-base.md#técnicas)** anula essa desvantagem natural
-(como toda técnica).
+Use a desvantagem natural definida na ação-base. A
+**[Técnica em Esconder-se](../../sistema-base/listas/tracos-base.md#técnicas)** a anula, como toda
+técnica, mas não remove modificadores circunstanciais causados por iluminação, barulho ou outras
+condições da cena.
 
 ### Qualidade da furtividade (o número guardado)
 
-O valor que você guardou **permanece** como a qualidade do seu esconderijo. Você o mantém até:
-
-- **rolar um novo dado de furtividade** (gastando a ação de novo) para tentar um número maior; ou
-- **sair do status escondido** (por escolha, por realizar uma ação que remove a furtividade, ou
-  por ser descoberto).
-
-Assim, **vocês dois não ficam rolando o teste toda hora**: você fixa a sua qualidade e, daí em
-diante, quem rola é o inimigo.
+A qualidade de furtividade segue a ação-base: permanece até um novo uso de Esconder-se substituí-la
+ou até o personagem deixar de estar escondido. O novo resultado sempre substitui o anterior, mesmo
+quando for menor. Assim, quem se esconde não pode repetir a ação sem risco para acumular apenas o
+melhor resultado.
 
 ### Quando um inimigo pode te ver (teste de percepção)
 

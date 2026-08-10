@@ -178,7 +178,9 @@ Corre 2 metros na direção do oponente e o empurra na mesma direção, infringe
 
 Agarra o oponente e causa dano a ele. Em seu turno, pode gastar **`4 PA`** para causar dano novamente ao oponente enquanto tiver **`PA`** suficiente para realizar a ação.
 
-O oponente pode gastar **`2 PA`** para realizar um teste físico para tentar se soltar em seu turno, se falhar, pode tentar novamente enquanto ainda tiver **`PA`** para realizar a ação.
+O oponente pode gastar **`2 PA`** para realizar um teste físico para tentar se soltar em seu turno.
+Se falhar, pode tentar novamente enquanto tiver `PA`, acumulando a desvantagem da regra de
+**[Tentativas repetidas](../conceitos/01-testes-e-contratestes.md#tentativas-repetidas)**.
 
 ### Requisitos de uso
 

@@ -61,7 +61,7 @@ TRC = {
  "Técnica em Ponderar":(1,"Mental","Anula a desvantagem natural para ponderar."),
  "Técnica em Investigar/Observar":(1,"Mental","Anula a desvantagem natural para investigar/observar."),
  "Técnica em Tratar/Curar":(3,"Social/Mental","Anula a desvantagem natural para tratar/curar."),
- "Técnica em Persuadir/Seduzir":(1,"Social","Anula a desvantagem natural para persuadir/seduzir."),
+ "Técnica em Persuadir":(1,"Social","Anula a desvantagem natural para persuadir."),
  "Emboscador":(4,"—","Pelas costas, escondido, com arma leve: dobra o resultado do dano."),
  "Saltador":(3,"—","Salto sobe de 5 m para 10 m (requer Técnica em Saltar)."),
  "Reativo":(4,"—","Ataque de oportunidade quando um oponente sai do seu alcance ideal (guarda levantada)."),
@@ -252,7 +252,7 @@ mk("04-medieval-70exp-isolde","Dame Isolde, a Comandante",C4,70,
    [item("Sabre","1","",""),item("Peitoral leve","1","",""),item("Escudo pequeno","1","","")],
    [H("Grito de alerta",3),H("Brado de guerra",3),H("Comandar",4),T("Apoiador"),
     H("Confundir inimigo",3),H("Intimidação generalizada",2),T("Maestria em armaduras leves"),
-    T("Maestria em armas cortantes"),T("Técnica em Persuadir/Seduzir")],
+    T("Maestria em armas cortantes"),T("Técnica em Persuadir")],
    "Mão hábil: direita. Cérebro: Comandar dá PA ao Arauto; Grito de alerta blinda a formação; Confundir/Intimidação desmontam a emboscada; Apoiador empresta aptidões ao NPC.")
 
 mk("04-medieval-70exp-gareth","Gareth, o Lanceiro de Formação",C4,70,

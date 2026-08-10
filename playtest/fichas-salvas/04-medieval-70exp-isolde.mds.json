@@ -278,8 +278,8 @@
       },
       {
         "tipo": "Traço",
-        "nome": "Técnica em Persuadir/Seduzir",
-        "efeito": "Anula a desvantagem natural para persuadir/seduzir.",
+        "nome": "Técnica em Persuadir",
+        "efeito": "Anula a desvantagem natural para persuadir.",
         "requisitos": "",
         "atributo": "Social",
         "valorCompra": "1 exp.",

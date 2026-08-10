@@ -70,7 +70,7 @@
       {
         "tipo": "Habilidade",
         "nome": "Constrição (Agarrar)",
-        "efeito": "Custa 1 PA; teste Físico com vantagem contra o alvo. Se pegar, o alvo fica agarrado: sofre 1d4 automático a cada rodada em que o espírito mantiver o agarrão (sem novo teste). O alvo agarrado gasta 2 PA no próprio turno para um teste Físico e tentar se soltar (pode repetir enquanto tiver PA). Andar enquanto agarrado é terreno difícil (dobra custo de deslocamento) com desvantagem. Um aliado pode atacar diretamente o espírito para libertar o companheiro — só 8 PV, cai rápido.",
+        "efeito": "Custa 1 PA; teste Físico com vantagem contra o alvo. Se pegar, o alvo fica agarrado: sofre 1d4 automático a cada rodada em que o espírito mantiver o agarrão (sem novo teste). O alvo agarrado gasta 2 PA no próprio turno para um teste Físico e tentar se soltar. Se falhar e repetir a mesma tentativa, acumula +1d10 de desvantagem a cada falha, conforme a regra geral de tentativas repetidas. Andar enquanto agarrado é terreno difícil (dobra custo de deslocamento) com desvantagem. Um aliado pode atacar diretamente o espírito para libertar o companheiro — só 8 PV, cai rápido.",
         "requisitos": "—",
         "atributo": "Físico",
         "valorCompra": "0",

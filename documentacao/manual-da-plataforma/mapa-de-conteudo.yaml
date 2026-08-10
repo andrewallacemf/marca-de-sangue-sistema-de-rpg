@@ -96,7 +96,7 @@ paginas:
     rota: /manual/jogador/regras-basicas
     publico: jogador
     tipo: regra
-    estado: aguardando_aprovacao
+    estado: publicada
     ordem: 20
     objetivo: Explicar o núcleo do jogo em uma sequência baseada em dependências de conhecimento.
     fontes:
@@ -371,7 +371,7 @@ paginas:
     rota: /manual/jogador/recursos/aptidoes
     publico: jogador
     tipo: recurso
-    estado: mapeada
+    estado: aguardando_aprovacao
     ordem: 41
     objetivo: Consultar aptidões, custos e funcionamento.
     fontes:
@@ -382,7 +382,11 @@ paginas:
     relacionados:
       - jogador.criacao-de-personagem
       - jogador.recursos.habilidades
-    observacoes_internas: []
+    observacoes_internas:
+      - A proposta editorial está em propostas/2026-08-10-aptidoes.md.
+      - A apresentação aprovada usa disponíveis/total no manual e no resumo da ficha; o editor identifica o valor persistido como gastas.
+      - Implementação publicada pela decisão 062 do docs/DECISIONS.md da plataforma.
+      - Aptidões de módulos exigirão suporte próprio da ficha quando suas páginas forem implementadas.
 
   - id: jogador.recursos.habilidades
     titulo: Habilidades
@@ -438,7 +442,7 @@ paginas:
     rota: /manual/jogador/recursos/arquetipos
     publico: jogador
     tipo: recurso
-    estado: aguardando_aprovacao
+    estado: publicada
     ordem: 44
     objetivo: Explicar a matriz universal e apresentar as 12 fichas genéricas formadas por atributo principal e secundário.
     fontes:
@@ -460,10 +464,12 @@ paginas:
     rota: /manual/jogador/recursos/acoes
     publico: jogador
     tipo: recurso
-    estado: mapeada
+    estado: aguardando_aprovacao
     ordem: 45
     objetivo: Consultar ações, custos, testes, limites e efeitos durante cenas e conflitos.
     fontes:
+      - sistema-base/conceitos/07-pontos-de-acao.md
+      - sistema-base/conflitos/01-conflito-fisico.md
       - sistema-base/conflitos/02-acoes-em-conflito.md
       - sistema-base/listas/acoes-em-combate.md
     depende_de:
@@ -472,7 +478,16 @@ paginas:
       - jogador.recursos.habilidades
       - narrador.cenas-e-conflitos
     observacoes_internas:
-      - Algumas entradas foram redigidas como proposta; conferir se existe uma formulação operacional única.
+      - Curadoria transversal aprovada em 10/08/2026; proposta em propostas/2026-08-10-acoes.md.
+      - Esconder-se custa 2 PA; Negociar usa Social ou Mental; Técnicas anulam a desvantagem natural.
+      - Todas as descrições complexas e a redação editorial da página pública foram aprovadas em 10/08/2026.
+      - Implementação publicada pela decisão 061 do docs/DECISIONS.md da plataforma.
+      - As manobras Agarrar, Arremessar, Derrubar e Empurrar foram aprovadas em 10/08/2026.
+      - Correr e sua interação com Corredor, Maratonista e Disparada foram aprovados em 10/08/2026.
+      - Esconder-se foi aprovado no núcleo; Furtividade apenas expande visão, iluminação, alerta, alarme e emboscadas.
+      - Tentativas repetidas são regra geral do núcleo; a página de Ações deve resumir e remeter à página de Testes.
+      - Realizar Truques usa Ágil ou Social contra o Mental de cada observador e não concede vantagem automática no ataque.
+      - Comprar PA pertence à página de progressão; esta página apenas remete à regra.
 
   - id: jogador.recursos.equipamentos
     titulo: Equipamentos
