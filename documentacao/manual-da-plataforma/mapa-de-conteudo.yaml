@@ -222,6 +222,8 @@ paginas:
         ancora: experiencia-e-progressao
         fontes:
           - sistema-base/progressao/01-experiencia-e-evolucao.md
+          - sistema-base/listas/aptidoes-base.md
+          - sistema-base/listas/tracos-base.md
         depende_de:
           - jogador.regras-basicas.caracteristicas
 
@@ -633,7 +635,7 @@ paginas:
     rota: /manual/narrador/recompensas-e-progressao
     publico: narrador
     tipo: regra
-    estado: planejada
+    estado: em_curadoria
     ordem: 60
     objetivo: Orientar concessão de experiência e ritmo de desenvolvimento das personagens.
     fontes:
@@ -644,7 +646,8 @@ paginas:
       - narrador.conducao-do-jogo
       - jogador.criacao-de-personagem
     observacoes_internas:
-      - A fonte atual explica gasto de experiência, mas não oferece orientação suficiente sobre concessão.
+      - Curadoria aprovada em 09/08/2026; separar concessão pelo narrador do gasto explicado ao jogador.
+      - Usar desafio decisivo para a sequência pontual de testes e tarefa para o objetivo completo.
 
   - id: jogador.modulos.indice
     titulo: Módulos

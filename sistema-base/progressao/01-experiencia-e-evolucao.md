@@ -4,7 +4,7 @@ tipo: regra
 cenario: base
 status: estavel
 tags: [experiencia, evolucao, caracteristicas, pontos-de-acao]
-atualizado-em: 2026-07-17
+atualizado-em: 2026-08-09
 ---
 
 # Experiência e Evolução
@@ -35,13 +35,13 @@ Cabe ao narrador julgar as situações da mesa que revelam se os jogadores devem
 
 Recomenda-se atribuir à equipe no máximo **`3 exp.`** por trabalho em equipe ao final da sessão.
 
-### Sucesso em tarefas especiais
+### Superar um desafio decisivo
 
-Eventualmente haverá tarefas cujos resultados terão grandes impactos no desenrolar da trama. Recomenda-se planejá-los ou, ao identificá-los, indicar para os jogadores que o conjunto de testes/contratestes a seguir trata-se de uma tarefa especial.
+Eventualmente haverá desafios pontuais cujos resultados terão grande impacto no desenrolar da trama. O narrador pode planejá-los ou, ao identificá-los durante a sessão, indicar que o conjunto de testes e contratestes a seguir forma um **desafio decisivo**.
 
-Recomenda-se que todos os jogadores tenham um papel e pelo menos um teste para realizar, contribuindo com a tarefa especial.
+Recomenda-se que todas as pessoas do grupo tenham um papel e pelo menos um teste para realizar, contribuindo com o desafio.
 
-Caso metade ou mais dos testes realizados pelos jogadores envolvidos sejam bem-sucedidos, eles terão sucesso na tarefa, afetando grandemente a trama e ganhando **`1 exp.`**
+Caso metade ou mais dos testes realizados sejam bem-sucedidos, o grupo supera o desafio e cada personagem participante recebe **`1 exp.`** Essa recompensa reconhece uma sequência decisiva dentro da sessão; ela não substitui a recompensa por completar uma tarefa, missão ou arco.
 
 ### Vencer um conflito
 
@@ -67,11 +67,11 @@ Ao completar **arcos pessoais** do personagem, recomenda-se recompensar o jogado
 
 ## Comprando Características
 
-Para adquirir uma característica é necessário comprá-la com pontos de experiência em momentos de compra (Início ou final da sessão, descansos longos ou outras situações determinadas pelo narrador).
+Para adquirir uma característica é necessário comprá-la com pontos de experiência em um momento de compra: no início ou no final da sessão, durante um descanso longo ou em outra situação determinada pelo narrador. Um descanso curto não abre um momento de compra por si só.
 
 Cada tipo de característica se compra de um jeito:
 
-- **Habilidades** — você compra a habilidade **uma vez** e pode usá-la sempre que quiser, desde que tenha `PA` e aguente a [fadiga](../conceitos/08-fadiga.md) (cada uso custa fadiga igual ao `PA` da habilidade). Gastar `exp.` de novo na mesma habilidade **sobe o nível** dela, tornando o efeito mais forte — nunca compra "mais um uso".
+- **Habilidades** — o custo indicado é o custo de cada nível. O nível 1 adquire a habilidade; cada nível seguinte custa novamente o mesmo valor-base e torna o efeito mais forte. Assim, uma habilidade de `2 exp.` no nível 3 representa `6 exp.` investidos (`2 × 3`). Ela pode ser usada sempre que houver `PA` e a personagem puder assumir a [fadiga](../conceitos/08-fadiga.md); nunca se compra “mais um uso”.
 - **Aptidões** — são **consumíveis**: cada aptidão comprada é uma rerrolagem que você tem até o descanso devolvê-la. Comprar de novo aumenta quantas você tem, pelo [custo escalonado](../listas/aptidoes-base.md).
 - **Traços** — não são gastáveis: o efeito permanece ativo enquanto os requisitos estiverem em vigor.
 
@@ -83,7 +83,7 @@ Em Marca de Sangue, as habilidades têm pré-requisitos para serem usadas. Você
 
 ### Subindo o nível de uma habilidade
 
-Para adquirir uma habilidade, basta gastar pontos de experiência. Para deixá-la **mais forte**, gaste `exp.` novamente e **suba o nível** dela. Cada entrada das [listas de habilidades](../listas/habilidades-base.md) traz a sua **Progressão**: o que muda a cada nível alcançado.
+Para adquirir uma habilidade, pague seu custo-base e anote-a no nível 1. Para deixá-la **mais forte**, pague novamente o mesmo custo-base e avance um nível por vez. O total investido é sempre **custo-base × nível atual**. Cada entrada das [listas de habilidades](../listas/habilidades-base.md) traz a sua **Progressão**: o que muda a cada nível alcançado.
 
 Na vida real, antes de saber tecer um cachecol é provável que você precise primeiro aprender a manusear a linha e a agulha. Aqui vale o mesmo: o nível 3 de uma habilidade pressupõe que você passou pelos níveis 1 e 2.
 

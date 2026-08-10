@@ -44,7 +44,7 @@ Um personagem em início de campanha começa com `15 pontos de experiência` par
 
 **Evoluindo o personagem**
 
-No início ou final de cada sessão ou sempre que o personagem estiver em um momento de descanso, você pode escolher gastar seus pontos de experiência para comprar novas características.
+No início ou final de cada sessão, durante um descanso longo ou em outro momento autorizado pelo narrador, você pode gastar seus pontos de experiência para comprar novas características. Um descanso curto não abre um momento de compra por si só.
 
 > 💡 Há um segundo espaço para anotar outro tipo de experiência, caso o cenário necessite.
 
@@ -70,10 +70,7 @@ Os traços podem ser comprados nas listas de traços na seção “Recursos bás
 
 Em seguida, compre habilidades. Habilidades são características acionáveis que garantem grandes vantagens ou possibilitam realizar ações incomuns. Elas não possuem usos: cada ativação consome `PA` e fadiga conforme a regra da própria habilidade.
 
-Atente-se ao valor de experiência necessário para comprar cada habilidade, para obtê-la em um nível maior, é necessário gastar o mesmo valor de compra repetidas vezes, até alcançar o nível pretendido.
-
-> 💡 **Combinando habilidades iguais:**
-> Durante os momentos de compra, é possível combinar uso de habilidades iguais já existentes em um uso de nível maior, mas não é possível separar uma atividade de um nível maior em habilidades de nível menor.
+Atente-se ao valor de experiência necessário para comprar cada habilidade. O nível 1 custa o valor-base indicado; cada nível seguinte custa novamente esse mesmo valor. Portanto, o total investido é o valor-base multiplicado pelo nível atual. Não existem usos comprados nem fusão de habilidades iguais.
 
 ### 3.3 Compre Aptidões
 

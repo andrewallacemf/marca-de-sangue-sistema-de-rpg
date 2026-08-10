@@ -44,6 +44,8 @@ Leia estes documentos na ordem:
   tipos de dano, estados dos membros, cura, defesa e sobreposição de proteções.
 - [Descanso e recuperação](propostas/2026-08-09-descanso-e-recuperacao.md) — diferenças entre
   descanso curto e longo, recursos recuperados e distribuição da cura entre membros.
+- [Experiência e progressão](propostas/2026-08-09-experiencia-e-progressao.md) — separação entre
+  gastos do jogador, recompensas do narrador e custos oficiais de evolução.
 
 ## Regra para IAs
 
