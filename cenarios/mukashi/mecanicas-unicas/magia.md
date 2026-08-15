@@ -13,7 +13,7 @@ A magia em Mukashi usa o [módulo de Magia](../../../modulos/magia/README.md) do
 nenhuma regra própria por baixo — [KI](ki.md) é só o nome que Mukashi dá à energia sobrenatural,
 não um atributo de teste. Cada magia abaixo declara um dos 4 atributos base
 (`Físico`/`Ágil`/`Mental`/`Social`), como manda o módulo, e segue as mesmas três diferenças em
-relação a uma habilidade comum: custo de ativação em fadiga/`PV` além do `PA`, atributo caso a
+relação a uma habilidade comum: custo de ativação em fadiga/`PV` no lugar da fadiga comum e além do `PA`, atributo caso a
 caso, e as opcionais [Aptidão Mágica](../../../modulos/magia/README.md#aptidão-mágica-opcional)
 (aqui chamada de **Aptidão de KI**) e [Experiência de Magia](../../../modulos/magia/README.md#experiência-de-magia-opcional).
 
@@ -29,8 +29,8 @@ caso, e as opcionais [Aptidão Mágica](../../../modulos/magia/README.md#aptidã
 > magia: saúde × sangue × fadiga" antes mesmo do módulo existir. Em 01/08/2026 essa decisão virou
 > parte do [módulo de Magia](../../../modulos/magia/README.md#custo-de-ativação--três-tipos): toda
 > magia abaixo usa o tipo **dano curável**, seguindo as regras normais de
-> [saúde e dano](../../../sistema-base/conflitos/03-saude-e-protecao.md) — gera fadiga automaticamente
-> (1 ponto por ponto de dano) e pode ser recuperado com descanso.
+> [saúde e dano](../../../sistema-base/conflitos/03-saude-e-protecao.md), com a exceção própria do
+> módulo: `PV` pago como custo de ativação não gera fadiga e pode ser recuperado normalmente.
 
 O conjurador escolhe o membro que recebe o custo — o tronco é o mais comum, como sede simbólica do
 KI, mas a escolha é livre.
@@ -62,11 +62,11 @@ impede de atrelar alguma a um caminho específico mais pra frente, se fizer sent
 
 | **Magia** | **Atributo** | **Custo de `PA`** | **Custo de ativação** | **Custo de compra** |
 | --- | --- | --- | --- | --- |
-| Sopro do Kamaitachi | `Ágil` | `4 PA` | `2` superficial 📝 | `4 exp.` 📝 |
-| Fogo de Akiba | `Físico` | `5 PA` | `3` superficial 📝 | `4 exp.` |
-| Muralha de Nurikabe | `Ágil` | `4 PA` | `2` superficial 📝 | `3 exp.` |
-| Grito do Tengu (Tengu-warai) | `Social` | `4 PA` | `2` superficial 📝 | `3 exp.` |
-| Os Nove Selos (Kuji-in) | `Físico` | `5 PA` | `3` superficial 📝 | `4 exp.` |
+| Sopro do Kamaitachi | `Ágil` | `4 PA` | `2` dano curável 📝 | `4 exp.` 📝 |
+| Fogo de Akiba | `Físico` | `5 PA` | `3` dano curável 📝 | `4 exp.` |
+| Muralha de Nurikabe | `Ágil` | `4 PA` | `2` dano curável 📝 | `3 exp.` |
+| Grito do Tengu (Tengu-warai) | `Social` | `4 PA` | `2` dano curável 📝 | `3 exp.` |
+| Os Nove Selos (Kuji-in) | `Físico` | `5 PA` | `3` dano curável 📝 | `4 exp.` |
 
 #### Sopro do Kamaitachi
 

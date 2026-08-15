@@ -3,9 +3,9 @@ titulo: "Lista de traços (módulo Magia)"
 tipo: mecanica
 cenario: modulo
 modulo: magia
-status: rascunho
+status: estavel
 tags: [modulo, magia, lista, tracos, tecnicas, maestrias, aspectos]
-atualizado-em: 2026-08-01
+atualizado-em: 2026-08-15
 ---
 
 # Lista de traços de magia
@@ -79,13 +79,10 @@ custo de ativação de magia em cada cena de conflito. Não afeta fadiga vinda d
 
 Uma vez por [descanso longo](../../../sistema-base/conceitos/09-descanso.md#descanso-longo), ao
 pagar um custo de ativação em **vida máxima**, o jogador pode converter **1** desses pontos em
-dano **profundo** — o membro perde 1 de máximo a menos.
-
-> 📝 Custo alto de propósito — mitigar parte do risco do tier mais extremo de magia (ver
-> [Custo de ativação](../README.md#custo-de-ativação--três-tipos)) sem eliminá-lo por completo.
+dano **curável** — o membro perde 1 de máximo a menos e marca 1 ponto de dano curável no lugar.
 
 #### Requisitos de uso
 
-- Só entra em jogo quando o personagem tem ao menos uma magia com custo de ativação em dano
+- Só entra em jogo quando o personagem tem ao menos uma magia com custo de ativação em
   vida máxima (ex.: [Pacto da Última Gota](lista-de-magias.md#pacto-da-última-gota)) — sem isso, o
   traço fica sem efeito prático, como qualquer traço sem requisito atendido.

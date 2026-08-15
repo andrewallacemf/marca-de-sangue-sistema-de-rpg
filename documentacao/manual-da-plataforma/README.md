@@ -66,6 +66,8 @@ Leia estes documentos na ordem:
   campo, rodadas, ações do embate, agência e separação da futura orientação do narrador.
 - [Conduzindo conflitos sociais](propostas/2026-08-15-conduzindo-conflito-social.md) — objetivos,
   complexidade, participantes, informações abertas, interferência, concessão e encerramento.
+- [Magia](propostas/2026-08-15-magia.md) — custos de ativação, progressão, opções de Aptidão e
+  Experiência de Magia, catálogo oficial e separação do conteúdo próprio de cenários.
 
 ## Regra para IAs
 

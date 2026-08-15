@@ -363,6 +363,11 @@ pendências de **regra** (que ficam em [PENDENCIAS.md](../PENDENCIAS.md)).
   automaticamente ao usar habilidade** (botão "Usar" no card do narrador; sem saldo
   bloqueia). O modelo de "usos" deixou de existir também na mesa: a sincronização de
   usos mesa↔ficha foi removida (o round-trip com perda não existe mais).
+- **Decisão 117 da plataforma (15/08/2026)** — o módulo Magia oficializado neste repositório
+  ganhou páginas públicas do jogador e do narrador. As fichas das oito magias são lidas de
+  `MagiaBase` sem transcrição; o selo de proposta em `/recursos` agora distingue Magias de
+  Veículos. O ciclo de implementação foi fechado, restando apenas executar o seed em produção
+  numa entrega autorizada.
 
 ---
 

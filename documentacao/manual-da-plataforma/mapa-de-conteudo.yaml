@@ -914,7 +914,7 @@ paginas:
     rota: /manual/modulos/magia
     publico: jogador
     tipo: modulo
-    estado: mapeada
+    estado: publicada
     ordem: 80
     objetivo: Explicar magia, custos de ativação, aptidão, experiência e recursos mágicos.
     fontes:
@@ -929,19 +929,21 @@ paginas:
       - modulo.magia.narrador
       - cenario.mukashi.jogador
     observacoes_internas:
-      - Custos e listas contêm propostas ainda não resolvidas; apresentar conflitos para decisão antes da publicação.
+      - As oito magias e os quatro traços genéricos foram oficializados em 15/08/2026.
+      - Opções e magias próprias de Mukashi permanecem reservadas à curadoria do cenário.
 
   - id: modulo.magia.narrador
     titulo: Conduzindo magia
     rota: /manual/narrador/modulos/magia
     publico: narrador
     tipo: modulo
-    estado: planejada
+    estado: publicada
     ordem: 80
     objetivo: Orientar disponibilidade, criação e consequências da magia em um cenário.
     fontes:
       - modulos/magia/README.md
-      - cenarios/mukashi/mecanicas-unicas/magia.md
+      - modulos/magia/listas/lista-de-magias.md
+      - modulos/magia/listas/lista-de-tracos.md
     depende_de:
       - modulo.magia.jogador
       - narrador.testes-e-arbitragem
@@ -949,6 +951,7 @@ paginas:
       - cenario.mukashi.narrador
     observacoes_internas:
       - Separar regra do módulo de decisões exclusivas de Mukashi.
+      - A página orienta a escolha de opções, criação de magias e consequências; não repete o catálogo do jogador.
 
   - id: modulo.veiculos.jogador
     titulo: Veículos

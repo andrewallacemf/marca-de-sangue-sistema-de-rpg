@@ -3353,13 +3353,13 @@
         "+1d10 de dano extra; ignora metade do redutor de armadura do alvo (arredondado para baixo).",
         "+1d12 de dano extra; ignora todo o redutor de armadura leve do alvo."
       ],
-      "proposta": true
+      "proposta": false
     },
     {
       "nome": "Pacto da Última Gota",
       "atributo": "Físico",
       "custoPA": "5 PA",
-      "custoAtivacao": "nível 1 a 4 = 4→3→2→1 de vida máxima; nível 5 = 4 de dano profundo",
+      "custoAtivacao": "nível 1 a 4 = 4→3→2→1 de vida máxima; nível 5 = 4 de dano curável",
       "tipoCusto": "vida máxima",
       "valorCompra": "4",
       "efeito": "O conjurador queima parte da própria força vital, de forma irreversível, para desferir um golpe muito além do que o corpo comum aguenta. No próximo ataque corpo a corpo, causa +4d10 de dano extra e ignora toda a redução de dano de armadura do alvo.",
@@ -3371,7 +3371,7 @@
         "Custo 1 de vida máxima.",
         "Custo 4 de dano curável (para de cobrar vida máxima)."
       ],
-      "proposta": true
+      "proposta": false
     },
     {
       "nome": "Passo Entre Sopros",
@@ -3389,7 +3389,7 @@
         "Até 9 metros.",
         "Até 12 metros; uma vez por descanso, pode atravessar um obstáculo fino (uma porta fechada, uma parede de madeira comum) no trajeto."
       ],
-      "proposta": true
+      "proposta": false
     },
     {
       "nome": "Véu da Presa Rápida",
@@ -3407,7 +3407,7 @@
         "Custo 1 de dano curável; o efeito dura também o turno seguinte (2 turnos completos).",
         "Custo 1 de fadiga (sai do dano); efeito dura 2 turnos completos."
       ],
-      "proposta": true
+      "proposta": false
     },
     {
       "nome": "Sussurro na Nuca",
@@ -3425,7 +3425,7 @@
         "Desvantagem nos próximos 3 testes do alvo.",
         "Desvantagem nos próximos 3 testes; o efeito também atinge um segundo alvo adjacente ao primeiro."
       ],
-      "proposta": true
+      "proposta": false
     },
     {
       "nome": "Memória Roubada",
@@ -3443,7 +3443,7 @@
         "Uma vez por cena, pode \"emprestar\" o uso de uma técnica que o alvo (disposto) possui, testando no lugar dele por uma ação.",
         "O empréstimo de técnica (nível 4) dura até o fim da sessão, não só uma ação."
       ],
-      "proposta": true
+      "proposta": false
     },
     {
       "nome": "Voz que Convence",
@@ -3461,25 +3461,25 @@
         "Atinge até 2 alvos ao mesmo tempo, com um único teste.",
         "Atinge até 3 alvos."
       ],
-      "proposta": true
+      "proposta": false
     },
     {
       "nome": "Grito que Ajoelha",
       "atributo": "Social",
       "custoPA": "5 PA",
-      "custoAtivacao": "3→2→3→2→1 dano curável",
+      "custoAtivacao": "3 dano curável (fixo em todos os níveis)",
       "tipoCusto": "dano curável",
       "valorCompra": "4",
       "efeito": "Todo inimigo num raio que possa ouvir o grito faz um teste de Mental. Quem falhar sofre Desvantagem no próximo teste que fizer.",
       "requisitos": "Os alvos precisam conseguir ouvir o grito.",
       "niveis": [
-        "Custo 3 de dano curável. Raio de 6 metros.",
-        "Custo 2 de dano curável. Raio de 6 metros.",
-        "Custo 3 de dano curável. Raio de 9 metros.",
-        "Custo 2 de dano curável. Raio de 9 metros.",
-        "Custo 1 de dano curável. Raio de 12 metros."
+        "Raio de 6 metros.",
+        "Raio de 7 metros.",
+        "Raio de 9 metros.",
+        "Raio de 10 metros.",
+        "Raio de 12 metros."
       ],
-      "proposta": true
+      "proposta": false
     }
   ],
   "veiculos": {

@@ -7,7 +7,7 @@ Lê as listas do manual (sistema-base/listas/ + módulos da coleção `armas` +
 modulos/protecoes/ + modulos/magia/ + modulos/veiculos/) e emite
 `contrato/catalogo.json` com armas, munições, proteções, itens gerais, habilidades (com
 progressão por nível), traços, o glossário de propriedades de armas, os
-inimigos do kit de playtest (proposta), as magias do módulo Magia (proposta)
+inimigos do kit de playtest (proposta), as magias oficiais do módulo Magia
 e as listas do módulo Veículos (proposta).
 
 Princípio: EXTRAÇÃO LITERAL. Os textos vêm do manual como estão (limpos de
@@ -651,8 +651,7 @@ def tipo_custo_ativacao(texto: str) -> str:
 def parse_magias(caminho: str) -> list[dict]:
     """Mesma mecânica de parse_habilidades, com os dois ajustes acima.
 
-    Todos os itens saem com "proposta": true — o próprio arquivo avisa que os
-    custos de PA, ativação e exp. são proposta, a validar no playtest.
+    As magias foram oficializadas em 15/08/2026 e saem com ``proposta: false``.
     """
     md = le(caminho)
     magias = []
@@ -682,7 +681,7 @@ def parse_magias(caminho: str) -> list[dict]:
             "efeito": efeito,
             "requisitos": "; ".join(bullets(subs.get("Requisitos de uso", ""))),
             "niveis": niveis,
-            "proposta": True,
+            "proposta": False,
         })
     if not magias:
         aviso("magias: nenhuma magia extraída (estrutura do arquivo mudou?)")

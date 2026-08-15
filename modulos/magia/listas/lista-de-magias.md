@@ -3,9 +3,9 @@ titulo: "Lista de magias (módulo Magia)"
 tipo: mecanica
 cenario: modulo
 modulo: magia
-status: rascunho
+status: estavel
 tags: [modulo, magia, lista, habilidades]
-atualizado-em: 2026-08-01
+atualizado-em: 2026-08-15
 ---
 
 # Lista de magias
@@ -16,21 +16,21 @@ Catálogo de exemplo do [módulo Magia](../README.md) — oito magias, duas por
 [progressão](../README.md#progressão-níveis--efeito-custo-ou-os-dois). Servem tanto como magias
 prontas para usar quanto como referência de calibragem para criar magias novas.
 
-> 📝 Todos os custos de `PA`, ativação e `exp.` abaixo são **proposta**, a validar no playtest —
-> seguem a heurística de calibragem do [guia de design](../README.md#guia-de-design--criando-uma-magia-nova).
+Os custos e progressões abaixo seguem o [guia de criação](../README.md#guia-de-design--criando-uma-magia-nova)
+e podem ser usados diretamente por qualquer cenário que adote o módulo.
 
 ## Resumo
 
 | **Magia** | **Atributo** | **Custo de `PA`** | **Custo de ativação (nível 1 → 5)** | **Custo de compra** |
 | --- | --- | --- | --- | --- |
-| [Punho da Montanha](#punho-da-montanha) | `Físico` | `1 PA` + arma/desarmado | `2` superficial (fixo) | `2 exp.` |
-| [Pacto da Última Gota](#pacto-da-última-gota) | `Físico` | `5 PA` | `4→3→2→1` vida máx. → `4` profundo | `4 exp.` |
+| [Punho da Montanha](#punho-da-montanha) | `Físico` | `1 PA` + arma/desarmado | `2` dano curável (fixo) | `2 exp.` |
+| [Pacto da Última Gota](#pacto-da-última-gota) | `Físico` | `5 PA` | `4→3→2→1` vida máx. → `4` dano curável | `4 exp.` |
 | [Passo Entre Sopros](#passo-entre-sopros) | `Ágil` | `1 PA` | `2` fadiga (fixo) | `2 exp.` |
-| [Véu da Presa Rápida](#véu-da-presa-rápida) | `Ágil` | `4 PA` | `3→2→1→1` superficial → `1` fadiga | `3 exp.` |
-| [Sussurro na Nuca](#sussurro-na-nuca) | `Mental` | `4 PA` | `2` superficial (fixo) | `3 exp.` |
+| [Véu da Presa Rápida](#véu-da-presa-rápida) | `Ágil` | `4 PA` | `3→2→1→1` dano curável → `1` fadiga | `3 exp.` |
+| [Sussurro na Nuca](#sussurro-na-nuca) | `Mental` | `4 PA` | `2` dano curável (fixo) | `3 exp.` |
 | [Memória Roubada](#memória-roubada) | `Mental` | `1 PA` | `1` fadiga (fixo) | `1 exp.` |
-| [Voz que Convence](#voz-que-convence) | `Social` | `4 PA` | `2` superficial (fixo) | `2 exp.` |
-| [Grito que Ajoelha](#grito-que-ajoelha) | `Social` | `5 PA` | `3→2` profundo → `3→2→1` superficial | `4 exp.` |
+| [Voz que Convence](#voz-que-convence) | `Social` | `4 PA` | `2` dano curável (fixo) | `2 exp.` |
+| [Grito que Ajoelha](#grito-que-ajoelha) | `Social` | `5 PA` | `3` dano curável (fixo) | `4 exp.` |
 
 ## Punho da Montanha
 
@@ -60,18 +60,13 @@ sobrenatural. Ao acertar um ataque corpo a corpo, soma dano extra ao golpe.
 
 > *Um pedaço de si mesmo, para sempre, em troca de um instante de força que nenhum músculo alcança.*
 
-**Atributo:** `Físico` · **Custo de PA:** `5 PA` · **Custo de ativação:** nível 1 a 4 = `4→3→2→1` de **vida máxima**; nível 5 = `4` de dano **profundo** · **Custo de compra:** `4 exp.`
+**Atributo:** `Físico` · **Custo de PA:** `5 PA` · **Custo de ativação:** nível 1 a 4 = `4→3→2→1` de **vida máxima**; nível 5 = `4` de dano **curável** · **Custo de compra:** `4 exp.`
 
 #### Descrição
 
 O conjurador queima parte da própria força vital, de forma irreversível, para desferir um golpe
 muito além do que o corpo comum aguenta. No próximo ataque corpo a corpo, causa `+4d10` de dano
 extra e ignora toda a redução de dano de armadura do alvo.
-
-> 📝 É a magia-exemplo do módulo para o modelo "custo de ativação cai (e troca de tipo) por nível" —
-> ver [Progressão](../README.md#progressão-níveis--efeito-custo-ou-os-dois). No nível 5 o efeito
-> continua o mesmo, mas o conjurador já não paga com vida máxima — domina a técnica o
-> suficiente para que o preço vire uma ferida grave, porém tratável.
 
 #### Requisitos de uso
 
@@ -123,10 +118,6 @@ comum (poças, entulho baixo — não paredes ou obstáculos sólidos).
 
 Até o fim do próximo turno do conjurador, todo [contrateste de esquiva](../../../sistema-base/conflitos/03-saude-e-protecao.md#defesa-e-esquiva)
 que ele fizer ganha `vantagem`.
-
-> 📝 Exemplo do modelo "custo cai, efeito fixo" — no nível 5 o custo troca de tipo (de dano
-> superficial para fadiga pura), mostrando que a queda de custo pode também mudar de tier, não só
-> de número.
 
 #### Requisitos de uso
 
@@ -221,16 +212,12 @@ interesses do alvo, apenas inclina a balança a favor do pedido.
 
 > *Um grito só, mas todo mundo ao redor sente o peso dele nos próprios joelhos.*
 
-**Atributo:** `Social` · **Custo de PA:** `5 PA` · **Custo de ativação:** `3→2→3→2→1` dano curável 📝 · **Custo de compra:** `4 exp.`
+**Atributo:** `Social` · **Custo de PA:** `5 PA` · **Custo de ativação:** `3` dano curável (fixo em todos os níveis) · **Custo de compra:** `4 exp.`
 
 #### Descrição
 
 Todo inimigo num raio que possa ouvir o grito faz um teste de `Mental`. Quem falhar sofre
 **Desvantagem** no próximo teste que fizer.
-
-> 📝 A progressão de custo precisa ser recalibrada após a retirada do dano profundo: os valores
-> foram preservados para revisão, mas o salto do nível 2 para o 3 não representa melhoria.
-> Contraste com [Pacto da Última Gota](#pacto-da-última-gota), que começa cobrando vida máxima.
 
 #### Requisitos de uso
 
@@ -238,8 +225,8 @@ Todo inimigo num raio que possa ouvir o grito faz um teste de `Mental`. Quem fal
 
 #### Progressão
 
-1. Custo `3` de dano curável. Raio de `6` metros.
-2. Custo `2` de dano curável. Raio de `6` metros.
-3. Custo `3` de dano curável. Raio de `9` metros.
-4. Custo `2` de dano curável. Raio de `9` metros.
-5. Custo `1` de dano curável. Raio de `12` metros.
+1. Raio de `6` metros.
+2. Raio de `7` metros.
+3. Raio de `9` metros.
+4. Raio de `10` metros.
+5. Raio de `12` metros.

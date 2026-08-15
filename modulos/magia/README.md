@@ -3,9 +3,9 @@ titulo: "Módulo: Magia"
 tipo: mecanica
 cenario: modulo
 modulo: magia
-status: rascunho
+status: estavel
 tags: [modulo, magia, pv, fadiga, aptidao-magica, experiencia-de-magia]
-atualizado-em: 2026-08-01
+atualizado-em: 2026-08-15
 ---
 
 # 🧩 Módulo: Magia
@@ -16,10 +16,9 @@ conjurador do que uma habilidade comum. Este módulo não inventa um subsistema 
 mesma escada de `exp.`, mesmos níveis) com **um ingrediente a mais** — um custo de ativação pago no
 próprio corpo ou na própria energia do conjurador, além do `PA`.
 
-> 📝 Este módulo generaliza o sistema de magia que já existia no cenário [Mukashi](../../cenarios/mukashi/mecanicas-unicas/magia.md)
-> (KI, feitiços, custo em pontos de vida). O Mukashi migrou pra consumir este módulo em 01/08/2026
-> — `KI` virou o nome/sabor que o cenário dá à magia, sem regra própria por baixo (ver
-> [KI](../../cenarios/mukashi/mecanicas-unicas/ki.md)).
+Cada cenário decide como a magia se manifesta na ficção. Em
+[Mukashi](../../cenarios/mukashi/mecanicas-unicas/magia.md), por exemplo, a energia sobrenatural
+recebe o nome de [KI](../../cenarios/mukashi/mecanicas-unicas/ki.md), sem criar outra mecânica.
 
 ## O que é uma magia
 
@@ -33,7 +32,7 @@ Uma magia é uma habilidade com três diferenças em relação a uma habilidade 
    (`Físico`, `Ágil`, `Mental` ou `Social`), de acordo com a natureza do efeito. **Não existe um
    atributo fixo para magia** — força bruta mística testa `Físico`, uma ilusão rápida testa `Ágil`,
    manipulação da mente testa `Mental`, compulsão testa `Social`. Um cenário com um quinto atributo
-   místico próprio (ex.: `KI` do Mukashi) pode usar esse atributo no lugar de um dos quatro — ver
+   místico próprio pode usar esse atributo no lugar de um dos quatro — ver
    [nota de compatibilidade](#nota-de-compatibilidade-com-um-5º-atributo-místico).
 3. **Duas mecânicas opcionais** — [Aptidão Mágica](#aptidão-mágica-opcional) e
    [Experiência de Magia](#experiência-de-magia-opcional) — que mudam como a magia é testada e
@@ -63,15 +62,9 @@ custo padrão de fadiga** — não se soma a ele. E, quando o custo de ativaçã
 > `4 PA` + 2 de fadiga. Se for em `PV`, cobra `4 PA` + 2 de `PV` — e **nenhuma fadiga**. Para
 > comparação, uma habilidade comum de `4 PA` cobraria `4 PA` + 4 de fadiga.*
 
-> ✅ Decidido pelo Daniel em 01/08/2026, corrigindo o desenho anterior deste módulo. Sem esta
-> regra, uma magia acumularia `PA` + fadiga de habilidade + `PV` + a fadiga gerada pelo `PV` — quatro
-> custos pelo mesmo lançamento, o que tornava magia proibitiva.
-
-> 📝 **A consequência a vigiar:** pagar em `PV` pode sair **mais barato em fadiga** do que uma
-> habilidade comum de mesmo `PA`, já que zera a fadiga do lançamento. Um conjurador com muita vida
-> sobrando pode preferir queimar `PV` justamente para continuar com `PA` cheio. Isso é coerente com
-> a fantasia (o mago que se consome para não cansar), mas precisa de playtest — se virar a escolha
-> óbvia sempre, o ajuste é subir os custos em `PV` das magias.
+Pagar em `PV` preserva a fadiga do conjurador, mas aproxima seus membros da incapacitação ou reduz
+permanentemente sua vida máxima. A troca é deliberada: a magia permite escolher qual recurso será
+pressionado, sem apagar as consequências corporais dessa escolha.
 
 ## Custo de ativação — três tipos
 
@@ -80,31 +73,29 @@ Toda magia declara, junto com o custo de `PA`, **um** destes três tipos de cust
 | Tipo | O que acontece | Cura | Quando usar |
 |---|---|---|---|
 | **Fadiga** | O conjurador recebe X pontos de [fadiga](../../sistema-base/conceitos/08-fadiga.md) diretamente — **sem** perder `PV`. | Some no próximo descanso (como toda fadiga). | Magias leves, utilitárias, de baixo risco. |
-| **Dano (curável)** | O conjurador sofre X pontos de dano em si mesmo — **superficial** ou **profundo**, à escolha de quem desenha a magia — seguindo à risca as [regras normais de dano](../../sistema-base/conflitos/03-saude-e-protecao.md#pontos-de-vida-e-dano). | Superficial: sozinho, no descanso. Profundo: precisa de tratamento. | Magias de efeito moderado a forte. |
+| **Dano curável** | O conjurador marca X pontos de dano curável em um membro com espaço suficiente. | Recupera-se pelas regras normais de cura e descanso. | Magias de efeito moderado a forte. |
 | **Vida máxima** | O conjurador **perde X pontos de vida máxima** num membro à sua escolha — o [dano permanente](../../sistema-base/conflitos/03-saude-e-protecao.md#dano-permanente-perda-de-vida-máxima) do sistema, cobrado **direto**, sem precisar que o membro esteja cheio antes (é sacrifício deliberado da própria força vital, não ferimento de combate). | **Nunca**, por meios convencionais. | Magias extremas — grande poder, grande risco. Reservar para efeitos que justifiquem o preço. |
-
-> 📝 A exceção de cobrar vida máxima **direto**, sem o membro precisar estar cheio antes, é regra
-> nova deste módulo — no sistema, perder vida máxima é sempre a consequência de continuar apanhando
-> num membro já incapacitado. Proposta a validar: se na mesa isso se mostrar abusivo, a
-> alternativa é exigir que o membro escolhido já esteja incapacitado.
 
 **O `PV` gasto como custo de ativação de uma magia NÃO gera fadiga.** É a exceção deliberada à
 [regra geral](../../sistema-base/conceitos/08-fadiga.md#como-se-ganha-fadiga) de que todo ponto de
 dano recebido soma 1 de fadiga — e vale **só** para o custo de ativação. O conjurador que **leva um
 golpe** de um inimigo acumula fadiga normalmente, como todo mundo; magia não protege de nada.
 
-> ⚠️ **A vida máxima ainda cobra a longo prazo.** O terceiro tipo de custo não gera fadiga na hora,
-> mas como a [fadiga máxima acompanha o total de `PV`](../../sistema-base/conceitos/08-fadiga.md#fadiga-máxima),
-> **perder vida máxima reduz permanentemente o quanto o conjurador aguenta de esforço**. Um mago que
-> abusa desse custo não cansa mais rápido hoje — mas o teto dele desce para sempre.
+Como a [fadiga máxima acompanha o total de `PV`](../../sistema-base/conceitos/08-fadiga.md#fadiga-máxima),
+perder vida máxima também reduz permanentemente o quanto o conjurador aguenta de esforço.
 
 ### Qual membro é atingido
 
-Quem conjura escolhe **em qual membro** o custo de ativação (fadiga não se aplica, é abstrata) é
-registrado — o tronco é o mais comum, como sede simbólica da energia do conjurador, mas a escolha
-é livre. Fora isso, nenhuma regra nova: se o custo acumulado encher um membro, ele fica com ferida
-profunda; se a vida máxima daquele membro chegar a zero, ele fica invalidado — exatamente como
-qualquer outro dano.
+Quem conjura escolhe **em qual membro** o custo corporal é registrado; fadiga é abstrata e não
+atinge um membro. O custo ignora proteção e redutores, porque não é um ataque, e precisa ser pago
+por inteiro antes do teste. Dano curável só pode ser colocado em um membro com espaços livres
+suficientes: ele não transborda para dano permanente. Se nenhum membro puder receber todo o custo,
+a magia não pode ser ativada.
+
+A perda de vida máxima é cobrada diretamente, mesmo que o membro não esteja incapacitado. Ela pode
+invalidar um membro e produzir as consequências normais, inclusive a morte quando cabeça ou tronco
+forem invalidados ou quando dois membros periféricos forem invalidados. Quem conjura deve conseguir
+pagar o custo completo; não é possível pagar apenas uma parte para obter o efeito.
 
 ## Progressão (níveis) — efeito, custo, ou os dois
 
@@ -125,7 +116,7 @@ caso, qual usar (ou os dois):
   reservar para poucas magias muito especiais.
 
 > Exemplo do segundo modelo: [Pacto da Última Gota](listas/lista-de-magias.md#pacto-da-última-gota)
-> começa custando `4` de **vida máxima** no nível 1 e termina custando dano **profundo** no
+> começa custando `4` de **vida máxima** no nível 1 e termina custando dano **curável** no
 > nível 5 — o mesmo efeito continua poderoso, mas cada vez menos autodestrutivo à medida que o
 > conjurador domina a técnica.
 
@@ -166,12 +157,11 @@ também estiver ativa). A ficha base já reserva um espaço para isso — ver
   tarefa/missão/arco) — o narrador só marca a recompensa como "de magia" quando o gatilho envolveu
   magia de forma central (um ritual bem-sucedido, um conflito vencido com feitiços, um problema
   resolvido com um efeito mágico específico).
-
-> 📝 **Primeira implementação real do padrão "segundo tipo de exp."** A ficha já previa o espaço
-> (ver acima) e o cenário Colapso já cita uma "Experiência de Veículos" sem regra nenhuma por trás
-> (`PENDENCIAS.md`) — as regras de ganho acima são proposta a validar no playtest; se funcionarem
-> bem, podem virar o modelo padrão pra qualquer módulo/cenário que precise de uma segunda trilha de
-> `exp.`, inclusive resolvendo a pendência do Colapso.
+- **Experiência inicial:** o cenário ou a campanha declara quantos pontos de Experiência de Magia
+  cada personagem recebe na criação. Se nenhum valor for declarado, a reserva começa em `0`.
+- **Uma recompensa, uma trilha:** cada recompensa é registrada como `exp.` comum ou Experiência de
+  Magia. Ela não entra nas duas reservas ao mesmo tempo, salvo quando o narrador conceder
+  expressamente duas recompensas distintas.
 
 ## Compatibilidade — as quatro combinações
 
@@ -206,11 +196,11 @@ A [exceção do suporte](../../sistema-base/conceitos/05-habilidades.md#custo-de
    `1 PA` utilidade rápida ou `4`–`5 PA` efeito forte se for efeito próprio.
 3. **Custo de ativação** — escolha um dos três tipos (fadiga / dano curável / vida máxima) e um
    valor. Lembre que ele **substitui** o custo padrão de fadiga da habilidade, e que os tipos em
-   `PV` **não geram fadiga**. Heurística de calibragem inicial (📝 proposta, a validar no playtest,
-   herdada do Mukashi): magia de `4 PA` → `2` de custo; magia de `5 PA` → `3` de custo — o mesmo
+   `PV` **não geram fadiga**. Como ponto de partida, magia de `4 PA` usa `2` de custo e magia de
+   `5 PA` usa `3` de custo — o mesmo
    valor numérico serve de ponto de partida em qualquer um dos três tipos, e o **tipo** escolhido é
    o que define o quão arriscada a magia é, não o número.
-   > 📝 Compare sempre com o que uma **habilidade comum** de mesmo `PA` cobraria (fadiga igual ao
+   > Compare sempre com o que uma **habilidade comum** de mesmo `PA` cobraria (fadiga igual ao
    > `PA`). Se a sua magia estiver saindo mais barata que isso, ou o custo está baixo, ou o efeito
    > precisa ser maior para justificar.
 4. **Custo de compra** — escada de `1` a `4 exp.`, igual habilidade comum.

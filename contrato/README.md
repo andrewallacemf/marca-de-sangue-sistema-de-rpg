@@ -18,7 +18,7 @@ manual (39 armas com dano defasado, 9 itens faltando — corrigido em 24/07/2026
 |---------|---------|
 | [`limpeza.py`](limpeza.py) | A **limpeza oficial**: remove frontmatter, blocos de bastidor (`✅`, `📝`, `🔧`, `⚠️ A DEFINIR`, datas de decisão…), blocos explícitos `<!-- bastidor:inicio -->…<!-- bastidor:fim -->`, seção "Referências" e marcações internas. **`💡` nunca é removido** — é dica de mesa pro jogador/mestre, não bastidor (ver [CONVENCOES.md §12](../CONVENCOES.md) para a tabela completa dos emojis). Páginas inteiras marcadas `publico: false` no frontmatter são filtradas por quem consome (`manual/gerar-conteudo.py`), antes mesmo de chamar a limpeza. |
 | [`exportar_catalogo.py`](exportar_catalogo.py) | O **exportador**: lê as listas do manual e gera o `catalogo.json`. |
-| [`catalogo.json`](catalogo.json) | O **artefato do contrato**: armas, munições, proteções, itens gerais, habilidades (com progressão por nível), traços, propriedades de armas, os inimigos do kit de playtest (proposta) e, desde 08/08/2026, magias e veículos (ambos proposta), em JSON estruturado. **Gerado — não edite à mão.** |
+| [`catalogo.json`](catalogo.json) | O **artefato do contrato**: armas, munições, proteções, itens gerais, habilidades (com progressão por nível), traços, propriedades de armas, os inimigos do kit de playtest (proposta), magias oficiais e veículos (proposta), em JSON estruturado. **Gerado — não edite à mão.** |
 
 ## Consumidores
 
@@ -196,8 +196,7 @@ lacuna vira pendência).
     "valorCompra": "2",             // custo de compra em exp (nível base)
     "efeito": "…", "requisitos": "…; …",
     "niveis": ["…", "…"],          // seção Progressão (índice 0 = nível 1)
-    "proposta": true                // SEMPRE true: os custos de PA, ativação e exp.
-                                    // da lista são proposta, a validar no playtest
+    "proposta": false               // magias oficializadas em 15/08/2026
   }],
   "veiculos": {                     // módulo Veículos — TUDO com "proposta": true
                                     // (números do material Alpha do Colapso, ainda
