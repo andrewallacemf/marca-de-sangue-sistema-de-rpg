@@ -58,6 +58,14 @@ Leia estes documentos na ordem:
   básicas, progressões variáveis, custos e exclusão das entradas experimentais.
 - [Traços](propostas/2026-08-10-tracos.md) — catálogo das 14 Técnicas, 11 Maestrias e 25
   Aspectos oficiais, com custos, gatilhos, requisitos e exclusão das entradas experimentais.
+- [Furtividade](propostas/2026-08-15-furtividade.md) — separação entre procedimento do jogador,
+  preparação do narrador e opções ainda não oficializadas.
+- [Conduzindo Furtividade](propostas/2026-08-15-conduzindo-furtividade.md) — preparação de cenas,
+  arbitragem de exposição, redução do alerta e administração do alarme.
+- [Conflito social](propostas/2026-08-15-conflito-social.md) — malha emocional, pontuação por
+  campo, rodadas, ações do embate, agência e separação da futura orientação do narrador.
+- [Conduzindo conflitos sociais](propostas/2026-08-15-conduzindo-conflito-social.md) — objetivos,
+  complexidade, participantes, informações abertas, interferência, concessão e encerramento.
 
 ## Regra para IAs
 

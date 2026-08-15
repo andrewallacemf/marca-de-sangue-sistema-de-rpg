@@ -694,7 +694,7 @@ paginas:
     rota: /manual/jogador/modulos
     publico: jogador
     tipo: indice
-    estado: mapeada
+    estado: publicada
     ordem: 60
     objetivo: Apresentar módulos disponíveis e seus recursos para jogadores.
     fontes:
@@ -705,7 +705,8 @@ paginas:
     relacionados:
       - narrador.modulos.indice
     observacoes_internas:
-      - Remover estados, datas de extração e roadmap; reescrever descrições como apresentação pública.
+      - Publicado como índice curado em 15/08/2026; não expõe estados, datas de extração ou roadmap.
+      - Módulos de catálogo apontam para os recursos canônicos filtrados, sem páginas duplicadas.
 
   - id: narrador.modulos.indice
     titulo: Módulos para narradores
@@ -730,7 +731,7 @@ paginas:
     rota: /manual/modulos/furtividade
     publico: jogador
     tipo: modulo
-    estado: mapeada
+    estado: aguardando_aprovacao
     ordem: 10
     objetivo: Explicar visão, alerta, alarme, esconder-se e emboscadas para jogadores.
     fontes:
@@ -744,13 +745,14 @@ paginas:
       - cenario.colapso.jogador
     observacoes_internas:
       - Separar parâmetros de preparação e exemplos de playtest para o Manual do Narrador.
+      - Redação pública aprovada conceitualmente em 15/08/2026 e implementada para validação final.
 
   - id: modulo.furtividade.narrador
     titulo: Conduzindo furtividade
     rota: /manual/narrador/modulos/furtividade
     publico: narrador
     tipo: modulo
-    estado: mapeada
+    estado: aguardando_aprovacao
     ordem: 10
     objetivo: Preparar áreas, campos de visão, níveis de alerta e consequências de furtividade.
     fontes:
@@ -765,13 +767,14 @@ paginas:
       - cenario.colapso.narrador
     observacoes_internas:
       - Cenários de playtest são fontes de aprendizado, não conteúdo publicável por cópia.
+      - Redução de alerta e referência do máximo do alarme aprovadas em 15/08/2026; página implementada para validação final.
 
   - id: modulo.conflito-social.jogador
     titulo: Conflito social
     rota: /manual/modulos/conflito-social
     publico: jogador
     tipo: modulo
-    estado: mapeada
+    estado: aguardando_aprovacao
     ordem: 20
     objetivo: Explicar malha de embate, trilhas emocionais, campos e ações sociais.
     fontes:
@@ -785,13 +788,14 @@ paginas:
       - cenario.mukashi.jogador
     observacoes_internas:
       - Não publicar habilidades experimentais como oficiais sem decisão explícita.
+      - Mecânica e redação pública aprovadas em 15/08/2026; página implementada para validação final.
 
   - id: modulo.conflito-social.narrador
     titulo: Conduzindo conflitos sociais
     rota: /manual/narrador/modulos/conflito-social
     publico: narrador
     tipo: modulo
-    estado: planejada
+    estado: aguardando_aprovacao
     ordem: 20
     objetivo: Preparar objetivos, emoções, resistência e encerramento de embates sociais.
     fontes:
@@ -802,14 +806,14 @@ paginas:
     relacionados:
       - cenario.mukashi.narrador
     observacoes_internas:
-      - A fonte concentra regra compartilhada; falta orientação específica suficiente para narradores.
+      - Orientações de condução aprovadas em 15/08/2026 e incorporadas à fonte canônica; página implementada para validação final.
 
   - id: modulo.armas-brancas.jogador
     titulo: Armas brancas
-    rota: /manual/modulos/armas-brancas
+    rota: /manual/jogador/recursos/equipamentos?modulo=armas-brancas#catalogo
     publico: jogador
-    tipo: modulo
-    estado: mapeada
+    tipo: recurso
+    estado: publicada
     ordem: 30
     objetivo: Apresentar famílias, propriedades e catálogo de armas brancas.
     fontes:
@@ -822,14 +826,15 @@ paginas:
       - cenario.mukashi.jogador
       - cenario.colapso.jogador
     observacoes_internas:
+      - O índice de módulos apresenta o contexto e aponta para este catálogo filtrado; não duplicar as entradas em página própria.
       - Resolver a divergência registrada para lança montada e grupo de mangual pesado antes de publicar essas entradas.
 
   - id: modulo.armas-exoticas.jogador
     titulo: Armas exóticas
-    rota: /manual/modulos/armas-exoticas
+    rota: /manual/jogador/recursos/equipamentos?modulo=armas-exoticas#catalogo
     publico: jogador
-    tipo: modulo
-    estado: mapeada
+    tipo: recurso
+    estado: publicada
     ordem: 40
     objetivo: Apresentar armas flexíveis, de agarre e de arremesso especial.
     fontes:
@@ -841,14 +846,15 @@ paginas:
     relacionados:
       - cenario.mukashi.jogador
     observacoes_internas:
+      - O índice de módulos apresenta o contexto e aponta para este catálogo filtrado; não duplicar as entradas em página própria.
       - Conferir valores propostos para itens introduzidos por Mukashi.
 
   - id: modulo.arcos-e-bestas.jogador
     titulo: Arcos e bestas
-    rota: /manual/modulos/arcos-e-bestas
+    rota: /manual/jogador/recursos/equipamentos?modulo=arcos-e-bestas#catalogo
     publico: jogador
-    tipo: modulo
-    estado: mapeada
+    tipo: recurso
+    estado: publicada
     ordem: 50
     objetivo: Apresentar armas de projétil simples, munições, alcance e dano.
     fontes:
@@ -859,14 +865,15 @@ paginas:
       - jogador.recursos.equipamentos
     relacionados:
       - cenario.mukashi.jogador
-    observacoes_internas: []
+    observacoes_internas:
+      - O índice de módulos apresenta o contexto e aponta para este catálogo filtrado; não duplicar as entradas em página própria.
 
   - id: modulo.armas-de-fogo.jogador
     titulo: Armas de fogo
-    rota: /manual/modulos/armas-de-fogo
+    rota: /manual/jogador/recursos/equipamentos?modulo=armas-de-fogo#catalogo
     publico: jogador
-    tipo: modulo
-    estado: mapeada
+    tipo: recurso
+    estado: publicada
     ordem: 60
     objetivo: Apresentar armas de pólvora, munições e sua relação com regras de cenário.
     fontes:
@@ -878,14 +885,15 @@ paginas:
     relacionados:
       - cenario.colapso.jogador
     observacoes_internas:
+      - O índice de módulos apresenta o contexto e aponta para este catálogo filtrado; não duplicar as entradas em página própria.
       - Decidir e explicar sem duplicação como a confiabilidade exclusiva do Colapso altera o módulo.
 
   - id: modulo.protecoes.jogador
     titulo: Proteções
-    rota: /manual/modulos/protecoes
+    rota: /manual/jogador/recursos/protecoes#catalogo
     publico: jogador
-    tipo: modulo
-    estado: mapeada
+    tipo: recurso
+    estado: publicada
     ordem: 70
     objetivo: Apresentar o catálogo modular de armaduras e escudos.
     fontes:
@@ -898,6 +906,7 @@ paginas:
       - cenario.mukashi.jogador
       - cenario.colapso.jogador
     observacoes_internas:
+      - O índice de módulos apresenta o contexto e aponta para o catálogo canônico; não duplicar as entradas em página própria.
       - Não expor notas de calibração de preço e durabilidade.
 
   - id: modulo.magia.jogador

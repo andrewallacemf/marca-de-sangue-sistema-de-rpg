@@ -21,6 +21,7 @@ Este cenário se apoia no [sistema-base](../../sistema-base/) e liga os módulos
 |----------------|---------|
 | [`furtividade`](../../modulos/furtividade/README.md) | Ninjas/shinobi: infiltração, alerta, emboscada. |
 | [`conflito-social`](../../modulos/conflito-social/README.md) | Intriga de corte, honra, negociação entre clãs. |
+| [`magia`](../../modulos/magia/README.md) | KI é o nome que Mukashi dá à energia sobrenatural do módulo de Magia. |
 | Coleção [`armas`](../../modulos/colecoes.md) — sobretudo [`armas-brancas`](../../modulos/armas-brancas/README.md) e [`armas-exoticas`](../../modulos/armas-exoticas/README.md) | Katana, naginata, kunai, shuriken, kusarigama… (ver [arsenal](arsenal.md)). |
 | [`protecoes`](../../modulos/protecoes/README.md) | Armaduras (ō-yoroi etc. como flavor de armadura por tipo). |
 

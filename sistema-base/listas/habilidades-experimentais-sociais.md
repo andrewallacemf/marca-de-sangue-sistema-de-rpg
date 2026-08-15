@@ -21,7 +21,7 @@ Habilidades e traços voltados ao **conflito social** (malha de embate social, t
 
 ### Descrição
 
-Se você estiver em uma posição de descontrole da malha de embate social e for bem-sucedido num teste de ponderar, você sobe campos adicionais em direção ao centro da trilha.
+Se você estiver em uma posição de descontrole da malha de embate social e for bem-sucedido ao usar Recompor-se, você sobe campos adicionais em direção ao controle da trilha.
 
 ### Requisitos de uso
 

@@ -2152,7 +2152,7 @@
       "atributo": "Social",
       "custoPA": "2 PA",
       "valorCompra": "2",
-      "efeito": "Se você estiver em uma posição de descontrole da malha de embate social e for bem-sucedido num teste de ponderar, você sobe campos adicionais em direção ao centro da trilha.",
+      "efeito": "Se você estiver em uma posição de descontrole da malha de embate social e for bem-sucedido ao usar Recompor-se, você sobe campos adicionais em direção ao controle da trilha.",
       "requisitos": "Estar em uma posição de descontrole da malha de embate social.",
       "niveis": [
         "Sobe 1 campo, tendo como ponto máximo o campo neutro da trilha emocional (aquele em que não há bônus ou penalidades);",

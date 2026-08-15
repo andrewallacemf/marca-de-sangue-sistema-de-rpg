@@ -210,6 +210,11 @@ pendências de **regra** (que ficam em [PENDENCIAS.md](../PENDENCIAS.md)).
       plataforma sob a decisão 064. Escopo: 38 habilidades básicas, sem a lista social
       experimental; busca, filtros, âncoras e progressão integral de cada entrada.
 
+- [x] **Publicar o módulo de Conflito social** — a malha foi fechada em 15/08/2026 com seis
+      trilhas, campos `−2` a `+2`, pontuação ao final de cada turno, duração em rodadas e as ações
+      Argumentar, Recompor-se e Incentivar. A plataforma publica o procedimento sob a decisão 113,
+      sem automatizar a malha na ficha ou na engine. A lista social experimental permanece fora.
+
 - [x] **⭐ Tutorial de uso da ficha** (pedido do Daniel, 19/07) — **feito (19/07):** (a) botão
       **"Como usar"** no topo da ficha abre um painel com o básico (salvar/carregar `.mds.json`,
       marcar dano/usos/fadiga, botões); (b) passo-a-passo curto em texto para WhatsApp entregue no

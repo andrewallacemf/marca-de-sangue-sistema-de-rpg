@@ -3,190 +3,201 @@ titulo: Furtividade
 tipo: mecanica
 cenario: modulo
 modulo: furtividade
-status: revisao
+status: estavel
 tags: [furtividade, esconder-se, alerta, alarme, percepcao, visao, emboscada, modulo]
-atualizado-em: 2026-08-10
+atualizado-em: 2026-08-15
 ---
 
 # 🧩 Módulo: Furtividade
 
-Nem todo conflito é resolvido no grito. Infiltrar-se, passar despercebido, atacar de surpresa
-e sumir de novo são jogadas tão válidas quanto trocar golpes — e este módulo dá as regras
-para isso. A furtividade gira em torno de três coisas: **o que os inimigos percebem** (visão e
-alerta), **quão bem você está escondido** (esconder-se) e **quanto o ambiente inteiro já sabe
-da sua presença** (alarme).
+O módulo de Furtividade estrutura cenas de infiltração, aproximação silenciosa e emboscada. Ele
+acrescenta campo de visão, iluminação, alerta individual e alarme do ambiente à ação-base
+**[Esconder-se](../../sistema-base/listas/acoes-em-combate.md#esconder-se)**.
 
-> 🧪 Mecânica **em teste** — consolidada a partir do playtest do Cenário 2 (18/07/2026). Ver
-> [relatório do playtest 2](../../notas-de-design/playtests/2026-07-18-playtest-cenario-2.md).
+## Campo de visão
 
-## Visão e campo de visão
+O campo de visão representa a área que um personagem consegue observar diretamente. Ele governa
+somente a **detecção visual**: sons, odores e outros sentidos podem elevar o alerta ou permitir a
+detecção independentemente dele.
 
-Um personagem só percebe o que consegue enxergar. Para fins de furtividade, cada personagem
-(e cada NPC) tem um **campo de visão** à sua frente, cujo formato depende do **[nível de
-alerta](#nível-de-alerta-por-inimigo)** dele:
+O formato do campo depende do [nível de alerta](#nivel-de-alerta-por-inimigo):
 
-- **Alerta 0–1 — cone à frente:** enxerga apenas o cone à sua frente (os 3 espaços de frente,
-  na malha hexagonal).
-- **Alerta 2 ou mais — meia-lua:** passa a enxergar em **meia-lua**, cobrindo as **laterais e a
-  frente**. Só as costas ficam de fora.
+- **Alerta 0–1 — cone à frente:** cobre a direção para a qual o personagem está voltado. Na malha
+  hexagonal, corresponde aos três espaços à frente.
+- **Alerta 2 ou mais — meia-lua:** cobre a frente e as laterais. Somente as costas ficam fora do
+  campo.
 
-### Alcance de visão à noite
+Sem mapa, o narrador informa antes da ação quem possui linha de visão, quem está de costas, onde há
+cobertura e quais distâncias estão envolvidas.
 
-À noite (ou em ambientes escuros), o quanto um oponente comum enxerga **à sua frente** depende
-da luz:
+### Alcance de visão
 
-| Iluminação | Enxerga até |
-|---|---|
-| **Escuridão total** | **6 m** à frente |
-| **Penumbra** (meia-luz) | **12 m** à frente |
-| **Luz plena** | **24 m** à frente |
+O alcance de visão de um oponente comum depende da iluminação:
 
-Essa observação é **passiva** — o oponente enxerga até essa distância sem rolar dado. Fora do
-alcance de visão, ou fora do campo de visão, ele simplesmente não te percebe (a não ser por som
-ou por outro sentido que o narrador julgue cabível).
+| Iluminação | Alcance de visão |
+|---|---:|
+| **Escuridão total** | **6 m** |
+| **Penumbra** | **12 m** |
+| **Luz plena** | **24 m** |
 
-> 💡 O narrador define a iluminação da cena. Tochas, luar, incêndios e afins mudam a coluna da
-> tabela para os personagens próximos.
+Dentro do alcance e do campo de visão, uma criatura que não está escondida é percebida sem teste.
+Fora deles, ela não é percebida visualmente, embora ainda possa ser notada por outros sentidos.
 
-## Esconder-se
+## Esconder-se durante uma infiltração
 
-Este módulo usa a ação-base **[Esconder-se](../../sistema-base/listas/acoes-em-combate.md#esconder-se)**,
-incluindo seu custo de `2 PA`, pré-requisito, desvantagem natural e qualidade de furtividade
-guardada. As regras abaixo detalham como campo de visão, iluminação, alerta e alarme interagem com
-ela.
+Use normalmente a ação-base **[Esconder-se](../../sistema-base/listas/acoes-em-combate.md#esconder-se)**,
+incluindo custo, requisitos, desvantagem natural e qualidade de furtividade guardada. O módulo não
+altera essa rolagem: ele define quando um observador pode tentar detectar quem está escondido.
 
-### Desvantagem natural ao se esconder
+Uma nova rolagem de detecção acontece quando:
 
-Use a desvantagem natural definida na ação-base. A
-**[Técnica em Esconder-se](../../sistema-base/listas/tracos-base.md#técnicas)** a anula, como toda
-técnica, mas não remove modificadores circunstanciais causados por iluminação, barulho ou outras
-condições da cena.
+- o personagem entra no campo de visão de um observador;
+- o observador passa a olhar para sua posição;
+- o observador procura ativamente naquela área; ou
+- a exposição muda de maneira relevante.
 
-### Qualidade da furtividade (o número guardado)
+Permanecer nas mesmas condições não provoca uma nova rolagem a cada turno.
 
-A qualidade de furtividade segue a ação-base: permanece até um novo uso de Esconder-se substituí-la
-ou até o personagem deixar de estar escondido. O novo resultado sempre substitui o anterior, mesmo
-quando for menor. Assim, quem se esconde não pode repetir a ação sem risco para acumular apenas o
-melhor resultado.
+### Cobertura e iluminação
 
-### Quando um inimigo pode te ver (teste de percepção)
+Quando a detecção visual for possível, somente o observador rola Mental contra a qualidade de
+furtividade guardada.
 
-Toda vez que você entra no campo de visão de um inimigo (ou ele passa a olhar para onde você
-está), **só o inimigo rola** um **teste de percepção**. Compare com o número que você guardou:
-
-- **Percepção do inimigo > seu valor guardado** → ele **te vê** (você perde o status escondido).
-- **Percepção ≤ seu valor guardado** → ele **não te percebe**; você continua escondido.
-
-**A vantagem/desvantagem fica no dado do inimigo** (você **não** rola com vantagem para se
-esconder da vista de alguém). Ela depende da sua cobertura **e** da iluminação:
-
-| Onde você está | De dia | De noite / no escuro |
+| Posição do personagem escondido | Luz plena | Penumbra ou escuridão |
 |---|---|---|
-| **No meio do nada** (sem cobertura) | inimigo com **vantagem** | inimigo **normal** |
-| Atrás de **meia ou cobertura completa** | inimigo **normal** | inimigo com **desvantagem** |
+| **Sem cobertura** | observador com **vantagem** | observador **normal** |
+| **Meia cobertura** | observador **normal** | observador com **desvantagem** |
+| **Cobertura total** | sem detecção visual | sem detecção visual |
 
-> 💡 Em resumo: cobertura e escuridão **atrapalham quem procura**; ficar exposto à luz do dia
-> **facilita** para quem procura. A sua parte (o dado de furtividade) já foi rolada uma vez e
-> ficou guardada.
+Cobertura total bloqueia a visão enquanto permanecer completamente entre o observador e o
+personagem. Se o observador obtiver linha de visão, examinar o esconderijo ou puder usar outro
+sentido, a situação passa a permitir uma resolução apropriada.
 
-### Esconder-se como reação
+### Resultado da detecção
 
-Esconder-se é uma **ação** (2 PA) no seu turno. Para se esconder **como reação** (fora do seu
-turno, por exemplo ao ser notado), é preciso ter o aspecto
-**[Espreitador](../../sistema-base/listas/tracos-base.md#espreitador)**.
+- **Mental do observador maior que a qualidade guardada:** ele detecta o personagem, que deixa de
+  estar escondido, e seu alerta sobe para 5.
+- **Mental do observador igual ou menor:** o personagem continua escondido. Se o teste foi causado
+  por um indício suspeito, o alerta do observador sobe 1.
 
-### Agir sem perder a furtividade
+## Agir enquanto está escondido
 
-Estar escondido não te congela. **O narrador decide se uma ação remove ou não a furtividade** —
-mas deve **sempre avisar o jogador antes**, caso a ação pretendida vá revelá-lo, para que ele
-possa mudar de ideia. Um ataque bem-sucedido que **derruba o alvo antes que ele reaja** pode não
-quebrar a furtividade (a [reação acontece depois da ação](../../sistema-base/conflitos/02-acoes-em-conflito.md#reação); alvo
-morto/nocauteado não reage nem dá o alarme).
+Mover-se dentro de cobertura ou fora do campo de visão não exige um novo uso de Esconder-se. Uma
+ação também não pede outra rolagem apenas por ser realizada a partir do esconderijo.
 
-> 💡 **Ações feitas de dentro do esconderijo não pedem teste extra de furtividade.** O teste já
-> foi feito para estabelecer o momento furtivo — atirar de trás de uma grade em que você já está
-> escondido não exige rolar de novo, a menos que a ação gere um efeito em cascata maior que o
-> esperado (aí o narrador avisa).
+Quando uma ação criar uma nova exposição, o narrador informa antes se ela encerrará a condição de
+escondido ou permitirá uma nova tentativa de detecção. O jogador pode mudar de ideia depois do
+aviso.
 
-**Listas de referência (recomendações — o narrador tem a palavra final por contexto):**
+Barulho alto, saída da cobertura, entrada deliberada no campo de visão ou um ataque percebido podem
+revelar o personagem. Um alvo incapacitado antes de reagir não comunica a ameaça nem eleva o
+alarme, mas outros observadores ainda podem perceber a ação normalmente.
 
-Ações que **em geral NÃO removem** a furtividade:
+O aspecto **[Espreitador](../../sistema-base/listas/tracos-base.md#espreitador)** permite usar
+Esconder-se como reação, mantendo todos os demais requisitos da ação.
 
-- Mover-se devagar dentro de cobertura ou fora do campo de visão dos inimigos.
-- Observar, ponderar, analisar o ambiente, mirar/preparar um tiro.
-- Um único ataque à distância feito de dentro de uma cobertura que te esconde (a menos que o som
-  ou o resultado chame atenção).
-- Um ataque de emboscada que **incapacita o alvo antes de ele reagir**.
-- Armar um gatilho, criar uma armadilha em silêncio, passar uma mensagem curta e sussurrada.
-- Puxar/ocultar um corpo para dentro da cobertura.
+## Nível de alerta por inimigo
 
-Ações que **em geral REMOVEM** a furtividade:
+Cada inimigo possui um nível de alerta entre 0 e 5. Ele mede o quanto aquele indivíduo suspeita da
+presença de uma ameaça.
 
-- Sair para o campo de visão de um inimigo sem cobertura/escuridão suficiente.
-- Atacar e **não** derrubar o alvo (ele reage/grita), ou errar um ataque perto de um inimigo.
-- Fazer barulho alto (quebrar algo, gritar, uma explosão, tocar o gongo).
-- Correr em terreno barulhento, arrastar algo pesado, derrubar um objeto.
-- Qualquer ação que o narrador avise que vai te expor (e você confirme mesmo assim).
-
-## Nível de alerta (por inimigo)
-
-Cada inimigo tem um **nível de alerta próprio**, marcado com um **`d4`** ao lado dele (o dado
-serve de contador dos níveis **1 a 4**; o **0** é o estado padrão, sem marcador, e o **5** é o
-topo). Ele mede o quanto **aquele** inimigo desconfia de que há alguém ali.
-
-| Nível | Como o inimigo se comporta |
+| Nível | Comportamento |
 |:---:|---|
-| **0** | **Tranquilo.** Rotina normal, não faz ideia de que há alguém ali. Campo de visão em **cone**. |
-| **1** | **Inquieto.** Algo pareceu levemente fora do lugar (um som, um vulto). Segue a rotina, um pouco mais atento. |
-| **2** | **Desconfiado.** Tem certeza de que algo está estranho; muda o comportamento e passa a checar os arredores. Campo de visão vira **meia-lua**. |
-| **3** | **Em guarda.** Acredita que há um intruso e **investiga ativamente** (checa esconderijos, pode chamar um colega). |
-| **4** | **Em alerta.** Quase certeza de intruso: procura com afinco, arma em punho, e pode **dar o alarme** (subir o [alarme do ambiente](#nível-de-alarme-do-ambiente)). |
-| **5** | **Ciente.** Sabe que há um intruso ali, **mesmo que não saiba exatamente onde**, e o caça ativamente. |
+| **0** | **Tranquilo.** Segue sua rotina, com campo de visão em cone. |
+| **1** | **Inquieto.** Percebeu algo estranho, mas continua a rotina com mais atenção. |
+| **2** | **Desconfiado.** Checa os arredores e passa a usar o campo de visão em meia-lua. |
+| **3** | **Em guarda.** Investiga ativamente e pode chamar um colega. |
+| **4** | **Em alerta.** Procura com afinco e está pronto para comunicar a ameaça. |
+| **5** | **Ciente.** Sabe que há um intruso e passa a caçá-lo, mesmo sem conhecer sua posição exata. |
 
-**O que faz o alerta subir:** falhar em não ser notado (o inimigo percebe um movimento/som mas
-não te acha), encontrar algo fora do lugar (um colega sumido, sangue, uma porta aberta), ou ser
-respingado pelo alerta de outro.
+Um indício suspeito, como ruído, movimento parcial ou evidência estranha, eleva o alerta em 1 sem
+revelar automaticamente o personagem. Uma detecção visual confirmada eleva o observador
+diretamente para 5.
 
-**O alerta se espalha — por som e por vista:** um inimigo que **sobe** de alerta e está no campo
-de visão de outro que está em nível mais baixo faz esse outro **subir 1 nível** (ele vê o colega
-"procurando algo"). Barulhos altos podem subir o alerta de todos os que ouvem.
+Quando um inimigo aumenta seu alerta, aliados menos alertas que percebam sua reação também podem
+subir 1 nível. Cada acontecimento afeta cada inimigo no máximo uma vez e não cria uma propagação
+recursiva no mesmo instante. Um novo acontecimento pode elevar o alerta novamente.
 
-> 💡 O alerta **desce** com o tempo se nada reforçar a suspeita — a critério do narrador
-> (some um nível depois de algumas rodadas de calmaria, por exemplo).
+## Nível de alarme do ambiente
 
-## Nível de alarme (do ambiente)
+Enquanto o alerta é individual, o **alarme** é global. Ele mede quanto o local inteiro já reconhece
+a presença de intrusos e vai de 0 até um máximo definido pelo narrador para a cena.
 
-Enquanto o alerta é **individual**, o **alarme** é **global**: mede o quanto **o local como um
-todo** já percebeu a sua presença. Use um marcador de **0 até o máximo definido para o ambiente**
-(o narrador define o teto conforme a cena; por exemplo, **4** no [Cenário 2](../../playtest/cenarios/02-mukashi-selo-do-templo.md)).
+O alarme sobe 1 quando a ameaça é comunicada ou quando surge uma evidência concreta, como um corpo,
+um rastro inequívoco, um grito de aviso, um sino ou outro sinal. Ver um infiltrado não aumenta o
+alarme por si só se o observador for incapacitado antes de conseguir reagir.
 
-- **Sobe** quando: um inimigo vê um infiltrado e sobrevive ao turno, um corpo/rastro é
-  descoberto, um sinal de alarme é acionado (gongo, sino, grito de aviso), ou você faz muito
-  barulho.
-- **Ao atingir o teto do ambiente**, o alarme **estoura**: todos os inimigos restantes passam a
-  saber que há intrusos e **convergem** — a infiltração vira perseguição/combate aberto.
+Ao atingir o máximo, o alarme dispara: os inimigos restantes sabem que há intrusos, convergem para
+a ameaça e a infiltração pode se transformar em perseguição ou conflito aberto.
 
-> 💡 Alerta e alarme conversam: um inimigo em alerta alto que **grita** ou **toca um sino**
-> costuma **subir o alarme do ambiente**. Cabe ao narrador ligar os dois na cena.
+## Emboscadas
 
-## Emboscada e golpe surpresa
+Estar escondido habilita opções especializadas sem alterar suas regras próprias:
 
-Estar escondido é o que habilita as jogadas de assassino:
+- **[Golpe surpresa](../../sistema-base/listas/habilidades-base-ageis.md#golpe-surpresa)** acrescenta
+  dano a um ataque realizado enquanto o personagem está escondido.
+- **[Emboscador](../../sistema-base/listas/tracos-base.md#emboscador)** amplia o dano de um ataque
+  pelas costas quando seus requisitos são atendidos.
+- **[Espreitador](../../sistema-base/listas/tracos-base.md#espreitador)** permite tentar
+  Esconder-se como reação.
 
-- **[Golpe surpresa](../../sistema-base/listas/habilidades-base-ageis.md#golpe-surpresa)** — dano adicional
-  escalonado (de **`+1d4`** a **`+1d10`** conforme o nível), exigindo estar escondido, com arma
-  leve corpo a corpo e sem armadura média/pesada.
-- **[Emboscador](../../sistema-base/listas/tracos-base.md#emboscador)** — **dobra o resultado** do dano ao
-  atacar **pelas costas**, estando **escondido de todos** e **com arma leve**. **Armas de
-  arremesso não contam** para o Emboscador.
+Custos, progressões e requisitos permanecem nas páginas canônicas de cada habilidade ou traço.
 
-Como a **reação vem depois da ação**, um golpe forte o suficiente pode incapacitar o alvo
-**antes** que ele reaja — e assim ele não dá o alarme (o objetivo de uma boa emboscada).
+## Conduzindo cenas de furtividade
 
-## Ganchos (habilidades e traços)
+Antes da cena, o narrador define o objetivo dos infiltrados, as consequências de uma descoberta e
+o acontecimento que transforma a infiltração em perseguição ou conflito aberto. Também prepara:
 
-- **Esconder-se dentro do campo de visão de um inimigo** — depende da habilidade
-  **[Ocultar-se à vista](../../sistema-base/listas/habilidades-base-ageis.md#ocultar-se-à-vista)** (📝 proposta),
-  já que a ação padrão exige estar fora do campo de visão.
-- **Esconder-se como reação** — depende do aspecto
-  **[Espreitador](../../sistema-base/listas/tracos-base.md#espreitador)**.
+- acessos, saídas e posições que alterem a abordagem;
+- posição inicial, direção e rota de patrulha dos observadores;
+- áreas de luz plena, penumbra e escuridão;
+- meia cobertura e cobertura total; e
+- indícios concretos capazes de elevar o alerta ou o alarme.
+
+Com mapa, registre a direção de cada observador e mova as patrulhas de forma previsível. Sem mapa,
+informe antes das decisões dos jogadores quem possui linha de visão, quem está de costas, quais
+distâncias importam e onde existe cobertura. Uma informação que seria evidente para a personagem
+não deve ser transformada em armadilha para o jogador.
+
+### Sons, sentidos e exposição
+
+O campo de visão resolve somente o componente visual. Ao arbitrar ruídos, odores ou sentidos
+especiais, considere alcance, intensidade, obstáculos e o que o observador já sabe. Um indício pode
+elevar o alerta sem revelar automaticamente a posição de quem o produziu.
+
+Antes de uma ação, avise quando a consequência previsível for encerrar a condição de escondido,
+permitir uma nova detecção ou produzir um indício. O jogador pode rever a decisão depois desse
+aviso. Consequências que dependam de informação realmente oculta continuam sendo descobertas em
+jogo.
+
+### Reduzindo o alerta
+
+O alerta não diminui automaticamente com a passagem de rodadas. Um observador reduz seu alerta em
+1 quando:
+
+- termina uma investigação sem encontrar novos indícios;
+- recebe uma explicação convincente para o que percebeu; ou
+- é desviado por uma ação deliberada que torne outra hipótese mais plausível.
+
+Um mesmo acontecimento tranquilizador reduz no máximo 1 nível por observador. Quem confirmou a
+presença de um intruso e chegou ao alerta 5 continua ciente da invasão até ser neutralizado, ser
+convencido de que a ameaça era falsa ou a cena terminar.
+
+### Preparando o alarme
+
+O narrador escolhe o máximo do alarme conforme a duração e a tolerância a erros desejadas:
+
+| Máximo | Uso sugerido |
+|:---:|---|
+| **2** | infiltração curta e rigorosa |
+| **3** | cena comum de infiltração |
+| **4 ou 5** | área extensa, com várias oportunidades de corrigir erros |
+
+Antes da cena, associe os níveis relevantes a mudanças observáveis, como reforço de patrulhas,
+bloqueio de uma saída ou preparação para confronto. O alarme não diminui apenas porque o tempo
+passou. Ele só pode baixar quando uma ação concreta neutraliza sua causa e o narrador considera
+essa redução possível; nesse caso, diminui 1.
+
+Quando o máximo é alcançado, execute a consequência anunciada: os inimigos reconhecem a invasão,
+convergem para a ameaça e a cena muda de natureza. A transição não exige que todos saibam a posição
+exata dos infiltrados.

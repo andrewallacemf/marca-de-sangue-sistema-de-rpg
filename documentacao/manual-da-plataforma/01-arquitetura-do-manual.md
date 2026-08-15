@@ -149,6 +149,12 @@ montado pela simples concatenação de campos.
 A página de módulos apresenta uma descrição curta de cada opção e permite compreendê-la sem
 abrir todos os seus arquivos.
 
+O índice separa **módulos de mecânica**, que podem receber páginas editoriais próprias, de
+**módulos de catálogo**, cujos dados completos permanecem nas páginas canônicas de recursos.
+Módulos de armas apontam para o catálogo de equipamentos já filtrado por origem; Proteções
+aponta para o catálogo canônico de proteções. Não se criam páginas que apenas repitam essas
+tabelas.
+
 Cada módulo publicado deve informar:
 
 1. o que acrescenta ao jogo;
