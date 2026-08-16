@@ -8,7 +8,7 @@ modulos/protecoes/ + modulos/magia/ + modulos/veiculos/) e emite
 `contrato/catalogo.json` com armas, munições, proteções, itens gerais, habilidades (com
 progressão por nível), traços, o glossário de propriedades de armas, os
 inimigos do kit de playtest (proposta), as magias oficiais do módulo Magia
-e as listas do módulo Veículos (proposta).
+e as listas do módulo Veículos (com estado editorial por coleção).
 
 Princípio: EXTRAÇÃO LITERAL. Os textos vêm do manual como estão (limpos de
 bastidor pela limpeza oficial). Nada é resumido nem inventado; lacunas do
@@ -706,7 +706,7 @@ def parse_veiculos_categorias_partes(md: str) -> tuple[list[dict], list[dict]]:
     """lista-de-veiculos.md: tabela de categorias + tabela das partes."""
     categorias, partes = [], []
     for _, header, rows in tabelas(md):
-        if header and header[0] == "Categoria" and "Motor" in header:
+        if header and header[0] == "Categoria" and ("Propulsor" in header or "Motor" in header):
             for cells in rows:
                 if len(cells) < 8:
                     aviso(f"veículos: linha de categoria com {len(cells)} "
@@ -721,7 +721,7 @@ def parse_veiculos_categorias_partes(md: str) -> tuple[list[dict], list[dict]]:
                     "ocupantes": strip_md(cells[5]),
                     "slotsEquipamento": strip_md(cells[6]),
                     "combustivel": sem_travessao(cells[7]),
-                    "proposta": True,
+                    "proposta": False,
                 })
         elif header and header[0] == "Parte":
             for cells in rows:
@@ -733,7 +733,7 @@ def parse_veiculos_categorias_partes(md: str) -> tuple[list[dict], list[dict]]:
                     "nome": strip_md(cells[0]),
                     "descricao": strip_md(cells[1]),
                     "observacao": strip_md(cells[2]),
-                    "proposta": True,
+                    "proposta": False,
                 })
     if not categorias:
         aviso("veículos: nenhuma categoria extraída (estrutura da tabela mudou?)")
@@ -766,7 +766,7 @@ def parse_veiculos_equipamentos(md: str) -> list[dict]:
                     "instalar": sem_travessao(cells[4]),
                     "cobertura": strip_md(cells[5]),
                     "efeito": strip_md(cells[6]),
-                    "proposta": True,
+                    "proposta": False,
                 })
         elif header and header[0] == "Equipamento" and "Integridade" in header:  # passivos
             for cells in rows:
@@ -783,7 +783,7 @@ def parse_veiculos_equipamentos(md: str) -> list[dict]:
                     "instalar": sem_travessao(cells[2]),
                     "cobertura": strip_md(cells[3]),
                     "efeito": strip_md(cells[4]),
-                    "proposta": True,
+                    "proposta": False,
                 })
         elif header and header[0] == "Item" and "Peças comuns" in header:  # fabricação
             for cells in rows:
@@ -811,7 +811,7 @@ def parse_veiculos_equipamentos(md: str) -> list[dict]:
                     "instalar": "",
                     "cobertura": "",
                     "efeito": strip_md(cells[2]),
-                    "proposta": True,
+                    "proposta": False,
                 })
     for eq in equipamentos:
         fab = fabricacao.pop(eq["nome"], None)
@@ -879,7 +879,7 @@ def parse_veiculos_habilidades(md: str) -> list[dict]:
             "valorCompra": numero(m.group(3)),
             "efeito": strip_md(efeito),
             "niveis": strip_md(niveis),  # texto único ("+2 / +4 / …"), não lista
-            "proposta": True,
+            "proposta": False,
         }
         if observacao:
             hab["observacao"] = observacao
@@ -905,7 +905,7 @@ def parse_veiculos_tracos(md: str) -> list[dict]:
                 "atributo": strip_md(cells[1]),
                 "valorCompra": numero(cells[2]),
                 "efeito": strip_md(cells[3]),
-                "proposta": True,
+                "proposta": False,
             })
     if not tracos:
         aviso("veículos: nenhum traço extraído (estrutura da tabela mudou?)")

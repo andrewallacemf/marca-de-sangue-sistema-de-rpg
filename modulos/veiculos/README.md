@@ -5,7 +5,7 @@ cenario: modulo
 modulo: veiculos
 status: rascunho
 tags: [modulo, veiculos, conflito, colisao, perseguicao, aptidao-veicular, experiencia-de-veiculos]
-atualizado-em: 2026-08-01
+atualizado-em: 2026-08-15
 ---
 
 # 🧩 Módulo: Veículos
@@ -44,10 +44,10 @@ Um veículo tem:
   percorrido = 10 m/t.
 - **Categoria** — **Sem motor** (bicicleta, reboque, carroça, montaria puxando carga) ou **A → E**
   por porte/peso (A = menor/leve; E = maior/pesado). Define o [dano de colisão](#dano-de-colisão).
-- **Integridade por partes + Motor** — cada parte e o motor têm integridade própria. Dano que
-  excede uma parte transborda para o **Motor**; dano que excede o Motor é dividido entre os
+- **Integridade por partes + Propulsor** — cada parte e o propulsor têm integridade própria. Dano
+  que excede uma parte transborda para o **Propulsor**; dano que excede o Propulsor é dividido entre os
   ocupantes. Valores por categoria na [lista de veículos](listas/lista-de-veiculos.md).
-- **Combustível** — em pontos, consumidos por turno de viagem (a condição *Vazando* dobra o
+- **Combustível** — em pontos, consumidos por turno de viagem (a condição *Consumo elevado* dobra o
   consumo). Veículos **Sem motor** não têm combustível.
 - **Espaços** — assentos/lugares ocupáveis (piloto + passageiros; cada um oferece meia cobertura —
   ver [Cobertura do tripulante](#cobertura-do-tripulante)) e slots para
@@ -63,8 +63,8 @@ em que **cada espaço = 1 metro**. Numa perseguição isso é inviável — um c
 
 | | Espaço vale | Quando usar |
 |---|---|---|
-| **Malha de combate físico** (núcleo) | 1 metro | Conflito a pé, corpo a corpo, interiores |
-| **Malha de veículo** (este módulo) | **10 metros** | Qualquer conflito com veículo em movimento |
+| **Malha de combate físico** (núcleo) | 1 metro | Conflito a pé, corpo a corpo, interiores e cenas em que a posição individual é o foco |
+| **Malha de veículo** (este módulo) | **10 metros** | Perseguições e conflitos em que o deslocamento dos veículos é o foco |
 
 Tudo o mais continua igual ao núcleo: recomenda-se a **malha hexagonal** (mais direções), a
 quadriculada também serve (conte espaços pelos lados, nunca pelas diagonais), e o **alcance das
@@ -73,27 +73,25 @@ armas continua medido em metros** — uma pistola de 20 m alcança 2 espaços ne
 ### Quando as duas escalas dividem a mesma mesa
 
 Um conflito com veículos quase sempre tem também gente a pé — quem desceu, quem foi jogado para
-fora, quem está esperando na estrada. A mesa usa **uma malha só, na escala de veículo**, e os
-personagens a pé se movem assim:
+fora, quem está esperando na estrada. A cena usa **uma malha só, na escala predominante**. Quando a
+escala de veículo for a predominante, os personagens a pé se movem assim:
 
 - O movimento a pé continua custando o mesmo `PA` **por metro** de sempre; o personagem só **troca
   de espaço** quando acumula 10 metros de deslocamento. Enquanto não acumula, permanece no espaço
   em que está.
-- Todos os personagens **dentro de um mesmo espaço** de 10 metros estão ao alcance uns dos outros
-  para efeito de corpo a corpo e de engajamento — o narrador arbitra a posição fina dentro do
-  espaço quando isso importar.
+- Estar no mesmo espaço de 10 metros indica **proximidade**, não alcance corpo a corpo automático.
+  Para atacar em corpo a corpo, os personagens ainda precisam estar engajados pela regra normal.
+- Quando uma interação exige precisão — combate entre pessoas, invasão, embarque ou deslocamento
+  dentro de um veículo — a posição local é resolvida na escala normal de **1 metro**, sem alterar o
+  espaço de 10 metros ocupado pelo veículo.
 - Ataques à distância continuam medidos em metros, normalmente.
-
-> 📝 Proposta a validar no playtest. O material original nunca disse como as duas escalas convivem
-> (o conflito de veículos foi escrito assumindo que todo mundo estava dentro de um veículo). Esta é
-> a regra mais simples que resolve o caso sem inventar uma segunda malha em paralelo — se na mesa
-> ela travar, a alternativa é rodar as duas escalas em tabuleiros separados e resolver as
-> interações por narração.
 
 ### Orientação
 
-Cada face (ou vértice) do espaço é um **ponto de orientação**: a direção para onde o veículo aponta
-e vai avançar. Manobrar é **girar pontos de orientação**.
+O veículo pode apontar para **oito direções**, separadas por 45 graus. Cada passo entre duas dessas
+direções é um **ponto de orientação**. A orientação independe do desenho quadrado ou hexagonal da
+malha: ela representa a direção para onde o veículo aponta e vai avançar. Manobrar é **girar pontos
+de orientação**.
 
 A orientação do veículo é o equivalente, para uma máquina, do
 [posicionamento](../../sistema-base/conflitos/01-conflito-fisico.md#posicionamento-em-campo) de um
@@ -110,38 +108,63 @@ Custos em `PA` do personagem que executa (o **piloto**, salvo indicação). Habi
 modificam vários destes valores — ver [lista de habilidades](listas/lista-de-habilidades.md) e
 [lista de traços](listas/lista-de-tracos.md).
 
+O `PA` gasto para operar um veículo **não conta** no limite de `7 PA` de locomoção pessoal. Uma
+redução nunca leva uma ação abaixo de **1 PA**, salvo quando a própria regra disser que ela é
+gratuita.
+
+O deslocamento correspondente à velocidade acontece no **turno do piloto**. Ele pode dividir esse
+deslocamento antes, entre ou depois das próprias ações, mas precisa completá-lo até encerrar o
+turno. Acelerar ou frear atualiza imediatamente o total devido, mas nunca desfaz o que já foi
+percorrido naquele turno. Sem um piloto capaz de controlar o veículo, ele fica *Desgovernado*.
+
 | Ação | Custo | Efeito |
 |------|-------|--------|
 | **Acelerar** | 2 PA / +10 m/t | Aumenta a velocidade. |
 | **Manter velocidade** | 0 PA | Mantém a velocidade até acelerar/frear. *Desgovernado* perde metade por rodada. |
 | **Frear** | 1 PA / −10 m/t | Reduz a velocidade. |
+| **Marcha à ré** | como Acelerar/Frear | A partir de 0 m/t, inverte o sentido e acelera normalmente, mas sem habilidade não ultrapassa **10 m/t**. Para voltar a avançar, precisa parar novamente. |
 | **Movimentar na malha** | — | Move **obrigatoriamente 1 espaço por 10 m/t**; pode ser dividido no turno. |
-| **Manobra segura** | 1 PA por 10 m/t da velocidade atual | Gira **até 2 pontos de orientação**. |
-| **Manobra arriscada** | — | Gira mais pontos (ou sem `PA` completo): **Teste Ágil** com **1 dado de desvantagem por `PA` faltante ou ponto extra**. A falha pode causar **capotagem** (role `1d4` para a posição final). |
-| **Preparar esquiva** | 3 PA | Cria gatilho: **1 vantagem** no teste para esquivar de colisão. |
-| **Emparelhar** | `PA` = velocidade do alvo **+ 1** | Teste de emparelhamento; emparelhados não manobram e mantêm velocidade ≥ à menor entre eles (senão ficam *Desgovernados*). |
-| **Desemparelhar** | `PA` = velocidade de emparelhamento **+ 1** | Teste. Quem está emparelhado dos dois lados **não pode** desemparelhar. |
-| **Ocupar mesmo espaço** | Teste Ágil | *Rota de colisão* (o sucesso colide) ou *ocupar com cuidado* (o sucesso não colide). Ver [dano de colisão](#dano-de-colisão). |
+| **Manobra segura** | 1 PA por 10 m/t da velocidade atual (mín. 1 PA) | Gira **até 2 pontos de orientação**. |
+| **Manobra arriscada** | de 1 PA até o custo da manobra segura | **Teste Ágil** com **1 dado de desvantagem por PA faltante e por ponto além do segundo**. Na falha, o giro não acontece e o veículo fica *Desgovernado*. |
+| **Preparar esquiva** | 2 PA | Ganha **1 vantagem** no próximo teste para evitar uma colisão até o início do próximo turno do piloto. Depois do teste, o benefício termina. |
+| **Emparelhar** | (velocidade do alvo ÷ 10) + 1 PA | Teste Ágil; emparelhados não manobram e mantêm velocidade ≥ à menor entre eles (senão ficam *Desgovernados*). |
+| **Desemparelhar** | (velocidade atual ÷ 10) + 1 PA | Teste Ágil. Quem está emparelhado dos dois lados **não pode** desemparelhar. |
+| **Ocupar mesmo espaço** | 0 PA | Declare durante o deslocamento e faça um Teste Ágil: *rota de colisão* (o sucesso colide) ou *ocupar com cuidado* (o sucesso não colide). Ver [dano de colisão](#dano-de-colisão). |
 | **Invasão** (veículo hostil) | 4 PA | Teste Físico ou Ágil. Modificador por porte: maior→menor com desvantagem; menor→maior com vantagem. Sem espaço vazio, o invasor + 1 passageiro ficam *Amontoados*. |
 | **Embarque** (veículo aliado) | 4 PA | Teste Físico ou Ágil, sempre com **vantagem**. |
-| **Reparar integridade** | 5 PA | Recupera **`1d4`** numa parte. No **motor**, exige Teste Mental + [peças comuns](#peças-de-reposição--o-insumo-de-reparo). Em movimento, quem não é o piloto repara com desvantagem. |
-| **Reparo especializado** | 5 PA | Remove **1 efeito negativo** do motor. Exige Teste Mental + [peças especializadas](#peças-de-reposição--o-insumo-de-reparo). |
+| **Reparar integridade** | 5 PA | Recupera **`1d4`** numa parte. No **propulsor**, exige Teste Mental + [peças comuns](#peças-de-reposição--o-insumo-de-reparo). Em movimento, quem não é o piloto repara com desvantagem. |
+| **Reparo especializado** | 5 PA | Remove **1 condição** que afete o propulsor. Exige Teste Mental + [peças especializadas](#peças-de-reposição--o-insumo-de-reparo). |
 | **Instalar equipamento** | variável | Declare os `PA` a investir + Teste Mental; os `PA` **acumulam entre turnos**. Ver [equipamentos](listas/lista-de-equipamentos.md). |
-| **Retirar equipamento** | 5 PA | *Arrancar* (Teste Físico, quebra o item) ou *remover com cuidado* (Teste Mental + 1 h de jogo por ponto de integridade do item). |
-| **Mover-se dentro do veículo** | 1 PA (espaço vazio) · 2 PA (trocar de lugar) · 6 PA (assumir o volante) | Havendo resistência, some um Teste Físico/Ágil (com desvantagem para tomar o volante). |
+| **Arrancar equipamento** | 5 PA | Teste Físico; o equipamento é retirado e quebra. |
+| **Remover equipamento com cuidado** | fora de conflito | Teste Mental + 1 hora de jogo por ponto de integridade do item. |
+| **Mover-se dentro do veículo** | 1 PA | Ocupa um espaço vazio. |
+| **Trocar de lugar ou assumir controles cedidos** | 2 PA | Troca de lugar com um ocupante cooperativo ou assume um posto de pilotagem vazio/cedido. |
+| **Tomar os controles à força** | 6 PA | Teste Físico ou Ágil contra quem controla o veículo. |
 
-*Dirigir com uma mão só custa **+2 PA** na mudança de direção.*
+*Dirigir com uma mão só custa **+2 PA em cada manobra**.*
 
 ## Dano de colisão
 
-Ao ocupar o mesmo espaço em rota de colisão (ou ao falhar em *ocupar com cuidado*), role o dano
-pela tabela abaixo, **+1 dado (ou +1 ponto) para cada 10 m/t excedente** à movimentação já feita.
-Dano de colisão **não pode ser mirado**.
+Ao ocupar o mesmo espaço em rota de colisão (ou ao falhar em *ocupar com cuidado*), determine
+primeiro a **velocidade de impacto**:
 
-O que exceder a parte atingida vai ao **Motor**; o que exceder o Motor divide-se em local aleatório
-entre os ocupantes (arredondado para cima). O veículo que **causou** a colisão recebe **1 de dano
-no motor por 10 m/t** do velocímetro e tem a velocidade **reduzida à metade** (arredondada para
-baixo). Colisão **frontal** contra veículo em movimento **dobra** os valores.
+- veículos no mesmo sentido: a diferença entre as velocidades;
+- veículos em sentidos opostos: a soma das velocidades;
+- cruzamento lateral ou obstáculo fixo: a maior velocidade envolvida.
+
+Toda colisão usa no mínimo **10 m/t**. Cada veículo envolvido sofre dano separadamente: use a linha
+da sua categoria e a coluna da categoria do outro veículo. Role o valor da matriz e acrescente
+**um dado do mesmo tipo para cada 10 m/t além dos primeiros 10**; quando a matriz indicar dano fixo,
+acrescente `+1` por intervalo. Somar as velocidades já representa a gravidade de uma colisão
+frontal, portanto ela não dobra novamente o resultado.
+
+Para obstáculo fixo, o narrador atribui uma categoria equivalente ao porte e à resistência — uma
+pilha de caixas pode ser A; uma muralha, E. O obstáculo serve como coluna da matriz, mas não recebe
+uma rolagem própria se não for relevante acompanhar sua integridade.
+
+Dano de colisão **não pode ser mirado**. Ele atinge a parte voltada para o impacto, conforme a
+orientação. Depois da colisão, cada veículo reduz sua velocidade à metade, arredondada para baixo
+até o múltiplo de 10 mais próximo.
 
 | Sofreu ↓ \ Colisor → | Sem motor | A | B | C | D | E |
 |---|---|---|---|---|---|---|
@@ -152,7 +175,15 @@ baixo). Colisão **frontal** contra veículo em movimento **dobra** os valores.
 | **D** | 1 | 1 | 1 | 1d4 | 1d6 | 1d8 |
 | **E** | 1 | 1 | 1 | 1 | 1d4 | 1d6 |
 
-Um **veículo sem motor** que colide recebe o **dobro** do dano comum, em parte aleatória.
+Uma pessoa atropelada usa a linha **Sem motor**, recebe o dano diretamente em um membro aleatório e
+não causa dano de retorno ao veículo, salvo quando o narrador considerar que seu porte ou situação
+forma um obstáculo relevante.
+
+O dano que excede a integridade atual da parte atingida passa ao **Propulsor**. O que excede a
+integridade atual do Propulsor é dividido entre os ocupantes da forma mais uniforme possível; os
+pontos que sobrarem vão, um por vez, para ocupantes sorteados. Cada parcela atinge um membro
+aleatório e sofre normalmente o redutor da proteção corporal. Cobertura não reduz colisão nem
+transbordamento.
 
 ## Condições de veículo
 
@@ -161,36 +192,41 @@ personagem continuam sendo as do [núcleo](../../sistema-base/conflitos/03-saude
 
 | Condição | Efeito |
 |----------|--------|
-| **Atolado** | Não se move até ser guinchado por veículo de porte ≥ (ou por ação bem-sucedida). |
-| **Curto-circuito** | Não ativa equipamentos de veículo. |
-| **Vazando** | Gasta o **dobro** de combustível por turno. |
-| **Engasgando** | Precisa do **dobro** de `PA` para acelerar. |
-| **No embalo** | Precisa do **dobro** de `PA` para frear. |
-| **Sem rumo** | Precisa do **dobro** de `PA` para manobrar. |
-| **Embreagem quebrada** | Não acelera além de **40 m/t** (fatores externos podem ultrapassar). |
-| **Superaquecido** | Recebe todos os danos com valor **dobrado**. |
-| **Pneu furado** | **3 PA** (em vez de 2) por +10 m/t; a manobra segura passa a girar só **1 ponto**. |
+| **Preso** | Não se move até ser liberado por uma ação adequada ou rebocado por veículo de porte igual ou maior. |
+| **Sistemas inoperantes** | Não ativa equipamentos instalados. |
+| **Consumo elevado** | Gasta o **dobro** do recurso de propulsão por turno de viagem. |
+| **Propulsão instável** | Precisa do **dobro** de `PA` para acelerar. |
+| **Frenagem comprometida** | Precisa do **dobro** de `PA` para frear. |
+| **Direção comprometida** | Precisa do **dobro** de `PA` para manobrar. |
+| **Propulsão limitada** | A velocidade máxima fica reduzida à metade. Fatores externos ainda podem ultrapassá-la. |
+| **Estrutura vulnerável** | Recebe todos os danos com valor **dobrado**. |
+| **Locomoção comprometida** | Acelerar custa **+1 PA** por +10 m/t; a manobra segura gira apenas **1 ponto**. |
 | **Desgovernado** | A velocidade cai à metade por rodada e o veículo anda em linha reta. |
-| **Cortina de fumaça** | O piloto que inicia o turno na fumaça faz Teste Ágil; a falha gira 2 pontos (par = direita, ímpar = esquerda). |
+| **Visibilidade obstruída** | O piloto faz Teste Ágil ao iniciar o turno na área; na falha, o veículo fica *Desgovernado*. |
 
-> 📝 *Curto-circuito* e *Embreagem quebrada* pressupõem um veículo motorizado com sistema elétrico
-> e câmbio. Um cenário de veículos de tração animal ou mágica deve declarar quais condições não se
-> aplicam, ou substituí-las por equivalentes próprios.
+O cenário pode dar outro nome à condição sem alterar seu efeito. *Preso* pode ser *Atolado*;
+*Sistemas inoperantes*, *Curto-circuito*; *Locomoção comprometida*, *Pneu furado*; e *Visibilidade
+obstruída*, *Cortina de fumaça*.
 
 ## Integridade e reparo
 
-Cada parte e o motor têm integridade própria; o dano transborda **parte → motor → ocupantes**.
+Cada parte e o propulsor têm integridade própria; o dano transborda **parte → propulsor →
+ocupantes**. Uma parte externa com integridade 0 deixa de absorver dano. **Locomoção** zerada impede
+acelerar e deixa o veículo *Desgovernado*.
+
+Com o **Propulsor** em 0, o veículo não acelera nem utiliza equipamentos que dependam dele e fica
+*Desgovernado*. Todo dano que chegaria novamente ao Propulsor segue direto aos ocupantes.
 Equipamentos de proteção têm integridade própria e **não podem ser consertados** (ver a
 [lista de equipamentos](listas/lista-de-equipamentos.md)).
 
 ### Peças de reposição — o insumo de reparo
 
-Consertar um motor exige **material**, não só tempo e perícia. O módulo trabalha com **duas
+Consertar um propulsor exige **material**, não só tempo e perícia. O módulo trabalha com **duas
 categorias abstratas** de insumo, e **cada cenário declara o que elas são de fato**:
 
 | Insumo do módulo | Para quê | Exemplo (Colapso) |
 |---|---|---|
-| **Peça comum** | *Reparar integridade* no motor; fabricação simples | [Sucata comum](../../cenarios/colapso/mecanicas-unicas/sucata.md) |
+| **Peça comum** | *Reparar integridade* no propulsor; fabricação simples | [Sucata comum](../../cenarios/colapso/mecanicas-unicas/sucata.md) |
 | **Peça especializada** | *Reparo especializado*; fabricação de equipamento eletrônico/complexo | [Sucata eletrônica](../../cenarios/colapso/mecanicas-unicas/sucata.md) |
 
 Uma peça comum de um mundo é uma correia e um punhado de parafusos; de outro, um cristal de
@@ -200,27 +236,27 @@ custa** — isso é decisão do cenário, porque é aí que mora a economia do m
 
 | Ação | Consumo |
 |---|---|
-| **Reparar integridade** — partes que não o motor | nenhum (só `PA` + o teste) |
-| **Reparar integridade** — motor | **5 peças comuns** + Teste Mental |
-| **Reparo especializado** (remover 1 efeito negativo do motor) | **2 peças especializadas** + Teste Mental |
+| **Reparar integridade** — partes que não o propulsor | nenhum (só `PA` + o teste) |
+| **Reparar integridade** — propulsor | **5 peças comuns** + Teste Mental |
+| **Reparar equipamento instalado** | **1 peça comum** |
+| **Reparo especializado** (remover 1 condição do propulsor) | **2 peças especializadas** + Teste Mental |
 
 > 💡 **Na mesa:** um cenário que não queira economia de peças nenhuma pode declarar as peças como
 > abundantes e ignorar a coluna de consumo — mas repare que, sem elas, o único limite do reparo
 > passa a ser `PA`, e um veículo com um mecânico a bordo fica muito difícil de derrubar numa
 > perseguição longa. As peças são o freio do sistema.
 
-> ⚠️ A DEFINIR: valores-base de integridade por categoria de veículo — ver a
-> [lista de veículos](listas/lista-de-veiculos.md), onde a tabela está proposta mas não validada.
-
 ## Cobertura do tripulante
 
-> 🧪 Em teste, junto da regra-base de
-> [Cobertura](../../sistema-base/conflitos/01-conflito-fisico.md#cobertura).
+Cada assento de um veículo é marcado como **fechado** ou **exposto** quando o veículo é criado.
+Assentos dentro de cabine ou carroceria são fechados; motos, bicicletas, caçambas abertas e postos
+externos são expostos.
 
-O próprio veículo abriga quem está dentro. Por padrão, **ocupar um espaço do veículo concede meia
-[cobertura](../../sistema-base/conflitos/01-conflito-fisico.md#cobertura)** ao tripulante:
+Um assento fechado concede meia
+[cobertura](../../sistema-base/conflitos/01-conflito-fisico.md#cobertura) passiva ao tripulante:
 **`+1d10` de vantagem** nos contratestes de defesa/esquiva contra **ataques à distância**, sem
-precisar levantar guarda e sem ser cancelada pelo movimento do veículo (a lataria protege por si).
+precisar levantar guarda e sem ser cancelada pelo movimento do veículo. Assentos expostos não
+concedem cobertura.
 
 Vale só contra **ataques à distância**; **corpo a corpo ignora** a cobertura — por isso invasão e
 embarque seguem sendo o jeito de atingir a tripulação de perto. O dano de **colisão** e o que
@@ -229,9 +265,10 @@ são reduzidos pela cobertura. Armas com a propriedade
 **[Projéteis (`PROJ.`)](../../sistema-base/listas/equipamentos-base.md#propriedades-das-armas)** e a
 **Maestria em projéteis** reduzem a cobertura em um nível (meia → ignorada).
 
-**Alguns equipamentos exigem exposição para operar** e, enquanto usados, **tiram** a meia cobertura
-(o personagem se projeta para fora): cada equipamento traz isso no campo **Cobertura** da
-[lista de equipamentos](listas/lista-de-equipamentos.md).
+**Alguns equipamentos exigem exposição para operar** e, enquanto usados, suspendem a cobertura do
+assento: cada equipamento traz isso no campo **Cobertura** da
+[lista de equipamentos](listas/lista-de-equipamentos.md). Uma parte externa com integridade 0
+também deixa de oferecer cobertura contra ataques vindos daquela direção.
 
 ## Equipamentos de veículo
 
@@ -241,27 +278,32 @@ remoção e fabricação, está na [lista de equipamentos](listas/lista-de-equip
 
 ## Aptidão Veicular (opcional)
 
-Mecânica opcional que adiciona uma **trilha de aptidão** própria, não ligada a nenhum dos quatro
-atributos base — dedicada a testes que envolvem veículos.
+Mecânica opcional, ativada para toda a campanha, que adiciona uma **trilha de aptidão** própria,
+não ligada a nenhum dos quatro atributos base — dedicada a testes que envolvem veículos.
 
 - **Compra:** mesma fórmula escalonada das
   [aptidões base](../../sistema-base/listas/aptidoes-base.md) (1ª = `1 exp.`, 2ª = `2 exp.`,
   3ª = `3 exp.`…), como trilha própria e independente: ter muitas aptidões `Ágil` não encarece a
   Aptidão Veicular, e vice-versa.
 - **Com a mecânica ativa:** todo teste de uma ação de veículo (manobrar, esquivar de colisão,
-  ocupar mesmo espaço, reparar, instalar, fabricar, sabotar) usa a **Aptidão Veicular** para
-  rerrolagem, **no lugar** da aptidão do atributo que a ação pediria. Uma *Manobra arriscada* que
-  testa `Ágil` não rerrola com aptidão `Ágil` — rerrola com Aptidão Veicular.
+  ocupar mesmo espaço, reparar, instalar, fabricar, sabotar) e de uma habilidade marcada como
+  `Veículo` usa a **Aptidão Veicular** para rerrolagem, **no lugar** da aptidão do atributo que a
+  ação pediria. Ela nunca se soma à aptidão do atributo. Uma *Manobra arriscada* que testa `Ágil`
+  não rerrola com aptidão `Ágil` — rerrola com Aptidão Veicular.
+- **Ataque comum dentro de um veículo:** continua usando a aptidão do atributo normalmente. Se o
+  ataque for realizado por uma habilidade marcada como `Veículo`, usa Aptidão Veicular.
+- **Gasto e recuperação:** cada rerrolagem gasta uma Aptidão Veicular. Um descanso curto recupera
+  uma; um descanso longo recupera todas, como nas aptidões base.
 - **Sem a mecânica:** cada ação usa a aptidão do **atributo que ela testa**, normalmente. Nenhuma
   regra especial: é o comportamento padrão do sistema.
 
-> 📝 O preço foi **alinhado à escada padrão** em 01/08/2026 (decisão do Daniel), para bater com a
-> [Aptidão Mágica](../magia/README.md#aptidão-mágica-opcional) do módulo Magia. O material original
-> do Colapso trazia `1 exp.` fixo e acumulativo — validar o novo preço no playtest.
+O preço foi alinhado à escada padrão em 01/08/2026 e oficializado em 15/08/2026. O material Alpha
+do Colapso, que cobrava `1 exp.` fixo por aptidão, não se aplica mais.
 
 ## Experiência de Veículos (opcional)
 
-Mecânica opcional que adiciona um **segundo tipo de experiência**, exclusivo para características
+Mecânica opcional, ativada para toda a campanha, que adiciona um **segundo tipo de experiência**
+do personagem, exclusivo para características
 de veículo (as [habilidades](listas/lista-de-habilidades.md) e
 [traços](listas/lista-de-tracos.md) deste módulo e a própria Aptidão Veicular, se também estiver
 ativa). A ficha base já reserva espaço para uma segunda trilha de `exp.` — ver
@@ -278,7 +320,14 @@ ativa). A ficha base já reserva espaço para uma segunda trilha de `exp.` — v
   o narrador só marca a recompensa como "de veículo" quando o gatilho envolveu o veículo de forma
   central: uma perseguição vencida ao volante, um reparo salvador no meio do tiroteio, uma invasão
   bem executada.
-- **Quanto se começa:** decisão do cenário ou da mesa, como a `exp.` inicial comum.
+- **Quem pode ganhar:** qualquer personagem cuja contribuição veicular tenha sido central — piloto,
+  mecânico, invasor, atirador ou suporte. A reserva acompanha o personagem quando ele troca de veículo.
+- **O que não compra:** veículos, equipamentos, peças e outras melhorias materiais continuam na
+  economia do cenário; Experiência de Veículos compra apenas características do personagem.
+- **Experiência inicial:** o cenário ou a campanha declara o valor. Sem declaração, a reserva
+  começa em `0`.
+- **Uma recompensa, uma trilha:** cada recompensa entra em `exp.` comum ou Experiência de Veículos,
+  nunca nas duas ao mesmo tempo, salvo quando o narrador conceder duas recompensas distintas.
 
 > 📝 Mesmo desenho da [Experiência de Magia](../magia/README.md#experiência-de-magia-opcional)
 > (01/08/2026). O Colapso já citava uma "Experiência de Veículos" desde a importação, sem nenhuma

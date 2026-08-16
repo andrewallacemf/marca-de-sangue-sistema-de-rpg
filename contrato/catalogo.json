@@ -3493,7 +3493,7 @@
         "ocupantes": "1–2",
         "slotsEquipamento": "1",
         "combustivel": "",
-        "proposta": true
+        "proposta": false
       },
       {
         "nome": "A",
@@ -3504,7 +3504,7 @@
         "ocupantes": "1–2",
         "slotsEquipamento": "2",
         "combustivel": "4",
-        "proposta": true
+        "proposta": false
       },
       {
         "nome": "B",
@@ -3515,7 +3515,7 @@
         "ocupantes": "4",
         "slotsEquipamento": "3",
         "combustivel": "6",
-        "proposta": true
+        "proposta": false
       },
       {
         "nome": "C",
@@ -3526,7 +3526,7 @@
         "ocupantes": "6",
         "slotsEquipamento": "4",
         "combustivel": "8",
-        "proposta": true
+        "proposta": false
       },
       {
         "nome": "D",
@@ -3537,7 +3537,7 @@
         "ocupantes": "8",
         "slotsEquipamento": "6",
         "combustivel": "12",
-        "proposta": true
+        "proposta": false
       },
       {
         "nome": "E",
@@ -3548,7 +3548,7 @@
         "ocupantes": "10",
         "slotsEquipamento": "8",
         "combustivel": "16",
-        "proposta": true
+        "proposta": false
       }
     ],
     "partes": [
@@ -3556,37 +3556,37 @@
         "nome": "Frente",
         "descricao": "Capô, para-choque dianteiro, grade",
         "observacao": "A parte atingida numa colisão frontal",
-        "proposta": true
+        "proposta": false
       },
       {
         "nome": "Traseira",
         "descricao": "Porta-malas, para-choque traseiro, caçamba",
         "observacao": "Onde costuma ficar o bagageiro",
-        "proposta": true
+        "proposta": false
       },
       {
         "nome": "Lateral esquerda",
         "descricao": "Portas e chapas do lado esquerdo",
         "observacao": "",
-        "proposta": true
+        "proposta": false
       },
       {
         "nome": "Lateral direita",
         "descricao": "Portas e chapas do lado direito",
         "observacao": "",
-        "proposta": true
+        "proposta": false
       },
       {
-        "nome": "Rodagem",
-        "descricao": "Pneus, rodas, eixos, suspensão",
-        "observacao": "Alvo da condição Pneu furado e da habilidade Furar pneu",
-        "proposta": true
+        "nome": "Locomoção",
+        "descricao": "Pneus, rodas, eixos, esteiras, patas, velas ou outro conjunto que permite deslocamento",
+        "observacao": "Ao zerar, impede acelerar e deixa o veículo Desgovernado",
+        "proposta": false
       },
       {
-        "nome": "Motor",
-        "descricao": "O coração da máquina",
+        "nome": "Propulsor",
+        "descricao": "Motor, força motriz, núcleo mágico ou outro componente central",
         "observacao": "Não se repara sem peças comuns; ao zerar, o excedente vai aos ocupantes",
-        "proposta": true
+        "proposta": false
       }
     ],
     "equipamentos": [
@@ -3595,11 +3595,11 @@
         "tipo": "ativo",
         "atributo": "Físico",
         "durabilidade": "5",
-        "paUso": "2 (lançar/recolher) + 1 por −10 m/t",
+        "paUso": "2 (lançar ou recolher) + 1 por −10 m/t",
         "instalar": "8 PA",
         "cobertura": "Não",
-        "efeito": "Freia 10 m/t por PA (Teste Físico). Requer ≥1 braço; se não recolher no turno, Teste Ágil (a falha para o veículo).",
-        "proposta": true,
+        "efeito": "Após lançar, cada 1 PA adicional reduz 10 m/t (Teste Físico). Requer ≥1 braço; se não recolher no turno, Teste Ágil (a falha para o veículo).",
+        "proposta": false,
         "fabricacao": {
           "pecasComuns": "10",
           "pecasEspecializadas": "",
@@ -3614,12 +3614,12 @@
         "paUso": "3",
         "instalar": "8 PA",
         "cobertura": "Não",
-        "efeito": "Invasão/Embarque em movimento sem risco de queda na falha; +alcance (até 20 m / 2 espaços). Não pode ser operado pelo piloto.",
-        "proposta": true,
+        "efeito": "Substitui o custo de Invasão ou Embarque, amplia o alcance para 20 m e elimina o risco de queda na falha. Não pode ser operado pelo piloto.",
+        "proposta": false,
         "fabricacao": {
           "pecasComuns": "8",
           "pecasEspecializadas": "",
-          "testes": "Ágil · Social"
+          "testes": "Ágil · Mental"
         }
       },
       {
@@ -3630,12 +3630,12 @@
         "paUso": "2",
         "instalar": "5 PA",
         "cobertura": "Sim",
-        "efeito": "Força um Teste Social no piloto adversário; se ele falhar, −10 m/t.",
-        "proposta": true,
+        "efeito": "Teste Social contra o piloto adversário; no sucesso, ele perde 10 m/t. Só pode afetar o mesmo alvo uma vez por rodada.",
+        "proposta": false,
         "fabricacao": {
           "pecasComuns": "",
           "pecasEspecializadas": "2",
-          "testes": "Social · Mental"
+          "testes": "Mental"
         }
       },
       {
@@ -3646,8 +3646,8 @@
         "paUso": "4 (atirar) / 1 (recolher)",
         "instalar": "12 PA",
         "cobertura": "Sim",
-        "efeito": "Prende-se a veículo ou objeto (alcance 30 m); parado, guincha veículos de categoria ≤.",
-        "proposta": true,
+        "efeito": "Teste Mental para prender veículo ou objeto a até 30 m. Com o cabo esticado, o alvo só aumenta a distância vencendo um Teste Físico contra quem opera o gancho. Parado, guincha veículo de categoria igual ou menor.",
+        "proposta": false,
         "fabricacao": {
           "pecasComuns": "6",
           "pecasEspecializadas": "",
@@ -3663,7 +3663,7 @@
         "instalar": "10 PA",
         "cobertura": "Não",
         "efeito": "+30 m de alcance para projétil ou arremesso leve.",
-        "proposta": true,
+        "proposta": false,
         "fabricacao": {
           "pecasComuns": "7",
           "pecasEspecializadas": "",
@@ -3678,8 +3678,8 @@
         "paUso": "5",
         "instalar": "10 PA",
         "cobertura": "Sim",
-        "efeito": "Salta 1 espaço para evitar obstáculo (requer deslocamento ≥2 espaços depois).",
-        "proposta": true,
+        "efeito": "Salta 1 espaço para evitar obstáculo e exige velocidade de pelo menos 20 m/t após a ativação.",
+        "proposta": false,
         "fabricacao": {
           "pecasComuns": "4",
           "pecasEspecializadas": "3",
@@ -3687,15 +3687,15 @@
         }
       },
       {
-        "nome": "Bagageiro",
+        "nome": "Compartimento de carga",
         "tipo": "passivo",
         "atributo": "",
         "durabilidade": "5",
         "paUso": "",
         "instalar": "6 PA",
         "cobertura": "Sim",
-        "efeito": "Carrega o dobro de um armazenamento comum.",
-        "proposta": true,
+        "efeito": "Concede 2 espaços de carga; cada um comporta carga equivalente ao espaço de um ocupante.",
+        "proposta": false,
         "fabricacao": {
           "pecasComuns": "5",
           "pecasEspecializadas": "",
@@ -3711,7 +3711,7 @@
         "instalar": "5 PA",
         "cobertura": "Sim",
         "efeito": "Absorve dano em qualquer parte; ao zerar, o excedente vai a parte aleatória. Também concede meia cobertura a quem opera um posto exposto (suporte de arma montada, âncora etc.).",
-        "proposta": true,
+        "proposta": false,
         "fabricacao": {
           "pecasComuns": "5",
           "pecasEspecializadas": "",
@@ -3719,15 +3719,15 @@
         }
       },
       {
-        "nome": "Escudos para motor",
+        "nome": "Proteção do propulsor",
         "tipo": "passivo",
         "atributo": "",
         "durabilidade": "5 (não conserta)",
         "paUso": "",
         "instalar": "5 PA",
         "cobertura": "Sim",
-        "efeito": "Absorve dano no motor vindo de ataques e de colisões que você causa.",
-        "proposta": true,
+        "efeito": "Absorve dano no propulsor vindo de ataques e colisões.",
+        "proposta": false,
         "fabricacao": {
           "pecasComuns": "5",
           "pecasEspecializadas": "",
@@ -3743,25 +3743,9 @@
         "instalar": "7 PA",
         "cobertura": "Sim",
         "efeito": "Ao colidir ou entrar no mesmo espaço, causa 2 de dano em local aleatório do outro veículo.",
-        "proposta": true,
+        "proposta": false,
         "fabricacao": {
           "pecasComuns": "5",
-          "pecasEspecializadas": "",
-          "testes": "Social"
-        }
-      },
-      {
-        "nome": "Estrepes",
-        "tipo": "passivo",
-        "atributo": "",
-        "durabilidade": "3 (não conserta)",
-        "paUso": "",
-        "instalar": "— (4 PA para arremessar)",
-        "cobertura": "Sim",
-        "efeito": "Linha de 3 espaços; quem passa por cima ganha Pneu furado. Arremessa até 2 espaços.",
-        "proposta": true,
-        "fabricacao": {
-          "pecasComuns": "3",
           "pecasEspecializadas": "",
           "testes": "Físico"
         }
@@ -3774,8 +3758,8 @@
         "paUso": "",
         "instalar": "11 PA",
         "cobertura": "Sim",
-        "efeito": "Hélices que sopram e repelem fumaça: o veículo ignora a condição Cortina de fumaça enquanto o exaustor estiver íntegro. Um cenário com fenômenos de ar próprios (tempestade de areia, névoa tóxica) pode estender o efeito a eles.",
-        "proposta": true,
+        "efeito": "Hélices que sopram e repelem fumaça: o veículo ignora Visibilidade obstruída causada por fumaça ou fenômeno de ar enquanto o exaustor estiver íntegro.",
+        "proposta": false,
         "fabricacao": {
           "pecasComuns": "4",
           "pecasEspecializadas": "2",
@@ -3790,8 +3774,8 @@
         "paUso": "",
         "instalar": "",
         "cobertura": "",
-        "efeito": "Reduz 1 PA nas ações Instalar equipamento e Remover equipamento com cuidado.",
-        "proposta": true,
+        "efeito": "Reduz 1 PA nas ações Instalar equipamento e Remover equipamento com cuidado; perde 1 de integridade por uso.",
+        "proposta": false,
         "fabricacao": {
           "pecasComuns": "4",
           "pecasEspecializadas": "",
@@ -3806,262 +3790,281 @@
         "paUso": "",
         "instalar": "",
         "cobertura": "",
-        "efeito": "Reduz 1 PA na habilidade Sabotar.",
-        "proposta": true,
+        "efeito": "Reduz 1 PA na habilidade Sabotar; perde 1 de integridade por uso.",
+        "proposta": false,
         "fabricacao": {
           "pecasComuns": "2",
           "pecasEspecializadas": "1",
-          "testes": "Mental · Social"
+          "testes": "Mental · Ágil"
+        }
+      },
+      {
+        "nome": "Estrepes",
+        "tipo": "apoio",
+        "atributo": "",
+        "durabilidade": "1 uso",
+        "paUso": "",
+        "instalar": "",
+        "cobertura": "",
+        "efeito": "Por 4 PA, arremesse a até 2 espaços e forme uma linha de 3 espaços; quem passa recebe Locomoção comprometida. O item é consumido.",
+        "proposta": false,
+        "fabricacao": {
+          "pecasComuns": "3",
+          "pecasEspecializadas": "",
+          "testes": "Físico"
         }
       }
     ],
     "habilidades": [
       {
-        "nome": "Atropelar",
+        "nome": "Investida",
         "atributo": "Ágil",
-        "custoPA": "2 PA + 2 de dano ao próprio motor",
+        "custoPA": "2 PA + 2 de dano ao próprio propulsor",
         "valorCompra": "3",
-        "efeito": "Sacrifica integridade do motor por dano extra (descuidado) ao colidir. Requer veículo em movimento.",
-        "niveis": "+2 / +4 / +6 / +8 / +10 de dano adicional.",
-        "proposta": true
+        "efeito": "Ao causar uma colisão enquanto pilota, acrescenta dano à rolagem sofrida pelo outro veículo. O dano ao próprio Propulsor não pode ser reduzido nem transferido.",
+        "niveis": "+2 / +4 / +6 de dano.",
+        "proposta": false
       },
       {
         "nome": "Invasor",
         "atributo": "Ágil",
         "custoPA": "1 PA",
-        "valorCompra": "4",
-        "efeito": "Aumenta o sucesso de invasão e embarque em movimento. Requer nenhum membro desabilitado.",
-        "niveis": "+1d4 / +1d6 / +1d8 ao teste.",
-        "proposta": true
-      },
-      {
-        "nome": "Piloto de fuga",
-        "atributo": "Ágil",
-        "custoPA": "1 PA",
-        "valorCompra": "1",
-        "efeito": "Reduz o PA de aceleração quando o veículo está parado. Requer estar parado e ter ≥1 de combustível.",
-        "niveis": "−2 / −4 / −6 / −8 / −10 PA.",
-        "proposta": true
-      },
-      {
-        "nome": "Turbo",
-        "atributo": "Ágil",
-        "custoPA": "1 PA",
-        "valorCompra": "2",
-        "efeito": "Reduz o PA de aceleração em movimento.",
-        "niveis": "−2 / −4 / −6 / −8 / −10 PA.",
-        "proposta": true
-      },
-      {
-        "nome": "Atirador de elite",
-        "atributo": "Físico",
-        "custoPA": "PA da arma + 2 PA",
-        "valorCompra": "4",
-        "efeito": "Aumenta o acerto contra alvo em movimento. Requer arma de arremesso (leve) ou projétil.",
-        "niveis": "+1d4 / +1d6 / +1d8 ao teste.",
-        "proposta": true
-      },
-      {
-        "nome": "Atirador montado",
-        "atributo": "Físico",
-        "custoPA": "1 PA",
         "valorCompra": "3",
-        "efeito": "Reduz o PA para atirar a partir de um veículo em movimento.",
-        "niveis": "−2 / −3 / −4 PA.",
-        "proposta": true
+        "efeito": "Acrescenta um dado ao Teste Físico ou Ágil de Invasão ou Embarque. Requer nenhum membro usado na ação desabilitado.",
+        "niveis": "+1d4 / +1d6 / +1d8 ao teste.",
+        "proposta": false
       },
       {
-        "nome": "Drift",
-        "atributo": "Físico",
-        "custoPA": "1 PA",
+        "nome": "Arrancada",
+        "atributo": "Ágil",
+        "custoPA": "2 PA",
         "valorCompra": "2",
-        "efeito": "Reduz o PA de manobra em movimento.",
-        "niveis": "−2 / −4 / −6 / −8 / −10 PA.",
-        "proposta": true
+        "efeito": "Quando o veículo está parado, substitui Acelerar e aumenta imediatamente sua velocidade, respeitando velocidade máxima e o consumo normal de recurso de propulsão.",
+        "niveis": "+20 / +30 / +40 m/t.",
+        "proposta": false
       },
       {
-        "nome": "Furar pneu",
-        "atributo": "Físico",
-        "custoPA": "PA da arma + PA variável",
+        "nome": "Impulso",
+        "atributo": "Ágil",
+        "custoPA": "2 PA",
         "valorCompra": "3",
-        "efeito": "Ataque mirado à Rodagem: causa metade do dano da arma (arredondado para cima) e aplica Pneu furado. Requer arma cortante ou perfurante.",
-        "niveis": "+3 / +2 / +1 PA.",
-        "proposta": true
+        "efeito": "Quando o veículo já está em movimento, substitui Acelerar e aumenta imediatamente sua velocidade, respeitando velocidade máxima e o consumo normal de recurso de propulsão.",
+        "niveis": "+20 / +30 / +40 m/t.",
+        "proposta": false
       },
       {
-        "nome": "Golpe extravagante",
+        "nome": "Mira em movimento",
         "atributo": "Físico",
-        "custoPA": "PA da arma + 2 PA",
-        "valorCompra": "4",
-        "efeito": "Ataque corpo a corpo a um passageiro; além do dano ao alvo, causa dano descuidado ao veículo.",
+        "custoPA": "PA da arma + 1 PA",
+        "valorCompra": "3",
+        "efeito": "Acrescenta um dado ao ataque contra um alvo que esteja se deslocando a pelo menos 10 m/t. Requer arma de projétil ou de arremesso leve.",
+        "niveis": "+1d4 / +1d6 / +1d8 ao teste.",
+        "proposta": false
+      },
+      {
+        "nome": "Ataque estabilizado",
+        "atributo": "Físico",
+        "custoPA": "PA da arma + 1 PA",
+        "valorCompra": "3",
+        "efeito": "Acrescenta um dado ao ataque feito de um veículo que esteja se deslocando a pelo menos 10 m/t.",
+        "niveis": "+1d4 / +1d6 / +1d8 ao teste.",
+        "proposta": false
+      },
+      {
+        "nome": "Curva fechada",
+        "atributo": "Físico",
+        "custoPA": "custo da Manobra segura reduzido",
+        "valorCompra": "2",
+        "efeito": "Substitui uma Manobra segura e conserva o limite de dois pontos de orientação.",
+        "niveis": "reduz 1 / 2 / 3 PA, com custo mínimo de 1 PA.",
+        "proposta": false
+      },
+      {
+        "nome": "Atingir locomoção",
+        "atributo": "Físico",
+        "custoPA": "PA da arma + 3 / 2 / 1 PA",
+        "valorCompra": "3",
+        "efeito": "Ataque mirado à Locomoção: causa metade do dano da arma, arredondada para cima, e aplica Locomoção comprometida. Requer arma cortante ou perfurante.",
+        "niveis": "custo adicional de 3 / 2 / 1 PA.",
+        "proposta": false
+      },
+      {
+        "nome": "Golpe de passagem",
+        "atributo": "Físico",
+        "custoPA": "PA da arma + 1 PA",
+        "valorCompra": "3",
+        "efeito": "Ataque corpo a corpo contra um ocupante alcançável de outro veículo; além do dano normal ao alvo, causa dano a uma parte aleatória do veículo dele.",
         "niveis": "2 / 4 / 6 de dano ao veículo.",
-        "proposta": true
+        "proposta": false
       },
       {
-        "nome": "Autoescola",
+        "nome": "Tomar os controles",
+        "atributo": "Físico",
+        "custoPA": "4 / 3 / 2 PA",
+        "valorCompra": "4",
+        "efeito": "Substitui a ação Tomar os controles à força e usa Teste Físico ou Ágil contra quem controla o veículo. No sucesso, o veículo perde 10 m/t e você assume os controles.",
+        "niveis": "custo de 4 / 3 / 2 PA.",
+        "proposta": false
+      },
+      {
+        "nome": "Controles improvisados",
         "atributo": "Mental",
         "custoPA": "3 PA",
-        "valorCompra": "4",
-        "efeito": "Acelera ou freia sem estar no assento do piloto (Teste Mental). Requer estar no mesmo veículo.",
-        "niveis": "até 20 / 30 / 40 m/t.",
-        "proposta": true,
-        "observacao": "O veículo não se move na rodada, só muda o velocímetro."
+        "valorCompra": "3",
+        "efeito": "Teste Mental para acelerar ou frear por um controle alcançável sem ocupar o posto do piloto. A mudança atualiza o deslocamento devido no turno, mas você não se torna o piloto.",
+        "niveis": "altera até 10 / 20 / 30 m/t.",
+        "proposta": false
       },
       {
-        "nome": "Desmanchador",
+        "nome": "Desmontar em combate",
         "atributo": "Mental",
-        "custoPA": "PA da arma + 2 PA",
-        "valorCompra": "4",
-        "efeito": "Ataque mirado a qualquer parte, com dano extra ao motor.",
-        "niveis": "2 / 4 / 6 / 8 / 10 ao motor.",
-        "proposta": true,
-        "observacao": "Não vale em ataque descuidado."
+        "custoPA": "PA da arma + 1 PA",
+        "valorCompra": "3",
+        "efeito": "Ataque mirado a um equipamento instalado e alcançável: causa metade do dano da arma, arredondada para cima, mais o bônus do nível à Integridade do equipamento.",
+        "niveis": "+2 / +4 / +6 de dano.",
+        "proposta": false
       },
       {
-        "nome": "Mecânica",
+        "nome": "Reparo emergencial",
         "atributo": "Mental",
         "custoPA": "3 PA",
-        "valorCompra": "2",
-        "efeito": "Substitui a ação Reparo especializado: remove efeitos negativos do motor com Teste Mental, consumindo 1 peça especializada por efeito (em vez das 2 da ação normal).",
-        "niveis": "remove 1 / 2 / 3 efeitos.",
-        "proposta": true
+        "valorCompra": "3",
+        "efeito": "Substitui Reparo especializado: um Teste Mental remove condições do Propulsor, consumindo uma peça especializada por condição removida.",
+        "niveis": "remove até 1 / 2 / 3 condições.",
+        "proposta": false
       },
       {
-        "nome": "Mecatrônica",
+        "nome": "Reparação avançada",
         "atributo": "Mental",
         "custoPA": "4 PA",
-        "valorCompra": "3",
-        "efeito": "Substitui a ação Reparar integridade (Teste Mental).",
-        "niveis": "dado 1d6 / 1d8 / 1d10 — o excedente pode ir a outra parte.",
-        "proposta": true,
-        "observacao": "No motor, continua exigindo peças comuns, como a ação normal."
+        "valorCompra": "4",
+        "efeito": "Substitui Reparar integridade e conserva os testes e peças exigidos pela parte escolhida. O excedente da rolagem pode recuperar outra parte.",
+        "niveis": "recupera 1d6 / 1d8 / 1d10 de Integridade.",
+        "proposta": false
       },
       {
-        "nome": "Retrovisor",
+        "nome": "Recuo controlado",
         "atributo": "Mental",
-        "custoPA": "1 PA",
+        "custoPA": "2 PA",
         "valorCompra": "2",
-        "efeito": "Reduz o PA da marcha à ré. Requer estar parado ou de ré.",
-        "niveis": "−2 / −4 / −6 / −8 / −10 PA.",
-        "proposta": true
-      },
-      {
-        "nome": "Assumir direção",
-        "atributo": "Social",
-        "custoPA": "4 / 3 / 2 PA por nível",
-        "valorCompra": "4",
-        "efeito": "Toma o volante; o veículo perde 10 m/t. Havendo resistência, Teste Físico ou Ágil.",
-        "niveis": "",
-        "proposta": true
-      },
-      {
-        "nome": "Atenção difusa",
-        "atributo": "Social",
-        "custoPA": "2 PA + PA da arma",
-        "valorCompra": "4",
-        "efeito": "Aumenta o acerto de arma corpo a corpo a partir de veículo em movimento.",
-        "niveis": "+1d4 / +1d6 / +1d8.",
-        "proposta": true
-      },
-      {
-        "nome": "Carburador furado",
-        "atributo": "Social",
-        "custoPA": "4 PA (consome 2 de combustível)",
-        "valorCompra": "4",
-        "efeito": "Solta uma Cortina de fumaça triangular atrás do veículo. Requer acesso ao acelerador.",
-        "niveis": "cone de 3×5 / 5×7 / 7×9 espaços.",
-        "proposta": true
-      },
-      {
-        "nome": "Co-piloto",
-        "atributo": "Social",
-        "custoPA": "2 PA + (PA doados ÷ 2)",
-        "valorCompra": "3",
-        "efeito": "Transfere PA a alguém no mesmo veículo.",
-        "niveis": "até 2 / 4 / 6 / 8 / 10 PA.",
-        "proposta": true,
-        "observacao": "Os PA não usados se perdem; não se doa PA gerado por fadiga."
+        "efeito": "Com o veículo parado ou já em marcha à ré, substitui Acelerar e assume velocidade de ré até o limite do nível, respeitando velocidade máxima e consumo normal de recurso de propulsão.",
+        "niveis": "até 20 / 30 / 40 m/t.",
+        "proposta": false
       },
       {
         "nome": "Sabotar",
-        "atributo": "Social",
-        "custoPA": "4 / 3 / 2 PA por nível",
+        "atributo": "Mental",
+        "custoPA": "4 / 3 / 2 PA",
         "valorCompra": "4",
-        "efeito": "Teste Social; o sucesso aplica uma condição de veículo a um veículo cujos mecanismos você acessa.",
-        "niveis": "",
-        "proposta": true
+        "efeito": "Teste Mental para aplicar uma condição de veículo quando você tem acesso aos mecanismos do alvo. O narrador pode limitar as condições possíveis conforme o mecanismo alcançado.",
+        "niveis": "custo de 4 / 3 / 2 PA.",
+        "proposta": false
+      },
+      {
+        "nome": "Coordenar ataque",
+        "atributo": "Social",
+        "custoPA": "2 PA",
+        "valorCompra": "2",
+        "efeito": "Escolha um aliado no mesmo veículo. Antes do início do seu próximo turno, ele pode acrescentar um dado ao próximo ataque comum feito a partir do veículo. O benefício não se combina com uma habilidade de ataque.",
+        "niveis": "+1d4 / +1d6 / +1d8 ao teste.",
+        "proposta": false
+      },
+      {
+        "nome": "Distrair condutor",
+        "atributo": "Social",
+        "custoPA": "3 PA",
+        "valorCompra": "3",
+        "efeito": "Faça um Teste Social contra o Mental de cada piloto escolhido a até 30 m que possa perceber você. No sucesso, o alvo recebe uma desvantagem no próximo teste de veículo antes do início do seu próximo turno.",
+        "niveis": "afeta até 1 / 2 / 3 pilotos.",
+        "proposta": false
+      },
+      {
+        "nome": "Coordenar manobra",
+        "atributo": "Social",
+        "custoPA": "2 PA",
+        "valorCompra": "2",
+        "efeito": "Escolha um aliado no mesmo veículo. Antes do início do seu próximo turno, ele reduz o custo da próxima ação comum de veículo; o benefício não reduz habilidades.",
+        "niveis": "reduz 1 / 2 / 3 PA, com custo mínimo de 1 PA.",
+        "proposta": false
       }
     ],
     "tracos": [
       {
-        "nome": "Baliza",
+        "nome": "Estacionamento preciso",
         "atributo": "Mental",
-        "valorCompra": "3",
-        "efeito": "Estaciona no mesmo espaço de obstáculos fixos ou construções, e fica protegido de dano enquanto desocupado. Requer veículo parado.",
-        "proposta": true
+        "valorCompra": "2",
+        "efeito": "Com o veículo parado, pode compartilhar o espaço de um obstáculo fixo ou construção quando o narrador confirmar que existe espaço físico para isso. Não atravessa o obstáculo nem recebe imunidade a dano.",
+        "proposta": false
       },
       {
-        "nome": "Câmbio automático",
+        "nome": "Controles adaptados",
         "atributo": "Físico",
         "valorCompra": "3",
-        "efeito": "Dirige mesmo com uma perna inexistente ou inabilitada.",
-        "proposta": true
+        "efeito": "Ao comprar, escolha um membro normalmente necessário para pilotar o veículo. Ignora as penalidades de pilotagem causadas por esse membro estar desabilitado ou ausente, mas não realiza com ele outras ações fisicamente impossíveis.",
+        "proposta": false
       },
       {
-        "nome": "Controle de embreagem",
+        "nome": "Condução todo-terreno",
         "atributo": "Ágil",
-        "valorCompra": "8",
-        "efeito": "Ignora terreno difícil.",
-        "proposta": true
+        "valorCompra": "4",
+        "efeito": "Recebe uma vantagem nos testes de veículo causados por terreno difícil apropriado à Locomoção do veículo. Não permite atravessar terreno impossível.",
+        "proposta": false
       },
       {
-        "nome": "Cuidadoso",
+        "nome": "Desmontagem cuidadosa",
         "atributo": "Físico",
         "valorCompra": "5",
-        "efeito": "Arrancar equipamento sem quebrá-lo e mantendo-o no veículo. Requer ≥1 braço.",
-        "proposta": true
+        "efeito": "Ao ter sucesso em Arrancar equipamento, remove o equipamento sem quebrá-lo. Requer ao menos um braço habilitado.",
+        "proposta": false
       },
       {
         "nome": "Direção defensiva",
-        "atributo": "Físico",
+        "atributo": "Ágil",
         "valorCompra": "2",
-        "efeito": "Sucesso automático em ocupar com cuidado. Requer ser o piloto.",
-        "proposta": true
+        "efeito": "Recebe uma vantagem no teste de ocupar o mesmo espaço com cuidado.",
+        "proposta": false
       },
       {
-        "nome": "Elemento surpresa",
+        "nome": "Entrada protegida",
         "atributo": "Social",
-        "valorCompra": "7",
-        "efeito": "Ganha 3 Guardas Levantadas ao fim de um turno de invasão ou embarque bem-sucedido.",
-        "proposta": true
+        "valorCompra": "4",
+        "efeito": "Uma vez por rodada, depois de uma Invasão ou Embarque bem-sucedido, ganha uma guarda levantada.",
+        "proposta": false
       },
       {
-        "nome": "Lanternagem",
+        "nome": "Reparo minucioso",
         "atributo": "Mental",
-        "valorCompra": "5",
-        "efeito": "Sucesso em Reparar integridade ou Mecatrônica recupera +1 ponto no local; o excedente vai a outra parte.",
-        "proposta": true
+        "valorCompra": "4",
+        "efeito": "Um sucesso em Reparar integridade ou Reparação avançada recupera +1 de Integridade; o excedente pode ir para outra parte.",
+        "proposta": false
       },
       {
         "nome": "Manobrista",
         "atributo": "Ágil",
         "valorCompra": "3",
-        "efeito": "Elimina o Teste Ágil para pilotar em espaço até metade ocupado por obstáculo. Requer ≥1 braço.",
-        "proposta": true
+        "efeito": "A até 20 m/t, uma Manobra segura pode girar até três pontos de orientação em vez de dois, sem aumentar o custo.",
+        "proposta": false
       },
       {
-        "nome": "Mão na roda",
+        "nome": "Trabalho em movimento",
         "atributo": "Mental",
-        "valorCompra": "6",
-        "efeito": "Anula as desvantagens de reparar e instalar em veículo em movimento. Requer ≥1 braço.",
-        "proposta": true
+        "valorCompra": "4",
+        "efeito": "Anula a desvantagem de reparar ou instalar equipamento enquanto o veículo se move. Requer ao menos um braço habilitado.",
+        "proposta": false
       },
       {
-        "nome": "Pitstop",
+        "nome": "Consumo econômico",
         "atributo": "Mental",
         "valorCompra": "3",
-        "efeito": "Reduz pela metade o combustível gasto em viagens fora de batalha.",
-        "proposta": true
+        "efeito": "Fora de conflito, reduz à metade o consumo do recurso de propulsão, arredondado para cima.",
+        "proposta": false
+      },
+      {
+        "nome": "Reaproveitador",
+        "atributo": "Mental",
+        "valorCompra": "3",
+        "efeito": "Cada reparo consome uma peça a menos de um dos tipos exigidos, com mínimo de uma peça. Não reduz o custo de fabricação.",
+        "proposta": false
       }
     ]
   }

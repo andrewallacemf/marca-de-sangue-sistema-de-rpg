@@ -4,7 +4,7 @@ tipo: regra
 cenario: colapso
 status: rascunho
 tags: [colapso, veiculos, conflito, sucata, mecanica-unica]
-atualizado-em: 2026-08-01
+atualizado-em: 2026-08-15
 ---
 
 # Veículos no Colapso
@@ -51,6 +51,26 @@ O equipamento [Exaustor](../../../modulos/veiculos/listas/lista-de-equipamentos.
 protege da *Cortina de fumaça* pela regra do módulo. No Colapso ele **também** repele as
 tempestades de areia do ermo — ver [clima e radiação](../lore/02-clima-e-radiacao.md).
 
+### 5. Vocabulário mecânico do ermo
+
+O módulo usa nomes genéricos para funcionar com qualquer tecnologia. No Colapso, a ficha e a
+narração podem usar estes nomes sem alterar os efeitos:
+
+| Regra do módulo | No Colapso |
+|---|---|
+| Propulsor | Motor |
+| Locomoção | Rodagem |
+| Preso | Atolado |
+| Sistemas inoperantes | Curto-circuito |
+| Consumo elevado | Vazando |
+| Propulsão instável | Engasgando |
+| Frenagem comprometida | No embalo |
+| Direção comprometida | Sem rumo |
+| Propulsão limitada | Embreagem quebrada |
+| Estrutura vulnerável | Superaquecido |
+| Locomoção comprometida | Pneu furado |
+| Visibilidade obstruída | Cortina de fumaça |
+
 ## O que o Colapso decide
 
 O módulo deixa duas decisões em aberto para quem o usa. As respostas do Colapso:
@@ -59,10 +79,11 @@ O módulo deixa duas decisões em aberto para quem o usa. As respostas do Colaps
 |---|---|
 | Usar a [Aptidão Veicular](../../../modulos/veiculos/README.md#aptidão-veicular-opcional)? | **Sim.** É a aptidão do ermo — quem vive na estrada rerrola ao volante. |
 | Usar a [Experiência de Veículos](../../../modulos/veiculos/README.md#experiência-de-veículos-opcional)? | **Sim.** O Colapso roda com duas moedas de `exp.`: a padrão (`Jogador`) e a de Veículos. |
+| Experiência de Veículos inicial | **8 pontos**, além dos 15 pontos de `exp.` comum. |
 
-> ⚠️ A DEFINIR (Gabriel): **quanta Experiência de Veículos o grupo começa.** O material Alpha
-> sugeria **8**; a `exp.` inicial padrão do sistema é hoje **15** de `Jogador`. Conferir antes do
-> playtest.
+Os 8 pontos permitem uma especialização inicial relevante sem duplicar a reserva comum completa.
+Personagens que entrarem depois na campanha recebem a mesma reserva inicial, salvo decisão explícita
+da mesa para personagens experientes.
 
 ## Equipamentos e listas
 

@@ -159,6 +159,65 @@ pendências de **regra** (que ficam em [PENDENCIAS.md](../PENDENCIAS.md)).
 
 ## 4. Apoio de regras dentro do produto
 
+- [x] **⚠️ AVISO DE MUDANÇA DE REGRA (15/08/2026) — fundamentos de Veículos.** Ao publicar as
+      páginas do módulo na plataforma, usar uma única malha na escala predominante: 1 m para cenas
+      comuns e 10 m para conflitos veiculares. Na escala veicular, compartilhar um espaço indica
+      proximidade, não engajamento; combate entre pessoas, invasão, embarque e deslocamento interno
+      são resolvidos localmente em 1 m. A orientação possui oito direções de 45°. A plataforma
+      ainda não executa movimentação veicular, portanto não há engine, schema ou migration a
+      alterar nesta etapa. Origem: [decisão dos fundamentos de Veículos](decisoes/2026-08-15-fundamentos-veiculos.md).
+      Fechado pela decisão 121 da plataforma, na rota `/manual/modulos/veiculos`.
+
+- [x] **⚠️ AVISO DE MUDANÇA DE REGRA (15/08/2026) — ações de Veículos.** A futura página do
+      módulo deve usar os custos recalibrados, o piso de 1 PA para reduções, o deslocamento no
+      turno do piloto e as novas formulações de manobra, esquiva, emparelhamento, remoção e
+      movimentação interna. A plataforma ainda não executa essas ações; não há engine, schema ou
+      migration a alterar. Origem: [decisão das ações de Veículos](decisoes/2026-08-15-acoes-veiculos.md).
+      Fechado pela decisão 121 da plataforma, na rota `/manual/modulos/veiculos`.
+
+- [x] **⚠️ AVISO DE MUDANÇA DE REGRA (15/08/2026) — categorias, integridade e colisões de
+      Veículos.** A futura página deve apresentar Locomoção e Propulsor, colisão bilateral pela
+      velocidade de impacto, condições genéricas e cobertura por assento. Categorias e partes
+      passaram a `proposta: false` no contrato; o campo estruturado `motor` foi preservado para
+      compatibilidade e agora representa o Propulsor. O seed atualizará apenas os estados/textos
+      existentes; não há schema ou migration. Origem:
+      [decisão de integridade e colisões](decisoes/2026-08-15-integridade-colisoes-veiculos.md).
+      Fechado pela decisão 121 da plataforma, na rota `/manual/modulos/veiculos`.
+
+- [x] **⚠️ AVISO DE MUDANÇA DE REGRA (15/08/2026) — equipamentos de Veículos.** Equipamentos,
+      instalação, reparo e fabricação foram oficializados no contrato (`proposta: false`). O seed e
+      o router atuais da plataforma consomem somente `veiculos.categorias`; antes de publicar o
+      catálogo de equipamentos, mapear o impacto e criar um consumidor estruturado — possivelmente
+      com schema e migration — sem transcrever regras no código. Nenhuma alteração de schema ou
+      produção foi feita nesta curadoria. Origem:
+      [decisão de equipamentos de Veículos](decisoes/2026-08-15-equipamentos-veiculos.md).
+      Fechado pela decisão 121 da plataforma, na rota `/manual/modulos/veiculos/equipamentos`.
+
+- [x] **⚠️ AVISO DE MUDANÇA DE REGRA (15/08/2026) — habilidades de Veículos.** As 19 habilidades
+      foram oficializadas no contrato (`proposta: false`), recalibradas para nível + fadiga e
+      renomeadas para o módulo genérico. A plataforma hoje não importa `veiculos.habilidades`;
+      antes de expô-las no catálogo ou na ficha, mapear persistência, seed, router, custos variáveis
+      e compatibilidade dos nomes antigos. Não houve schema, migration ou seed nesta etapa. Origem:
+      [decisão das habilidades de Veículos](decisoes/2026-08-15-habilidades-veiculos.md).
+      Fechado pela decisão 121 da plataforma, na rota `/manual/modulos/veiculos/caracteristicas`.
+
+- [x] **⚠️ AVISO DE MUDANÇA DE REGRA (15/08/2026) — traços de Veículos.** Os 11 traços foram
+      oficializados no contrato (`proposta: false`) e receberam nomes, custos e efeitos revisados.
+      A plataforma hoje não importa `veiculos.tracos`; antes de disponibilizá-los na ficha ou no
+      catálogo, mapear persistência, seed, router e compatibilidade dos nomes antigos. Nenhum schema,
+      migration ou seed foi alterado nesta etapa. Origem:
+      [decisão dos traços de Veículos](decisoes/2026-08-15-tracos-veiculos.md).
+      Fechado pela decisão 121 da plataforma, na rota `/manual/modulos/veiculos/caracteristicas`.
+
+- [ ] **⚠️ AVISO DE MUDANÇA DE REGRA (15/08/2026) — progressão de Veículos.** Aptidão Veicular e
+      Experiência de Veículos foram oficializadas como trilhas opcionais independentes; o Colapso
+      ativa ambas e começa com 8 `exp.` de Veículos. A plataforma possui somente quatro valores no
+      enum `Atributo`, uma reserva `Character.experiencia` e quatro chaves no formato `.mds.json` e
+      na engine. Implementar as trilhas na ficha exige análise de impacto e provavelmente schema,
+      migration, conversão portátil, batalha, descanso e testes. **Não implementar parcialmente nem
+      reutilizar um dos quatro atributos.** Origem:
+      [decisão de progressão de Veículos](decisoes/2026-08-15-progresso-veiculos.md).
+
 - [x] **Publicar a página de Ações no manual da plataforma** — a estrutura e as decisões
       transversais foram aprovadas em 10/08: Esconder-se custa `2 PA`, Negociar usa Social ou
       Mental e Técnicas anulam desvantagem natural. A rota

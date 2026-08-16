@@ -18,7 +18,7 @@ manual (39 armas com dano defasado, 9 itens faltando — corrigido em 24/07/2026
 |---------|---------|
 | [`limpeza.py`](limpeza.py) | A **limpeza oficial**: remove frontmatter, blocos de bastidor (`✅`, `📝`, `🔧`, `⚠️ A DEFINIR`, datas de decisão…), blocos explícitos `<!-- bastidor:inicio -->…<!-- bastidor:fim -->`, seção "Referências" e marcações internas. **`💡` nunca é removido** — é dica de mesa pro jogador/mestre, não bastidor (ver [CONVENCOES.md §12](../CONVENCOES.md) para a tabela completa dos emojis). Páginas inteiras marcadas `publico: false` no frontmatter são filtradas por quem consome (`manual/gerar-conteudo.py`), antes mesmo de chamar a limpeza. |
 | [`exportar_catalogo.py`](exportar_catalogo.py) | O **exportador**: lê as listas do manual e gera o `catalogo.json`. |
-| [`catalogo.json`](catalogo.json) | O **artefato do contrato**: armas, munições, proteções, itens gerais, habilidades (com progressão por nível), traços, propriedades de armas, os inimigos do kit de playtest (proposta), magias oficiais e veículos (proposta), em JSON estruturado. **Gerado — não edite à mão.** |
+| [`catalogo.json`](catalogo.json) | O **artefato do contrato**: armas, munições, proteções, itens gerais, habilidades (com progressão por nível), traços, propriedades de armas, os inimigos do kit de playtest (proposta), magias oficiais e as coleções de Veículos com seu estado editorial, em JSON estruturado. **Gerado — não edite à mão.** |
 
 ## Consumidores
 
@@ -198,19 +198,18 @@ lacuna vira pendência).
     "niveis": ["…", "…"],          // seção Progressão (índice 0 = nível 1)
     "proposta": false               // magias oficializadas em 15/08/2026
   }],
-  "veiculos": {                     // módulo Veículos — TUDO com "proposta": true
-                                    // (números do material Alpha do Colapso, ainda
-                                    // não validados em playtest)
+  "veiculos": {                     // módulo Veículos em curadoria
     "categorias": [{                // moldes de veículo (tabela de categorias)
       "nome": "B", "exemplos": "Carro de passeio, picape leve",
-      "velocidadeMax": "70 m/t", "motor": "15",       // "" = sem motor
+      "velocidadeMax": "70 m/t", "motor": "15",       // campo de compatibilidade:
+                                                          // representa o Propulsor; "" = sem ele
       "integridadePorParte": "12", "ocupantes": "4",
       "slotsEquipamento": "3", "combustivel": "6",    // "" = não usa combustível
-      "proposta": true
+      "proposta": false             // categorias oficializadas em 15/08/2026
     }],
-    "partes": [{                    // as cinco partes + o motor
-      "nome": "Rodagem", "descricao": "Pneus, rodas, eixos, suspensão",
-      "observacao": "…", "proposta": true
+    "partes": [{                    // as cinco partes + o Propulsor
+      "nome": "Locomoção", "descricao": "Pneus, rodas, eixos, esteiras…",
+      "observacao": "…", "proposta": false
     }],
     "equipamentos": [{
       "nome": "Âncora",
@@ -224,21 +223,21 @@ lacuna vira pendência).
       "fabricacao": {               // linha da tabela de fabricação (casada por nome)
         "pecasComuns": "10", "pecasEspecializadas": "", "testes": "Físico · Ágil"
       },
-      "proposta": true
+      "proposta": false             // equipamentos oficializados em 15/08/2026
     }],
     "habilidades": [{               // formato em bullets no manual
       "nome": "Atropelar", "atributo": "Ágil",
-      "custoPA": "2 PA + 2 de dano ao próprio motor",  // texto literal
+      "custoPA": "2 PA + 2 de dano ao próprio propulsor",  // texto literal
       "valorCompra": "3", "efeito": "…",
       "niveis": "+2 / +4 / +6 / +8 / +10 de dano adicional.",  // TEXTO único, não
                                     // lista (formato compacto dos bullets);
                                     // "" = sem progressão declarada (custo por nível)
       "observacao": "…",            // opcional (parêntese em itálico do bullet)
-      "proposta": true
+      "proposta": false             // habilidades oficializadas em 15/08/2026
     }],
     "tracos": [{
       "nome": "Baliza", "atributo": "Mental", "valorCompra": "3",
-      "efeito": "…", "proposta": true
+      "efeito": "…", "proposta": false       // traços oficializados em 15/08/2026
     }]
   }
 }

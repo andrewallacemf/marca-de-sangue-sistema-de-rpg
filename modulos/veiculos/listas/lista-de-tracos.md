@@ -3,16 +3,16 @@ titulo: Lista de traços de veículo
 tipo: regra
 cenario: modulo
 modulo: veiculos
-status: rascunho
+status: estavel
 tags: [modulo, veiculos, tracos, listas]
-atualizado-em: 2026-08-01
+atualizado-em: 2026-08-15
 ---
 
 # Lista de traços de veículo
 
-Os traços do [módulo de veículos](../README.md). Traços são **passivos e não consumíveis** (ver
-[traços](../../../sistema-base/conceitos/06-tracos.md)): uma vez comprados, valem enquanto os
-requisitos se mantiverem.
+Os traços do [módulo de veículos](../README.md). Traços são **passivos, não consumíveis e não têm
+níveis** (ver [traços](../../../sistema-base/conceitos/06-tracos.md)): uma vez comprados, valem
+enquanto seus requisitos se mantiverem.
 
 **Sobre a moeda de `exp.`:** todos os traços desta lista são características de veículo. Se a mesa
 usa a [Experiência de Veículos](../README.md#experiência-de-veículos-opcional), eles **só** se
@@ -20,23 +20,20 @@ compram com ela; se não usa, compram-se com `exp.` comum, pelos mesmos preços.
 
 | Traço | Atrib. | `exp.` | Efeito |
 |-------|--------|:--:|------|
-| **Baliza** | Mental | 3 | Estaciona no mesmo espaço de obstáculos fixos ou construções, e fica protegido de dano enquanto desocupado. Requer veículo parado. |
-| **Câmbio automático** | Físico | 3 | Dirige mesmo com uma perna inexistente ou inabilitada. |
-| **Controle de embreagem** | Ágil | 8 | Ignora terreno difícil. |
-| **Cuidadoso** | Físico | 5 | *Arrancar equipamento* sem quebrá-lo e mantendo-o no veículo. Requer ≥1 braço. |
-| **Direção defensiva** | Físico | 2 | Sucesso automático em *ocupar com cuidado*. Requer ser o piloto. |
-| **Elemento surpresa** | Social | 7 | Ganha 3 Guardas Levantadas ao fim de um turno de invasão ou embarque bem-sucedido. |
-| **Lanternagem** | Mental | 5 | Sucesso em *Reparar integridade* ou *Mecatrônica* recupera **+1** ponto no local; o excedente vai a outra parte. |
-| **Manobrista** | Ágil | 3 | Elimina o Teste Ágil para pilotar em espaço até metade ocupado por obstáculo. Requer ≥1 braço. |
-| **Mão na roda** | Mental | 6 | Anula as desvantagens de reparar e instalar em veículo em movimento. Requer ≥1 braço. |
-| **Pitstop** | Mental | 3 | Reduz pela metade o combustível gasto em viagens fora de batalha. |
+| **Estacionamento preciso** | Mental | 2 | Com o veículo parado, pode compartilhar o espaço de um obstáculo fixo ou construção quando o narrador confirmar que existe espaço físico para isso. Não atravessa o obstáculo nem recebe imunidade a dano. |
+| **Controles adaptados** | Físico | 3 | Ao comprar, escolha um membro normalmente necessário para pilotar o veículo. Ignora as penalidades de pilotagem causadas por esse membro estar desabilitado ou ausente, mas não realiza com ele outras ações fisicamente impossíveis. |
+| **Condução todo-terreno** | Ágil | 4 | Recebe uma vantagem nos testes de veículo causados por terreno difícil apropriado à Locomoção do veículo. Não permite atravessar terreno impossível. |
+| **Desmontagem cuidadosa** | Físico | 5 | Ao ter sucesso em *Arrancar equipamento*, remove o equipamento sem quebrá-lo. Requer ao menos um braço habilitado. |
+| **Direção defensiva** | Ágil | 2 | Recebe uma vantagem no teste de *ocupar o mesmo espaço com cuidado*. |
+| **Entrada protegida** | Social | 4 | Uma vez por rodada, depois de uma Invasão ou Embarque bem-sucedido, ganha uma guarda levantada. |
+| **Reparo minucioso** | Mental | 4 | Um sucesso em *Reparar integridade* ou *Reparação avançada* recupera +1 de Integridade; o excedente pode ir para outra parte. |
+| **Manobrista** | Ágil | 3 | A até 20 m/t, uma *Manobra segura* pode girar até três pontos de orientação em vez de dois, sem aumentar o custo. |
+| **Trabalho em movimento** | Mental | 4 | Anula a desvantagem de reparar ou instalar equipamento enquanto o veículo se move. Requer ao menos um braço habilitado. |
+| **Consumo econômico** | Mental | 3 | Fora de conflito, reduz à metade o consumo do recurso de propulsão, arredondado para cima. |
+| **Reaproveitador** | Mental | 3 | Cada reparo consome uma peça a menos de um dos tipos exigidos, com mínimo de uma peça. Não reduz o custo de fabricação. |
 
-> ⚠️ A DEFINIR: o material Alpha trazia versões divergentes de alguns traços (ex.: **Controle de
-> embreagem** a `6 exp.`). Prevaleceu a versão do material principal; conferir na revisão.
+## Vocabulário de cenário
 
-> 📝 **Faltam traços de reparo com peças.** Nenhum traço desta lista interage com as
-> [peças de reposição](../README.md#peças-de-reposição--o-insumo-de-reparo) — no material original,
-> esse papel era ocupado por dois traços de sucata (*Catador* e *Serralheiro e soldador*) que são
-> específicos do Colapso e **ficaram lá**. Um traço genérico de "gastar menos peças" ou "aproveitar
-> peças de um veículo destruído" faria falta aqui; fica como sugestão para quando o módulo for
-> revisado.
+Um cenário pode renomear estes traços sem duplicá-los no catálogo. Em um cenário automobilístico,
+por exemplo, *Controles adaptados* pode ser chamado de **Câmbio automático**, *Condução
+todo-terreno*, de **Controle de embreagem**, e *Consumo econômico*, de **Pitstop**.

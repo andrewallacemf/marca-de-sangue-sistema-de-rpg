@@ -75,10 +75,12 @@ novo módulo — ver `PENDENCIAS.md`.
 por acúmulo. Falta escrever a seção em `conceitos/08-fadiga.md` (Lote 1 do
 [plano](../PLANO-DE-MELHORIAS.md)). Ver [decisões](decisoes/2026-07-11-reunioes-de-mecanica.md), item 2.
 
-## 6. "Experiência de Veículos" (Colapso) — moeda não definida
+## 6. "Experiência de Veículos" (Colapso) — ✅ DECIDIDO em 15/08/2026
 
-Traços e aptidões do Colapso citam "Experiência de Veículos", mas nenhuma regra define
-como ela é ganha ou gasta. Resolver na importação do Colapso (Fase 2).
+É uma trilha opcional do personagem, definida no módulo Veículos. Compra apenas características
+veiculares, recebe recompensas próprias e começa em 0 quando cenário/campanha não disser outro
+valor. O Colapso ativa a trilha com 8 pontos iniciais além dos 15 pontos comuns. Ver
+[decisão](decisoes/2026-08-15-progresso-veiculos.md).
 
 ## 7. Criação de personagem × espécies e classes
 

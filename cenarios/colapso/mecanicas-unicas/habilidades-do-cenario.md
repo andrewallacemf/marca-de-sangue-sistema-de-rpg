@@ -4,7 +4,7 @@ tipo: regra
 cenario: colapso
 status: rascunho
 tags: [colapso, habilidades, listas, mecanica-unica]
-atualizado-em: 2026-08-09
+atualizado-em: 2026-08-15
 ---
 
 # Habilidades do cenário
@@ -13,10 +13,11 @@ Habilidades próprias do Colapso, que não pertencem a nenhum módulo. Seguem o
 [guia de habilidades](../../../sistema-base/conceitos/05-habilidades.md): custo de compra em `exp.`,
 custo de `PA`, requisitos e progressão por nível.
 
-> 🧩 **As habilidades de veículo saíram daqui em 01/08/2026.** As 19 habilidades de pilotagem,
-> reparo, tiro montado e invasão viraram a
+> 🧩 **As habilidades genéricas de veículo saíram daqui em 01/08/2026.** As habilidades de
+> pilotagem, reparo, combate embarcado e invasão estão na
 > [lista de habilidades do módulo `veiculos`](../../../modulos/veiculos/listas/lista-de-habilidades.md).
-> O Colapso continua usando todas — só não as guarda mais.
+> O Colapso continua usando todas. **Carburador furado** voltou para esta lista em 15/08/2026 por
+> depender especificamente de combustível e fumaça do cenário.
 
 ## Mental
 
@@ -29,6 +30,10 @@ custo de `PA`, requisitos e progressão por nível.
 - **Bolsa de sangue** `Social` — compra **5 exp.**; **4 PA**. Transfere `PV`: 1 de dano curável no
   doador vira 1 de dano curável recuperado no receptor 🔧. Não deixa nenhum membro abaixo de 1 `PV`;
   gera fadiga normalmente; não recupera dano permanente. Níveis: doa até **2 / 4 / 6** pontos 🔧.
+- **Carburador furado** `Social` `Veículo` — compra **4 exp.**; **4 PA + 2 de combustível**. A partir
+  do escapamento, cria uma área de fumaça atrás do veículo que causa *Visibilidade obstruída*.
+  Requer acesso ao acelerador e um veículo que use combustível. Níveis: área triangular de **3×5 /
+  5×7 / 7×9** espaços de veículo.
 
 > 🔧 **A RECALIBRAR (Gabriel) — resíduo do modelo antigo de dano.** Até 04/08/2026 o sistema
 > tinha três faixas: **superficial → profundo → permanente**. A [decisão de
