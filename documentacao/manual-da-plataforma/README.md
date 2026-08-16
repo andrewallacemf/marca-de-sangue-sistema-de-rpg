@@ -68,6 +68,10 @@ Leia estes documentos na ordem:
   complexidade, participantes, informações abertas, interferência, concessão e encerramento.
 - [Magia](propostas/2026-08-15-magia.md) — custos de ativação, progressão, opções de Aptidão e
   Experiência de Magia, catálogo oficial e separação do conteúdo próprio de cenários.
+- [Veículos](propostas/2026-08-15-veiculos.md) — curadoria em andamento; fundamentos de operação,
+  escala mista e orientação já aprovados.
+- [Índice de módulos para narradores](propostas/2026-08-16-indice-modulos-narrador.md) — escolha,
+  combinação e preparação sem duplicar regras ou catálogos.
 
 ## Regra para IAs
 

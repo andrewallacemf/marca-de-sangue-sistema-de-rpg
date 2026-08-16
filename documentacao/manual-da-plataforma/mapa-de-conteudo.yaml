@@ -713,7 +713,7 @@ paginas:
     rota: /manual/narrador/modulos
     publico: narrador
     tipo: indice
-    estado: planejada
+    estado: aguardando_aprovacao
     ordem: 70
     objetivo: Ajudar o narrador a escolher, combinar e conduzir módulos.
     fontes:
@@ -724,7 +724,8 @@ paginas:
     relacionados:
       - jogador.modulos.indice
     observacoes_internas:
-      - Não há orientação geral suficiente sobre escolha e combinação; exige curadoria e possível conteúdo novo aprovado.
+      - Proposta editorial em propostas/2026-08-16-indice-modulos-narrador.md; página implementada na plataforma para validação final.
+      - Mantém regras e catálogos nas páginas canônicas e publica apenas seleção, combinação e preparação.
 
   - id: modulo.furtividade.jogador
     titulo: Furtividade
@@ -975,7 +976,7 @@ paginas:
       - modulo.veiculos.narrador
       - cenario.colapso.jogador
     observacoes_internas:
-      - Integridade, equipamentos e listas contêm números ou divergências ainda indicados para decisão.
+      - Todas as regras do módulo estão aprovadas; falta apenas fechar a divisão editorial entre jogador e narrador.
 
   - id: modulo.veiculos.narrador
     titulo: Conduzindo veículos
