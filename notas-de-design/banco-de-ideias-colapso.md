@@ -4,7 +4,7 @@ tipo: regra
 cenario: colapso
 status: rascunho
 tags: [colapso, banco-de-ideias, brainstorming, arquetipos, veiculos, habilidades, tracos, itens]
-atualizado-em: 2026-07-28
+atualizado-em: 2026-11-17
 ---
 
 # Banco de ideias — Colapso (arquétipos de veículo)
@@ -255,6 +255,7 @@ Vieram da curadoria da Bianca em 28/07/2026 e valem para qualquer rodada futura 
 | **Cobrir a abordagem** | O aliado que invadir naquele turno invade com vantagem. *(suporte.)* | `1 / 2 / 3` aliados |
 | **Tocaia de estrada** | Bônus no primeiro disparo de uma emboscada. | `+3 / +5 / +7` de dano |
 | **Tiro no radiador** | Ataque mirado que aplica *Superaquecido*. | `PA` da arma `+3 / +2 / +1` |
+| **Portada** ⭐ | Sacrifica integridade da parte do veículo em que o próprio tripulante está para causar dano a um alvo adjacente. | cada 1 de integridade sacrificada causa `1 / 2 / 3` de dano no alvo |
 
 ### Traços
 
